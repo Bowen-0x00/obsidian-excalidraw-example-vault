@@ -1,0 +1,199 @@
+{
+  "main": {
+    "id": "3335a8f44e18ade1",
+    "type": "split",
+    "children": [
+      {
+        "id": "77cca824799f0d4c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "371c294785953dd4",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "example/example - 文字和字体.excalidraw.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "982edd3e7a26874a",
+    "type": "split",
+    "children": [
+      {
+        "id": "2e610dd4ef6964ef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "587ccf90dd5151c5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4db9a3615e13993c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#绿色",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "20f9dffbaeeee2af",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 281.5
+  },
+  "right": {
+    "id": "975f8a95335c54f4",
+    "type": "split",
+    "children": [
+      {
+        "id": "c8bf40d21dddebcc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "60693c543c2953f0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "example/example - 文字和字体.excalidraw.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "20b97141b07f9e4c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "example/example - 文字和字体.excalidraw.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4512b3065be8b312",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "example/example - 文字和字体.excalidraw.md"
+              }
+            }
+          },
+          {
+            "id": "a0ddd3282a892520",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-excalidraw-plugin-ymjr:新建绘图文件": false,
+      "workspaces:管理工作区布局": false
+    }
+  },
+  "active": "371c294785953dd4",
+  "lastOpenFiles": [
+    "example/example - 思维导图.excalidraw.md",
+    "example/example - callout.excalidraw.md",
+    "example/example - 固定元素.excalidraw.md",
+    "example/example - 图层.excalidraw.md",
+    "example/example - 增大减小元素.excalidraw.md",
+    "example/example - 折叠显示元素.excalidraw.md",
+    "example/example - 按钮.excalidraw.md",
+    "example/example - 文字和字体.excalidraw.md",
+    "example/example - 文字和字体.excalidraw.outline-kanban.md",
+    "example/example - 标签.excalidraw.md",
+    "example/example - 渐变.excalidraw.md",
+    "example/example - 箭头连接元素.excalidraw.md",
+    "example/example - 素材库.excalidraw.md",
+    "example/example - 缩放隐藏显示.excalidraw.md",
+    "example/example - 缩略图 全局图.excalidraw.md",
+    "example/example - 阴影.excalidraw.md",
+    "example/example - 跟随箭头.excalidraw.md",
+    "example/example - 自定义拉伸箭头.excalidraw.md",
+    "example/example - 详情.excalidraw.md",
+    "example/example - 逐个显示&隐藏.excalidraw.md",
+    "example/example - 视频摘录.excalidraw.md",
+    "example/example - 转换文字为reminder.excalidraw.md",
+    "example/attachments/example - 图层.excalidraw_image_20240122200846_207.png",
+    "example/attachments/example - 详情.excalidraw_image_20240122174500_942.png",
+    "example/attachments/example - 详情.excalidraw_image_20240122174444_681.png",
+    "plugins/Excalidraw/Scripts/Set laser color.md",
+    "plugins/Excalidraw/Scripts/Set font size.md",
+    "plugins/Excalidraw/Scripts/set element tags.md",
+    "plugins/Excalidraw/Scripts/Set arrow type.md",
+    "example/attachments/example - library.excalidraw_image_20240122170820_953.png",
+    "example/attachments/example - library.excalidraw_image_20240122170708_280.png",
+    "example/attachments",
+    "example/attachments/example - library.excalidraw_image_20240122170611_060.png",
+    "example",
+    "example images/font.gif",
+    "example images",
+    "New folder",
+    "plugins/Excalidraw/Fonts/Muyao-Softbrush-2.ttf",
+    "plugins/Excalidraw/Fonts/包图小白体.ttf",
+    "plugins/Excalidraw/Scripts/Vertical distribution.svg",
+    "plugins/Excalidraw/Scripts/show layer toolbar.svg",
+    "plugins/Excalidraw/Scripts/Horizontal distribution.svg",
+    "plugins/Excalidraw/Scripts/Downloaded",
+    "plugins/Excalidraw/Scripts/mindmap/mindmap.7z.baiduyun.uploading.cfg",
+    "plugins/Excalidraw/Scripts/mindmap/mindmap.7z",
+    "plugins/Excalidraw/Scripts/mindmap"
+  ]
+}

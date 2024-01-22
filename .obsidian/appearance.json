@@ -1,0 +1,25 @@
+{
+  "accentColor": "",
+  "theme": "obsidian",
+  "baseFontSize": 17,
+  "cssTheme": "Blue Topaz",
+  "translucency": false,
+  "enabledCssSnippets": [
+    "【卡片视图】cards",
+    "【自定义】表格样式TableStyles",
+    "openPdf-button",
+    "列表添加动态引导线",
+    "My-underline",
+    "color tag",
+    "hide frontmatter under preview mode",
+    "custom-admonitions.31ed69",
+    "compare-flex",
+    "extended-colorschemes",
+    "highlight-callout-class",
+    "remove hover editor property",
+    "excalidraw-md-background",
+    "tag",
+    "excalidraw-toolicon-svg"
+  ],
+  "baseFontSizeAction": false
+}

@@ -1,0 +1,11 @@
+{
+  "blue-topaz-theme@@color-scheme-options": "color-scheme-options-default",
+  "blue-topaz-theme@@funny-header-anim": true,
+  "blue-topaz-theme@@print-h1-color@@dark": "#CC5F00",
+  "blue-topaz-theme@@print-h1-color@@light": "#CC6900",
+  "blue-topaz-theme@@print-h2-color@@dark": "#CC7700",
+  "blue-topaz-theme@@print-h2-color@@light": "#CC7700",
+  "blue-topaz-theme@@print-h3-color@@dark": "#CCBB00",
+  "blue-topaz-theme@@print-h3-color@@light": "#CCBB00",
+  "blue-topaz-theme@@all-dark": true
+}

@@ -1,0 +1,3 @@
+div.mobile-misc-tools-container>label.ToolIcon>div.ToolIcon__icon>div>svg {
+    transform: scale(1.5);
+}

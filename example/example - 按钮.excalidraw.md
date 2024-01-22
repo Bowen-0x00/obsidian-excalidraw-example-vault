@@ -1,0 +1,218 @@
+---
+
+excalidraw-plugin: parsed
+tags: [excalidraw]
+
+---
+==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
+
+
+# Text Elements
+Button ^IwkDG79G
+
+Shift + 点击试试 ^0t6IBkmc
+
+# Tags
+%%
+# Drawing
+```json
+{
+	"type": "excalidraw",
+	"version": 2,
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.17-7",
+	"elements": [
+		{
+			"type": "rectangle",
+			"version": 1,
+			"versionNonce": 373363650,
+			"isDeleted": false,
+			"id": "JBjmB2vK",
+			"fillStyle": "solid",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"angle": 0,
+			"x": -217.54998779296875,
+			"y": -209.81250762939453,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#f8961e",
+			"width": 197.9279327392578,
+			"height": 49,
+			"seed": 94515,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 3
+			},
+			"boundElements": [],
+			"updated": 1705925103066,
+			"link": null,
+			"locked": false
+		},
+		{
+			"type": "rectangle",
+			"version": 899,
+			"versionNonce": 1267720785,
+			"isDeleted": false,
+			"id": "Wfy9boRjdQ1Hknn8pcJ4F",
+			"fillStyle": "solid",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"angle": 0,
+			"x": -159.98328399658203,
+			"y": -76.82918357849121,
+			"strokeColor": "#3bc9db",
+			"backgroundColor": "#3bc9db",
+			"width": 131.66664123535156,
+			"height": 80.83333969116217,
+			"seed": 11655134,
+			"groupIds": [
+				"_g9BqcBcyig6eQYZa61mF",
+				"BsiXzqn_pnMZ6u-RTpcAd"
+			],
+			"frameId": null,
+			"roundness": {
+				"type": 3
+			},
+			"boundElements": [],
+			"updated": 1705927637867,
+			"link": null,
+			"locked": false,
+			"customData": {
+				"onPointerDownHook": "new Notice('这是按钮……');",
+				"shadow": {
+					"shadowColor": "-20",
+					"shadowBlur": "0.1",
+					"shadowOffsetX": "0",
+					"shadowOffsetY": "0.05"
+				},
+				"hover": {
+					"id": [],
+					"shadow": {
+						"shadowColor": "-20",
+						"shadowBlur": "0.2",
+						"shadowOffsetX": "0",
+						"shadowOffsetY": "0.1"
+					}
+				}
+			}
+		},
+		{
+			"type": "text",
+			"version": 413,
+			"versionNonce": 1155625009,
+			"isDeleted": false,
+			"id": "IwkDG79G",
+			"fillStyle": "solid",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 70,
+			"angle": 0,
+			"x": -141.2245117185454,
+			"y": -52.23345922501562,
+			"strokeColor": "#ffffff",
+			"backgroundColor": "#3bc9db",
+			"width": 98.4375,
+			"height": 33.6,
+			"seed": 1252469790,
+			"groupIds": [
+				"BsiXzqn_pnMZ6u-RTpcAd"
+			],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1705927637867,
+			"link": null,
+			"locked": false,
+			"fontSize": 28,
+			"fontFamily": 3,
+			"text": "Button",
+			"rawText": "Button",
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Button",
+			"lineHeight": 1.2,
+			"baseline": 27
+		},
+		{
+			"type": "text",
+			"version": 20,
+			"versionNonce": 476196418,
+			"isDeleted": false,
+			"id": "0t6IBkmc",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -217.54998779296875,
+			"y": -207.81250762939453,
+			"strokeColor": "#0c8599",
+			"backgroundColor": "transparent",
+			"width": 269.92791748046875,
+			"height": 45,
+			"seed": 18343902,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1705925100209,
+			"link": null,
+			"locked": false,
+			"fontSize": 36,
+			"fontFamily": "\"LXGW WenKai\"",
+			"text": "Shift + 点击试试",
+			"rawText": "Shift + 点击试试",
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Shift + 点击试试",
+			"lineHeight": 1.25,
+			"baseline": 35
+		}
+	],
+	"appState": {
+		"theme": "light",
+		"viewBackgroundColor": "#ffffff",
+		"currentItemStrokeColor": "#0c8599",
+		"currentItemBackgroundColor": "transparent",
+		"currentItemFillStyle": "solid",
+		"currentItemStrokeWidth": 2,
+		"currentItemStrokeStyle": "solid",
+		"currentItemRoughness": 1,
+		"currentItemOpacity": 100,
+		"currentItemFontFamily": "\"LXGW WenKai\"",
+		"currentItemFontSize": 36,
+		"currentItemTextAlign": "left",
+		"currentItemStartArrowhead": null,
+		"currentItemEndArrowhead": "arrow",
+		"scrollX": 512.7110290527344,
+		"scrollY": 360.8979196548462,
+		"zoom": {
+			"value": 2
+		},
+		"currentItemRoundness": "round",
+		"gridSize": null,
+		"gridColor": {
+			"Bold": "#C9C9C9FF",
+			"Regular": "#EDEDEDFF"
+		},
+		"currentStrokeOptions": null,
+		"previousGridSize": null,
+		"frameRendering": {
+			"enabled": true,
+			"clip": true,
+			"name": true,
+			"outline": true
+		}
+	},
+	"files": {}
+}
+```
+%%
