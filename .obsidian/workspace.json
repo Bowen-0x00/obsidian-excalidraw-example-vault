@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "77cca824799f0d4c",
+        "id": "85e465c96bb55baa",
         "type": "tabs",
         "children": [
           {
-            "id": "371c294785953dd4",
+            "id": "2a96d02d5a61ac04",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "example/example - 文字和字体.excalidraw.md"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -83,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "example/example - 文字和字体.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "example/example - 文字和字体.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,9 +107,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "example/example - 文字和字体.excalidraw.md"
-              }
+              "state": {}
             }
           },
           {
@@ -147,8 +141,10 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "371c294785953dd4",
+  "active": "2a96d02d5a61ac04",
   "lastOpenFiles": [
+    "example/example - 逐个显示&隐藏.excalidraw.md",
+    "example/example - 文字和字体.excalidraw.md",
     "example/example - 思维导图.excalidraw.md",
     "example/example - callout.excalidraw.md",
     "example/example - 固定元素.excalidraw.md",
@@ -156,7 +152,6 @@
     "example/example - 增大减小元素.excalidraw.md",
     "example/example - 折叠显示元素.excalidraw.md",
     "example/example - 按钮.excalidraw.md",
-    "example/example - 文字和字体.excalidraw.md",
     "example/example - 文字和字体.excalidraw.outline-kanban.md",
     "example/example - 标签.excalidraw.md",
     "example/example - 渐变.excalidraw.md",
@@ -168,7 +163,6 @@
     "example/example - 跟随箭头.excalidraw.md",
     "example/example - 自定义拉伸箭头.excalidraw.md",
     "example/example - 详情.excalidraw.md",
-    "example/example - 逐个显示&隐藏.excalidraw.md",
     "example/example - 视频摘录.excalidraw.md",
     "example/example - 转换文字为reminder.excalidraw.md",
     "example/attachments/example - 图层.excalidraw_image_20240122200846_207.png",
