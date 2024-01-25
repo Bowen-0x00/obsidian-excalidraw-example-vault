@@ -17,7 +17,7 @@ tags: [excalidraw]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.17-7",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.18-4",
 	"elements": [
 		{
 			"type": "rectangle",
@@ -315,8 +315,52 @@ tags: [excalidraw]
 					1298.5599853515625,
 					623.3599975585937
 				]
+			]
+		},
+		{
+			"id": "gTNwIDcZRQxkGjadQU_hS",
+			"type": "arrow",
+			"x": 441.9268996389287,
+			"y": -264.3098232871608,
+			"width": 309.8947625411183,
+			"height": 72.42107190583886,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#a5d8ff",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 740119704,
+			"version": 14,
+			"versionNonce": 1978918888,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1706147772065,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-309.8947625411183,
+					72.42107190583886
+				]
 			],
-			"backgroundProps": "transparent"
+			"lastCommittedPoint": null,
+			"startBinding": null,
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"customData": {
+				"svgPathShape": "M 0 0 L -145.89474728232932 0 Q -154.94738127055916 0 -154.94738127055916 9.052633988229857 L -154.94738127055916 63.368437917609 Q -154.94738127055916 72.42107190583886 -164.000015258789 72.42107190583886 L -309.8947625411183 72.42107190583886"
+			}
 		}
 	],
 	"appState": {
@@ -334,10 +378,10 @@ tags: [excalidraw]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 650.6300109863282,
-		"scrollY": 512.5137487417093,
+		"scrollX": 701.5468359696238,
+		"scrollY": 661.7571965267783,
 		"zoom": {
-			"value": 1.5755914421204662
+			"value": 0.9500000000000001
 		},
 		"currentItemRoundness": "sharp",
 		"gridSize": null,

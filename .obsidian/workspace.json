@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "85e465c96bb55baa",
+        "id": "9231c5c268e52769",
         "type": "tabs",
         "children": [
           {
-            "id": "2a96d02d5a61ac04",
+            "id": "a07d8c18ca8d7365",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "example/example - 阴影.excalidraw.md"
+                "file": "example/example - 自动连接附着.excalidraw.md"
               }
             }
           }
@@ -67,7 +67,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.5
+    "width": 281.5,
+    "collapsed": true
   },
   "right": {
     "id": "975f8a95335c54f4",
@@ -83,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "example/example - 阴影.excalidraw.md",
+                "file": "example/example - 自动连接附着.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +101,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "example/example - 阴影.excalidraw.md",
+                "file": "example/example - 自动连接附着.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -112,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "example/example - 阴影.excalidraw.md"
+                "file": "example/example - 自动连接附着.excalidraw.md"
               }
             }
           },
@@ -147,15 +148,23 @@
       "obsidian-excalidraw-plugin-ymjr:新建绘图文件": false
     }
   },
-  "active": "2a96d02d5a61ac04",
+  "active": "587ccf90dd5151c5",
   "lastOpenFiles": [
-    "Drawing 2024-01-23 18.20.33.excalidraw.md",
+    "example/example - 视频摘录.excalidraw.md",
+    "example/example - 缩略图 全局图.excalidraw.md",
+    "example/example - 自定义拉伸箭头.excalidraw.md",
+    "example/example - 自动连接附着.excalidraw.md",
+    "example/example - 详情.excalidraw.md",
+    "example/example - 缩放隐藏显示.excalidraw.md",
     "example/example - 逐个显示&隐藏.excalidraw.md",
+    "example/example - 阴影.excalidraw.md",
+    "example/example - 图层.excalidraw.md",
+    "plugins/Excalidraw/Scripts/switch connection shape.svg",
+    "Drawing 2024-01-23 18.20.33.excalidraw.md",
     "example/example - 文字和字体.excalidraw.md",
     "example/example - 思维导图.excalidraw.md",
     "example/example - callout.excalidraw.md",
     "example/example - 固定元素.excalidraw.md",
-    "example/example - 图层.excalidraw.md",
     "example/example - 增大减小元素.excalidraw.md",
     "example/example - 折叠显示元素.excalidraw.md",
     "example/example - 按钮.excalidraw.md",
@@ -164,20 +173,13 @@
     "example/example - 渐变.excalidraw.md",
     "example/example - 箭头连接元素.excalidraw.md",
     "example/example - 素材库.excalidraw.md",
-    "example/example - 缩放隐藏显示.excalidraw.md",
-    "example/example - 缩略图 全局图.excalidraw.md",
-    "example/example - 阴影.excalidraw.md",
     "example/example - 跟随箭头.excalidraw.md",
-    "example/example - 自定义拉伸箭头.excalidraw.md",
-    "example/example - 详情.excalidraw.md",
-    "example/example - 视频摘录.excalidraw.md",
     "example/example - 转换文字为reminder.excalidraw.md",
     "example/attachments/example - 图层.excalidraw_image_20240122200846_207.png",
     "example/attachments/example - 详情.excalidraw_image_20240122174500_942.png",
     "example/attachments/example - 详情.excalidraw_image_20240122174444_681.png",
     "plugins/Excalidraw/Scripts/Set laser color.md",
     "plugins/Excalidraw/Scripts/Set font size.md",
-    "plugins/Excalidraw/Scripts/set element tags.md",
     "example/attachments/example - library.excalidraw_image_20240122170820_953.png",
     "example/attachments/example - library.excalidraw_image_20240122170708_280.png",
     "example/attachments",
@@ -190,7 +192,6 @@
     "plugins/Excalidraw/Fonts/包图小白体.ttf",
     "plugins/Excalidraw/Scripts/Vertical distribution.svg",
     "plugins/Excalidraw/Scripts/show layer toolbar.svg",
-    "plugins/Excalidraw/Scripts/Horizontal distribution.svg",
     "plugins/Excalidraw/Scripts/Downloaded",
     "plugins/Excalidraw/Scripts/mindmap/mindmap.7z.baiduyun.uploading.cfg",
     "plugins/Excalidraw/Scripts/mindmap/mindmap.7z",
