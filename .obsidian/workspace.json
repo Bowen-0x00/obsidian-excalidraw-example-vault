@@ -13,7 +13,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "example/example - 自动连接附着.excalidraw.md"
+                "file": "example/example - 阴影.excalidraw.md"
               }
             }
           }
@@ -84,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "example/example - 自动连接附着.excalidraw.md",
+                "file": "example/example - 阴影.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +101,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "example/example - 自动连接附着.excalidraw.md",
+                "file": "example/example - 阴影.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -113,7 +113,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "example/example - 自动连接附着.excalidraw.md"
+                "file": "example/example - 阴影.excalidraw.md"
               }
             }
           },
@@ -150,11 +150,11 @@
   },
   "active": "a07d8c18ca8d7365",
   "lastOpenFiles": [
+    "example/example - 自动连接附着.excalidraw.md",
     "images/switch connection shape2.gif",
     "example/example - 视频摘录.excalidraw.md",
     "example/example - 缩略图 全局图.excalidraw.md",
     "example/example - 自定义拉伸箭头.excalidraw.md",
-    "example/example - 自动连接附着.excalidraw.md",
     "example/example - 详情.excalidraw.md",
     "example/example - 缩放隐藏显示.excalidraw.md",
     "example/example - 逐个显示&隐藏.excalidraw.md",
@@ -191,7 +191,6 @@
     "plugins/Excalidraw/Fonts/Muyao-Softbrush-2.ttf",
     "plugins/Excalidraw/Fonts/包图小白体.ttf",
     "plugins/Excalidraw/Scripts/Vertical distribution.svg",
-    "plugins/Excalidraw/Scripts/show layer toolbar.svg",
     "plugins/Excalidraw/Scripts/Downloaded",
     "plugins/Excalidraw/Scripts/mindmap/mindmap.7z.baiduyun.uploading.cfg",
     "plugins/Excalidraw/Scripts/mindmap/mindmap.7z",
