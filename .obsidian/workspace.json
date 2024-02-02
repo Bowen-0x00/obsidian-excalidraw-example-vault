@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9231c5c268e52769",
+        "id": "946a3a037f7093b2",
         "type": "tabs",
         "children": [
           {
-            "id": "a07d8c18ca8d7365",
+            "id": "03748a1a273fad3a",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "example/example - 阴影.excalidraw.md"
+                "file": "example/example - 自动连接附着.excalidraw.md"
               }
             }
           }
@@ -67,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.5,
-    "collapsed": true
+    "width": 295.5
   },
   "right": {
     "id": "975f8a95335c54f4",
@@ -84,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "example/example - 阴影.excalidraw.md",
+                "file": "example/example - 自动连接附着.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "example/example - 阴影.excalidraw.md",
+                "file": "example/example - 自动连接附着.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -113,7 +112,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "example/example - 阴影.excalidraw.md"
+                "file": "example/example - 自动连接附着.excalidraw.md"
               }
             }
           },
@@ -145,55 +144,57 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "workspaces:管理工作区布局": false,
+      "templater-obsidian:Templater": false,
       "obsidian-excalidraw-plugin-ymjr:新建绘图文件": false
     }
   },
-  "active": "a07d8c18ca8d7365",
+  "active": "03748a1a273fad3a",
   "lastOpenFiles": [
+    "example/example - 代码高亮.excalidraw.md",
+    "example/123.md",
+    "example/mindmap from templater_mindmap.excalidraw.md",
+    "example/mindmap from templater.md",
+    "example/mindmap from templater_mindmap_4.excalidraw.md",
+    "example/mindmap from templater_mindmap_3.excalidraw.md",
+    "example/mindmap from templater_mindmap_2.excalidraw.md",
+    "example/mindmap from templater_mindmap_1.excalidraw.md",
+    "example/mindmap from templater_mindmap_0.excalidraw.md",
+    "examplemindmap from templater.md",
+    "example/Drawing 2024-02-02 04.53.35.excalidraw.md",
+    "example/example - 视频摘录.excalidraw.md",
+    "example/example - 详情.excalidraw.md",
+    "example/My Drawing_0.excalidraw.md",
+    "plugins/Excalidraw/Scripts/action",
+    "plugins/Excalidraw/Scripts/New folder",
+    "plugins/Excalidraw/Scripts/add",
+    "plugins/Excalidraw/Scripts/auto",
+    "plugins/Excalidraw/Scripts/autorun",
+    "plugins/Excalidraw/Scripts/auto-run",
+    "example/example - 阴影.excalidraw.md",
+    "example/attachments/Drawing 2024-02-01 20.47.04.excalidraw_image_20240201204756_054.png",
+    "example/My Drawing.excalidraw.md",
+    "plugins/Templater/tp.excalidraw.mindmap.md",
+    "plugins/Templater",
+    "plugins/New folder",
     "example/example - 自动连接附着.excalidraw.md",
     "images/switch connection shape2.gif",
-    "example/example - 视频摘录.excalidraw.md",
     "example/example - 缩略图 全局图.excalidraw.md",
     "example/example - 自定义拉伸箭头.excalidraw.md",
-    "example/example - 详情.excalidraw.md",
     "example/example - 缩放隐藏显示.excalidraw.md",
     "example/example - 逐个显示&隐藏.excalidraw.md",
-    "example/example - 阴影.excalidraw.md",
     "example/example - 图层.excalidraw.md",
     "plugins/Excalidraw/Scripts/switch connection shape.svg",
     "Drawing 2024-01-23 18.20.33.excalidraw.md",
     "example/example - 文字和字体.excalidraw.md",
     "example/example - 思维导图.excalidraw.md",
-    "example/example - callout.excalidraw.md",
-    "example/example - 固定元素.excalidraw.md",
-    "example/example - 增大减小元素.excalidraw.md",
-    "example/example - 折叠显示元素.excalidraw.md",
-    "example/example - 按钮.excalidraw.md",
-    "example/example - 文字和字体.excalidraw.outline-kanban.md",
-    "example/example - 标签.excalidraw.md",
-    "example/example - 渐变.excalidraw.md",
-    "example/example - 箭头连接元素.excalidraw.md",
-    "example/example - 素材库.excalidraw.md",
-    "example/example - 跟随箭头.excalidraw.md",
-    "example/example - 转换文字为reminder.excalidraw.md",
     "example/attachments/example - 图层.excalidraw_image_20240122200846_207.png",
     "example/attachments/example - 详情.excalidraw_image_20240122174500_942.png",
     "example/attachments/example - 详情.excalidraw_image_20240122174444_681.png",
-    "plugins/Excalidraw/Scripts/Set laser color.md",
     "example/attachments/example - library.excalidraw_image_20240122170820_953.png",
     "example/attachments/example - library.excalidraw_image_20240122170708_280.png",
     "example/attachments",
     "example/attachments/example - library.excalidraw_image_20240122170611_060.png",
     "example",
-    "example images/font.gif",
-    "example images",
-    "New folder",
-    "plugins/Excalidraw/Fonts/Muyao-Softbrush-2.ttf",
-    "plugins/Excalidraw/Fonts/包图小白体.ttf",
-    "plugins/Excalidraw/Scripts/Vertical distribution.svg",
-    "plugins/Excalidraw/Scripts/Downloaded",
-    "plugins/Excalidraw/Scripts/mindmap/mindmap.7z.baiduyun.uploading.cfg",
-    "plugins/Excalidraw/Scripts/mindmap/mindmap.7z",
-    "plugins/Excalidraw/Scripts/mindmap"
+    "example images/font.gif"
   ]
 }
