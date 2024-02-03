@@ -11,8 +11,10 @@
             "id": "068ec696261acd90",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "excalidraw",
+              "state": {
+                "file": "example/example - 按钮.excalidraw.md"
+              }
             }
           }
         ]
@@ -81,6 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "example/example - 按钮.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "example/example - 按钮.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -107,7 +111,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "example/example - 按钮.excalidraw.md"
+              }
             }
           },
           {
@@ -144,6 +150,7 @@
   },
   "active": "068ec696261acd90",
   "lastOpenFiles": [
+    "example/Drawing 2024-02-04 00.29.24.excalidraw.md",
     "example/example - 阴影.excalidraw.md",
     "example/example - 详情.excalidraw.md",
     "example/example - 缩略图 全局图.excalidraw.md",
@@ -179,7 +186,6 @@
     "images/switch connection shape2.gif",
     "example/example - 自定义拉伸箭头.excalidraw.md",
     "example/example - 缩放隐藏显示.excalidraw.md",
-    "example/example - 逐个显示&隐藏.excalidraw.md",
     "plugins/Excalidraw/Scripts/switch connection shape.svg",
     "example/attachments/example - 图层.excalidraw_image_20240122200846_207.png",
     "example/attachments/example - 详情.excalidraw_image_20240122174500_942.png",

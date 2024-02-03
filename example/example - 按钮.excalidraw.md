@@ -19,7 +19,7 @@ Shift + 点击试试 ^0t6IBkmc
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.17-7",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.19-2",
 	"elements": [
 		{
 			"type": "rectangle",
@@ -52,8 +52,8 @@ Shift + 点击试试 ^0t6IBkmc
 		},
 		{
 			"type": "rectangle",
-			"version": 899,
-			"versionNonce": 1267720785,
+			"version": 901,
+			"versionNonce": 371928441,
 			"isDeleted": false,
 			"id": "Wfy9boRjdQ1Hknn8pcJ4F",
 			"fillStyle": "solid",
@@ -62,8 +62,8 @@ Shift + 点击试试 ^0t6IBkmc
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -159.98328399658203,
-			"y": -76.82918357849121,
+			"x": -159.1438828401191,
+			"y": -77.66858473495415,
 			"strokeColor": "#3bc9db",
 			"backgroundColor": "#3bc9db",
 			"width": 131.66664123535156,
@@ -78,7 +78,7 @@ Shift + 点击试试 ^0t6IBkmc
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1705927637867,
+			"updated": 1706981127122,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -102,8 +102,8 @@ Shift + 点击试试 ^0t6IBkmc
 		},
 		{
 			"type": "text",
-			"version": 413,
-			"versionNonce": 1155625009,
+			"version": 415,
+			"versionNonce": 121181785,
 			"isDeleted": false,
 			"id": "IwkDG79G",
 			"fillStyle": "solid",
@@ -112,8 +112,8 @@ Shift + 点击试试 ^0t6IBkmc
 			"roughness": 0,
 			"opacity": 70,
 			"angle": 0,
-			"x": -141.2245117185454,
-			"y": -52.23345922501562,
+			"x": -140.38511056208245,
+			"y": -53.07286038147856,
 			"strokeColor": "#ffffff",
 			"backgroundColor": "#3bc9db",
 			"width": 98.4375,
@@ -125,7 +125,7 @@ Shift + 点击试试 ^0t6IBkmc
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705927637867,
+			"updated": 1706981127122,
 			"link": null,
 			"locked": false,
 			"fontSize": 28,
@@ -137,7 +137,7 @@ Shift + 点击试试 ^0t6IBkmc
 			"containerId": null,
 			"originalText": "Button",
 			"lineHeight": 1.2,
-			"baseline": 27
+			"baseline": 26
 		},
 		{
 			"type": "text",
@@ -174,7 +174,7 @@ Shift + 点击试试 ^0t6IBkmc
 			"containerId": null,
 			"originalText": "Shift + 点击试试",
 			"lineHeight": 1.25,
-			"baseline": 35
+			"baseline": 36
 		}
 	],
 	"appState": {
@@ -192,10 +192,10 @@ Shift + 点击试试 ^0t6IBkmc
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 512.7110290527344,
-		"scrollY": 360.8979196548462,
+		"scrollX": 823.2305080666688,
+		"scrollY": 545.7872928029651,
 		"zoom": {
-			"value": 2
+			"value": 1.1913254971125227
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
