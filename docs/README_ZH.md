@@ -1,12 +1,24 @@
 # Obsidian-Excalidraw-Eample-Vault
 [English](../README.md) | [简体中文](./README_ZH.md)
 
-这个库展示了使用[修改的excalidraw插件](https://github.com/Bowen-0x00/obsidian-excalidraw-plugin-ymjr) 和 [自定义脚本](https://github.com/Bowen-0x00/obsidian-excalidraw-scripts) 能实现的一些功能。（不是全部，慢慢制作中）
+这是一个打包好的ob库，包含了[修改的excalidraw插件](https://github.com/Bowen-0x00/obsidian-excalidraw-plugin-ymjr) 和很多 [自定义脚本](https://github.com/Bowen-0x00/obsidian-excalidraw-scripts)。其中放了现成的excalidraw画布文件展示了一些有趣的功能。（不是全部，慢慢制作中）
 
-方便不熟悉如何安装插件和设置obsidian-excalidraw-plugin的朋友直接上手试验功能，以及参考示例库的设置。
+可以方便不熟悉如何安装插件和设置obsidian-excalidraw-plugin的朋友直接上手试验功能（直接用obsidian打开），以及参考示例库的设置。
 
 你可以看这个[视频](https://www.bilibili.com/video/BV1zN4y1H7Dx/?vd_source=2a4c442f72a74e8d915c1fb5f59d4ba4)以快速查看部分功能。
 
+## 安装与使用
+这是一个打包好的ob库，包含了修改后的插件和很多自定义脚本。可以直接用obsidian打开然后体验功能。
+
+1. 克隆或下载压缩包后解压
+2. obsidian打开库，选择这个文件夹（上一步克隆或解压后的文件夹）
+
+## 移植功能到自己的库
+部分功能是需要自定义脚本和修改后的excalidraw插件搭配使用，而也有部分功能只需要自定义脚本。
+
+在[自定义脚本](https://github.com/Bowen-0x00/obsidian-excalidraw-scripts)的README中做了一张表格，其中列出了每个功能需要的脚本，但是还不完善，还在慢慢写。
+
+你如果不清楚某个功能需要哪些脚本或如何配置，可以联系我。
 
 ## 问题、反馈、创意
 欢迎联系我，如果：
