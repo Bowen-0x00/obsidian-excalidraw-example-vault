@@ -1,5 +1,6 @@
 {
   "folder": "./",
+  "cropFolder": "",
   "embedUseExcalidrawFolder": false,
   "templateFilePath": "plugins/Excalidraw/Template.excalidraw",
   "scriptFolderPath": "plugins/Excalidraw/Scripts",
@@ -13,6 +14,7 @@
   "drawingFilnameEmbedPostfix": " ",
   "drawingFilenameDateTime": "YYYY-MM-DD HH.mm.ss",
   "useExcalidrawExtension": true,
+  "cropPrefix": "cropped_",
   "previewImageType": "SVGIMG",
   "allowImageCache": true,
   "displayExportedImageIfAvailable": false,
@@ -73,7 +75,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.18-6",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.19-1",
     "libraryItems": []
   },
   "imageElementNotice": true,
@@ -340,7 +342,7 @@
     }
   },
   "defaultTrayMode": true,
-  "previousRelease": "2.0.18-1",
+  "previousRelease": "2.0.19-1",
   "showReleaseNotes": true,
   "showNewVersionNotification": true,
   "latexBoilerplate": "\\color{blue}",

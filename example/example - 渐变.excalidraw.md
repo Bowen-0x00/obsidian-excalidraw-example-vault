@@ -15,7 +15,7 @@ tags: [excalidraw]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.17-7",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.19-1",
 	"elements": [
 		{
 			"type": "rectangle",
@@ -51,8 +51,8 @@ tags: [excalidraw]
 		},
 		{
 			"type": "frame",
-			"version": 209,
-			"versionNonce": 259332546,
+			"version": 210,
+			"versionNonce": 155242490,
 			"isDeleted": false,
 			"id": "ODyHaFPIox9TLfbtyRHtJ",
 			"fillStyle": "solid",
@@ -72,14 +72,14 @@ tags: [excalidraw]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705924923422,
+			"updated": 1706968434586,
 			"link": null,
 			"locked": false,
 			"customData": {
 				"frameColor": {
 					"stroke": "#D4D4D4",
 					"fill": "#ADADAD",
-					"nameColor": "#949494"
+					"nameColor": "#7A7A7A"
 				}
 			},
 			"name": "线性-左右"
@@ -118,8 +118,8 @@ tags: [excalidraw]
 		},
 		{
 			"type": "frame",
-			"version": 154,
-			"versionNonce": 854626690,
+			"version": 155,
+			"versionNonce": 123257018,
 			"isDeleted": false,
 			"id": "FOw_oq9YT8_axUM1VE64g",
 			"fillStyle": "solid",
@@ -139,14 +139,14 @@ tags: [excalidraw]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705924923422,
+			"updated": 1706968434586,
 			"link": null,
 			"locked": false,
 			"customData": {
 				"frameColor": {
 					"stroke": "#D4D4D4",
 					"fill": "#ADADAD",
-					"nameColor": "#949494"
+					"nameColor": "#7A7A7A"
 				}
 			},
 			"name": "线性-上下"
@@ -183,8 +183,8 @@ tags: [excalidraw]
 		},
 		{
 			"type": "frame",
-			"version": 143,
-			"versionNonce": 262607170,
+			"version": 144,
+			"versionNonce": 112499066,
 			"isDeleted": false,
 			"id": "gyTKut60emIQsYipGNi7j",
 			"fillStyle": "solid",
@@ -204,14 +204,14 @@ tags: [excalidraw]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705924923422,
+			"updated": 1706968434586,
 			"link": null,
 			"locked": false,
 			"customData": {
 				"frameColor": {
 					"stroke": "#D4D4D4",
 					"fill": "#ADADAD",
-					"nameColor": "#949494"
+					"nameColor": "#7A7A7A"
 				}
 			},
 			"name": "圆形-中心"
@@ -250,8 +250,8 @@ tags: [excalidraw]
 		},
 		{
 			"type": "frame",
-			"version": 157,
-			"versionNonce": 1492621570,
+			"version": 158,
+			"versionNonce": 110582330,
 			"isDeleted": false,
 			"id": "Jyf8lRGAjh0hYoPA76kaQ",
 			"fillStyle": "solid",
@@ -271,14 +271,14 @@ tags: [excalidraw]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705924923422,
+			"updated": 1706968434586,
 			"link": null,
 			"locked": false,
 			"customData": {
 				"frameColor": {
 					"stroke": "#D4D4D4",
 					"fill": "#ADADAD",
-					"nameColor": "#949494"
+					"nameColor": "#7A7A7A"
 				}
 			},
 			"name": "线性-对角"
@@ -299,10 +299,10 @@ tags: [excalidraw]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 659.0499877929688,
-		"scrollY": 515.9874877929688,
+		"scrollX": 694.258321126302,
+		"scrollY": 403.78148570306655,
 		"zoom": {
-			"value": 1
+			"value": 1.2000000000000002
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,

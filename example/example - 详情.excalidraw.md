@@ -27,12 +27,12 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.17-7",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.19-1",
 	"elements": [
 		{
 			"type": "rectangle",
-			"version": 178,
-			"versionNonce": 53915501,
+			"version": 190,
+			"versionNonce": 494531023,
 			"isDeleted": false,
 			"id": "hyBh7ZRFvDCrBhsvXt9sf",
 			"fillStyle": "solid",
@@ -41,8 +41,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -1398.7211887569165,
-			"y": 20.290653391845865,
+			"x": -367.8120978478257,
+			"y": -439.70934660815414,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#f8f9fa",
 			"width": 626.999969482422,
@@ -54,7 +54,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1705927430562,
+			"updated": 1706968568621,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -63,8 +63,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 		},
 		{
 			"type": "rectangle",
-			"version": 612,
-			"versionNonce": 323798822,
+			"version": 660,
+			"versionNonce": 652911126,
 			"isDeleted": false,
 			"id": "fSLqLGLskW71fKRL4Jjom",
 			"fillStyle": "solid",
@@ -73,8 +73,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -1666.8257085413118,
-			"y": 254.55106732660516,
+			"x": -635.916617632221,
+			"y": -205.44893267339484,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#f3f0ff",
 			"width": 220,
@@ -91,7 +91,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 					"id": "JWVidaYp"
 				}
 			],
-			"updated": 1705927430562,
+			"updated": 1706968568621,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -111,8 +111,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 		},
 		{
 			"type": "text",
-			"version": 521,
-			"versionNonce": 1185471263,
+			"version": 557,
+			"versionNonce": 1777675750,
 			"isDeleted": false,
 			"id": "JWVidaYp",
 			"fillStyle": "solid",
@@ -121,8 +121,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -1628.8257085413118,
-			"y": 294.85108563715204,
+			"x": -597.916617632221,
+			"y": -165.14891436284796,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 144,
@@ -132,7 +132,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705927428636,
+			"updated": 1706968566852,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -144,12 +144,12 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"containerId": "fSLqLGLskW71fKRL4Jjom",
 			"originalText": "欧拉公式",
 			"lineHeight": 1.25,
-			"baseline": 31
+			"baseline": 32
 		},
 		{
 			"type": "rectangle",
-			"version": 123,
-			"versionNonce": 214881826,
+			"version": 135,
+			"versionNonce": 648370085,
 			"isDeleted": false,
 			"id": "shztdZPw",
 			"fillStyle": "hachure",
@@ -158,8 +158,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -1320.2444585099677,
-			"y": 93.95009923551135,
+			"x": -289.3353676008769,
+			"y": -366.04990076448865,
 			"strokeColor": "transparent",
 			"backgroundColor": "transparent",
 			"width": 485.59997558593756,
@@ -174,7 +174,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 					"id": "tQus9Eh8"
 				}
 			],
-			"updated": 1705927430562,
+			"updated": 1706968568621,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -183,8 +183,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 		},
 		{
 			"type": "text",
-			"version": 235,
-			"versionNonce": 1790409105,
+			"version": 259,
+			"versionNonce": 2034089510,
 			"isDeleted": false,
 			"id": "tQus9Eh8",
 			"fillStyle": "hachure",
@@ -193,8 +193,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -1315.2444585099677,
-			"y": 98.95009923551135,
+			"x": -284.3353676008769,
+			"y": -361.04990076448865,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 467,
@@ -204,7 +204,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705927430573,
+			"updated": 1706968568632,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -223,8 +223,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 		},
 		{
 			"type": "image",
-			"version": 127,
-			"versionNonce": 625088623,
+			"version": 139,
+			"versionNonce": 391938737,
 			"isDeleted": false,
 			"id": "AqsGAkQQ",
 			"fillStyle": "hachure",
@@ -233,8 +233,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -1280.6444829240302,
-			"y": 214.78346308642273,
+			"x": -249.7353920149394,
+			"y": -245.21653691357727,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 180,
@@ -244,7 +244,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705927430562,
+			"updated": 1706968568621,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -262,8 +262,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 		},
 		{
 			"type": "image",
-			"version": 191,
-			"versionNonce": 703579775,
+			"version": 203,
+			"versionNonce": 334309055,
 			"isDeleted": false,
 			"id": "wff1q6Ym9S00vl2ktKZmQ",
 			"fillStyle": "solid",
@@ -272,8 +272,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -1316.9444096818427,
-			"y": 255.15008092496447,
+			"x": -286.0353187727519,
+			"y": -204.84991907503553,
 			"strokeColor": "transparent",
 			"backgroundColor": "#f3f0ff",
 			"width": 376.59997558593744,
@@ -283,7 +283,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705927430562,
+			"updated": 1706968568621,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -298,8 +298,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 		},
 		{
 			"type": "image",
-			"version": 195,
-			"versionNonce": 943161117,
+			"version": 207,
+			"versionNonce": 847051252,
 			"isDeleted": false,
 			"id": "aEQW_fGc8mAdNFN1kUxFQ",
 			"fillStyle": "solid",
@@ -308,8 +308,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -1314.410783859953,
-			"y": 635.3986381052272,
+			"x": -283.5016929508622,
+			"y": 175.39863810522718,
 			"strokeColor": "transparent",
 			"backgroundColor": "#f3f0ff",
 			"width": 490.7329192546583,
@@ -319,7 +319,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705927430562,
+			"updated": 1706968568621,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -372,7 +372,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"containerId": null,
 			"originalText": "你可以点击元素右上角的图标来展开/折叠详情/批注",
 			"lineHeight": 1.25,
-			"baseline": 35
+			"baseline": 36
 		},
 		{
 			"type": "arrow",
@@ -438,10 +438,10 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 2285.702044224371,
-		"scrollY": 1201.651655957894,
+		"scrollX": 1047.5447769115874,
+		"scrollY": 915.3533855831598,
 		"zoom": {
-			"value": 0.4288107009300616
+			"value": 0.55
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,

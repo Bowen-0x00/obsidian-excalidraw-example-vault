@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "946a3a037f7093b2",
+        "id": "8e12e9bc5546450b",
         "type": "tabs",
         "children": [
           {
-            "id": "03748a1a273fad3a",
+            "id": "068ec696261acd90",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "example/example - 自动连接附着.excalidraw.md"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -46,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#绿色",
+                "query": "tag:#圆形",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -83,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "example/example - 自动连接附着.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "example/example - 自动连接附着.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,9 +107,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "example/example - 自动连接附着.excalidraw.md"
-              }
+              "state": {}
             }
           },
           {
@@ -148,9 +142,17 @@
       "obsidian-excalidraw-plugin-ymjr:新建绘图文件": false
     }
   },
-  "active": "03748a1a273fad3a",
+  "active": "068ec696261acd90",
   "lastOpenFiles": [
+    "example/example - 阴影.excalidraw.md",
+    "example/example - 详情.excalidraw.md",
+    "example/example - 缩略图 全局图.excalidraw.md",
+    "example/example - 思维导图.excalidraw.md",
     "example/example - 代码高亮.excalidraw.md",
+    "example/example - 文字和字体.excalidraw.md",
+    "example/example - 标签.excalidraw.md",
+    "example/example - 渐变.excalidraw.md",
+    "example/example - 自动连接附着.excalidraw.md",
     "example/123.md",
     "example/mindmap from templater_mindmap.excalidraw.md",
     "example/mindmap from templater.md",
@@ -162,7 +164,6 @@
     "examplemindmap from templater.md",
     "example/Drawing 2024-02-02 04.53.35.excalidraw.md",
     "example/example - 视频摘录.excalidraw.md",
-    "example/example - 详情.excalidraw.md",
     "example/My Drawing_0.excalidraw.md",
     "plugins/Excalidraw/Scripts/action",
     "plugins/Excalidraw/Scripts/New folder",
@@ -170,23 +171,16 @@
     "plugins/Excalidraw/Scripts/auto",
     "plugins/Excalidraw/Scripts/autorun",
     "plugins/Excalidraw/Scripts/auto-run",
-    "example/example - 阴影.excalidraw.md",
     "example/attachments/Drawing 2024-02-01 20.47.04.excalidraw_image_20240201204756_054.png",
     "example/My Drawing.excalidraw.md",
     "plugins/Templater/tp.excalidraw.mindmap.md",
     "plugins/Templater",
     "plugins/New folder",
-    "example/example - 自动连接附着.excalidraw.md",
     "images/switch connection shape2.gif",
-    "example/example - 缩略图 全局图.excalidraw.md",
     "example/example - 自定义拉伸箭头.excalidraw.md",
     "example/example - 缩放隐藏显示.excalidraw.md",
     "example/example - 逐个显示&隐藏.excalidraw.md",
-    "example/example - 图层.excalidraw.md",
     "plugins/Excalidraw/Scripts/switch connection shape.svg",
-    "Drawing 2024-01-23 18.20.33.excalidraw.md",
-    "example/example - 文字和字体.excalidraw.md",
-    "example/example - 思维导图.excalidraw.md",
     "example/attachments/example - 图层.excalidraw_image_20240122200846_207.png",
     "example/attachments/example - 详情.excalidraw_image_20240122174500_942.png",
     "example/attachments/example - 详情.excalidraw_image_20240122174444_681.png",

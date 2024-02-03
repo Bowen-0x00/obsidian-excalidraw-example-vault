@@ -118,7 +118,7 @@ Ctrl+Alt+V ^QWkm3RX8
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.17-7",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.19-1",
 	"elements": [
 		{
 			"type": "rectangle",
@@ -516,7 +516,7 @@ Ctrl+Alt+V ^QWkm3RX8
 			"containerId": null,
 			"originalText": "基本的字体切换",
 			"lineHeight": 1.25,
-			"baseline": 35
+			"baseline": 36
 		},
 		{
 			"type": "text",
@@ -689,8 +689,8 @@ Ctrl+Alt+V ^QWkm3RX8
 		},
 		{
 			"type": "frame",
-			"version": 159,
-			"versionNonce": 1591123763,
+			"version": 160,
+			"versionNonce": 1616963258,
 			"isDeleted": false,
 			"id": "RB5uHKpnEqFMHg5Uu9bFL",
 			"fillStyle": "solid",
@@ -710,14 +710,14 @@ Ctrl+Alt+V ^QWkm3RX8
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705911645693,
+			"updated": 1706968462168,
 			"link": null,
 			"locked": false,
 			"customData": {
 				"frameColor": {
 					"stroke": "#D4D4D4",
 					"fill": "#ADADAD",
-					"nameColor": "#949494"
+					"nameColor": "#7A7A7A"
 				}
 			},
 			"name": "字体切换"
@@ -927,8 +927,8 @@ Ctrl+Alt+V ^QWkm3RX8
 		},
 		{
 			"type": "frame",
-			"version": 182,
-			"versionNonce": 1416652819,
+			"version": 183,
+			"versionNonce": 398983034,
 			"isDeleted": false,
 			"id": "qs6Z5Gr51jiGgQkPWxh6Q",
 			"fillStyle": "solid",
@@ -948,14 +948,14 @@ Ctrl+Alt+V ^QWkm3RX8
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705911645693,
+			"updated": 1706968462168,
 			"link": null,
 			"locked": false,
 			"customData": {
 				"frameColor": {
 					"stroke": "#D4D4D4",
 					"fill": "#ADADAD",
-					"nameColor": "#949494"
+					"nameColor": "#7A7A7A"
 				}
 			},
 			"name": "字体加粗"
@@ -1000,7 +1000,7 @@ Ctrl+Alt+V ^QWkm3RX8
 			"containerId": null,
 			"originalText": "字体加粗",
 			"lineHeight": 1.25,
-			"baseline": 35
+			"baseline": 36
 		},
 		{
 			"type": "text",
@@ -1198,8 +1198,8 @@ Ctrl+Alt+V ^QWkm3RX8
 		},
 		{
 			"type": "frame",
-			"version": 212,
-			"versionNonce": 492219165,
+			"version": 213,
+			"versionNonce": 743309370,
 			"isDeleted": false,
 			"id": "3etfVtart2q-QrSU_8Uiz",
 			"fillStyle": "solid",
@@ -1219,14 +1219,14 @@ Ctrl+Alt+V ^QWkm3RX8
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705911963264,
+			"updated": 1706968462168,
 			"link": null,
 			"locked": false,
 			"customData": {
 				"frameColor": {
 					"stroke": "#D4D4D4",
 					"fill": "#ADADAD",
-					"nameColor": "#949494"
+					"nameColor": "#7A7A7A"
 				}
 			},
 			"name": "字体加粗"
@@ -1271,12 +1271,12 @@ Ctrl+Alt+V ^QWkm3RX8
 			"containerId": null,
 			"originalText": "字体渐变",
 			"lineHeight": 1.25,
-			"baseline": 35
+			"baseline": 36
 		},
 		{
 			"type": "text",
-			"version": 254,
-			"versionNonce": 1138569555,
+			"version": 255,
+			"versionNonce": 1435988602,
 			"isDeleted": false,
 			"id": "V3YLEjUv",
 			"fillStyle": "solid",
@@ -1296,7 +1296,7 @@ Ctrl+Alt+V ^QWkm3RX8
 			"frameId": "qs6Z5Gr51jiGgQkPWxh6Q",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705912556655,
+			"updated": 1706968462204,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -1561,8 +1561,8 @@ Ctrl+Alt+V ^QWkm3RX8
 		},
 		{
 			"type": "frame",
-			"version": 322,
-			"versionNonce": 1031585725,
+			"version": 323,
+			"versionNonce": 1775626490,
 			"isDeleted": false,
 			"id": "D5pTQ9IbkX7EM1tHinynG",
 			"fillStyle": "solid",
@@ -1582,14 +1582,14 @@ Ctrl+Alt+V ^QWkm3RX8
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705911664371,
+			"updated": 1706968462168,
 			"link": null,
 			"locked": false,
 			"customData": {
 				"frameColor": {
 					"stroke": "#D4D4D4",
 					"fill": "#ADADAD",
-					"nameColor": "#949494"
+					"nameColor": "#7A7A7A"
 				}
 			},
 			"name": "粘贴为带容器文字"
@@ -1634,12 +1634,12 @@ Ctrl+Alt+V ^QWkm3RX8
 			"containerId": null,
 			"originalText": "粘贴为带容器文字",
 			"lineHeight": 1.25,
-			"baseline": 35
+			"baseline": 36
 		},
 		{
 			"type": "text",
-			"version": 51,
-			"versionNonce": 1489469789,
+			"version": 52,
+			"versionNonce": 128616998,
 			"isDeleted": false,
 			"id": "LXku91IU",
 			"fillStyle": "solid",
@@ -1659,7 +1659,7 @@ Ctrl+Alt+V ^QWkm3RX8
 			"frameId": "RB5uHKpnEqFMHg5Uu9bFL",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705912556656,
+			"updated": 1706968462204,
 			"link": null,
 			"locked": false,
 			"fontSize": 28,
@@ -1675,8 +1675,8 @@ Ctrl+Alt+V ^QWkm3RX8
 		},
 		{
 			"type": "text",
-			"version": 63,
-			"versionNonce": 949792253,
+			"version": 64,
+			"versionNonce": 95884090,
 			"isDeleted": false,
 			"id": "g7K0x4fd",
 			"fillStyle": "solid",
@@ -1696,7 +1696,7 @@ Ctrl+Alt+V ^QWkm3RX8
 			"frameId": "RB5uHKpnEqFMHg5Uu9bFL",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705911645693,
+			"updated": 1706968462204,
 			"link": null,
 			"locked": false,
 			"fontSize": 28,
@@ -1712,8 +1712,8 @@ Ctrl+Alt+V ^QWkm3RX8
 		},
 		{
 			"type": "text",
-			"version": 72,
-			"versionNonce": 443649779,
+			"version": 73,
+			"versionNonce": 593646950,
 			"isDeleted": false,
 			"id": "JFoxAwo8",
 			"fillStyle": "solid",
@@ -1733,7 +1733,7 @@ Ctrl+Alt+V ^QWkm3RX8
 			"frameId": "RB5uHKpnEqFMHg5Uu9bFL",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705912556656,
+			"updated": 1706968462204,
 			"link": null,
 			"locked": false,
 			"fontSize": 28,
@@ -2103,8 +2103,8 @@ Ctrl+Alt+V ^QWkm3RX8
 		},
 		{
 			"type": "frame",
-			"version": 300,
-			"versionNonce": 859524253,
+			"version": 301,
+			"versionNonce": 669170106,
 			"isDeleted": false,
 			"id": "_39LllvYeU7XnPQFF5gyC",
 			"fillStyle": "solid",
@@ -2124,14 +2124,14 @@ Ctrl+Alt+V ^QWkm3RX8
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705912264642,
+			"updated": 1706968462168,
 			"link": null,
 			"locked": false,
 			"customData": {
 				"frameColor": {
 					"stroke": "#D4D4D4",
 					"fill": "#ADADAD",
-					"nameColor": "#949494"
+					"nameColor": "#7A7A7A"
 				}
 			},
 			"name": "字体加粗"
@@ -2176,7 +2176,7 @@ Ctrl+Alt+V ^QWkm3RX8
 			"containerId": null,
 			"originalText": "文字高亮",
 			"lineHeight": 1.25,
-			"baseline": 35
+			"baseline": 36
 		},
 		{
 			"type": "text",
@@ -2426,8 +2426,8 @@ Ctrl+Alt+V ^QWkm3RX8
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 2229.3233979029205,
-		"scrollY": 682.2280941215797,
+		"scrollX": 2110.9305407600636,
+		"scrollY": -224.5241380212774,
 		"zoom": {
 			"value": 0.4
 		},
