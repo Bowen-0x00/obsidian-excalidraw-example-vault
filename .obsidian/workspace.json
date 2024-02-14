@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "8e12e9bc5546450b",
+        "id": "86d588078019e594",
         "type": "tabs",
         "children": [
           {
-            "id": "068ec696261acd90",
+            "id": "2cfa09740aff8984",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "example/example - 按钮.excalidraw.md"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -83,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "example/example - 按钮.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "example/example - 按钮.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,9 +107,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "example/example - 按钮.excalidraw.md"
-              }
+              "state": {}
             }
           },
           {
@@ -148,18 +142,25 @@
       "obsidian-excalidraw-plugin-ymjr:新建绘图文件": false
     }
   },
-  "active": "068ec696261acd90",
+  "active": "2cfa09740aff8984",
   "lastOpenFiles": [
-    "example/Drawing 2024-02-04 00.29.24.excalidraw.md",
-    "example/example - 阴影.excalidraw.md",
+    "example/example - echarts图表.excalidraw.md",
+    "example/example - echarts图表.excalidraw.svg",
     "example/example - 详情.excalidraw.md",
-    "example/example - 缩略图 全局图.excalidraw.md",
+    "example/example - 自动连接附着.excalidraw.md",
     "example/example - 思维导图.excalidraw.md",
     "example/example - 代码高亮.excalidraw.md",
+    "example/example - 代码高亮.excalidraw.svg",
+    "Example vault.7z",
+    "example/example - 自定义拉伸箭头.excalidraw.md",
+    "plugins/Excalidraw/Scripts/autorun-maybeBindLinearElement_Hook.md",
+    "example/example - 按钮.excalidraw.md",
+    "example/Drawing 2024-02-04 00.29.24.excalidraw.md",
+    "example/example - 阴影.excalidraw.md",
+    "example/example - 缩略图 全局图.excalidraw.md",
     "example/example - 文字和字体.excalidraw.md",
     "example/example - 标签.excalidraw.md",
     "example/example - 渐变.excalidraw.md",
-    "example/example - 自动连接附着.excalidraw.md",
     "example/123.md",
     "example/mindmap from templater_mindmap.excalidraw.md",
     "example/mindmap from templater.md",
@@ -171,7 +172,6 @@
     "examplemindmap from templater.md",
     "example/Drawing 2024-02-02 04.53.35.excalidraw.md",
     "example/example - 视频摘录.excalidraw.md",
-    "example/My Drawing_0.excalidraw.md",
     "plugins/Excalidraw/Scripts/action",
     "plugins/Excalidraw/Scripts/New folder",
     "plugins/Excalidraw/Scripts/add",
@@ -179,22 +179,15 @@
     "plugins/Excalidraw/Scripts/autorun",
     "plugins/Excalidraw/Scripts/auto-run",
     "example/attachments/Drawing 2024-02-01 20.47.04.excalidraw_image_20240201204756_054.png",
-    "example/My Drawing.excalidraw.md",
-    "plugins/Templater/tp.excalidraw.mindmap.md",
     "plugins/Templater",
     "plugins/New folder",
     "images/switch connection shape2.gif",
-    "example/example - 自定义拉伸箭头.excalidraw.md",
-    "example/example - 缩放隐藏显示.excalidraw.md",
     "plugins/Excalidraw/Scripts/switch connection shape.svg",
     "example/attachments/example - 图层.excalidraw_image_20240122200846_207.png",
     "example/attachments/example - 详情.excalidraw_image_20240122174500_942.png",
     "example/attachments/example - 详情.excalidraw_image_20240122174444_681.png",
     "example/attachments/example - library.excalidraw_image_20240122170820_953.png",
     "example/attachments/example - library.excalidraw_image_20240122170708_280.png",
-    "example/attachments",
-    "example/attachments/example - library.excalidraw_image_20240122170611_060.png",
-    "example",
-    "example images/font.gif"
+    "example/attachments"
   ]
 }

@@ -102,8 +102,8 @@ Shift + 点击试试 ^0t6IBkmc
 		},
 		{
 			"type": "text",
-			"version": 415,
-			"versionNonce": 121181785,
+			"version": 416,
+			"versionNonce": 716805508,
 			"isDeleted": false,
 			"id": "IwkDG79G",
 			"fillStyle": "solid",
@@ -125,7 +125,7 @@ Shift + 点击试试 ^0t6IBkmc
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1706981127122,
+			"updated": 1707224269226,
 			"link": null,
 			"locked": false,
 			"fontSize": 28,
@@ -137,7 +137,7 @@ Shift + 点击试试 ^0t6IBkmc
 			"containerId": null,
 			"originalText": "Button",
 			"lineHeight": 1.2,
-			"baseline": 26
+			"baseline": 27
 		},
 		{
 			"type": "text",
@@ -192,10 +192,10 @@ Shift + 点击试试 ^0t6IBkmc
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 823.2305080666688,
-		"scrollY": 545.7872928029651,
+		"scrollX": 317.2110290527344,
+		"scrollY": 273.43325133659323,
 		"zoom": {
-			"value": 1.1913254971125227
+			"value": 2
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
