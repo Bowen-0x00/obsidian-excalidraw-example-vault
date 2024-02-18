@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "86d588078019e594",
+        "id": "f1a1e5f676e968ae",
         "type": "tabs",
         "children": [
           {
-            "id": "2cfa09740aff8984",
+            "id": "cefd85a3f2a53050",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -142,8 +142,9 @@
       "obsidian-excalidraw-plugin-ymjr:新建绘图文件": false
     }
   },
-  "active": "2cfa09740aff8984",
+  "active": "cefd85a3f2a53050",
   "lastOpenFiles": [
+    "example/example - 箭头连接元素.excalidraw.md",
     "example/example - echarts图表.excalidraw.md",
     "example/example - echarts图表.excalidraw.svg",
     "example/example - 详情.excalidraw.md",
