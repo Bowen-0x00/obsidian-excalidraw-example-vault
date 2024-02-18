@@ -13,6 +13,16 @@ You can watch this [video](https://www.bilibili.com/video/BV1zN4y1H7Dx/?vd_sourc
 ## Installation and Usage
 This is a packaged obsidian vault that includes the modified plugin and many custom scripts. You can directly open it with Obsidian and experience the features.
 
+### Precautions
+Please make sure to backup your work to ensure that your important content is not lost (such as saving abnormalities caused by insufficient memory).
+
+For example:
+
+- Use git version control.
+- Utilize onedrive for cloud synchronization and version control.
+- Enable file recovery plugins in the core plugins.
+### Steps to Follow
+
 1. Clone or download the compressed package and extract it.
 2. Open Obsidian and select this folder (the folder you cloned or extracted in the previous step).
 
