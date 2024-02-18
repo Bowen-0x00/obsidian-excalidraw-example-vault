@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f1a1e5f676e968ae",
+        "id": "16b680bd7b5d19ba",
         "type": "tabs",
         "children": [
           {
-            "id": "cefd85a3f2a53050",
+            "id": "1c7f7301a73be443",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -131,24 +131,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "workspaces:管理工作区布局": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-excalidraw-plugin-ymjr:新建绘图文件": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
+      "obsidian-excalidraw-plugin-ymjr:Create new drawing": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "cefd85a3f2a53050",
+  "active": "1c7f7301a73be443",
   "lastOpenFiles": [
+    "example/example - 自动连接附着.excalidraw.md",
+    "Welcome.md",
     "example/example - 箭头连接元素.excalidraw.md",
     "example/example - echarts图表.excalidraw.md",
     "example/example - echarts图表.excalidraw.svg",
     "example/example - 详情.excalidraw.md",
-    "example/example - 自动连接附着.excalidraw.md",
     "example/example - 思维导图.excalidraw.md",
     "example/example - 代码高亮.excalidraw.md",
     "example/example - 代码高亮.excalidraw.svg",
@@ -172,7 +173,6 @@
     "example/mindmap from templater_mindmap_0.excalidraw.md",
     "examplemindmap from templater.md",
     "example/Drawing 2024-02-02 04.53.35.excalidraw.md",
-    "example/example - 视频摘录.excalidraw.md",
     "plugins/Excalidraw/Scripts/action",
     "plugins/Excalidraw/Scripts/New folder",
     "plugins/Excalidraw/Scripts/add",
