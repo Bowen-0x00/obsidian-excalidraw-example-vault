@@ -11,11 +11,24 @@
             "id": "1c7f7301a73be443",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "excalidraw",
+              "state": {
+                "file": "example/example - 日历素材.excalidraw.md"
+              }
+            }
+          },
+          {
+            "id": "fce8383afcc895b6",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "example/example - 圆圈编号.excalidraw.md"
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "example/example - 圆圈编号.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "example/example - 圆圈编号.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -107,7 +122,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "example/example - 圆圈编号.excalidraw.md"
+              }
             }
           },
           {
@@ -142,8 +159,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1c7f7301a73be443",
+  "active": "fce8383afcc895b6",
   "lastOpenFiles": [
+    "example/example - 日历素材.excalidraw.md",
+    "example/example - 圆圈编号.excalidraw.md",
+    "example/attachments/example - 圆圈编号.excalidraw_image_20240219142439_353.png",
     "example/example - 自动连接附着.excalidraw.md",
     "Welcome.md",
     "example/example - 箭头连接元素.excalidraw.md",
@@ -170,9 +190,6 @@
     "example/mindmap from templater_mindmap_3.excalidraw.md",
     "example/mindmap from templater_mindmap_2.excalidraw.md",
     "example/mindmap from templater_mindmap_1.excalidraw.md",
-    "example/mindmap from templater_mindmap_0.excalidraw.md",
-    "examplemindmap from templater.md",
-    "example/Drawing 2024-02-02 04.53.35.excalidraw.md",
     "plugins/Excalidraw/Scripts/action",
     "plugins/Excalidraw/Scripts/New folder",
     "plugins/Excalidraw/Scripts/add",
@@ -188,7 +205,6 @@
     "example/attachments/example - 详情.excalidraw_image_20240122174500_942.png",
     "example/attachments/example - 详情.excalidraw_image_20240122174444_681.png",
     "example/attachments/example - library.excalidraw_image_20240122170820_953.png",
-    "example/attachments/example - library.excalidraw_image_20240122170708_280.png",
     "example/attachments"
   ]
 }

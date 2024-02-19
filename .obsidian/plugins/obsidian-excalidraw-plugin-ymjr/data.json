@@ -75,7 +75,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.20-1",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.20-2",
     "libraryItems": []
   },
   "imageElementNotice": true,
@@ -338,6 +338,20 @@
       "Line points": {
         "value": 1,
         "description": "Number of line points between start and end"
+      }
+    },
+    "add bulleted number": {
+      "Starting index": {
+        "value": 1,
+        "description": "Starting index"
+      },
+      "use color list": {
+        "value": false,
+        "description": "Whether set bullet background color in color list"
+      },
+      "color list": {
+        "value": "#FFADAD, #FFD6A5, #FDFFB6, #CAFFBF, #9BF6FF, #A0C4FF, #BDB2FF, #FFC6FF",
+        "description": "Starting index"
       }
     }
   },

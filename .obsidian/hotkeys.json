@@ -109,5 +109,13 @@
       ],
       "key": "ArrowDown"
     }
+  ],
+  "obsidian-excalidraw-plugin-ymjr:add bulleted number": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "B"
+    }
   ]
 }
