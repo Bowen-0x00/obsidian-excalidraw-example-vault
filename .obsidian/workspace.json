@@ -107,7 +107,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "plugins/Drawing 2024-02-20 15.39.54.excalidraw.md"
+              }
             }
           },
           {
@@ -142,8 +144,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "192f10a81644b079",
+  "active": "587ccf90dd5151c5",
   "lastOpenFiles": [
+    "plugins/Drawing 2024-02-20 15.39.54.excalidraw.md",
     "example/example - 自动连接附着.excalidraw.md",
     "example/example - 箭头连接元素.excalidraw.md",
     "example/Drawing 2024-02-20 14.25.57.excalidraw.md",
@@ -173,7 +176,6 @@
     "example/mindmap from templater_mindmap_4.excalidraw.md",
     "example/mindmap from templater_mindmap_3.excalidraw.md",
     "example/mindmap from templater_mindmap_2.excalidraw.md",
-    "example/mindmap from templater_mindmap_1.excalidraw.md",
     "plugins/Excalidraw/Scripts/action",
     "plugins/Excalidraw/Scripts/New folder",
     "plugins/Excalidraw/Scripts/add",
