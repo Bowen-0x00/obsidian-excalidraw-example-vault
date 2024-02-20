@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "38c91642d8bc693b",
+        "id": "c127b27df358098e",
         "type": "tabs",
         "children": [
           {
-            "id": "652c8ca312eec250",
+            "id": "192f10a81644b079",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -142,16 +142,16 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "652c8ca312eec250",
+  "active": "192f10a81644b079",
   "lastOpenFiles": [
     "example/example - 自动连接附着.excalidraw.md",
+    "example/example - 箭头连接元素.excalidraw.md",
     "example/Drawing 2024-02-20 14.25.57.excalidraw.md",
     "example/example - 文字和字体.excalidraw.md",
     "example/example - 圆圈编号.excalidraw.md",
     "example/example - 日历素材.excalidraw.md",
     "example/attachments/example - 圆圈编号.excalidraw_image_20240219142439_353.png",
     "Welcome.md",
-    "example/example - 箭头连接元素.excalidraw.md",
     "example/example - echarts图表.excalidraw.md",
     "example/example - echarts图表.excalidraw.svg",
     "example/example - 详情.excalidraw.md",

@@ -654,29 +654,29 @@ tags: [excalidraw]
 			]
 		},
 		{
-			"id": "OjTbTAe69zkaHYOmR3CUJ",
 			"type": "frame",
-			"x": 307.83569626581095,
-			"y": 592.2508719308034,
-			"width": 172.57149832589278,
-			"height": 453.71433803013406,
-			"angle": 0,
-			"strokeColor": "#bbb",
-			"backgroundColor": "transparent",
+			"version": 341,
+			"versionNonce": 1932700188,
+			"isDeleted": true,
+			"id": "ZfzpCt7ISQ5cCCTUBVBXP",
 			"fillStyle": "solid",
 			"strokeWidth": 2,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": 712.1282717187869,
+			"y": 1032.3649585413496,
+			"strokeColor": "#bbb",
+			"backgroundColor": "transparent",
+			"width": 429.0910200639205,
+			"height": 507.636385830966,
+			"seed": 1146115352,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
-			"seed": 2051928678,
-			"version": 36,
-			"versionNonce": 433081786,
-			"isDeleted": true,
 			"boundElements": [],
-			"updated": 1708411950961,
+			"updated": 1708414172465,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -689,12 +689,66 @@ tags: [excalidraw]
 			"name": null
 		},
 		{
-			"id": "paY6IPiR98zkoytqG-776",
 			"type": "arrow",
-			"x": 7.264232817150287,
-			"y": 563.6794433593749,
-			"width": 284.5714460100446,
-			"height": 183.77811687982887,
+			"version": 66,
+			"versionNonce": 861169060,
+			"isDeleted": true,
+			"id": "7HpAyuGmohJ_odQcQKF5E",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"angle": 0,
+			"x": 78.38262186083239,
+			"y": 705.382980558395,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#a5d8ff",
+			"width": 404.363680752841,
+			"height": 263.99670864172117,
+			"seed": 989876248,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"boundElements": [],
+			"updated": 1708414146388,
+			"link": null,
+			"locked": false,
+			"customData": {
+				"svgPathShape": "M 0 0 C 202.18 0 404.36 132 404.36 249 L 404.36 264",
+				"connectionShape": {
+					"shape": "curve"
+				}
+			},
+			"startBinding": null,
+			"endBinding": {
+				"elementId": "ZfzpCt7ISQ5cCCTUBVBXP",
+				"focus": -0.047511357304811666,
+				"gap": 10.181773792613512
+			},
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					404.363680752841,
+					263.99670864172117
+				]
+			]
+		},
+		{
+			"id": "aqNGzRAHeP8Hkht4oQkJX",
+			"type": "arrow",
+			"x": 122.14992268880201,
+			"y": 656.6361969359135,
+			"width": 566.4002685546875,
+			"height": 469.20308381386633,
 			"angle": 0,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#a5d8ff",
@@ -708,12 +762,12 @@ tags: [excalidraw]
 			"roundness": {
 				"type": 2
 			},
-			"seed": 654223014,
-			"version": 58,
-			"versionNonce": 2017453990,
+			"seed": 67180580,
+			"version": 332,
+			"versionNonce": 1761901092,
 			"isDeleted": true,
 			"boundElements": null,
-			"updated": 1708411950961,
+			"updated": 1708414172465,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -722,21 +776,21 @@ tags: [excalidraw]
 					0
 				],
 				[
-					284.5714460100446,
-					183.77811687982887
+					566.4002685546875,
+					469.20308381386633
 				]
 			],
 			"lastCommittedPoint": null,
 			"startBinding": null,
 			"endBinding": {
-				"elementId": "OjTbTAe69zkaHYOmR3CUJ",
-				"gap": 16.000017438616055,
-				"focus": 0.019794878175382134
+				"elementId": "ZfzpCt7ISQ5cCCTUBVBXP",
+				"focus": -0.0855446281291656,
+				"gap": 23.578080475297384
 			},
 			"startArrowhead": null,
 			"endArrowhead": "arrow",
 			"customData": {
-				"svgPathShape": "M 0 0 C 142.29 0 142.29 142.86 269.57 142.86 L 284.57 142.86",
+				"svgPathShape": "M 0 0 C 283.2 0 566.4 234.6 566.4 454.2 L 566.4 469.2",
 				"connectionShape": {
 					"shape": "curve"
 				}
@@ -758,10 +812,10 @@ tags: [excalidraw]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 654.8786243257068,
-		"scrollY": -3.7151598249162134,
+		"scrollX": 998.4500528971355,
+		"scrollY": 132.11378780529742,
 		"zoom": {
-			"value": 0.7000000000000001
+			"value": 0.5
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
