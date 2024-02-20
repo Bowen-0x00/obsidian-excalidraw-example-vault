@@ -15,7 +15,7 @@ tags: [excalidraw]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.20-1",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.20-2",
 	"elements": [
 		{
 			"type": "rectangle",
@@ -652,6 +652,95 @@ tags: [excalidraw]
 					101.06642150878929
 				]
 			]
+		},
+		{
+			"id": "OjTbTAe69zkaHYOmR3CUJ",
+			"type": "frame",
+			"x": 307.83569626581095,
+			"y": 592.2508719308034,
+			"width": 172.57149832589278,
+			"height": 453.71433803013406,
+			"angle": 0,
+			"strokeColor": "#bbb",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 2051928678,
+			"version": 36,
+			"versionNonce": 433081786,
+			"isDeleted": true,
+			"boundElements": [],
+			"updated": 1708411950961,
+			"link": null,
+			"locked": false,
+			"customData": {
+				"frameColor": {
+					"stroke": "#D4D4D4",
+					"fill": "#ADADAD",
+					"nameColor": "#7A7A7A"
+				}
+			},
+			"name": null
+		},
+		{
+			"id": "paY6IPiR98zkoytqG-776",
+			"type": "arrow",
+			"x": 7.264232817150287,
+			"y": 563.6794433593749,
+			"width": 284.5714460100446,
+			"height": 183.77811687982887,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#a5d8ff",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"seed": 654223014,
+			"version": 58,
+			"versionNonce": 2017453990,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1708411950961,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					284.5714460100446,
+					183.77811687982887
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": null,
+			"endBinding": {
+				"elementId": "OjTbTAe69zkaHYOmR3CUJ",
+				"gap": 16.000017438616055,
+				"focus": 0.019794878175382134
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow",
+			"customData": {
+				"svgPathShape": "M 0 0 C 142.29 0 142.29 142.86 269.57 142.86 L 284.57 142.86",
+				"connectionShape": {
+					"shape": "curve"
+				}
+			}
 		}
 	],
 	"appState": {
@@ -670,7 +759,7 @@ tags: [excalidraw]
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
 		"scrollX": 654.8786243257068,
-		"scrollY": 710.570554460798,
+		"scrollY": -3.7151598249162134,
 		"zoom": {
 			"value": 0.7000000000000001
 		},
