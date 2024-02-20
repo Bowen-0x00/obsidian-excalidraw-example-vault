@@ -117,5 +117,14 @@
       ],
       "key": "B"
     }
+  ],
+  "obsidian-excalidraw-plugin-ymjr:add partial color": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "["
+    }
   ]
 }
