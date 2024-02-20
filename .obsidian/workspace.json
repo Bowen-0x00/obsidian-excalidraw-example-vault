@@ -11,8 +11,10 @@
             "id": "192f10a81644b079",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "excalidraw",
+              "state": {
+                "file": "example/example - 自动连接附着.excalidraw.md"
+              }
             }
           }
         ]
@@ -81,6 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "example/example - 自动连接附着.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "example/example - 自动连接附着.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -108,7 +112,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "plugins/Drawing 2024-02-20 15.39.54.excalidraw.md"
+                "file": "example/example - 自动连接附着.excalidraw.md"
               }
             }
           },
@@ -144,7 +148,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "587ccf90dd5151c5",
+  "active": "192f10a81644b079",
   "lastOpenFiles": [
     "plugins/Drawing 2024-02-20 15.39.54.excalidraw.md",
     "example/example - 自动连接附着.excalidraw.md",

@@ -41,6 +41,7 @@
   "hoverPreviewWithoutCTRL": false,
   "linkOpacity": 1,
   "openInAdjacentPane": false,
+  "focusOnFileTab": false,
   "openInMainWorkspace": true,
   "showLinkBrackets": true,
   "allowCtrlClick": true,
@@ -75,7 +76,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.20-2",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.21-1",
     "libraryItems": []
   },
   "imageElementNotice": true,
@@ -356,7 +357,7 @@
     }
   },
   "defaultTrayMode": true,
-  "previousRelease": "2.0.20-1",
+  "previousRelease": "2.0.21-1",
   "showReleaseNotes": true,
   "showNewVersionNotification": true,
   "latexBoilerplate": "\\color{blue}",
@@ -1015,5 +1016,6 @@
   "showAllArrowOption": true,
   "classifyLibrary": true,
   "exportMD2PngInSVG": false,
-  "mindmapHandle": true
+  "mindmapHandle": true,
+  "scriptStoreUrl": "https://github.com/Bowen-0x00/obsidian-excalidraw-scripts/blob/main/Scripts/index.md"
 }
