@@ -29,7 +29,7 @@ tags: [excalidraw]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.17-7",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.21-1",
 	"elements": [
 		{
 			"type": "rectangle",
@@ -210,7 +210,37 @@ tags: [excalidraw]
 			"containerId": null,
 			"originalText": "你可以像使用ob标签那样来定位到画布的元素",
 			"lineHeight": 1.25,
-			"baseline": 27
+			"baseline": 28
+		},
+		{
+			"id": "g0vpIBlN_rFEnDrxmy_AU",
+			"type": "rectangle",
+			"x": -349.0610797519557,
+			"y": 187.2446934744221,
+			"width": 215.3966578183386,
+			"height": 150.38955838667778,
+			"angle": 0,
+			"strokeColor": "#0c8599",
+			"backgroundColor": "#b2f2bb",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 3
+			},
+			"seed": 1951994779,
+			"version": 13,
+			"versionNonce": 1388539605,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1708525151959,
+			"link": null,
+			"locked": false,
+			"customData": {}
 		}
 	],
 	"appState": {
@@ -228,10 +258,10 @@ tags: [excalidraw]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 893.0376766059459,
-		"scrollY": 662.7415325480755,
+		"scrollX": 561.7702941894531,
+		"scrollY": 461.2045230780684,
 		"zoom": {
-			"value": 1.2174000545922177
+			"value": 1
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,

@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "c127b27df358098e",
+        "id": "87c50e40b9f12aee",
         "type": "tabs",
         "children": [
           {
-            "id": "192f10a81644b079",
+            "id": "98670de8f8fea1d9",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "example/example - 自动连接附着.excalidraw.md"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -83,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "example/example - 自动连接附着.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "example/example - 自动连接附着.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,9 +107,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "example/example - 自动连接附着.excalidraw.md"
-              }
+              "state": {}
             }
           },
           {
@@ -148,10 +142,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "192f10a81644b079",
+  "active": "98670de8f8fea1d9",
   "lastOpenFiles": [
-    "plugins/Drawing 2024-02-20 15.39.54.excalidraw.md",
+    "example/example - 标签.excalidraw.md",
     "example/example - 自动连接附着.excalidraw.md",
+    "plugins/Drawing 2024-02-20 15.39.54.excalidraw.md",
     "example/example - 箭头连接元素.excalidraw.md",
     "example/Drawing 2024-02-20 14.25.57.excalidraw.md",
     "example/example - 文字和字体.excalidraw.md",
@@ -172,7 +167,6 @@
     "example/Drawing 2024-02-04 00.29.24.excalidraw.md",
     "example/example - 阴影.excalidraw.md",
     "example/example - 缩略图 全局图.excalidraw.md",
-    "example/example - 标签.excalidraw.md",
     "example/example - 渐变.excalidraw.md",
     "example/123.md",
     "example/mindmap from templater_mindmap.excalidraw.md",
