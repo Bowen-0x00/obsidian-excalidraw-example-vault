@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "87c50e40b9f12aee",
+        "id": "f3b20e1b9c6e19d9",
         "type": "tabs",
         "children": [
           {
-            "id": "98670de8f8fea1d9",
+            "id": "1bb2e6a1ed17fd60",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -142,10 +142,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "98670de8f8fea1d9",
+  "active": "1bb2e6a1ed17fd60",
   "lastOpenFiles": [
-    "example/example - 标签.excalidraw.md",
     "example/example - 自动连接附着.excalidraw.md",
+    "example/example - 详情.excalidraw.md",
+    "example/example - 思维导图.excalidraw.md",
+    "example/example - 标签.excalidraw.md",
     "plugins/Drawing 2024-02-20 15.39.54.excalidraw.md",
     "example/example - 箭头连接元素.excalidraw.md",
     "example/Drawing 2024-02-20 14.25.57.excalidraw.md",
@@ -156,8 +158,6 @@
     "Welcome.md",
     "example/example - echarts图表.excalidraw.md",
     "example/example - echarts图表.excalidraw.svg",
-    "example/example - 详情.excalidraw.md",
-    "example/example - 思维导图.excalidraw.md",
     "example/example - 代码高亮.excalidraw.md",
     "example/example - 代码高亮.excalidraw.svg",
     "Example vault.7z",
