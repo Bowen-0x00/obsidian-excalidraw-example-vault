@@ -31,8 +31,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 	"elements": [
 		{
 			"type": "rectangle",
-			"version": 220,
-			"versionNonce": 302615627,
+			"version": 226,
+			"versionNonce": 224873819,
 			"isDeleted": false,
 			"id": "hyBh7ZRFvDCrBhsvXt9sf",
 			"fillStyle": "solid",
@@ -41,8 +41,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"roughness": 0,
 			"opacity": 0,
 			"angle": 0,
-			"x": -343.8727039084321,
-			"y": -388.9896496384571,
+			"x": -259.1668215554911,
+			"y": -417.22490785307104,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#f8f9fa",
 			"width": 626.999969482422,
@@ -54,7 +54,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1708608925278,
+			"updated": 1708681068635,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -64,8 +64,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 		},
 		{
 			"type": "rectangle",
-			"version": 858,
-			"versionNonce": 857278172,
+			"version": 896,
+			"versionNonce": 759240164,
 			"isDeleted": false,
 			"id": "fSLqLGLskW71fKRL4Jjom",
 			"fillStyle": "solid",
@@ -74,8 +74,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -611.9772236928274,
-			"y": -154.72923570369778,
+			"x": -527.2713413398864,
+			"y": -182.96449391831175,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#f3f0ff",
 			"width": 220,
@@ -92,7 +92,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 					"id": "JWVidaYp"
 				}
 			],
-			"updated": 1708608925278,
+			"updated": 1708681068635,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -112,8 +112,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 		},
 		{
 			"type": "text",
-			"version": 725,
-			"versionNonce": 433421847,
+			"version": 757,
+			"versionNonce": 126547183,
 			"isDeleted": false,
 			"id": "JWVidaYp",
 			"fillStyle": "solid",
@@ -122,8 +122,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -573.9772236928274,
-			"y": -114.4292173931509,
+			"x": -489.27134133988636,
+			"y": -142.66447560776487,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 144,
@@ -133,7 +133,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708608924163,
+			"updated": 1708681066426,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -145,12 +145,12 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"containerId": "fSLqLGLskW71fKRL4Jjom",
 			"originalText": "欧拉公式",
 			"lineHeight": 1.25,
-			"baseline": 32
+			"baseline": 31
 		},
 		{
 			"type": "rectangle",
-			"version": 169,
-			"versionNonce": 195755319,
+			"version": 175,
+			"versionNonce": 841347476,
 			"isDeleted": false,
 			"id": "shztdZPw",
 			"fillStyle": "hachure",
@@ -159,8 +159,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"roughness": 1,
 			"opacity": 0,
 			"angle": 0,
-			"x": -265.39597366148325,
-			"y": -315.3302037947916,
+			"x": -180.69009130854226,
+			"y": -343.56546200940556,
 			"strokeColor": "transparent",
 			"backgroundColor": "transparent",
 			"width": 485.59997558593756,
@@ -175,7 +175,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 					"id": "tQus9Eh8"
 				}
 			],
-			"updated": 1708608925278,
+			"updated": 1708681068635,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -185,8 +185,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 		},
 		{
 			"type": "text",
-			"version": 325,
-			"versionNonce": 1151442521,
+			"version": 337,
+			"versionNonce": 1106971905,
 			"isDeleted": false,
 			"id": "tQus9Eh8",
 			"fillStyle": "hachure",
@@ -195,8 +195,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"roughness": 1,
 			"opacity": 0,
 			"angle": 0,
-			"x": -260.39597366148325,
-			"y": -310.3302037947916,
+			"x": -175.69009130854226,
+			"y": -338.56546200940556,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 467,
@@ -206,7 +206,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708608925288,
+			"updated": 1708681068645,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -226,8 +226,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 		},
 		{
 			"type": "image",
-			"version": 169,
-			"versionNonce": 980721637,
+			"version": 175,
+			"versionNonce": 381626376,
 			"isDeleted": false,
 			"id": "AqsGAkQQ",
 			"fillStyle": "hachure",
@@ -236,8 +236,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"roughness": 1,
 			"opacity": 0,
 			"angle": 0,
-			"x": -225.79599807554575,
-			"y": -194.49683994388022,
+			"x": -141.09011572260476,
+			"y": -222.73209815849418,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 180,
@@ -247,7 +247,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708608925278,
+			"updated": 1708681068635,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -266,8 +266,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 		},
 		{
 			"type": "image",
-			"version": 233,
-			"versionNonce": 687506778,
+			"version": 239,
+			"versionNonce": 453841291,
 			"isDeleted": false,
 			"id": "wff1q6Ym9S00vl2ktKZmQ",
 			"fillStyle": "solid",
@@ -276,8 +276,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"roughness": 0,
 			"opacity": 0,
 			"angle": 0,
-			"x": -262.09592483335825,
-			"y": -154.13022210533848,
+			"x": -177.39004248041726,
+			"y": -182.36548031995244,
 			"strokeColor": "transparent",
 			"backgroundColor": "#f3f0ff",
 			"width": 376.59997558593744,
@@ -287,7 +287,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708608925278,
+			"updated": 1708681068635,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -303,8 +303,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 		},
 		{
 			"type": "image",
-			"version": 237,
-			"versionNonce": 240962083,
+			"version": 243,
+			"versionNonce": 253698507,
 			"isDeleted": false,
 			"id": "aEQW_fGc8mAdNFN1kUxFQ",
 			"fillStyle": "solid",
@@ -313,8 +313,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"roughness": 0,
 			"opacity": 0,
 			"angle": 0,
-			"x": -259.56229901146855,
-			"y": 226.11833507492423,
+			"x": -174.85641665852756,
+			"y": 197.88307686031027,
 			"strokeColor": "transparent",
 			"backgroundColor": "#f3f0ff",
 			"width": 490.7329192546583,
@@ -324,7 +324,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708608925278,
+			"updated": 1708681068635,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -378,7 +378,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"containerId": null,
 			"originalText": "你可以点击元素右上角的图标来展开/折叠详情/批注",
 			"lineHeight": 1.25,
-			"baseline": 36
+			"baseline": 35
 		},
 		{
 			"type": "arrow",
@@ -444,10 +444,10 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 978.5742335660447,
-		"scrollY": 784.2418321832627,
+		"scrollX": 1103.3607154664971,
+		"scrollY": 642.223867178388,
 		"zoom": {
-			"value": 0.8000000000000002
+			"value": 0.8500000000000001
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
