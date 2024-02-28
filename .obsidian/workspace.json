@@ -4,15 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b56c66202e74ae68",
+        "id": "e56251790fddc5d9",
         "type": "tabs",
         "children": [
           {
-            "id": "99245f75d3ad121b",
+            "id": "66fd0e061986b1ef",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "excalidraw",
+              "state": {
+                "file": "example/摘录方式.excalidraw.md"
+              }
             }
           }
         ]
@@ -65,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 295.5,
-    "collapsed": true
+    "width": 295.5
   },
   "right": {
     "id": "975f8a95335c54f4",
@@ -82,6 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "example/摘录方式.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "example/摘录方式.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -108,7 +111,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "example/摘录方式.excalidraw.md"
+              }
             }
           },
           {
@@ -143,8 +148,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "99245f75d3ad121b",
+  "active": "66fd0e061986b1ef",
   "lastOpenFiles": [
+    "images/icons/eagle.png",
+    "images/icons/javascrip.png",
+    "example/摘录方式.excalidraw.md",
+    "images/icons/vecteezy_javascript-file-vector-icon-design_15802225.png",
+    "images/icons/BookxNotePro.png",
     "example/example - svg转excalidraw - 文字.excalidraw.md",
     "example/example - 高亮连接.excalidraw.md",
     "example/attachments/example - 高亮连接.excalidraw_image_20240228112402_358.svg",
@@ -156,9 +166,6 @@
     "plugins/Excalidraw/Library/polygons.excalidrawlib",
     "example/attachments/example - 箭头动画.excalidraw_image_20240226163517_430.png",
     "example/attachments/example - 箭头动画.excalidraw_image_20240226163517_409.png",
-    "example/attachments/example - 箭头动画.excalidraw_image_20240226163517_394.png",
-    "example/attachments/example - 箭头动画.excalidraw_image_20240226163517_381.png",
-    "example/attachments/example - 箭头动画.excalidraw_image_20240226163517_376.png",
     "example/mindmap from templater.md",
     "example/456.excalidraw.md",
     "example/123.md",
@@ -181,7 +188,6 @@
     "plugins/Excalidraw/Scripts/autorun-maybeBindLinearElement_Hook.md",
     "example/example - 按钮.excalidraw.md",
     "example/Drawing 2024-02-04 00.29.24.excalidraw.md",
-    "example/example - 阴影.excalidraw.md",
     "plugins/Excalidraw/Scripts/action",
     "plugins/Excalidraw/Scripts/New folder",
     "plugins/Excalidraw/Scripts/add",
