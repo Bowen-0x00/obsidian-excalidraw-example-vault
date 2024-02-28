@@ -11,8 +11,10 @@
             "id": "3427e5287c248ec8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "excalidraw",
+              "state": {
+                "file": "example/example - svg转excalidraw - 文字.excalidraw.md"
+              }
             }
           }
         ]
@@ -81,6 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "example/example - svg转excalidraw - 文字.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "example/example - svg转excalidraw - 文字.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -107,7 +111,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "example/example - svg转excalidraw - 文字.excalidraw.md"
+              }
             }
           },
           {
@@ -144,6 +150,8 @@
   },
   "active": "3427e5287c248ec8",
   "lastOpenFiles": [
+    "example/attachments/example - svg转excalidraw - 文字.excalidraw_image_20240228011522_441.png",
+    "example/example - svg转excalidraw - 文字.excalidraw.md",
     "example/example - 箭头动画.excalidraw.md",
     "plugins/Excalidraw/Library/polygons.excalidrawlib",
     "example/attachments/example - 箭头动画.excalidraw_image_20240226163517_430.png",
@@ -180,7 +188,6 @@
     "example/Drawing 2024-02-04 00.29.24.excalidraw.md",
     "example/example - 阴影.excalidraw.md",
     "example/example - 缩略图 全局图.excalidraw.md",
-    "example/example - 渐变.excalidraw.md",
     "plugins/Excalidraw/Scripts/action",
     "plugins/Excalidraw/Scripts/New folder",
     "plugins/Excalidraw/Scripts/add",
