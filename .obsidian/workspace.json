@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "58f331f2b3214cf9",
+        "id": "b56c66202e74ae68",
         "type": "tabs",
         "children": [
           {
-            "id": "3427e5287c248ec8",
+            "id": "99245f75d3ad121b",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "example/example - svg转excalidraw - 文字.excalidraw.md"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -67,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 295.5
+    "width": 295.5,
+    "collapsed": true
   },
   "right": {
     "id": "975f8a95335c54f4",
@@ -83,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "example/example - svg转excalidraw - 文字.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "example/example - svg转excalidraw - 文字.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,9 +108,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "example/example - svg转excalidraw - 文字.excalidraw.md"
-              }
+              "state": {}
             }
           },
           {
@@ -148,10 +143,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3427e5287c248ec8",
+  "active": "99245f75d3ad121b",
   "lastOpenFiles": [
-    "example/attachments/example - svg转excalidraw - 文字.excalidraw_image_20240228011522_441.png",
     "example/example - svg转excalidraw - 文字.excalidraw.md",
+    "example/example - 高亮连接.excalidraw.md",
+    "example/attachments/example - 高亮连接.excalidraw_image_20240228112402_358.svg",
+    "example/attachments/example - 高亮连接.excalidraw_image_20240228112402_353.svg",
+    "example/attachments/example - 高亮连接.excalidraw_image_20240228112402_342.svg",
+    "example/attachments/example - 高亮连接.excalidraw_image_20240228112402_337.svg",
+    "example/attachments/example - svg转excalidraw - 文字.excalidraw_image_20240228011522_441.png",
     "example/example - 箭头动画.excalidraw.md",
     "plugins/Excalidraw/Library/polygons.excalidrawlib",
     "example/attachments/example - 箭头动画.excalidraw_image_20240226163517_430.png",
@@ -159,11 +159,6 @@
     "example/attachments/example - 箭头动画.excalidraw_image_20240226163517_394.png",
     "example/attachments/example - 箭头动画.excalidraw_image_20240226163517_381.png",
     "example/attachments/example - 箭头动画.excalidraw_image_20240226163517_376.png",
-    "example/attachments/example - 箭头动画.excalidraw_image_20240226163517_361.png",
-    "example/attachments/example - 箭头动画.excalidraw_image_20240226163517_341.png",
-    "example/attachments/example - 箭头动画.excalidraw_image_20240226163517_337.png",
-    "example/attachments/example - 箭头动画.excalidraw_image_20240226163517_330.png",
-    "example/attachments/example - 箭头动画.excalidraw_image_20240226160212_363.png",
     "example/mindmap from templater.md",
     "example/456.excalidraw.md",
     "example/123.md",
@@ -187,7 +182,6 @@
     "example/example - 按钮.excalidraw.md",
     "example/Drawing 2024-02-04 00.29.24.excalidraw.md",
     "example/example - 阴影.excalidraw.md",
-    "example/example - 缩略图 全局图.excalidraw.md",
     "plugins/Excalidraw/Scripts/action",
     "plugins/Excalidraw/Scripts/New folder",
     "plugins/Excalidraw/Scripts/add",
