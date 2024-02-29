@@ -23,13 +23,15 @@ tags: [excalidraw]
 
 #绿色
 
+#菱形
+
 %%
 # Drawing
 ```json
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.21-1",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.23-4",
 	"elements": [
 		{
 			"type": "rectangle",
@@ -68,8 +70,8 @@ tags: [excalidraw]
 		},
 		{
 			"type": "ellipse",
-			"version": 27,
-			"versionNonce": 203911597,
+			"version": 29,
+			"versionNonce": 44984062,
 			"isDeleted": false,
 			"id": "JBb19DpTK9Yu7JBX8yNMy",
 			"fillStyle": "solid",
@@ -91,7 +93,7 @@ tags: [excalidraw]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1705916457247,
+			"updated": 1709123838233,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -210,15 +212,15 @@ tags: [excalidraw]
 			"containerId": null,
 			"originalText": "你可以像使用ob标签那样来定位到画布的元素",
 			"lineHeight": 1.25,
-			"baseline": 28
+			"baseline": 27
 		},
 		{
-			"id": "g0vpIBlN_rFEnDrxmy_AU",
-			"type": "rectangle",
-			"x": -349.0610797519557,
-			"y": 187.2446934744221,
-			"width": 215.3966578183386,
-			"height": 150.38955838667778,
+			"id": "pj8XV1PHor-QhISP8iyX6",
+			"type": "diamond",
+			"x": -340,
+			"y": 100,
+			"width": 340,
+			"height": 320,
 			"angle": 0,
 			"strokeColor": "#0c8599",
 			"backgroundColor": "#b2f2bb",
@@ -230,17 +232,22 @@ tags: [excalidraw]
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
-				"type": 3
+				"type": 2
 			},
-			"seed": 1951994779,
-			"version": 13,
-			"versionNonce": 1388539605,
-			"isDeleted": true,
+			"seed": 1194827189,
+			"version": 15,
+			"versionNonce": 332113184,
+			"isDeleted": false,
 			"boundElements": null,
-			"updated": 1708525151959,
+			"updated": 1709123864042,
 			"link": null,
 			"locked": false,
-			"customData": {}
+			"customData": {
+				"tags": [
+					"绿色",
+					"菱形"
+				]
+			}
 		}
 	],
 	"appState": {
@@ -258,13 +265,13 @@ tags: [excalidraw]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 561.7702941894531,
-		"scrollY": 461.2045230780684,
+		"scrollX": 1060.0029691643444,
+		"scrollY": 615.6653162164491,
 		"zoom": {
-			"value": 1
+			"value": 0.8378251470832613
 		},
 		"currentItemRoundness": "round",
-		"gridSize": null,
+		"gridSize": 20,
 		"gridColor": {
 			"Bold": "#C9C9C9FF",
 			"Regular": "#EDEDEDFF"

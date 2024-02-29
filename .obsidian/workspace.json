@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "e56251790fddc5d9",
+        "id": "bafd1da3da022cec",
         "type": "tabs",
         "children": [
           {
-            "id": "66fd0e061986b1ef",
+            "id": "faa18bc4adf3bf59",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "example/摘录方式.excalidraw.md"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -46,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#圆形",
+                "query": "tag:#菱形",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -63,11 +61,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 295.5
+    "width": 295.5,
+    "collapsed": true
   },
   "right": {
     "id": "975f8a95335c54f4",
@@ -83,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "example/摘录方式.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +99,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "example/摘录方式.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,9 +109,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "example/摘录方式.excalidraw.md"
-              }
+              "state": {}
             }
           },
           {
@@ -132,8 +128,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -148,11 +143,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "66fd0e061986b1ef",
+  "active": "faa18bc4adf3bf59",
   "lastOpenFiles": [
+    "example/example - 标签.excalidraw.md",
+    "example/摘录方式.excalidraw.md",
     "images/icons/eagle.png",
     "images/icons/javascrip.png",
-    "example/摘录方式.excalidraw.md",
     "images/icons/vecteezy_javascript-file-vector-icon-design_15802225.png",
     "images/icons/BookxNotePro.png",
     "example/example - svg转excalidraw - 文字.excalidraw.md",
@@ -165,7 +161,6 @@
     "example/example - 箭头动画.excalidraw.md",
     "plugins/Excalidraw/Library/polygons.excalidrawlib",
     "example/attachments/example - 箭头动画.excalidraw_image_20240226163517_430.png",
-    "example/attachments/example - 箭头动画.excalidraw_image_20240226163517_409.png",
     "example/mindmap from templater.md",
     "example/456.excalidraw.md",
     "example/123.md",
@@ -174,7 +169,6 @@
     "example/example - 详情.excalidraw.md",
     "example/example - 折叠显示元素.excalidraw.md",
     "example/example - 思维导图.excalidraw.md",
-    "example/example - 标签.excalidraw.md",
     "plugins/Drawing 2024-02-20 15.39.54.excalidraw.md",
     "example/example - 箭头连接元素.excalidraw.md",
     "example/Drawing 2024-02-20 14.25.57.excalidraw.md",
