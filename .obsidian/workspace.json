@@ -61,13 +61,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 295.5,
-    "collapsed": true
+    "width": 295.5
   },
   "right": {
     "id": "975f8a95335c54f4",
@@ -109,7 +107,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Drawing 2024-02-29 22.50.54.excalidraw.md"
+              }
             }
           },
           {
@@ -128,7 +128,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -143,8 +144,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "faa18bc4adf3bf59",
+  "active": "587ccf90dd5151c5",
   "lastOpenFiles": [
+    "Drawing 2024-02-29 22.50.54.excalidraw.md",
     "example/example - 标签.excalidraw.md",
     "example/摘录方式.excalidraw.md",
     "images/icons/eagle.png",
