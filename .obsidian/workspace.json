@@ -11,8 +11,10 @@
             "id": "faa18bc4adf3bf59",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "excalidraw",
+              "state": {
+                "file": "example/example - svg转excalidraw - 文字.excalidraw.md"
+              }
             }
           }
         ]
@@ -81,6 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "example/example - svg转excalidraw - 文字.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "example/example - svg转excalidraw - 文字.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -108,7 +112,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Drawing 2024-02-29 22.50.54.excalidraw.md"
+                "file": "example/example - svg转excalidraw - 文字.excalidraw.md"
               }
             }
           },
@@ -144,8 +148,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "587ccf90dd5151c5",
+  "active": "faa18bc4adf3bf59",
   "lastOpenFiles": [
+    "example/example - 折叠显示元素.excalidraw.md",
+    "example/example - svg转excalidraw - 文字.excalidraw.md",
+    "images/图片1.svg",
+    "images/Untitled Diagram.svg",
+    "图片2.svg",
+    "example/Drawing 2024-03-01 22.42.48.excalidraw.md",
     "Drawing 2024-02-29 22.50.54.excalidraw.md",
     "example/example - 标签.excalidraw.md",
     "example/摘录方式.excalidraw.md",
@@ -153,23 +163,18 @@
     "images/icons/javascrip.png",
     "images/icons/vecteezy_javascript-file-vector-icon-design_15802225.png",
     "images/icons/BookxNotePro.png",
-    "example/example - svg转excalidraw - 文字.excalidraw.md",
     "example/example - 高亮连接.excalidraw.md",
     "example/attachments/example - 高亮连接.excalidraw_image_20240228112402_358.svg",
     "example/attachments/example - 高亮连接.excalidraw_image_20240228112402_353.svg",
     "example/attachments/example - 高亮连接.excalidraw_image_20240228112402_342.svg",
-    "example/attachments/example - 高亮连接.excalidraw_image_20240228112402_337.svg",
-    "example/attachments/example - svg转excalidraw - 文字.excalidraw_image_20240228011522_441.png",
     "example/example - 箭头动画.excalidraw.md",
     "plugins/Excalidraw/Library/polygons.excalidrawlib",
-    "example/attachments/example - 箭头动画.excalidraw_image_20240226163517_430.png",
     "example/mindmap from templater.md",
     "example/456.excalidraw.md",
     "example/123.md",
     "example/example - 自动连接附着.excalidraw.md",
     "example/example - 圆圈编号.excalidraw.md",
     "example/example - 详情.excalidraw.md",
-    "example/example - 折叠显示元素.excalidraw.md",
     "example/example - 思维导图.excalidraw.md",
     "plugins/Drawing 2024-02-20 15.39.54.excalidraw.md",
     "example/example - 箭头连接元素.excalidraw.md",
@@ -182,8 +187,6 @@
     "Example vault.7z",
     "example/example - 自定义拉伸箭头.excalidraw.md",
     "plugins/Excalidraw/Scripts/autorun-maybeBindLinearElement_Hook.md",
-    "example/example - 按钮.excalidraw.md",
-    "example/Drawing 2024-02-04 00.29.24.excalidraw.md",
     "plugins/Excalidraw/Scripts/action",
     "plugins/Excalidraw/Scripts/New folder",
     "plugins/Excalidraw/Scripts/add",
