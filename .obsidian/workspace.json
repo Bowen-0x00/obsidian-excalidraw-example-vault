@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "bafd1da3da022cec",
+        "id": "7b9d60562911a585",
         "type": "tabs",
         "children": [
           {
-            "id": "faa18bc4adf3bf59",
+            "id": "c9ccc4ef866d9c02",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "example/example - svg转excalidraw - 文字.excalidraw.md"
+                "file": "example/摘录方式.excalidraw.md"
               }
             }
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "example/example - svg转excalidraw - 文字.excalidraw.md",
+                "file": "example/摘录方式.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "example/example - svg转excalidraw - 文字.excalidraw.md",
+                "file": "example/摘录方式.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -112,7 +112,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "example/example - svg转excalidraw - 文字.excalidraw.md"
+                "file": "example/摘录方式.excalidraw.md"
               }
             }
           },
@@ -148,10 +148,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "faa18bc4adf3bf59",
+  "active": "587ccf90dd5151c5",
   "lastOpenFiles": [
-    "example/example - 折叠显示元素.excalidraw.md",
+    "example/example - 视频摘录.excalidraw.md",
     "example/example - svg转excalidraw - 文字.excalidraw.md",
+    "example/example - 折叠显示元素.excalidraw.md",
     "images/图片1.svg",
     "images/Untitled Diagram.svg",
     "图片2.svg",
