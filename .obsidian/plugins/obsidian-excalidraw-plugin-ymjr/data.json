@@ -348,7 +348,7 @@
         "description": "Starting index"
       },
       "use color list": {
-        "value": false,
+        "value": true,
         "description": "Whether set bullet background color in color list"
       },
       "color list": {

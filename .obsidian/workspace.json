@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "7b9d60562911a585",
+        "id": "be4725ce59127b03",
         "type": "tabs",
         "children": [
           {
-            "id": "c9ccc4ef866d9c02",
+            "id": "df9ceb632e2b7f66",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "example/摘录方式.excalidraw.md"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -83,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "example/摘录方式.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "example/摘录方式.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,9 +107,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "example/摘录方式.excalidraw.md"
-              }
+              "state": {}
             }
           },
           {
@@ -148,27 +142,27 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "c9ccc4ef866d9c02",
+  "active": "df9ceb632e2b7f66",
   "lastOpenFiles": [
+    "example/example - 箭头动画.excalidraw.md",
+    "example/摘录方式.excalidraw.md",
+    "example/摘录方式.excalidraw.png",
+    "example/attachments/摘录方式.excalidraw_image_20240306201157_674.png",
+    "example/attachments/摘录方式.excalidraw_image_20240306205702_319.png",
+    "example/attachments/摘录方式.excalidraw_image_20240306205633_428.png",
+    "example/attachments/摘录方式.excalidraw_image_20240306205531_079.png",
+    "example/attachments/摘录方式.excalidraw_image_20240306202047_883.png",
+    "example/attachments/摘录方式.excalidraw_image_20240306202023_617.png",
+    "example/attachments/摘录方式.excalidraw_image_20240306201438_465.png",
+    "example/attachments/摘录方式.excalidraw_image_20240306201033_446.png",
+    "example/attachments/摘录方式.excalidraw_image_20240306195925_883.png",
     "example/example - 视频摘录.excalidraw.md",
     "example/example - svg转excalidraw - 文字.excalidraw.md",
     "example/example - 折叠显示元素.excalidraw.md",
-    "images/图片1.svg",
-    "images/Untitled Diagram.svg",
-    "图片2.svg",
     "example/Drawing 2024-03-01 22.42.48.excalidraw.md",
     "Drawing 2024-02-29 22.50.54.excalidraw.md",
     "example/example - 标签.excalidraw.md",
-    "example/摘录方式.excalidraw.md",
-    "images/icons/eagle.png",
-    "images/icons/javascrip.png",
-    "images/icons/vecteezy_javascript-file-vector-icon-design_15802225.png",
-    "images/icons/BookxNotePro.png",
     "example/example - 高亮连接.excalidraw.md",
-    "example/attachments/example - 高亮连接.excalidraw_image_20240228112402_358.svg",
-    "example/attachments/example - 高亮连接.excalidraw_image_20240228112402_353.svg",
-    "example/attachments/example - 高亮连接.excalidraw_image_20240228112402_342.svg",
-    "example/example - 箭头动画.excalidraw.md",
     "plugins/Excalidraw/Library/polygons.excalidrawlib",
     "example/mindmap from templater.md",
     "example/456.excalidraw.md",
@@ -187,7 +181,6 @@
     "example/example - 代码高亮.excalidraw.md",
     "Example vault.7z",
     "example/example - 自定义拉伸箭头.excalidraw.md",
-    "plugins/Excalidraw/Scripts/autorun-maybeBindLinearElement_Hook.md",
     "plugins/Excalidraw/Scripts/action",
     "plugins/Excalidraw/Scripts/New folder",
     "plugins/Excalidraw/Scripts/add",

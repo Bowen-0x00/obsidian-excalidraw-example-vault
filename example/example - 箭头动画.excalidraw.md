@@ -17,33 +17,33 @@ tags: [excalidraw]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.23-1",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.23-5",
 	"elements": [
 		{
-			"id": "va0e7PrJRjN4icXJVDqKB",
 			"type": "line",
-			"x": -4800,
-			"y": -1440,
-			"width": 300,
-			"height": 100,
-			"angle": 0,
-			"strokeColor": "#e03131",
-			"backgroundColor": "#1e1e1e",
+			"version": 64,
+			"versionNonce": 1339377671,
+			"isDeleted": false,
+			"id": "va0e7PrJRjN4icXJVDqKB",
 			"fillStyle": "solid",
 			"strokeWidth": 6,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -4800,
+			"y": -1440,
+			"strokeColor": "#e03131",
+			"backgroundColor": "#1e1e1e",
+			"width": 300,
+			"height": 100,
+			"seed": 592467431,
 			"groupIds": [
 				"zyvO6XYAq9KrErsq17hvX"
 			],
 			"frameId": null,
 			"roundness": null,
-			"seed": 592467431,
-			"version": 64,
-			"versionNonce": 1339377671,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708945638284,
 			"link": null,
 			"locked": false,
@@ -58,6 +58,11 @@ tags: [excalidraw]
 					"speed": 1
 				}
 			},
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": null,
 			"points": [
 				[
 					0,
@@ -79,54 +84,46 @@ tags: [excalidraw]
 					0,
 					0
 				]
-			],
-			"lastCommittedPoint": [
-				0,
-				0
-			],
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": null
+			]
 		},
 		{
-			"id": "MfgDVrVB",
 			"type": "text",
-			"x": -4760,
-			"y": -1460,
-			"width": 174.15567016601562,
-			"height": 101.35984387011901,
-			"angle": 0,
-			"strokeColor": "#2f9e44",
-			"backgroundColor": "#1e1e1e",
+			"version": 40,
+			"versionNonce": 1488657545,
+			"isDeleted": false,
+			"id": "MfgDVrVB",
 			"fillStyle": "solid",
 			"strokeWidth": 6,
 			"strokeStyle": "solid",
 			"roughness": 0,
 			"opacity": 100,
+			"angle": 0,
+			"x": -4760,
+			"y": -1460,
+			"strokeColor": "#2f9e44",
+			"backgroundColor": "#1e1e1e",
+			"width": 174.15567016601562,
+			"height": 101.35984387011901,
+			"seed": 1377548039,
 			"groupIds": [
 				"zyvO6XYAq9KrErsq17hvX"
 			],
 			"frameId": null,
 			"roundness": null,
-			"seed": 1377548039,
-			"version": 40,
-			"versionNonce": 1488657545,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1708945644329,
 			"link": null,
 			"locked": false,
-			"text": "19:06",
-			"rawText": "19:06",
 			"fontSize": 81.0878750960952,
 			"fontFamily": "\"MTC 7 Segment\"",
+			"text": "19:06",
+			"rawText": "19:06",
 			"textAlign": "left",
 			"verticalAlign": "top",
-			"baseline": 92,
 			"containerId": null,
 			"originalText": "19:06",
-			"lineHeight": 1.25
+			"lineHeight": 1.25,
+			"baseline": 92
 		},
 		{
 			"type": "line",
@@ -154,6 +151,17 @@ tags: [excalidraw]
 			"updated": 1708945651656,
 			"link": null,
 			"locked": false,
+			"customData": {
+				"animation": {
+					"type": "arrow",
+					"style": "dash",
+					"strokeLineDash": [
+						8,
+						8
+					],
+					"speed": 2
+				}
+			},
 			"startBinding": null,
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -176,18 +184,7 @@ tags: [excalidraw]
 					0,
 					0
 				]
-			],
-			"customData": {
-				"animation": {
-					"type": "arrow",
-					"style": "dash",
-					"strokeLineDash": [
-						8,
-						8
-					],
-					"speed": 2
-				}
-			}
+			]
 		},
 		{
 			"type": "line",
@@ -215,6 +212,17 @@ tags: [excalidraw]
 			"updated": 1708945659552,
 			"link": null,
 			"locked": false,
+			"customData": {
+				"animation": {
+					"type": "arrow",
+					"style": "dash",
+					"strokeLineDash": [
+						8,
+						8
+					],
+					"speed": 2
+				}
+			},
 			"startBinding": null,
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -249,18 +257,7 @@ tags: [excalidraw]
 					0,
 					0
 				]
-			],
-			"customData": {
-				"animation": {
-					"type": "arrow",
-					"style": "dash",
-					"strokeLineDash": [
-						8,
-						8
-					],
-					"speed": 2
-				}
-			}
+			]
 		},
 		{
 			"type": "line",
@@ -288,6 +285,17 @@ tags: [excalidraw]
 			"updated": 1708945668045,
 			"link": null,
 			"locked": false,
+			"customData": {
+				"animation": {
+					"type": "arrow",
+					"style": "dash",
+					"strokeLineDash": [
+						8,
+						8
+					],
+					"speed": 2
+				}
+			},
 			"startBinding": null,
 			"endBinding": null,
 			"lastCommittedPoint": null,
@@ -338,18 +346,50 @@ tags: [excalidraw]
 					0,
 					0
 				]
+			]
+		},
+		{
+			"id": "onsSKXGoKILid8WtAfyAT",
+			"type": "arrow",
+			"x": -5560,
+			"y": -860,
+			"width": 640,
+			"height": 120,
+			"angle": 0,
+			"strokeColor": "#2f9e44",
+			"backgroundColor": "#1e1e1e",
+			"fillStyle": "solid",
+			"strokeWidth": 6,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 838973830,
+			"version": 16,
+			"versionNonce": 1484027654,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1709815943063,
+			"link": null,
+			"locked": false,
+			"customData": {},
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					640,
+					120
+				]
 			],
-			"customData": {
-				"animation": {
-					"type": "arrow",
-					"style": "dash",
-					"strokeLineDash": [
-						8,
-						8
-					],
-					"speed": 2
-				}
-			}
+			"lastCommittedPoint": null,
+			"startBinding": null,
+			"endBinding": null,
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
 		}
 	],
 	"appState": {
@@ -367,10 +407,10 @@ tags: [excalidraw]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 5939.172637962755,
-		"scrollY": 1739.8397988197198,
+		"scrollX": 5928.778829637028,
+		"scrollY": 1819.1735378046408,
 		"zoom": {
-			"value": 0.8999999999999999
+			"value": 0.9198554478543638
 		},
 		"currentItemRoundness": "sharp",
 		"gridSize": 20,
