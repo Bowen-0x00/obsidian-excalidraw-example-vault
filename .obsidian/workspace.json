@@ -4,15 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6915604b5a0f5b75",
+        "id": "776153e69faf0d2d",
         "type": "tabs",
         "children": [
           {
-            "id": "a80b8fd0e87ad4c9",
+            "id": "cee4cb975532a4d1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "excalidraw",
+              "state": {
+                "file": "example/example - 思维导图.excalidraw.md"
+              }
             }
           }
         ]
@@ -81,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw关系.excalidraw.md",
+                "file": "example/example - 思维导图.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw关系.excalidraw.md",
+                "file": "example/example - 思维导图.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +112,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw关系.excalidraw.md"
+                "file": "example/example - 思维导图.excalidraw.md"
               }
             }
           },
@@ -146,8 +148,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "587ccf90dd5151c5",
+  "active": "cee4cb975532a4d1",
   "lastOpenFiles": [
+    "example/example - 思维导图.excalidraw.md",
     "Excalidraw关系.excalidraw.svg",
     "Excalidraw关系.excalidraw.md",
     "example/example - 高亮连接.excalidraw.md",
@@ -155,7 +158,6 @@
     "example/example - 逐个显示&隐藏.excalidraw.md",
     "example/example - 详情.excalidraw.md",
     "example/example - 文字和字体.excalidraw.md",
-    "example/example - 思维导图.excalidraw.md",
     "example/123.md",
     "example/mindmap from templater_mindmap.excalidraw.md",
     "example/456.md",
@@ -169,7 +171,6 @@
     "example/attachments/摘录方式.excalidraw_image_20240306202023_617.png",
     "example/attachments/摘录方式.excalidraw_image_20240306201438_465.png",
     "example/attachments/摘录方式.excalidraw_image_20240306201033_446.png",
-    "example/attachments/摘录方式.excalidraw_image_20240306195925_883.png",
     "example/example - 视频摘录.excalidraw.md",
     "example/example - svg转excalidraw - 文字.excalidraw.md",
     "example/example - 折叠显示元素.excalidraw.md",
