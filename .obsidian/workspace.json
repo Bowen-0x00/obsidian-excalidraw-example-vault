@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b2845ae885f3ae99",
+        "id": "6915604b5a0f5b75",
         "type": "tabs",
         "children": [
           {
-            "id": "0748092f87f0ad22",
+            "id": "a80b8fd0e87ad4c9",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -65,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 295.5
+    "width": 211.5
   },
   "right": {
     "id": "975f8a95335c54f4",
@@ -81,6 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Excalidraw关系.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Excalidraw关系.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -107,7 +109,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Excalidraw关系.excalidraw.md"
+              }
             }
           },
           {
@@ -142,8 +146,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "0748092f87f0ad22",
+  "active": "587ccf90dd5151c5",
   "lastOpenFiles": [
+    "Excalidraw关系.excalidraw.svg",
+    "Excalidraw关系.excalidraw.md",
     "example/example - 高亮连接.excalidraw.md",
     "example/example - 箭头动画.excalidraw.md",
     "example/example - 逐个显示&隐藏.excalidraw.md",
@@ -179,8 +185,6 @@
     "example/example - 箭头连接元素.excalidraw.md",
     "example/Drawing 2024-02-20 14.25.57.excalidraw.md",
     "example/example - 日历素材.excalidraw.md",
-    "Welcome.md",
-    "example/example - echarts图表.excalidraw.md",
     "Example vault.7z",
     "plugins/Excalidraw/Scripts/action",
     "plugins/Excalidraw/Scripts/New folder",
