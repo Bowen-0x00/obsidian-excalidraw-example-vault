@@ -1019,7 +1019,7 @@
   "classifyLibrary": true,
   "exportMD2PngInSVG": false,
   "mindmapHandle": true,
-  "scriptStoreUrl": "https://github.com/Bowen-0x00/obsidian-excalidraw-scripts/blob/main/Scripts/index.md",
+  "scriptStoreUrl": "https://raw.githubusercontent.com/Bowen-0x00/obsidian-excalidraw-scripts/main/Scripts/index.md",
   "strokeWidthSliderMin": 0,
   "strokeWidthSliderMax": 100,
   "strokeWidthSliderStemp": 1
