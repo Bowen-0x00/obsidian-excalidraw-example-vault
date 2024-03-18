@@ -67,7 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 211.5
+    "width": 368.5
   },
   "right": {
     "id": "975f8a95335c54f4",
@@ -148,8 +148,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "cee4cb975532a4d1",
+  "active": "587ccf90dd5151c5",
   "lastOpenFiles": [
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Mindmap format2.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)",
     "example/example - 思维导图.excalidraw.md",
     "Excalidraw关系.excalidraw.svg",
     "Excalidraw关系.excalidraw.md",
@@ -193,7 +195,6 @@
     "plugins/Excalidraw/Scripts/auto",
     "plugins/Excalidraw/Scripts/autorun",
     "plugins/Excalidraw/Scripts/auto-run",
-    "plugins/Templater",
-    "plugins/New folder"
+    "plugins/Templater"
   ]
 }

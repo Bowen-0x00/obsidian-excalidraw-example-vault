@@ -78,7 +78,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.24-3",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.25-1",
     "libraryItems": []
   },
   "imageElementNotice": true,
@@ -356,10 +356,16 @@
         "value": "#FFADAD, #FFD6A5, #FDFFB6, #CAFFBF, #9BF6FF, #A0C4FF, #BDB2FF, #FFC6FF",
         "description": "Starting index"
       }
+    },
+    "Downloaded(Custom)/autorun-onKeyDownHook": {
+      "mindmap color decay level": {
+        "value": 4,
+        "description": "color decay level"
+      }
     }
   },
   "defaultTrayMode": true,
-  "previousRelease": "2.0.24-1",
+  "previousRelease": "2.0.25-1",
   "showReleaseNotes": true,
   "showNewVersionNotification": true,
   "latexBoilerplate": "\\color{blue}",
