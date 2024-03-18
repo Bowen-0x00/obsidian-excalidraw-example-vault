@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "776153e69faf0d2d",
+        "id": "d94d69f1decfa2e2",
         "type": "tabs",
         "children": [
           {
-            "id": "cee4cb975532a4d1",
+            "id": "8844dfb109d6370f",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "example/example - 思维导图.excalidraw.md"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -83,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "example/example - 思维导图.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "example/example - 思维导图.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,9 +107,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "example/example - 思维导图.excalidraw.md"
-              }
+              "state": {}
             }
           },
           {
@@ -148,11 +142,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "587ccf90dd5151c5",
+  "active": "8844dfb109d6370f",
   "lastOpenFiles": [
+    "example/example - 思维导图.excalidraw.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/Mindmap format2.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)",
-    "example/example - 思维导图.excalidraw.md",
     "Excalidraw关系.excalidraw.svg",
     "Excalidraw关系.excalidraw.md",
     "example/example - 高亮连接.excalidraw.md",

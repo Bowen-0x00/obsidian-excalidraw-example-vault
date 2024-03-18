@@ -372,16 +372,16 @@
   "taskboneEnabled": false,
   "taskboneAPIkey": "",
   "pinnedScripts": [
-    "plugins/Excalidraw/Scripts/Add unorder list.md",
-    "plugins/Excalidraw/Scripts/Add order list.md",
-    "plugins/Excalidraw/Scripts/Horizontal distribution.md",
-    "plugins/Excalidraw/Scripts/Vertical distribution.md",
-    "plugins/Excalidraw/Scripts/add left brace.md",
-    "plugins/Excalidraw/Scripts/add right brace.md",
-    "plugins/Excalidraw/Scripts/convert latex in text.md",
-    "plugins/Excalidraw/Scripts/highlight text.md",
-    "plugins/Excalidraw/Scripts/show layer toolbar.md",
-    "plugins/Excalidraw/Scripts/switch connection shape.md"
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Add unorder list.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Add order list.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Horizontal distribution.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Vertical distribution.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/add left brace.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/add right brace.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/convert latex in text.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/highlight text.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/show layer toolbar.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/switch connection shape.md"
   ],
   "customPens": [
     {
