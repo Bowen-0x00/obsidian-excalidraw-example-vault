@@ -4,15 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d94d69f1decfa2e2",
+        "id": "505dfe202ddd50fb",
         "type": "tabs",
         "children": [
           {
-            "id": "8844dfb109d6370f",
+            "id": "095c92987964fab3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "excalidraw",
+              "state": {
+                "file": "example/example - 思维导图.excalidraw.md"
+              }
             }
           }
         ]
@@ -81,6 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "example/example - 思维导图.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "example/example - 思维导图.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -107,7 +111,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "example/example - 思维导图.excalidraw.md"
+              }
             }
           },
           {
@@ -142,8 +148,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "8844dfb109d6370f",
+  "active": "095c92987964fab3",
   "lastOpenFiles": [
+    "example/mindmap from templater_mindmap.excalidraw.md",
     "example/example - 思维导图.excalidraw.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/Mindmap format2.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)",
@@ -155,7 +162,6 @@
     "example/example - 详情.excalidraw.md",
     "example/example - 文字和字体.excalidraw.md",
     "example/123.md",
-    "example/mindmap from templater_mindmap.excalidraw.md",
     "example/456.md",
     "example/摘录方式.excalidraw.md",
     "example/摘录方式.excalidraw.png",

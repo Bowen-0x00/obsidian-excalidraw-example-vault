@@ -362,6 +362,24 @@
         "value": 4,
         "description": "color decay level"
       }
+    },
+    "Downloaded(Custom)/Mindmap format2": {
+      "MindMap Format2": {
+        "value": "Excalidraw/MindMap Format2",
+        "description": "This is prepared for the namespace of MindMap Format and does not need to be modified"
+      },
+      "default gap2": {
+        "value": 10,
+        "description": "Interval size of element"
+      },
+      "curve length2": {
+        "value": 40,
+        "description": "The length of the curve part in the mind map line"
+      },
+      "length between element and line2": {
+        "value": 50,
+        "description": "The distance between the tail of the connection and the connecting elements of the mind map"
+      }
     }
   },
   "defaultTrayMode": true,
