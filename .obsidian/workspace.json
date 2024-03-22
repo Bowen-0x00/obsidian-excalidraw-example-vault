@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "505dfe202ddd50fb",
+        "id": "2cae628d286321ef",
         "type": "tabs",
         "children": [
           {
-            "id": "095c92987964fab3",
+            "id": "478f68ec820d4bea",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "example/example - 思维导图.excalidraw.md"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -83,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "example/example - 思维导图.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "example/example - 思维导图.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,9 +107,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "example/example - 思维导图.excalidraw.md"
-              }
+              "state": {}
             }
           },
           {
@@ -148,22 +142,22 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "095c92987964fab3",
+  "active": "478f68ec820d4bea",
   "lastOpenFiles": [
-    "example/mindmap from templater_mindmap.excalidraw.md",
+    "example/摘录方式.excalidraw.md",
+    "example/example - 箭头动画.excalidraw.md",
     "example/example - 思维导图.excalidraw.md",
+    "example/mindmap from templater_mindmap.excalidraw.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/Mindmap format2.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)",
     "Excalidraw关系.excalidraw.svg",
     "Excalidraw关系.excalidraw.md",
     "example/example - 高亮连接.excalidraw.md",
-    "example/example - 箭头动画.excalidraw.md",
     "example/example - 逐个显示&隐藏.excalidraw.md",
     "example/example - 详情.excalidraw.md",
     "example/example - 文字和字体.excalidraw.md",
     "example/123.md",
     "example/456.md",
-    "example/摘录方式.excalidraw.md",
     "example/摘录方式.excalidraw.png",
     "example/attachments/摘录方式.excalidraw_image_20240306201157_674.png",
     "example/attachments/摘录方式.excalidraw_image_20240306205702_319.png",
