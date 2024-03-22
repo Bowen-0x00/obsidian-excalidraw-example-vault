@@ -4,6 +4,12 @@ excalidraw-plugin: parsed
 tags: [excalidraw]
 
 ---
+---
+
+excalidraw-plugin: parsed
+tags: [excalidraw]
+
+---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
@@ -57,23 +63,11 @@ Obsidian is a personal knowledge base and note-taking software application that 
 History
 Obsidian was founded by Shida Li and Erica Xu while quarantining during the COVID-19 pandemic.[7] Li and Xu, who had met while studying at the University of Waterloo, had already collaborated on several development projects.[8] Obsidian was initially released on 30 March 2020.[9] Version 1.0.0 was released in October 2022.[10][11] Version 1.1, which added the Canvas core plugin, released in December 2022.[12] ^XQwJ0mFv
 
-● ^izOFU0NU
-
-运行以下脚本： ^pTZklJUt
-
-add partial color ^nesr0GPU
-
-改变部分文字的颜色 ^NHxfzU5o
-
 你好，这是一段文字 ^9GHn3hIQ
-
-字体颜色和渐变 ^zf9soesM
 
 highlight text ^eBM12aV8
 
 ● ^rJ9O4SrC
-
-你好，这是一段文字 ^qCjALcLY
 
 你好，这是一段文字 ^lZ9H4Em4
 
@@ -105,19 +99,31 @@ add partial bold ^Y0GOvjSn
 
 字体加粗 ^omkTiiFo
 
-你好，这是一段文字 ^a2b0bern
-
 你好，这是一段文字 ^cJm23pZV
 
 你好，这是一段文字 ^P9VOgr2P
 
-你好，这是一段文字 ^otUuVKaB
-
 ● ^xWQHDCif
+
+运行以下脚本： ^pTZklJUt
 
 add gradient ^9CVmZ98j
 
 同形状渐变 ^Qsnxw6Vu
+
+你好，这是一段文字 ^qCjALcLY
+
+你好，这是一段文字 ^otUuVKaB
+
+字体颜色和渐变 ^zf9soesM
+
+你好，这是一段文字 ^a2b0bern
+
+● ^izOFU0NU
+
+add partial color ^nesr0GPU
+
+改变部分文字的颜色 ^NHxfzU5o
 
 # Tags
 %%
@@ -126,12 +132,12 @@ add gradient ^9CVmZ98j
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.20-2",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.25-1",
 	"elements": [
 		{
 			"type": "rectangle",
-			"version": 54,
-			"versionNonce": 134513180,
+			"version": 55,
+			"versionNonce": 1637484282,
 			"isDeleted": false,
 			"id": "n42lm7B9",
 			"fillStyle": "solid",
@@ -155,14 +161,14 @@ add gradient ^9CVmZ98j
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 37,
-			"versionNonce": 1242643876,
+			"version": 38,
+			"versionNonce": 573144486,
 			"isDeleted": false,
 			"id": "fpRnxDFZ",
 			"fillStyle": "solid",
@@ -184,14 +190,14 @@ add gradient ^9CVmZ98j
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 16,
-			"versionNonce": 149282460,
+			"version": 17,
+			"versionNonce": 225646522,
 			"isDeleted": false,
 			"id": "rJ9O4SrC",
 			"fillStyle": "hachure",
@@ -211,7 +217,7 @@ add gradient ^9CVmZ98j
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -222,13 +228,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "●",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 50,
-			"versionNonce": 1205987620,
+			"version": 52,
+			"versionNonce": 1597877178,
 			"isDeleted": false,
 			"id": "H0pkdnc6",
 			"fillStyle": "hachure",
@@ -237,8 +242,8 @@ add gradient ^9CVmZ98j
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -371.96392565065537,
-			"y": 1080.142513248056,
+			"x": -360.53535422208404,
+			"y": 1075.5711544310918,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 20,
@@ -248,7 +253,7 @@ add gradient ^9CVmZ98j
 			"frameId": "D5pTQ9IbkX7EM1tHinynG",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123364570,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -259,13 +264,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "●",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 72,
-			"versionNonce": 241675036,
+			"version": 73,
+			"versionNonce": 627839098,
 			"isDeleted": false,
 			"id": "ugjAveS2",
 			"fillStyle": "hachure",
@@ -285,7 +289,7 @@ add gradient ^9CVmZ98j
 			"frameId": "LvTA6ONJ2kGkskA4StC2V",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -296,13 +300,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "●",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 72,
-			"versionNonce": 764486820,
+			"version": 73,
+			"versionNonce": 1131858982,
 			"isDeleted": false,
 			"id": "JYweZJFv",
 			"fillStyle": "hachure",
@@ -322,7 +325,7 @@ add gradient ^9CVmZ98j
 			"frameId": "LvTA6ONJ2kGkskA4StC2V",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -333,13 +336,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "●",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 72,
-			"versionNonce": 184280988,
+			"version": 73,
+			"versionNonce": 1833431354,
 			"isDeleted": false,
 			"id": "Wye1mSSO",
 			"fillStyle": "hachure",
@@ -359,7 +361,7 @@ add gradient ^9CVmZ98j
 			"frameId": "LvTA6ONJ2kGkskA4StC2V",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -370,13 +372,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "●",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 149,
-			"versionNonce": 1270762327,
+			"version": 150,
+			"versionNonce": 1616271206,
 			"isDeleted": false,
 			"id": "JJSpIvfu",
 			"fillStyle": "hachure",
@@ -389,14 +390,14 @@ add gradient ^9CVmZ98j
 			"y": -465.7157826213411,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 20.899993896484375,
+			"width": 26,
 			"height": 25,
 			"seed": 40241,
 			"groupIds": [],
 			"frameId": "RB5uHKpnEqFMHg5Uu9bFL",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708410352215,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -407,13 +408,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "1. ",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 149,
-			"versionNonce": 245365145,
+			"version": 150,
+			"versionNonce": 946452986,
 			"isDeleted": false,
 			"id": "R23PHLij",
 			"fillStyle": "hachure",
@@ -426,14 +426,14 @@ add gradient ^9CVmZ98j
 			"y": -424.5098509177308,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 29.719985961914062,
+			"width": 26,
 			"height": 25,
 			"seed": 73907,
 			"groupIds": [],
 			"frameId": "RB5uHKpnEqFMHg5Uu9bFL",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708410352215,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -444,13 +444,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "2. ",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 145,
-			"versionNonce": 1635994532,
+			"version": 146,
+			"versionNonce": 664959654,
 			"isDeleted": false,
 			"id": "uSfW5uVn",
 			"fillStyle": "hachure",
@@ -470,7 +469,7 @@ add gradient ^9CVmZ98j
 			"frameId": "RB5uHKpnEqFMHg5Uu9bFL",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -481,13 +480,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "3. ",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 120,
-			"versionNonce": 1675866268,
+			"version": 121,
+			"versionNonce": 1976855226,
 			"isDeleted": false,
 			"id": "J1KxsydQ",
 			"fillStyle": "solid",
@@ -507,7 +505,7 @@ add gradient ^9CVmZ98j
 			"frameId": "RB5uHKpnEqFMHg5Uu9bFL",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -523,13 +521,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "基本的字体切换",
-			"lineHeight": 1.25,
-			"baseline": 35
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 197,
-			"versionNonce": 31602468,
+			"version": 198,
+			"versionNonce": 1342715366,
 			"isDeleted": false,
 			"id": "dfFC7AVZ",
 			"fillStyle": "solid",
@@ -549,7 +546,7 @@ add gradient ^9CVmZ98j
 			"frameId": "RB5uHKpnEqFMHg5Uu9bFL",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -567,13 +564,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "选中字体",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 210,
-			"versionNonce": 769342748,
+			"version": 211,
+			"versionNonce": 1009451898,
 			"isDeleted": false,
 			"id": "ZR3Kr9OP",
 			"fillStyle": "solid",
@@ -593,7 +589,7 @@ add gradient ^9CVmZ98j
 			"frameId": "RB5uHKpnEqFMHg5Uu9bFL",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -611,13 +607,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "拖动字体选择滑条",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 202,
-			"versionNonce": 509063844,
+			"version": 203,
+			"versionNonce": 848595238,
 			"isDeleted": false,
 			"id": "of0bH958",
 			"fillStyle": "solid",
@@ -637,7 +632,7 @@ add gradient ^9CVmZ98j
 			"frameId": "RB5uHKpnEqFMHg5Uu9bFL",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -655,13 +650,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "设置样式",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 33,
-			"versionNonce": 1512913308,
+			"version": 34,
+			"versionNonce": 1437631546,
 			"isDeleted": false,
 			"id": "j16FBsME",
 			"fillStyle": "solid",
@@ -681,7 +675,7 @@ add gradient ^9CVmZ98j
 			"frameId": "RB5uHKpnEqFMHg5Uu9bFL",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"fontSize": 28,
@@ -692,13 +686,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "你好",
-			"lineHeight": 1.25,
-			"baseline": 26
+			"lineHeight": 1.25
 		},
 		{
 			"type": "frame",
-			"version": 161,
-			"versionNonce": 361872932,
+			"version": 162,
+			"versionNonce": 2125755494,
 			"isDeleted": false,
 			"id": "RB5uHKpnEqFMHg5Uu9bFL",
 			"fillStyle": "solid",
@@ -718,7 +711,7 @@ add gradient ^9CVmZ98j
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -732,8 +725,8 @@ add gradient ^9CVmZ98j
 		},
 		{
 			"type": "text",
-			"version": 96,
-			"versionNonce": 336307740,
+			"version": 97,
+			"versionNonce": 1279782138,
 			"isDeleted": false,
 			"id": "kSa4bHk2",
 			"fillStyle": "solid",
@@ -753,7 +746,7 @@ add gradient ^9CVmZ98j
 			"frameId": "LvTA6ONJ2kGkskA4StC2V",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -764,13 +757,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "运行以下脚本都可以：",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 106,
-			"versionNonce": 1082022308,
+			"version": 107,
+			"versionNonce": 1848965030,
 			"isDeleted": false,
 			"id": "fKJx3O9i",
 			"fillStyle": "solid",
@@ -790,7 +782,7 @@ add gradient ^9CVmZ98j
 			"frameId": "LvTA6ONJ2kGkskA4StC2V",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -807,13 +799,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "font bold",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 112,
-			"versionNonce": 1349026460,
+			"version": 113,
+			"versionNonce": 1970552250,
 			"isDeleted": false,
 			"id": "tmxILgpk",
 			"fillStyle": "solid",
@@ -833,7 +824,7 @@ add gradient ^9CVmZ98j
 			"frameId": "LvTA6ONJ2kGkskA4StC2V",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -850,13 +841,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "font weight",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 113,
-			"versionNonce": 709592356,
+			"version": 114,
+			"versionNonce": 2034438886,
 			"isDeleted": false,
 			"id": "Y0GOvjSn",
 			"fillStyle": "solid",
@@ -876,7 +866,7 @@ add gradient ^9CVmZ98j
 			"frameId": "LvTA6ONJ2kGkskA4StC2V",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -893,13 +883,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "add partial bold",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 84,
-			"versionNonce": 368430876,
+			"version": 85,
+			"versionNonce": 2119726714,
 			"isDeleted": false,
 			"id": "zexRJzpa",
 			"fillStyle": "solid",
@@ -919,7 +908,7 @@ add gradient ^9CVmZ98j
 			"frameId": "LvTA6ONJ2kGkskA4StC2V",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -930,13 +919,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "快捷键 ctrl+alt+B",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "frame",
-			"version": 186,
-			"versionNonce": 1214726308,
+			"version": 187,
+			"versionNonce": 174835238,
 			"isDeleted": false,
 			"id": "LvTA6ONJ2kGkskA4StC2V",
 			"fillStyle": "solid",
@@ -956,7 +944,7 @@ add gradient ^9CVmZ98j
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -970,8 +958,8 @@ add gradient ^9CVmZ98j
 		},
 		{
 			"type": "text",
-			"version": 250,
-			"versionNonce": 1160088476,
+			"version": 251,
+			"versionNonce": 2008520506,
 			"isDeleted": false,
 			"id": "omkTiiFo",
 			"fillStyle": "solid",
@@ -991,7 +979,7 @@ add gradient ^9CVmZ98j
 			"frameId": "LvTA6ONJ2kGkskA4StC2V",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -1007,13 +995,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "字体加粗",
-			"lineHeight": 1.25,
-			"baseline": 35
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 116,
-			"versionNonce": 1919825237,
+			"version": 117,
+			"versionNonce": 849088870,
 			"isDeleted": false,
 			"id": "xWQHDCif",
 			"fillStyle": "hachure",
@@ -1033,7 +1020,7 @@ add gradient ^9CVmZ98j
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708404230311,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -1044,13 +1031,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "●",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 137,
-			"versionNonce": 1671738788,
+			"version": 138,
+			"versionNonce": 1643421690,
 			"isDeleted": false,
 			"id": "pTZklJUt",
 			"fillStyle": "solid",
@@ -1070,7 +1056,7 @@ add gradient ^9CVmZ98j
 			"frameId": "3etfVtart2q-QrSU_8Uiz",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403300862,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -1081,13 +1067,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "运行以下脚本：",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 160,
-			"versionNonce": 1845936821,
+			"version": 161,
+			"versionNonce": 1562440870,
 			"isDeleted": false,
 			"id": "9CVmZ98j",
 			"fillStyle": "solid",
@@ -1107,7 +1092,7 @@ add gradient ^9CVmZ98j
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708404230311,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -1124,13 +1109,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "add gradient",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 60,
-			"versionNonce": 1978049557,
+			"version": 61,
+			"versionNonce": 957518010,
 			"isDeleted": false,
 			"id": "Qsnxw6Vu",
 			"fillStyle": "solid",
@@ -1150,7 +1134,7 @@ add gradient ^9CVmZ98j
 			"frameId": "3etfVtart2q-QrSU_8Uiz",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708404230311,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -1161,13 +1145,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "同形状渐变",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 38,
-			"versionNonce": 1148413988,
+			"version": 39,
+			"versionNonce": 61304806,
 			"isDeleted": false,
 			"id": "qCjALcLY",
 			"fillStyle": "solid",
@@ -1187,7 +1170,7 @@ add gradient ^9CVmZ98j
 			"frameId": "3etfVtart2q-QrSU_8Uiz",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403300862,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -1201,13 +1184,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "你好，这是一段文字",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 59,
-			"versionNonce": 762280505,
+			"version": 60,
+			"versionNonce": 11823482,
 			"isDeleted": false,
 			"id": "otUuVKaB",
 			"fillStyle": "solid",
@@ -1227,7 +1209,7 @@ add gradient ^9CVmZ98j
 			"frameId": "3etfVtart2q-QrSU_8Uiz",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708404219526,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -1252,13 +1234,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "你好，这是一段文字",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "frame",
-			"version": 218,
-			"versionNonce": 1667542556,
+			"version": 219,
+			"versionNonce": 1648132902,
 			"isDeleted": false,
 			"id": "3etfVtart2q-QrSU_8Uiz",
 			"fillStyle": "solid",
@@ -1278,7 +1259,7 @@ add gradient ^9CVmZ98j
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403306212,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -1292,8 +1273,8 @@ add gradient ^9CVmZ98j
 		},
 		{
 			"type": "text",
-			"version": 514,
-			"versionNonce": 1253172763,
+			"version": 515,
+			"versionNonce": 1344088634,
 			"isDeleted": false,
 			"id": "zf9soesM",
 			"fillStyle": "solid",
@@ -1313,7 +1294,7 @@ add gradient ^9CVmZ98j
 			"frameId": "3etfVtart2q-QrSU_8Uiz",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708404180636,
+			"updated": 1711123068773,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -1329,13 +1310,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "字体颜色和渐变",
-			"lineHeight": 1.25,
-			"baseline": 35
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 264,
-			"versionNonce": 648595575,
+			"version": 267,
+			"versionNonce": 1842341882,
 			"isDeleted": false,
 			"id": "a2b0bern",
 			"fillStyle": "solid",
@@ -1348,14 +1328,14 @@ add gradient ^9CVmZ98j
 			"y": 289.5393411919455,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 251.99999999999997,
+			"width": 184.5703125,
 			"height": 35,
 			"seed": 660738716,
 			"groupIds": [],
 			"frameId": "LvTA6ONJ2kGkskA4StC2V",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708410352220,
+			"updated": 1711123325835,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -1378,13 +1358,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "你好，这是一段文字",
-			"lineHeight": 1.25,
-			"baseline": 28
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 268,
-			"versionNonce": 454449700,
+			"version": 269,
+			"versionNonce": 1580192506,
 			"isDeleted": false,
 			"id": "cJm23pZV",
 			"fillStyle": "solid",
@@ -1404,7 +1383,7 @@ add gradient ^9CVmZ98j
 			"frameId": "LvTA6ONJ2kGkskA4StC2V",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068774,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -1419,13 +1398,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "你好，这是一段文字",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 294,
-			"versionNonce": 196004380,
+			"version": 295,
+			"versionNonce": 1000763814,
 			"isDeleted": false,
 			"id": "P9VOgr2P",
 			"fillStyle": "solid",
@@ -1445,7 +1423,7 @@ add gradient ^9CVmZ98j
 			"frameId": "LvTA6ONJ2kGkskA4StC2V",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068774,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -1461,13 +1439,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "你好，这是一段文字",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 156,
-			"versionNonce": 1661957540,
+			"version": 158,
+			"versionNonce": 147072122,
 			"isDeleted": false,
 			"id": "ScGzNTFy",
 			"fillStyle": "hachure",
@@ -1476,8 +1453,8 @@ add gradient ^9CVmZ98j
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -370.8971938798221,
-			"y": 1039.092567635427,
+			"x": -359.4686224512508,
+			"y": 1034.5212088184628,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 20,
@@ -1487,7 +1464,7 @@ add gradient ^9CVmZ98j
 			"frameId": "D5pTQ9IbkX7EM1tHinynG",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123364570,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -1498,13 +1475,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "●",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 181,
-			"versionNonce": 805775004,
+			"version": 183,
+			"versionNonce": 1417512250,
 			"isDeleted": false,
 			"id": "kY4GlTx6",
 			"fillStyle": "solid",
@@ -1513,8 +1489,8 @@ add gradient ^9CVmZ98j
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -381.58145580416397,
-			"y": 994.618870575394,
+			"x": -370.15288437559263,
+			"y": 990.0475117584298,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 140,
@@ -1524,7 +1500,7 @@ add gradient ^9CVmZ98j
 			"frameId": "D5pTQ9IbkX7EM1tHinynG",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123364570,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -1535,13 +1511,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "运行以下脚本：",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 201,
-			"versionNonce": 341385508,
+			"version": 203,
+			"versionNonce": 1271713274,
 			"isDeleted": false,
 			"id": "IXf7XC8z",
 			"fillStyle": "solid",
@@ -1550,8 +1525,8 @@ add gradient ^9CVmZ98j
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -343.8971938798221,
-			"y": 1040.092567635427,
+			"x": -332.4686224512508,
+			"y": 1035.5212088184628,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 321.1998291015625,
@@ -1561,7 +1536,7 @@ add gradient ^9CVmZ98j
 			"frameId": "D5pTQ9IbkX7EM1tHinynG",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123364570,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -1578,13 +1553,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "paste text with containers - single",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 64,
-			"versionNonce": 1377825564,
+			"version": 66,
+			"versionNonce": 1404370618,
 			"isDeleted": false,
 			"id": "d2gvTMWy",
 			"fillStyle": "solid",
@@ -1593,8 +1567,8 @@ add gradient ^9CVmZ98j
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -344.96392565065537,
-			"y": 1080.142513248056,
+			"x": -333.53535422208404,
+			"y": 1075.5711544310918,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#a5d8ff",
 			"width": 245.25985717773438,
@@ -1604,7 +1578,7 @@ add gradient ^9CVmZ98j
 			"frameId": "D5pTQ9IbkX7EM1tHinynG",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123364570,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -1615,13 +1589,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "paste text with containers",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "frame",
-			"version": 324,
-			"versionNonce": 1449221284,
+			"version": 326,
+			"versionNonce": 505879290,
 			"isDeleted": false,
 			"id": "D5pTQ9IbkX7EM1tHinynG",
 			"fillStyle": "solid",
@@ -1630,8 +1603,8 @@ add gradient ^9CVmZ98j
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -509.5934420350078,
-			"y": 891.436280017562,
+			"x": -498.16487060643647,
+			"y": 886.8649212005978,
 			"strokeColor": "#bbb",
 			"backgroundColor": "transparent",
 			"width": 676.606819805841,
@@ -1641,7 +1614,7 @@ add gradient ^9CVmZ98j
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123364569,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -1655,8 +1628,8 @@ add gradient ^9CVmZ98j
 		},
 		{
 			"type": "text",
-			"version": 388,
-			"versionNonce": 1080766364,
+			"version": 390,
+			"versionNonce": 953751418,
 			"isDeleted": false,
 			"id": "X3S95K6y",
 			"fillStyle": "solid",
@@ -1665,8 +1638,8 @@ add gradient ^9CVmZ98j
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -323.6929954736143,
-			"y": 910.1379414752862,
+			"x": -312.264424045043,
+			"y": 905.566582658322,
 			"strokeColor": "#0c8599",
 			"backgroundColor": "transparent",
 			"width": 288,
@@ -1676,7 +1649,7 @@ add gradient ^9CVmZ98j
 			"frameId": "D5pTQ9IbkX7EM1tHinynG",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123364570,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -1692,13 +1665,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "粘贴为带容器文字",
-			"lineHeight": 1.25,
-			"baseline": 35
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 57,
-			"versionNonce": 192896633,
+			"version": 58,
+			"versionNonce": 1169786362,
 			"isDeleted": false,
 			"id": "LXku91IU",
 			"fillStyle": "solid",
@@ -1718,7 +1690,7 @@ add gradient ^9CVmZ98j
 			"frameId": "RB5uHKpnEqFMHg5Uu9bFL",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708410352221,
+			"updated": 1711123068774,
 			"link": null,
 			"locked": false,
 			"fontSize": 28,
@@ -1729,13 +1701,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "你好",
-			"lineHeight": 1.25,
-			"baseline": 26
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 66,
-			"versionNonce": 723180572,
+			"version": 67,
+			"versionNonce": 822439590,
 			"isDeleted": false,
 			"id": "g7K0x4fd",
 			"fillStyle": "solid",
@@ -1755,7 +1726,7 @@ add gradient ^9CVmZ98j
 			"frameId": "RB5uHKpnEqFMHg5Uu9bFL",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068774,
 			"link": null,
 			"locked": false,
 			"fontSize": 28,
@@ -1766,13 +1737,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "你好",
-			"lineHeight": 1.25,
-			"baseline": 26
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 78,
-			"versionNonce": 1971757463,
+			"version": 79,
+			"versionNonce": 1598731962,
 			"isDeleted": false,
 			"id": "JFoxAwo8",
 			"fillStyle": "solid",
@@ -1792,7 +1762,7 @@ add gradient ^9CVmZ98j
 			"frameId": "RB5uHKpnEqFMHg5Uu9bFL",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708410352221,
+			"updated": 1711123068774,
 			"link": null,
 			"locked": false,
 			"fontSize": 28,
@@ -1803,13 +1773,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "你好",
-			"lineHeight": 1.25,
-			"baseline": 26
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 89,
-			"versionNonce": 1814100124,
+			"version": 92,
+			"versionNonce": 92155046,
 			"isDeleted": false,
 			"id": "oxfE4CSG",
 			"fillStyle": "solid",
@@ -1822,14 +1791,14 @@ add gradient ^9CVmZ98j
 			"y": -257.026034737544,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#a5d8ff",
-			"width": 56,
+			"width": 41.015625,
 			"height": 35,
 			"seed": 1706118493,
 			"groupIds": [],
 			"frameId": "RB5uHKpnEqFMHg5Uu9bFL",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123325836,
 			"link": null,
 			"locked": false,
 			"fontSize": 28,
@@ -1840,13 +1809,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "你好",
-			"lineHeight": 1.25,
-			"baseline": 26
+			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
-			"version": 142,
-			"versionNonce": 486371108,
+			"version": 144,
+			"versionNonce": 997988410,
 			"isDeleted": false,
 			"id": "WdG3kniF",
 			"fillStyle": "hachure",
@@ -1855,8 +1823,8 @@ add gradient ^9CVmZ98j
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -458.65467847381194,
-			"y": 1159.3739489864145,
+			"x": -447.2261070452406,
+			"y": 1154.8025901694502,
 			"strokeColor": "transparent",
 			"backgroundColor": "transparent",
 			"width": 598.1676432291667,
@@ -1871,14 +1839,14 @@ add gradient ^9CVmZ98j
 					"id": "XQwJ0mFv"
 				}
 			],
-			"updated": 1708403287874,
+			"updated": 1711123364570,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 118,
-			"versionNonce": 1459792439,
+			"version": 122,
+			"versionNonce": 461439226,
 			"isDeleted": false,
 			"id": "XQwJ0mFv",
 			"fillStyle": "hachure",
@@ -1887,8 +1855,8 @@ add gradient ^9CVmZ98j
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -453.65467847381194,
-			"y": 1164.3739489864145,
+			"x": -442.2261070452406,
+			"y": 1159.8025901694502,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
 			"width": 586.4793090820312,
@@ -1898,7 +1866,7 @@ add gradient ^9CVmZ98j
 			"frameId": "D5pTQ9IbkX7EM1tHinynG",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708410351151,
+			"updated": 1711123364570,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -1909,13 +1877,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": "WdG3kniF",
 			"originalText": "Obsidian is a personal knowledge base and note-taking software application that operates on Markdown files.[2][3] It allows users to make internal links for notes and then to visualize the connections as a graph.[4][5] It is designed to help users organize and structure their thoughts and knowledge in a flexible, non-linear way. The software is free for personal use, with commercial licenses available for pay.[2][6]\n\nHistory\nObsidian was founded by Shida Li and Erica Xu while quarantining during the COVID-19 pandemic.[7] Li and Xu, who had met while studying at the University of Waterloo, had already collaborated on several development projects.[8] Obsidian was initially released on 30 March 2020.[9] Version 1.0.0 was released in October 2022.[10][11] Version 1.1, which added the Canvas core plugin, released in December 2022.[12]",
-			"lineHeight": 1.25,
-			"baseline": 276
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 162,
-			"versionNonce": 558623396,
+			"version": 163,
+			"versionNonce": 922996794,
 			"isDeleted": false,
 			"id": "ELKxnA7i",
 			"fillStyle": "hachure",
@@ -1935,7 +1902,7 @@ add gradient ^9CVmZ98j
 			"frameId": "_39LllvYeU7XnPQFF5gyC",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287874,
+			"updated": 1711123068774,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -1946,13 +1913,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "●",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 187,
-			"versionNonce": 1505264028,
+			"version": 188,
+			"versionNonce": 134998118,
 			"isDeleted": false,
 			"id": "ntutOsLX",
 			"fillStyle": "solid",
@@ -1972,7 +1938,7 @@ add gradient ^9CVmZ98j
 			"frameId": "_39LllvYeU7XnPQFF5gyC",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287875,
+			"updated": 1711123068774,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -1983,13 +1949,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "运行以下脚本：",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 207,
-			"versionNonce": 490665508,
+			"version": 208,
+			"versionNonce": 1028765946,
 			"isDeleted": false,
 			"id": "fFcnhByk",
 			"fillStyle": "solid",
@@ -2009,7 +1974,7 @@ add gradient ^9CVmZ98j
 			"frameId": "_39LllvYeU7XnPQFF5gyC",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287875,
+			"updated": 1711123068774,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -2026,13 +1991,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "highlight text by editable",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 48,
-			"versionNonce": 317582876,
+			"version": 49,
+			"versionNonce": 1149103014,
 			"isDeleted": false,
 			"id": "eBM12aV8",
 			"fillStyle": "solid",
@@ -2057,7 +2021,7 @@ add gradient ^9CVmZ98j
 					"type": "arrow"
 				}
 			],
-			"updated": 1708403287875,
+			"updated": 1711123068774,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -2068,13 +2032,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "highlight text",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
-			"version": 67,
-			"versionNonce": 1304727972,
+			"version": 68,
+			"versionNonce": 996444602,
 			"isDeleted": false,
 			"id": "3p3s_-W304Dxz6HZH5-xK",
 			"fillStyle": "solid",
@@ -2096,7 +2059,7 @@ add gradient ^9CVmZ98j
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1708403287875,
+			"updated": 1711123068774,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -2125,8 +2088,8 @@ add gradient ^9CVmZ98j
 		},
 		{
 			"type": "text",
-			"version": 79,
-			"versionNonce": 1270991516,
+			"version": 80,
+			"versionNonce": 38635238,
 			"isDeleted": false,
 			"id": "WjkiQ0tl",
 			"fillStyle": "solid",
@@ -2146,7 +2109,7 @@ add gradient ^9CVmZ98j
 			"frameId": "_39LllvYeU7XnPQFF5gyC",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287875,
+			"updated": 1711123068774,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -2157,13 +2120,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Alt+shift+H",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "frame",
-			"version": 302,
-			"versionNonce": 571129124,
+			"version": 303,
+			"versionNonce": 945767034,
 			"isDeleted": false,
 			"id": "_39LllvYeU7XnPQFF5gyC",
 			"fillStyle": "solid",
@@ -2183,7 +2145,7 @@ add gradient ^9CVmZ98j
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287875,
+			"updated": 1711123068774,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -2197,8 +2159,8 @@ add gradient ^9CVmZ98j
 		},
 		{
 			"type": "text",
-			"version": 368,
-			"versionNonce": 1726355228,
+			"version": 369,
+			"versionNonce": 1913109030,
 			"isDeleted": false,
 			"id": "G79GRT2W",
 			"fillStyle": "solid",
@@ -2218,7 +2180,7 @@ add gradient ^9CVmZ98j
 			"frameId": "_39LllvYeU7XnPQFF5gyC",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287875,
+			"updated": 1711123068774,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -2234,13 +2196,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "文字高亮",
-			"lineHeight": 1.25,
-			"baseline": 35
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 132,
-			"versionNonce": 1937733796,
+			"version": 133,
+			"versionNonce": 1594155834,
 			"isDeleted": false,
 			"id": "lZ9H4Em4",
 			"fillStyle": "solid",
@@ -2260,7 +2221,7 @@ add gradient ^9CVmZ98j
 			"frameId": "_39LllvYeU7XnPQFF5gyC",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287875,
+			"updated": 1711123068774,
 			"link": null,
 			"locked": false,
 			"customData": {},
@@ -2272,13 +2233,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "你好，这是一段文字",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 208,
-			"versionNonce": 550294428,
+			"version": 209,
+			"versionNonce": 714704230,
 			"isDeleted": false,
 			"id": "RSHV05u2",
 			"fillStyle": "solid",
@@ -2303,7 +2263,7 @@ add gradient ^9CVmZ98j
 					"type": "arrow"
 				}
 			],
-			"updated": 1708403287875,
+			"updated": 1711123068774,
 			"link": null,
 			"locked": false,
 			"customData": {},
@@ -2315,13 +2275,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "你好，这是==一段==文字",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 227,
-			"versionNonce": 1037091876,
+			"version": 228,
+			"versionNonce": 163081210,
 			"isDeleted": false,
 			"id": "9GHn3hIQ",
 			"fillStyle": "solid",
@@ -2343,7 +2302,7 @@ add gradient ^9CVmZ98j
 			"frameId": "_39LllvYeU7XnPQFF5gyC",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287875,
+			"updated": 1711123068774,
 			"link": null,
 			"locked": false,
 			"customData": {},
@@ -2355,13 +2314,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "你好，这是一段文字",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 83,
-			"versionNonce": 1470627868,
+			"version": 84,
+			"versionNonce": 1565517990,
 			"isDeleted": false,
 			"id": "DBnFpq2L",
 			"fillStyle": "solid",
@@ -2381,7 +2339,7 @@ add gradient ^9CVmZ98j
 			"frameId": "_39LllvYeU7XnPQFF5gyC",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287875,
+			"updated": 1711123068774,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -2392,13 +2350,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Alt+H",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 123,
-			"versionNonce": 1458347940,
+			"version": 125,
+			"versionNonce": 610980282,
 			"isDeleted": false,
 			"id": "QWkm3RX8",
 			"fillStyle": "solid",
@@ -2407,8 +2364,8 @@ add gradient ^9CVmZ98j
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -0.049492161006241986,
-			"y": 1041.0601181806542,
+			"x": 11.37907926756509,
+			"y": 1036.48875936369,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#a5d8ff",
 			"width": 97.77995300292969,
@@ -2418,7 +2375,7 @@ add gradient ^9CVmZ98j
 			"frameId": "D5pTQ9IbkX7EM1tHinynG",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287875,
+			"updated": 1711123364570,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -2429,13 +2386,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Ctrl+Alt+V",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 149,
-			"versionNonce": 1399430300,
+			"version": 151,
+			"versionNonce": 962366074,
 			"isDeleted": false,
 			"id": "pqSyiciE",
 			"fillStyle": "solid",
@@ -2444,8 +2400,8 @@ add gradient ^9CVmZ98j
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -4.755374513947345,
-			"y": 1084.354257369533,
+			"x": 6.673196914623986,
+			"y": 1079.7828985525687,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#a5d8ff",
 			"width": 153.73992919921875,
@@ -2455,7 +2411,7 @@ add gradient ^9CVmZ98j
 			"frameId": "D5pTQ9IbkX7EM1tHinynG",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708403287875,
+			"updated": 1711123364570,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -2466,13 +2422,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Ctrl+Alt+Shift+V",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 143,
-			"versionNonce": 1773433045,
+			"version": 144,
+			"versionNonce": 183842170,
 			"isDeleted": false,
 			"id": "izOFU0NU",
 			"fillStyle": "hachure",
@@ -2492,7 +2447,7 @@ add gradient ^9CVmZ98j
 			"frameId": "3etfVtart2q-QrSU_8Uiz",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708404231986,
+			"updated": 1711123068774,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -2503,13 +2458,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "●",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 200,
-			"versionNonce": 492527707,
+			"version": 201,
+			"versionNonce": 842954534,
 			"isDeleted": false,
 			"id": "nesr0GPU",
 			"fillStyle": "solid",
@@ -2529,7 +2483,7 @@ add gradient ^9CVmZ98j
 			"frameId": "3etfVtart2q-QrSU_8Uiz",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708404237003,
+			"updated": 1711123068774,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -2546,13 +2500,12 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "add partial color",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 117,
-			"versionNonce": 529313205,
+			"version": 118,
+			"versionNonce": 1885632058,
 			"isDeleted": false,
 			"id": "NHxfzU5o",
 			"fillStyle": "solid",
@@ -2572,7 +2525,7 @@ add gradient ^9CVmZ98j
 			"frameId": "3etfVtart2q-QrSU_8Uiz",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1708404248443,
+			"updated": 1711123068774,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -2583,8 +2536,7 @@ add gradient ^9CVmZ98j
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "改变部分文字的颜色",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		}
 	],
 	"appState": {
@@ -2602,8 +2554,8 @@ add gradient ^9CVmZ98j
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1889.6805407600632,
-		"scrollY": 776.4780592443474,
+		"scrollX": 1785.648108104828,
+		"scrollY": 437.524956791245,
 		"zoom": {
 			"value": 0.35000000000000003
 		},

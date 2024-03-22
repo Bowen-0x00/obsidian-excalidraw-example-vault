@@ -4,15 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "2cae628d286321ef",
+        "id": "0ffb1b3862db7c93",
         "type": "tabs",
         "children": [
           {
-            "id": "478f68ec820d4bea",
+            "id": "b3e198bad80cc9be",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "excalidraw",
+              "state": {
+                "file": "example/example - 文字和字体.excalidraw.md"
+              }
             }
           }
         ]
@@ -81,6 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "example/example - 文字和字体.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "example/example - 文字和字体.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -107,7 +111,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "example/example - 文字和字体.excalidraw.md"
+              }
             }
           },
           {
@@ -142,8 +148,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "478f68ec820d4bea",
+  "active": "b3e198bad80cc9be",
   "lastOpenFiles": [
+    "example/example - 文字和字体.excalidraw.md",
     "example/摘录方式.excalidraw.md",
     "example/example - 箭头动画.excalidraw.md",
     "example/example - 思维导图.excalidraw.md",
@@ -155,7 +162,6 @@
     "example/example - 高亮连接.excalidraw.md",
     "example/example - 逐个显示&隐藏.excalidraw.md",
     "example/example - 详情.excalidraw.md",
-    "example/example - 文字和字体.excalidraw.md",
     "example/123.md",
     "example/456.md",
     "example/摘录方式.excalidraw.png",
