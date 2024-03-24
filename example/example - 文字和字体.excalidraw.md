@@ -1314,8 +1314,8 @@ add partial color ^nesr0GPU
 		},
 		{
 			"type": "text",
-			"version": 267,
-			"versionNonce": 1842341882,
+			"version": 268,
+			"versionNonce": 187401623,
 			"isDeleted": false,
 			"id": "a2b0bern",
 			"fillStyle": "solid",
@@ -1335,7 +1335,7 @@ add partial color ^nesr0GPU
 			"frameId": "LvTA6ONJ2kGkskA4StC2V",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1711123325835,
+			"updated": 1711159801403,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -1777,8 +1777,8 @@ add partial color ^nesr0GPU
 		},
 		{
 			"type": "text",
-			"version": 92,
-			"versionNonce": 92155046,
+			"version": 93,
+			"versionNonce": 862618457,
 			"isDeleted": false,
 			"id": "oxfE4CSG",
 			"fillStyle": "solid",
@@ -1798,7 +1798,7 @@ add partial color ^nesr0GPU
 			"frameId": "RB5uHKpnEqFMHg5Uu9bFL",
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1711123325836,
+			"updated": 1711159801403,
 			"link": null,
 			"locked": false,
 			"fontSize": 28,
@@ -2554,8 +2554,8 @@ add partial color ^nesr0GPU
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1785.648108104828,
-		"scrollY": 437.524956791245,
+		"scrollX": 1599.6805408746468,
+		"scrollY": 673.7013084072939,
 		"zoom": {
 			"value": 0.35000000000000003
 		},

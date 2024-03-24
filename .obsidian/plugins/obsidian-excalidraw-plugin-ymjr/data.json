@@ -380,6 +380,24 @@
         "value": 50,
         "description": "The distance between the tail of the connection and the connecting elements of the mind map"
       }
+    },
+    "Downloaded(Custom)/add shadow": {
+      "shadowColor": {
+        "value": "-20",
+        "description": "number -20: lightness decay 20; 16 radix RGB string #FF0000: red."
+      },
+      "shadowBlur": {
+        "value": "0.1",
+        "description": "number 0.1: size = 0.1 * element.width; string 2px: size = 2px."
+      },
+      "shadowOffsetX": {
+        "value": "0.1",
+        "description": "number 0.1: size = 0.1 * element.width; string 2px: size = 2px."
+      },
+      "shadowOffsetY": {
+        "value": "0.1",
+        "description": "number 0.1: size = 0.1 * element.width; string 2px: size = 2px."
+      }
     }
   },
   "defaultTrayMode": true,

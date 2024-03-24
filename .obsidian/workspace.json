@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "0ffb1b3862db7c93",
+        "id": "40758f0a58b73d8b",
         "type": "tabs",
         "children": [
           {
-            "id": "b3e198bad80cc9be",
+            "id": "a2600548b132ea40",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "example/example - 文字和字体.excalidraw.md"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -83,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "example/example - 文字和字体.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "example/example - 文字和字体.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,9 +107,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "example/example - 文字和字体.excalidraw.md"
-              }
+              "state": {}
             }
           },
           {
@@ -148,12 +142,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "b3e198bad80cc9be",
+  "active": "a2600548b132ea40",
   "lastOpenFiles": [
+    "example/Drawing 2024-03-24 19.18.12.excalidraw.md",
+    "example/Drawing 2024-03-23 17.35.07.excalidraw.md",
+    "example/example - 思维导图.excalidraw.md",
     "example/example - 文字和字体.excalidraw.md",
     "example/摘录方式.excalidraw.md",
     "example/example - 箭头动画.excalidraw.md",
-    "example/example - 思维导图.excalidraw.md",
     "example/mindmap from templater_mindmap.excalidraw.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/Mindmap format2.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)",
@@ -186,8 +182,6 @@
     "example/example - 圆圈编号.excalidraw.md",
     "plugins/Drawing 2024-02-20 15.39.54.excalidraw.md",
     "example/example - 箭头连接元素.excalidraw.md",
-    "example/Drawing 2024-02-20 14.25.57.excalidraw.md",
-    "example/example - 日历素材.excalidraw.md",
     "Example vault.7z",
     "plugins/Excalidraw/Scripts/action",
     "plugins/Excalidraw/Scripts/New folder",
