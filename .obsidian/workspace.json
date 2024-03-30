@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "40758f0a58b73d8b",
+        "id": "f23d26ad6d4d58ea",
         "type": "tabs",
         "children": [
           {
-            "id": "a2600548b132ea40",
+            "id": "2c9f572ca528695e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -107,7 +107,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "example/Untitled.md"
+              }
             }
           },
           {
@@ -142,8 +144,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "a2600548b132ea40",
+  "active": "587ccf90dd5151c5",
   "lastOpenFiles": [
+    "example/Untitled.excalidraw.md",
+    "example/Untitled.md",
+    "example/Drawing 2024-03-27 13.56.43.excalidraw.md",
     "example/Drawing 2024-03-24 19.18.12.excalidraw.md",
     "example/Drawing 2024-03-23 17.35.07.excalidraw.md",
     "example/example - 思维导图.excalidraw.md",
@@ -179,9 +184,6 @@
     "example/mindmap from templater.md",
     "example/456.excalidraw.md",
     "example/example - 自动连接附着.excalidraw.md",
-    "example/example - 圆圈编号.excalidraw.md",
-    "plugins/Drawing 2024-02-20 15.39.54.excalidraw.md",
-    "example/example - 箭头连接元素.excalidraw.md",
     "Example vault.7z",
     "plugins/Excalidraw/Scripts/action",
     "plugins/Excalidraw/Scripts/New folder",
