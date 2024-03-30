@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f23d26ad6d4d58ea",
+        "id": "248193d5f1039ee4",
         "type": "tabs",
         "children": [
           {
-            "id": "2c9f572ca528695e",
+            "id": "90123a89e7e9df51",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -107,9 +107,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "example/Untitled.md"
-              }
+              "state": {}
             }
           },
           {
@@ -144,27 +142,45 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "587ccf90dd5151c5",
+  "active": "90123a89e7e9df51",
   "lastOpenFiles": [
+    "Drawing 2024-03-30 15.21.28.excalidraw.md",
+    "Drawing 2024-03-30 15.20.28.excalidraw.md",
     "example/Untitled.excalidraw.md",
-    "example/Untitled.md",
-    "example/Drawing 2024-03-27 13.56.43.excalidraw.md",
-    "example/Drawing 2024-03-24 19.18.12.excalidraw.md",
-    "example/Drawing 2024-03-23 17.35.07.excalidraw.md",
-    "example/example - 思维导图.excalidraw.md",
-    "example/example - 文字和字体.excalidraw.md",
-    "example/摘录方式.excalidraw.md",
-    "example/example - 箭头动画.excalidraw.md",
-    "example/mindmap from templater_mindmap.excalidraw.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Mindmap format2.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)",
-    "Excalidraw关系.excalidraw.svg",
+    "Untitled.md",
+    "test/1/Untitled_0.excalidraw.md",
+    "plugins/Templater/tp-excalidraw双链和创建文件-输入文件名.md",
+    "test/1/Untitled.excalidraw.md",
+    "test/1/Untitled_3.excalidraw.md",
+    "test/1/Untitled_2.excalidraw.md",
+    "test/1/Untitled_1.excalidraw.md",
+    "plugins/Templater/tp-excalidraw双链和创建文件-固定ex路径.md",
+    "plugins/Templater/模板-excalidraw双链和创建文件.md",
+    "plugins/Templater/tp - excalidraw双链和创建文件 - 输入文件名.md",
+    "plugins/模板-excalidraw双链和创建文件.md",
+    "test/2",
+    "test/1",
+    "1",
+    "test",
+    "Untitled_0.excalidraw.md",
+    "Untitled.excalidraw.md",
+    "Untitle_3d",
+    "Untitle_2d",
+    "plugins/Excalidraw/Templates/Template.excalidraw.md",
+    "Untitle_1d",
     "Excalidraw关系.excalidraw.md",
-    "example/example - 高亮连接.excalidraw.md",
-    "example/example - 逐个显示&隐藏.excalidraw.md",
-    "example/example - 详情.excalidraw.md",
-    "example/123.md",
-    "example/456.md",
+    "Untitle_0d",
+    "Untitled",
+    "Drawing 2024-03-30 14.40.33.excalidraw.md",
+    "Drawing 2024-03-30 14.30.40.excalidraw.md",
+    "Drawing 2024-03-30 14.29.55.excalidraw.md",
+    "plugins/Excalidraw/Templates/slides.excalidraw.md",
+    "plugins/Excalidraw/Templates",
+    "Drawing 2024-03-30 14.23.43.excalidraw.md",
+    "plugins/Excalidraw/Template/slides.md",
+    "plugins/Excalidraw/Template/Template.excalidraw.md",
+    "example/Untitled.md",
+    "Excalidraw关系.excalidraw.svg",
     "example/摘录方式.excalidraw.png",
     "example/attachments/摘录方式.excalidraw_image_20240306201157_674.png",
     "example/attachments/摘录方式.excalidraw_image_20240306205702_319.png",
@@ -173,24 +189,6 @@
     "example/attachments/摘录方式.excalidraw_image_20240306202047_883.png",
     "example/attachments/摘录方式.excalidraw_image_20240306202023_617.png",
     "example/attachments/摘录方式.excalidraw_image_20240306201438_465.png",
-    "example/attachments/摘录方式.excalidraw_image_20240306201033_446.png",
-    "example/example - 视频摘录.excalidraw.md",
-    "example/example - svg转excalidraw - 文字.excalidraw.md",
-    "example/example - 折叠显示元素.excalidraw.md",
-    "example/Drawing 2024-03-01 22.42.48.excalidraw.md",
-    "Drawing 2024-02-29 22.50.54.excalidraw.md",
-    "example/example - 标签.excalidraw.md",
-    "plugins/Excalidraw/Library/polygons.excalidrawlib",
-    "example/mindmap from templater.md",
-    "example/456.excalidraw.md",
-    "example/example - 自动连接附着.excalidraw.md",
-    "Example vault.7z",
-    "plugins/Excalidraw/Scripts/action",
-    "plugins/Excalidraw/Scripts/New folder",
-    "plugins/Excalidraw/Scripts/add",
-    "plugins/Excalidraw/Scripts/auto",
-    "plugins/Excalidraw/Scripts/autorun",
-    "plugins/Excalidraw/Scripts/auto-run",
-    "plugins/Templater"
+    "example/attachments/摘录方式.excalidraw_image_20240306201033_446.png"
   ]
 }

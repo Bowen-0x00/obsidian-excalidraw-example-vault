@@ -2,7 +2,7 @@
   "folder": "",
   "cropFolder": "",
   "embedUseExcalidrawFolder": false,
-  "templateFilePath": "plugins/Excalidraw/Template.excalidraw",
+  "templateFilePath": "plugins/Excalidraw/Templates/Template.excalidraw.md",
   "scriptFolderPath": "plugins/Excalidraw/Scripts",
   "compress": false,
   "autosave": true,
@@ -397,6 +397,12 @@
       "shadowOffsetY": {
         "value": "0.1",
         "description": "number 0.1: size = 0.1 * element.width; string 2px: size = 2px."
+      }
+    },
+    "Downloaded(Custom)/load more library": {
+      "extra library path": {
+        "value": "",
+        "description": "Extra Personal library path"
       }
     }
   },
