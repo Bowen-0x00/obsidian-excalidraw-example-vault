@@ -8,4 +8,4 @@ const lastIndex = currentFilePath.lastIndexOf("/")
 const fileName = getDrawingFilename(ea.plugin.settings, currentFilePath.substring(lastIndex + 1))
 const path = await ea.plugin.createAndOpenDrawing(fileName, "new-pane", 'example');
 %>
-<%`[[${path}|${fileName}]]`%>
+<%`[[${path}|${fileName.slice(0, -3)}]]`%>

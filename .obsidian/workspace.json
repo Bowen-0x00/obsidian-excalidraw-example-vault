@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "248193d5f1039ee4",
+        "id": "f0faeafab2c05056",
         "type": "tabs",
         "children": [
           {
-            "id": "90123a89e7e9df51",
+            "id": "c51e7c6feb6b0750",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -142,12 +142,16 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "90123a89e7e9df51",
+  "active": "587ccf90dd5151c5",
   "lastOpenFiles": [
+    "example/Untitled_0.excalidraw.md",
+    "Untitled.md",
+    "example/Untitled-excalidrawl.md",
+    "plugins/Templater/tp-excalidraw双链和创建文件-固定ex路径 copy.md",
+    "example/Untitled.excalidraw.md",
+    "example/Untitled.md",
     "Drawing 2024-03-30 15.21.28.excalidraw.md",
     "Drawing 2024-03-30 15.20.28.excalidraw.md",
-    "example/Untitled.excalidraw.md",
-    "Untitled.md",
     "test/1/Untitled_0.excalidraw.md",
     "plugins/Templater/tp-excalidraw双链和创建文件-输入文件名.md",
     "test/1/Untitled.excalidraw.md",
@@ -176,10 +180,6 @@
     "Drawing 2024-03-30 14.29.55.excalidraw.md",
     "plugins/Excalidraw/Templates/slides.excalidraw.md",
     "plugins/Excalidraw/Templates",
-    "Drawing 2024-03-30 14.23.43.excalidraw.md",
-    "plugins/Excalidraw/Template/slides.md",
-    "plugins/Excalidraw/Template/Template.excalidraw.md",
-    "example/Untitled.md",
     "Excalidraw关系.excalidraw.svg",
     "example/摘录方式.excalidraw.png",
     "example/attachments/摘录方式.excalidraw_image_20240306201157_674.png",
