@@ -14,7 +14,6 @@ tags: [excalidraw]
 
 你可以点击元素右上角的图标来展开/折叠详情/批注 ^Zwv2XzYU
 
-
 # Embedded files
 63abcf8eea480aa1bc11913f56cfdec0bf96b381: $$e^{ix} = \cos{x} + i \sin{x}$$
 b844ba3719ae55e3ec7f9e5969e8f23f07a2ed82: [[example - 详情.excalidraw_image_20240122174444_681.png]]
@@ -27,12 +26,12 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.24-1",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.2-1",
 	"elements": [
 		{
 			"type": "rectangle",
-			"version": 232,
-			"versionNonce": 932430447,
+			"version": 234,
+			"versionNonce": 822170274,
 			"isDeleted": false,
 			"id": "hyBh7ZRFvDCrBhsvXt9sf",
 			"fillStyle": "solid",
@@ -54,7 +53,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1710332213326,
+			"updated": 1712411305014,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -64,8 +63,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 		},
 		{
 			"type": "rectangle",
-			"version": 951,
-			"versionNonce": 10630527,
+			"version": 953,
+			"versionNonce": 824528837,
 			"isDeleted": false,
 			"id": "fSLqLGLskW71fKRL4Jjom",
 			"fillStyle": "solid",
@@ -92,7 +91,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 					"id": "JWVidaYp"
 				}
 			],
-			"updated": 1710332213326,
+			"updated": 1712411305013,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -144,13 +143,12 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"verticalAlign": "middle",
 			"containerId": "fSLqLGLskW71fKRL4Jjom",
 			"originalText": "欧拉公式",
-			"lineHeight": 1.25,
-			"baseline": 31
+			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
-			"version": 181,
-			"versionNonce": 223279694,
+			"version": 183,
+			"versionNonce": 689602338,
 			"isDeleted": false,
 			"id": "shztdZPw",
 			"fillStyle": "hachure",
@@ -175,7 +173,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 					"id": "tQus9Eh8"
 				}
 			],
-			"updated": 1710332213326,
+			"updated": 1712411305014,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -185,8 +183,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 		},
 		{
 			"type": "text",
-			"version": 349,
-			"versionNonce": 918641898,
+			"version": 353,
+			"versionNonce": 1473959547,
 			"isDeleted": false,
 			"id": "tQus9Eh8",
 			"fillStyle": "hachure",
@@ -206,7 +204,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1710332213335,
+			"updated": 1712411305022,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -222,12 +220,12 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"containerId": "shztdZPw",
 			"originalText": "欧拉公式（英语：Euler's formula，又称尤拉公式）是复分析领域的公式，它将三角函数与复指数函数关联起来，因其提出者莱昂哈德·欧拉而得名。欧拉公式提出，对任意实数",
 			"lineHeight": 1.25,
-			"baseline": 94
+			"baseline": 95
 		},
 		{
 			"type": "image",
-			"version": 181,
-			"versionNonce": 713760042,
+			"version": 183,
+			"versionNonce": 706999330,
 			"isDeleted": false,
 			"id": "AqsGAkQQ",
 			"fillStyle": "hachure",
@@ -247,7 +245,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1710332213326,
+			"updated": 1712411305014,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -266,8 +264,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 		},
 		{
 			"type": "image",
-			"version": 245,
-			"versionNonce": 519188470,
+			"version": 247,
+			"versionNonce": 63974135,
 			"isDeleted": false,
 			"id": "wff1q6Ym9S00vl2ktKZmQ",
 			"fillStyle": "solid",
@@ -287,7 +285,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1710332213326,
+			"updated": 1712411305014,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -303,8 +301,8 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 		},
 		{
 			"type": "image",
-			"version": 249,
-			"versionNonce": 397706191,
+			"version": 251,
+			"versionNonce": 707686670,
 			"isDeleted": false,
 			"id": "aEQW_fGc8mAdNFN1kUxFQ",
 			"fillStyle": "solid",
@@ -324,7 +322,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1710332213326,
+			"updated": 1712411305014,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -377,8 +375,7 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "你可以点击元素右上角的图标来展开/折叠详情/批注",
-			"lineHeight": 1.25,
-			"baseline": 36
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
@@ -444,10 +441,10 @@ f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 847.4610942543761,
-		"scrollY": 608.1083062183832,
+		"scrollX": 996.5551429567317,
+		"scrollY": 656.1297314077773,
 		"zoom": {
-			"value": 0.6000000000000001
+			"value": 0.8
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,

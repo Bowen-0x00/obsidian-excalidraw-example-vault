@@ -12,6 +12,8 @@ tags: [excalidraw]
 
 Shift + 点击下面的图标 ^CRvRNjfs
 
+欧拉公式（英语：Euler's formula，又称尤拉公式）是复分析领域的公式，它将三角函数与复指数函数关联起来，因其提出者莱昂哈德·欧拉而得名。欧拉公式提出，对任意实数 ^tQus9Eh8
+
 # Tags
 %%
 # Drawing
@@ -19,8 +21,280 @@ Shift + 点击下面的图标 ^CRvRNjfs
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.17-7",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.2-1",
 	"elements": [
+		{
+			"type": "rectangle",
+			"version": 953,
+			"versionNonce": 824528837,
+			"isDeleted": false,
+			"id": "fSLqLGLskW71fKRL4Jjom",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 100,
+			"angle": 0,
+			"x": -556.1601963203551,
+			"y": -216.29782725164506,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#f3f0ff",
+			"width": 220,
+			"height": 125.60003662109375,
+			"seed": 671539807,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 3
+			},
+			"boundElements": [
+				{
+					"type": "text",
+					"id": "JWVidaYp"
+				}
+			],
+			"updated": 1712411305013,
+			"link": null,
+			"locked": false,
+			"customData": {
+				"detail": {
+					"status": "hide",
+					"ids": [
+						"hyBh7ZRFvDCrBhsvXt9sf",
+						"shztdZPw",
+						"tQus9Eh8",
+						"AqsGAkQQ",
+						"wff1q6Ym9S00vl2ktKZmQ",
+						"aEQW_fGc8mAdNFN1kUxFQ"
+					],
+					"relative": true
+				}
+			}
+		},
+		{
+			"type": "rectangle",
+			"version": 234,
+			"versionNonce": 822170274,
+			"isDeleted": false,
+			"id": "hyBh7ZRFvDCrBhsvXt9sf",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 0,
+			"angle": 0,
+			"x": -288.05567653595983,
+			"y": -450.55824118640436,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "#f8f9fa",
+			"width": 626.999969482422,
+			"height": 963.5000419616701,
+			"seed": 1324471857,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 3
+			},
+			"boundElements": [],
+			"updated": 1712411305014,
+			"link": null,
+			"locked": true,
+			"customData": {
+				"hide": true,
+				"backup_opacity": 100
+			}
+		},
+		{
+			"type": "rectangle",
+			"version": 183,
+			"versionNonce": 689602338,
+			"isDeleted": false,
+			"id": "shztdZPw",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 0,
+			"angle": 0,
+			"x": -209.57894628901101,
+			"y": -376.8987953427389,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"width": 485.59997558593756,
+			"height": 114.59997558593749,
+			"seed": 93840,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [
+				{
+					"type": "text",
+					"id": "tQus9Eh8"
+				}
+			],
+			"updated": 1712411305014,
+			"link": null,
+			"locked": true,
+			"customData": {
+				"hide": true,
+				"backup_opacity": 100
+			}
+		},
+		{
+			"type": "text",
+			"version": 363,
+			"versionNonce": 518010293,
+			"isDeleted": false,
+			"id": "tQus9Eh8",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 0,
+			"angle": 0,
+			"x": -204.57894628901101,
+			"y": -371.8987953427389,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"width": 467,
+			"height": 100,
+			"seed": 78563,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1712411361949,
+			"link": null,
+			"locked": true,
+			"customData": {
+				"hide": true,
+				"backup_opacity": 100
+			},
+			"fontSize": 20,
+			"fontFamily": "\"LXGW WenKai\"",
+			"text": "欧拉公式（英语：Euler's formula，又称尤拉公式）\n是复分析领域的公式，它将三角函数与复指数函数关\n联起来，因其提出者莱昂哈德·欧拉而得名。欧拉公式\n提出，对任意实数",
+			"rawText": "欧拉公式（英语：Euler's formula，又称尤拉公式）是复分析领域的公式，它将三角函数与复指数函数关联起来，因其提出者莱昂哈德·欧拉而得名。欧拉公式提出，对任意实数",
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": "shztdZPw",
+			"originalText": "欧拉公式（英语：Euler's formula，又称尤拉公式）是复分析领域的公式，它将三角函数与复指数函数关联起来，因其提出者莱昂哈德·欧拉而得名。欧拉公式提出，对任意实数",
+			"lineHeight": 1.25,
+			"baseline": 95
+		},
+		{
+			"type": "image",
+			"version": 183,
+			"versionNonce": 706999330,
+			"isDeleted": false,
+			"id": "AqsGAkQQ",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 0,
+			"angle": 0,
+			"x": -169.97897070307351,
+			"y": -256.0654314918275,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"width": 180,
+			"height": 21.333333333333332,
+			"seed": 81471,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1712411305014,
+			"link": null,
+			"locked": true,
+			"customData": {
+				"latex": {
+					"scale": 1.3333333333333333
+				},
+				"hide": true,
+				"backup_opacity": 100
+			},
+			"status": "pending",
+			"fileId": "63abcf8eea480aa1bc11913f56cfdec0bf96b381",
+			"scale": [
+				1,
+				1
+			]
+		},
+		{
+			"type": "image",
+			"version": 247,
+			"versionNonce": 63974135,
+			"isDeleted": false,
+			"id": "wff1q6Ym9S00vl2ktKZmQ",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 0,
+			"angle": 0,
+			"x": -206.27889746088601,
+			"y": -215.69881365328575,
+			"strokeColor": "transparent",
+			"backgroundColor": "#f3f0ff",
+			"width": 376.59997558593744,
+			"height": 376.59997558593744,
+			"seed": 653558801,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1712411305014,
+			"link": null,
+			"locked": true,
+			"customData": {
+				"hide": true,
+				"backup_opacity": 100
+			},
+			"status": "pending",
+			"fileId": "b844ba3719ae55e3ec7f9e5969e8f23f07a2ed82",
+			"scale": [
+				1,
+				1
+			]
+		},
+		{
+			"type": "image",
+			"version": 251,
+			"versionNonce": 707686670,
+			"isDeleted": false,
+			"id": "aEQW_fGc8mAdNFN1kUxFQ",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 0,
+			"opacity": 0,
+			"angle": 0,
+			"x": -203.74527163899631,
+			"y": 164.54974352697695,
+			"strokeColor": "transparent",
+			"backgroundColor": "#f3f0ff",
+			"width": 490.7329192546583,
+			"height": 319.6116504854369,
+			"seed": 393266609,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1712411305014,
+			"link": null,
+			"locked": true,
+			"customData": {
+				"hide": true,
+				"backup_opacity": 100
+			},
+			"status": "pending",
+			"fileId": "f00e2719005bdc51d6464126ed71a09ad75296bc",
+			"scale": [
+				1,
+				1
+			]
+		},
 		{
 			"type": "rectangle",
 			"version": 1,
@@ -52,8 +326,8 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "line",
-			"version": 98,
-			"versionNonce": 668737328,
+			"version": 109,
+			"versionNonce": 56730001,
 			"isDeleted": false,
 			"id": "abFtnB-6FmramX8Sa-ngq",
 			"fillStyle": "solid",
@@ -63,7 +337,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"opacity": 100,
 			"angle": 0,
 			"x": -125.59158668743751,
-			"y": -317.9547369924803,
+			"y": -318.7880703258137,
 			"strokeColor": "#00000000",
 			"backgroundColor": "#231F20",
 			"width": 110.86740092914243,
@@ -76,7 +350,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705927646620,
+			"updated": 1712411361946,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -200,8 +474,8 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "line",
-			"version": 98,
-			"versionNonce": 495381461,
+			"version": 109,
+			"versionNonce": 847873135,
 			"isDeleted": false,
 			"id": "CKV_-eUUQlpzl_EkTV15K",
 			"fillStyle": "solid",
@@ -211,7 +485,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"opacity": 100,
 			"angle": 0,
 			"x": -69.9454199671267,
-			"y": -336.9250211016772,
+			"y": -337.7583544350106,
 			"strokeColor": "#00000000",
 			"backgroundColor": "#48B1DD",
 			"width": 111.29233344062165,
@@ -224,7 +498,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705927646620,
+			"updated": 1712411361946,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -356,8 +630,8 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "line",
-			"version": 98,
-			"versionNonce": 423606720,
+			"version": 109,
+			"versionNonce": 496415097,
 			"isDeleted": false,
 			"id": "-gv2TWffcwu2L7CwX8sM-",
 			"fillStyle": "solid",
@@ -367,7 +641,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"opacity": 100,
 			"angle": 0,
 			"x": -120.58343284046379,
-			"y": -352.55653597955825,
+			"y": -353.3898693128916,
 			"strokeColor": "#00000000",
 			"backgroundColor": "#96CEE5",
 			"width": 80.78811553166668,
@@ -380,7 +654,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705927646620,
+			"updated": 1712411361946,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -516,8 +790,8 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "line",
-			"version": 98,
-			"versionNonce": 976878274,
+			"version": 109,
+			"versionNonce": 23939922,
 			"isDeleted": false,
 			"id": "M8Gu776-wkfmiYoiXfLiM",
 			"fillStyle": "solid",
@@ -527,7 +801,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"opacity": 100,
 			"angle": 0,
 			"x": -51.43042344845338,
-			"y": -352.10124838903465,
+			"y": -352.934581722368,
 			"strokeColor": "#00000000",
 			"backgroundColor": "#96CEE5",
 			"width": 80.78811311947031,
@@ -540,7 +814,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705927646620,
+			"updated": 1712411361946,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -672,8 +946,8 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "line",
-			"version": 98,
-			"versionNonce": 911944806,
+			"version": 109,
+			"versionNonce": 761401144,
 			"isDeleted": false,
 			"id": "12D7QS1L2CdVTuCTSomPo",
 			"fillStyle": "solid",
@@ -683,7 +957,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"opacity": 100,
 			"angle": 0,
 			"x": -69.9454199671267,
-			"y": -338.189706708957,
+			"y": -339.02304004229035,
 			"strokeColor": "#00000000",
 			"backgroundColor": "#4391B2",
 			"width": 111.29233344062165,
@@ -696,7 +970,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705927646620,
+			"updated": 1712411361946,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -828,8 +1102,8 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "line",
-			"version": 98,
-			"versionNonce": 169195439,
+			"version": 109,
+			"versionNonce": 456293784,
 			"isDeleted": false,
 			"id": "YwKuKvOsqifuNUqiBBbTj",
 			"fillStyle": "solid",
@@ -839,7 +1113,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"opacity": 100,
 			"angle": 0,
 			"x": -121.39283085722002,
-			"y": -320.23117012070537,
+			"y": -321.06450345403874,
 			"strokeColor": "#00000000",
 			"backgroundColor": "#96CEE5",
 			"width": 80.80708504387303,
@@ -852,7 +1126,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705927646620,
+			"updated": 1712411361946,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -996,8 +1270,8 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "line",
-			"version": 98,
-			"versionNonce": 192918954,
+			"version": 109,
+			"versionNonce": 933572214,
 			"isDeleted": false,
 			"id": "U6phOGMvYJxH6G5M4Wgip",
 			"fillStyle": "solid",
@@ -1007,7 +1281,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"opacity": 100,
 			"angle": 0,
 			"x": -49.862215997086366,
-			"y": -311.9348356245613,
+			"y": -312.76816895789466,
 			"strokeColor": "#00000000",
 			"backgroundColor": "#96CEE5",
 			"width": 80.80715017317486,
@@ -1020,7 +1294,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705927646620,
+			"updated": 1712411361946,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -1168,8 +1442,8 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "line",
-			"version": 203,
-			"versionNonce": 344502772,
+			"version": 213,
+			"versionNonce": 542573698,
 			"isDeleted": false,
 			"id": "HL2kR5YfUWcw_gXHz_nr0",
 			"fillStyle": "solid",
@@ -1192,7 +1466,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705927646620,
+			"updated": 1712411361946,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -1328,8 +1602,8 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "line",
-			"version": 203,
-			"versionNonce": 227759042,
+			"version": 213,
+			"versionNonce": 608088612,
 			"isDeleted": false,
 			"id": "rUBpEZU_fLjThXjTUDut0",
 			"fillStyle": "solid",
@@ -1352,7 +1626,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705927646620,
+			"updated": 1712411361946,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -1444,8 +1718,8 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "line",
-			"version": 203,
-			"versionNonce": 139039547,
+			"version": 213,
+			"versionNonce": 713205415,
 			"isDeleted": false,
 			"id": "og4etbR6HixhkmWHQ_9Eb",
 			"fillStyle": "solid",
@@ -1468,7 +1742,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705927646620,
+			"updated": 1712411361946,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -1648,8 +1922,8 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "line",
-			"version": 203,
-			"versionNonce": 789469936,
+			"version": 213,
+			"versionNonce": 806989656,
 			"isDeleted": false,
 			"id": "MMD3aUNv7NWQCyHo4jE8w",
 			"fillStyle": "solid",
@@ -1672,7 +1946,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705927646620,
+			"updated": 1712411361946,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -1772,8 +2046,8 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "rectangle",
-			"version": 59,
-			"versionNonce": 261957605,
+			"version": 69,
+			"versionNonce": 498510960,
 			"isDeleted": false,
 			"id": "-h3srhJiq-677gyKDIm-q",
 			"fillStyle": "solid",
@@ -1800,7 +2074,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 					"id": "MryozmLs"
 				}
 			],
-			"updated": 1705927646620,
+			"updated": 1712411361946,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -1809,8 +2083,8 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "text",
-			"version": 36,
-			"versionNonce": 143295965,
+			"version": 46,
+			"versionNonce": 496616697,
 			"isDeleted": false,
 			"id": "MryozmLs",
 			"fillStyle": "solid",
@@ -1830,7 +2104,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705927646620,
+			"updated": 1712411361946,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -1844,8 +2118,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"verticalAlign": "middle",
 			"containerId": "-h3srhJiq-677gyKDIm-q",
 			"originalText": "这里是需要折叠的区域",
-			"lineHeight": 1.25,
-			"baseline": 20
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
@@ -1881,8 +2154,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "Shift + 点击下面的图标",
-			"lineHeight": 1.25,
-			"baseline": 35
+			"lineHeight": 1.25
 		}
 	],
 	"appState": {
@@ -1900,10 +2172,10 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 752.2022035445102,
-		"scrollY": 511.46293605783444,
+		"scrollX": 717.7631009804077,
+		"scrollY": 514.5625047427302,
 		"zoom": {
-			"value": 1.3
+			"value": 1.2000000000000002
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,

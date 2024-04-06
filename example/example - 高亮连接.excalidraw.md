@@ -16,7 +16,6 @@ tags: [excalidraw]
 
 789 ^uFAvh04X
 
-
 # Embedded files
 01324e34c2322e2e59d1ab1e639cc69370b3b0ee: [[example - 高亮连接.excalidraw_image_20240228112402_337.svg]]
 2d680a50c7fdf6af0422544af9d8d9b305c080ee: [[example - 高亮连接.excalidraw_image_20240228112402_342.svg]]
@@ -30,7 +29,7 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.23-4",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.2-1",
 	"elements": [
 		{
 			"type": "image",
@@ -507,6 +506,9 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 			"updated": 1709090988820,
 			"link": null,
 			"locked": false,
+			"customData": {
+				"highlightLine": true
+			},
 			"fontSize": 20,
 			"fontFamily": 1,
 			"text": "123",
@@ -515,11 +517,7 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 			"verticalAlign": "middle",
 			"containerId": "N2zlfeKhohbQcCYfgA7mv",
 			"originalText": "123",
-			"lineHeight": 1.25,
-			"baseline": 18,
-			"customData": {
-				"highlightLine": true
-			}
+			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
@@ -592,6 +590,9 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 			"updated": 1709090988820,
 			"link": null,
 			"locked": false,
+			"customData": {
+				"highlightLine": true
+			},
 			"fontSize": 20,
 			"fontFamily": 1,
 			"text": "456",
@@ -600,16 +601,12 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 			"verticalAlign": "middle",
 			"containerId": "_tI-6CKYXtP54Wu15qVY-",
 			"originalText": "456",
-			"lineHeight": 1.25,
-			"baseline": 18,
-			"customData": {
-				"highlightLine": true
-			}
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
-			"version": 344,
-			"versionNonce": 1284947439,
+			"version": 348,
+			"versionNonce": 560072891,
 			"isDeleted": false,
 			"id": "Iti8Hv4ybvzXVEbQg14l8",
 			"fillStyle": "solid",
@@ -618,12 +615,12 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -75.43897573407685,
-			"y": 258.67576475740924,
+			"x": -75.4389757340819,
+			"y": 258.6757647573768,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 378.8294047245275,
-			"height": 48.2845786173138,
+			"width": 378.8294047245391,
+			"height": 48.28457861734063,
 			"seed": 91856741,
 			"groupIds": [],
 			"frameId": null,
@@ -631,7 +628,7 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1709090988821,
+			"updated": 1712411315177,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -656,8 +653,8 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 					0
 				],
 				[
-					378.8294047245275,
-					48.2845786173138
+					378.8294047245391,
+					48.28457861734063
 				]
 			]
 		},
@@ -736,6 +733,9 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 			"updated": 1709090988820,
 			"link": null,
 			"locked": false,
+			"customData": {
+				"highlightLine": true
+			},
 			"fontSize": 20,
 			"fontFamily": 1,
 			"text": "000",
@@ -744,11 +744,7 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 			"verticalAlign": "middle",
 			"containerId": "0bg1KaLXyHyY9tb8wpjtl",
 			"originalText": "000",
-			"lineHeight": 1.25,
-			"baseline": 18,
-			"customData": {
-				"highlightLine": true
-			}
+			"lineHeight": 1.25
 		},
 		{
 			"type": "ellipse",
@@ -821,6 +817,9 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 			"updated": 1709090988820,
 			"link": null,
 			"locked": false,
+			"customData": {
+				"highlightLine": true
+			},
 			"fontSize": 20,
 			"fontFamily": 1,
 			"text": "789",
@@ -829,16 +828,12 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 			"verticalAlign": "middle",
 			"containerId": "_IScH3uSsZcFDUUIWaRHD",
 			"originalText": "789",
-			"lineHeight": 1.25,
-			"baseline": 18,
-			"customData": {
-				"highlightLine": true
-			}
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
-			"version": 433,
-			"versionNonce": 888983151,
+			"version": 437,
+			"versionNonce": 609637179,
 			"isDeleted": false,
 			"id": "VmZw4F7kd7Tx6aEBRMnOL",
 			"fillStyle": "solid",
@@ -847,12 +842,12 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -161.87536321743818,
-			"y": 340.04760396862173,
+			"x": -161.87536322211633,
+			"y": 340.04760396935086,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 11.737439420831691,
-			"height": 253.37468300121384,
+			"width": 11.737439424015406,
+			"height": 253.37468300133008,
 			"seed": 1706057797,
 			"groupIds": [],
 			"frameId": null,
@@ -860,7 +855,7 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1709090988822,
+			"updated": 1712411315179,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -885,15 +880,15 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 					0
 				],
 				[
-					11.737439420831691,
-					253.37468300121384
+					11.737439424015406,
+					253.37468300133008
 				]
 			]
 		},
 		{
 			"type": "arrow",
-			"version": 416,
-			"versionNonce": 1604402863,
+			"version": 420,
+			"versionNonce": 2107703419,
 			"isDeleted": false,
 			"id": "SOzEZli6mQfuXq9Ylqeav",
 			"fillStyle": "solid",
@@ -902,12 +897,12 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -54.27793790093105,
-			"y": 670.6731920196848,
+			"x": -54.2779378963921,
+			"y": 670.6731920244615,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 373.4083911820263,
-			"height": 288.44331177859397,
+			"width": 373.4083911782335,
+			"height": 288.44331178249047,
 			"seed": 2141589413,
 			"groupIds": [],
 			"frameId": null,
@@ -915,7 +910,7 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1709090988822,
+			"updated": 1712411315179,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -940,15 +935,15 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 					0
 				],
 				[
-					373.4083911820263,
-					-288.44331177859397
+					373.4083911782335,
+					-288.44331178249047
 				]
 			]
 		},
 		{
 			"type": "arrow",
-			"version": 347,
-			"versionNonce": 1952698721,
+			"version": 351,
+			"versionNonce": 1216047867,
 			"isDeleted": false,
 			"id": "uJvd859QAX1MKnr-9Cdn1",
 			"fillStyle": "solid",
@@ -957,12 +952,12 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": 273.3765429066923,
-			"y": 615.5875810537661,
+			"x": 273.3807615133543,
+			"y": 615.5907256115064,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 378.2913276222512,
-			"height": 281.97910296785517,
+			"width": 378.29554622891317,
+			"height": 281.9822475255954,
 			"seed": 1643041541,
 			"groupIds": [],
 			"frameId": null,
@@ -970,7 +965,7 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1709090996141,
+			"updated": 1712411315181,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -978,13 +973,13 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 			},
 			"startBinding": {
 				"elementId": "_IScH3uSsZcFDUUIWaRHD",
-				"focus": 0.68387361677302,
-				"gap": 8.763464241158843
+				"gap": 8.763464241158843,
+				"focus": 0.68387361677302
 			},
 			"endBinding": {
 				"elementId": "N2zlfeKhohbQcCYfgA7mv",
-				"focus": 0.16800250449067078,
-				"gap": 18.557534380246068
+				"gap": 18.557534380246068,
+				"focus": 0.16800250449067078
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -995,15 +990,15 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 					0
 				],
 				[
-					-378.2913276222512,
-					-281.97910296785517
+					-378.29554622891317,
+					-281.9822475255954
 				]
 			]
 		},
 		{
 			"type": "arrow",
-			"version": 411,
-			"versionNonce": 142880623,
+			"version": 418,
+			"versionNonce": 220663477,
 			"isDeleted": false,
 			"id": "i6VpQWaCmh0MAMQ7MZZLT",
 			"fillStyle": "solid",
@@ -1012,12 +1007,12 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 			"roughness": 0,
 			"opacity": 100,
 			"angle": 0,
-			"x": -62.71138807305201,
-			"y": 759.8534189235606,
+			"x": -64.24984960925403,
+			"y": 759.8534189211829,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 270.74407604562407,
-			"height": 31.796138953411173,
+			"width": 270.74407604330156,
+			"height": 31.796138951568878,
 			"seed": 956836453,
 			"groupIds": [],
 			"frameId": null,
@@ -1025,7 +1020,7 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1709090988823,
+			"updated": 1712411318384,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -1033,13 +1028,13 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 			},
 			"startBinding": {
 				"elementId": "0bg1KaLXyHyY9tb8wpjtl",
-				"gap": 12.86645235240411,
-				"focus": 0.48560257942056057
+				"focus": 0.48396749636254294,
+				"gap": 11.751194647430566
 			},
 			"endBinding": {
 				"elementId": "_IScH3uSsZcFDUUIWaRHD",
-				"gap": 9.197556182220708,
-				"focus": -0.02605431522374995
+				"focus": -0.02416286896549792,
+				"gap": 10.72484843682021
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -1050,8 +1045,8 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 					0
 				],
 				[
-					270.74407604562407,
-					-31.796138953411173
+					270.74407604330156,
+					-31.796138951568878
 				]
 			]
 		}
@@ -1071,10 +1066,10 @@ f5a2f6ee94c3c5c997ffef7e701d16e0397f8c2c: [[example - 高亮连接.excalidraw_im
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1492.3610272647518,
-		"scrollY": 608.3374535696846,
+		"scrollX": 1220.437950341675,
+		"scrollY": 609.6980479313777,
 		"zoom": {
-			"value": 0.7000000000000001
+			"value": 0.65
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,

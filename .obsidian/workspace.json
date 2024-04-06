@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f0faeafab2c05056",
+        "id": "eb0ad9303178cf68",
         "type": "tabs",
         "children": [
           {
-            "id": "c51e7c6feb6b0750",
+            "id": "3b5491c00069381f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -142,8 +142,17 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "587ccf90dd5151c5",
+  "active": "3b5491c00069381f",
   "lastOpenFiles": [
+    "example/example - 代码高亮.excalidraw.md",
+    "example/example - 折叠显示元素.excalidraw.md",
+    "example/example - 文字和字体.excalidraw.md",
+    "example/example - 箭头动画.excalidraw.md",
+    "example/example - 高亮连接.excalidraw.md",
+    "example/example - 阴影.excalidraw.md",
+    "example/example - 详情.excalidraw.md",
+    "example/example - 思维导图.excalidraw.md",
+    "example/example - 按钮.excalidraw.md",
     "example/Untitled_0.excalidraw.md",
     "Untitled.md",
     "example/Untitled-excalidrawl.md",
@@ -161,24 +170,15 @@
     "plugins/Templater/tp-excalidraw双链和创建文件-固定ex路径.md",
     "plugins/Templater/模板-excalidraw双链和创建文件.md",
     "plugins/Templater/tp - excalidraw双链和创建文件 - 输入文件名.md",
-    "plugins/模板-excalidraw双链和创建文件.md",
     "test/2",
     "test/1",
     "1",
     "test",
-    "Untitled_0.excalidraw.md",
-    "Untitled.excalidraw.md",
     "Untitle_3d",
     "Untitle_2d",
-    "plugins/Excalidraw/Templates/Template.excalidraw.md",
     "Untitle_1d",
-    "Excalidraw关系.excalidraw.md",
     "Untitle_0d",
     "Untitled",
-    "Drawing 2024-03-30 14.40.33.excalidraw.md",
-    "Drawing 2024-03-30 14.30.40.excalidraw.md",
-    "Drawing 2024-03-30 14.29.55.excalidraw.md",
-    "plugins/Excalidraw/Templates/slides.excalidraw.md",
     "plugins/Excalidraw/Templates",
     "Excalidraw关系.excalidraw.svg",
     "example/摘录方式.excalidraw.png",
