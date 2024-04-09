@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "eb0ad9303178cf68",
+        "id": "cf045f8406487d49",
         "type": "tabs",
         "children": [
           {
-            "id": "3b5491c00069381f",
+            "id": "85f6173d7df3591d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -142,9 +142,10 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "3b5491c00069381f",
+  "active": "85f6173d7df3591d",
   "lastOpenFiles": [
     "example/example - 代码高亮.excalidraw.md",
+    "example/example - echarts图表.excalidraw.md",
     "example/example - 折叠显示元素.excalidraw.md",
     "example/example - 文字和字体.excalidraw.md",
     "example/example - 箭头动画.excalidraw.md",
@@ -169,7 +170,6 @@
     "test/1/Untitled_1.excalidraw.md",
     "plugins/Templater/tp-excalidraw双链和创建文件-固定ex路径.md",
     "plugins/Templater/模板-excalidraw双链和创建文件.md",
-    "plugins/Templater/tp - excalidraw双链和创建文件 - 输入文件名.md",
     "test/2",
     "test/1",
     "1",

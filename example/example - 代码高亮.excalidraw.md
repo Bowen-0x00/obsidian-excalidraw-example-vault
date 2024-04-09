@@ -63,12 +63,12 @@ Excalidraw代码语法高亮功能 ^x1L2mrfr
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.18-5",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.3-1",
 	"elements": [
 		{
 			"type": "text",
-			"version": 68,
-			"versionNonce": 1383301689,
+			"version": 69,
+			"versionNonce": 1818437939,
 			"isDeleted": false,
 			"id": "ISMwHrFb",
 			"fillStyle": "solid",
@@ -88,7 +88,7 @@ Excalidraw代码语法高亮功能 ^x1L2mrfr
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1706791711417,
+			"updated": 1712658914150,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -111,8 +111,8 @@ Excalidraw代码语法高亮功能 ^x1L2mrfr
 		},
 		{
 			"type": "text",
-			"version": 337,
-			"versionNonce": 1948646218,
+			"version": 338,
+			"versionNonce": 1571125117,
 			"isDeleted": false,
 			"id": "3BWC5t5l",
 			"fillStyle": "solid",
@@ -132,7 +132,7 @@ Excalidraw代码语法高亮功能 ^x1L2mrfr
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1706792167240,
+			"updated": 1712658914150,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -155,8 +155,8 @@ Excalidraw代码语法高亮功能 ^x1L2mrfr
 		},
 		{
 			"type": "text",
-			"version": 221,
-			"versionNonce": 1146180345,
+			"version": 222,
+			"versionNonce": 1395493587,
 			"isDeleted": false,
 			"id": "6B1SDq3D",
 			"fillStyle": "solid",
@@ -176,7 +176,7 @@ Excalidraw代码语法高亮功能 ^x1L2mrfr
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1706791799820,
+			"updated": 1712658914150,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -199,8 +199,8 @@ Excalidraw代码语法高亮功能 ^x1L2mrfr
 		},
 		{
 			"type": "rectangle",
-			"version": 95,
-			"versionNonce": 789553369,
+			"version": 96,
+			"versionNonce": 1751351261,
 			"isDeleted": false,
 			"id": "rLFTFCO-QEycmdW9AVS9Y",
 			"fillStyle": "solid",
@@ -227,14 +227,14 @@ Excalidraw代码语法高亮功能 ^x1L2mrfr
 					"type": "arrow"
 				}
 			],
-			"updated": 1706791711417,
+			"updated": 1712658914150,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "diamond",
-			"version": 42,
-			"versionNonce": 1138373943,
+			"version": 43,
+			"versionNonce": 1635432563,
 			"isDeleted": false,
 			"id": "iShUjdJk7g8sOtn6yeDxa",
 			"fillStyle": "solid",
@@ -256,14 +256,14 @@ Excalidraw代码语法高亮功能 ^x1L2mrfr
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1706791711417,
+			"updated": 1712658914150,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "ellipse",
-			"version": 59,
-			"versionNonce": 1519079574,
+			"version": 60,
+			"versionNonce": 318864445,
 			"isDeleted": false,
 			"id": "jrHRovzc76KeYblkbJdGZ",
 			"fillStyle": "solid",
@@ -290,14 +290,14 @@ Excalidraw代码语法高亮功能 ^x1L2mrfr
 					"type": "arrow"
 				}
 			],
-			"updated": 1706792176453,
+			"updated": 1712658914150,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "arrow",
-			"version": 218,
-			"versionNonce": 517251862,
+			"version": 219,
+			"versionNonce": 890319379,
 			"isDeleted": false,
 			"id": "Hn29i0E56okRjXNe2cJPp",
 			"fillStyle": "solid",
@@ -319,7 +319,7 @@ Excalidraw代码语法高亮功能 ^x1L2mrfr
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1706792176453,
+			"updated": 1712658914150,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -348,8 +348,8 @@ Excalidraw代码语法高亮功能 ^x1L2mrfr
 		},
 		{
 			"type": "rectangle",
-			"version": 447,
-			"versionNonce": 679345817,
+			"version": 448,
+			"versionNonce": 1163979933,
 			"isDeleted": false,
 			"id": "BvTO8YnbqGyocPlZbM-d0",
 			"fillStyle": "solid",
@@ -371,14 +371,14 @@ Excalidraw代码语法高亮功能 ^x1L2mrfr
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1706791711417,
+			"updated": 1712658914150,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 592,
-			"versionNonce": 626627447,
+			"version": 593,
+			"versionNonce": 1860663219,
 			"isDeleted": false,
 			"id": "mjZUWqT3",
 			"fillStyle": "solid",
@@ -398,7 +398,7 @@ Excalidraw代码语法高亮功能 ^x1L2mrfr
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1706791711417,
+			"updated": 1712658914150,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -434,8 +434,8 @@ Excalidraw代码语法高亮功能 ^x1L2mrfr
 		},
 		{
 			"type": "text",
-			"version": 592,
-			"versionNonce": 626312057,
+			"version": 593,
+			"versionNonce": 1865634045,
 			"isDeleted": false,
 			"id": "x1L2mrfr",
 			"fillStyle": "solid",
@@ -455,7 +455,7 @@ Excalidraw代码语法高亮功能 ^x1L2mrfr
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1706791711417,
+			"updated": 1712658914150,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -488,6 +488,49 @@ Excalidraw代码语法高亮功能 ^x1L2mrfr
 			"originalText": "Excalidraw代码语法高亮功能",
 			"lineHeight": 1.25,
 			"baseline": 50
+		},
+		{
+			"id": "639T0fJi",
+			"type": "text",
+			"x": -843.9499386058133,
+			"y": -336.43307396966145,
+			"width": 731.40625,
+			"height": 360,
+			"angle": 0,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"fillStyle": "solid",
+			"strokeWidth": 2,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"seed": 456121693,
+			"version": 23,
+			"versionNonce": 1566183571,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1712658915871,
+			"link": null,
+			"locked": false,
+			"customData": {
+				"codeHighlight": {
+					"language": "riscv",
+					"style": "atom-one-dark",
+					"embedFont": true
+				}
+			},
+			"text": "# a0 是变量 n，a1 指向 x[0]，a2 指向 y[0]，fa0 是变量 a\n0:  li t0, 2< <25\n4:  vsetdcfg t0              # 启用两个 64 位浮点向量寄存器\nloop:\n8:  setvl    t0, a0          # vl = t0 = min(mvl, n)\nc:  vld      v0, a1          # 取向量 x\n10: slli     t1, t0, 3       # t1 = vl * 8（以字节为单位）\n14: vld      v1, a2          # 取向量 y\n18: add      a1, a1, t1      # 指向 x 的指针递增 vl*8\n1c: vfmadd   v1, v0, fa0, v1 # v1 += v0 * fa0 （y = a * x + y）\n20: sub      a0, a0, t0      # n -= vl （t0）\n24: vst      v1, a2          # 存向量 y\n28: add      a2, a2, t1      # 指向 y 的指针递增 vl*8\n2c: bnez     a0, loop        # 若 n != 0，则重复\n30: ret                      # 函数返回",
+			"rawText": "# a0 是变量 n，a1 指向 x[0]，a2 指向 y[0]，fa0 是变量 a\n0:  li t0, 2< <25\n4:  vsetdcfg t0              # 启用两个 64 位浮点向量寄存器\nloop:\n8:  setvl    t0, a0          # vl = t0 = min(mvl, n)\nc:  vld      v0, a1          # 取向量 x\n10: slli     t1, t0, 3       # t1 = vl * 8（以字节为单位）\n14: vld      v1, a2          # 取向量 y\n18: add      a1, a1, t1      # 指向 x 的指针递增 vl*8\n1c: vfmadd   v1, v0, fa0, v1 # v1 += v0 * fa0 （y = a * x + y）\n20: sub      a0, a0, t0      # n -= vl （t0）\n24: vst      v1, a2          # 存向量 y\n28: add      a2, a2, t1      # 指向 y 的指针递增 vl*8\n2c: bnez     a0, loop        # 若 n != 0，则重复\n30: ret                      # 函数返回",
+			"fontSize": 20,
+			"fontFamily": 3,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "# a0 是变量 n，a1 指向 x[0]，a2 指向 y[0]，fa0 是变量 a\n0:  li t0, 2< <25\n4:  vsetdcfg t0              # 启用两个 64 位浮点向量寄存器\nloop:\n8:  setvl    t0, a0          # vl = t0 = min(mvl, n)\nc:  vld      v0, a1          # 取向量 x\n10: slli     t1, t0, 3       # t1 = vl * 8（以字节为单位）\n14: vld      v1, a2          # 取向量 y\n18: add      a1, a1, t1      # 指向 x 的指针递增 vl*8\n1c: vfmadd   v1, v0, fa0, v1 # v1 += v0 * fa0 （y = a * x + y）\n20: sub      a0, a0, t0      # n -= vl （t0）\n24: vst      v1, a2          # 存向量 y\n28: add      a2, a2, t1      # 指向 y 的指针递增 vl*8\n2c: bnez     a0, loop        # 若 n != 0，则重复\n30: ret                      # 函数返回",
+			"lineHeight": 1.2
 		}
 	],
 	"appState": {
@@ -505,10 +548,10 @@ Excalidraw代码语法高亮功能 ^x1L2mrfr
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1147.381499796997,
-		"scrollY": 1350.5125068461398,
+		"scrollX": 1035.8323346306295,
+		"scrollY": 958.9919100651348,
 		"zoom": {
-			"value": 0.6499999999999999
+			"value": 0.8510000000000001
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
