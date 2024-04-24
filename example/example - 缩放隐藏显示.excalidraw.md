@@ -17,12 +17,13 @@ tags: [excalidraw]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.18-4",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.6-1",
 	"elements": [
 		{
 			"type": "rectangle",
-			"version": 1,
-			"versionNonce": 431994663,
+			"version": 2,
+			"versionNonce": 2065360483,
+			"index": "a0",
 			"isDeleted": false,
 			"id": "EzJhHPTJ",
 			"fillStyle": "solid",
@@ -44,14 +45,15 @@ tags: [excalidraw]
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1705915469956,
+			"updated": 1713974517960,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 53,
-			"versionNonce": 712579635,
+			"version": 56,
+			"versionNonce": 800117781,
+			"index": "a1",
 			"isDeleted": false,
 			"id": "ncApqZkpwwkmPB0g_cRFZ",
 			"fillStyle": "solid",
@@ -73,7 +75,7 @@ tags: [excalidraw]
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1706147777946,
+			"updated": 1713974521468,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -85,8 +87,9 @@ tags: [excalidraw]
 		},
 		{
 			"type": "ellipse",
-			"version": 95,
-			"versionNonce": 51362510,
+			"version": 98,
+			"versionNonce": 275248084,
+			"index": "a2",
 			"isDeleted": false,
 			"id": "YJon96SMYFoF49SWdY6o8",
 			"fillStyle": "solid",
@@ -108,7 +111,7 @@ tags: [excalidraw]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1705927509202,
+			"updated": 1713974522868,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -120,8 +123,9 @@ tags: [excalidraw]
 		},
 		{
 			"type": "text",
-			"version": 66,
-			"versionNonce": 914566367,
+			"version": 67,
+			"versionNonce": 1494692781,
+			"index": "a3",
 			"isDeleted": false,
 			"id": "44Ax2qpD",
 			"fillStyle": "solid",
@@ -141,7 +145,7 @@ tags: [excalidraw]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705915467513,
+			"updated": 1713974517960,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -152,99 +156,7 @@ tags: [excalidraw]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "你可以Ctrl+滚轮，将画布缩放到50%以下和150%上，下面2个元素一个隐藏一个显示",
-			"lineHeight": 1.25,
-			"baseline": 35
-		},
-		{
-			"id": "nBPbfKOoGHlof2UI69g5p",
-			"type": "arrow",
-			"x": 118.0871035736825,
-			"y": -382.21629749562044,
-			"width": 146.980753290944,
-			"height": 261.9274223112228,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"seed": 1577716200,
-			"version": 21,
-			"versionNonce": 1147933080,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1706147788121,
-			"link": null,
-			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					-146.980753290944,
-					261.9274223112228
-				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
-		},
-		{
-			"id": "Gz46H605Vr7qlxNS36-lJ",
-			"type": "arrow",
-			"x": 269.778924975197,
-			"y": -397.2912410216403,
-			"width": 256.27425559133974,
-			"height": 243.08365304994697,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"seed": 1686439400,
-			"version": 18,
-			"versionNonce": 357135336,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1706147788121,
-			"link": null,
-			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					-256.27425559133974,
-					243.08365304994697
-				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow",
-			"customData": {
-				"svgPathShape": "M 0 0 L -97.7516711644265 0 Q -128.13712779566987 0 -128.13712779566987 30.385456631243372 L -128.13712779566987 212.69819641870362 Q -128.13712779566987 243.08365304994697 -158.52258442691323 243.08365304994697 L -256.27425559133974 243.08365304994697"
-			}
+			"lineHeight": 1.25
 		}
 	],
 	"appState": {
@@ -262,10 +174,10 @@ tags: [excalidraw]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 936.0999628789891,
-		"scrollY": 941.8446789327595,
+		"scrollX": 1015.5890589908597,
+		"scrollY": 1034.8243602841758,
 		"zoom": {
-			"value": 0.8490902649735018
+			"value": 0.7388774528755294
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
@@ -280,7 +192,8 @@ tags: [excalidraw]
 			"clip": true,
 			"name": true,
 			"outline": true
-		}
+		},
+		"objectsSnapModeEnabled": false
 	},
 	"files": {}
 }

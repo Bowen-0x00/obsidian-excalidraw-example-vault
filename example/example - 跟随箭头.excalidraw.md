@@ -28,12 +28,13 @@ tags: [excalidraw]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.17-7",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.6-1",
 	"elements": [
 		{
 			"type": "rectangle",
-			"version": 1,
-			"versionNonce": 248698050,
+			"version": 2,
+			"versionNonce": 1103449571,
+			"index": "a0",
 			"isDeleted": false,
 			"id": "s9Aet9nk",
 			"fillStyle": "solid",
@@ -55,14 +56,15 @@ tags: [excalidraw]
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1705915069202,
+			"updated": 1713974571522,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 1,
-			"versionNonce": 10553953,
+			"version": 2,
+			"versionNonce": 577320397,
+			"index": "a1",
 			"isDeleted": false,
 			"id": "jCzTwFc4",
 			"fillStyle": "solid",
@@ -84,14 +86,15 @@ tags: [excalidraw]
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1705915066459,
+			"updated": 1713974571522,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 60,
-			"versionNonce": 588529009,
+			"version": 61,
+			"versionNonce": 2085067139,
+			"index": "a2",
 			"isDeleted": false,
 			"id": "p3AFmls6",
 			"fillStyle": "solid",
@@ -116,7 +119,7 @@ tags: [excalidraw]
 					"type": "arrow"
 				}
 			],
-			"updated": 1705914973616,
+			"updated": 1713974571522,
 			"link": null,
 			"locked": false,
 			"fontSize": 28,
@@ -127,13 +130,13 @@ tags: [excalidraw]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "选择这个元素或其右边的箭头",
-			"lineHeight": 1.25,
-			"baseline": 27
+			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
-			"version": 108,
-			"versionNonce": 2130935967,
+			"version": 110,
+			"versionNonce": 1614291395,
+			"index": "a3",
 			"isDeleted": false,
 			"id": "Ck4XQ2jde4eLsuj8uoMz_",
 			"fillStyle": "solid",
@@ -143,7 +146,7 @@ tags: [excalidraw]
 			"opacity": 100,
 			"angle": 0,
 			"x": -355.93094017392116,
-			"y": -104.09416301099833,
+			"y": -106.95130586814122,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffd8a8",
 			"width": 185.14290945870545,
@@ -168,14 +171,15 @@ tags: [excalidraw]
 					"type": "arrow"
 				}
 			],
-			"updated": 1705927457777,
+			"updated": 1713974572318,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 60,
-			"versionNonce": 354948287,
+			"version": 62,
+			"versionNonce": 284488035,
+			"index": "a4",
 			"isDeleted": false,
 			"id": "PGX1duWn",
 			"fillStyle": "solid",
@@ -185,7 +189,7 @@ tags: [excalidraw]
 			"opacity": 100,
 			"angle": 0,
 			"x": -299.35948544456846,
-			"y": -69.45130586814116,
+			"y": -72.30844872528405,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 72,
@@ -195,7 +199,7 @@ tags: [excalidraw]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705927457777,
+			"updated": 1713974572318,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -206,13 +210,13 @@ tags: [excalidraw]
 			"verticalAlign": "middle",
 			"containerId": "Ck4XQ2jde4eLsuj8uoMz_",
 			"originalText": "详情",
-			"lineHeight": 1.25,
-			"baseline": 35
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
-			"version": 180,
-			"versionNonce": 2112169183,
+			"version": 185,
+			"versionNonce": 1996240035,
+			"index": "a5",
 			"isDeleted": false,
 			"id": "vhBT6cI52Dhd1EZpSuWUN",
 			"fillStyle": "solid",
@@ -226,7 +230,7 @@ tags: [excalidraw]
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "#ffd8a8",
 			"width": 170.09520402489716,
-			"height": 183.15428634771456,
+			"height": 182.30070841044343,
 			"seed": 1601555039,
 			"groupIds": [],
 			"frameId": null,
@@ -234,13 +238,13 @@ tags: [excalidraw]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1705927457777,
+			"updated": 1713974572318,
 			"link": null,
 			"locked": false,
 			"startBinding": {
 				"elementId": "p3AFmls6",
-				"focus": -0.03405668075833244,
-				"gap": 11.821136492605774
+				"gap": 11.821136492605774,
+				"focus": -0.03405668075833244
 			},
 			"endBinding": {
 				"elementId": "Ck4XQ2jde4eLsuj8uoMz_",
@@ -273,14 +277,15 @@ tags: [excalidraw]
 				],
 				[
 					-42.62464758943224,
-					183.15428634771456
+					182.30070841044343
 				]
 			]
 		},
 		{
 			"type": "text",
-			"version": 63,
-			"versionNonce": 478506319,
+			"version": 64,
+			"versionNonce": 1234916547,
+			"index": "a6",
 			"isDeleted": false,
 			"id": "14mG9JAj",
 			"fillStyle": "solid",
@@ -300,7 +305,7 @@ tags: [excalidraw]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705914988740,
+			"updated": 1713974571522,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -319,13 +324,13 @@ tags: [excalidraw]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "然后按Alt+F",
-			"lineHeight": 1.25,
-			"baseline": 27
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 43,
-			"versionNonce": 959206431,
+			"version": 44,
+			"versionNonce": 805539053,
+			"index": "a7",
 			"isDeleted": false,
 			"id": "Sso27JJt",
 			"fillStyle": "solid",
@@ -345,7 +350,7 @@ tags: [excalidraw]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705914915873,
+			"updated": 1713974571522,
 			"link": null,
 			"locked": false,
 			"fontSize": 28,
@@ -356,13 +361,13 @@ tags: [excalidraw]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "这里是详情",
-			"lineHeight": 1.25,
-			"baseline": 27
+			"lineHeight": 1.25
 		},
 		{
 			"type": "rectangle",
-			"version": 93,
-			"versionNonce": 1026200323,
+			"version": 94,
+			"versionNonce": 1836696675,
+			"index": "a8",
 			"isDeleted": false,
 			"id": "jJdJWxymCNF5cqdgVB-8H",
 			"fillStyle": "solid",
@@ -389,14 +394,15 @@ tags: [excalidraw]
 					"type": "arrow"
 				}
 			],
-			"updated": 1705926455954,
+			"updated": 1713974571522,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "text",
-			"version": 11,
-			"versionNonce": 763579825,
+			"version": 12,
+			"versionNonce": 322791245,
+			"index": "a9",
 			"isDeleted": false,
 			"id": "OQjWgBtf",
 			"fillStyle": "solid",
@@ -416,7 +422,7 @@ tags: [excalidraw]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705914932909,
+			"updated": 1713974571522,
 			"link": null,
 			"locked": false,
 			"fontSize": 28,
@@ -427,13 +433,13 @@ tags: [excalidraw]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "你可以按 Ctrl+← 瞬间返回",
-			"lineHeight": 1.25,
-			"baseline": 27
+			"lineHeight": 1.25
 		},
 		{
 			"type": "text",
-			"version": 22,
-			"versionNonce": 1700356721,
+			"version": 23,
+			"versionNonce": 1462321155,
+			"index": "aA",
 			"isDeleted": false,
 			"id": "tIKpTOWC",
 			"fillStyle": "solid",
@@ -453,7 +459,7 @@ tags: [excalidraw]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705915061628,
+			"updated": 1713974571522,
 			"link": null,
 			"locked": false,
 			"fontSize": 28,
@@ -464,13 +470,13 @@ tags: [excalidraw]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "也可以选中矩形或左边箭头\n按 Alt+Shift+F返回",
-			"lineHeight": 1.25,
-			"baseline": 62
+			"lineHeight": 1.25
 		},
 		{
 			"type": "arrow",
-			"version": 145,
-			"versionNonce": 1221275903,
+			"version": 150,
+			"versionNonce": 469477347,
+			"index": "aB",
 			"isDeleted": false,
 			"id": "o9_QoPWbHFRldUO6VBaEK",
 			"fillStyle": "solid",
@@ -480,11 +486,11 @@ tags: [excalidraw]
 			"opacity": 100,
 			"angle": 0,
 			"x": -153.360456623785,
-			"y": -39.05607758635588,
+			"y": -41.59315677031774,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 2062.2659459262927,
-			"height": 94.43495719113187,
+			"height": 91.89787800717002,
 			"seed": 2059611569,
 			"groupIds": [],
 			"frameId": null,
@@ -492,7 +498,7 @@ tags: [excalidraw]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1705927457777,
+			"updated": 1713974572319,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -502,8 +508,8 @@ tags: [excalidraw]
 			},
 			"endBinding": {
 				"elementId": "jJdJWxymCNF5cqdgVB-8H",
-				"focus": -0.0007655777923900018,
-				"gap": 5.907612899636433
+				"gap": 5.907612899636433,
+				"focus": -0.0007655777923900018
 			},
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
@@ -515,15 +521,15 @@ tags: [excalidraw]
 				],
 				[
 					713.1070117971942,
-					-35.461028572483514
+					-32.923949388521656
 				],
 				[
 					1386.7712580538737,
-					-73.9037941129985
+					-71.36671492903665
 				],
 				[
 					2062.2659459262927,
-					-94.43495719113187
+					-91.89787800717002
 				]
 			]
 		}
@@ -543,10 +549,10 @@ tags: [excalidraw]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": -420.784812478218,
-		"scrollY": 476.4780157819686,
+		"scrollX": 703.6721509517236,
+		"scrollY": 1514.8472134607766,
 		"zoom": {
-			"value": 1.3786057692307683
+			"value": 0.35000000000000003
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
@@ -561,7 +567,8 @@ tags: [excalidraw]
 			"clip": true,
 			"name": true,
 			"outline": true
-		}
+		},
+		"objectsSnapModeEnabled": false
 	},
 	"files": {}
 }

@@ -126,5 +126,46 @@
       ],
       "key": "["
     }
+  ],
+  "obsidian-excalidraw-plugin-ymjr:Downloaded(Custom)/add bulleted number": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "B"
+    }
+  ],
+  "obsidian-excalidraw-plugin-ymjr:Downloaded(Custom)/increase size": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowUp"
+    }
+  ],
+  "obsidian-excalidraw-plugin-ymjr:Downloaded(Custom)/reduce size": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowDown"
+    }
+  ],
+  "obsidian-excalidraw-plugin-ymjr:Downloaded(Custom)/follow": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "F"
+    }
+  ],
+  "obsidian-excalidraw-plugin-ymjr:Downloaded(Custom)/follow_inv": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "F"
+    }
   ]
 }

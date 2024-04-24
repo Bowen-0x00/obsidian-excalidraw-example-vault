@@ -12,7 +12,6 @@ tags: [excalidraw]
 
 右上角弹出可拖拽的图层显示开关 ^aqQ7wTc4
 
-
 # Embedded files
 ce85560dedaaef10b6e2eafb281985faa9e1e0d5: [[example - 图层.excalidraw_image_20240122200846_207.png]]
 
@@ -23,12 +22,13 @@ ce85560dedaaef10b6e2eafb281985faa9e1e0d5: [[example - 图层.excalidraw_image_20
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.17-7",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.6-1",
 	"elements": [
 		{
 			"type": "image",
-			"version": 121,
-			"versionNonce": 1970194946,
+			"version": 122,
+			"versionNonce": 340754943,
+			"index": "a0",
 			"isDeleted": false,
 			"id": "orEcLy0bmX9C7J3qp2s_7",
 			"fillStyle": "solid",
@@ -48,7 +48,7 @@ ce85560dedaaef10b6e2eafb281985faa9e1e0d5: [[example - 图层.excalidraw_image_20
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705925328626,
+			"updated": 1713974117949,
 			"link": null,
 			"locked": false,
 			"status": "pending",
@@ -60,8 +60,9 @@ ce85560dedaaef10b6e2eafb281985faa9e1e0d5: [[example - 图层.excalidraw_image_20
 		},
 		{
 			"type": "rectangle",
-			"version": 61,
-			"versionNonce": 534190984,
+			"version": 68,
+			"versionNonce": 541470930,
+			"index": "a1",
 			"isDeleted": false,
 			"id": "0sFru9Nyww6nPMJ24H-Nm",
 			"fillStyle": "solid",
@@ -83,18 +84,20 @@ ce85560dedaaef10b6e2eafb281985faa9e1e0d5: [[example - 图层.excalidraw_image_20
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1705927677825,
+			"updated": 1713974124662,
 			"link": null,
 			"locked": false,
 			"customData": {
 				"layer": "矩形",
-				"backup_opacity": 0
-			}
+				"backup_opacity": 100
+			},
+			"lock": true
 		},
 		{
 			"type": "rectangle",
-			"version": 76,
-			"versionNonce": 215417046,
+			"version": 83,
+			"versionNonce": 88639300,
+			"index": "a2",
 			"isDeleted": false,
 			"id": "tv1mzof0ao1PKPOqxDVRS",
 			"fillStyle": "solid",
@@ -116,18 +119,20 @@ ce85560dedaaef10b6e2eafb281985faa9e1e0d5: [[example - 图层.excalidraw_image_20
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1705927677825,
+			"updated": 1713974124662,
 			"link": null,
 			"locked": false,
 			"customData": {
 				"layer": "矩形",
-				"backup_opacity": 0
-			}
+				"backup_opacity": 100
+			},
+			"lock": true
 		},
 		{
 			"type": "ellipse",
-			"version": 50,
-			"versionNonce": 262974856,
+			"version": 57,
+			"versionNonce": 947570733,
+			"index": "a3",
 			"isDeleted": false,
 			"id": "0qbkHQErP_sNlJxwfw3bk",
 			"fillStyle": "solid",
@@ -149,18 +154,20 @@ ce85560dedaaef10b6e2eafb281985faa9e1e0d5: [[example - 图层.excalidraw_image_20
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1705927677825,
+			"updated": 1713974124662,
 			"link": null,
 			"locked": false,
 			"customData": {
 				"layer": "椭圆",
 				"backup_opacity": 0
-			}
+			},
+			"lock": true
 		},
 		{
 			"type": "ellipse",
-			"version": 70,
-			"versionNonce": 593073593,
+			"version": 77,
+			"versionNonce": 796269796,
+			"index": "a4",
 			"isDeleted": false,
 			"id": "6q3mIAsNp6Oaw8exKrd6J",
 			"fillStyle": "solid",
@@ -182,18 +189,20 @@ ce85560dedaaef10b6e2eafb281985faa9e1e0d5: [[example - 图层.excalidraw_image_20
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1705927677825,
+			"updated": 1713974124662,
 			"link": null,
 			"locked": false,
 			"customData": {
 				"layer": "椭圆",
 				"backup_opacity": 0
-			}
+			},
+			"lock": true
 		},
 		{
 			"type": "diamond",
-			"version": 43,
-			"versionNonce": 923522975,
+			"version": 50,
+			"versionNonce": 700455133,
+			"index": "a5",
 			"isDeleted": false,
 			"id": "yDP8up8WfH7gVG1UMIz2Q",
 			"fillStyle": "solid",
@@ -215,18 +224,20 @@ ce85560dedaaef10b6e2eafb281985faa9e1e0d5: [[example - 图层.excalidraw_image_20
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1705927677825,
+			"updated": 1713974124662,
 			"link": null,
 			"locked": false,
 			"customData": {
 				"layer": "菱形",
-				"backup_opacity": 100
-			}
+				"backup_opacity": 0
+			},
+			"lock": true
 		},
 		{
 			"type": "diamond",
-			"version": 73,
-			"versionNonce": 171630896,
+			"version": 80,
+			"versionNonce": 388522876,
+			"index": "a6",
 			"isDeleted": false,
 			"id": "4EX3PDW2ZVLhZ6FvmpMMH",
 			"fillStyle": "solid",
@@ -248,18 +259,20 @@ ce85560dedaaef10b6e2eafb281985faa9e1e0d5: [[example - 图层.excalidraw_image_20
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1705927677825,
+			"updated": 1713974124662,
 			"link": null,
 			"locked": false,
 			"customData": {
 				"layer": "菱形",
-				"backup_opacity": 100
-			}
+				"backup_opacity": 0
+			},
+			"lock": true
 		},
 		{
 			"type": "text",
-			"version": 81,
-			"versionNonce": 2050905950,
+			"version": 82,
+			"versionNonce": 1231399697,
+			"index": "a7",
 			"isDeleted": false,
 			"id": "9d6vhilV",
 			"fillStyle": "solid",
@@ -279,7 +292,7 @@ ce85560dedaaef10b6e2eafb281985faa9e1e0d5: [[example - 图层.excalidraw_image_20
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705925361847,
+			"updated": 1713974117949,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -291,12 +304,13 @@ ce85560dedaaef10b6e2eafb281985faa9e1e0d5: [[example - 图层.excalidraw_image_20
 			"containerId": null,
 			"originalText": "点击右侧",
 			"lineHeight": 1.25,
-			"baseline": 35
+			"baseline": 36
 		},
 		{
 			"type": "text",
-			"version": 33,
-			"versionNonce": 1678578654,
+			"version": 34,
+			"versionNonce": 694880895,
+			"index": "a8",
 			"isDeleted": false,
 			"id": "aqQ7wTc4",
 			"fillStyle": "solid",
@@ -316,7 +330,7 @@ ce85560dedaaef10b6e2eafb281985faa9e1e0d5: [[example - 图层.excalidraw_image_20
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705925360938,
+			"updated": 1713974117949,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -328,7 +342,7 @@ ce85560dedaaef10b6e2eafb281985faa9e1e0d5: [[example - 图层.excalidraw_image_20
 			"containerId": null,
 			"originalText": "右上角弹出可拖拽的图层显示开关",
 			"lineHeight": 1.25,
-			"baseline": 35
+			"baseline": 36
 		}
 	],
 	"appState": {
@@ -346,10 +360,10 @@ ce85560dedaaef10b6e2eafb281985faa9e1e0d5: [[example - 图层.excalidraw_image_20
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 819.3591763262308,
-		"scrollY": 599.4901824514951,
+		"scrollX": 1026.049706770179,
+		"scrollY": 1432.4759915354641,
 		"zoom": {
-			"value": 0.9000000000000001
+			"value": 0.7000000000000001
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
@@ -364,7 +378,8 @@ ce85560dedaaef10b6e2eafb281985faa9e1e0d5: [[example - 图层.excalidraw_image_20
 			"clip": true,
 			"name": true,
 			"outline": true
-		}
+		},
+		"objectsSnapModeEnabled": false
 	},
 	"files": {}
 }

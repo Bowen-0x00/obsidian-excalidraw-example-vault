@@ -17,12 +17,13 @@ tags: [excalidraw]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.24-1",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.6-1",
 	"elements": [
 		{
 			"type": "rectangle",
-			"version": 1,
-			"versionNonce": 812404447,
+			"version": 2,
+			"versionNonce": 2092651747,
+			"index": "a0",
 			"isDeleted": false,
 			"id": "1gXw7frE",
 			"fillStyle": "solid",
@@ -44,14 +45,15 @@ tags: [excalidraw]
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1705915360110,
+			"updated": 1713974596401,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 1,
-			"versionNonce": 358977322,
+			"version": 2,
+			"versionNonce": 1056644813,
+			"index": "a1",
 			"isDeleted": false,
 			"id": "avLWvDfJ",
 			"fillStyle": "solid",
@@ -73,14 +75,15 @@ tags: [excalidraw]
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1705915358135,
+			"updated": 1713974596401,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "rectangle",
-			"version": 68,
-			"versionNonce": 689603327,
+			"version": 93,
+			"versionNonce": 378613392,
+			"index": "a2",
 			"isDeleted": false,
 			"id": "_x625aJH6DSazsDJtAN-C",
 			"fillStyle": "solid",
@@ -102,7 +105,7 @@ tags: [excalidraw]
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1710332764603,
+			"updated": 1713974603045,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -114,8 +117,9 @@ tags: [excalidraw]
 		},
 		{
 			"type": "diamond",
-			"version": 92,
-			"versionNonce": 335109680,
+			"version": 117,
+			"versionNonce": 666495334,
+			"index": "a3",
 			"isDeleted": false,
 			"id": "FkfQBchLa0QTF043Dd_qz",
 			"fillStyle": "solid",
@@ -137,7 +141,7 @@ tags: [excalidraw]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1710332764603,
+			"updated": 1713974603045,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -149,8 +153,9 @@ tags: [excalidraw]
 		},
 		{
 			"type": "ellipse",
-			"version": 111,
-			"versionNonce": 634976897,
+			"version": 136,
+			"versionNonce": 39848774,
+			"index": "a4",
 			"isDeleted": false,
 			"id": "3VJKB4uvWCb1gLZtxs5RY",
 			"fillStyle": "solid",
@@ -172,7 +177,7 @@ tags: [excalidraw]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1710332764603,
+			"updated": 1713974603045,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -184,8 +189,9 @@ tags: [excalidraw]
 		},
 		{
 			"type": "line",
-			"version": 153,
-			"versionNonce": 254001106,
+			"version": 178,
+			"versionNonce": 999840780,
+			"index": "a5",
 			"isDeleted": false,
 			"id": "BbQXKbFg1MFYTu456XuuA",
 			"fillStyle": "solid",
@@ -205,7 +211,7 @@ tags: [excalidraw]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1710332764603,
+			"updated": 1713974603045,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -240,8 +246,9 @@ tags: [excalidraw]
 		},
 		{
 			"type": "text",
-			"version": 64,
-			"versionNonce": 486134161,
+			"version": 65,
+			"versionNonce": 5946307,
+			"index": "a6",
 			"isDeleted": false,
 			"id": "ohSfhnoT",
 			"fillStyle": "solid",
@@ -261,7 +268,7 @@ tags: [excalidraw]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705915354864,
+			"updated": 1713974596401,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -272,8 +279,7 @@ tags: [excalidraw]
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "你可以按 [ 和 ] 来逐个显示和隐藏",
-			"lineHeight": 1.25,
-			"baseline": 36
+			"lineHeight": 1.25
 		}
 	],
 	"appState": {
@@ -291,10 +297,10 @@ tags: [excalidraw]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 806.7389119466145,
-		"scrollY": 1252.6749725341795,
+		"scrollX": 719.467653162339,
+		"scrollY": 683.336737240062,
 		"zoom": {
-			"value": 0.30000000000000004
+			"value": 0.8500000000000001
 		},
 		"currentItemRoundness": "sharp",
 		"gridSize": null,
@@ -309,7 +315,8 @@ tags: [excalidraw]
 			"clip": true,
 			"name": true,
 			"outline": true
-		}
+		},
+		"objectsSnapModeEnabled": false
 	},
 	"files": {}
 }

@@ -21,12 +21,13 @@ Shift + 点击下面的图标 ^CRvRNjfs
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.2-1",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.6-1",
 	"elements": [
 		{
 			"type": "rectangle",
-			"version": 953,
-			"versionNonce": 824528837,
+			"version": 956,
+			"versionNonce": 638415675,
+			"index": "a0",
 			"isDeleted": false,
 			"id": "fSLqLGLskW71fKRL4Jjom",
 			"fillStyle": "solid",
@@ -47,13 +48,8 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"roundness": {
 				"type": 3
 			},
-			"boundElements": [
-				{
-					"type": "text",
-					"id": "JWVidaYp"
-				}
-			],
-			"updated": 1712411305013,
+			"boundElements": [],
+			"updated": 1713974462133,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -73,8 +69,9 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "rectangle",
-			"version": 234,
-			"versionNonce": 822170274,
+			"version": 237,
+			"versionNonce": 890847282,
+			"index": "a1",
 			"isDeleted": false,
 			"id": "hyBh7ZRFvDCrBhsvXt9sf",
 			"fillStyle": "solid",
@@ -96,7 +93,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1712411305014,
+			"updated": 1713974462133,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -106,8 +103,9 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "rectangle",
-			"version": 183,
-			"versionNonce": 689602338,
+			"version": 186,
+			"versionNonce": 745808836,
+			"index": "a2",
 			"isDeleted": false,
 			"id": "shztdZPw",
 			"fillStyle": "hachure",
@@ -132,7 +130,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 					"id": "tQus9Eh8"
 				}
 			],
-			"updated": 1712411305014,
+			"updated": 1713974462133,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -142,8 +140,9 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "text",
-			"version": 363,
-			"versionNonce": 518010293,
+			"version": 370,
+			"versionNonce": 1435558051,
+			"index": "a3",
 			"isDeleted": false,
 			"id": "tQus9Eh8",
 			"fillStyle": "hachure",
@@ -163,7 +162,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712411361949,
+			"updated": 1713974463533,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -183,8 +182,9 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "image",
-			"version": 183,
-			"versionNonce": 706999330,
+			"version": 186,
+			"versionNonce": 400183222,
+			"index": "a4",
 			"isDeleted": false,
 			"id": "AqsGAkQQ",
 			"fillStyle": "hachure",
@@ -204,7 +204,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712411305014,
+			"updated": 1713974462133,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -223,8 +223,9 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "image",
-			"version": 247,
-			"versionNonce": 63974135,
+			"version": 250,
+			"versionNonce": 808617636,
+			"index": "a5",
 			"isDeleted": false,
 			"id": "wff1q6Ym9S00vl2ktKZmQ",
 			"fillStyle": "solid",
@@ -244,7 +245,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712411305014,
+			"updated": 1713974462133,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -260,8 +261,9 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "image",
-			"version": 251,
-			"versionNonce": 707686670,
+			"version": 254,
+			"versionNonce": 235403726,
+			"index": "a6",
 			"isDeleted": false,
 			"id": "aEQW_fGc8mAdNFN1kUxFQ",
 			"fillStyle": "solid",
@@ -281,7 +283,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712411305014,
+			"updated": 1713974462133,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -297,8 +299,9 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "rectangle",
-			"version": 1,
-			"versionNonce": 302272249,
+			"version": 2,
+			"versionNonce": 1636742083,
+			"index": "a7",
 			"isDeleted": false,
 			"id": "qZh0YEBX",
 			"fillStyle": "solid",
@@ -320,14 +323,15 @@ Shift + 点击下面的图标 ^CRvRNjfs
 				"type": 3
 			},
 			"boundElements": [],
-			"updated": 1705926043875,
+			"updated": 1713974460037,
 			"link": null,
 			"locked": false
 		},
 		{
 			"type": "line",
-			"version": 109,
-			"versionNonce": 56730001,
+			"version": 112,
+			"versionNonce": 182312652,
+			"index": "a8",
 			"isDeleted": false,
 			"id": "abFtnB-6FmramX8Sa-ngq",
 			"fillStyle": "solid",
@@ -350,7 +354,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712411361946,
+			"updated": 1713974463529,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -474,8 +478,9 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "line",
-			"version": 109,
-			"versionNonce": 847873135,
+			"version": 112,
+			"versionNonce": 644686277,
+			"index": "a9",
 			"isDeleted": false,
 			"id": "CKV_-eUUQlpzl_EkTV15K",
 			"fillStyle": "solid",
@@ -498,7 +503,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712411361946,
+			"updated": 1713974463530,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -630,8 +635,9 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "line",
-			"version": 109,
-			"versionNonce": 496415097,
+			"version": 112,
+			"versionNonce": 342298490,
+			"index": "aA",
 			"isDeleted": false,
 			"id": "-gv2TWffcwu2L7CwX8sM-",
 			"fillStyle": "solid",
@@ -654,7 +660,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712411361946,
+			"updated": 1713974463530,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -790,8 +796,9 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "line",
-			"version": 109,
-			"versionNonce": 23939922,
+			"version": 112,
+			"versionNonce": 587316440,
+			"index": "aB",
 			"isDeleted": false,
 			"id": "M8Gu776-wkfmiYoiXfLiM",
 			"fillStyle": "solid",
@@ -814,7 +821,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712411361946,
+			"updated": 1713974463530,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -946,8 +953,9 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "line",
-			"version": 109,
-			"versionNonce": 761401144,
+			"version": 112,
+			"versionNonce": 743006288,
+			"index": "aC",
 			"isDeleted": false,
 			"id": "12D7QS1L2CdVTuCTSomPo",
 			"fillStyle": "solid",
@@ -970,7 +978,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712411361946,
+			"updated": 1713974463530,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -1102,8 +1110,9 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "line",
-			"version": 109,
-			"versionNonce": 456293784,
+			"version": 112,
+			"versionNonce": 706905676,
+			"index": "aD",
 			"isDeleted": false,
 			"id": "YwKuKvOsqifuNUqiBBbTj",
 			"fillStyle": "solid",
@@ -1126,7 +1135,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712411361946,
+			"updated": 1713974463530,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -1270,8 +1279,9 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "line",
-			"version": 109,
-			"versionNonce": 933572214,
+			"version": 112,
+			"versionNonce": 407171057,
+			"index": "aE",
 			"isDeleted": false,
 			"id": "U6phOGMvYJxH6G5M4Wgip",
 			"fillStyle": "solid",
@@ -1294,7 +1304,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712411361946,
+			"updated": 1713974463530,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -1442,8 +1452,9 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "line",
-			"version": 213,
-			"versionNonce": 542573698,
+			"version": 217,
+			"versionNonce": 102086040,
+			"index": "aF",
 			"isDeleted": false,
 			"id": "HL2kR5YfUWcw_gXHz_nr0",
 			"fillStyle": "solid",
@@ -1453,7 +1464,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"opacity": 0,
 			"angle": 0,
 			"x": -81.55579254031181,
-			"y": -340.81037278924634,
+			"y": -341.92148390035743,
 			"strokeColor": "#00000000",
 			"backgroundColor": "#4391B2",
 			"width": 111.61747610569,
@@ -1466,7 +1477,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712411361946,
+			"updated": 1713974463530,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -1602,8 +1613,9 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "line",
-			"version": 213,
-			"versionNonce": 608088612,
+			"version": 217,
+			"versionNonce": 736686683,
+			"index": "aG",
 			"isDeleted": false,
 			"id": "rUBpEZU_fLjThXjTUDut0",
 			"fillStyle": "solid",
@@ -1613,7 +1625,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"opacity": 0,
 			"angle": 0,
 			"x": -81.58851646193152,
-			"y": -340.81037278924634,
+			"y": -341.92148390035743,
 			"strokeColor": "#00000000",
 			"backgroundColor": "#48B1DD",
 			"width": 111.55240193857117,
@@ -1626,7 +1638,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712411361946,
+			"updated": 1713974463530,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -1718,8 +1730,9 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "line",
-			"version": 213,
-			"versionNonce": 713205415,
+			"version": 217,
+			"versionNonce": 681117538,
+			"index": "aH",
 			"isDeleted": false,
 			"id": "og4etbR6HixhkmWHQ_9Eb",
 			"fillStyle": "solid",
@@ -1729,7 +1742,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"opacity": 0,
 			"angle": 0,
 			"x": -118.77265044145524,
-			"y": -303.6262388097226,
+			"y": -304.7373499208337,
 			"strokeColor": "#00000000",
 			"backgroundColor": "#96CEE5",
 			"width": 44.62096077542847,
@@ -1742,7 +1755,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712411361946,
+			"updated": 1713974463530,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -1922,8 +1935,9 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "line",
-			"version": 213,
-			"versionNonce": 806989656,
+			"version": 217,
+			"versionNonce": 877899640,
+			"index": "aI",
 			"isDeleted": false,
 			"id": "MMD3aUNv7NWQCyHo4jE8w",
 			"fillStyle": "solid",
@@ -1933,7 +1947,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"opacity": 0,
 			"angle": 0,
 			"x": -144.80154422712184,
-			"y": -311.0630656056274,
+			"y": -312.1741767167385,
 			"strokeColor": "#00000000",
 			"backgroundColor": "#FFFFFF",
 			"width": 14.87365359180949,
@@ -1946,7 +1960,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712411361946,
+			"updated": 1713974463530,
 			"link": null,
 			"locked": true,
 			"customData": {
@@ -2046,8 +2060,9 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "rectangle",
-			"version": 69,
-			"versionNonce": 498510960,
+			"version": 72,
+			"versionNonce": 861585923,
+			"index": "aJ",
 			"isDeleted": false,
 			"id": "-h3srhJiq-677gyKDIm-q",
 			"fillStyle": "solid",
@@ -2074,7 +2089,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 					"id": "MryozmLs"
 				}
 			],
-			"updated": 1712411361946,
+			"updated": 1713974463530,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -2083,8 +2098,9 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "text",
-			"version": 46,
-			"versionNonce": 496616697,
+			"version": 49,
+			"versionNonce": 295378502,
+			"index": "aK",
 			"isDeleted": false,
 			"id": "MryozmLs",
 			"fillStyle": "solid",
@@ -2104,7 +2120,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1712411361946,
+			"updated": 1713974463530,
 			"link": null,
 			"locked": false,
 			"customData": {
@@ -2122,8 +2138,9 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		},
 		{
 			"type": "text",
-			"version": 31,
-			"versionNonce": 1364837954,
+			"version": 32,
+			"versionNonce": 1433804067,
+			"index": "aL",
 			"isDeleted": false,
 			"id": "CRvRNjfs",
 			"fillStyle": "solid",
@@ -2143,7 +2160,7 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1705926041793,
+			"updated": 1713974460037,
 			"link": null,
 			"locked": false,
 			"fontSize": 36,
@@ -2172,10 +2189,10 @@ Shift + 点击下面的图标 ^CRvRNjfs
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 717.7631009804077,
-		"scrollY": 514.5625047427302,
+		"scrollX": 944.9968405758354,
+		"scrollY": 631.9656478855605,
 		"zoom": {
-			"value": 1.2000000000000002
+			"value": 0.9
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
@@ -2190,7 +2207,8 @@ Shift + 点击下面的图标 ^CRvRNjfs
 			"clip": true,
 			"name": true,
 			"outline": true
-		}
+		},
+		"objectsSnapModeEnabled": false
 	},
 	"files": {}
 }
