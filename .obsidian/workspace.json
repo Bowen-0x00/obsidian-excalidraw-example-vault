@@ -107,7 +107,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Drawing 2024-05-08 13.12.03.excalidraw.md"
+              }
             }
           },
           {
@@ -126,7 +128,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -141,8 +144,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "42b0a1ae72132d67",
+  "active": "587ccf90dd5151c5",
   "lastOpenFiles": [
+    "Drawing 2024-05-08 13.12.03.excalidraw.md",
     "example/摘录方式.excalidraw.md",
     "example/example - 高亮连接.excalidraw.md",
     "example/example - 阴影.excalidraw.md",
@@ -168,7 +172,6 @@
     "example/example - 增大减小元素.excalidraw.md",
     "example/example - 圆圈编号.excalidraw.md",
     "example/example - 图层.excalidraw.md",
-    "example/example - 固定元素.excalidraw.md",
     "test/2",
     "test/1",
     "1",
