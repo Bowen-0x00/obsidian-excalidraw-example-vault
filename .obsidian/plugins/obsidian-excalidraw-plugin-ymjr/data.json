@@ -91,7 +91,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.6-1",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.2.3-2",
     "libraryItems": []
   },
   "imageElementNotice": true,
@@ -1100,5 +1100,6 @@
   "scriptStoreUrl": "https://raw.githubusercontent.com/Bowen-0x00/obsidian-excalidraw-scripts/main/Scripts/index.md",
   "strokeWidthSliderMin": 0,
   "strokeWidthSliderMax": 100,
+  "strokeWidthSliderStep": 1,
   "strokeWidthSliderStemp": 1
 }
