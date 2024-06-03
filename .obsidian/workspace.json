@@ -13,7 +13,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "example/example - 设置直线长度、角度.excalidraw.md"
+                "file": "example/摘录方式.excalidraw.md"
               }
             }
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "example/example - 设置直线长度、角度.excalidraw.md",
+                "file": "example/摘录方式.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "example/example - 设置直线长度、角度.excalidraw.md",
+                "file": "example/摘录方式.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -112,7 +112,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "example/example - 设置直线长度、角度.excalidraw.md"
+                "file": "example/摘录方式.excalidraw.md"
               }
             }
           },
@@ -150,8 +150,8 @@
   },
   "active": "42b0a1ae72132d67",
   "lastOpenFiles": [
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Set line length.md",
     "example/example - 设置直线长度、角度.excalidraw.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Set line length.md",
     "Drawing 2024-05-08 13.12.03.excalidraw.md",
     "example/摘录方式.excalidraw.md",
     "example/example - 高亮连接.excalidraw.md",
