@@ -9,7 +9,6 @@
   "decompressForMDView": false,
   "onceOffCompressFlagReset": true,
   "autosave": true,
-  "autosaveInterval": 15000,
   "autosaveIntervalDesktop": 15000,
   "autosaveIntervalMobile": 10000,
   "drawingFilenamePrefix": "Drawing ",
@@ -80,9 +79,11 @@
   "experimentalFileTag": "✏️",
   "experimentalLivePreview": true,
   "fadeOutExcalidrawMarkup": false,
+  "loadPropertySuggestions": true,
   "experimentalEnableFourthFont": false,
   "experimantalFourthFont": "LXGWWenKai-Regular.ttf, HanyiSentyPine.ttf, 方正仿宋简体.ttf ",
   "addDummyTextElement": false,
+  "zoteroCompatibility": false,
   "multiFontsFolder": "plugins/Excalidraw/Fonts",
   "fieldSuggester": true,
   "compatibilityMode": false,
@@ -91,7 +92,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.2.3-2",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.2.9-1",
     "libraryItems": []
   },
   "imageElementNotice": true,
@@ -434,7 +435,7 @@
     }
   },
   "defaultTrayMode": true,
-  "previousRelease": "2.2.3-1",
+  "previousRelease": "2.2.9-1",
   "showReleaseNotes": true,
   "showNewVersionNotification": true,
   "latexBoilerplate": "\\color{blue}",
@@ -1101,5 +1102,6 @@
   "strokeWidthSliderMin": 0,
   "strokeWidthSliderMax": 100,
   "strokeWidthSliderStep": 1,
+  "autosaveInterval": 15000,
   "strokeWidthSliderStemp": 1
 }
