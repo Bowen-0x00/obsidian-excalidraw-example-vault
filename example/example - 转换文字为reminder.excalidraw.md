@@ -7,214 +7,42 @@ tags: [excalidraw]
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
-# Text Elements
+# Excalidraw Data
+## Text Elements
 - [ ] 这是一个待办 (@2024-01-22 20:10) ^s14j40GN
 
 这是一个待办 ^UvN2SwQx
 
 可以添加到todo清单 ^H9baERZf
 
-# Tags
+## Tags
 %%
-# Drawing
-```json
-{
-	"type": "excalidraw",
-	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.17-7",
-	"elements": [
-		{
-			"id": "UvN2SwQx",
-			"type": "text",
-			"x": -402.3499755859375,
-			"y": -348.6124954223633,
-			"width": 168,
-			"height": 35,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 1109614430,
-			"version": 30,
-			"versionNonce": 893887262,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1705925491794,
-			"link": null,
-			"locked": false,
-			"text": "这是一个待办",
-			"rawText": "这是一个待办",
-			"fontSize": 28,
-			"fontFamily": "\"LXGW WenKai\"",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"baseline": 27,
-			"containerId": null,
-			"originalText": "这是一个待办",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "s14j40GN",
-			"type": "text",
-			"x": -407.1500244140625,
-			"y": -230.2125015258789,
-			"width": 494.0689392089844,
-			"height": 35,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 362543710,
-			"version": 49,
-			"versionNonce": 136813278,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1705925470871,
-			"link": null,
-			"locked": false,
-			"text": "☐ 这是一个待办 (@2024-01-22 20:10)",
-			"rawText": "- [ ] 这是一个待办 (@2024-01-22 20:10)",
-			"fontSize": 28,
-			"fontFamily": "\"LXGW WenKai\"",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"baseline": 27,
-			"containerId": null,
-			"originalText": "☐ 这是一个待办 (@2024-01-22 20:10)",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "H9baERZf",
-			"type": "text",
-			"x": -358.5499267578125,
-			"y": -54.612525939941406,
-			"width": 253.65196228027344,
-			"height": 35,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 1724768158,
-			"version": 54,
-			"versionNonce": 726805086,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1705925489903,
-			"link": null,
-			"locked": false,
-			"text": "可以添加到todo清单",
-			"rawText": "可以添加到todo清单",
-			"fontSize": 28,
-			"fontFamily": "\"LXGW WenKai\"",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"baseline": 27,
-			"containerId": null,
-			"originalText": "可以添加到todo清单",
-			"lineHeight": 1.25
-		},
-		{
-			"id": "Ov2O61LFhYJyaO002K9m8",
-			"type": "arrow",
-			"x": -205.54998779296875,
-			"y": -336.01248931884766,
-			"width": 2.4000244140625,
-			"height": 81.60000610351562,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"seed": 1263017346,
-			"version": 30,
-			"versionNonce": 830552734,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1705925494190,
-			"link": null,
-			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					2.4000244140625,
-					81.60000610351562
-				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": null,
-			"endBinding": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow"
-		}
-	],
-	"appState": {
-		"theme": "light",
-		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#1e1e1e",
-		"currentItemBackgroundColor": "transparent",
-		"currentItemFillStyle": "solid",
-		"currentItemStrokeWidth": 2,
-		"currentItemStrokeStyle": "solid",
-		"currentItemRoughness": 1,
-		"currentItemOpacity": 100,
-		"currentItemFontFamily": "\"LXGW WenKai\"",
-		"currentItemFontSize": 28,
-		"currentItemTextAlign": "left",
-		"currentItemStartArrowhead": null,
-		"currentItemEndArrowhead": "arrow",
-		"scrollX": 659.0499877929688,
-		"scrollY": 515.9874877929688,
-		"zoom": {
-			"value": 1
-		},
-		"currentItemRoundness": "round",
-		"gridSize": null,
-		"gridColor": {
-			"Bold": "#C9C9C9FF",
-			"Regular": "#EDEDEDFF"
-		},
-		"currentStrokeOptions": null,
-		"previousGridSize": null,
-		"frameRendering": {
-			"enabled": true,
-			"clip": true,
-			"name": true,
-			"outline": true
-		}
-	},
-	"files": {}
-}
+## Drawing
+```compressed-json
+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
 ```
 %%

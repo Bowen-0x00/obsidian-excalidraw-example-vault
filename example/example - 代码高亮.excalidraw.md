@@ -7,7 +7,8 @@ tags: [excalidraw]
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
-# Text Elements
+# Excalidraw Data
+## Text Elements
 // 计算斐波那契数列
 function fibonacci(n) {
   if (n <= 1) {
@@ -56,519 +57,70 @@ Excalidraw代码语法高亮功能 ^mjZUWqT3
 
 Excalidraw代码语法高亮功能 ^x1L2mrfr
 
-# Tags
+## Tags
 %%
-# Drawing
-```json
-{
-	"type": "excalidraw",
-	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.3-1",
-	"elements": [
-		{
-			"type": "text",
-			"version": 69,
-			"versionNonce": 1818437939,
-			"isDeleted": false,
-			"id": "ISMwHrFb",
-			"fillStyle": "solid",
-			"strokeWidth": 4,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": -860.7627699448813,
-			"y": -981.478768718252,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 627.33984375,
-			"height": 328.1285335482913,
-			"seed": 61720729,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1712658914150,
-			"link": null,
-			"locked": false,
-			"customData": {
-				"codeHighlight": {
-					"language": "JavaScript",
-					"style": "atom-one-dark",
-					"embedFont": true
-				}
-			},
-			"fontSize": 22.786703718631337,
-			"fontFamily": 3,
-			"text": "// 计算斐波那契数列\nfunction fibonacci(n) {\n  if (n <= 1) {\n    return n;\n  } else {\n    return fibonacci(n - 1) + fibonacci(n - 2);\n  }\n}\n\n// 调用函数并打印结果\nvar result = fibonacci(10);\nconsole.log(result);",
-			"rawText": "// 计算斐波那契数列\nfunction fibonacci(n) {\n  if (n <= 1) {\n    return n;\n  } else {\n    return fibonacci(n - 1) + fibonacci(n - 2);\n  }\n}\n\n// 调用函数并打印结果\nvar result = fibonacci(10);\nconsole.log(result);",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "// 计算斐波那契数列\nfunction fibonacci(n) {\n  if (n <= 1) {\n    return n;\n  } else {\n    return fibonacci(n - 1) + fibonacci(n - 2);\n  }\n}\n\n// 调用函数并打印结果\nvar result = fibonacci(10);\nconsole.log(result);",
-			"lineHeight": 1.2,
-			"baseline": 322
-		},
-		{
-			"type": "text",
-			"version": 338,
-			"versionNonce": 1571125117,
-			"isDeleted": false,
-			"id": "3BWC5t5l",
-			"fillStyle": "solid",
-			"strokeWidth": 4,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": -98.31688093402511,
-			"y": -1052.8083135924612,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 809.1796875,
-			"height": 364.61335761944935,
-			"seed": 1543196025,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1712658914150,
-			"link": null,
-			"locked": false,
-			"customData": {
-				"codeHighlight": {
-					"language": "Python",
-					"style": "atom-one-light",
-					"embedFont": true
-				}
-			},
-			"fontSize": 27.6222240620795,
-			"fontFamily": 3,
-			"text": "# 计算斐波那契数列\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\n# 调用函数并打印结果\nresult = fibonacci(10)\nprint(result)\ninput(\"等待输入\")",
-			"rawText": "# 计算斐波那契数列\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\n# 调用函数并打印结果\nresult = fibonacci(10)\nprint(result)\ninput(\"等待输入\")",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "# 计算斐波那契数列\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\n# 调用函数并打印结果\nresult = fibonacci(10)\nprint(result)\ninput(\"等待输入\")",
-			"lineHeight": 1.2,
-			"baseline": 358
-		},
-		{
-			"type": "text",
-			"version": 222,
-			"versionNonce": 1395493587,
-			"isDeleted": false,
-			"id": "6B1SDq3D",
-			"fillStyle": "solid",
-			"strokeWidth": 4,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": -68.71834764266885,
-			"y": -648.3700211317314,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 772.76953125,
-			"height": 558.5960964630111,
-			"seed": 1577399897,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1712658914150,
-			"link": null,
-			"locked": false,
-			"customData": {
-				"codeHighlight": {
-					"language": "C",
-					"style": "atom-one-dark",
-					"embedFont": true
-				}
-			},
-			"fontSize": 25.860930391806072,
-			"fontFamily": 3,
-			"text": "#include <stdio.h>\n\n// 计算斐波那契数列\nint fibonacci(int n) {\n    if (n <= 1) {\n        return n;\n    } else {\n        return fibonacci(n - 1) + fibonacci(n - 2);\n    }\n}\n\n// 调用函数并打印结果\nint main() {\n    int result = fibonacci(10);\n    printf(\"%d\\n\", result); \n    getchar();\n    return 0;\n}",
-			"rawText": "#include <stdio.h>\n\n// 计算斐波那契数列\nint fibonacci(int n) {\n    if (n <= 1) {\n        return n;\n    } else {\n        return fibonacci(n - 1) + fibonacci(n - 2);\n    }\n}\n\n// 调用函数并打印结果\nint main() {\n    int result = fibonacci(10);\n    printf(\"%d\\n\", result); \n    getchar();\n    return 0;\n}",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "#include <stdio.h>\n\n// 计算斐波那契数列\nint fibonacci(int n) {\n    if (n <= 1) {\n        return n;\n    } else {\n        return fibonacci(n - 1) + fibonacci(n - 2);\n    }\n}\n\n// 调用函数并打印结果\nint main() {\n    int result = fibonacci(10);\n    printf(\"%d\\n\", result); \n    getchar();\n    return 0;\n}",
-			"lineHeight": 1.2,
-			"baseline": 551
-		},
-		{
-			"type": "rectangle",
-			"version": 96,
-			"versionNonce": 1751351261,
-			"isDeleted": false,
-			"id": "rLFTFCO-QEycmdW9AVS9Y",
-			"fillStyle": "solid",
-			"strokeWidth": 4,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": -109.57453592055413,
-			"y": -1031.3949794939062,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 248.05588118457138,
-			"height": 59.022912950601324,
-			"seed": 1553924921,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 3
-			},
-			"boundElements": [
-				{
-					"id": "Hn29i0E56okRjXNe2cJPp",
-					"type": "arrow"
-				}
-			],
-			"updated": 1712658914150,
-			"link": null,
-			"locked": false
-		},
-		{
-			"type": "diamond",
-			"version": 43,
-			"versionNonce": 1635432563,
-			"isDeleted": false,
-			"id": "iShUjdJk7g8sOtn6yeDxa",
-			"fillStyle": "solid",
-			"strokeWidth": 4,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": -807.7172850007876,
-			"y": -890.3607437662345,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 351.74476874552136,
-			"height": 103.68893320039882,
-			"seed": 70005785,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1712658914150,
-			"link": null,
-			"locked": false
-		},
-		{
-			"type": "ellipse",
-			"version": 60,
-			"versionNonce": 318864445,
-			"isDeleted": false,
-			"id": "jrHRovzc76KeYblkbJdGZ",
-			"fillStyle": "solid",
-			"strokeWidth": 4,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": -2.973385267819822,
-			"y": -453.38247222568776,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 443.4696399083999,
-			"height": 77.3679328226259,
-			"seed": 681593081,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [
-				{
-					"id": "Hn29i0E56okRjXNe2cJPp",
-					"type": "arrow"
-				}
-			],
-			"updated": 1712658914150,
-			"link": null,
-			"locked": false
-		},
-		{
-			"type": "arrow",
-			"version": 219,
-			"versionNonce": 890319379,
-			"isDeleted": false,
-			"id": "Hn29i0E56okRjXNe2cJPp",
-			"fillStyle": "solid",
-			"strokeWidth": 4,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": 26.388543987437558,
-			"y": -968.3840306509819,
-			"strokeColor": "#e03131",
-			"backgroundColor": "transparent",
-			"width": 154.42253414379587,
-			"height": 508.1366637766615,
-			"seed": 1400816089,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1712658914150,
-			"link": null,
-			"locked": false,
-			"startBinding": {
-				"elementId": "rLFTFCO-QEycmdW9AVS9Y",
-				"focus": -0.014158574156573638,
-				"gap": 3.988035892323097
-			},
-			"endBinding": {
-				"elementId": "jrHRovzc76KeYblkbJdGZ",
-				"focus": -0.10857231757011078,
-				"gap": 7.50220489370777
-			},
-			"lastCommittedPoint": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow",
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					154.42253414379587,
-					508.1366637766615
-				]
-			]
-		},
-		{
-			"type": "rectangle",
-			"version": 448,
-			"versionNonce": 1163979933,
-			"isDeleted": false,
-			"id": "BvTO8YnbqGyocPlZbM-d0",
-			"fillStyle": "solid",
-			"strokeWidth": 4,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": -542.4802388664959,
-			"y": -1202.3569830075053,
-			"strokeColor": "transparent",
-			"backgroundColor": "#eae0d4",
-			"width": 811.9984418983103,
-			"height": 93.77299057042073,
-			"seed": 39378841,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 3
-			},
-			"boundElements": [],
-			"updated": 1712658914150,
-			"link": null,
-			"locked": false
-		},
-		{
-			"type": "text",
-			"version": 593,
-			"versionNonce": 1860663219,
-			"isDeleted": false,
-			"id": "mjZUWqT3",
-			"fillStyle": "solid",
-			"strokeWidth": 4,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": -464.8558625181597,
-			"y": -1186.7204884609926,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#96f2d7",
-			"width": 653.949951171875,
-			"height": 62.5,
-			"seed": 590054521,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1712658914150,
-			"link": null,
-			"locked": false,
-			"customData": {
-				"shadow": [
-					{
-						"shadowColor": "#fff",
-						"shadowBlur": "1px",
-						"shadowOffsetX": "1px",
-						"shadowOffsetY": "-1px"
-					},
-					{
-						"shadowColor": "#00000055",
-						"shadowBlur": "10px",
-						"shadowOffsetX": "-6px",
-						"shadowOffsetY": "10px"
-					}
-				],
-				"gradient": "var gradient = ctx.createLinearGradient(0,0,el.width,0);\ngradient.addColorStop(0,\"#5EFCE8\");\ngradient.addColorStop(1,\"#736EFE\");",
-				"font": {
-					"weight": "800"
-				}
-			},
-			"fontSize": 50,
-			"fontFamily": "\"LXGW WenKai\"",
-			"text": "Excalidraw代码语法高亮功能",
-			"rawText": "Excalidraw代码语法高亮功能",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Excalidraw代码语法高亮功能",
-			"lineHeight": 1.25,
-			"baseline": 50
-		},
-		{
-			"type": "text",
-			"version": 593,
-			"versionNonce": 1865634045,
-			"isDeleted": false,
-			"id": "x1L2mrfr",
-			"fillStyle": "solid",
-			"strokeWidth": 4,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": -464.8558625181597,
-			"y": -1186.7204884609926,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#96f2d7",
-			"width": 653.949951171875,
-			"height": 62.5,
-			"seed": 590054521,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1712658914150,
-			"link": null,
-			"locked": false,
-			"customData": {
-				"shadow": [
-					{
-						"shadowColor": "#fff",
-						"shadowBlur": "1px",
-						"shadowOffsetX": "1px",
-						"shadowOffsetY": "-1px"
-					},
-					{
-						"shadowColor": "#00000055",
-						"shadowBlur": "10px",
-						"shadowOffsetX": "-6px",
-						"shadowOffsetY": "10px"
-					}
-				],
-				"gradient": "var gradient = ctx.createLinearGradient(0,0,el.width,0);\ngradient.addColorStop(0,\"#5EFCE8\");\ngradient.addColorStop(1,\"#736EFE\");",
-				"font": {
-					"weight": "800"
-				}
-			},
-			"fontSize": 50,
-			"fontFamily": "\"LXGW WenKai\"",
-			"text": "Excalidraw代码语法高亮功能",
-			"rawText": "Excalidraw代码语法高亮功能",
-			"textAlign": "center",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Excalidraw代码语法高亮功能",
-			"lineHeight": 1.25,
-			"baseline": 50
-		},
-		{
-			"id": "639T0fJi",
-			"type": "text",
-			"x": -843.9499386058133,
-			"y": -336.43307396966145,
-			"width": 731.40625,
-			"height": 360,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 456121693,
-			"version": 23,
-			"versionNonce": 1566183571,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1712658915871,
-			"link": null,
-			"locked": false,
-			"customData": {
-				"codeHighlight": {
-					"language": "riscv",
-					"style": "atom-one-dark",
-					"embedFont": true
-				}
-			},
-			"text": "# a0 是变量 n，a1 指向 x[0]，a2 指向 y[0]，fa0 是变量 a\n0:  li t0, 2< <25\n4:  vsetdcfg t0              # 启用两个 64 位浮点向量寄存器\nloop:\n8:  setvl    t0, a0          # vl = t0 = min(mvl, n)\nc:  vld      v0, a1          # 取向量 x\n10: slli     t1, t0, 3       # t1 = vl * 8（以字节为单位）\n14: vld      v1, a2          # 取向量 y\n18: add      a1, a1, t1      # 指向 x 的指针递增 vl*8\n1c: vfmadd   v1, v0, fa0, v1 # v1 += v0 * fa0 （y = a * x + y）\n20: sub      a0, a0, t0      # n -= vl （t0）\n24: vst      v1, a2          # 存向量 y\n28: add      a2, a2, t1      # 指向 y 的指针递增 vl*8\n2c: bnez     a0, loop        # 若 n != 0，则重复\n30: ret                      # 函数返回",
-			"rawText": "# a0 是变量 n，a1 指向 x[0]，a2 指向 y[0]，fa0 是变量 a\n0:  li t0, 2< <25\n4:  vsetdcfg t0              # 启用两个 64 位浮点向量寄存器\nloop:\n8:  setvl    t0, a0          # vl = t0 = min(mvl, n)\nc:  vld      v0, a1          # 取向量 x\n10: slli     t1, t0, 3       # t1 = vl * 8（以字节为单位）\n14: vld      v1, a2          # 取向量 y\n18: add      a1, a1, t1      # 指向 x 的指针递增 vl*8\n1c: vfmadd   v1, v0, fa0, v1 # v1 += v0 * fa0 （y = a * x + y）\n20: sub      a0, a0, t0      # n -= vl （t0）\n24: vst      v1, a2          # 存向量 y\n28: add      a2, a2, t1      # 指向 y 的指针递增 vl*8\n2c: bnez     a0, loop        # 若 n != 0，则重复\n30: ret                      # 函数返回",
-			"fontSize": 20,
-			"fontFamily": 3,
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "# a0 是变量 n，a1 指向 x[0]，a2 指向 y[0]，fa0 是变量 a\n0:  li t0, 2< <25\n4:  vsetdcfg t0              # 启用两个 64 位浮点向量寄存器\nloop:\n8:  setvl    t0, a0          # vl = t0 = min(mvl, n)\nc:  vld      v0, a1          # 取向量 x\n10: slli     t1, t0, 3       # t1 = vl * 8（以字节为单位）\n14: vld      v1, a2          # 取向量 y\n18: add      a1, a1, t1      # 指向 x 的指针递增 vl*8\n1c: vfmadd   v1, v0, fa0, v1 # v1 += v0 * fa0 （y = a * x + y）\n20: sub      a0, a0, t0      # n -= vl （t0）\n24: vst      v1, a2          # 存向量 y\n28: add      a2, a2, t1      # 指向 y 的指针递增 vl*8\n2c: bnez     a0, loop        # 若 n != 0，则重复\n30: ret                      # 函数返回",
-			"lineHeight": 1.2
-		}
-	],
-	"appState": {
-		"theme": "light",
-		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#1e1e1e",
-		"currentItemBackgroundColor": "transparent",
-		"currentItemFillStyle": "solid",
-		"currentItemStrokeWidth": 2,
-		"currentItemStrokeStyle": "solid",
-		"currentItemRoughness": 1,
-		"currentItemOpacity": 100,
-		"currentItemFontFamily": 3,
-		"currentItemFontSize": 20,
-		"currentItemTextAlign": "left",
-		"currentItemStartArrowhead": null,
-		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1035.8323346306295,
-		"scrollY": 958.9919100651348,
-		"zoom": {
-			"value": 0.8510000000000001
-		},
-		"currentItemRoundness": "round",
-		"gridSize": null,
-		"gridColor": {
-			"Bold": "#C9C9C9FF",
-			"Regular": "#EDEDEDFF"
-		},
-		"currentStrokeOptions": null,
-		"previousGridSize": null,
-		"frameRendering": {
-			"enabled": true,
-			"clip": true,
-			"name": true,
-			"outline": true
-		}
-	},
-	"files": {}
-}
+## Drawing
+```compressed-json
+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
 ```
 %%

@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "c06b12ee27d6bf47",
+        "id": "916f7acb473ef3a9",
         "type": "tabs",
         "children": [
           {
-            "id": "4203f57580bc1e15",
+            "id": "29ae1cd66f7f0bda",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "example/example - 波形图.excalidraw.md"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -46,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#矩形",
+                "query": "tag:#圆形",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -83,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "example/example - 波形图.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "example/example - 波形图.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,9 +107,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "example/example - 波形图.excalidraw.md"
-              }
+              "state": {}
             }
           },
           {
@@ -132,8 +126,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -148,19 +141,16 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "4203f57580bc1e15",
+  "active": "29ae1cd66f7f0bda",
   "lastOpenFiles": [
-    "example/example - 波形图.excalidraw.md",
     "example/摘录方式.excalidraw.md",
-    "example/example - 设置直线长度、角度.excalidraw.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Set line length.md",
-    "Drawing 2024-05-08 13.12.03.excalidraw.md",
     "example/example - 高亮连接.excalidraw.md",
     "example/example - 阴影.excalidraw.md",
     "example/example - 逐个显示&隐藏.excalidraw.md",
     "example/example - 转换文字为reminder.excalidraw.md",
     "example/example - 跟随箭头.excalidraw.md",
     "example/example - 详情.excalidraw.md",
+    "example/example - 设置直线长度、角度.excalidraw.md",
     "example/example - 视频摘录.excalidraw.md",
     "example/example - 自定义拉伸箭头.excalidraw.md",
     "example/example - 自动连接附着.excalidraw.md",
@@ -170,12 +160,15 @@
     "example/example - 箭头连接元素.excalidraw.md",
     "example/example - 箭头动画.excalidraw.md",
     "example/example - 渐变.excalidraw.md",
+    "example/example - 波形图.excalidraw.md",
     "example/example - 标签.excalidraw.md",
-    "example/example - 日历素材.excalidraw.md",
-    "example/example - 文字和字体.excalidraw.md",
-    "example/example - 按钮.excalidraw.md",
+    "example/example - callout.excalidraw.md",
+    "example/example - echarts图表.excalidraw.md",
+    "example/example - 代码高亮.excalidraw.md",
+    "example/example - 图层.excalidraw.md",
+    "example/example - 圆圈编号.excalidraw.md",
+    "example/example - 增大减小元素.excalidraw.md",
     "example/example - 折叠显示元素.excalidraw.md",
-    "example/example - 思维导图.excalidraw.md",
     "test/2",
     "test/1",
     "1",

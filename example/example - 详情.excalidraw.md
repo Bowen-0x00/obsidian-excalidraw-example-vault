@@ -7,472 +7,71 @@ tags: [excalidraw]
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
-# Text Elements
+# Excalidraw Data
+## Text Elements
 欧拉公式 ^JWVidaYp
 
 欧拉公式（英语：Euler's formula，又称尤拉公式）是复分析领域的公式，它将三角函数与复指数函数关联起来，因其提出者莱昂哈德·欧拉而得名。欧拉公式提出，对任意实数 ^tQus9Eh8
 
 你可以点击元素右上角的图标来展开/折叠详情/批注 ^Zwv2XzYU
 
-# Embedded files
+## Embedded Files
 63abcf8eea480aa1bc11913f56cfdec0bf96b381: $$e^{ix} = \cos{x} + i \sin{x}$$
 b844ba3719ae55e3ec7f9e5969e8f23f07a2ed82: [[example - 详情.excalidraw_image_20240122174444_681.png]]
 f00e2719005bdc51d6464126ed71a09ad75296bc: [[example - 详情.excalidraw_image_20240122174500_942.png]]
 
-# Tags
+## Tags
 %%
-# Drawing
-```json
-{
-	"type": "excalidraw",
-	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.1.6-1",
-	"elements": [
-		{
-			"type": "rectangle",
-			"version": 237,
-			"versionNonce": 936031475,
-			"index": "a0",
-			"isDeleted": false,
-			"id": "hyBh7ZRFvDCrBhsvXt9sf",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 0,
-			"angle": 0,
-			"x": -288.05567653595983,
-			"y": -450.55824118640436,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#f8f9fa",
-			"width": 626.999969482422,
-			"height": 963.5000419616701,
-			"seed": 1324471857,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 3
-			},
-			"boundElements": [],
-			"updated": 1713974567990,
-			"link": null,
-			"locked": true,
-			"customData": {
-				"hide": true,
-				"backup_opacity": 100
-			}
-		},
-		{
-			"type": "rectangle",
-			"version": 956,
-			"versionNonce": 58519541,
-			"index": "a1",
-			"isDeleted": false,
-			"id": "fSLqLGLskW71fKRL4Jjom",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": -556.1601963203551,
-			"y": -216.29782725164506,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#f3f0ff",
-			"width": 220,
-			"height": 125.60003662109375,
-			"seed": 671539807,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 3
-			},
-			"boundElements": [
-				{
-					"type": "text",
-					"id": "JWVidaYp"
-				}
-			],
-			"updated": 1713974567990,
-			"link": null,
-			"locked": false,
-			"customData": {
-				"detail": {
-					"status": "hide",
-					"ids": [
-						"hyBh7ZRFvDCrBhsvXt9sf",
-						"shztdZPw",
-						"tQus9Eh8",
-						"AqsGAkQQ",
-						"wff1q6Ym9S00vl2ktKZmQ",
-						"aEQW_fGc8mAdNFN1kUxFQ"
-					],
-					"relative": true
-				}
-			}
-		},
-		{
-			"type": "text",
-			"version": 809,
-			"versionNonce": 634397005,
-			"index": "a2",
-			"isDeleted": false,
-			"id": "JWVidaYp",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -518.1601963203551,
-			"y": -175.99780894109819,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 144,
-			"height": 45,
-			"seed": 926509023,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1713974566424,
-			"link": null,
-			"locked": false,
-			"fontSize": 36,
-			"fontFamily": 1,
-			"text": "欧拉公式",
-			"rawText": "欧拉公式",
-			"textAlign": "center",
-			"verticalAlign": "middle",
-			"containerId": "fSLqLGLskW71fKRL4Jjom",
-			"originalText": "欧拉公式",
-			"lineHeight": 1.25
-		},
-		{
-			"type": "rectangle",
-			"version": 186,
-			"versionNonce": 82694525,
-			"index": "a3",
-			"isDeleted": false,
-			"id": "shztdZPw",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 0,
-			"angle": 0,
-			"x": -209.57894628901101,
-			"y": -376.8987953427389,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
-			"width": 485.59997558593756,
-			"height": 114.59997558593749,
-			"seed": 93840,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [
-				{
-					"type": "text",
-					"id": "tQus9Eh8"
-				}
-			],
-			"updated": 1713974567990,
-			"link": null,
-			"locked": true,
-			"customData": {
-				"hide": true,
-				"backup_opacity": 100
-			}
-		},
-		{
-			"type": "text",
-			"version": 358,
-			"versionNonce": 1996099139,
-			"index": "a4",
-			"isDeleted": false,
-			"id": "tQus9Eh8",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 0,
-			"angle": 0,
-			"x": -204.57894628901101,
-			"y": -371.8987953427389,
-			"strokeColor": "#000000",
-			"backgroundColor": "transparent",
-			"width": 467,
-			"height": 100,
-			"seed": 78563,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1713974567998,
-			"link": null,
-			"locked": true,
-			"customData": {
-				"hide": true,
-				"backup_opacity": 100
-			},
-			"fontSize": 20,
-			"fontFamily": "\"LXGW WenKai\"",
-			"text": "欧拉公式（英语：Euler's formula，又称尤拉公式）\n是复分析领域的公式，它将三角函数与复指数函数关\n联起来，因其提出者莱昂哈德·欧拉而得名。欧拉公式\n提出，对任意实数",
-			"rawText": "欧拉公式（英语：Euler's formula，又称尤拉公式）是复分析领域的公式，它将三角函数与复指数函数关联起来，因其提出者莱昂哈德·欧拉而得名。欧拉公式提出，对任意实数",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": "shztdZPw",
-			"originalText": "欧拉公式（英语：Euler's formula，又称尤拉公式）是复分析领域的公式，它将三角函数与复指数函数关联起来，因其提出者莱昂哈德·欧拉而得名。欧拉公式提出，对任意实数",
-			"lineHeight": 1.25,
-			"baseline": 95
-		},
-		{
-			"type": "image",
-			"version": 186,
-			"versionNonce": 202103222,
-			"index": "a5",
-			"isDeleted": false,
-			"id": "AqsGAkQQ",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 0,
-			"angle": 0,
-			"x": -169.97897070307351,
-			"y": -256.0654314918275,
-			"strokeColor": "#000000",
-			"backgroundColor": "transparent",
-			"width": 180,
-			"height": 21.333333333333332,
-			"seed": 81471,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1713974567990,
-			"link": null,
-			"locked": true,
-			"customData": {
-				"latex": {
-					"scale": 1.3333333333333333
-				},
-				"hide": true,
-				"backup_opacity": 100
-			},
-			"status": "pending",
-			"fileId": "63abcf8eea480aa1bc11913f56cfdec0bf96b381",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "image",
-			"version": 250,
-			"versionNonce": 117869108,
-			"index": "a6",
-			"isDeleted": false,
-			"id": "wff1q6Ym9S00vl2ktKZmQ",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 0,
-			"angle": 0,
-			"x": -206.27889746088601,
-			"y": -215.69881365328575,
-			"strokeColor": "transparent",
-			"backgroundColor": "#f3f0ff",
-			"width": 376.59997558593744,
-			"height": 376.59997558593744,
-			"seed": 653558801,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1713974567990,
-			"link": null,
-			"locked": true,
-			"customData": {
-				"hide": true,
-				"backup_opacity": 100
-			},
-			"status": "pending",
-			"fileId": "b844ba3719ae55e3ec7f9e5969e8f23f07a2ed82",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "image",
-			"version": 254,
-			"versionNonce": 152692322,
-			"index": "a7",
-			"isDeleted": false,
-			"id": "aEQW_fGc8mAdNFN1kUxFQ",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 0,
-			"angle": 0,
-			"x": -203.74527163899631,
-			"y": 164.54974352697695,
-			"strokeColor": "transparent",
-			"backgroundColor": "#f3f0ff",
-			"width": 490.7329192546583,
-			"height": 319.6116504854369,
-			"seed": 393266609,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1713974567990,
-			"link": null,
-			"locked": true,
-			"customData": {
-				"hide": true,
-				"backup_opacity": 100
-			},
-			"status": "pending",
-			"fileId": "f00e2719005bdc51d6464126ed71a09ad75296bc",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "text",
-			"version": 39,
-			"versionNonce": 989341805,
-			"index": "a8",
-			"isDeleted": false,
-			"id": "Zwv2XzYU",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": -372.2750407649833,
-			"y": -625.1622010908204,
-			"strokeColor": "#0c8599",
-			"backgroundColor": "#f8f9fa",
-			"width": 817.199951171875,
-			"height": 45,
-			"seed": 857368785,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [
-				{
-					"id": "guAQmmSuG63E35TzijmZH",
-					"type": "arrow"
-				}
-			],
-			"updated": 1713974566424,
-			"link": null,
-			"locked": false,
-			"fontSize": 36,
-			"fontFamily": "\"LXGW WenKai\"",
-			"text": "你可以点击元素右上角的图标来展开/折叠详情/批注",
-			"rawText": "你可以点击元素右上角的图标来展开/折叠详情/批注",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "你可以点击元素右上角的图标来展开/折叠详情/批注",
-			"lineHeight": 1.25
-		},
-		{
-			"type": "arrow",
-			"version": 43,
-			"versionNonce": 776904931,
-			"index": "a9",
-			"isDeleted": false,
-			"id": "guAQmmSuG63E35TzijmZH",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"angle": 0,
-			"x": -197.11919159638967,
-			"y": -574.3363802054944,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "#f8f9fa",
-			"width": 174.64403459860011,
-			"height": 320.1348034346263,
-			"seed": 448718431,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1713974566424,
-			"link": null,
-			"locked": false,
-			"startBinding": {
-				"elementId": "Zwv2XzYU",
-				"focus": 0.5179488922114244,
-				"gap": 5.8258208853260385
-			},
-			"endBinding": null,
-			"lastCommittedPoint": null,
-			"startArrowhead": null,
-			"endArrowhead": "arrow",
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					-174.64403459860011,
-					320.1348034346263
-				]
-			]
-		}
-	],
-	"appState": {
-		"theme": "light",
-		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#1e1e1e",
-		"currentItemBackgroundColor": "#f8f9fa",
-		"currentItemFillStyle": "solid",
-		"currentItemStrokeWidth": 2,
-		"currentItemStrokeStyle": "solid",
-		"currentItemRoughness": 0,
-		"currentItemOpacity": 100,
-		"currentItemFontFamily": "\"LXGW WenKai\"",
-		"currentItemFontSize": 36,
-		"currentItemTextAlign": "left",
-		"currentItemStartArrowhead": null,
-		"currentItemEndArrowhead": "arrow",
-		"scrollX": 809.0551429567317,
-		"scrollY": 656.1297314077773,
-		"zoom": {
-			"value": 0.8
-		},
-		"currentItemRoundness": "round",
-		"gridSize": null,
-		"gridColor": {
-			"Bold": "#C9C9C9FF",
-			"Regular": "#EDEDEDFF"
-		},
-		"currentStrokeOptions": null,
-		"previousGridSize": null,
-		"frameRendering": {
-			"enabled": true,
-			"clip": true,
-			"name": true,
-			"outline": true
-		},
-		"objectsSnapModeEnabled": false
-	},
-	"files": {}
-}
+## Drawing
+```compressed-json
+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
 ```
 %%
