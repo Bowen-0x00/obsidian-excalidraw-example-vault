@@ -11,8 +11,10 @@
             "id": "29ae1cd66f7f0bda",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "excalidraw",
+              "state": {
+                "file": "example/example - 表格.excalidraw.md"
+              }
             }
           }
         ]
@@ -81,6 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "example/example - 表格.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "example/example - 表格.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -107,7 +111,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "example/example - 表格.excalidraw.md"
+              }
             }
           },
           {
@@ -126,10 +132,12 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian42-brat:BRAT": false,
       "templater-obsidian:Templater": false,
       "obsidian-excalidraw-plugin-ymjr:Create new drawing": false,
       "switcher:Open quick switcher": false,
@@ -143,6 +151,12 @@
   },
   "active": "29ae1cd66f7f0bda",
   "lastOpenFiles": [
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/tableSelectedElements.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/distribute elements (center).svg",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Repeat Elements (with group).svg",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Mindmap format.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/inputToMultipleShape.md",
+    "example/example - 表格.excalidraw.md",
     "example/摘录方式.excalidraw.md",
     "example/example - 高亮连接.excalidraw.md",
     "example/example - 阴影.excalidraw.md",
@@ -165,10 +179,6 @@
     "example/example - callout.excalidraw.md",
     "example/example - echarts图表.excalidraw.md",
     "example/example - 代码高亮.excalidraw.md",
-    "example/example - 图层.excalidraw.md",
-    "example/example - 圆圈编号.excalidraw.md",
-    "example/example - 增大减小元素.excalidraw.md",
-    "example/example - 折叠显示元素.excalidraw.md",
     "test/2",
     "test/1",
     "1",
@@ -186,8 +196,6 @@
     "example/attachments/摘录方式.excalidraw_image_20240306205633_428.png",
     "example/attachments/摘录方式.excalidraw_image_20240306205531_079.png",
     "example/attachments/摘录方式.excalidraw_image_20240306202047_883.png",
-    "example/attachments/摘录方式.excalidraw_image_20240306202023_617.png",
-    "example/attachments/摘录方式.excalidraw_image_20240306201438_465.png",
-    "example/attachments/摘录方式.excalidraw_image_20240306201033_446.png"
+    "example/attachments/摘录方式.excalidraw_image_20240306202023_617.png"
   ]
 }

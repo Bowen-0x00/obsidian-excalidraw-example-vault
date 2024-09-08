@@ -434,6 +434,12 @@
         "value": "#FFADAD, #FFD6A5, #FDFFB6, #CAFFBF, #9BF6FF, #A0C4FF, #BDB2FF, #FFC6FF",
         "description": "Starting index"
       }
+    },
+    "highlight line": {
+      "highlight color": {
+        "value": "#FFC800",
+        "description": "Highlight color around the line."
+      }
     }
   },
   "defaultTrayMode": true,
@@ -446,8 +452,7 @@
   "pinnedScripts": [
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/Add unorder list.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/Add order list.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Horizontal distribution.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Vertical distribution.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/distribute elements (center).md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/add top brace.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/add bottom brace.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/add left brace.md",
@@ -455,7 +460,8 @@
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/convert latex in text.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/highlight text.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/show layer toolbar.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/switch connection shape.md"
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/switch connection shape.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Repeat Elements (with group).md"
   ],
   "customPens": [
     {

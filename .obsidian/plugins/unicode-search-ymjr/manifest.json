@@ -1,0 +1,10 @@
+{
+	"id": "unicode-search-ymjr",
+	"name": "Unicode Search (work in excalidraw too)",
+	"version": "0.6.1",
+	"minAppVersion": "0.15.0",
+	"description": "Search and insert Unicode characters into your editor",
+	"author": "BambusControl (modified by ymjr)",
+	"authorUrl": "https://github.com/BambusControl",
+	"isDesktopOnly": false
+}
