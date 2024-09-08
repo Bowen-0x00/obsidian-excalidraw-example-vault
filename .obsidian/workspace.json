@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "916f7acb473ef3a9",
+        "id": "d27b54c3b349fdc5",
         "type": "tabs",
         "children": [
           {
-            "id": "29ae1cd66f7f0bda",
+            "id": "82bf0441ee36e5cf",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "example/example - 表格.excalidraw.md"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -83,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "example/example - 表格.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "example/example - 表格.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,9 +107,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "example/example - 表格.excalidraw.md"
-              }
+              "state": {}
             }
           },
           {
@@ -149,36 +143,37 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "29ae1cd66f7f0bda",
+  "active": "82bf0441ee36e5cf",
   "lastOpenFiles": [
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/tableSelectedElements.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/distribute elements (center).svg",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Repeat Elements (with group).svg",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Mindmap format.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/inputToMultipleShape.md",
-    "example/example - 表格.excalidraw.md",
-    "example/摘录方式.excalidraw.md",
+    "example/example - 详情.excalidraw.md",
     "example/example - 高亮连接.excalidraw.md",
-    "example/example - 阴影.excalidraw.md",
     "example/example - 逐个显示&隐藏.excalidraw.md",
     "example/example - 转换文字为reminder.excalidraw.md",
     "example/example - 跟随箭头.excalidraw.md",
-    "example/example - 详情.excalidraw.md",
     "example/example - 设置直线长度、角度.excalidraw.md",
-    "example/example - 视频摘录.excalidraw.md",
+    "example/example - 表格.excalidraw.md",
     "example/example - 自定义拉伸箭头.excalidraw.md",
     "example/example - 自动连接附着.excalidraw.md",
     "example/example - 缩略图 全局图.excalidraw.md",
     "example/example - 缩放隐藏显示.excalidraw.md",
     "example/example - 素材库.excalidraw.md",
-    "example/example - 箭头连接元素.excalidraw.md",
     "example/example - 箭头动画.excalidraw.md",
+    "example/example - 箭头连接元素.excalidraw.md",
     "example/example - 渐变.excalidraw.md",
     "example/example - 波形图.excalidraw.md",
     "example/example - 标签.excalidraw.md",
-    "example/example - callout.excalidraw.md",
-    "example/example - echarts图表.excalidraw.md",
+    "example/example - 日历素材.excalidraw.md",
+    "example/example - 文字和字体.excalidraw.md",
+    "example/example - 按钮.excalidraw.md",
+    "example/example - 折叠显示元素.excalidraw.md",
+    "example/example - 思维导图.excalidraw.md",
+    "example/example - 增大减小元素.excalidraw.md",
+    "example/example - 图层.excalidraw.md",
+    "example/example - 圆圈编号.excalidraw.md",
     "example/example - 代码高亮.excalidraw.md",
+    "example/example - 表格.excalidraw.svg",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/distribute elements (center).svg",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Repeat Elements (with group).svg",
     "test/2",
     "test/1",
     "1",
@@ -195,7 +190,6 @@
     "example/attachments/摘录方式.excalidraw_image_20240306205702_319.png",
     "example/attachments/摘录方式.excalidraw_image_20240306205633_428.png",
     "example/attachments/摘录方式.excalidraw_image_20240306205531_079.png",
-    "example/attachments/摘录方式.excalidraw_image_20240306202047_883.png",
-    "example/attachments/摘录方式.excalidraw_image_20240306202023_617.png"
+    "example/attachments/摘录方式.excalidraw_image_20240306202047_883.png"
   ]
 }
