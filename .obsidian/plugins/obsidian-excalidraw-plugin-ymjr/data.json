@@ -452,6 +452,8 @@
   "pinnedScripts": [
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/Add unorder list.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/Add order list.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Horizontal distribution.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Vertical distribution.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/distribute elements (center).md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/add top brace.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/add bottom brace.md",
@@ -461,7 +463,8 @@
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/highlight text.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/show layer toolbar.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/switch connection shape.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Repeat Elements (with group).md"
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Repeat Elements (with group).md",
+    "plugins/Excalidraw/Scripts/Downloaded/Slideshow.md"
   ],
   "customPens": [
     {
