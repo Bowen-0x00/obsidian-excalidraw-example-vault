@@ -11,8 +11,10 @@
             "id": "bc228404cb84f7b1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "excalidraw",
+              "state": {
+                "file": "example/example - 便捷输入.excalidraw.md"
+              }
             }
           }
         ]
@@ -81,6 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "example/example - 便捷输入.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "example/example - 便捷输入.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -107,7 +111,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "example/example - 便捷输入.excalidraw.md"
+              }
             }
           },
           {
@@ -145,6 +151,7 @@
   },
   "active": "bc228404cb84f7b1",
   "lastOpenFiles": [
+    "example/example - 便捷输入.excalidraw.md",
     "example/example - 模板(smartart).excalidraw.md",
     "example/测试无序列表.md",
     "example/attachments/Pasted image 20241002010131.png",
