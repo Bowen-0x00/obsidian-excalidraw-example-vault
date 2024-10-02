@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "9124c045b73f97d3",
+        "id": "e843acd15e6cd16c",
         "type": "tabs",
         "children": [
           {
-            "id": "27001f3f4b7c108f",
+            "id": "bc228404cb84f7b1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "example/123.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "example/123.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "example/123.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -113,9 +107,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "example/123.md"
-              }
+              "state": {}
             }
           },
           {
@@ -151,37 +143,39 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "27001f3f4b7c108f",
+  "active": "bc228404cb84f7b1",
   "lastOpenFiles": [
-    "example/123_mindmap123123.excalidraw.md",
-    "example/123.md",
-    "example/example - 思维导图.excalidraw.md",
-    "example/example - 图层.excalidraw.md",
-    "example/mindmap from templater.md",
-    "example/Drawing 2024-09-08 15.39.30.excalidraw.md",
-    "example/attachments/Drawing 2024-09-08 15.39.30.excalidraw_image_20240908163053_410.png",
-    "example/example - 表格.excalidraw.md",
-    "example/example - callout.excalidraw.md",
-    "example/Drawing 2024-09-08 15.37.48.excalidraw.md",
-    "example/Drawing 2024-09-08 14.48.39.excalidraw.md",
-    "example/Drawing 2024-09-08 14.48.13.excalidraw.md",
-    "example/Drawing 2024-09-08 14.43.19.excalidraw.md",
-    "example/Drawing 2024-09-08 14.42.39.excalidraw.md",
-    "example/Drawing 2024-09-08 14.01.46.excalidraw.md",
-    "example/Drawing 2024-09-08 13.58.37.excalidraw.md",
-    "plugins/Excalidraw/Library/digital-circuit-components-my.excalidrawlib",
-    "example/Drawing 2024-09-08 13.48.34.excalidraw.md",
-    "example/example - 详情.excalidraw.md",
+    "example/example - 模板(smartart).excalidraw.md",
+    "example/测试无序列表.md",
+    "example/attachments/Pasted image 20241002010131.png",
+    "example/attachments/image_0.png",
+    "example/example - svg转excalidraw - 文字.excalidraw.md",
+    "example/attachments/image.png",
+    "example/摘录方式.excalidraw.md",
+    "example/mindmap from templater_mindmap.excalidraw.md",
     "example/example - 高亮连接.excalidraw.md",
+    "example/example - 阴影.excalidraw.md",
     "example/example - 逐个显示&隐藏.excalidraw.md",
     "example/example - 转换文字为reminder.excalidraw.md",
     "example/example - 跟随箭头.excalidraw.md",
+    "example/example - 详情.excalidraw.md",
     "example/example - 设置直线长度、角度.excalidraw.md",
+    "example/example - 视频摘录.excalidraw.md",
+    "example/example - 表格.excalidraw.md",
     "example/example - 自定义拉伸箭头.excalidraw.md",
+    "example/example - 表格.excalidraw.svg",
     "example/example - 自动连接附着.excalidraw.md",
     "example/example - 缩略图 全局图.excalidraw.md",
     "example/example - 缩放隐藏显示.excalidraw.md",
-    "example/example - 表格.excalidraw.svg",
+    "example/example - 素材库.excalidraw.md",
+    "example/example - 箭头连接元素.excalidraw.md",
+    "example/example - 箭头动画.excalidraw.md",
+    "example/example - 渐变.excalidraw.md",
+    "example/example - 波形图.excalidraw.md",
+    "example/example - 标签.excalidraw.md",
+    "example/example - 日历素材.excalidraw.md",
+    "example/attachments/Drawing 2024-09-08 15.39.30.excalidraw_image_20240908163053_410.png",
+    "plugins/Excalidraw/Library/digital-circuit-components-my.excalidrawlib",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/distribute elements (center).svg",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/Repeat Elements (with group).svg",
     "test/2",
@@ -195,9 +189,6 @@
     "Untitled",
     "Excalidraw关系.excalidraw.svg",
     "example/摘录方式.excalidraw.png",
-    "example/attachments/摘录方式.excalidraw_image_20240306201157_674.png",
-    "example/attachments/摘录方式.excalidraw_image_20240306205702_319.png",
-    "example/attachments/摘录方式.excalidraw_image_20240306205633_428.png",
-    "example/attachments/摘录方式.excalidraw_image_20240306205531_079.png"
+    "example/attachments/摘录方式.excalidraw_image_20240306201157_674.png"
   ]
 }

@@ -94,7 +94,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.4.2-1",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.5.1-3",
     "libraryItems": []
   },
   "imageElementNotice": true,
@@ -440,10 +440,28 @@
         "value": "#FFC800",
         "description": "Highlight color around the line."
       }
+    },
+    "text to header": {
+      "fontFamily": {
+        "value": "LXGW WenKai, LXGW WenKai, LXGW WenKai",
+        "description": "Font family for header."
+      },
+      "fontSize": {
+        "value": "48, 36, 28",
+        "description": "Font size for header."
+      },
+      "strokeColor": {
+        "value": "#0c8599, #15aabf, #3bc9db",
+        "description": "Font color for header."
+      },
+      "fontWeight": {
+        "value": "800, 700, 600",
+        "description": "Font weight for header."
+      }
     }
   },
   "defaultTrayMode": true,
-  "previousRelease": "2.4.2-1",
+  "previousRelease": "2.5.1-1",
   "showReleaseNotes": true,
   "showNewVersionNotification": true,
   "latexBoilerplate": "\\color{blue}",
@@ -463,8 +481,7 @@
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/highlight text.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/show layer toolbar.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/switch connection shape.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Repeat Elements (with group).md",
-    "plugins/Excalidraw/Scripts/Downloaded/Slideshow.md"
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Repeat Elements (with group).md"
   ],
   "customPens": [
     {
@@ -789,6 +806,11 @@
   "pdfNumRows": 1,
   "pdfDirection": "right",
   "pdfImportScale": 0.3,
+  "gridSettings": {
+    "DYNAMIC_COLOR": true,
+    "COLOR": "#000000",
+    "OPACITY": 50
+  },
   "laserSettings": {
     "DECAY_LENGTH": 50,
     "DECAY_TIME": 1000,
