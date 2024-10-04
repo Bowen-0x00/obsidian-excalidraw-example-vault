@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e843acd15e6cd16c",
+        "id": "d81ecf2648fc7c6a",
         "type": "tabs",
         "children": [
           {
-            "id": "bc228404cb84f7b1",
+            "id": "93004b0bdc781d37",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "example/example - 便捷输入.excalidraw.md"
+                "file": "example/example - 长方体.excalidraw.md"
               }
             }
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "example/example - 便捷输入.excalidraw.md",
+                "file": "example/example - 长方体.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "example/example - 便捷输入.excalidraw.md",
+                "file": "example/example - 长方体.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -112,7 +112,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "example/example - 便捷输入.excalidraw.md"
+                "file": "example/example - 长方体.excalidraw.md"
               }
             }
           },
@@ -149,8 +149,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "bc228404cb84f7b1",
+  "active": "93004b0bdc781d37",
   "lastOpenFiles": [
+    "example/example - 详情.excalidraw.md",
+    "example/example - 表格.excalidraw.md",
+    "example/example - 长方体.excalidraw.md",
     "example/example - 便捷输入.excalidraw.md",
     "example/example - 模板(smartart).excalidraw.md",
     "example/测试无序列表.md",
@@ -165,10 +168,8 @@
     "example/example - 逐个显示&隐藏.excalidraw.md",
     "example/example - 转换文字为reminder.excalidraw.md",
     "example/example - 跟随箭头.excalidraw.md",
-    "example/example - 详情.excalidraw.md",
     "example/example - 设置直线长度、角度.excalidraw.md",
     "example/example - 视频摘录.excalidraw.md",
-    "example/example - 表格.excalidraw.md",
     "example/example - 自定义拉伸箭头.excalidraw.md",
     "example/example - 表格.excalidraw.svg",
     "example/example - 自动连接附着.excalidraw.md",
@@ -180,7 +181,6 @@
     "example/example - 渐变.excalidraw.md",
     "example/example - 波形图.excalidraw.md",
     "example/example - 标签.excalidraw.md",
-    "example/example - 日历素材.excalidraw.md",
     "example/attachments/Drawing 2024-09-08 15.39.30.excalidraw_image_20240908163053_410.png",
     "plugins/Excalidraw/Library/digital-circuit-components-my.excalidrawlib",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/distribute elements (center).svg",
