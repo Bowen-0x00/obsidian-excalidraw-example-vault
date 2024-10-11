@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "d81ecf2648fc7c6a",
+        "id": "be66a541e8d37c40",
         "type": "tabs",
         "children": [
           {
-            "id": "93004b0bdc781d37",
+            "id": "fae622398fe38c32",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "example/example - 长方体.excalidraw.md"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -83,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "example/example - 长方体.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "example/example - 长方体.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,9 +107,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "example/example - 长方体.excalidraw.md"
-              }
+              "state": {}
             }
           },
           {
@@ -149,13 +143,18 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "93004b0bdc781d37",
+  "active": "587ccf90dd5151c5",
   "lastOpenFiles": [
+    "example/example - 模板(smartart).excalidraw.md",
+    "example/example - 箭头连接元素.excalidraw.md",
+    "example/example - 渐变.excalidraw.md",
+    "example/example - 标签.excalidraw.md",
+    "example/example - 波形图.excalidraw.md",
+    "example/example - 长方体.excalidraw.md",
+    "example/Drawing 2024-10-10 12.06.40.excalidraw.md",
     "example/example - 详情.excalidraw.md",
     "example/example - 表格.excalidraw.md",
-    "example/example - 长方体.excalidraw.md",
     "example/example - 便捷输入.excalidraw.md",
-    "example/example - 模板(smartart).excalidraw.md",
     "example/测试无序列表.md",
     "example/attachments/Pasted image 20241002010131.png",
     "example/attachments/image_0.png",
@@ -176,11 +175,6 @@
     "example/example - 缩略图 全局图.excalidraw.md",
     "example/example - 缩放隐藏显示.excalidraw.md",
     "example/example - 素材库.excalidraw.md",
-    "example/example - 箭头连接元素.excalidraw.md",
-    "example/example - 箭头动画.excalidraw.md",
-    "example/example - 渐变.excalidraw.md",
-    "example/example - 波形图.excalidraw.md",
-    "example/example - 标签.excalidraw.md",
     "example/attachments/Drawing 2024-09-08 15.39.30.excalidraw_image_20240908163053_410.png",
     "plugins/Excalidraw/Library/digital-circuit-components-my.excalidrawlib",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/distribute elements (center).svg",
