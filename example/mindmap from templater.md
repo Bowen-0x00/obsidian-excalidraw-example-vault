@@ -4,11 +4,11 @@
 	- topic12
 - topic2
 	- topic21
-	- topic22
+	- topic22[[mindmap/mindmap from templater123123123123.excalidraw.md]]
 - topic3
 	- topic31
 	- topic32
-		- topic321
+		- topic321[[mindmap/mindmap from templater 123123123.excalidraw.md]]
 		- topic322
 	- topic33 ![[example - 详情.excalidraw_image_20240122174444_681.png]] $\int_{0}^{\infty}{f(x)dx}$
 	

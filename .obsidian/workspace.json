@@ -4,15 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "be66a541e8d37c40",
+        "id": "113b2a075b41bc9b",
         "type": "tabs",
         "children": [
           {
-            "id": "fae622398fe38c32",
+            "id": "0ae54bcfd97c33f9",
             "type": "leaf",
             "state": {
               "type": "empty",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -35,7 +37,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -44,13 +48,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#圆形",
+                "query": "tag:#蓝色",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -58,14 +64,16 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 243.5
+    "width": 245.5
   },
   "right": {
     "id": "975f8a95335c54f4",
@@ -88,7 +96,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
             }
           },
           {
@@ -99,7 +109,9 @@
               "state": {
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
             }
           },
           {
@@ -107,7 +119,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
             }
           },
           {
@@ -118,7 +132,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           }
         ],
@@ -126,70 +142,69 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
       "obsidian42-brat:BRAT": false,
       "templater-obsidian:Templater": false,
-      "obsidian-excalidraw-plugin-ymjr:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "workspaces:Manage workspace layouts": false
+      "workspaces:Manage workspace layouts": false,
+      "obsidian-excalidraw-plugin-ymjr:Create new drawing": false
     }
   },
-  "active": "587ccf90dd5151c5",
+  "active": "0ae54bcfd97c33f9",
   "lastOpenFiles": [
-    "example/example - 模板(smartart).excalidraw.md",
-    "example/example - 箭头连接元素.excalidraw.md",
-    "example/example - 渐变.excalidraw.md",
-    "example/example - 标签.excalidraw.md",
-    "example/example - 波形图.excalidraw.md",
-    "example/example - 长方体.excalidraw.md",
-    "example/Drawing 2024-10-10 12.06.40.excalidraw.md",
-    "example/example - 详情.excalidraw.md",
-    "example/example - 表格.excalidraw.md",
-    "example/example - 便捷输入.excalidraw.md",
-    "example/测试无序列表.md",
-    "example/attachments/Pasted image 20241002010131.png",
-    "example/attachments/image_0.png",
-    "example/example - svg转excalidraw - 文字.excalidraw.md",
-    "example/attachments/image.png",
-    "example/摘录方式.excalidraw.md",
-    "example/mindmap from templater_mindmap.excalidraw.md",
     "example/example - 高亮连接.excalidraw.md",
     "example/example - 阴影.excalidraw.md",
+    "example/example - 长方体.excalidraw.md",
     "example/example - 逐个显示&隐藏.excalidraw.md",
-    "example/example - 转换文字为reminder.excalidraw.md",
     "example/example - 跟随箭头.excalidraw.md",
+    "example/example - 详情.excalidraw.md",
     "example/example - 设置直线长度、角度.excalidraw.md",
-    "example/example - 视频摘录.excalidraw.md",
+    "example/example - 表格.excalidraw.md",
     "example/example - 自定义拉伸箭头.excalidraw.md",
-    "example/example - 表格.excalidraw.svg",
     "example/example - 自动连接附着.excalidraw.md",
     "example/example - 缩略图 全局图.excalidraw.md",
     "example/example - 缩放隐藏显示.excalidraw.md",
     "example/example - 素材库.excalidraw.md",
-    "example/attachments/Drawing 2024-09-08 15.39.30.excalidraw_image_20240908163053_410.png",
-    "plugins/Excalidraw/Library/digital-circuit-components-my.excalidrawlib",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/distribute elements (center).svg",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Repeat Elements (with group).svg",
-    "test/2",
-    "test/1",
-    "1",
-    "test",
-    "Untitle_3d",
-    "Untitle_2d",
-    "Untitle_1d",
-    "Untitle_0d",
-    "Untitled",
-    "Excalidraw关系.excalidraw.svg",
-    "example/摘录方式.excalidraw.png",
-    "example/attachments/摘录方式.excalidraw_image_20240306201157_674.png"
+    "example/example - 箭头连接元素.excalidraw.md",
+    "example/example - 箭头动画.excalidraw.md",
+    "example/example - 模板(smartart).excalidraw.md",
+    "example/example - 波形图.excalidraw.md",
+    "example/example - 渐变.excalidraw.md",
+    "example/example - 标签.excalidraw.md",
+    "example/example - 日历素材.excalidraw.md",
+    "example/example - 文字和字体.excalidraw.md",
+    "example/example - 按钮.excalidraw.md",
+    "example/example - 折叠显示元素.excalidraw.md",
+    "example/example - 思维导图.excalidraw.md",
+    "example/example - 增大减小元素.excalidraw.md",
+    "example/example - 圆圈编号.excalidraw.md",
+    "mindmap",
+    "example/摘录方式2.excalidraw.png",
+    "example/摘录方式2.excalidraw.svg",
+    "example/attachments/image_9.png",
+    "example/attachments/image_8.png",
+    "example/attachments/image_7.png",
+    "example/attachments/image_6.png",
+    "example/attachments/image_5.png",
+    "example/attachments/image_4.png",
+    "images/icons/vscode.svg",
+    "images/icons/Visual_Studio_Code_1.35_icon.svg",
+    "plugins/QuickAdd/add image with link from http.js",
+    "plugins/QuickAdd/paste annotation with link from json.js",
+    "plugins/QuickAdd/obfuscated/paste annotation and link from json.js",
+    "plugins/QuickAdd/obfuscated/close http server.js",
+    "plugins/QuickAdd/obfuscated/add image and link from http.js",
+    "plugins/QuickAdd/paste annotation and link from json.js",
+    "plugins/QuickAdd/obfuscated",
+    "plugins/QuickAdd/close http server.js",
+    "plugins/QuickAdd/add image and link from http.js"
   ]
 }

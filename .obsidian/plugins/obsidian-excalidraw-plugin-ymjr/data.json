@@ -5,6 +5,10 @@
   "embedUseExcalidrawFolder": false,
   "templateFilePath": "plugins/Excalidraw/Templates/Template.excalidraw.md",
   "scriptFolderPath": "plugins/Excalidraw/Scripts",
+  "fontAssetsPath": "Excalidraw/CJK Fonts",
+  "loadChineseFonts": false,
+  "loadJapaneseFonts": false,
+  "loadKoreanFonts": false,
   "compress": true,
   "decompressForMDView": false,
   "onceOffCompressFlagReset": true,
@@ -27,6 +31,7 @@
   "previewMatchObsidianTheme": false,
   "width": "400",
   "height": "",
+  "overrideObsidianFontSize": false,
   "dynamicStyling": "colorful",
   "isLeftHanded": false,
   "iframeMatchExcalidrawTheme": true,
@@ -36,6 +41,7 @@
   "defaultMode": "normal",
   "defaultPenMode": "never",
   "penModeDoubleTapEraser": true,
+  "penModeSingleFingerPanning": true,
   "penModeCrosshairVisible": false,
   "renderImageInMarkdownReadingMode": false,
   "renderImageInHoverPreviewForMDNotes": false,
@@ -94,7 +100,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.5.1-4",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.6.7-1",
     "libraryItems": []
   },
   "imageElementNotice": true,
@@ -458,10 +464,20 @@
         "value": "800, 700, 600",
         "description": "Font weight for header."
       }
+    },
+    "eagle url": {
+      "eagle url": {
+        "value": "http://localhost:41595",
+        "description": "eagle url"
+      },
+      "eagle token": {
+        "value": "bcb88edd-23c6-434a-beb1-b7d891cf3613",
+        "description": "eagle token"
+      }
     }
   },
   "defaultTrayMode": true,
-  "previousRelease": "2.5.1-1",
+  "previousRelease": "2.6.7-1",
   "showReleaseNotes": true,
   "showNewVersionNotification": true,
   "latexBoilerplate": "\\color{blue}",
@@ -1129,6 +1145,7 @@
   "areaZoomLimit": 1,
   "longPressDesktop": 500,
   "longPressMobile": 500,
+  "doubleClickLinkOpenViewMode": true,
   "isDebugMode": false,
   "rank": "Bronze",
   "modifierKeyOverrides": [
