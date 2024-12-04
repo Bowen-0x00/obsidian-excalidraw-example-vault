@@ -11,10 +11,12 @@
             "id": "93bd8544ee81da58",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "excalidraw",
+              "state": {
+                "file": "example/example - callout.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "example - callout.excalidraw"
             }
           }
         ]
