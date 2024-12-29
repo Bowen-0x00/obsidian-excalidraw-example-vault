@@ -12,7 +12,7 @@
   "compress": true,
   "decompressForMDView": false,
   "onceOffCompressFlagReset": true,
-  "onceOffGPTVersionReset": false,
+  "onceOffGPTVersionReset": true,
   "autosave": true,
   "autosaveIntervalDesktop": 15000,
   "autosaveIntervalMobile": 10000,
@@ -25,6 +25,7 @@
   "annotatePrefix": "annotated_",
   "annotatePreserveSize": false,
   "previewImageType": "SVGIMG",
+  "renderingConcurrency": 3,
   "allowImageCache": true,
   "allowImageCacheInScene": true,
   "displayExportedImageIfAvailable": false,
@@ -100,7 +101,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.6.7-1",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.7.4-1",
     "libraryItems": []
   },
   "imageElementNotice": true,
@@ -477,7 +478,7 @@
     }
   },
   "defaultTrayMode": true,
-  "previousRelease": "2.6.7-1",
+  "previousRelease": "2.7.4-1",
   "showReleaseNotes": true,
   "showNewVersionNotification": true,
   "latexBoilerplate": "\\color{blue}",

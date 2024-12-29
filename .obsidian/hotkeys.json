@@ -167,5 +167,13 @@
       ],
       "key": "F"
     }
+  ],
+  "obsidian-excalidraw-plugin-ymjr:Downloaded(Custom)/return click link pos": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowLeft"
+    }
   ]
 }
