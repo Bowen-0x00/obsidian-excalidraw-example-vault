@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7dfb132b19221db8",
+        "id": "0e7ee7e71b8f4546",
         "type": "tabs",
         "children": [
           {
-            "id": "b33cc14714d9328f",
+            "id": "0bc1998c58d0fb4a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -36,7 +36,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -48,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#矩形",
+                "query": "tag:#圆形",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -131,7 +132,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -142,11 +145,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin-ymjr:New drawing": false,
       "obsidian42-brat:BRAT": false,
       "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": false,
@@ -155,25 +158,22 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "workspaces:Manage workspace layouts": false,
-      "obsidian-excalidraw-plugin-ymjr:Create new drawing": false
+      "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "b33cc14714d9328f",
+  "active": "0bc1998c58d0fb4a",
   "lastOpenFiles": [
-    "example/example - 逐个显示&隐藏.excalidraw.md",
     "example/example - 高亮连接.excalidraw.md",
     "example/example - 阴影.excalidraw.md",
     "example/example - 长方体.excalidraw.md",
     "example/example - 重复脚本.excalidraw.md",
+    "example/example - 逐个显示&隐藏.excalidraw.md",
     "example/example - 转换文字为reminder.excalidraw.md",
     "example/example - 跟随箭头.excalidraw.md",
     "example/example - 详情.excalidraw.md",
     "example/example - 设置直线长度、角度.excalidraw.md",
-    "example/example - 视频摘录.excalidraw.md",
     "example/example - 表格.excalidraw.md",
     "example/example - 自定义拉伸箭头.excalidraw.md",
-    "example/example - 自动连接附着.excalidraw.md",
     "example/example - 缩略图 全局图.excalidraw.md",
     "example/example - 缩放隐藏显示.excalidraw.md",
     "example/example - 素材库.excalidraw.md",
@@ -187,6 +187,8 @@
     "example/example - 文字和字体.excalidraw.md",
     "example/example - 按钮.excalidraw.md",
     "example/example - 折叠显示元素.excalidraw.md",
+    "example/example - 思维导图.excalidraw.md",
+    "example/example - 大括号.excalidraw.md",
     "example/attachments/example - 重复脚本.excalidraw_image_20241129140423_885.png",
     "mindmap",
     "example/摘录方式2.excalidraw.png",
