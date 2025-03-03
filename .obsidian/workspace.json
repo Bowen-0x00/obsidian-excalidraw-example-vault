@@ -11,10 +11,12 @@
             "id": "0bc1998c58d0fb4a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "excalidraw",
+              "state": {
+                "file": "example/example - 便捷输入.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "example - 便捷输入.excalidraw"
             }
           }
         ]
@@ -145,7 +147,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -161,8 +164,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "0bc1998c58d0fb4a",
+  "active": "a48a5433919cd47c",
   "lastOpenFiles": [
+    "example/example - 便捷输入.excalidraw.md",
     "example/example - 高亮连接.excalidraw.md",
     "example/example - 阴影.excalidraw.md",
     "example/example - 长方体.excalidraw.md",
@@ -188,7 +192,6 @@
     "example/example - 按钮.excalidraw.md",
     "example/example - 折叠显示元素.excalidraw.md",
     "example/example - 思维导图.excalidraw.md",
-    "example/example - 大括号.excalidraw.md",
     "example/attachments/example - 重复脚本.excalidraw_image_20241129140423_885.png",
     "mindmap",
     "example/摘录方式2.excalidraw.png",
