@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "0e7ee7e71b8f4546",
+        "id": "cef58ca09fed5151",
         "type": "tabs",
         "children": [
           {
-            "id": "0bc1998c58d0fb4a",
+            "id": "69700d95ea49bec7",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "example/example - 便捷输入.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "example - 便捷输入.excalidraw"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -51,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#圆形",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -164,9 +162,18 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "a48a5433919cd47c",
+  "active": "69700d95ea49bec7",
   "lastOpenFiles": [
-    "example/example - 便捷输入.excalidraw.md",
+    "example/example - 不可绑定箭头.excalidraw.md",
+    "example/example - 设置直线长度、角度.excalidraw.md",
+    "example/example - 思维导图.excalidraw.md",
+    "example/example - todolist点击交互.excalidraw.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/set iFrame on click2.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/set iFrame on click.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/set iFrame children script.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autotun-getElementsAtPositionHook.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/add onPointerDownHook.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/mark as checkbox.md",
     "example/example - 高亮连接.excalidraw.md",
     "example/example - 阴影.excalidraw.md",
     "example/example - 长方体.excalidraw.md",
@@ -175,23 +182,14 @@
     "example/example - 转换文字为reminder.excalidraw.md",
     "example/example - 跟随箭头.excalidraw.md",
     "example/example - 详情.excalidraw.md",
-    "example/example - 设置直线长度、角度.excalidraw.md",
+    "example/example - 视频摘录.excalidraw.md",
     "example/example - 表格.excalidraw.md",
     "example/example - 自定义拉伸箭头.excalidraw.md",
+    "example/example - 自动连接附着.excalidraw.md",
     "example/example - 缩略图 全局图.excalidraw.md",
     "example/example - 缩放隐藏显示.excalidraw.md",
     "example/example - 素材库.excalidraw.md",
-    "example/example - 箭头连接元素.excalidraw.md",
     "example/example - 箭头动画.excalidraw.md",
-    "example/example - 渐变.excalidraw.md",
-    "example/example - 波形图.excalidraw.md",
-    "example/example - 模板(smartart).excalidraw.md",
-    "example/example - 标签.excalidraw.md",
-    "example/example - 日历素材.excalidraw.md",
-    "example/example - 文字和字体.excalidraw.md",
-    "example/example - 按钮.excalidraw.md",
-    "example/example - 折叠显示元素.excalidraw.md",
-    "example/example - 思维导图.excalidraw.md",
     "example/attachments/example - 重复脚本.excalidraw_image_20241129140423_885.png",
     "mindmap",
     "example/摘录方式2.excalidraw.png",

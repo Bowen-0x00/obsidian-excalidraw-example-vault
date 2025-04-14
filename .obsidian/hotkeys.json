@@ -175,5 +175,13 @@
       ],
       "key": "ArrowLeft"
     }
+  ],
+  "obsidian-excalidraw-plugin-ymjr:Downloaded(Custom)/highlight text by editable": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "H"
+    }
   ]
 }
