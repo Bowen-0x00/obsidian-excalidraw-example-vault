@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "cef58ca09fed5151",
+        "id": "95fd3d377d0d3ed2",
         "type": "tabs",
         "children": [
           {
-            "id": "69700d95ea49bec7",
+            "id": "d66ea3a12600b071",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -162,8 +162,26 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "69700d95ea49bec7",
+  "active": "587ccf90dd5151c5",
   "lastOpenFiles": [
+    "example/123_mindmap.excalidraw.md",
+    "example/123.md",
+    "example/example - 代码高亮.excalidraw.md",
+    "example/123_mindmap_0.excalidraw.md",
+    "example/123_mindmap_8.excalidraw.md",
+    "example/123_mindmap_7.excalidraw.md",
+    "example/123_mindmap_6.excalidraw.md",
+    "example/123_mindmap_5.excalidraw.md",
+    "example/123_mindmap_4.excalidraw.md",
+    "example/123_mindmap_3.excalidraw.md",
+    "example/123_mindmap_2.excalidraw.md",
+    "example/123_mindmap_1.excalidraw.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/replaceTemplateFromUnorderList.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/expand height.md",
+    "123_min/123_mindmap_1.excalidraw.md",
+    "123_min/123_mindmap_0.excalidraw.md",
+    "123_min/123_mindmap.excalidraw.md",
+    "123_min",
     "example/example - 不可绑定箭头.excalidraw.md",
     "example/example - 设置直线长度、角度.excalidraw.md",
     "example/example - 思维导图.excalidraw.md",
@@ -173,23 +191,6 @@
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/set iFrame children script.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/autotun-getElementsAtPositionHook.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/add onPointerDownHook.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/mark as checkbox.md",
-    "example/example - 高亮连接.excalidraw.md",
-    "example/example - 阴影.excalidraw.md",
-    "example/example - 长方体.excalidraw.md",
-    "example/example - 重复脚本.excalidraw.md",
-    "example/example - 逐个显示&隐藏.excalidraw.md",
-    "example/example - 转换文字为reminder.excalidraw.md",
-    "example/example - 跟随箭头.excalidraw.md",
-    "example/example - 详情.excalidraw.md",
-    "example/example - 视频摘录.excalidraw.md",
-    "example/example - 表格.excalidraw.md",
-    "example/example - 自定义拉伸箭头.excalidraw.md",
-    "example/example - 自动连接附着.excalidraw.md",
-    "example/example - 缩略图 全局图.excalidraw.md",
-    "example/example - 缩放隐藏显示.excalidraw.md",
-    "example/example - 素材库.excalidraw.md",
-    "example/example - 箭头动画.excalidraw.md",
     "example/attachments/example - 重复脚本.excalidraw_image_20241129140423_885.png",
     "mindmap",
     "example/摘录方式2.excalidraw.png",
@@ -208,7 +209,6 @@
     "plugins/QuickAdd/obfuscated/add image and link from http.js",
     "plugins/QuickAdd/paste annotation and link from json.js",
     "plugins/QuickAdd/obfuscated",
-    "plugins/QuickAdd/close http server.js",
-    "plugins/QuickAdd/add image and link from http.js"
+    "plugins/QuickAdd/close http server.js"
   ]
 }

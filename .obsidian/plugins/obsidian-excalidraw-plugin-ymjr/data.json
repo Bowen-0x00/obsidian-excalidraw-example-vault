@@ -1,4 +1,5 @@
 {
+  "disableDoubleClickTextEditing": false,
   "folder": "",
   "cropFolder": "",
   "annotateFolder": "",
@@ -101,7 +102,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.10.1-1",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.11.0-1",
     "libraryItems": []
   },
   "imageElementNotice": true,
@@ -387,20 +388,20 @@
       }
     },
     "Downloaded(Custom)/Mindmap format2": {
-      "MindMap Format2": {
-        "value": "Excalidraw/MindMap Format2",
+      "MindMap Format3": {
+        "value": "Excalidraw/MindMap Format3",
         "description": "This is prepared for the namespace of MindMap Format and does not need to be modified"
       },
-      "default gap2": {
+      "default gap": {
         "value": 10,
         "description": "Interval size of element"
       },
-      "curve length2": {
+      "curve length": {
         "value": 40,
         "description": "The length of the curve part in the mind map line"
       },
-      "length between element and line2": {
-        "value": 50,
+      "length between element and line": {
+        "value": 100,
         "description": "The distance between the tail of the connection and the connecting elements of the mind map"
       }
     },
@@ -478,7 +479,7 @@
     }
   },
   "defaultTrayMode": true,
-  "previousRelease": "2.10.1-1",
+  "previousRelease": "2.11.0-1",
   "showReleaseNotes": true,
   "showNewVersionNotification": true,
   "latexBoilerplate": "\\color{blue}",
@@ -851,6 +852,7 @@
   "markdownNodeOneClickEditing": false,
   "canvasImmersiveEmbed": true,
   "startupScriptPath": "",
+  "aiEnabled": true,
   "openAIAPIToken": "",
   "openAIDefaultTextModel": "gpt-3.5-turbo-1106",
   "openAIDefaultVisionModel": "gpt-4o",
