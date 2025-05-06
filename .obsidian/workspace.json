@@ -4,17 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "da527ac9aba73195",
+        "id": "2f08e06968cf536f",
         "type": "tabs",
+        "dimension": 12.884615384615383,
         "children": [
           {
-            "id": "8458eee9f1b4264b",
+            "id": "f481dbea8cbdaaf7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "example/123.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "123"
+            }
+          }
+        ]
+      },
+      {
+        "id": "bb6502dc533f0399",
+        "type": "tabs",
+        "dimension": 87.11538461538461,
+        "children": [
+          {
+            "id": "d2fe38e54be41b6d",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "example/123_mindmap.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "123_mindmap.excalidraw"
             }
           }
         ]
@@ -162,13 +186,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "587ccf90dd5151c5",
+  "active": "d2fe38e54be41b6d",
   "lastOpenFiles": [
     "example/123.md",
+    "example/123_mindmap.excalidraw.md",
     "example/123_mindmap_2.excalidraw.md",
     "example/123_mindmap_1.excalidraw.md",
     "example/123_mindmap_0.excalidraw.md",
-    "example/123_mindmap.excalidraw.md",
     "example/example - todolist点击交互.excalidraw.md",
     "example/example - 详情.excalidraw.md",
     "example/example - 代码高亮.excalidraw.md",
