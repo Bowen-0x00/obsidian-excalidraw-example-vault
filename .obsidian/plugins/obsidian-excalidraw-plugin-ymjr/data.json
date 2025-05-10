@@ -476,6 +476,12 @@
         "value": "bcb88edd-23c6-434a-beb1-b7d891cf3613",
         "description": "eagle token"
       }
+    },
+    "Downloaded(Custom)/convert elements to latex": {
+      "simpletext token": {
+        "value": "",
+        "description": "simpletext token from https://simpletex.cn/user/center"
+      }
     }
   },
   "defaultTrayMode": true,
