@@ -102,7 +102,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.11.0-1",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.12.2-1",
     "libraryItems": []
   },
   "imageElementNotice": true,
@@ -482,10 +482,21 @@
         "value": "",
         "description": "simpletext token from https://simpletex.cn/user/center"
       }
+    },
+    "Downloaded(Custom)/mark as code": {
+      "userDefault": true,
+      "fontFamily": {
+        "value": "Cascadia",
+        "description": "Font family for code."
+      },
+      "fontSize": {
+        "value": 16,
+        "description": "Font size for code."
+      }
     }
   },
   "defaultTrayMode": true,
-  "previousRelease": "2.11.0-1",
+  "previousRelease": "2.12.2-1",
   "showReleaseNotes": true,
   "showNewVersionNotification": true,
   "latexBoilerplate": "\\color{blue}",
@@ -506,7 +517,8 @@
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/highlight text.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/show layer toolbar.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/switch connection shape.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Repeat Elements (with group).md"
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Repeat Elements (with group).md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/show outline by title level  - panel.md"
   ],
   "customPens": [
     {
