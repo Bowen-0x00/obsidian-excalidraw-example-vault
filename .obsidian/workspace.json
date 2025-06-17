@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3cdb9644adfc60a0",
+        "id": "4899961f966d5c55",
         "type": "tabs",
         "children": [
           {
-            "id": "c9c377927893dc04",
+            "id": "90349b16f71bff67",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -162,8 +162,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "c9c377927893dc04",
+  "active": "90349b16f71bff67",
   "lastOpenFiles": [
+    "example/example - emoji快捷输入.excalidraw.md",
     "example/example - 大纲outline.excalidraw.md",
     "example/Drawing 2025-05-29 22.15.29.excalidraw.md",
     "example/example - 文字和字体.excalidraw.md",
@@ -190,7 +191,6 @@
     "123_min",
     "example/example - 不可绑定箭头.excalidraw.md",
     "example/example - 设置直线长度、角度.excalidraw.md",
-    "example/example - 思维导图.excalidraw.md",
     "example/attachments/example - 重复脚本.excalidraw_image_20241129140423_885.png",
     "mindmap",
     "example/摘录方式2.excalidraw.png",
