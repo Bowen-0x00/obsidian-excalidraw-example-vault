@@ -104,8 +104,46 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.12.3-1",
-    "libraryItems": []
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.12.4-4",
+    "libraryItems": [
+      {
+        "id": "mup8IU7UiKdCAbAaM-KCh",
+        "status": "unpublished",
+        "elements": [
+          {
+            "id": "wmnvYMowKCCh9RPbs7OoZ",
+            "type": "rectangle",
+            "x": -440.9600726212459,
+            "y": 447.36947518269994,
+            "width": 186.3430967321824,
+            "height": 98.28465219671307,
+            "angle": 0,
+            "strokeColor": "#1e1e1e",
+            "backgroundColor": "transparent",
+            "fillStyle": "solid",
+            "strokeWidth": 2,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "frameId": null,
+            "index": "aT",
+            "roundness": {
+              "type": 3
+            },
+            "seed": 1432098619,
+            "version": 13,
+            "versionNonce": 2082247221,
+            "isDeleted": false,
+            "boundElements": [],
+            "updated": 1751797611062,
+            "link": null,
+            "locked": false
+          }
+        ],
+        "created": 1751797612946
+      }
+    ]
   },
   "imageElementNotice": true,
   "mdSVGwidth": 500,
@@ -384,6 +422,10 @@
       }
     },
     "Downloaded(Custom)/autorun-onKeyDownHook": {
+      "tab indent switch": {
+        "value": true,
+        "description": "whether to use tab key to indent text elements or not"
+      },
       "mindmap color decay level": {
         "value": 4,
         "description": "color decay level"
@@ -498,7 +540,7 @@
     }
   },
   "defaultTrayMode": true,
-  "previousRelease": "2.12.3-1",
+  "previousRelease": "2.12.4-4",
   "showReleaseNotes": true,
   "showNewVersionNotification": true,
   "latexBoilerplate": "\\color{blue}",

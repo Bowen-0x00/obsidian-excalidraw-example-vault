@@ -11,10 +11,12 @@
             "id": "90349b16f71bff67",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "excalidraw",
+              "state": {
+                "file": "example/example - callout.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "example - callout.excalidraw"
             }
           }
         ]
@@ -164,6 +166,7 @@
   },
   "active": "90349b16f71bff67",
   "lastOpenFiles": [
+    "example/example - callout.excalidraw.md",
     "example/example - emoji快捷输入.excalidraw.md",
     "example/example - 大纲outline.excalidraw.md",
     "example/Drawing 2025-05-29 22.15.29.excalidraw.md",
@@ -190,7 +193,6 @@
     "123_min/123_mindmap.excalidraw.md",
     "123_min",
     "example/example - 不可绑定箭头.excalidraw.md",
-    "example/example - 设置直线长度、角度.excalidraw.md",
     "example/attachments/example - 重复脚本.excalidraw_image_20241129140423_885.png",
     "mindmap",
     "example/摘录方式2.excalidraw.png",
