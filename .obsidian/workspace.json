@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4899961f966d5c55",
+        "id": "170b90da00302129",
         "type": "tabs",
         "children": [
           {
-            "id": "90349b16f71bff67",
+            "id": "aa6d61dffdfca79b",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "example/example - callout.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "example - callout.excalidraw"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -51,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#矩形",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -164,35 +162,35 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "90349b16f71bff67",
+  "active": "aa6d61dffdfca79b",
   "lastOpenFiles": [
-    "example/example - callout.excalidraw.md",
-    "example/example - emoji快捷输入.excalidraw.md",
-    "example/example - 大纲outline.excalidraw.md",
-    "example/Drawing 2025-05-29 22.15.29.excalidraw.md",
-    "example/example - 文字和字体.excalidraw.md",
+    "example/example - 高亮连接.excalidraw.md",
+    "example/example - 阴影.excalidraw.md",
+    "example/example - 长方体.excalidraw.md",
+    "example/example - 重复脚本.excalidraw.md",
+    "example/example - 逐个显示&隐藏.excalidraw.md",
+    "example/example - 转换文字为reminder.excalidraw.md",
     "example/example - 转为latex公式.excalidraw.md",
-    "example/123.md",
-    "example/123_mindmap.excalidraw.md",
-    "example/123_mindmap_2.excalidraw.md",
-    "example/123_mindmap_1.excalidraw.md",
-    "example/123_mindmap_0.excalidraw.md",
-    "example/example - todolist点击交互.excalidraw.md",
+    "example/example - 跟随箭头.excalidraw.md",
     "example/example - 详情.excalidraw.md",
-    "example/example - 代码高亮.excalidraw.md",
-    "example/123_mindmap_8.excalidraw.md",
-    "example/123_mindmap_7.excalidraw.md",
-    "example/123_mindmap_6.excalidraw.md",
-    "example/123_mindmap_5.excalidraw.md",
-    "example/123_mindmap_4.excalidraw.md",
-    "example/123_mindmap_3.excalidraw.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/replaceTemplateFromUnorderList.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/expand height.md",
-    "123_min/123_mindmap_1.excalidraw.md",
-    "123_min/123_mindmap_0.excalidraw.md",
-    "123_min/123_mindmap.excalidraw.md",
+    "example/example - 设置直线长度、角度.excalidraw.md",
+    "example/example - 表格.excalidraw.md",
+    "example/example - 自定义拉伸箭头.excalidraw.md",
+    "example/example - 自动连接附着.excalidraw.md",
+    "example/example - 缩略图 全局图.excalidraw.md",
+    "example/example - 缩放隐藏显示.excalidraw.md",
+    "example/example - 素材库.excalidraw.md",
+    "example/example - 箭头连接元素.excalidraw.md",
+    "example/example - 箭头动画.excalidraw.md",
+    "example/example - 渐变.excalidraw.md",
+    "example/example - 波形图.excalidraw.md",
+    "example/example - 模板(smartart).excalidraw.md",
+    "example/example - 标签.excalidraw.md",
+    "example/example - 日历素材.excalidraw.md",
+    "example/example - 文字和字体.excalidraw.outline-kanban.md",
+    "example/example - 文字和字体.excalidraw.md",
+    "example/example - 按钮.excalidraw.md",
     "123_min",
-    "example/example - 不可绑定箭头.excalidraw.md",
     "example/attachments/example - 重复脚本.excalidraw_image_20241129140423_885.png",
     "mindmap",
     "example/摘录方式2.excalidraw.png",

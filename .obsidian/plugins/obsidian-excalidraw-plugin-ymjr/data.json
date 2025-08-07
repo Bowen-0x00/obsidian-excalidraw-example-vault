@@ -104,7 +104,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.12.4-4",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.14.1-1",
     "libraryItems": [
       {
         "id": "mup8IU7UiKdCAbAaM-KCh",
@@ -540,7 +540,7 @@
     }
   },
   "defaultTrayMode": true,
-  "previousRelease": "2.12.4-4",
+  "previousRelease": "2.14.1-1",
   "showReleaseNotes": true,
   "showNewVersionNotification": true,
   "latexBoilerplate": "\\color{blue}",
