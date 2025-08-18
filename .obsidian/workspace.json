@@ -4,17 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "170b90da00302129",
+        "id": "0bf6c3449472be56",
         "type": "tabs",
         "children": [
           {
-            "id": "aa6d61dffdfca79b",
+            "id": "2d25ef5957dd0c37",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "excalidraw",
+              "state": {
+                "file": "example/摘录方式2.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "摘录方式2.excalidraw"
             }
           }
         ]
@@ -162,8 +164,12 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "aa6d61dffdfca79b",
+  "active": "2d25ef5957dd0c37",
   "lastOpenFiles": [
+    "example/摘录方式2.excalidraw.md",
+    "example/摘录方式.excalidraw.md",
+    "images/icons/Anki-icon.svg",
+    "images/icons/Anki-icon.svg.crdownload",
     "example/example - 高亮连接.excalidraw.md",
     "example/example - 阴影.excalidraw.md",
     "example/example - 长方体.excalidraw.md",
@@ -187,9 +193,6 @@
     "example/example - 模板(smartart).excalidraw.md",
     "example/example - 标签.excalidraw.md",
     "example/example - 日历素材.excalidraw.md",
-    "example/example - 文字和字体.excalidraw.outline-kanban.md",
-    "example/example - 文字和字体.excalidraw.md",
-    "example/example - 按钮.excalidraw.md",
     "123_min",
     "example/attachments/example - 重复脚本.excalidraw_image_20241129140423_885.png",
     "mindmap",
@@ -201,14 +204,12 @@
     "example/attachments/image_6.png",
     "example/attachments/image_5.png",
     "example/attachments/image_4.png",
-    "images/icons/vscode.svg",
     "plugins/QuickAdd/add image with link from http.js",
     "plugins/QuickAdd/paste annotation with link from json.js",
     "plugins/QuickAdd/obfuscated/paste annotation and link from json.js",
     "plugins/QuickAdd/obfuscated/close http server.js",
     "plugins/QuickAdd/obfuscated/add image and link from http.js",
     "plugins/QuickAdd/paste annotation and link from json.js",
-    "plugins/QuickAdd/obfuscated",
-    "plugins/QuickAdd/close http server.js"
+    "plugins/QuickAdd/obfuscated"
   ]
 }
