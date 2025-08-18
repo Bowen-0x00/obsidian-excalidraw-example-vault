@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "0bf6c3449472be56",
+        "id": "2304d212e2ee2eab",
         "type": "tabs",
         "children": [
           {
-            "id": "2d25ef5957dd0c37",
+            "id": "33e2d4af0babb408",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "example/摘录方式2.excalidraw.md"
+                "file": "example/example - 圆角大小.excalidraw.md"
               },
               "icon": "excalidraw-icon",
-              "title": "摘录方式2.excalidraw"
+              "title": "example - 圆角大小.excalidraw"
             }
           }
         ]
@@ -164,8 +164,9 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "2d25ef5957dd0c37",
+  "active": "792897721ac4a1c5",
   "lastOpenFiles": [
+    "example/example - 圆角大小.excalidraw.md",
     "example/摘录方式2.excalidraw.md",
     "example/摘录方式.excalidraw.md",
     "images/icons/Anki-icon.svg",

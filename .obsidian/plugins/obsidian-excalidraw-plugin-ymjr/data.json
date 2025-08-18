@@ -55,6 +55,9 @@
   "zoomToFitOnOpen": true,
   "zoomToFitOnResize": true,
   "zoomToFitMaxLevel": 2,
+  "zoomStep": 0.05,
+  "zoomMin": 0.1,
+  "zoomMax": 30,
   "linkPrefix": "📍",
   "urlPrefix": "🌐",
   "parseTODO": true,
@@ -104,7 +107,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.14.1-1",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.15.0-2",
     "libraryItems": [
       {
         "id": "mup8IU7UiKdCAbAaM-KCh",
@@ -540,7 +543,7 @@
     }
   },
   "defaultTrayMode": true,
-  "previousRelease": "2.14.1-1",
+  "previousRelease": "2.15.0-1",
   "showReleaseNotes": true,
   "showNewVersionNotification": true,
   "latexBoilerplate": "\\color{blue}",
