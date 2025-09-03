@@ -183,5 +183,23 @@
       ],
       "key": "H"
     }
+  ],
+  "obsidian-excalidraw-plugin-ymjr:Downloaded(Custom)/add partial bold": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "B"
+    }
+  ],
+  "obsidian-excalidraw-plugin-ymjr:Downloaded(Custom)/add partial color": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "C"
+    }
   ]
 }
