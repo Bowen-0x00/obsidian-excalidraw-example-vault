@@ -11,13 +11,40 @@
             "id": "3db3c6213e703f9d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "excalidraw",
+              "state": {
+                "file": "example/example - 大纲outline - level.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "example - 大纲outline - level.excalidraw"
+            }
+          },
+          {
+            "id": "09a4488da2b90d82",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "example - 大纲outline - frame.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "example - 大纲outline - frame.excalidraw"
+            }
+          },
+          {
+            "id": "8567d4a80e03c810",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "example - 大纲outline - text.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "example - 大纲outline - text.excalidraw"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -163,14 +190,16 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "3db3c6213e703f9d",
+  "active": "8567d4a80e03c810",
   "lastOpenFiles": [
+    "example - 大纲outline - text.excalidraw.md",
+    "example - 大纲outline - frame.excalidraw.md",
+    "example/example - 大纲outline - level.excalidraw.md",
     "example/example - 圆角大小.excalidraw.md",
     "example/example - 详情.excalidraw.md",
     "example/example - 逐个显示&隐藏.excalidraw.md",
     "example/example - 阴影.excalidraw.md",
     "example/example - 高亮连接.excalidraw.md",
-    "example/example - 大纲outline.excalidraw.md",
     "example/example - 图层.excalidraw.md",
     "example/example - 代码高亮.excalidraw.md",
     "example/example - todolist点击交互.excalidraw.md",
@@ -193,8 +222,6 @@
     "example/example - 表格.excalidraw.md",
     "example/example - 自定义拉伸箭头.excalidraw.md",
     "example/example - 自动连接附着.excalidraw.md",
-    "example/example - 缩略图 全局图.excalidraw.md",
-    "example/example - 缩放隐藏显示.excalidraw.md",
     "123_min",
     "example/attachments/example - 重复脚本.excalidraw_image_20241129140423_885.png",
     "mindmap",
