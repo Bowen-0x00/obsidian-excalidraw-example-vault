@@ -1,11 +1,12 @@
 [
+  "obsidian-excalidraw-plugin-ymjr",
+  "obsidian42-brat",
+  "obsidian-admonition",
+  "obsidian-hover-editor",
   "obsidian-kanban",
+  "obsidian-latex-suite",
+  "quickadd",
   "obsidian-style-settings",
   "templater-obsidian",
-  "obsidian42-brat",
-  "unicode-search-ymjr",
-  "obsidian-excalidraw-plugin-ymjr",
-  "quickadd",
-  "obsidian-admonition",
-  "obsidian-hover-editor"
+  "unicode-search-ymjr"
 ]

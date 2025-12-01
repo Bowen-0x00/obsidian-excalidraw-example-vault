@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "7cea3d27f91d90be",
+        "id": "b6810537a1c05d8c",
         "type": "tabs",
         "children": [
           {
-            "id": "dfd99c9479304d0e",
+            "id": "4646d30300c299f1",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "example/example - 高亮连接.excalidraw.md"
+                "file": "example/example - 大括号2.excalidraw.md"
               },
               "icon": "excalidraw-icon",
-              "title": "example - 高亮连接.excalidraw"
+              "title": "example - 大括号2.excalidraw"
             }
           }
         ]
@@ -152,21 +152,39 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "templater-obsidian:Templater": false,
       "bases:Create new base": false,
       "obsidian-excalidraw-plugin-ymjr:New drawing": false,
-      "obsidian42-brat:BRAT": false,
-      "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "workspaces:Manage workspace layouts": false
+      "workspaces:Manage workspace layouts": false,
+      "obsidian42-brat:BRAT": false
     }
   },
-  "active": "ac9d589b6a8a3f96",
+  "active": "4646d30300c299f1",
   "lastOpenFiles": [
+    "example/example - 大括号2.excalidraw.md",
+    "example/example - 代码高亮2.excalidraw.md",
+    "example/example - 尖角箭头.excalidraw.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-translateCanvasHook.js",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-Set laser color.js",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-resizeSingleElementHook_123.js",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-resizeSingleElementHook.js",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-renderStaticSceneHook copy.js",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-onPointerUpdate.js",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-onPointerDownHook_back.js",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-onPointerDownHook copy2.js",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-onPointerDownHook copy.js",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-onFileOpenHook.js",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/roughjsDrawHook.md",
+    "example/example - 大纲outline - frame.excalidraw.md",
+    "example/Drawing 2025-11-30 22.30.30.excalidraw.md",
+    "example/example - Latex预览与Latex Suite.excalidraw.md",
+    "Excalidraw-LaTeX-Edit.md",
     "example/example - 高亮连接.excalidraw.md",
     "example/example - 阴影.excalidraw.md",
     "example/example - 长方体.excalidraw.md",
@@ -185,33 +203,15 @@
     "example/example - 缩放隐藏显示.excalidraw.md",
     "example/example - 素材库.excalidraw.md",
     "example/example - 箭头连接元素.excalidraw.md",
-    "example/example - 箭头动画.excalidraw.md",
-    "example/example - 渐变.excalidraw.md",
-    "example/example - 波形图.excalidraw.md",
-    "example/example - 模板(smartart).excalidraw.md",
-    "example/example - 标签.excalidraw.md",
-    "example/example - 日历素材.excalidraw.md",
-    "example/example - 文字和字体.excalidraw.md",
-    "example/example - 按钮.excalidraw.md",
     "example/attachments/Astar.gif",
     "example/attachments/tree.gif",
     "images/icons/Anki-icon.svg",
-    "images/icons/Anki-icon.svg.crdownload",
-    "123_min",
     "example/attachments/example - 重复脚本.excalidraw_image_20241129140423_885.png",
-    "mindmap",
     "example/摘录方式2.excalidraw.png",
     "example/摘录方式2.excalidraw.svg",
     "example/attachments/image_9.png",
     "example/attachments/image_8.png",
     "example/attachments/image_7.png",
-    "example/attachments/image_6.png",
-    "plugins/QuickAdd/add image with link from http.js",
-    "plugins/QuickAdd/paste annotation with link from json.js",
-    "plugins/QuickAdd/obfuscated/paste annotation and link from json.js",
-    "plugins/QuickAdd/obfuscated/close http server.js",
-    "plugins/QuickAdd/obfuscated/add image and link from http.js",
-    "plugins/QuickAdd/paste annotation and link from json.js",
-    "plugins/QuickAdd/obfuscated"
+    "example/attachments/image_6.png"
   ]
 }

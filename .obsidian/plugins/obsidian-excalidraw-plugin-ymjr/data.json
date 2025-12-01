@@ -110,7 +110,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.17.1-1",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.18.0-beta-4-1",
     "libraryItems": [
       {
         "id": "mup8IU7UiKdCAbAaM-KCh",
@@ -534,18 +534,41 @@
       }
     },
     "Downloaded(Custom)/mark as code": {
-      "userDefault": true,
       "fontFamily": {
         "value": "Cascadia",
-        "description": "Font family for code."
+        "valueset": [
+          "Virgil",
+          "Helvetica",
+          "Cascadia",
+          "Local Font",
+          "Excalifont",
+          "Nunito",
+          "Lilita One",
+          "Comic Shanns",
+          "Liberation Sans",
+          "Assistant"
+        ],
+        "description": "Font family for the code block."
       },
       "fontSize": {
         "value": 16,
         "description": "Font size for code."
+      },
+      "theme": {
+        "value": "atom-one-light",
+        "valueset": [
+          "atom-one-dark",
+          "atom-one-light"
+        ],
+        "description": "Syntax highlighting theme."
+      },
+      "embedFont": {
+        "value": false,
+        "description": "Embed font with element? (true/false)"
       }
     }
   },
-  "previousRelease": "2.17.1-1",
+  "previousRelease": "2.18.0-beta-4-1",
   "showReleaseNotes": true,
   "compareManifestToPluginVersion": true,
   "showNewVersionNotification": true,
@@ -559,10 +582,10 @@
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/Horizontal distribution.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/Vertical distribution.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/distribute elements (center).md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/add top brace.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/add bottom brace.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/add left brace.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/add right brace.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/add top brace(path).md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/add bottom brace(path).md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/add left brace(path).md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/add right brace(path).md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/convert latex in text.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/highlight text.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/show layer toolbar.md",
@@ -923,6 +946,7 @@
   "aiEnabled": true,
   "openAIAPIToken": "",
   "openAIDefaultTextModel": "gpt-3.5-turbo-1106",
+  "openAIDefaultTextModelMaxTokens": 4096,
   "openAIDefaultVisionModel": "gpt-4o",
   "openAIDefaultImageGenerationModel": "dall-e-3",
   "openAIURL": "https://api.openai.com/v1/chat/completions",
@@ -1260,6 +1284,7 @@
     "margin": "normal"
   },
   "disableContextMenu": false,
+  "latexEditorMode": "modal",
   "defaultTrayMode": true,
   "autosaveInterval": 15000,
   "strokeWidthSliderStemp": 1
