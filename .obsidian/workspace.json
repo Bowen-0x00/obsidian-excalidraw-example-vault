@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b6810537a1c05d8c",
+        "id": "42a3f0094f4d98c8",
         "type": "tabs",
         "children": [
           {
-            "id": "4646d30300c299f1",
+            "id": "25ab086d1a5423c3",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "example/example - 大括号2.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "example - 大括号2.excalidraw"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -165,8 +163,10 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "4646d30300c299f1",
+  "active": "587ccf90dd5151c5",
   "lastOpenFiles": [
+    "example/example - 箭头附着点.excalidraw.md",
+    "Drawing 2025-12-07 01.50.07.excalidraw.md",
     "example/example - 大括号2.excalidraw.md",
     "example/example - 代码高亮2.excalidraw.md",
     "example/example - 尖角箭头.excalidraw.md",
@@ -201,8 +201,6 @@
     "example/example - 自动连接附着.excalidraw.md",
     "example/example - 缩略图 全局图.excalidraw.md",
     "example/example - 缩放隐藏显示.excalidraw.md",
-    "example/example - 素材库.excalidraw.md",
-    "example/example - 箭头连接元素.excalidraw.md",
     "example/attachments/Astar.gif",
     "example/attachments/tree.gif",
     "images/icons/Anki-icon.svg",
