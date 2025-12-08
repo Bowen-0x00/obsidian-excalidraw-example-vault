@@ -11,10 +11,12 @@
             "id": "25ab086d1a5423c3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "excalidraw",
+              "state": {
+                "file": "example/example - 箭头附着 - 直线和多边形.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "example - 箭头附着 - 直线和多边形.excalidraw"
             }
           }
         ]
@@ -165,6 +167,9 @@
   },
   "active": "25ab086d1a5423c3",
   "lastOpenFiles": [
+    "example/example - 箭头附着 - 直线和多边形.excalidraw.md",
+    "example/example - 增大减小元素.excalidraw.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/generate polygon.md",
     "Drawing 2025-12-07 18.38.50.excalidraw.md",
     "example/example - 箭头附着点.excalidraw.md",
     "Drawing 2025-12-07 01.50.07.excalidraw.md",
@@ -198,9 +203,6 @@
     "example/example - 设置直线长度、角度.excalidraw.md",
     "example/example - 视频摘录.excalidraw.md",
     "example/example - 表格.excalidraw.md",
-    "example/example - 自定义拉伸箭头.excalidraw.md",
-    "example/example - 自动连接附着.excalidraw.md",
-    "example/example - 缩略图 全局图.excalidraw.md",
     "example/attachments/Astar.gif",
     "example/attachments/tree.gif",
     "images/icons/Anki-icon.svg",
