@@ -8,15 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "25ab086d1a5423c3",
+            "id": "40bfdeaa2ab48ed7",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "example/example - 箭头附着 - 直线和多边形.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "example - 箭头附着 - 直线和多边形.excalidraw"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -165,8 +163,9 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "25ab086d1a5423c3",
+  "active": "40bfdeaa2ab48ed7",
   "lastOpenFiles": [
+    "example/example - 曲线箭头回归.excalidraw.md",
     "example/example - 箭头附着 - 直线和多边形.excalidraw.md",
     "example/example - 增大减小元素.excalidraw.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/generate polygon.md",
@@ -202,7 +201,6 @@
     "example/example - 详情.excalidraw.md",
     "example/example - 设置直线长度、角度.excalidraw.md",
     "example/example - 视频摘录.excalidraw.md",
-    "example/example - 表格.excalidraw.md",
     "example/attachments/Astar.gif",
     "example/attachments/tree.gif",
     "images/icons/Anki-icon.svg",
