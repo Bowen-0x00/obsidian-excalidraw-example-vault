@@ -8,13 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "40bfdeaa2ab48ed7",
+            "id": "e2cd6677b566546a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "excalidraw",
+              "state": {
+                "file": "example/example - callout2.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "example - callout2.excalidraw"
             }
           }
         ]
@@ -163,8 +165,10 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "40bfdeaa2ab48ed7",
+  "active": "e2cd6677b566546a",
   "lastOpenFiles": [
+    "example/example - 代码高亮2.excalidraw.md",
+    "example/example - callout2.excalidraw.md",
     "example/example - 曲线箭头回归.excalidraw.md",
     "example/example - 箭头附着 - 直线和多边形.excalidraw.md",
     "example/example - 增大减小元素.excalidraw.md",
@@ -173,7 +177,6 @@
     "example/example - 箭头附着点.excalidraw.md",
     "Drawing 2025-12-07 01.50.07.excalidraw.md",
     "example/example - 大括号2.excalidraw.md",
-    "example/example - 代码高亮2.excalidraw.md",
     "example/example - 尖角箭头.excalidraw.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-translateCanvasHook.js",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-Set laser color.js",
@@ -200,7 +203,6 @@
     "example/example - 跟随箭头.excalidraw.md",
     "example/example - 详情.excalidraw.md",
     "example/example - 设置直线长度、角度.excalidraw.md",
-    "example/example - 视频摘录.excalidraw.md",
     "example/attachments/Astar.gif",
     "example/attachments/tree.gif",
     "images/icons/Anki-icon.svg",
