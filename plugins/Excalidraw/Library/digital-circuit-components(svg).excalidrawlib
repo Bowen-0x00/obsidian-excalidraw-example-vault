@@ -1,0 +1,733 @@
+{
+	"type": "excalidrawlib",
+	"version": 2,
+	"source": "https://excalidraw.com",
+	"libraryItems": [
+		{
+			"id": "Ef65NX4KTBYaxtVaAr-7Y",
+			"status": "unpublished",
+			"elements": [
+				{
+					"points": [
+						[
+							0,
+							0
+						],
+						[
+							60,
+							0
+						],
+						[
+							60,
+							60
+						],
+						[
+							0,
+							60
+						]
+					],
+					"lastCommittedPoint": null,
+					"startBinding": null,
+					"endBinding": null,
+					"startArrowhead": null,
+					"endArrowhead": null,
+					"id": "5Sp6Mw37",
+					"type": "line",
+					"x": 1896.9896881789155,
+					"y": -4131.908396232714,
+					"width": 60,
+					"height": 60,
+					"angle": 0,
+					"strokeColor": "#1e1e1e",
+					"backgroundColor": "transparent",
+					"fillStyle": "solid",
+					"strokeWidth": 2,
+					"strokeStyle": "solid",
+					"roughness": 0,
+					"opacity": 100,
+					"roundness": null,
+					"seed": 59086,
+					"version": 2,
+					"versionNonce": 1333023666,
+					"updated": 1765376387885,
+					"isDeleted": false,
+					"groupIds": [],
+					"boundElements": [],
+					"link": null,
+					"locked": false,
+					"frameId": null,
+					"customData": {
+						"svgPathShape": "M 0 0L 60 0L 60 60L 0 60Z M 10 15L 20 15L 40 45L 50 45M 10 45L 20 45L 40 15L 50 15",
+						"svgViewBox": {
+							"width": 60,
+							"height": 60
+						}
+					},
+					"index": "ar"
+				}
+			],
+			"created": 1765376503650,
+			"name": "CROSSBAR"
+		},
+		{
+			"id": "adq8qLb9iMgcxqRsr78FZ",
+			"status": "unpublished",
+			"elements": [
+				{
+					"points": [
+						[
+							0,
+							0
+						],
+						[
+							60,
+							0
+						],
+						[
+							60,
+							45
+						],
+						[
+							0,
+							45
+						]
+					],
+					"lastCommittedPoint": null,
+					"startBinding": null,
+					"endBinding": null,
+					"startArrowhead": null,
+					"endArrowhead": null,
+					"id": "DORwNBsx",
+					"type": "line",
+					"x": 1676.9896881789155,
+					"y": -4131.908396232714,
+					"width": 60,
+					"height": 45,
+					"angle": 0,
+					"strokeColor": "#1e1e1e",
+					"backgroundColor": "transparent",
+					"fillStyle": "solid",
+					"strokeWidth": 2,
+					"strokeStyle": "solid",
+					"roughness": 0,
+					"opacity": 100,
+					"roundness": null,
+					"seed": 21311,
+					"version": 2,
+					"versionNonce": 1900230706,
+					"updated": 1765376387885,
+					"isDeleted": false,
+					"groupIds": [],
+					"boundElements": [],
+					"link": null,
+					"locked": false,
+					"frameId": null,
+					"customData": {
+						"svgPathShape": "M 0 0L 20 0L 30 8L 40 0L 60 0L 45 35L 15 35Z M 30 35L 30 45",
+						"svgViewBox": {
+							"width": 60,
+							"height": 45
+						}
+					},
+					"index": "an"
+				}
+			],
+			"created": 1765376492644,
+			"name": "ALU"
+		},
+		{
+			"id": "rCTopVHKcQSVdQkLpeCFo",
+			"status": "unpublished",
+			"elements": [
+				{
+					"points": [
+						[
+							0,
+							0
+						],
+						[
+							50,
+							0
+						],
+						[
+							50,
+							65
+						],
+						[
+							0,
+							65
+						]
+					],
+					"lastCommittedPoint": null,
+					"startBinding": null,
+					"endBinding": null,
+					"startArrowhead": null,
+					"endArrowhead": null,
+					"id": "F3kOLq2V",
+					"type": "line",
+					"x": 1571.9896881789155,
+					"y": -4132.497932535416,
+					"width": 50,
+					"height": 65,
+					"angle": 0,
+					"strokeColor": "#1e1e1e",
+					"backgroundColor": "transparent",
+					"fillStyle": "solid",
+					"strokeWidth": 2,
+					"strokeStyle": "solid",
+					"roughness": 0,
+					"opacity": 100,
+					"roundness": null,
+					"seed": 77993,
+					"version": 3,
+					"versionNonce": 2060309170,
+					"updated": 1765376481932,
+					"isDeleted": false,
+					"groupIds": [],
+					"boundElements": [],
+					"link": null,
+					"locked": false,
+					"frameId": null,
+					"customData": {
+						"svgPathShape": "M 10 0L 35 20L 35 40L 10 60Z M 0 15L 10 15M 0 40L 10 40M 35 30L 50 30M 25 50L 25 65",
+						"svgViewBox": {
+							"width": 50,
+							"height": 65
+						}
+					},
+					"index": "al"
+				}
+			],
+			"created": 1765376485200,
+			"name": "MUX"
+		},
+		{
+			"id": "wxZ82BQNVYOyM0VcSnI_O",
+			"status": "unpublished",
+			"elements": [
+				{
+					"points": [
+						[
+							0,
+							0
+						],
+						[
+							68,
+							0
+						],
+						[
+							68,
+							50
+						],
+						[
+							0,
+							50
+						]
+					],
+					"lastCommittedPoint": null,
+					"startBinding": null,
+					"endBinding": null,
+					"startArrowhead": null,
+					"endArrowhead": null,
+					"id": "QkhjbGiR",
+					"type": "line",
+					"x": 1786.9896881789155,
+					"y": -4226.908396232714,
+					"width": 68,
+					"height": 50,
+					"angle": 0,
+					"strokeColor": "#1e1e1e",
+					"backgroundColor": "transparent",
+					"fillStyle": "solid",
+					"strokeWidth": 2,
+					"strokeStyle": "solid",
+					"roughness": 0,
+					"opacity": 100,
+					"roundness": null,
+					"seed": 25893,
+					"version": 2,
+					"versionNonce": 845757618,
+					"updated": 1765376387885,
+					"isDeleted": false,
+					"groupIds": [],
+					"boundElements": [],
+					"link": null,
+					"locked": false,
+					"frameId": null,
+					"customData": {
+						"svgPathShape": "M 5 0Q 20 25 5 50L 25 50Q 55 50 55 25Q 55 0 25 0Z M 59 25m -4 0a 4 4 0 1 0 8 0a 4 4 0 1 0 -8 0M 0 10L 10 10M 0 40L 10 40M 63 25L 68 25",
+						"svgViewBox": {
+							"width": 68,
+							"height": 50
+						}
+					},
+					"index": "aj"
+				}
+			],
+			"created": 1765376480678,
+			"name": "NOR"
+		},
+		{
+			"id": "HGGt5kKb_OSfEu0SRZ6h_",
+			"status": "unpublished",
+			"elements": [
+				{
+					"points": [
+						[
+							0,
+							0
+						],
+						[
+							63,
+							0
+						],
+						[
+							63,
+							50
+						],
+						[
+							0,
+							50
+						]
+					],
+					"lastCommittedPoint": null,
+					"startBinding": null,
+					"endBinding": null,
+					"startArrowhead": null,
+					"endArrowhead": null,
+					"id": "4uLWdDTu",
+					"type": "line",
+					"x": 1676.9896881789155,
+					"y": -4226.908396232714,
+					"width": 63,
+					"height": 50,
+					"angle": 0,
+					"strokeColor": "#1e1e1e",
+					"backgroundColor": "transparent",
+					"fillStyle": "solid",
+					"strokeWidth": 2,
+					"strokeStyle": "solid",
+					"roughness": 0,
+					"opacity": 100,
+					"roundness": null,
+					"seed": 48343,
+					"version": 2,
+					"versionNonce": 1173318386,
+					"updated": 1765376387885,
+					"isDeleted": false,
+					"groupIds": [],
+					"boundElements": [],
+					"link": null,
+					"locked": false,
+					"frameId": null,
+					"customData": {
+						"svgPathShape": "M 5 0L 25 0A 25 25 0 0 1 25 50L 5 50Z M 54 25m -4 0a 4 4 0 1 0 8 0a 4 4 0 1 0 -8 0M 0 10L 5 10M 0 40L 5 40M 58 25L 63 25",
+						"svgViewBox": {
+							"width": 63,
+							"height": 50
+						}
+					},
+					"index": "ah"
+				}
+			],
+			"created": 1765376475839,
+			"name": "NAND"
+		},
+		{
+			"id": "lVmFnTYPRv0bxuvR3-Klu",
+			"status": "unpublished",
+			"elements": [
+				{
+					"points": [
+						[
+							0,
+							0
+						],
+						[
+							75,
+							0
+						],
+						[
+							75,
+							50
+						],
+						[
+							0,
+							50
+						]
+					],
+					"lastCommittedPoint": null,
+					"startBinding": null,
+					"endBinding": null,
+					"startArrowhead": null,
+					"endArrowhead": null,
+					"id": "LFzbhOaw",
+					"type": "line",
+					"x": 1891.9896881789155,
+					"y": -4326.908396232714,
+					"width": 75,
+					"height": 50,
+					"angle": 0,
+					"strokeColor": "#1e1e1e",
+					"backgroundColor": "transparent",
+					"fillStyle": "solid",
+					"strokeWidth": 2,
+					"strokeStyle": "solid",
+					"roughness": 0,
+					"opacity": 100,
+					"roundness": null,
+					"seed": 79572,
+					"version": 2,
+					"versionNonce": 405692722,
+					"updated": 1765376387885,
+					"isDeleted": false,
+					"groupIds": [],
+					"boundElements": [],
+					"link": null,
+					"locked": false,
+					"frameId": null,
+					"customData": {
+						"svgPathShape": "M 20 0Q 35 25 20 50L 40 50Q 70 50 70 25Q 70 0 40 0Z M 5 0Q 20 25 5 50M 0 10L 10 10M 0 40L 10 40M 70 25L 75 25",
+						"svgViewBox": {
+							"width": 75,
+							"height": 50
+						}
+					},
+					"index": "af"
+				}
+			],
+			"created": 1765376470870,
+			"name": "XOR"
+		},
+		{
+			"id": "vh-zg7bNlZwUkl6zOUEFW",
+			"status": "unpublished",
+			"elements": [
+				{
+					"points": [
+						[
+							0,
+							0
+						],
+						[
+							60,
+							0
+						],
+						[
+							60,
+							50
+						],
+						[
+							0,
+							50
+						]
+					],
+					"lastCommittedPoint": null,
+					"startBinding": null,
+					"endBinding": null,
+					"startArrowhead": null,
+					"endArrowhead": null,
+					"id": "zEucjgfI",
+					"type": "line",
+					"x": 1786.9896881789155,
+					"y": -4326.908396232714,
+					"width": 60,
+					"height": 50,
+					"angle": 0,
+					"strokeColor": "#1e1e1e",
+					"backgroundColor": "transparent",
+					"fillStyle": "solid",
+					"strokeWidth": 2,
+					"strokeStyle": "solid",
+					"roughness": 0,
+					"opacity": 100,
+					"roundness": null,
+					"seed": 81895,
+					"version": 2,
+					"versionNonce": 43982706,
+					"updated": 1765376387885,
+					"isDeleted": false,
+					"groupIds": [],
+					"boundElements": [],
+					"link": null,
+					"locked": false,
+					"frameId": null,
+					"customData": {
+						"svgPathShape": "M 5 0Q 20 25 5 50L 25 50Q 55 50 55 25Q 55 0 25 0Z M 0 10L 10 10M 0 40L 10 40M 55 25L 60 25",
+						"svgViewBox": {
+							"width": 60,
+							"height": 50
+						}
+					},
+					"index": "ad"
+				}
+			],
+			"created": 1765376463435,
+			"name": "OR"
+		},
+		{
+			"id": "pT3wo752el-HTBSTVc-UG",
+			"status": "unpublished",
+			"elements": [
+				{
+					"points": [
+						[
+							0,
+							0
+						],
+						[
+							55,
+							0
+						],
+						[
+							55,
+							50
+						],
+						[
+							0,
+							50
+						]
+					],
+					"lastCommittedPoint": null,
+					"startBinding": null,
+					"endBinding": null,
+					"startArrowhead": null,
+					"endArrowhead": null,
+					"id": "8OxR33Hv",
+					"type": "line",
+					"x": 1676.9896881789155,
+					"y": -4326.908396232714,
+					"width": 55,
+					"height": 50,
+					"angle": 0,
+					"strokeColor": "#1e1e1e",
+					"backgroundColor": "transparent",
+					"fillStyle": "solid",
+					"strokeWidth": 2,
+					"strokeStyle": "solid",
+					"roughness": 0,
+					"opacity": 100,
+					"roundness": null,
+					"seed": 18630,
+					"version": 2,
+					"versionNonce": 1507501490,
+					"updated": 1765376387885,
+					"isDeleted": false,
+					"groupIds": [],
+					"boundElements": [],
+					"link": null,
+					"locked": false,
+					"frameId": null,
+					"customData": {
+						"svgPathShape": "M 5 0L 25 0A 25 25 0 0 1 25 50L 5 50Z M 0 10L 5 10M 0 40L 5 40M 50 25L 55 25",
+						"svgViewBox": {
+							"width": 55,
+							"height": 50
+						}
+					},
+					"index": "ab"
+				}
+			],
+			"created": 1765376458106,
+			"name": "NAND"
+		},
+		{
+			"id": "Mgy2XskpdeJJLWAEBLBKN",
+			"status": "unpublished",
+			"elements": [
+				{
+					"points": [
+						[
+							0,
+							0
+						],
+						[
+							48,
+							0
+						],
+						[
+							48,
+							40
+						],
+						[
+							0,
+							40
+						]
+					],
+					"lastCommittedPoint": null,
+					"startBinding": null,
+					"endBinding": null,
+					"startArrowhead": null,
+					"endArrowhead": null,
+					"id": "wWgaL1lI",
+					"type": "line",
+					"x": 1566.9896881789155,
+					"y": -4321.908396232714,
+					"width": 48,
+					"height": 40,
+					"angle": 0,
+					"strokeColor": "#1e1e1e",
+					"backgroundColor": "transparent",
+					"fillStyle": "solid",
+					"strokeWidth": 2,
+					"strokeStyle": "solid",
+					"roughness": 0,
+					"opacity": 100,
+					"roundness": null,
+					"seed": 58422,
+					"version": 2,
+					"versionNonce": 1369043954,
+					"updated": 1765376387885,
+					"isDeleted": false,
+					"groupIds": [],
+					"boundElements": [],
+					"link": null,
+					"locked": false,
+					"frameId": null,
+					"customData": {
+						"svgPathShape": "M 5 0L 5 40L 35 20Z M 39 20m -4 0a 4 4 0 1 0 8 0a 4 4 0 1 0 -8 0M 43 20L 48 20M 0 20L 5 20",
+						"svgViewBox": {
+							"width": 48,
+							"height": 40
+						}
+					},
+					"index": "aZ"
+				}
+			],
+			"created": 1765376452797,
+			"name": "NOT"
+		},
+		{
+			"id": "VWBFtYRIIPFGl0-i2CwwD",
+			"status": "unpublished",
+			"elements": [
+				{
+					"points": [
+						[
+							0,
+							0
+						],
+						[
+							30,
+							0
+						],
+						[
+							30,
+							60
+						],
+						[
+							0,
+							60
+						]
+					],
+					"lastCommittedPoint": null,
+					"startBinding": null,
+					"endBinding": null,
+					"startArrowhead": null,
+					"endArrowhead": null,
+					"id": "oO0MWozw",
+					"type": "line",
+					"x": 1676.9896881789155,
+					"y": -4431.908396232714,
+					"width": 30,
+					"height": 60,
+					"angle": 0,
+					"strokeColor": "#1e1e1e",
+					"backgroundColor": "transparent",
+					"fillStyle": "solid",
+					"strokeWidth": 2,
+					"strokeStyle": "solid",
+					"roughness": 0,
+					"opacity": 100,
+					"roundness": null,
+					"seed": 46448,
+					"version": 2,
+					"versionNonce": 1622542898,
+					"updated": 1765376387885,
+					"isDeleted": false,
+					"groupIds": [],
+					"boundElements": [],
+					"link": null,
+					"locked": false,
+					"frameId": null,
+					"customData": {
+						"svgPathShape": "M 0 30L 2 30M 5 30m -3 0a 3 3 0 1 0 6 0a 3 3 0 1 0 -6 0M 8 30L 10 30M 10 10L 10 50M 18 10L 18 50M 18 12L 30 12L 30 0M 18 48L 30 48L 30 60",
+						"svgViewBox": {
+							"width": 30,
+							"height": 60
+						}
+					},
+					"index": "aX"
+				}
+			],
+			"created": 1765376447880,
+			"name": "PMOS"
+		},
+		{
+			"id": "n5KyvrjjRMOAIeKfjwvnn",
+			"status": "unpublished",
+			"elements": [
+				{
+					"points": [
+						[
+							0,
+							0
+						],
+						[
+							28,
+							0
+						],
+						[
+							28,
+							60
+						],
+						[
+							0,
+							60
+						]
+					],
+					"lastCommittedPoint": null,
+					"startBinding": null,
+					"endBinding": null,
+					"startArrowhead": null,
+					"endArrowhead": null,
+					"id": "XHtmQEa3",
+					"type": "line",
+					"x": 1568.9896881789155,
+					"y": -4431.908396232714,
+					"width": 28,
+					"height": 60,
+					"angle": 0,
+					"strokeColor": "#1e1e1e",
+					"backgroundColor": "transparent",
+					"fillStyle": "solid",
+					"strokeWidth": 2,
+					"strokeStyle": "solid",
+					"roughness": 0,
+					"opacity": 100,
+					"roundness": null,
+					"seed": 51347,
+					"version": 2,
+					"versionNonce": 623372402,
+					"updated": 1765376387885,
+					"isDeleted": false,
+					"groupIds": [],
+					"boundElements": [],
+					"link": null,
+					"locked": false,
+					"frameId": null,
+					"customData": {
+						"svgPathShape": "M 0 30L 8 30M 8 10L 8 50M 16 10L 16 50M 16 12L 28 12L 28 0M 16 48L 28 48L 28 60",
+						"svgViewBox": {
+							"width": 28,
+							"height": 60
+						}
+					},
+					"index": "aV"
+				}
+			],
+			"created": 1765376442760,
+			"name": "NMOS"
+		}
+	]
+}

@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "42a3f0094f4d98c8",
+        "id": "0e1909c753430923",
         "type": "tabs",
         "children": [
           {
-            "id": "e2cd6677b566546a",
+            "id": "38cebfc5084aa5c3",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "example/example - callout2.excalidraw.md"
+                "file": "example/example - 文字和字体.excalidraw.md"
               },
               "icon": "excalidraw-icon",
-              "title": "example - callout2.excalidraw"
+              "title": "example - 文字和字体.excalidraw"
             }
           }
         ]
@@ -165,34 +165,9 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "e2cd6677b566546a",
+  "active": "38cebfc5084aa5c3",
   "lastOpenFiles": [
-    "example/example - 代码高亮2.excalidraw.md",
-    "example/example - callout2.excalidraw.md",
-    "example/example - 曲线箭头回归.excalidraw.md",
-    "example/example - 箭头附着 - 直线和多边形.excalidraw.md",
-    "example/example - 增大减小元素.excalidraw.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/generate polygon.md",
-    "Drawing 2025-12-07 18.38.50.excalidraw.md",
-    "example/example - 箭头附着点.excalidraw.md",
-    "Drawing 2025-12-07 01.50.07.excalidraw.md",
-    "example/example - 大括号2.excalidraw.md",
-    "example/example - 尖角箭头.excalidraw.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-translateCanvasHook.js",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-Set laser color.js",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-resizeSingleElementHook_123.js",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-resizeSingleElementHook.js",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-renderStaticSceneHook copy.js",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-onPointerUpdate.js",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-onPointerDownHook_back.js",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-onPointerDownHook copy2.js",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-onPointerDownHook copy.js",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-onFileOpenHook.js",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/roughjsDrawHook.md",
-    "example/example - 大纲outline - frame.excalidraw.md",
-    "example/Drawing 2025-11-30 22.30.30.excalidraw.md",
-    "example/example - Latex预览与Latex Suite.excalidraw.md",
-    "Excalidraw-LaTeX-Edit.md",
+    "example/example - 渐变.excalidraw.md",
     "example/example - 高亮连接.excalidraw.md",
     "example/example - 阴影.excalidraw.md",
     "example/example - 长方体.excalidraw.md",
@@ -203,6 +178,31 @@
     "example/example - 跟随箭头.excalidraw.md",
     "example/example - 详情.excalidraw.md",
     "example/example - 设置直线长度、角度.excalidraw.md",
+    "example/example - 视频摘录.excalidraw.md",
+    "example/example - 表格.excalidraw.md",
+    "example/example - 自定义拉伸箭头.excalidraw.md",
+    "example/example - 自动连接附着.excalidraw.md",
+    "example/example - 缩略图 全局图.excalidraw.md",
+    "example/example - 缩放隐藏显示.excalidraw.md",
+    "example/example - 素材库.excalidraw.md",
+    "example/example - 箭头附着点.excalidraw.md",
+    "example/example - 箭头附着 - 直线和多边形.excalidraw.md",
+    "example/example - 箭头连接元素.excalidraw.md",
+    "example/example - 箭头动画.excalidraw.md",
+    "example/example - 波形图.excalidraw.md",
+    "example/example - 模板(smartart).excalidraw.md",
+    "example/example - 标签.excalidraw.md",
+    "example/example - 曲线箭头回归.excalidraw.md",
+    "plugins/Excalidraw/Library/digital-circuit-components(svg).excalidrawlib",
+    "plugins/Excalidraw/Library/digital-circuit-components.excalidrawlib",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-translateCanvasHook.js",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-Set laser color.js",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-resizeSingleElementHook_123.js",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-resizeSingleElementHook.js",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-renderStaticSceneHook copy.js",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-onPointerUpdate.js",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-onPointerDownHook_back.js",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-onPointerDownHook copy2.js",
     "example/attachments/Astar.gif",
     "example/attachments/tree.gif",
     "images/icons/Anki-icon.svg",
