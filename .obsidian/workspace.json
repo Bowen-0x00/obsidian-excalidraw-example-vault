@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "0e1909c753430923",
+        "id": "b53123aed7173475",
         "type": "tabs",
         "children": [
           {
-            "id": "38cebfc5084aa5c3",
+            "id": "c1fe59be48f7766a",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "example/example - 文字和字体.excalidraw.md"
+                "file": "example/example - 素材库支持图片.excalidraw.md"
               },
               "icon": "excalidraw-icon",
-              "title": "example - 文字和字体.excalidraw"
+              "title": "example - 素材库支持图片.excalidraw"
             }
           }
         ]
@@ -165,8 +165,12 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "38cebfc5084aa5c3",
+  "active": "c1fe59be48f7766a",
   "lastOpenFiles": [
+    "example/example - 素材库支持图片.excalidraw.md",
+    "Drawing 2025-12-13 18.14.06.excalidraw.md",
+    "Drawing 2025-12-13 18.00.57.excalidraw.md",
+    "example/example - 文字和字体.excalidraw.md",
     "example/example - 渐变.excalidraw.md",
     "example/example - 高亮连接.excalidraw.md",
     "example/example - 阴影.excalidraw.md",
@@ -189,10 +193,6 @@
     "example/example - 箭头附着 - 直线和多边形.excalidraw.md",
     "example/example - 箭头连接元素.excalidraw.md",
     "example/example - 箭头动画.excalidraw.md",
-    "example/example - 波形图.excalidraw.md",
-    "example/example - 模板(smartart).excalidraw.md",
-    "example/example - 标签.excalidraw.md",
-    "example/example - 曲线箭头回归.excalidraw.md",
     "plugins/Excalidraw/Library/digital-circuit-components(svg).excalidrawlib",
     "plugins/Excalidraw/Library/digital-circuit-components.excalidrawlib",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-translateCanvasHook.js",
