@@ -110,8 +110,186 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.18.0-8",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.18.0-9",
     "libraryItems": [
+      {
+        "id": "Gs69BXeVBWs8veFxoKN88",
+        "status": "unpublished",
+        "elements": [
+          {
+            "id": "KXaRyqrH",
+            "type": "image",
+            "x": -828.5526740911685,
+            "y": -443.14068178265165,
+            "width": 500,
+            "height": 500,
+            "angle": 0,
+            "strokeColor": "transparent",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "roundness": null,
+            "seed": 10748,
+            "version": 3,
+            "versionNonce": 1354136713,
+            "updated": 1765623169017,
+            "isDeleted": false,
+            "groupIds": [
+              "U9DwjOYyRU1yo9udHMZY5"
+            ],
+            "boundElements": [],
+            "link": null,
+            "locked": false,
+            "frameId": null,
+            "fileId": "c563d3e16e3b250b475111229fc21249f7339255",
+            "scale": [
+              1,
+              1
+            ],
+            "crop": null,
+            "index": "a2",
+            "customData": {
+              "imageLib": {
+                "path": "[[images/icons/Quicker.png]]"
+              }
+            },
+            "status": "pending"
+          },
+          {
+            "id": "YQ9dF-1ZzGsG1iNqd4vwE",
+            "type": "diamond",
+            "x": -768.9528205755435,
+            "y": -378.74062685101103,
+            "width": 355.1999816894531,
+            "height": 355.1999816894531,
+            "angle": 0,
+            "strokeColor": "#e03131",
+            "backgroundColor": "transparent",
+            "fillStyle": "solid",
+            "strokeWidth": 2,
+            "strokeStyle": "solid",
+            "roughness": 0,
+            "opacity": 100,
+            "groupIds": [
+              "U9DwjOYyRU1yo9udHMZY5"
+            ],
+            "frameId": null,
+            "index": "a3",
+            "roundness": {
+              "type": 2
+            },
+            "seed": 1205169033,
+            "version": 52,
+            "versionNonce": 425995399,
+            "isDeleted": false,
+            "boundElements": [],
+            "updated": 1765623169017,
+            "link": null,
+            "locked": false
+          }
+        ],
+        "created": 1765623181400,
+        "name": "quicker"
+      },
+      {
+        "id": "Xq6cljSArKHsa5Rs80_QL",
+        "status": "unpublished",
+        "elements": [
+          {
+            "id": "ptApzwyN",
+            "type": "image",
+            "x": -562.1527107122622,
+            "y": -885.540675679136,
+            "width": 456.490727532097,
+            "height": 500,
+            "angle": 0,
+            "strokeColor": "transparent",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "roundness": null,
+            "seed": 50556,
+            "version": 2,
+            "versionNonce": 674358407,
+            "updated": 1765623133393,
+            "isDeleted": false,
+            "groupIds": [],
+            "boundElements": [],
+            "link": null,
+            "locked": false,
+            "frameId": null,
+            "fileId": "e70e763c7db39588c84bc3254d2b8ac61921249a",
+            "scale": [
+              1,
+              1
+            ],
+            "crop": null,
+            "index": "a1",
+            "customData": {
+              "imageLib": {
+                "path": "[[images/icons/python.png]]"
+              }
+            },
+            "status": "pending"
+          }
+        ],
+        "created": 1765623144249,
+        "name": "python"
+      },
+      {
+        "id": "fv2aoa4jX_fF-fbSKd5IX",
+        "status": "unpublished",
+        "elements": [
+          {
+            "id": "pPH4J63W",
+            "type": "image",
+            "x": -1204.5527351263247,
+            "y": -1020.7406726273782,
+            "width": 447,
+            "height": 444,
+            "angle": 0,
+            "strokeColor": "transparent",
+            "backgroundColor": "transparent",
+            "fillStyle": "hachure",
+            "strokeWidth": 1,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "roundness": null,
+            "seed": 83019,
+            "version": 2,
+            "versionNonce": 1949213385,
+            "updated": 1765623127584,
+            "isDeleted": false,
+            "groupIds": [],
+            "boundElements": [],
+            "link": null,
+            "locked": false,
+            "frameId": null,
+            "fileId": "9ae34fcfff15bb4df21d7c81015e3d99720328bb",
+            "scale": [
+              1,
+              1
+            ],
+            "crop": null,
+            "index": "a0",
+            "customData": {
+              "imageLib": {
+                "path": "[[images/icons/eagle.png]]"
+              }
+            },
+            "status": "pending"
+          }
+        ],
+        "created": 1765623139582,
+        "name": "eagle"
+      },
       {
         "id": "z8EMw4iCOUmdHNn41OawE",
         "status": "unpublished",
