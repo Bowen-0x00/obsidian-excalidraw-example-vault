@@ -1,3 +1,3 @@
 $$
-\lim_{ n \to \infty } {\frac{1}{n}}=0
+\cfrac{1}{2}123
 $$

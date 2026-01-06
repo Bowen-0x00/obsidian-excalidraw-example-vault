@@ -1,4 +1,6 @@
 {
+  "copyLinkToElemenetAnchorTo100": false,
+  "copyFrameLinkByName": false,
   "disableDoubleClickTextEditing": false,
   "folder": "",
   "cropFolder": "",
@@ -73,6 +75,7 @@
   "focusOnFileTab": false,
   "openInMainWorkspace": true,
   "showLinkBrackets": true,
+  "syncElementLinkWithText": false,
   "allowCtrlClick": true,
   "forceWrap": false,
   "pageTransclusionCharLimit": 200,
@@ -110,7 +113,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.18.0-9",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.19.0-2",
     "libraryItems": [
       {
         "id": "Gs69BXeVBWs8veFxoKN88",
@@ -156,7 +159,8 @@
                 "path": "[[images/icons/Quicker.png]]"
               }
             },
-            "status": "pending"
+            "status": "pending",
+            "hasTextLink": false
           },
           {
             "id": "YQ9dF-1ZzGsG1iNqd4vwE",
@@ -188,7 +192,8 @@
             "boundElements": [],
             "updated": 1765623169017,
             "link": null,
-            "locked": false
+            "locked": false,
+            "hasTextLink": false
           }
         ],
         "created": 1765623181400,
@@ -236,7 +241,8 @@
                 "path": "[[images/icons/python.png]]"
               }
             },
-            "status": "pending"
+            "status": "pending",
+            "hasTextLink": false
           }
         ],
         "created": 1765623144249,
@@ -284,7 +290,8 @@
                 "path": "[[images/icons/eagle.png]]"
               }
             },
-            "status": "pending"
+            "status": "pending",
+            "hasTextLink": false
           }
         ],
         "created": 1765623139582,
@@ -358,7 +365,8 @@
             "locked": false,
             "frameId": null,
             "polygon": true,
-            "index": "a3"
+            "index": "a3",
+            "hasTextLink": false
           },
           {
             "id": "JYmtyU6keWpH88IpSY4va",
@@ -390,7 +398,8 @@
             "boundElements": [],
             "updated": 1765390354463,
             "link": null,
-            "locked": false
+            "locked": false,
+            "hasTextLink": false
           }
         ],
         "created": 1765390359231,
@@ -450,7 +459,8 @@
             "locked": false,
             "frameId": null,
             "polygon": true,
-            "index": "Zz"
+            "index": "Zz",
+            "hasTextLink": false
           }
         ],
         "created": 1765390324817,
@@ -488,7 +498,8 @@
             "boundElements": [],
             "updated": 1751797611062,
             "link": null,
-            "locked": false
+            "locked": false,
+            "hasTextLink": false
           }
         ],
         "created": 1751797612946
@@ -910,9 +921,15 @@
         "value": false,
         "description": "Embed font with element? (true/false)"
       }
+    },
+    "Downloaded(Custom)/autorun-excalidrawExtraColors_Hook": {
+      "Palette List": {
+        "value": "Cherry Blossom:#EDAFB8, Powder Petal:#F7E1D7, Dust Grey:#DEDBD2, Ash Grey:#B0C4B1, Iron Grey:#f08c01",
+        "description": "Format: Name:#Hex, Name:#Hex (separate items with commas)"
+      }
     }
   },
-  "previousRelease": "2.18.0-beta-4-1",
+  "previousRelease": "2.19.0-2",
   "showReleaseNotes": true,
   "compareManifestToPluginVersion": true,
   "showNewVersionNotification": true,
@@ -937,6 +954,7 @@
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/Repeat Elements (with group).md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/show outline.md"
   ],
+  "sidepanelTabs": [],
   "customPens": [
     {
       "type": "default",
@@ -1628,7 +1646,7 @@
     "margin": "normal"
   },
   "disableContextMenu": false,
-  "latexEditorMode": "modal",
+  "latexEditorMode": "native",
   "defaultTrayMode": true,
   "autosaveInterval": 15000,
   "strokeWidthSliderStemp": 1

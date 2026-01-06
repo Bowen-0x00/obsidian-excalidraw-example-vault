@@ -11,10 +11,12 @@
             "id": "7bdd89fa40769b30",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "excalidraw",
+              "state": {
+                "file": "example/example - Latex预览与Latex Suite.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "example - Latex预览与Latex Suite.excalidraw"
             }
           }
         ]
@@ -49,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#矩形",
+                "query": "tag:#圆形",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -165,15 +167,11 @@
   },
   "active": "7bdd89fa40769b30",
   "lastOpenFiles": [
-    "Drawing 2025-12-16 16.50.26.excalidraw.md",
-    "Drawing 2025-12-16 16.48.45.excalidraw.md",
-    "example/example - 素材库支持图片.excalidraw.md",
-    "Drawing 2025-12-13 18.53.07.excalidraw.md",
-    "Drawing 2025-12-13 18.44.07.excalidraw.md",
-    "Drawing 2025-12-13 18.14.06.excalidraw.md",
-    "Drawing 2025-12-13 18.00.57.excalidraw.md",
-    "example/example - 文字和字体.excalidraw.md",
-    "example/example - 渐变.excalidraw.md",
+    "Excalidraw-LaTeX-Edit.md",
+    "example/example - Latex预览与Latex Suite.excalidraw.md",
+    "example/example - emoji快捷输入.excalidraw.md",
+    "example/example - echarts图表.excalidraw.md",
+    "example/example - callout2.excalidraw.md",
     "example/example - 高亮连接.excalidraw.md",
     "example/example - 阴影.excalidraw.md",
     "example/example - 长方体.excalidraw.md",
@@ -190,7 +188,11 @@
     "example/example - 自动连接附着.excalidraw.md",
     "example/example - 缩略图 全局图.excalidraw.md",
     "example/example - 缩放隐藏显示.excalidraw.md",
+    "example/example - 素材库支持图片.excalidraw.md",
     "example/example - 素材库.excalidraw.md",
+    "example/example - 箭头附着点.excalidraw.md",
+    "example/example - 箭头附着 - 直线和多边形.excalidraw.md",
+    "example/example - 箭头连接元素.excalidraw.md",
     "plugins/Excalidraw/Library/digital-circuit-components(svg).excalidrawlib",
     "plugins/Excalidraw/Library/digital-circuit-components.excalidrawlib",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-translateCanvasHook.js",
