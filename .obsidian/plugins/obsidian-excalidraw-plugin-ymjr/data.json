@@ -113,7 +113,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.19.0-2",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.20.0-7",
     "libraryItems": [
       {
         "id": "Gs69BXeVBWs8veFxoKN88",
@@ -929,7 +929,7 @@
       }
     }
   },
-  "previousRelease": "2.19.0-2",
+  "previousRelease": "2.20.0-6",
   "showReleaseNotes": true,
   "compareManifestToPluginVersion": true,
   "showNewVersionNotification": true,
@@ -1647,6 +1647,10 @@
   },
   "disableContextMenu": false,
   "latexEditorMode": "native",
+  "latexResizeMode": "fontsize",
+  "invertSVGforDarkMode": true,
+  "invertBitmapforDarkMode": false,
+  "themeFilter": "invert(93%) hue-rotate(180deg) saturate(1.25)",
   "defaultTrayMode": true,
   "autosaveInterval": 15000,
   "strokeWidthSliderStemp": 1
