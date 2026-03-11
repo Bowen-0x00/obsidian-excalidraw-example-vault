@@ -11,10 +11,12 @@
             "id": "370aaa31499715ef",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "excalidraw",
+              "state": {
+                "file": "example/泳道图.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "泳道图.excalidraw"
             }
           }
         ]
