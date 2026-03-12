@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "2191969afeac8383",
+        "id": "a5ba188282bf69d1",
         "type": "tabs",
         "children": [
           {
-            "id": "370aaa31499715ef",
+            "id": "1a562feed30c563c",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "example/泳道图.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "泳道图.excalidraw"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -165,9 +163,11 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "370aaa31499715ef",
+  "active": "587ccf90dd5151c5",
   "lastOpenFiles": [
+    "Drawing 2026-03-12 20.28.15.excalidraw.md",
     "example/泳道图.excalidraw.md",
+    "Drawing 2026-03-12 16.33.14.excalidraw.md",
     "Excalidraw-LaTeX-Edit.md",
     "example/example - 宽箭头.excalidraw.md",
     "example/example - callout2.excalidraw.md",
@@ -191,8 +191,6 @@
     "example/example - 跟随箭头.excalidraw.md",
     "example/example - 详情.excalidraw.md",
     "example/example - 设置直线长度、角度.excalidraw.md",
-    "example/example - 视频摘录.excalidraw.md",
-    "example/example - 表格.excalidraw.md",
     "plugins/Excalidraw/Library/digital-circuit-components(svg).excalidrawlib",
     "plugins/Excalidraw/Library/digital-circuit-components.excalidrawlib",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-translateCanvasHook.js",
