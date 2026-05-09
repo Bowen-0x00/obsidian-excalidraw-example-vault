@@ -2,12 +2,12 @@
   "copyLinkToElemenetAnchorTo100": false,
   "copyFrameLinkByName": false,
   "disableDoubleClickTextEditing": false,
-  "folder": "",
+  "folder": "Excalidraw",
   "cropFolder": "",
   "annotateFolder": "",
   "embedUseExcalidrawFolder": false,
-  "templateFilePath": "plugins/Excalidraw/Templates/Template.excalidraw.md",
-  "scriptFolderPath": "plugins/Excalidraw/Scripts",
+  "templateFilePath": "Excalidraw/Template.excalidraw",
+  "scriptFolderPath": "Excalidraw/Scripts",
   "fontAssetsPath": "Excalidraw/CJK Fonts",
   "loadChineseFonts": false,
   "loadJapaneseFonts": false,
@@ -17,8 +17,8 @@
   "onceOffCompressFlagReset": true,
   "onceOffGPTVersionReset": true,
   "autosave": true,
-  "autosaveIntervalDesktop": 15000,
-  "autosaveIntervalMobile": 10000,
+  "autosaveIntervalDesktop": 60000,
+  "autosaveIntervalMobile": 30000,
   "drawingFilenamePrefix": "Drawing ",
   "drawingEmbedPrefixWithFilename": true,
   "drawingFilnameEmbedPostfix": " ",
@@ -51,7 +51,7 @@
   "defaultPenMode": "never",
   "penModeDoubleTapEraser": true,
   "penModeSingleFingerPanning": true,
-  "penModeCrosshairVisible": false,
+  "penModeCrosshairVisible": true,
   "panWithRightMouseButton": false,
   "renderImageInMarkdownReadingMode": false,
   "renderImageInHoverPreviewForMDNotes": false,
@@ -59,23 +59,23 @@
   "allowPinchZoom": false,
   "allowWheelZoom": false,
   "zoomToFitOnOpen": true,
-  "zoomToFitOnResize": true,
+  "zoomToFitOnResize": false,
   "zoomToFitMaxLevel": 2,
   "zoomStep": 0.05,
   "zoomMin": 0.1,
   "zoomMax": 30,
   "linkPrefix": "📍",
   "urlPrefix": "🌐",
-  "parseTODO": true,
+  "parseTODO": false,
   "todo": "☐",
   "done": "🗹",
   "hoverPreviewWithoutCTRL": false,
   "linkOpacity": 1,
-  "openInAdjacentPane": false,
+  "openInAdjacentPane": true,
   "showSecondOrderLinks": true,
-  "focusOnFileTab": false,
+  "focusOnFileTab": true,
   "openInMainWorkspace": true,
-  "showLinkBrackets": true,
+  "showLinkBrackets": false,
   "syncElementLinkWithText": false,
   "allowCtrlClick": true,
   "forceWrap": false,
@@ -101,7 +101,7 @@
   "experimentalFileTag": "✏️",
   "experimentalLivePreview": true,
   "fadeOutExcalidrawMarkup": false,
-  "loadPropertySuggestions": true,
+  "loadPropertySuggestions": false,
   "experimentalEnableFourthFont": false,
   "experimantalFourthFont": "LXGWWenKai-Regular.ttf, HanyiSentyPine.ttf, 方正仿宋简体.ttf ",
   "addDummyTextElement": false,
@@ -114,398 +114,8 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.22.0-2",
-    "libraryItems": [
-      {
-        "id": "Gs69BXeVBWs8veFxoKN88",
-        "status": "unpublished",
-        "elements": [
-          {
-            "id": "KXaRyqrH",
-            "type": "image",
-            "x": -828.5526740911685,
-            "y": -443.14068178265165,
-            "width": 500,
-            "height": 500,
-            "angle": 0,
-            "strokeColor": "transparent",
-            "backgroundColor": "transparent",
-            "fillStyle": "hachure",
-            "strokeWidth": 1,
-            "strokeStyle": "solid",
-            "roughness": 1,
-            "opacity": 100,
-            "roundness": null,
-            "seed": 10748,
-            "version": 3,
-            "versionNonce": 1354136713,
-            "updated": 1765623169017,
-            "isDeleted": false,
-            "groupIds": [
-              "U9DwjOYyRU1yo9udHMZY5"
-            ],
-            "boundElements": [],
-            "link": null,
-            "locked": false,
-            "frameId": null,
-            "fileId": "c563d3e16e3b250b475111229fc21249f7339255",
-            "scale": [
-              1,
-              1
-            ],
-            "crop": null,
-            "index": "a2",
-            "customData": {
-              "imageLib": {
-                "path": "[[images/icons/Quicker.png]]"
-              }
-            },
-            "status": "pending",
-            "hasTextLink": false
-          },
-          {
-            "id": "YQ9dF-1ZzGsG1iNqd4vwE",
-            "type": "diamond",
-            "x": -768.9528205755435,
-            "y": -378.74062685101103,
-            "width": 355.1999816894531,
-            "height": 355.1999816894531,
-            "angle": 0,
-            "strokeColor": "#e03131",
-            "backgroundColor": "transparent",
-            "fillStyle": "solid",
-            "strokeWidth": 2,
-            "strokeStyle": "solid",
-            "roughness": 0,
-            "opacity": 100,
-            "groupIds": [
-              "U9DwjOYyRU1yo9udHMZY5"
-            ],
-            "frameId": null,
-            "index": "a3",
-            "roundness": {
-              "type": 2
-            },
-            "seed": 1205169033,
-            "version": 52,
-            "versionNonce": 425995399,
-            "isDeleted": false,
-            "boundElements": [],
-            "updated": 1765623169017,
-            "link": null,
-            "locked": false,
-            "hasTextLink": false
-          }
-        ],
-        "created": 1765623181400,
-        "name": "quicker"
-      },
-      {
-        "id": "Xq6cljSArKHsa5Rs80_QL",
-        "status": "unpublished",
-        "elements": [
-          {
-            "id": "ptApzwyN",
-            "type": "image",
-            "x": -562.1527107122622,
-            "y": -885.540675679136,
-            "width": 456.490727532097,
-            "height": 500,
-            "angle": 0,
-            "strokeColor": "transparent",
-            "backgroundColor": "transparent",
-            "fillStyle": "hachure",
-            "strokeWidth": 1,
-            "strokeStyle": "solid",
-            "roughness": 1,
-            "opacity": 100,
-            "roundness": null,
-            "seed": 50556,
-            "version": 2,
-            "versionNonce": 674358407,
-            "updated": 1765623133393,
-            "isDeleted": false,
-            "groupIds": [],
-            "boundElements": [],
-            "link": null,
-            "locked": false,
-            "frameId": null,
-            "fileId": "e70e763c7db39588c84bc3254d2b8ac61921249a",
-            "scale": [
-              1,
-              1
-            ],
-            "crop": null,
-            "index": "a1",
-            "customData": {
-              "imageLib": {
-                "path": "[[images/icons/python.png]]"
-              }
-            },
-            "status": "pending",
-            "hasTextLink": false
-          }
-        ],
-        "created": 1765623144249,
-        "name": "python"
-      },
-      {
-        "id": "fv2aoa4jX_fF-fbSKd5IX",
-        "status": "unpublished",
-        "elements": [
-          {
-            "id": "pPH4J63W",
-            "type": "image",
-            "x": -1204.5527351263247,
-            "y": -1020.7406726273782,
-            "width": 447,
-            "height": 444,
-            "angle": 0,
-            "strokeColor": "transparent",
-            "backgroundColor": "transparent",
-            "fillStyle": "hachure",
-            "strokeWidth": 1,
-            "strokeStyle": "solid",
-            "roughness": 1,
-            "opacity": 100,
-            "roundness": null,
-            "seed": 83019,
-            "version": 2,
-            "versionNonce": 1949213385,
-            "updated": 1765623127584,
-            "isDeleted": false,
-            "groupIds": [],
-            "boundElements": [],
-            "link": null,
-            "locked": false,
-            "frameId": null,
-            "fileId": "9ae34fcfff15bb4df21d7c81015e3d99720328bb",
-            "scale": [
-              1,
-              1
-            ],
-            "crop": null,
-            "index": "a0",
-            "customData": {
-              "imageLib": {
-                "path": "[[images/icons/eagle.png]]"
-              }
-            },
-            "status": "pending",
-            "hasTextLink": false
-          }
-        ],
-        "created": 1765623139582,
-        "name": "eagle"
-      },
-      {
-        "id": "z8EMw4iCOUmdHNn41OawE",
-        "status": "unpublished",
-        "elements": [
-          {
-            "points": [
-              [
-                0,
-                0
-              ],
-              [
-                176.72675178694595,
-                0
-              ],
-              [
-                265.09012768041896,
-                153.04985657580218
-              ],
-              [
-                176.72675178694595,
-                306.09971315160436
-              ],
-              [
-                0,
-                306.09971315160436
-              ],
-              [
-                -88.36337589347299,
-                153.0498565758023
-              ],
-              [
-                0,
-                0
-              ]
-            ],
-            "lastCommittedPoint": null,
-            "startBinding": null,
-            "endBinding": null,
-            "startArrowhead": null,
-            "endArrowhead": null,
-            "id": "Se3V2zru",
-            "type": "line",
-            "x": 307.9980665791568,
-            "y": 177.65732315282247,
-            "width": 353.45350357389196,
-            "height": 306.09971315160436,
-            "angle": 0,
-            "strokeColor": "#000000",
-            "backgroundColor": "transparent",
-            "fillStyle": "solid",
-            "strokeWidth": 2,
-            "strokeStyle": "solid",
-            "roughness": 0,
-            "opacity": 100,
-            "roundness": null,
-            "seed": 89434,
-            "version": 124,
-            "versionNonce": 1235895286,
-            "updated": 1765390354463,
-            "isDeleted": false,
-            "groupIds": [
-              "Si2m_O8_StxkOFCkXcm4x"
-            ],
-            "boundElements": [],
-            "link": null,
-            "locked": false,
-            "frameId": null,
-            "polygon": true,
-            "index": "a3",
-            "hasTextLink": false
-          },
-          {
-            "id": "JYmtyU6keWpH88IpSY4va",
-            "type": "ellipse",
-            "x": 263.44434276040096,
-            "y": 200.93423332975715,
-            "width": 263.11353393584847,
-            "height": 263.11353393584847,
-            "angle": 0,
-            "strokeColor": "#1e1e1e",
-            "backgroundColor": "transparent",
-            "fillStyle": "solid",
-            "strokeWidth": 2,
-            "strokeStyle": "solid",
-            "roughness": 0,
-            "opacity": 100,
-            "groupIds": [
-              "Si2m_O8_StxkOFCkXcm4x"
-            ],
-            "frameId": null,
-            "index": "a4",
-            "roundness": {
-              "type": 2
-            },
-            "seed": 876913066,
-            "version": 20,
-            "versionNonce": 805609066,
-            "isDeleted": false,
-            "boundElements": [],
-            "updated": 1765390354463,
-            "link": null,
-            "locked": false,
-            "hasTextLink": false
-          }
-        ],
-        "created": 1765390359231,
-        "name": "nut"
-      },
-      {
-        "id": "wMm2Sl1NAbVNcEpQMimut",
-        "status": "unpublished",
-        "elements": [
-          {
-            "points": [
-              [
-                0,
-                0
-              ],
-              [
-                -100,
-                2.842170943040401e-14
-              ],
-              [
-                -50.000000000000014,
-                -86.60254037844388
-              ],
-              [
-                0,
-                0
-              ]
-            ],
-            "lastCommittedPoint": null,
-            "startBinding": null,
-            "endBinding": null,
-            "startArrowhead": null,
-            "endArrowhead": null,
-            "id": "l7TNZDLe",
-            "type": "line",
-            "x": 143.08947841549565,
-            "y": 219.09882337489884,
-            "width": 100,
-            "height": 86.6025403784439,
-            "angle": 0,
-            "strokeColor": "#000000",
-            "backgroundColor": "transparent",
-            "fillStyle": "solid",
-            "strokeWidth": 2,
-            "strokeStyle": "solid",
-            "roughness": 0,
-            "opacity": 100,
-            "roundness": null,
-            "seed": 64979,
-            "version": 2,
-            "versionNonce": 621628534,
-            "updated": 1765390317381,
-            "isDeleted": false,
-            "groupIds": [],
-            "boundElements": [],
-            "link": null,
-            "locked": false,
-            "frameId": null,
-            "polygon": true,
-            "index": "Zz",
-            "hasTextLink": false
-          }
-        ],
-        "created": 1765390324817,
-        "name": "triangle"
-      },
-      {
-        "id": "mup8IU7UiKdCAbAaM-KCh",
-        "status": "unpublished",
-        "elements": [
-          {
-            "id": "wmnvYMowKCCh9RPbs7OoZ",
-            "type": "rectangle",
-            "x": -440.9600726212459,
-            "y": 447.36947518269994,
-            "width": 186.3430967321824,
-            "height": 98.28465219671307,
-            "angle": 0,
-            "strokeColor": "#1e1e1e",
-            "backgroundColor": "transparent",
-            "fillStyle": "solid",
-            "strokeWidth": 2,
-            "strokeStyle": "solid",
-            "roughness": 1,
-            "opacity": 100,
-            "groupIds": [],
-            "frameId": null,
-            "index": "aT",
-            "roundness": {
-              "type": 3
-            },
-            "seed": 1432098619,
-            "version": 13,
-            "versionNonce": 2082247221,
-            "isDeleted": false,
-            "boundElements": [],
-            "updated": 1751797611062,
-            "link": null,
-            "locked": false,
-            "hasTextLink": false
-          }
-        ],
-        "created": 1751797612946
-      }
-    ]
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.22.0-4",
+    "libraryItems": []
   },
   "imageElementNotice": true,
   "mdSVGwidth": 500,
@@ -515,422 +125,14 @@
   "mdBorderColor": "Black",
   "mdCSS": "",
   "scriptEngineSettings": {
-    "mindmap/autorun-onKeyDownHook": {
-      "onKeyDown MindMap Format": {
-        "value": "Excalidraw/onKeyDown MindMap Format",
-        "description": ""
-      },
-      "color decay level": {
-        "value": 4,
-        "description": "color decay level"
-      }
-    },
-    "mindmap/Mindmap format2": {
-      "MindMap Format2": {
-        "value": "Excalidraw/MindMap Format2",
-        "description": "This is prepared for the namespace of MindMap Format and does not need to be modified"
-      },
-      "default gap2": {
-        "value": 10,
-        "description": "Interval size of element"
-      },
-      "curve length2": {
-        "value": 40,
-        "description": "The length of the curve part in the mind map line"
-      },
-      "length between element and line2": {
-        "value": 100,
-        "description": "The distance between the tail of the connection and the connecting elements of the mind map"
-      }
-    },
-    "mindmap/autorun-onKeyDownHook_encrypt": {
-      "onKeyDown MindMap Format": {
-        "value": "Excalidraw/onKeyDown MindMap Format",
-        "description": ""
-      },
-      "color decay level": {
-        "value": 4,
-        "description": "color decay level"
-      }
-    },
-    "autorun-onKeyDownHook": {
-      "mindmap color decay level": {
-        "value": 4,
-        "description": "color decay level"
-      }
-    },
-    "autorun-onKeyDownHook copy": {
-      "onKeyDown MindMap Format": {
-        "value": "Excalidraw/onKeyDown MindMap Format",
-        "description": ""
-      },
-      "color decay level": {
-        "value": 4,
-        "description": "color decay level"
-      }
-    },
-    "Mindmap format2": {
-      "MindMap Format2": {
-        "value": "Excalidraw/MindMap Format2",
-        "description": "This is prepared for the namespace of MindMap Format and does not need to be modified"
-      },
-      "default gap2": {
-        "value": 10,
-        "description": "Interval size of element"
-      },
-      "curve length2": {
-        "value": 40,
-        "description": "The length of the curve part in the mind map line"
-      },
-      "length between element and line2": {
-        "value": 100,
-        "description": "The distance between the tail of the connection and the connecting elements of the mind map"
-      }
-    },
-    "cover text by text": {
-      "text offset x": {
-        "value": 0.4,
-        "description": "offset x to origin text."
-      },
-      "text offset y": {
-        "value": 0.4,
-        "description": "offset y to origin text."
-      }
-    },
-    "load more library": {
-      "extra library path": {
-        "value": "",
-        "description": "Extra Personal library path"
-      }
-    },
-    "paste text with containers": {
-      "char num in a line": {
-        "value": 30,
-        "description": "char num in a line."
-      },
-      "vertical distance": {
-        "value": 20,
-        "description": "distance between multiple paragraph."
-      }
-    },
-    "paste text with containers - single": {
-      "char num in a line": {
-        "value": 30,
-        "description": "char num in a line."
-      }
-    },
-    "Connect elements sequence by y": {
-      "startArrowHead": {
-        "value": "none",
-        "description": "Set start arrow head",
-        "valueset": [
-          "none",
-          "arrow",
-          "bar",
-          "circle",
-          "circle_outline",
-          "triangle",
-          "triangle_outline",
-          "diamond",
-          "diamond_outline"
-        ]
-      },
-      "endArrowHead": {
-        "value": "arrow",
-        "description": "Set end arrow head",
-        "valueset": [
-          "none",
-          "arrow",
-          "bar",
-          "circle",
-          "circle_outline",
-          "triangle",
-          "triangle_outline",
-          "diamond",
-          "diamond_outline"
-        ]
-      }
-    },
-    "Connect elements sequence by x": {
-      "startArrowHead": {
-        "value": "none",
-        "description": "Set start arrow head",
-        "valueset": [
-          "none",
-          "arrow",
-          "bar",
-          "circle",
-          "circle_outline",
-          "triangle",
-          "triangle_outline",
-          "diamond",
-          "diamond_outline"
-        ]
-      },
-      "endArrowHead": {
-        "value": "arrow",
-        "description": "Set end arrow head",
-        "valueset": [
-          "none",
-          "arrow",
-          "bar",
-          "circle",
-          "circle_outline",
-          "triangle",
-          "triangle_outline",
-          "diamond",
-          "diamond_outline"
-        ]
-      }
-    },
-    "Connect elements_by_x": {
-      "Starting arrowhead": {
-        "value": "none",
-        "valueset": [
-          "none",
-          "arrow",
-          "bar",
-          "circle",
-          "circle_outline",
-          "triangle",
-          "triangle_outline",
-          "diamond",
-          "diamond_outline"
-        ]
-      },
-      "Ending arrowhead": {
-        "value": "triangle",
-        "valueset": [
-          "none",
-          "arrow",
-          "bar",
-          "circle",
-          "circle_outline",
-          "triangle",
-          "triangle_outline",
-          "diamond",
-          "diamond_outline"
-        ]
-      },
-      "Line points": {
-        "value": 1,
-        "description": "Number of line points between start and end"
-      }
-    },
-    "Downloaded/Mindmap format": {
-      "MindMap Format": {
-        "value": "Excalidraw/MindMap Format",
-        "description": "This is prepared for the namespace of MindMap Format and does not need to be modified"
-      },
-      "default gap": {
-        "value": 10,
-        "description": "Interval size of element"
-      },
-      "curve length": {
-        "value": 40,
-        "description": "The length of the curve part in the mind map line"
-      },
-      "length between element and line": {
-        "value": 50,
-        "description": "The distance between the tail of the connection and the connecting elements of the mind map"
-      }
-    },
-    "Connect elements_by_y": {
-      "Starting arrowhead": {
-        "value": "none",
-        "valueset": [
-          "none",
-          "arrow",
-          "bar",
-          "circle",
-          "circle_outline",
-          "triangle",
-          "triangle_outline",
-          "diamond",
-          "diamond_outline"
-        ]
-      },
-      "Ending arrowhead": {
-        "value": "triangle",
-        "valueset": [
-          "none",
-          "arrow",
-          "bar",
-          "circle",
-          "circle_outline",
-          "triangle",
-          "triangle_outline",
-          "diamond",
-          "diamond_outline"
-        ]
-      },
-      "Line points": {
-        "value": 1,
-        "description": "Number of line points between start and end"
-      }
-    },
-    "add bulleted number": {
-      "Starting index": {
-        "value": 1,
-        "description": "Starting index"
-      },
-      "use color list": {
-        "value": true,
-        "description": "Whether set bullet background color in color list"
-      },
-      "color list": {
-        "value": "#FFADAD, #FFD6A5, #FDFFB6, #CAFFBF, #9BF6FF, #A0C4FF, #BDB2FF, #FFC6FF",
-        "description": "Starting index"
-      }
-    },
-    "Downloaded(Custom)/autorun-onKeyDownHook": {
-      "tab indent switch": {
-        "value": true,
-        "description": "whether to use tab key to indent text elements or not"
-      },
-      "mindmap color decay level": {
-        "value": 4,
-        "description": "color decay level"
-      }
-    },
-    "Downloaded(Custom)/Mindmap format2": {
-      "MindMap Format2": {
-        "value": "Excalidraw/MindMap Format2",
-        "description": "This is prepared for the namespace of MindMap Format and does not need to be modified"
-      },
-      "default gap": {
-        "value": 10,
-        "description": "Interval size of element"
-      },
-      "curve length": {
-        "value": 40,
-        "description": "The length of the curve part in the mind map line"
-      },
-      "length between element and line": {
-        "value": 100,
-        "description": "The distance between the tail of the connection and the connecting elements of the mind map"
-      }
-    },
-    "Downloaded(Custom)/add shadow": {
-      "shadowColor": {
-        "value": "-20",
-        "description": "number -20: lightness decay 20; 16 radix RGB string #FF0000: red."
-      },
-      "shadowBlur": {
-        "value": "0.1",
-        "description": "number 0.1: size = 0.1 * element.width; string 2px: size = 2px."
-      },
-      "shadowOffsetX": {
-        "value": "0.1",
-        "description": "number 0.1: size = 0.1 * element.width; string 2px: size = 2px."
-      },
-      "shadowOffsetY": {
-        "value": "0.1",
-        "description": "number 0.1: size = 0.1 * element.width; string 2px: size = 2px."
-      }
-    },
-    "Downloaded(Custom)/load more library": {
-      "extra library path": {
-        "value": "",
-        "description": "Extra Personal library path"
-      }
-    },
-    "Downloaded(Custom)/add bulleted number": {
-      "Starting index": {
-        "value": 1,
-        "description": "Starting index"
-      },
-      "use color list": {
-        "value": true,
-        "description": "Whether set bullet background color in color list"
-      },
-      "color list": {
-        "value": "#FFADAD, #FFD6A5, #FDFFB6, #CAFFBF, #9BF6FF, #A0C4FF, #BDB2FF, #FFC6FF",
-        "description": "Starting index"
-      }
-    },
-    "highlight line": {
-      "highlight color": {
-        "value": "#FFC800",
-        "description": "Highlight color around the line."
-      }
-    },
-    "text to header": {
-      "fontFamily": {
-        "value": "LXGW WenKai, LXGW WenKai, LXGW WenKai",
-        "description": "Font family for header."
-      },
-      "fontSize": {
-        "value": "48, 36, 28",
-        "description": "Font size for header."
-      },
-      "strokeColor": {
-        "value": "#0c8599, #15aabf, #3bc9db",
-        "description": "Font color for header."
-      },
-      "fontWeight": {
-        "value": "800, 700, 600",
-        "description": "Font weight for header."
-      }
-    },
-    "eagle url": {
-      "eagle url": {
-        "value": "http://localhost:41595",
-        "description": "eagle url"
-      },
-      "eagle token": {
-        "value": "bcb88edd-23c6-434a-beb1-b7d891cf3613",
-        "description": "eagle token"
-      }
-    },
-    "Downloaded(Custom)/convert elements to latex": {
-      "simpletext token": {
-        "value": "",
-        "description": "simpletext token from https://simpletex.cn/user/center"
-      }
-    },
-    "Downloaded(Custom)/mark as code": {
-      "fontFamily": {
-        "value": "Cascadia",
-        "valueset": [
-          "Virgil",
-          "Helvetica",
-          "Cascadia",
-          "Local Font",
-          "Excalifont",
-          "Nunito",
-          "Lilita One",
-          "Comic Shanns",
-          "Liberation Sans",
-          "Assistant"
-        ],
-        "description": "Font family for the code block."
-      },
-      "fontSize": {
-        "value": 16,
-        "description": "Font size for code."
-      },
-      "theme": {
-        "value": "atom-one-light",
-        "valueset": [
-          "atom-one-dark",
-          "atom-one-light"
-        ],
-        "description": "Syntax highlighting theme."
-      },
-      "embedFont": {
-        "value": false,
-        "description": "Embed font with element? (true/false)"
-      }
-    },
-    "Downloaded(Custom)/autorun-excalidrawExtraColors_Hook": {
-      "Palette List": {
-        "value": "Cherry Blossom:#EDAFB8, Powder Petal:#F7E1D7, Dust Grey:#DEDBD2, Ash Grey:#B0C4B1, Iron Grey:#f08c01",
-        "description": "Format: Name:#Hex, Name:#Hex (separate items with commas)"
+    "Mindmap_Engine": {
+      "Mindmap Configuration": {
+        "value": "{\"themes\":{\"rainbow\":{\"name\":\"🌈 彩虹分枝\",\"rootBg\":\"#343a40\",\"colors\":[\"#e03131\",\"#1971c2\",\"#099268\",\"#e8590c\",\"#9c36b5\",\"#fcc419\",\"#3bc9db\"],\"levels\":[{\"level\":1,\"strokeColor\":\"black\",\"textColor\":\"#ffffff\",\"fontSize\":24,\"strokeWidth\":2},{\"level\":2,\"strokeColor\":\"black\",\"textColor\":\"black\",\"fontSize\":20,\"strokeWidth\":1},{\"level\":3,\"strokeColor\":\"black\",\"textColor\":\"black\",\"fontSize\":16,\"strokeWidth\":1},{\"level\":4,\"strokeColor\":\"black\",\"textColor\":\"black\",\"fontSize\":14,\"strokeWidth\":1}]},\"morandi\":{\"name\":\"🎨 莫兰迪色\",\"rootBg\":\"#495057\",\"colors\":[\"#5c7a82\",\"#b38269\",\"#788560\",\"#a68894\",\"#7a6c5d\"],\"levels\":[{\"level\":1,\"strokeColor\":\"black\",\"textColor\":\"#ffffff\",\"fontSize\":24,\"strokeWidth\":2},{\"level\":2,\"strokeColor\":\"black\",\"textColor\":\"black\",\"fontSize\":20,\"strokeWidth\":1},{\"level\":3,\"strokeColor\":\"black\",\"textColor\":\"black\",\"fontSize\":16,\"strokeWidth\":1},{\"level\":4,\"strokeColor\":\"black\",\"textColor\":\"black\",\"fontSize\":14,\"strokeWidth\":1}]},\"business\":{\"name\":\"💼 商务蓝调\",\"rootBg\":\"#0b2545\",\"colors\":[\"#1864ab\",\"#0b7285\",\"#087f5b\",\"#5f3dc4\",\"#c92a2a\"],\"levels\":[{\"level\":1,\"strokeColor\":\"black\",\"textColor\":\"#ffffff\",\"fontSize\":24,\"strokeWidth\":2},{\"level\":2,\"strokeColor\":\"black\",\"textColor\":\"black\",\"fontSize\":20,\"strokeWidth\":1},{\"level\":3,\"strokeColor\":\"black\",\"textColor\":\"black\",\"fontSize\":16,\"strokeWidth\":1},{\"level\":4,\"strokeColor\":\"black\",\"textColor\":\"black\",\"fontSize\":14,\"strokeWidth\":1}]},\"custom\":{\"name\":\"⚙️ 自定义色\",\"rootBg\":\"#1e1e1e\",\"colors\":[\"#e03131\",\"#1971c2\",\"#099268\",\"#e8590c\",\"#9c36b5\",\"#fcc419\"],\"levels\":[{\"level\":1,\"strokeColor\":\"black\",\"textColor\":\"#ffffff\",\"fontSize\":24,\"strokeWidth\":2},{\"level\":2,\"strokeColor\":\"black\",\"textColor\":\"black\",\"fontSize\":20,\"strokeWidth\":1},{\"level\":3,\"strokeColor\":\"black\",\"textColor\":\"black\",\"fontSize\":16,\"strokeWidth\":1},{\"level\":4,\"strokeColor\":\"black\",\"textColor\":\"black\",\"fontSize\":14,\"strokeWidth\":1}]}},\"defaultSettings\":{\"direction\":\"LR\",\"arrowType\":\"normal\",\"defaultGap\":15,\"curveLength\":40,\"lengthBetweenElAndLine\":100,\"enableFixedPoint\":true,\"theme\":\"rainbow\",\"customTheme\":{\"rootBg\":\"#1e1e1e\",\"colors\":[\"#e03131\",\"#1971c2\",\"#099268\",\"#e8590c\",\"#9c36b5\",\"#fcc419\"],\"levels\":[{\"level\":1,\"strokeColor\":\"black\",\"textColor\":\"#ffffff\",\"fontSize\":24,\"strokeWidth\":2},{\"level\":2,\"strokeColor\":\"black\",\"textColor\":\"black\",\"fontSize\":20,\"strokeWidth\":1},{\"level\":3,\"strokeColor\":\"black\",\"textColor\":\"black\",\"fontSize\":16,\"strokeWidth\":1},{\"level\":4,\"strokeColor\":\"black\",\"textColor\":\"black\",\"fontSize\":14,\"strokeWidth\":1}]}}}",
+        "description": "⚠️ 请不要在此直接修改 JSON 代码。请运行 'Change Mindmap Style' 样式脚本，通过可视化 UI 面板修改脑图全局默认设置。"
       }
     }
   },
-  "previousRelease": "2.22.0-2",
+  "previousRelease": "2.22.0-4",
   "showReleaseNotes": true,
   "compareManifestToPluginVersion": true,
   "showNewVersionNotification": true,
@@ -938,23 +140,7 @@
   "latexPreambleLocation": "preamble.sty",
   "taskboneEnabled": false,
   "taskboneAPIkey": "",
-  "pinnedScripts": [
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Add unorder list.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Add order list.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Horizontal distribution.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Vertical distribution.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/distribute elements (center).md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/add top brace(path).md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/add bottom brace(path).md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/add left brace(path).md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/add right brace(path).md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/convert latex in text.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/highlight text.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/show layer toolbar.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/switch connection shape.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Repeat Elements (with group).md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/show outline.md"
-  ],
+  "pinnedScripts": [],
   "sidepanelTabs": [],
   "customPens": [
     {
@@ -1268,7 +454,7 @@
       }
     }
   ],
-  "numberOfCustomPens": 4,
+  "numberOfCustomPens": 0,
   "pdfScale": 4,
   "pdfBorderBox": true,
   "pdfFrame": false,
@@ -1282,7 +468,11 @@
   "gridSettings": {
     "DYNAMIC_COLOR": true,
     "COLOR": "#000000",
-    "OPACITY": 50
+    "OPACITY": 50,
+    "GRID_DIRECTION": {
+      "horizontal": true,
+      "vertical": true
+    }
   },
   "laserSettings": {
     "DECAY_LENGTH": 50,
@@ -1308,10 +498,10 @@
   "startupScriptPath": "",
   "aiEnabled": true,
   "openAIAPIToken": "",
-  "openAIDefaultTextModel": "gpt-3.5-turbo-1106",
+  "openAIDefaultTextModel": "gpt-5-mini",
   "openAIDefaultTextModelMaxTokens": 4096,
-  "openAIDefaultVisionModel": "gpt-4o",
-  "openAIDefaultImageGenerationModel": "dall-e-3",
+  "openAIDefaultVisionModel": "gpt-5-mini",
+  "openAIDefaultImageGenerationModel": "gpt-image-1",
   "openAIURL": "https://api.openai.com/v1/chat/completions",
   "openAIImageGenerationURL": "https://api.openai.com/v1/images/generations",
   "openAIImageEditsURL": "https://api.openai.com/v1/images/edits",
@@ -1629,11 +819,11 @@
   ],
   "showSplashscreen": true,
   "exportSVGFont": true,
-  "showAllArrowOption": true,
+  "showAllArrowOption": false,
   "classifyLibrary": true,
   "exportMD2PngInSVG": false,
   "mindmapHandle": true,
-  "scriptStoreUrl": "https://raw.githubusercontent.com/Bowen-0x00/obsidian-excalidraw-scripts/main/Scripts/index.md",
+  "scriptStoreUrl": "https://raw.giteeusercontent.com/Bowen-0x00/obsidian-excalidraw-scripts/raw/main/Scripts/index.md",
   "strokeWidthSliderMin": 0,
   "strokeWidthSliderMax": 100,
   "strokeWidthSliderStep": 1,
@@ -1648,11 +838,5 @@
   },
   "disableContextMenu": false,
   "latexEditorMode": "native",
-  "latexResizeMode": "fontsize",
-  "invertSVGforDarkMode": true,
-  "invertBitmapforDarkMode": false,
-  "themeFilter": "invert(93%) hue-rotate(180deg) saturate(1.25)",
-  "defaultTrayMode": true,
-  "autosaveInterval": 15000,
-  "strokeWidthSliderStemp": 1
+  "latexResizeMode": "fontsize"
 }

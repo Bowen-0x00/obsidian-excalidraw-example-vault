@@ -8,13 +8,29 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6ace46663b0942e5",
+            "id": "dc24e12272ba29d2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "excalidraw",
+              "state": {
+                "file": "example/思维导图/思维导图.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "思维导图.excalidraw"
+            }
+          },
+          {
+            "id": "65c65e69d8f2b0c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "example/思维导图/导入.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "导入"
             }
           }
         ]
@@ -40,7 +56,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "文件列表"
             }
           },
           {
@@ -145,61 +161,63 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false,
+      "bases:新建数据库": false,
+      "obsidian-excalidraw-plugin-ymjr:新建绘图文件": false,
       "templater-obsidian:Templater": false,
-      "bases:Create new base": false,
-      "obsidian-excalidraw-plugin-ymjr:New drawing": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "workspaces:Manage workspace layouts": false,
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "6ace46663b0942e5",
+  "active": "dc24e12272ba29d2",
   "lastOpenFiles": [
+    "example/思维导图/思维导图.excalidraw.md",
+    "example/思维导图/未命名.md",
+    "example/思维导图/导入.md",
+    "example/思维导图/导出.md",
+    "Welcome.md",
+    "Excalidraw-LaTeX-Edit.md",
+    "Excalidraw/Scripts/Downloaded(Custom)/Feature-Mindmap-Engine.md",
+    "Excalidraw/Scripts/Downloaded(Custom)/Action-Import-Mindmap-From-Clipboard.md",
+    "Excalidraw/Scripts/Downloaded(Custom)/Action-Export-Mindmap-To-Md.md",
+    "Excalidraw/Scripts/Downloaded(Custom)/Action-Export-Mindmap-To-Clipboard.md",
+    "Excalidraw/Scripts/Downloaded(Custom)/Action-Detach-Mindmap.md",
+    "Excalidraw/Scripts/Downloaded(Custom)/Action-Create-Mindmap.md",
+    "Excalidraw/Scripts/Downloaded(Custom)/Action-Change-Mindmap-Style.md",
+    "example/思维导图/Drawing 2026-05-09 16.40.30.excalidraw.md",
+    "example/思维导图/Drawing 2026-05-09 15.12.51.excalidraw.md",
+    "未命名.md",
+    "example/思维导图/Drawing 2026-05-09 15.02.25.excalidraw.md",
+    "example/思维导图/Drawing 2026-05-09 12.35.59.excalidraw.md",
+    "example/思维导图/Drawing 2026-05-09 12.12.46.excalidraw.md",
+    "example/思维导图/未命名.base",
+    "example/思维导图",
+    "example/example - 思维导图.excalidraw.md",
+    "example/example - 图层.excalidraw.md",
+    "Excalidraw/Scripts/Downloaded(Custom)",
+    "Excalidraw/Scripts",
+    "Excalidraw",
+    "images/Untitled Diagram.svg",
+    "example/mindmap from templater.md",
+    "example/example - callout.excalidraw.md",
+    "example/123.md",
     "example/example - 高亮连接.excalidraw.md",
     "example/example - 阴影.excalidraw.md",
-    "example/example - 长方体.excalidraw.md",
-    "example/example - 逐个显示&隐藏.excalidraw.md",
-    "example/example - 转换文字为reminder.excalidraw.md",
-    "example/example - 转为latex公式.excalidraw.md",
-    "example/example - 跟随箭头.excalidraw.md",
-    "example/example - 详情.excalidraw.md",
-    "example/example - 设置直线长度、角度.excalidraw.md",
-    "example/example - 表格.excalidraw.md",
-    "example/example - 自定义拉伸箭头.excalidraw.md",
-    "example/example - 自动连接附着.excalidraw.md",
-    "example/example - 缩略图 全局图.excalidraw.md",
-    "example/example - 缩放隐藏显示.excalidraw.md",
-    "example/example - 素材库支持图片.excalidraw.md",
-    "example/example - 素材库.excalidraw.md",
-    "example/example - 箭头附着点.excalidraw.md",
-    "example/example - 箭头附着 - 直线和多边形.excalidraw.md",
-    "example/example - 箭头连接元素.excalidraw.md",
-    "example/example - 箭头动画.excalidraw.md",
-    "example/example - 渐变.excalidraw.md",
-    "example/example - 波形图.excalidraw.md",
-    "example/example - 模板(smartart).excalidraw.md",
-    "example/example - 标签.excalidraw.md",
-    "example/example - 曲线箭头回归.excalidraw.md",
-    "example/example - 日历素材.excalidraw.md",
     "plugins/Excalidraw/Library/digital-circuit-components(svg).excalidrawlib",
     "plugins/Excalidraw/Library/digital-circuit-components.excalidrawlib",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-translateCanvasHook.js",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-Set laser color.js",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-resizeSingleElementHook_123.js",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-resizeSingleElementHook.js",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-renderStaticSceneHook copy.js",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-onPointerUpdate.js",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-onPointerDownHook_back.js",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-onPointerDownHook copy2.js",
     "example/attachments/Astar.gif",
     "example/attachments/tree.gif",
     "images/icons/Anki-icon.svg",
@@ -208,7 +226,6 @@
     "example/摘录方式2.excalidraw.svg",
     "example/attachments/image_9.png",
     "example/attachments/image_8.png",
-    "example/attachments/image_7.png",
-    "example/attachments/image_6.png"
+    "example/attachments/image_7.png"
   ]
 }

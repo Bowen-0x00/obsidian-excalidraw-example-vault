@@ -1,3 +1,3 @@
 $$
-\int f(x) \, dx 
+\int f(x) dx
 $$
