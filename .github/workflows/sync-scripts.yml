@@ -1,0 +1,55 @@
+name: Sync scripts from upstream
+
+on:
+  repository_dispatch:
+    types: [scripts-updated]
+  workflow_dispatch:
+  schedule:
+    - cron: '37 */6 * * *'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-scripts
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout Example Vault
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Checkout Upstream Scripts
+        uses: actions/checkout@v4
+        with:
+          repository: Bowen-0x00/obsidian-excalidraw-scripts
+          ref: main
+          fetch-depth: 0
+          path: .upstream-scripts
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Sync scripts and publish PR
+        env:
+          VAULT_SYNC_TOKEN: ${{ secrets.VAULT_SYNC_TOKEN }}
+        run: |
+          if [ -z "$VAULT_SYNC_TOKEN" ]; then
+            echo "Missing VAULT_SYNC_TOKEN secret." >&2
+            exit 1
+          fi
+          python .github/scripts/publish_scripts_pr.py
