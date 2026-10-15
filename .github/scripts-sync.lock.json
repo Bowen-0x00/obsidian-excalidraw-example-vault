@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": {
     "repository": "Bowen-0x00/obsidian-excalidraw-scripts",
-    "commit": "cab678881a41664685d97eb4a889fae02ed48498"
+    "commit": "343f9ec9bc175406c50f1cd6c0c5515e85103ef8"
   },
   "matchedCount": 10,
   "files": {
@@ -23,8 +23,8 @@
     },
     "Excalidraw/Scripts/Downloaded(Custom)/Action-Export-Mindmap-To-Clipboard.md": {
       "source": "Scripts/mindmap/Action-Export-Mindmap-To-Clipboard.md",
-      "sha256": "588c52e350361a503fbbd8aded7bf94a60ebf4af623eebe7894d340332d34439",
-      "version": "1.1.1"
+      "sha256": "81d28d5631d9af8b2fc338963c47b80bf071aa5decd1a50da7c840506589abc2",
+      "version": "1.1.2"
     },
     "Excalidraw/Scripts/Downloaded(Custom)/Action-Export-Mindmap-To-Md.md": {
       "source": "Scripts/mindmap/Action-Export-Mindmap-To-Md.md",
