@@ -35,6 +35,7 @@ jobs:
       - name: Syntax check all vault scripts
         run: node .github/scripts/check_scripts.mjs .
       - name: Verify locked script consistency
+        run: python .github/scripts/sync_scripts.py check --root .
       - name: Auto-merge verified sync PR
         if: |
           github.event_name == 'pull_request' &&
@@ -42,15 +43,16 @@ jobs:
           github.event.pull_request.head.ref == 'automation/sync-scripts'
         env:
           VAULT_SYNC_TOKEN: ${{ secrets.VAULT_SYNC_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |
           python -c "
           import urllib.request, json, os
           token = os.environ.get('VAULT_SYNC_TOKEN')
-          if not token:
-              print('No VAULT_SYNC_TOKEN, skipping auto-merge')
+          pr_num = os.environ.get('PR_NUMBER')
+          if not token or not pr_num:
+              print('Missing token or PR number, skipping auto-merge')
               exit(0)
           repo = os.environ['GITHUB_REPOSITORY']
-          pr_num = ${{ github.event.pull_request.number }}
           url = f'https://api.github.com/repos/{repo}/pulls/{pr_num}/merge'
           req = urllib.request.Request(url,
               data=json.dumps({'merge_method': 'merge', 'commit_title': f'chore(scripts): auto-merge sync PR #{pr_num}'}).encode('utf-8'),
