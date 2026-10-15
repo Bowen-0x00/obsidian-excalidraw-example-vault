@@ -8,6 +8,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
+import time
 
 from sync_plugin import ROOT, SYNCED_FILES, TARGET_PLUGIN_DIR, git, synchronize
 
@@ -141,16 +142,24 @@ def main():
     else:
         pull = api("POST", f"{prefix}/pulls", {"title": title, "body": body, "head": BRANCH, "base": "main"})
         print(f"Created new PR #{pull['number']}: {pull['html_url']}")
-    # Auto-merge verified plugin PR immediately
+    # Auto-merge verified plugin PR once mergeable
     pr_id = pulls[0]["number"] if pulls else pull["number"]
-    try:
-        merge_res = api("PUT", f"{prefix}/pulls/{pr_id}/merge", {
-            "merge_method": "merge",
-            "commit_title": f"chore(plugin): auto-merge sync PR #{pr_id} ({ver})"
-        })
-        print(f"Auto-merged PR #{pr_id}: {merge_res.get('message', 'success')}")
-    except Exception as err:
-        print(f"Auto-merge notice: {err}")
+    for attempt in range(6):
+        time.sleep(3)
+        try:
+            pr_info = api("GET", f"{prefix}/pulls/{pr_id}")
+            if pr_info.get("mergeable") is True:
+                merge_res = api("PUT", f"{prefix}/pulls/{pr_id}/merge", {
+                    "merge_method": "merge",
+                    "commit_title": f"chore(plugin): auto-merge sync PR #{pr_id} ({ver})"
+                })
+                print(f"Successfully auto-merged plugin PR #{pr_id}: {merge_res.get('message', 'success')}")
+                break
+            elif pr_info.get("merged") is True:
+                print(f"PR #{pr_id} is already merged.")
+                break
+        except Exception as err:
+            print(f"Auto-merge attempt {attempt + 1}: {err}")
 
     if "GITHUB_STEP_SUMMARY" in os.environ:
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as s:
