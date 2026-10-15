@@ -136,6 +136,16 @@ def main():
     else:
         pull = api("POST", f"{prefix}/pulls", {"title": title, "body": body, "head": BRANCH, "base": "main"})
         print(f"Created new PR #{pull['number']}: {pull['html_url']}")
+    # Auto-merge verified sync PR immediately
+    pr_id = pulls[0]["number"] if pulls else pull["number"]
+    try:
+        merge_res = api("PUT", f"{prefix}/pulls/{pr_id}/merge", {
+            "merge_method": "merge",
+            "commit_title": f"chore(scripts): auto-merge sync PR #{pr_id} ({commit[:7]})"
+        })
+        print(f"Auto-merged PR #{pr_id}: {merge_res.get('message', 'success')}")
+    except Exception as err:
+        print(f"Auto-merge notice: {err}")
 
     if "GITHUB_STEP_SUMMARY" in os.environ:
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as s:
