@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": {
     "repository": "Bowen-0x00/obsidian-excalidraw-scripts",
-    "commit": "ee775381a9ffcc78a4ca5a0bc47fc11f83cd33ff"
+    "commit": "cab678881a41664685d97eb4a889fae02ed48498"
   },
   "matchedCount": 10,
   "files": {
@@ -18,8 +18,8 @@
     },
     "Excalidraw/Scripts/Downloaded(Custom)/Action-Detach-Mindmap.md": {
       "source": "Scripts/mindmap/Action-Detach-Mindmap.md",
-      "sha256": "acccf427a15d3eb79dc3f9a25b5011dd96074ce695856657c7c1cd9077ce50d1",
-      "version": "1.1.1"
+      "sha256": "a7c4d7a01896697692c16e8b7fa660d162e2a4b5cdf5e473f5a092d29840e383",
+      "version": "1.1.2"
     },
     "Excalidraw/Scripts/Downloaded(Custom)/Action-Export-Mindmap-To-Clipboard.md": {
       "source": "Scripts/mindmap/Action-Export-Mindmap-To-Clipboard.md",
