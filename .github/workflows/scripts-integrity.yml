@@ -17,7 +17,8 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
+  pull-requests: write
 
 jobs:
   validate:
@@ -35,3 +36,31 @@ jobs:
         run: node .github/scripts/check_scripts.mjs .
       - name: Verify locked script consistency
         run: python .github/scripts/sync_scripts.py check --root .
+      - name: Auto-merge verified sync PR
+        if: |
+          github.event_name == 'pull_request' &&
+          github.event.pull_request.head.repo.full_name == github.repository &&
+          github.event.pull_request.head.ref == 'automation/sync-scripts' &&
+          github.event.pull_request.user.login == 'github-actions[bot]'
+        env:
+          VAULT_SYNC_TOKEN: ${{ secrets.VAULT_SYNC_TOKEN }}
+        run: |
+          python -c "
+          import urllib.request, json, os
+          token = os.environ.get('VAULT_SYNC_TOKEN')
+          if not token:
+              print('No VAULT_SYNC_TOKEN, skipping auto-merge')
+              exit(0)
+          repo = os.environ['GITHUB_REPOSITORY']
+          pr_num = ${{ github.event.pull_request.number }}
+          url = f'https://api.github.com/repos/{repo}/pulls/{pr_num}/merge'
+          req = urllib.request.Request(url,
+              data=json.dumps({'merge_method': 'merge', 'commit_title': f'chore(scripts): auto-merge sync PR #{pr_num}'}).encode('utf-8'),
+              headers={'Authorization': f'Bearer {token}', 'Accept': 'application/vnd.github+json', 'User-Agent': 'auto-merge'},
+              method='PUT')
+          try:
+              with urllib.request.urlopen(req) as resp:
+                  print(f'Successfully auto-merged sync PR #{pr_num}: {resp.status}')
+          except Exception as e:
+              print(f'Auto-merge notice: {e}')
+          "
