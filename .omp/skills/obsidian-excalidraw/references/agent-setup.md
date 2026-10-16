@@ -16,6 +16,8 @@ uv run --frozen --project /absolute/path/to/package python /absolute/path/to/pac
 
 参数路径使用实际绝对路径，含空格时正确引用。`serve`运行的是MCP stdio进程，不能把Bridge的`http://127.0.0.1:27124`配置成远程MCP URL；Bridge是本包内部鉴权协议，不是MCP HTTP服务。
 
+0.9.0同时提供可选DSL，不另装服务：MCP增加drawing_dsl，CLI为`uv run --frozen python launcher.py dsl -- ...`；普通原生CLI仍是`launcher.py cli -- ...`。无LLM/MCP客户端也可用CLI调用同一真实Bridge。DSL规范/示例随包在docs和examples中；私有scene-dsl身份状态随原connection state保留，升级不删除；能力选择与命令见[scene-dsl](scene-dsl.md)。
+
 通用JSON示例（替换路径；不要直接覆盖已有MCP配置）：
 
 ```json
