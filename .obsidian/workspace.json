@@ -18,8 +18,21 @@
               "icon": "lucide-image",
               "title": "Untitled Diagram"
             }
+          },
+          {
+            "id": "9c01d85d4d4130a6",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "example/Example-Vault-Smoke-Test.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Example-Vault-Smoke-Test.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -167,8 +180,9 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "587ccf90dd5151c5",
+  "active": "9c01d85d4d4130a6",
   "lastOpenFiles": [
+    "images/Untitled Diagram.svg",
     "plugins/Excalidraw/Drawing 2026-10-16 02.51.09.excalidraw.md",
     "example/Example-Vault-Smoke-Test.png",
     "example/Example-Vault-Smoke-Test.excalidraw.md",

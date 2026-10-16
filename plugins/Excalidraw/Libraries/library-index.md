@@ -82,11 +82,37 @@
 - **整体用途**：专用于多页演示幻灯片（Presentation Slides）的纯原生 Frame 画布模板库，供 `drawing_present` 原生演示工具调用。
 - **图元风格**：基于 Excalidraw 原生 Frame 画框，预设了标题栏、主干结构框、内容要点占位符和配色风格。
 - **适用场景**：
-  - 使用 `drawing_present` 创建多页架构评审、技术汇报或课程讲义演示画板。
-  - 包含多种风格套系（Simplicity、Pacman、Tetris、Graph、Creativity、Circles、Excalidraw 原生风格）及其配对的 Intro 封面页与 Slides 正文页。
+  - 使用 `drawing_present` 创建多页架构评审、技术汇报、产品发布或课程讲义演示画板。
+  - 包含 7 种主流风格套系（Simplicity、Pacman、Tetris、Graph、Creativity、Circles、Excalidraw 原生手绘风）及其配对的 Intro 封面页与 Slides 正文页。
   - 包含标准画框比例辅助模板：16:9, 4:3, 3:2, 1:1, 21:9 等。
 - **不适用场景**：
   - 严谨的硬件微架构、逻辑门原理图或细粒度流程图（此类请使用 `digital-circuit-components(svg).excalidrawlib`）。
+- **Item 总数**：20 个（全部 100% 结构化描述审阅与增补）。
+
+### 代表 Item 与 Exact ID
+
+| 套系 / 类别 | 代表 Item | Exact ID | 视觉形态长相与几何轮廓 | 适用场景与配对关系 |
+| :--- | :--- | :--- | :--- | :--- |
+| **Simplicity 极简风** | **Simplicity (intro)** | `UEan54xVVGzUsV1OnrGf4` | 纯白底色，内嵌一层带对角透视引导线的虚线矩形画框，居中双行大标题与副标题/作者。 | 正式演讲、技术方案发布封面。与 `Simplicity (slides)` 配对。 |
+| **Simplicity 极简风** | **Simplicity (slides)** | `7cNv6q_ipH1AdnUjJj56u` | 纯白底色，包裹双层极细浅灰手绘虚线边框，左上角标有 Slide title，带两个空心圆列表点。 | 高管汇报、咨询复盘、学术讲座正文页。与 `Simplicity (intro)` 配对。 |
+| **Pacman 街机风** | **Pacman (intro)** | `WNzbsU3oHCQQOfWFPclIj` | 纯黑背景，环绕青色街机迷宫走廊与黄色吃豆圆点，点缀彩色像素小幽灵与吃豆人，中心为亮青色卡片加粗标题。 | 技术沙龙、黑客松、游戏研发、开源项目演讲封面。与 `Pacman (slides)` 配对。 |
+| **Pacman 街机风** | **Pacman (slides)** | `bHRAac4ZwcsSAAD4_0fnz` | 纯黑边框深底，青色标题栏与黄色点状序号，底部横贯黄色吃豆轨道与吃豆人图标，右下标有页码。 | 极客技术分享、趣味开发讲座正文页。与 `Pacman (intro)` 配对。 |
+| **Tetris 积木风** | **Tetris (intro)** | `fNkw95y4OvDFPTIf5b0Pj` | 浅灰方格网格底纹，底部铺满整齐的马卡龙色系像素方块墙（青橙紫粉黄绿），中心醒目蓝色主标题。 | 系统架构搭建、技术底座重构、工程化演讲封面。与 `Tetris (slides)` 配对。 |
+| **Tetris 积木风** | **Tetris (slides)** | `L2TQOZXaU3Zzryu9I_OIH` | 浅灰细网格底纹，左上角深蓝序号标题与蓝色方块点，下缘与两侧堆叠柔和像素方块。 | 微服务架构拆解、模块化设计、敏捷迭代正文页。与 `Tetris (intro)` 配对。 |
+| **Graph 折线风** | **Graph (intro)** | `7YIAj8e77fLE6mxKSnk0-` | 下半部为多彩折线图山峦景观（青蓝深紫折线、黄色多边形、排线阴影），左上浅粉阴影圆，右下作者与日期。 | 商业计划书 (BP)、数据增长、宏观经济分析封面。与 `Graph (slides)` 配对。 |
+| **Graph 折线风** | **Graph (slides)** | `U6DnMjQKFIK05ZV7PUcUP` | 温暖淡奶油底色，左上角珊瑚红标题与右向双尖角符号 '>>'，下半部衬有起伏平缓的浅粉与浅黄波浪山峦。 | 业务增长分析、数据科学分享、指标回顾正文页。与 `Graph (intro)` 配对。 |
+| **Creativity 艺术风** | **Creativity (intro)**| `_d7jpKB8SC_O2zk0jBODs`| 底板铺陈多层半透明莫兰迪水彩圆形与有机色块叠印交织，正中深紫色艺术字体主标题。 | 设计分享、创意提案、品牌故事、用户研究封面。与 `Creativity (slides)` 配对。 |
+| **Creativity 艺术风** | **Creativity (slides)**| `5IPbx8M4pFB5x29KbQ_pq`| 米白底色，背景带极细相交大圆弧几何曲线，左上角圆角矩形紫色胶囊标题栏与菱形列表符。 | 产品体验评审、UI/UX 方案、设计系统正文页。与 `Creativity (intro)` 配对。 |
+| **Circles 水彩风** | **Circles (intro)** | `WYkBaBoWaC7x80m75wRPJ` | 柔和多彩水彩圆斑叠放，中央浮置圆角矩形浅米色保护卡片，居中排列主标题与作者名。 | 培训课件、团队文化宣讲、温馨亲和型演讲封面。与 `Circles (slides)` 配对。 |
+| **Circles 水彩风** | **Circles (slides)** | `e5lLzFCnIhi4UMBn1lkkO` | 背景晕染半透明马卡龙彩色圆形气泡斑块，左上淡紫圆角标签标有 Slide title，配备菱形列表。 | 教育培训、产品故事、团队敏捷回顾正文页。与 `Circles (intro)` 配对。 |
+| **Excalidraw 手绘风** | **Excalidraw (intro)** | `jz7XG5gfC3LYApo-o6bCm` | 充满白板脑暴手绘涂鸦：弯曲虚线箭头、黄色荧光笔涂抹刷、紫色排线小柱状图、手绘圆圈重点批注。 | 创意脑暴开场、敏捷工作坊、架构草案探讨封面。与 `Excalidraw (slide)` 配对。 |
+| **Excalidraw 手绘风** | **Excalidraw (slide)** | `PBNZbUig71hoHRfUAwZm_` | 纯净手绘白底，左上角手绘紫色圆角便签标题块，下方为手绘菱形项目符号列表内容。 | 技术方案脑暴、架构草图、黑板教学演示正文页。与 `Excalidraw (intro)` 配对。 |
+| **排版辅助** | **Bullets** | `lRlViQw8fIKKA6vrcehgZ` | 纵向单列 25 个独立手绘排版指示图标集：圆圈、三角、方框、箭头、勾号、叉号等。 | 为任何演示页、流程图卡片或看板列表增补高亮图标与列表符号。 |
+| **画框比例** | **16:9** | `cnvqDbvFP09TxaCBpPNEP` | 细黑线条矩形框，横纵比例严格为 16:9 现代主流宽屏比例，居中标注 '16:9'。 | 现代显示器、高清投影、视频封面通用排版基准框。 |
+| **画框比例** | **4:3** | `oXGMSKE4T6CD1s0TXC21I` | 细黑线条矩形框，横纵比例严格为 4:3 传统屏幕比例，居中标注 '4:3'。 | 传统投影仪演示、A4/Letter 文档版面适配基准框。 |
+| **画框比例** | **3:2** | `uTxnzRVh1OXKBP_cMpPgG` | 细黑线条矩形框，横纵比例严格为 3:2 经典比例，居中标注 '3:2'。 | 平板电脑 (iPad/Surface) 与经典画幅排版参考框。 |
+| **画框比例** | **1:1** | `2InZI5FWOHMN94iMJ8AgX` | 细黑线条正方形框，横纵比例严格为 1:1 正方形比例，居中标注 '1:1'。 | 正方形插图、社交媒体分享图、头像卡片参考框。 |
+| **画框比例** | **21:9** | `WlAUqIaToANOTangKgZhx` | 细黑线条矩形框，横纵比例严格为 21:9 超宽屏比例，居中标注 '21:9'。 | 带鱼屏全景长图、影视比例演示或超宽架构全景图参考框。 |
 
 
 ---
@@ -101,5 +127,6 @@
 - **已审查覆盖范围**：全库共 41 个 item 已全部完成 100% 视觉比对、要素审查与描述补全：
   - 本次全新增补描述：11 个 item（ID: `Ef65NX4KTBYaxtVaAr-7Y`, `adq8qLb9iMgcxqRsr78FZ`, `rCTopVHKcQSVdQkLpeCFo`, `wxZ82BQNVYOyM0VcSnI_O`, `HGGt5kKb_OSfEu0SRZ6h_`, `lVmFnTYPRv0bxuvR3-Klu`, `vh-zg7bNlZwUkl6zOUEFW`, `pT3wo752el-HTBSTVc-UG`, `Mgy2XskpdeJJLWAEBLBKN`, `VWBFtYRIIPFGl0-i2CwwD`, `n5KyvrjjRMOAIeKfjwvnn`）
   - 保留并核验已有人工描述：30 个 item（ID: `oUKEJNPRVsqiVuY-d5MDSQ` 至 `jgdOAfaKtZBMjglYAAlB0A`）
+  - **presentation-bundle.excalidrawlib**：全库共 20 个 item 已全部完成 100% 结构化描述增补（包含 7 套配对演示页与 6 个画框/排版辅助工具，SHA-256: `2ee1dfac17bb60f80943812236deb7934181dc317dc2fb580b2358e6c3abf2ba`）。
 - **未确认项 / 遗留注意事项**：
   - Item 8（ID: `pT3wo752el-HTBSTVc-UG`）在原始库中的 `name` 标记为 `NAND`，但图元几何形状无反相输出圈，实为标准 `AND` 门。按照维护规范保持原 `name` 不变，但在 `description` 和摘要中均做了明确警示与区分。

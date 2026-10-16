@@ -225,7 +225,8 @@
       ],
       "id": "7cNv6q_ipH1AdnUjJj56u",
       "created": 1692976789971,
-      "name": "Simplicity (slides)"
+      "name": "Simplicity (slides)",
+      "description": "极简商务风格演示正文页画框模板 (Simplicity Slide Template)。标准画框尺寸 (约 648×432)，纯白底色，外围包裹双层极细浅灰色虚线/手绘质感边框；左上方标有深灰色标题占位符 'Slide title'，下方垂直排列 2 个空心小圆圈项目符号列表占位符。整体风格开阔留白、线条克制优雅。适用于制作高管汇报、业务复盘、咨询报告与学术讲座的正文要点页；与 Simplicity (intro) 封面页配套使用。"
     },
     {
       "status": "published",
@@ -629,7 +630,8 @@
       ],
       "id": "UEan54xVVGzUsV1OnrGf4",
       "created": 1692976787261,
-      "name": "Simplicity (intro)"
+      "name": "Simplicity (intro)",
+      "description": "极简商务风格演示封面/标题页画框模板 (Simplicity Intro/Cover Template)。标准画框尺寸，纯白底色，内嵌一层带对角透视引导线的浅灰色虚线矩形画框，营造悬浮立体卡片效果；画框正中为居中排版的双行大标题 'Very long presentation title'，上方为副标题/演讲者占位符 'Full name'。整体呈现开阔留白与极简设计感。适用于商务技术方案发布、架构复盘、产品发布会与正式演讲的幻灯片开篇封面页；与 Simplicity (slides) 正文页配套使用。"
     },
     {
       "status": "published",
@@ -1005,7 +1007,8 @@
       ],
       "id": "bHRAac4ZwcsSAAD4_0fnz",
       "created": 1692976783591,
-      "name": "Pacman (slides)"
+      "name": "Pacman (slides)",
+      "description": "复古吃豆人街机游戏风格演示正文页画框模板 (Pacman Slide Template)。标准画框尺寸，纯黑色外边框与深色底色，内部为亮青色迷宫通道边框；顶部为青色标题栏，标有黄色点状序号与小标题 '1. Slide title'；底部横贯一条由黄色圆点组成的吃豆进度轨道，左端带有黄色吃豆人嘴部图元，右端标有浅灰色 '... SLIDE NUMBER' 页码占位符。适用于游戏技术分享、极客技术沙龙、黑客松比赛、趣味开发讲座与年轻化团队技术分享的正文内容展示页；与 Pacman (intro) 配套使用。"
     },
     {
       "status": "published",
@@ -2586,7 +2589,8 @@
       ],
       "id": "WNzbsU3oHCQQOfWFPclIj",
       "created": 1692976780533,
-      "name": "Pacman (intro)"
+      "name": "Pacman (intro)",
+      "description": "复古吃豆人街机游戏风格演示封面页画框模板 (Pacman Intro/Cover Template)。标准画框尺寸，纯黑色背景，四周环绕青色街机迷宫走廊与黄色吃豆能量圆点；迷宫中点缀着彩色像素小幽灵（右上角粉色幽灵、左下角橙色幽灵）与吃豆人；正中心为亮青色矩形卡片，内部居中标有加粗黑色全大写主标题占位符 'VERY LONG PRESENTATION TITLE'。适用于前端技术沙龙、游戏研发评审、开源项目介绍与极客主题演讲的幻灯片开篇封面；与 Pacman (slides) 配套使用。"
     },
     {
       "status": "published",
@@ -8045,7 +8049,8 @@
       ],
       "id": "L2TQOZXaU3Zzryu9I_OIH",
       "created": 1692976775898,
-      "name": "Tetris (slides)"
+      "name": "Tetris (slides)",
+      "description": "俄罗斯方块网格建筑风格演示正文页画框模板 (Tetris Slide Template)。标准画框尺寸，浅灰色细网格背景底纹；左上角标有深蓝色小节序号标题 '1/ Slide Title'，附带两个蓝色方形像素项目符号；画框下边缘与两侧堆叠着柔和马卡龙色系的像素俄罗斯方块（粉、紫、青、黄多种 tetromino 方块积木），呈现积木搭建的轻快活泼质感。适用于微服务系统架构演进、软件工程模块化设计、技术方案拆解与敏捷开发迭代汇报的正文内容页；与 Tetris (intro) 配套使用。"
     },
     {
       "status": "published",
@@ -13466,7 +13471,8 @@
       ],
       "id": "fNkw95y4OvDFPTIf5b0Pj",
       "created": 1692976773175,
-      "name": "Tetris (intro)"
+      "name": "Tetris (intro)",
+      "description": "俄罗斯方块网格建筑风格演示封面页画框模板 (Tetris Intro/Cover Template)。标准画框尺寸，浅灰色方格网格底纹；整个画框底部铺满整整齐齐堆砌的七彩马卡龙色系像素方块墙（青、橙、紫、粉、黄、绿各色方块），右上角漂浮着下落中的方块积木；画框中心上方为醒目的蓝色主标题 'Presentation Title'，下方紧随副标题/作者占位符 'Full Name'。适用于系统架构从零构建、低代码平台、技术底座重构汇报与工程化演讲的幻灯片开篇封面；与 Tetris (slides) 配套使用。"
     },
     {
       "status": "published",
@@ -14005,7 +14011,8 @@
       ],
       "id": "U6DnMjQKFIK05ZV7PUcUP",
       "created": 1692976766566,
-      "name": "Graph (slides)"
+      "name": "Graph (slides)",
+      "description": "数据趋势折线/山峦风格演示正文页画框模板 (Graph Slide Template)。标准画框尺寸，温暖淡雅的浅米黄/淡奶油色底色；左上角为粉红珊瑚色标题 '1. Slide title'，下方带有两个右向箭头/尖角号项目符号 '>>'；画框下半部分衬有起伏平缓的浅粉色与浅黄色波浪山峦轮廓，底部边缘留白宽敞。适用于业务增长分析、数据科学分享、指标大盘回顾、财务年度总结等正文图表与分析页；与 Graph (intro) 配套使用。"
     },
     {
       "status": "published",
@@ -14535,7 +14542,8 @@
       ],
       "id": "7YIAj8e77fLE6mxKSnk0-",
       "created": 1692976763612,
-      "name": "Graph (intro)"
+      "name": "Graph (intro)",
+      "description": "数据趋势折线/山峦风格演示封面页画框模板 (Graph Intro/Cover Template)。标准画框尺寸；画框下半部绘制了层层递进的多彩折线图山峦景观（包含鲜明青蓝色与深紫色折线走势、黄色填充多边形及对角阴影线填充区域）；左上方衬有浅粉色斜线阴影圆形大色块，上方居中大标题 'Very long presentation title'；右下角标有作者 'Full Name' 与日期 'Date'。适用于数据增长汇报、商业计划书 (BP)、宏观经济/市场趋势分析与技术里程碑汇报的幻灯片开篇封面；与 Graph (slides) 配套使用。"
     },
     {
       "status": "published",
@@ -14903,7 +14911,8 @@
       ],
       "id": "5IPbx8M4pFB5x29KbQ_pq",
       "created": 1692976756413,
-      "name": "Creativity (slides)"
+      "name": "Creativity (slides)",
+      "description": "极简几何创意风格演示正文页画框模板 (Creativity Slide Template)。标准画框尺寸，温暖清雅的米白底色，背景绘制着极细的淡彩色相交大圆弧曲线（绿色、青色等隐约几何交织）；左上角为圆角矩形紫色胶囊药丸标题栏，内标白色文字 'Slide title'，下方排列空心菱形项目符号 '◇ Text'。整体现代、文艺且轻盈。适用于产品设计体验评审、UI/UX 方案分享、品牌创意脑暴、设计系统总结等场景的正文展示页；与 Creativity (intro) 配套使用。"
     },
     {
       "status": "published",
@@ -15291,7 +15300,8 @@
       ],
       "id": "_d7jpKB8SC_O2zk0jBODs",
       "created": 1692976752645,
-      "name": "Creativity (intro)"
+      "name": "Creativity (intro)",
+      "description": "极简几何创意风格演示封面页画框模板 (Creativity Intro/Cover Template)。标准画框尺寸，底板铺陈着多层半透明、色彩柔和的莫兰迪水彩圆形与有机色块（橙红斜线阴影圆、鹅黄圆斑、嫩绿块、淡粉圆等相互叠印交织）；画框正中为深紫色艺术字体主标题 'Very long presentation title'，下方跟随作者信息 'Full Name'。适用于设计分享、创意提案、用户研究汇报、品牌故事会与艺术人文讲座的幻灯片开篇封面；与 Creativity (slides) 配套使用。"
     },
     {
       "status": "published",
@@ -15632,7 +15642,8 @@
       ],
       "id": "e5lLzFCnIhi4UMBn1lkkO",
       "created": 1692976707231,
-      "name": "Circles (slides)"
+      "name": "Circles (slides)",
+      "description": "柔和水彩气泡风格演示正文页画框模板 (Circles Slide Template)。标准画框尺寸，背景由四角向中心晕染着半透明、边缘模糊的马卡龙彩色圆形气泡斑块（淡粉、嫩绿、鹅黄、蜜桃色渐变感）；左上方悬浮一个淡紫色圆角标签背景框，标注 'Slide title'，下方配备菱形项目列表占位符 '◇ Text'。适用于教育培训、团队文化交流、产品用户故事、敏捷回顾与轻松型技术分享的正文页；与 Circles (intro) 配套使用。"
     },
     {
       "status": "published",
@@ -15885,7 +15896,8 @@
       ],
       "id": "WYkBaBoWaC7x80m75wRPJ",
       "created": 1692976704347,
-      "name": "Circles (intro)"
+      "name": "Circles (intro)",
+      "description": "柔和水彩气泡风格演示封面页画框模板 (Circles Intro/Cover Template)。标准画框尺寸，全屏铺满硕大且柔和的多彩水彩圆形斑块（嫩绿、浅黄、淡粉、肉粉色大斑块叠放）；画框中央浮置一块圆角矩形浅米色保护卡片，其内居中排列大标题 'Very long presentation title'，卡片右下角标有作者 'Full Name'。适用于培训课件首页、团队团建宣讲、心理/教育主题讲座及温馨亲和型演讲的幻灯片开篇封面；与 Circles (slides) 配套使用。"
     },
     {
       "status": "published",
@@ -16676,7 +16688,8 @@
       ],
       "id": "PBNZbUig71hoHRfUAwZm_",
       "created": 1692976699543,
-      "name": "Excalidraw (slide)"
+      "name": "Excalidraw (slide)",
+      "description": "Excalidraw 原生手绘白板风格演示正文页画框模板 (Excalidraw Handdrawn Slide Template)。标准画框尺寸，纯净手绘风格白底；左上角为一个手绘紫色圆角矩形便签式标题背景块，标有手绘字体 'Slide title'，下方为带有手绘菱形项目符号的列表内容 '◇ Text'。整体线条质感自然松弛，保留手绘白板的即兴美感。适用于技术方案头脑风暴、架构演练草图、敏捷故事拆解与黑板教学演示的正文内容页；与 Excalidraw (intro) 配套使用。"
     },
     {
       "status": "published",
@@ -17757,7 +17770,8 @@
       ],
       "id": "jz7XG5gfC3LYApo-o6bCm",
       "created": 1692976695926,
-      "name": "Excalidraw (intro)"
+      "name": "Excalidraw (intro)",
+      "description": "Excalidraw 原生手绘白板涂鸦风格演示封面页画框模板 (Excalidraw Handdrawn Intro/Cover Template)。标准画框尺寸，充满白板脑暴涂鸦涂饰；四周环绕着手绘弯曲虚线箭头、黄色荧光笔对角涂抹笔刷、紫色排线小柱状图、手绘小圆圈节点及绿色手绘几何块；中间主标题文字上带有醒目的手绘荧光黄色涂抹底线与手绘红色圆圈重点批注，下方为手绘姓名框 'Full name'。适用于技术极客演讲、创意脑暴开场、敏捷实训工作坊、架构草案探讨等生动非正式演讲的幻灯片开篇封面；与 Excalidraw (slide) 配套使用。"
     },
     {
       "status": "published",
@@ -18916,7 +18930,8 @@
       ],
       "id": "lRlViQw8fIKKA6vrcehgZ",
       "created": 1692976691651,
-      "name": "Bullets"
+      "name": "Bullets",
+      "description": "手绘演示项目符号与图标集 (Presentation Bullet Points & Icon Marker Set)。纵向单列展示的 25 个独立手绘排版指示图标集合；包含圆圈 ○、实心三角 ▲、星号 *、方框 ■、右向三角 ▶、双右箭头 ▷▷、单尖角 >、复选勾 ✓、叉号 ✗ 等多种线条风格的标志图元。用于为任何自定义演示页面、流程图卡片或看板列表增补高亮项目列表前缀符、状态标识或装饰引导图标。"
     },
     {
       "status": "published",
@@ -18994,7 +19009,8 @@
       ],
       "id": "WlAUqIaToANOTangKgZhx",
       "created": 1692976681941,
-      "name": "21:9"
+      "name": "21:9",
+      "description": "21:9 超宽屏画框比例模板 (21:9 Ultra-Widescreen Frame Ratio Helper)。细黑色线条矩形框，横纵比例为标准的 21:9 超宽比例 (宽约 535，高约 225)，正中心居中标注文字 '21:9'。用于快速在画布上划定 21:9 带鱼屏、全景长图、影视比例演示或超宽架构全景图的排版参考边界。"
     },
     {
       "status": "published",
@@ -19070,7 +19086,8 @@
       ],
       "id": "2InZI5FWOHMN94iMJ8AgX",
       "created": 1692976679097,
-      "name": "1:1"
+      "name": "1:1",
+      "description": "1:1 正方形画框比例模板 (1:1 Square Frame Ratio Helper)。细黑色线条正方形框，横纵比例严格为 1:1 (宽 257.5，高 257.5)，正中心居中标注文字 '1:1'。用于快速划定正方形插图、社交媒体分享图、头像卡片或九宫格网格单元的排版参考边界。"
     },
     {
       "status": "published",
@@ -19146,7 +19163,8 @@
       ],
       "id": "uTxnzRVh1OXKBP_cMpPgG",
       "created": 1692976675969,
-      "name": "3:2"
+      "name": "3:2",
+      "description": "3:2 经典比例画框模板 (3:2 Classic Frame Ratio Helper)。细黑色线条矩形框，横纵比例严格为 3:2 (宽约 260.5，高约 173.1)，正中心居中标注文字 '3:2'。用于快速划定平板电脑 (如 iPad/Surface)、经典画幅或标准幻灯片排版参考区域。"
     },
     {
       "status": "published",
@@ -19222,7 +19240,8 @@
       ],
       "id": "oXGMSKE4T6CD1s0TXC21I",
       "created": 1692976673769,
-      "name": "4:3"
+      "name": "4:3",
+      "description": "4:3 传统屏幕画框比例模板 (4:3 Standard Frame Ratio Helper)。细黑色线条矩形框，横纵比例严格为 4:3 (宽约 349.1，高约 260.5)，正中心居中标注文字 '4:3'。用于传统投影仪演示、A4/Letter 文档版面适配或复古画幅幻灯片的排版框架定义。"
     },
     {
       "status": "published",
@@ -19298,7 +19317,9 @@
       ],
       "id": "cnvqDbvFP09TxaCBpPNEP",
       "created": 1692976670631,
-      "name": "16:9"
+      "name": "16:9",
+      "description": "16:9 现代主流宽屏画框比例模板 (16:9 Modern Widescreen Frame Ratio Helper)。细黑色线条矩形框，横纵比例严格为 16:9 (宽约 403.4，高约 225.1)，正中心居中标注文字 '16:9'。用于现代电脑显示器、高清投影、YouTube/Bilibili 视频封面及主流演示文稿的通用排版基准框。"
     }
-  ]
+  ],
+  "description": "Excalidraw 原生演示画板与多页幻灯片模板套件。包含 7 套双页配对的演示风格模版 (Simplicity, Pacman, Tetris, Graph, Creativity, Circles, Excalidraw) 以及 6 套排版项目符号和常用画框比例辅助模板 (16:9, 4:3, 3:2, 1:1, 21:9)。专供 drawing_present 原生演示工具调用，创建可直接导出演讲的完整画框页面。"
 }
