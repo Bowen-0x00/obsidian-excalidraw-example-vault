@@ -76,6 +76,21 @@
 
 ---
 
+## 库：presentation-bundle.excalidrawlib
+
+- **相对路径**：`presentation-bundle.excalidrawlib`
+- **整体用途**：专用于多页演示幻灯片（Presentation Slides）的纯原生 Frame 画布模板库，供 `drawing_present` 原生演示工具调用。
+- **图元风格**：基于 Excalidraw 原生 Frame 画框，预设了标题栏、主干结构框、内容要点占位符和配色风格。
+- **适用场景**：
+  - 使用 `drawing_present` 创建多页架构评审、技术汇报或课程讲义演示画板。
+  - 包含多种风格套系（Simplicity、Pacman、Tetris、Graph、Creativity、Circles、Excalidraw 原生风格）及其配对的 Intro 封面页与 Slides 正文页。
+  - 包含标准画框比例辅助模板：16:9, 4:3, 3:2, 1:1, 21:9 等。
+- **不适用场景**：
+  - 严谨的硬件微架构、逻辑门原理图或细粒度流程图（此类请使用 `digital-circuit-components(svg).excalidrawlib`）。
+
+
+---
+
 ## 审阅与维护记录
 
 - **维护日期**：2026-10-16
