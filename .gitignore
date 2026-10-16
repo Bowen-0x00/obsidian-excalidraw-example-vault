@@ -1,0 +1,8 @@
+# User local and temporary files
+plugins/Excalidraw/Scripts/Agent-Drawing/mcp/Agent-Bridge-Connection.json
+*.tmp
+*.agent-install.tmp
+*.metadata-backup
+.trash/
+.DS_Store
+Thumbs.db

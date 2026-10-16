@@ -1,0 +1,2905 @@
+{
+  "type": "excalidrawlib",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "libraryItems": [
+    {
+      "id": "Ef65NX4KTBYaxtVaAr-7Y",
+      "status": "unpublished",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              60,
+              0
+            ],
+            [
+              60,
+              60
+            ],
+            [
+              0,
+              60
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "5Sp6Mw37",
+          "type": "line",
+          "x": 1896.9896881789155,
+          "y": -4131.908396232714,
+          "width": 60,
+          "height": 60,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 59086,
+          "version": 2,
+          "versionNonce": 1333023666,
+          "updated": 1765376387885,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "customData": {
+            "svgPathShape": "M 0 0L 60 0L 60 60L 0 60Z M 10 15L 20 15L 40 45L 50 45M 10 45L 20 45L 40 15L 50 15",
+            "svgViewBox": {
+              "width": 60,
+              "height": 60
+            }
+          },
+          "index": "ar"
+        }
+      ],
+      "created": 1765376503650,
+      "name": "CROSSBAR",
+      "description": "2×2 交叉开关 / 交叉点交换单元 (2×2 Crossbar Switch)。正方形外框，内部包含两条水平信号线通过中心对角交叉形成的 'X' 形双通道互连路径。用于片上网络 (NoC)、多核互连交换矩阵与数据交换通路中表示双通道空间交叉互连节点。区别于库中网格式多端口 Crossbar Switch，此图元为紧凑型 2×2 单元。"
+    },
+    {
+      "id": "adq8qLb9iMgcxqRsr78FZ",
+      "status": "unpublished",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              60,
+              0
+            ],
+            [
+              60,
+              45
+            ],
+            [
+              0,
+              45
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "DORwNBsx",
+          "type": "line",
+          "x": 1676.9896881789155,
+          "y": -4131.908396232714,
+          "width": 60,
+          "height": 45,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 21311,
+          "version": 2,
+          "versionNonce": 1900230706,
+          "updated": 1765376387885,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "customData": {
+            "svgPathShape": "M 0 0L 20 0L 30 8L 40 0L 60 0L 45 35L 15 35Z M 30 35L 30 45",
+            "svgViewBox": {
+              "width": 60,
+              "height": 45
+            }
+          },
+          "index": "an"
+        }
+      ],
+      "created": 1765376492644,
+      "name": "ALU",
+      "description": "算术逻辑单元 (Arithmetic Logic Unit / ALU)。经典下窄上宽的对称梯形轮廓，顶部正中带标志性的倒三角 V 型凹槽（划分左、右两路操作数输入端口），底部中心引出一条垂直向下输出引线。用于 CPU 微架构执行级 (EX Stage)、数据通路中表示整数/算术逻辑核心运算部件。"
+    },
+    {
+      "id": "rCTopVHKcQSVdQkLpeCFo",
+      "status": "unpublished",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              50,
+              0
+            ],
+            [
+              50,
+              65
+            ],
+            [
+              0,
+              65
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "F3kOLq2V",
+          "type": "line",
+          "x": 1571.9896881789155,
+          "y": -4132.497932535416,
+          "width": 50,
+          "height": 65,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 77993,
+          "version": 3,
+          "versionNonce": 2060309170,
+          "updated": 1765376481932,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "customData": {
+            "svgPathShape": "M 10 0L 35 20L 35 40L 10 60Z M 0 15L 10 15M 0 40L 10 40M 35 30L 50 30M 25 50L 25 65",
+            "svgViewBox": {
+              "width": 50,
+              "height": 65
+            }
+          },
+          "index": "al"
+        }
+      ],
+      "created": 1765376485200,
+      "name": "MUX",
+      "description": "二选一多路选择器 (2:1 Multiplexer / MUX)。立式左宽右窄梯形轮廓，左侧宽边水平引入 2 路输入引脚，右侧窄边中心引出 1 路输出引脚，底面垂直引出 1 条选择控制引脚。用于数字逻辑电路与 CPU 数据通路中的条件分支路由、操作数旁路及二选一信号选择。区别于库中四选一 MUX (4:1)，本图元专用于两路信号选通。"
+    },
+    {
+      "id": "wxZ82BQNVYOyM0VcSnI_O",
+      "status": "unpublished",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              68,
+              0
+            ],
+            [
+              68,
+              50
+            ],
+            [
+              0,
+              50
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "QkhjbGiR",
+          "type": "line",
+          "x": 1786.9896881789155,
+          "y": -4226.908396232714,
+          "width": 68,
+          "height": 50,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 25893,
+          "version": 2,
+          "versionNonce": 845757618,
+          "updated": 1765376387885,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "customData": {
+            "svgPathShape": "M 5 0Q 20 25 5 50L 25 50Q 55 50 55 25Q 55 0 25 0Z M 59 25m -4 0a 4 4 0 1 0 8 0a 4 4 0 1 0 -8 0M 0 10L 10 10M 0 40L 10 40M 63 25L 68 25",
+            "svgViewBox": {
+              "width": 68,
+              "height": 50
+            }
+          },
+          "index": "aj"
+        }
+      ],
+      "created": 1765376480678,
+      "name": "NOR",
+      "description": "或非门 (NOR Gate)。标准或非门符号，左侧为单条凹弧形输入背线，右侧双凸弧相交并在输出尖端连接反相小圆圈；左侧分布 2 条水平输入引线，右侧由小圆圈引出 1 条水平输出引线。逻辑 Y = ~(A | B)。用于门级逻辑电路、SR 锁存器、控制信号译码与 CMOS 电路设计。"
+    },
+    {
+      "id": "HGGt5kKb_OSfEu0SRZ6h_",
+      "status": "unpublished",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              63,
+              0
+            ],
+            [
+              63,
+              50
+            ],
+            [
+              0,
+              50
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "4uLWdDTu",
+          "type": "line",
+          "x": 1676.9896881789155,
+          "y": -4226.908396232714,
+          "width": 63,
+          "height": 50,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 48343,
+          "version": 2,
+          "versionNonce": 1173318386,
+          "updated": 1765376387885,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "customData": {
+            "svgPathShape": "M 5 0L 25 0A 25 25 0 0 1 25 50L 5 50Z M 54 25m -4 0a 4 4 0 1 0 8 0a 4 4 0 1 0 -8 0M 0 10L 5 10M 0 40L 5 40M 58 25L 63 25",
+            "svgViewBox": {
+              "width": 63,
+              "height": 50
+            }
+          },
+          "index": "ah"
+        }
+      ],
+      "created": 1765376475839,
+      "name": "NAND",
+      "description": "与非门 (NAND Gate)。标准 D 字形轮廓，左侧为平直竖向背线，右侧为凸半圆弧且在输出尖端连接反相小圆圈；左侧引出 2 条水平输入线，右侧从小圆圈引出 1 条水平输出线。逻辑 Y = ~(A & B)。用于数字电路、通用逻辑网络与时序触发器设计。区别于库中同名无圈项 (实为与门)，本图元为真实带反相圈的与非门。"
+    },
+    {
+      "id": "lVmFnTYPRv0bxuvR3-Klu",
+      "status": "unpublished",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              75,
+              0
+            ],
+            [
+              75,
+              50
+            ],
+            [
+              0,
+              50
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "LFzbhOaw",
+          "type": "line",
+          "x": 1891.9896881789155,
+          "y": -4326.908396232714,
+          "width": 75,
+          "height": 50,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 79572,
+          "version": 2,
+          "versionNonce": 405692722,
+          "updated": 1765376387885,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "customData": {
+            "svgPathShape": "M 20 0Q 35 25 20 50L 40 50Q 70 50 70 25Q 70 0 40 0Z M 5 0Q 20 25 5 50M 0 10L 10 10M 0 40L 10 40M 70 25L 75 25",
+            "svgViewBox": {
+              "width": 75,
+              "height": 50
+            }
+          },
+          "index": "af"
+        }
+      ],
+      "created": 1765376470870,
+      "name": "XOR",
+      "description": "异或门 (Exclusive-OR Gate / XOR)。标准双弧输入符号，主体左侧为凹弧背线且外侧附带一条独立平行的凹弧输入线，前端双凸弧尖锐相交并直接引出水平输出线（无反相圈）；左侧引入 2 条输入引线。逻辑 Y = A ^ B。用于半加器/全加器求和、奇偶校验与比较器电路。区别于 XNOR，输出端无反相圆圈。"
+    },
+    {
+      "id": "vh-zg7bNlZwUkl6zOUEFW",
+      "status": "unpublished",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              60,
+              0
+            ],
+            [
+              60,
+              50
+            ],
+            [
+              0,
+              50
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "zEucjgfI",
+          "type": "line",
+          "x": 1786.9896881789155,
+          "y": -4326.908396232714,
+          "width": 60,
+          "height": 50,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 81895,
+          "version": 2,
+          "versionNonce": 43982706,
+          "updated": 1765376387885,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "customData": {
+            "svgPathShape": "M 5 0Q 20 25 5 50L 25 50Q 55 50 55 25Q 55 0 25 0Z M 0 10L 10 10M 0 40L 10 40M 55 25L 60 25",
+            "svgViewBox": {
+              "width": 60,
+              "height": 50
+            }
+          },
+          "index": "ad"
+        }
+      ],
+      "created": 1765376463435,
+      "name": "OR",
+      "description": "或门 (OR Gate)。经典或门符号，左侧为单条凹弧形输入背线，右侧双凸弧汇聚为尖锐输出端并直接引出水平输出引脚（无反相圈）；左侧上下对称引入 2 条水平输入引脚。逻辑 Y = A | B。用于组合逻辑电路、总线请求合并、中断汇集与使能控制。区别于 NOR 无反相圈，区别于 XOR 仅有单条输入弧。"
+    },
+    {
+      "id": "pT3wo752el-HTBSTVc-UG",
+      "status": "unpublished",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              55,
+              0
+            ],
+            [
+              55,
+              50
+            ],
+            [
+              0,
+              50
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "8OxR33Hv",
+          "type": "line",
+          "x": 1676.9896881789155,
+          "y": -4326.908396232714,
+          "width": 55,
+          "height": 50,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 18630,
+          "version": 2,
+          "versionNonce": 1507501490,
+          "updated": 1765376387885,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "customData": {
+            "svgPathShape": "M 5 0L 25 0A 25 25 0 0 1 25 50L 5 50Z M 0 10L 5 10M 0 40L 5 40M 50 25L 55 25",
+            "svgViewBox": {
+              "width": 55,
+              "height": 50
+            }
+          },
+          "index": "ab"
+        }
+      ],
+      "created": 1765376458106,
+      "name": "NAND",
+      "description": "与门 / 基础与逻辑门 (AND Gate，库中原名保留为 NAND)。标准 D 字形轮廓，左侧为平直垂直背线，右侧为平滑对称凸半圆弧，输出尖端无反相小圆圈，直接引出 1 条水平输出引线；左侧引入 2 条水平输入引线。逻辑 Y = A & B。用于地址译码、时钟使能门控与条件判定。特别说明：虽库中命名为 NAND，但几何形态无反相圈，实为标准与门 (AND Gate)，需与带圈 NAND (ID: HGGt5kKb_OSfEu0SRZ6h_) 严格区分。"
+    },
+    {
+      "id": "Mgy2XskpdeJJLWAEBLBKN",
+      "status": "unpublished",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              48,
+              0
+            ],
+            [
+              48,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "wWgaL1lI",
+          "type": "line",
+          "x": 1566.9896881789155,
+          "y": -4321.908396232714,
+          "width": 48,
+          "height": 40,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 58422,
+          "version": 2,
+          "versionNonce": 1369043954,
+          "updated": 1765376387885,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "customData": {
+            "svgPathShape": "M 5 0L 5 40L 35 20Z M 39 20m -4 0a 4 4 0 1 0 8 0a 4 4 0 1 0 -8 0M 43 20L 48 20M 0 20L 5 20",
+            "svgViewBox": {
+              "width": 48,
+              "height": 40
+            }
+          },
+          "index": "aZ"
+        }
+      ],
+      "created": 1765376452797,
+      "name": "NOT",
+      "description": "非门 / 反相器 (NOT Gate / Inverter)。水平向右指向的等腰三角形轮廓，右侧尖端连接一个反相小圆圈；左侧底边中心引入 1 条水平输入引线，右侧从小圆圈引出 1 条水平输出引线。逻辑 Y = ~A。用于数字逻辑信号取反、低电平有效控制信号生成与时钟反相。区别于 Buffer 缓冲器，本符号尖端带反相圈以实现反相逻辑。"
+    },
+    {
+      "id": "VWBFtYRIIPFGl0-i2CwwD",
+      "status": "unpublished",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              30,
+              0
+            ],
+            [
+              30,
+              60
+            ],
+            [
+              0,
+              60
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "oO0MWozw",
+          "type": "line",
+          "x": 1676.9896881789155,
+          "y": -4431.908396232714,
+          "width": 30,
+          "height": 60,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 46448,
+          "version": 2,
+          "versionNonce": 1622542898,
+          "updated": 1765376387885,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "customData": {
+            "svgPathShape": "M 0 30L 2 30M 5 30m -3 0a 3 3 0 1 0 6 0a 3 3 0 1 0 -6 0M 8 30L 10 30M 10 10L 10 50M 18 10L 18 50M 18 12L 30 12L 30 0M 18 48L 30 48L 30 60",
+            "svgViewBox": {
+              "width": 30,
+              "height": 60
+            }
+          },
+          "index": "aX"
+        }
+      ],
+      "created": 1765376447880,
+      "name": "PMOS",
+      "description": "P沟道 MOS 场效应管 (PMOS Transistor)。垂直立式三端晶体管符号，左侧栅极 (Gate) 引线上带有标志性反相小圆圈，后接平行的栅极与沟道垂直极板；右侧上下两端分别折线引出源极 (Source) 与漏极 (Drain) 引脚。低电平 (0) 导通。常用于 CMOS 门电路的上拉逻辑网络 (PUN)、传输门与电源开关。区别于 NMOS，栅极端带有反相小圆圈。"
+    },
+    {
+      "id": "n5KyvrjjRMOAIeKfjwvnn",
+      "status": "unpublished",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              28,
+              0
+            ],
+            [
+              28,
+              60
+            ],
+            [
+              0,
+              60
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "XHtmQEa3",
+          "type": "line",
+          "x": 1568.9896881789155,
+          "y": -4431.908396232714,
+          "width": 28,
+          "height": 60,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 51347,
+          "version": 2,
+          "versionNonce": 623372402,
+          "updated": 1765376387885,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "customData": {
+            "svgPathShape": "M 0 30L 8 30M 8 10L 8 50M 16 10L 16 50M 16 12L 28 12L 28 0M 16 48L 28 48L 28 60",
+            "svgViewBox": {
+              "width": 28,
+              "height": 60
+            }
+          },
+          "index": "aV"
+        }
+      ],
+      "created": 1765376442760,
+      "name": "NMOS",
+      "description": "N沟道 MOS 场效应管 (NMOS Transistor)。垂直立式三端晶体管符号，左侧栅极 (Gate) 为直接水平引线（无反相圆圈），连接垂直栅极极板与平行沟道极板；右侧上下两端分别折线引出漏极 (Drain) 与源极 (Source) 引脚。高电平 (1) 导通。常用于 CMOS 门电路的下拉逻辑网络 (PDN)、接地放电开关与传输门。区别于 PMOS，栅极端无反相小圆圈。"
+    },
+    {
+      "id": "oUKEJNPRVsqiVuY-d5MDSQ",
+      "status": "unpublished",
+      "created": 1791901316925,
+      "name": "XNOR",
+      "description": "同或门 (Exclusive-NOR Gate)。双弧输入与反相输出小圆圈。逻辑 Y = ~(A ^ B)。常用于偶校验、位相等性比较器。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              83,
+              0
+            ],
+            [
+              83,
+              50
+            ],
+            [
+              0,
+              50
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "FTfbeUub",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 83,
+          "height": 50,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 49080,
+          "version": 2,
+          "versionNonce": 648396785,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424375,
+          "customData": {
+            "svgPathShape": "M 20 0Q 35 25 20 50L 40 50Q 70 50 70 25Q 70 0 40 0Z M 5 0Q 20 25 5 50M 0 10L 10 10M 0 40L 10 40M 74 25m -4 0a 4 4 0 1 0 8 0a 4 4 0 1 0 -8 0M 78 25L 83 25",
+            "svgViewBox": {
+              "width": 83,
+              "height": 50
+            },
+            "componentName": "XNOR",
+            "category": "一、基础逻辑与电路门 (Circuit Primitives & Gates)",
+            "isLibraryItem": true
+          },
+          "index": "a1"
+        }
+      ]
+    },
+    {
+      "id": "UMMISDc_INBTNCvZPpnQlg",
+      "status": "unpublished",
+      "created": 1791901316925,
+      "name": "Buffer",
+      "description": "缓冲驱动器 (Buffer / Driver)。无反相单向驱动三角形。用于增强信号驱动能力、建立时钟树缓冲分发与匹配传输延迟。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              45,
+              0
+            ],
+            [
+              45,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "87dtrlN1",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 45,
+          "height": 40,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 66809,
+          "version": 2,
+          "versionNonce": 682269137,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424376,
+          "customData": {
+            "svgPathShape": "M 5 0L 5 40L 35 20Z M 0 20L 5 20M 35 20L 45 20",
+            "svgViewBox": {
+              "width": 45,
+              "height": 40
+            },
+            "componentName": "Buffer",
+            "category": "一、基础逻辑与电路门 (Circuit Primitives & Gates)",
+            "isLibraryItem": true
+          },
+          "index": "a3"
+        }
+      ]
+    },
+    {
+      "id": "VKcqi_nbVxWF_HiHy1CFHQ",
+      "status": "unpublished",
+      "created": 1791901316925,
+      "name": "Tri-State Buffer",
+      "description": "三态门驱动器 (Tri-State Buffer)。包含数据输入输出与顶部高电平使能控制端 (EN)。EN=1 透传，EN=0 高阻态 (Hi-Z)。用于总线多主控隔离与共享。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              45,
+              0
+            ],
+            [
+              45,
+              45
+            ],
+            [
+              0,
+              45
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "1ldEmTH9",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 45,
+          "height": 45,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 3969,
+          "version": 2,
+          "versionNonce": 750335921,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424378,
+          "customData": {
+            "svgPathShape": "M 5 5L 5 45L 35 25Z M 0 25L 5 25M 35 25L 45 25M 20 15L 20 0",
+            "svgViewBox": {
+              "width": 45,
+              "height": 45
+            },
+            "componentName": "Tri-State Buffer",
+            "category": "一、基础逻辑与电路门 (Circuit Primitives & Gates)",
+            "isLibraryItem": true
+          },
+          "index": "a5"
+        }
+      ]
+    },
+    {
+      "id": "uBr9CkWbeeDp8FtsMOQh6Q",
+      "status": "unpublished",
+      "created": 1791901316925,
+      "name": "Transmission Gate",
+      "description": "CMOS 传输门 (Transmission Gate / TG)。由 NMOS 与 PMOS(带反相圆) 并联组成，带两端栅极控制信号 C 与 C#。CMOS 双向低阻开关与模拟多路器基础单元。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              60,
+              0
+            ],
+            [
+              60,
+              65
+            ],
+            [
+              0,
+              65
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "IyNAVhvZ",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 60,
+          "height": 65,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 49853,
+          "version": 2,
+          "versionNonce": 1425611153,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424380,
+          "customData": {
+            "svgPathShape": "M 0 30L 15 30L 15 15L 20 15M 20 15L 40 15M 40 15L 45 15L 45 30L 60 30M 20 8L 40 8M 30 8L 30 0M 15 30L 15 45L 20 45M 20 45L 40 45M 40 45L 45 45L 45 30M 20 52L 40 52M 30 56m -3 0a 3 3 0 1 0 6 0a 3 3 0 1 0 -6 0M 30 59L 30 65",
+            "svgViewBox": {
+              "width": 60,
+              "height": 65
+            },
+            "componentName": "Transmission Gate",
+            "category": "一、基础逻辑与电路门 (Circuit Primitives & Gates)",
+            "isLibraryItem": true
+          },
+          "index": "a7"
+        }
+      ]
+    },
+    {
+      "id": "kd41YTsXKka_3CIXz_l_YQ",
+      "status": "unpublished",
+      "created": 1791901316925,
+      "name": "Clock Source",
+      "description": "方波时钟信号源 (Clock Source / Oscillator)。框内标有数字方波脉冲波形 '_|^|_'，右侧输出时钟。微架构基准时钟符号。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              43,
+              0
+            ],
+            [
+              43,
+              35
+            ],
+            [
+              0,
+              35
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "ivIvM1Gq",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 43,
+          "height": 35,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 64069,
+          "version": 2,
+          "versionNonce": 312590193,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424383,
+          "customData": {
+            "svgPathShape": "M 0 0L 35 0L 35 35L 0 35Z M 5 22L 13 22L 13 10L 22 10L 22 22L 30 22M 35 17L 43 17",
+            "svgViewBox": {
+              "width": 43,
+              "height": 35
+            },
+            "componentName": "Clock Source",
+            "category": "一、基础逻辑与电路门 (Circuit Primitives & Gates)",
+            "isLibraryItem": true
+          },
+          "index": "a9"
+        }
+      ]
+    },
+    {
+      "id": "xOLi-iAgq7aKVgPc2b1PjQ",
+      "status": "unpublished",
+      "created": 1791901316925,
+      "name": "VCC / VDD",
+      "description": "数字电源端口符号 (VCC / VDD Power Supply)。垂直引线上接实心尖角箭头，指示高电平电源轨。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              14,
+              0
+            ],
+            [
+              14,
+              32
+            ],
+            [
+              0,
+              32
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "BneHIaUD",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 14,
+          "height": 32,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 62588,
+          "version": 2,
+          "versionNonce": 1140500817,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424385,
+          "customData": {
+            "svgPathShape": "M 7 32L 7 9M 0 10L 7 0L 14 10Z",
+            "svgViewBox": {
+              "width": 14,
+              "height": 32
+            },
+            "componentName": "VCC / VDD",
+            "category": "一、基础逻辑与电路门 (Circuit Primitives & Gates)",
+            "isLibraryItem": true
+          },
+          "index": "aB"
+        }
+      ]
+    },
+    {
+      "id": "fL-fWsSIgyoUZqfi9e5WHw",
+      "status": "unpublished",
+      "created": 1791901316925,
+      "name": "GND",
+      "description": "数字接地端符号 (Ground / GND)。垂直引线接三条递减的平行横向参考面，指示系统零电位参考地。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              24,
+              0
+            ],
+            [
+              24,
+              32
+            ],
+            [
+              0,
+              32
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "aJStVwcd",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 24,
+          "height": 32,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 48832,
+          "version": 2,
+          "versionNonce": 307975985,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424386,
+          "customData": {
+            "svgPathShape": "M 12 0L 12 20M 0 20L 24 20M 4 26L 20 26M 8 32L 16 32",
+            "svgViewBox": {
+              "width": 24,
+              "height": 32
+            },
+            "componentName": "GND",
+            "category": "一、基础逻辑与电路门 (Circuit Primitives & Gates)",
+            "isLibraryItem": true
+          },
+          "index": "aD"
+        }
+      ]
+    },
+    {
+      "id": "Khw7U2q_Ps06zZyBVXHNGw",
+      "status": "unpublished",
+      "created": 1791901316926,
+      "name": "Adder (+)",
+      "description": "计算机体系结构标准圆圈加法器 (Adder)。圆形符号内部标有 '+'，左侧与上方为操作数输入，右侧为求和结果。用于微架构 PC+4 递增、分支目标计算、AGU 地址生成及算术数据通路。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              50,
+              0
+            ],
+            [
+              50,
+              41
+            ],
+            [
+              0,
+              41
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "JzHeERjK",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 50,
+          "height": 41,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 25265,
+          "version": 2,
+          "versionNonce": 1372998783,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424389,
+          "customData": {
+            "svgPathShape": "M 25 25m -16 0a 16 16 0 1 0 32 0a 16 16 0 1 0 -32 0M 17 25L 33 25M 25 17L 25 33M 0 25L 9 25M 25 0L 25 9M 41 25L 50 25",
+            "svgViewBox": {
+              "width": 50,
+              "height": 41
+            },
+            "componentName": "Adder (+)",
+            "category": "二、微架构计算与算术单元 (Datapath & Arithmetic Units)",
+            "isLibraryItem": true
+          },
+          "index": "aG"
+        }
+      ]
+    },
+    {
+      "id": "oJnyu-5n0ESgS2TWtcCVtA",
+      "status": "unpublished",
+      "created": 1791901316926,
+      "name": "Multiplier (×)",
+      "description": "计算机体系结构标准圆圈乘法器 (Multiplier)。圆形符号内部标有 '×'，输入在左/上方，乘积从右侧输出。用于定点/浮点乘法流水线、DSP 计算与神经网络算子单元。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              50,
+              0
+            ],
+            [
+              50,
+              41
+            ],
+            [
+              0,
+              41
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "sWzQJ3Uz",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 50,
+          "height": 41,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 48440,
+          "version": 2,
+          "versionNonce": 1064723615,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424390,
+          "customData": {
+            "svgPathShape": "M 25 25m -16 0a 16 16 0 1 0 32 0a 16 16 0 1 0 -32 0M 19 19L 31 31M 19 31L 31 19M 0 25L 9 25M 25 0L 25 9M 41 25L 50 25",
+            "svgViewBox": {
+              "width": 50,
+              "height": 41
+            },
+            "componentName": "Multiplier (×)",
+            "category": "二、微架构计算与算术单元 (Datapath & Arithmetic Units)",
+            "isLibraryItem": true
+          },
+          "index": "aI"
+        }
+      ]
+    },
+    {
+      "id": "bIlgfsbOWyL_QRH8-J_lKA",
+      "status": "unpublished",
+      "created": 1791901316926,
+      "name": "Processing Element (PE)",
+      "description": "脉动阵列乘累加处理单元 (Processing Element / PE / MAC)。正方形微架构单元，内部串联乘法器 (×) 与累加加法器 (+)，具备水平向右的激活值 (Activation) 穿越通路与垂直向下的权重/累加值 (Weight/Acc) 穿越通路。Google TPU、NVIDIA Tensor Core 矩阵计算基础网格单元。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              75,
+              0
+            ],
+            [
+              75,
+              75
+            ],
+            [
+              0,
+              75
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "YZVI4kK6",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 75,
+          "height": 75,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 14568,
+          "version": 2,
+          "versionNonce": 228489407,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424391,
+          "customData": {
+            "svgPathShape": "M 10 10L 65 10L 65 65L 10 65Z M 28 38m -9 0a 9 9 0 1 0 18 0a 9 9 0 1 0 -18 0M 25 35L 31 41M 25 41L 31 35M 48 38m -9 0a 9 9 0 1 0 18 0a 9 9 0 1 0 -18 0M 44 38L 52 38M 48 34L 48 42M 37 38L 39 38M 0 38L 19 38M 57 38L 75 38M 28 0L 28 29M 48 47L 48 75",
+            "svgViewBox": {
+              "width": 75,
+              "height": 75
+            },
+            "componentName": "Processing Element (PE)",
+            "category": "二、微架构计算与算术单元 (Datapath & Arithmetic Units)",
+            "isLibraryItem": true
+          },
+          "index": "aK"
+        }
+      ]
+    },
+    {
+      "id": "TmKytPU1tDnhWGJtL0ZJ9A",
+      "status": "unpublished",
+      "created": 1791901316926,
+      "name": "Comparator (==)",
+      "description": "微架构相等性比较器 (Comparator / CMP)。矩形框内标有双等号 '=='，左侧接收两路比较输入 A 与 B，右侧输出单比特匹配标志 (Match / Equal)。用于分支跳转判定、TLB/Cache Tag 命中检测与 AXI ID 匹配。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              65,
+              0
+            ],
+            [
+              65,
+              45
+            ],
+            [
+              0,
+              45
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "FSOLRqAY",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 65,
+          "height": 45,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 60629,
+          "version": 2,
+          "versionNonce": 1643055327,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424392,
+          "customData": {
+            "svgPathShape": "M 10 0L 55 0L 55 45L 10 45Z M 25 20L 40 20M 25 26L 40 26M 0 12L 10 12M 0 34L 10 34M 55 23L 65 23",
+            "svgViewBox": {
+              "width": 65,
+              "height": 45
+            },
+            "componentName": "Comparator (==)",
+            "category": "二、微架构计算与算术单元 (Datapath & Arithmetic Units)",
+            "isLibraryItem": true
+          },
+          "index": "aM"
+        }
+      ]
+    },
+    {
+      "id": "wxTVtrwzNKqrb-E-xtbtAA",
+      "status": "unpublished",
+      "created": 1791901316926,
+      "name": "Shifter (>>)",
+      "description": "微架构移位器 / 桶形移位器 (Barrel Shifter)。梯形轮廓内标有双尖括号 '>>'，宽端输入被移位数据与移位位数 shamt，窄端输出移位结果。支持逻辑右移、算术右移与左移操作。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              65,
+              0
+            ],
+            [
+              65,
+              44
+            ],
+            [
+              0,
+              44
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "5XjS5PJz",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 65,
+          "height": 44,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 65804,
+          "version": 2,
+          "versionNonce": 1509463295,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424394,
+          "customData": {
+            "svgPathShape": "M 10 0L 55 8L 55 36L 10 44Z M 26 18L 33 22L 26 26M 35 18L 42 22L 35 26M 0 12L 10 12M 0 32L 10 32M 55 22L 65 22",
+            "svgViewBox": {
+              "width": 65,
+              "height": 44
+            },
+            "componentName": "Shifter (>>)",
+            "category": "二、微架构计算与算术单元 (Datapath & Arithmetic Units)",
+            "isLibraryItem": true
+          },
+          "index": "aO"
+        }
+      ]
+    },
+    {
+      "id": "cuxJcXzmEXhpyDqmaEEjSg",
+      "status": "unpublished",
+      "created": 1791901316926,
+      "name": "MUX (4:1)",
+      "description": "四选一多路选择器 (4:1 Multiplexer)。梯形宽端输入 4 路数据通道 (I0..I3)，底部输入 2 位选择控制码 (S0, S1)，窄端输出选中的数据流。微架构操作数旁路 (Forwarding / Bypass) 与执行单元源操作数选择核心组件。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              50,
+              0
+            ],
+            [
+              50,
+              88
+            ],
+            [
+              0,
+              88
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "3UzDXcbe",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 50,
+          "height": 88,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 20141,
+          "version": 2,
+          "versionNonce": 222010655,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424395,
+          "customData": {
+            "svgPathShape": "M 10 0L 40 15L 40 65L 10 80Z M 0 15L 10 15M 0 30L 10 30M 0 50L 10 50M 0 65L 10 65M 40 40L 50 40M 20 75L 20 88M 30 70L 30 88",
+            "svgViewBox": {
+              "width": 50,
+              "height": 88
+            },
+            "componentName": "MUX (4:1)",
+            "category": "二、微架构计算与算术单元 (Datapath & Arithmetic Units)",
+            "isLibraryItem": true
+          },
+          "index": "aQ"
+        }
+      ]
+    },
+    {
+      "id": "_eBZGaMVW-sdqec3y6eVeg",
+      "status": "unpublished",
+      "created": 1791901316926,
+      "name": "DEMUX (1:2)",
+      "description": "一选二解复用器 (1:2 Demultiplexer)。梯形窄端输入单路数据，宽端引出 2 路分支数据，底端接收选择控制端。用于单端口写总线分流、多寄存器组译码写入。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              50,
+              0
+            ],
+            [
+              50,
+              65
+            ],
+            [
+              0,
+              65
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "gyswU452",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 50,
+          "height": 65,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 12354,
+          "version": 2,
+          "versionNonce": 1328062783,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424396,
+          "customData": {
+            "svgPathShape": "M 10 15L 40 0L 40 60L 10 45Z M 0 30L 10 30M 40 15L 50 15M 40 45L 50 45M 25 52L 25 65",
+            "svgViewBox": {
+              "width": 50,
+              "height": 65
+            },
+            "componentName": "DEMUX (1:2)",
+            "category": "二、微架构计算与算术单元 (Datapath & Arithmetic Units)",
+            "isLibraryItem": true
+          },
+          "index": "aS"
+        }
+      ]
+    },
+    {
+      "id": "tMy7DS9m6xm4qyn18Z-E7A",
+      "status": "unpublished",
+      "created": 1791901316926,
+      "name": "Pipeline Stage",
+      "description": "流水线级间切片 / 级间寄存器墙 (Pipeline Stage Barrier)。纵向细长寄存器柱体，底端带有边沿触发时钟三角标，两端引出数据线贯穿引脚。用于在 CPU 微架构图中清晰隔离 IF, ID, EX, MEM, WB 等流水线阶段。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              50,
+              0
+            ],
+            [
+              50,
+              70
+            ],
+            [
+              0,
+              70
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "ZQTq82BH",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 50,
+          "height": 70,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 29336,
+          "version": 2,
+          "versionNonce": 158623761,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424400,
+          "customData": {
+            "svgPathShape": "M 15 0L 35 0L 35 70L 15 70Z M 15 32L 23 35L 15 38M 0 17L 15 17M 35 17L 50 17M 0 53L 15 53M 35 53L 50 53",
+            "svgViewBox": {
+              "width": 50,
+              "height": 70
+            },
+            "componentName": "Pipeline Stage",
+            "category": "三、流水线、时序与握手接口 (Pipeline, Registers & Handshake)",
+            "isLibraryItem": true
+          },
+          "index": "aV"
+        }
+      ]
+    },
+    {
+      "id": "jtQi1JIy-oFo1-GHkPid1Q",
+      "status": "unpublished",
+      "created": 1791901316926,
+      "name": "DFF",
+      "description": "标准边沿 D 触发器 (D Flip-Flop)。包含数据端 D、时钟端 CLK (边沿小三角)、主输出 Q 以及带反相小圆圈的反相输出 Q#。数字逻辑时序电路的核心基石单元。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              64,
+              0
+            ],
+            [
+              64,
+              55
+            ],
+            [
+              0,
+              55
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "VNhPn7RR",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 64,
+          "height": 55,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 84741,
+          "version": 2,
+          "versionNonce": 1739537905,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424401,
+          "customData": {
+            "svgPathShape": "M 10 0L 50 0L 50 55L 10 55Z M 10 39L 18 44L 10 49M 0 13L 10 13M 50 13L 60 13M 54 41m -3 0a 3 3 0 1 0 6 0a 3 3 0 1 0 -6 0M 57 41L 64 41",
+            "svgViewBox": {
+              "width": 64,
+              "height": 55
+            },
+            "componentName": "DFF",
+            "category": "三、流水线、时序与握手接口 (Pipeline, Registers & Handshake)",
+            "isLibraryItem": true
+          },
+          "index": "aX"
+        }
+      ]
+    },
+    {
+      "id": "C36_q2xgNS4frrt51CE7Og",
+      "status": "unpublished",
+      "created": 1791901316926,
+      "name": "Register",
+      "description": "通用 N 位数据寄存器 (Multi-bit Register)。矩形外框内含时钟触发小三角，两端带数据输入与输出引脚。微架构程序计数器 (PC)、状态寄存器、临时数据暂存标准图元。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              60,
+              0
+            ],
+            [
+              60,
+              55
+            ],
+            [
+              0,
+              55
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "UC21ttBR",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 60,
+          "height": 55,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 7710,
+          "version": 2,
+          "versionNonce": 1205098449,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424402,
+          "customData": {
+            "svgPathShape": "M 10 0L 50 0L 50 55L 10 55Z M 10 39L 18 44L 10 49M 0 13L 10 13M 50 13L 60 13",
+            "svgViewBox": {
+              "width": 60,
+              "height": 55
+            },
+            "componentName": "Register",
+            "category": "三、流水线、时序与握手接口 (Pipeline, Registers & Handshake)",
+            "isLibraryItem": true
+          },
+          "index": "aZ"
+        }
+      ]
+    },
+    {
+      "id": "4pzyiKX6fLXps4PZl6Ss_w",
+      "status": "unpublished",
+      "created": 1791901316926,
+      "name": "Reg (EN/RST)",
+      "description": "带使能与复位控制的流水线寄存器 (Register with EN & RST)。除 D/Q/CLK 外，底部带有使能端 EN (用于流水线 Stall 停顿控制)，顶部带有复位端 RST (用于分支预测失败或异常时的流水线 Flush 冲刷)。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              60,
+              0
+            ],
+            [
+              60,
+              70
+            ],
+            [
+              0,
+              70
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "NA5HLfrf",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 60,
+          "height": 70,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 20221,
+          "version": 2,
+          "versionNonce": 2080060849,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424403,
+          "customData": {
+            "svgPathShape": "M 10 5L 50 5L 50 60L 10 60Z M 10 44L 18 49L 10 54M 0 18L 10 18M 50 18L 60 18M 30 60L 30 70M 30 0L 30 5",
+            "svgViewBox": {
+              "width": 60,
+              "height": 70
+            },
+            "componentName": "Reg (EN/RST)",
+            "category": "三、流水线、时序与握手接口 (Pipeline, Registers & Handshake)",
+            "isLibraryItem": true
+          },
+          "index": "ab"
+        }
+      ]
+    },
+    {
+      "id": "XDlAyZsunHEgTvLa9OOFXw",
+      "status": "unpublished",
+      "created": 1791901316926,
+      "name": "Skid Buffer",
+      "description": "流水线握手打拍缓冲器 (Skid Buffer / Pipeline Slice / Spill Register)。包含时钟端、正向前向 Data/Valid 数据通路与反向 Ready 反压流控通路，中间带双缓冲隔离切片。专门用于在 AXI4、TileLink 等解耦协议中切断组合逻辑反压关键路径，消除时序违例。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              75,
+              0
+            ],
+            [
+              75,
+              50
+            ],
+            [
+              0,
+              50
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "cwcZYLyl",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 75,
+          "height": 50,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 76748,
+          "version": 2,
+          "versionNonce": 659249041,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424404,
+          "customData": {
+            "svgPathShape": "M 10 0L 65 0L 65 50L 10 50Z M 10 38L 18 43L 10 48M 0 15L 10 15M 65 15L 75 15M 33 11L 38 15L 33 19M 75 35L 65 35M 10 35L 0 35M 42 31L 37 35L 42 39M 38 2L 38 48",
+            "svgViewBox": {
+              "width": 75,
+              "height": 50
+            },
+            "componentName": "Skid Buffer",
+            "category": "三、流水线、时序与握手接口 (Pipeline, Registers & Handshake)",
+            "isLibraryItem": true
+          },
+          "index": "ad"
+        }
+      ]
+    },
+    {
+      "id": "F0zPkC4RF4v5gbJXNfvXnw",
+      "status": "unpublished",
+      "created": 1791901316926,
+      "name": "Decoupled Handshake",
+      "description": "解耦双向握手信号对 (Decoupled Handshake Flow)。由一对平行的相反方向箭头组成：正向前进的 Valid 信号流与反向回退的 Ready 反压信号流。用于直接贴在微架构连接总线上标注该通道采用标准的 Ready-Valid 握手协议。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              55,
+              0
+            ],
+            [
+              55,
+              30
+            ],
+            [
+              0,
+              30
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "y58Y4G4T",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 55,
+          "height": 30,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 68609,
+          "version": 2,
+          "versionNonce": 469515633,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424405,
+          "customData": {
+            "svgPathShape": "M 0 5L 55 5M 47 0L 55 5L 47 10M 55 25L 0 25M 8 20L 0 25L 8 30",
+            "svgViewBox": {
+              "width": 55,
+              "height": 30
+            },
+            "componentName": "Decoupled Handshake",
+            "category": "三、流水线、时序与握手接口 (Pipeline, Registers & Handshake)",
+            "isLibraryItem": true
+          },
+          "index": "af"
+        }
+      ]
+    },
+    {
+      "id": "9hKO0ptcqFyaTjixj9iNkw",
+      "status": "unpublished",
+      "created": 1791901316926,
+      "name": "Register File (2R1W)",
+      "description": "双读单写通用寄存器堆 (Register File / GPR / PRF)。微架构核心部件，左侧引出读地址 RA1/RA2、写使能与写数据 WD，右侧引出读数据 RD1/RD2，底端接时钟。RISC-V、ARM 标量核心译码/执行级中枢。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              70,
+              0
+            ],
+            [
+              70,
+              65
+            ],
+            [
+              0,
+              65
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "Y8A4b3Tt",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 70,
+          "height": 65,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 43187,
+          "version": 2,
+          "versionNonce": 2035640145,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424406,
+          "customData": {
+            "svgPathShape": "M 10 0L 60 0L 60 65L 10 65Z M 10 51L 17 55L 10 59M 0 13L 10 13M 0 29L 10 29M 0 45L 10 45M 60 19L 70 19M 60 43L 70 43",
+            "svgViewBox": {
+              "width": 70,
+              "height": 65
+            },
+            "componentName": "Register File (2R1W)",
+            "category": "三、流水线、时序与握手接口 (Pipeline, Registers & Handshake)",
+            "isLibraryItem": true
+          },
+          "index": "ah"
+        }
+      ]
+    },
+    {
+      "id": "rlVe960STfixJBwB6DSeyQ",
+      "status": "unpublished",
+      "created": 1791901316926,
+      "name": "FIFO Queue",
+      "description": "水平分槽先进先出队列 (FIFO Queue Buffer)。包含多级物理存储槽位，左端带入队 Push 箭头，右端带出队 Pop 箭头。用于 CPU 取指目标队列 (FTQ)、指令缓冲 (IBuffer)、重排序缓冲 (ROB) 及跨时钟域异步队列。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              80,
+              0
+            ],
+            [
+              80,
+              35
+            ],
+            [
+              0,
+              35
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "hQEYzOmm",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 80,
+          "height": 35,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 87943,
+          "version": 2,
+          "versionNonce": 1861325407,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424409,
+          "customData": {
+            "svgPathShape": "M 10 0L 70 0L 70 35L 10 35Z M 25 0L 25 35M 40 0L 40 35M 55 0L 55 35M 0 17L 10 17M 70 17L 80 17",
+            "svgViewBox": {
+              "width": 80,
+              "height": 35
+            },
+            "componentName": "FIFO Queue",
+            "category": "四、队列、存储层次与缓存 (Queues, Memory & Cache Hierarchy)",
+            "isLibraryItem": true
+          },
+          "index": "ak"
+        }
+      ]
+    },
+    {
+      "id": "efaCYuFhEwiBHVP1KPOM_w",
+      "status": "unpublished",
+      "created": 1791901316926,
+      "name": "Vertical Queue",
+      "description": "垂直队列 / 返回地址栈 (Vertical Queue / RAS / Call Stack)。纵向分槽存储栈，顶端入栈，底端出栈。用于分支预测器中的 Return Address Stack (RAS)、数据深度栈及垂直流水线暂存。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              35,
+              0
+            ],
+            [
+              35,
+              80
+            ],
+            [
+              0,
+              80
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "rwxFxEiV",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 35,
+          "height": 80,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 74644,
+          "version": 2,
+          "versionNonce": 149810815,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424410,
+          "customData": {
+            "svgPathShape": "M 0 10L 35 10L 35 70L 0 70Z M 0 25L 35 25M 0 40L 35 40M 0 55L 35 55M 17 0L 17 10M 17 70L 17 80",
+            "svgViewBox": {
+              "width": 35,
+              "height": 80
+            },
+            "componentName": "Vertical Queue",
+            "category": "四、队列、存储层次与缓存 (Queues, Memory & Cache Hierarchy)",
+            "isLibraryItem": true
+          },
+          "index": "am"
+        }
+      ]
+    },
+    {
+      "id": "ctvuKRekX4jJUApFubgWbQ",
+      "status": "unpublished",
+      "created": 1791901316926,
+      "name": "Multi-Bank SRAM",
+      "description": "多 Bank 并行存储体 (Multi-Bank SRAM Array)。包含 4 个物理并列的独立访问 Bank 块，上下两端分别引出独立的读写端口与总线接口。微架构向量寄存器堆 (VRF)、多通道共享内存 (Shared Memory) 及非阻塞多端口存储结构必备。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              60,
+              0
+            ],
+            [
+              60,
+              70
+            ],
+            [
+              0,
+              70
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "UA768Bhc",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 60,
+          "height": 70,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 17620,
+          "version": 2,
+          "versionNonce": 927581855,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424411,
+          "customData": {
+            "svgPathShape": "M 0 10L 60 10L 60 60L 0 60Z M 15 10L 15 60M 30 10L 30 60M 45 10L 45 60M 7 0L 7 10M 22 0L 22 10M 37 0L 37 10M 52 0L 52 10M 7 60L 7 70M 22 60L 22 70M 37 60L 37 70M 52 60L 52 70",
+            "svgViewBox": {
+              "width": 60,
+              "height": 70
+            },
+            "componentName": "Multi-Bank SRAM",
+            "category": "四、队列、存储层次与缓存 (Queues, Memory & Cache Hierarchy)",
+            "isLibraryItem": true
+          },
+          "index": "ao"
+        }
+      ]
+    },
+    {
+      "id": "OwItiy5nNmT29T73gUjYGw",
+      "status": "unpublished",
+      "created": 1791901316926,
+      "name": "Cache Block",
+      "description": "组相联缓存存储块 (Set-Associative Cache Block)。微架构存储层次专用，明确划分为左侧 Tag 阵列与右侧 Data 阵列，左端输入访问索引 Index 与标签，右端输出匹配结果与 Cache Line 数据。用于 I-Cache、D-Cache 及 L2 缓存建构。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              85,
+              0
+            ],
+            [
+              85,
+              50
+            ],
+            [
+              0,
+              50
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "PMBc4fpe",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 85,
+          "height": 50,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 55808,
+          "version": 2,
+          "versionNonce": 951425727,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424413,
+          "customData": {
+            "svgPathShape": "M 10 0L 75 0L 75 50L 10 50Z M 32 0L 32 50M 36 0L 36 50M 0 15L 10 15M 0 35L 10 35M 75 25L 85 25",
+            "svgViewBox": {
+              "width": 85,
+              "height": 50
+            },
+            "componentName": "Cache Block",
+            "category": "四、队列、存储层次与缓存 (Queues, Memory & Cache Hierarchy)",
+            "isLibraryItem": true
+          },
+          "index": "aq"
+        }
+      ]
+    },
+    {
+      "id": "0Km2Fj4mQml14lTg9Dfaaw",
+      "status": "unpublished",
+      "created": 1791901316926,
+      "name": "TLB Entry",
+      "description": "页表转换与快表匹配块 (TLB Entry / Translation Block)。由双槽位构成，分别对应虚拟页号 VPN 与物理页号 PPN，外带地址转换匹配与命中标志。用于 MMU、I-TLB、D-TLB 虚拟内存地址映射与加速流程。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              80,
+              0
+            ],
+            [
+              80,
+              40
+            ],
+            [
+              0,
+              40
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "VdX6UhTR",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 80,
+          "height": 40,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 39452,
+          "version": 2,
+          "versionNonce": 567405279,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424414,
+          "customData": {
+            "svgPathShape": "M 10 0L 70 0L 70 40L 10 40Z M 40 0L 40 40M 0 20L 10 20M 70 20L 80 20M 20 13L 30 13M 20 27L 30 27M 50 13L 60 13M 50 27L 60 27",
+            "svgViewBox": {
+              "width": 80,
+              "height": 40
+            },
+            "componentName": "TLB Entry",
+            "category": "四、队列、存储层次与缓存 (Queues, Memory & Cache Hierarchy)",
+            "isLibraryItem": true
+          },
+          "index": "as"
+        }
+      ]
+    },
+    {
+      "id": "3QXGfNhKVb82sb1KmVu7Ng",
+      "status": "unpublished",
+      "created": 1791901316926,
+      "name": "Arbiter (RR Tree)",
+      "description": "轮询仲裁树 (Round-Robin Arbiter Tree)。汇聚梯形结构，下部宽端接入多路请求信号 Request[3:0]，顶部输出仲裁授予 Grant，内部带有轮询优先循环状态指示。用于多总线主设备仲裁、交叉开关端口争用冲突解决。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              60,
+              0
+            ],
+            [
+              60,
+              60
+            ],
+            [
+              0,
+              60
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "AyHo1hjP",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 60,
+          "height": 60,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 57897,
+          "version": 2,
+          "versionNonce": 398654577,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424418,
+          "customData": {
+            "svgPathShape": "M 0 50L 15 10L 45 10L 60 50Z M 8 60L 8 50M 22 60L 22 50M 38 60L 38 50M 52 60L 52 50M 30 10L 30 0M 24 32Q 30 25 36 32M 33 27L 36 32L 31 34",
+            "svgViewBox": {
+              "width": 60,
+              "height": 60
+            },
+            "componentName": "Arbiter (RR Tree)",
+            "category": "五、互连、仲裁与片上网络 (Interconnect, Arbiter & Network-on-Chip)",
+            "isLibraryItem": true
+          },
+          "index": "av"
+        }
+      ]
+    },
+    {
+      "id": "hT_hu70siErI9JrJaswEZA",
+      "status": "unpublished",
+      "created": 1791901316927,
+      "name": "Crossbar Switch",
+      "description": "多输入多输出交叉开关矩阵 (Crossbar Switch / XBar)。网格化矩阵结构，行与列交点带有可配置连接圆点，实现多主控端与多从属端之间的无阻塞全互连拓扑。用于多核片上互连、向量 Lane 与 PE 间数据交换。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              55,
+              0
+            ],
+            [
+              55,
+              55
+            ],
+            [
+              0,
+              55
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "ktktz5Uw",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 55,
+          "height": 55,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 26598,
+          "version": 2,
+          "versionNonce": 1810646609,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424419,
+          "customData": {
+            "svgPathShape": "M 0 0L 55 0L 55 55L 0 55Z M 18 0L 18 55M 37 0L 37 55M 0 18L 55 18M 0 37L 55 37M 18 18m -3 0a 3 3 0 1 0 6 0a 3 3 0 1 0 -6 0M 37 37m -3 0a 3 3 0 1 0 6 0a 3 3 0 1 0 -6 0",
+            "svgViewBox": {
+              "width": 55,
+              "height": 55
+            },
+            "componentName": "Crossbar Switch",
+            "category": "五、互连、仲裁与片上网络 (Interconnect, Arbiter & Network-on-Chip)",
+            "isLibraryItem": true
+          },
+          "index": "ax"
+        }
+      ]
+    },
+    {
+      "id": "zjp92_afhxtkdIlI_qK5zw",
+      "status": "unpublished",
+      "created": 1791901316927,
+      "name": "NoC Router",
+      "description": "片上网络 5 端口路由器 (NoC 5-Port Router)。中心带有交换矩阵，四周向外分别引出 Local (本地核心), North, South, East, West 4 个方向的双向数据链路。用于 2D Mesh 多核处理器与分布式 AI 芯片片上网络互连架构。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              75,
+              0
+            ],
+            [
+              75,
+              75
+            ],
+            [
+              0,
+              75
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "ah4sxIO7",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 75,
+          "height": 75,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 67332,
+          "version": 2,
+          "versionNonce": 1678857265,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424420,
+          "customData": {
+            "svgPathShape": "M 20 20L 55 20L 55 55L 20 55Z M 37 0L 37 20M 37 55L 37 75M 0 37L 20 37M 55 37L 75 37M 28 28L 47 47M 28 47L 47 28",
+            "svgViewBox": {
+              "width": 75,
+              "height": 75
+            },
+            "componentName": "NoC Router",
+            "category": "五、互连、仲裁与片上网络 (Interconnect, Arbiter & Network-on-Chip)",
+            "isLibraryItem": true
+          },
+          "index": "az"
+        }
+      ]
+    },
+    {
+      "id": "jgdOAfaKtZBMjglYAAlB0A",
+      "status": "unpublished",
+      "created": 1791901316927,
+      "name": "Bus Tap (Fork/Join)",
+      "description": "总线分线器与位宽标记 (Bus Tap / Fork / Join)。粗主干数据线通过斜向支线分流或汇聚，支线上标有斜杠位宽符号 '/'。用于在复杂的架构总线图中规范化绘制数据总线分支、字段拆分与总线位宽合并。",
+      "elements": [
+        {
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              45,
+              0
+            ],
+            [
+              45,
+              23
+            ],
+            [
+              0,
+              23
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": null,
+          "id": "gxA7xOtP",
+          "type": "line",
+          "x": 0,
+          "y": 0,
+          "width": 45,
+          "height": 23,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 0,
+          "opacity": 100,
+          "roundness": null,
+          "seed": 27982,
+          "version": 2,
+          "versionNonce": 337225233,
+          "updated": 1791900424426,
+          "isDeleted": false,
+          "groupIds": [],
+          "boundElements": [],
+          "link": null,
+          "locked": false,
+          "frameId": null,
+          "hasTextLink": false,
+          "created": 1791900424421,
+          "customData": {
+            "svgPathShape": "M 0 20L 45 20M 20 20L 40 0M 27 13L 32 7M 37 17L 41 23",
+            "svgViewBox": {
+              "width": 45,
+              "height": 23
+            },
+            "componentName": "Bus Tap (Fork/Join)",
+            "category": "五、互连、仲裁与片上网络 (Interconnect, Arbiter & Network-on-Chip)",
+            "isLibraryItem": true
+          },
+          "index": "b01"
+        }
+      ]
+    }
+  ],
+  "description": "数字电路与微架构硬件图元库 (SVG 矢量线条风格)。涵盖基础逻辑门、晶体管、时序逻辑、运算单元、队列缓存、多路器以及片上网络互连符号。适用于绘制处理器微架构 (Microarchitecture)、CPU 流水线、数据通路 (Datapath) 与数字电路原理图。"
+}

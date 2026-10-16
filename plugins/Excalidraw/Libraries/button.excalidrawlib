@@ -1,0 +1,191 @@
+{
+	"type": "excalidrawlib",
+	"version": 2,
+	"source": "https://excalidraw.com",
+	"libraryItems": [
+		{
+			"status": "unpublished",
+			"elements": [
+				{
+					"type": "rectangle",
+					"version": 881,
+					"versionNonce": 515128390,
+					"isDeleted": false,
+					"id": "kVlza8_Px9qvirm_EcdHL",
+					"fillStyle": "solid",
+					"strokeWidth": 1,
+					"strokeStyle": "solid",
+					"roughness": 0,
+					"opacity": 100,
+					"angle": 0,
+					"x": 426.00716710591433,
+					"y": 150.7814472247247,
+					"strokeColor": "#3bc9db",
+					"backgroundColor": "#3bc9db",
+					"width": 131.66664123535156,
+					"height": 80.83333969116217,
+					"seed": 1415966938,
+					"groupIds": [
+						"5YS7SRFcoMR7gxz6tHOl1",
+						"g_PrBuSLTd3fZmO4pJT0h"
+					],
+					"frameId": null,
+					"roundness": {
+						"type": 3
+					},
+					"boundElements": [],
+					"updated": 1701447212270,
+					"link": null,
+					"locked": false,
+					"customData": {
+						"onPointerDownHook": "new Notice('这是按钮……');",
+						"shadow": {
+							"shadowColor": "-20",
+							"shadowBlur": "0.1",
+							"shadowOffsetX": "0",
+							"shadowOffsetY": "0.05"
+						},
+						"hover": {
+							"id": [],
+							"shadow": {
+								"shadowColor": "-20",
+								"shadowBlur": "0.2",
+								"shadowOffsetX": "0",
+								"shadowOffsetY": "0.1"
+							}
+						}
+					}
+				},
+				{
+					"type": "text",
+					"version": 395,
+					"versionNonce": 783336326,
+					"isDeleted": false,
+					"id": "8nYwJtMt",
+					"fillStyle": "solid",
+					"strokeWidth": 1,
+					"strokeStyle": "solid",
+					"roughness": 0,
+					"opacity": 70,
+					"angle": 0,
+					"x": 444.765939383951,
+					"y": 175.3771715782003,
+					"strokeColor": "#ffffff",
+					"backgroundColor": "#3bc9db",
+					"width": 98.4375,
+					"height": 33.6,
+					"seed": 1994835354,
+					"groupIds": [
+						"g_PrBuSLTd3fZmO4pJT0h"
+					],
+					"frameId": null,
+					"roundness": null,
+					"boundElements": [],
+					"updated": 1701447212270,
+					"link": null,
+					"locked": false,
+					"fontSize": 28,
+					"fontFamily": 3,
+					"text": "Button",
+					"rawText": "Button",
+					"textAlign": "left",
+					"verticalAlign": "top",
+					"containerId": null,
+					"originalText": "Button",
+					"lineHeight": 1.2,
+					"baseline": 27
+				}
+			],
+			"id": "9uam_cRHI96C-ALqlWPtw",
+			"created": 1701447322043
+		},
+		{
+			"id": "onIkke1vDCClWfbOqXpQE",
+			"status": "unpublished",
+			"elements": [
+				{
+					"type": "rectangle",
+					"version": 813,
+					"versionNonce": 1713371663,
+					"isDeleted": false,
+					"id": "yLD_Ia0AlAxUkUcbPTDfb",
+					"fillStyle": "solid",
+					"strokeWidth": 1,
+					"strokeStyle": "solid",
+					"roughness": 0,
+					"opacity": 100,
+					"angle": 0,
+					"x": 1707.2459288665798,
+					"y": -415.95864896124823,
+					"strokeColor": "#3bc9db",
+					"backgroundColor": "#3bc9db",
+					"width": 131.66664123535156,
+					"height": 80.83333969116217,
+					"seed": 1101536416,
+					"groupIds": [
+						"7GPvjdIff07sXzNRhuDIM",
+						"086mJbW6TNWzzbR38ayxy"
+					],
+					"frameId": null,
+					"roundness": {
+						"type": 3
+					},
+					"boundElements": [],
+					"updated": 1694143156086,
+					"link": null,
+					"locked": false,
+					"customData": {
+						"hover": true,
+						"onPointerDownHook": "var exec = require('child_process').exec;\nexec('start \"inv_test\" \"D:/Program Files/ADI/LTspice/LTspice.exe\" \"D:/Project/LTspice/SCVR/96/inv_test.asc')",
+						"shadow": {
+							"shadowColor": "-20",
+							"shadowBlur": "0.1",
+							"shadowOffsetX": "0",
+							"shadowOffsetY": "0.05"
+						}
+					}
+				},
+				{
+					"type": "text",
+					"version": 326,
+					"versionNonce": 2001985583,
+					"isDeleted": false,
+					"id": "Yxd5pRLv",
+					"fillStyle": "solid",
+					"strokeWidth": 1,
+					"strokeStyle": "solid",
+					"roughness": 0,
+					"opacity": 70,
+					"angle": 0,
+					"x": 1732.2372830033273,
+					"y": -392.55152196024477,
+					"strokeColor": "#ffffff",
+					"backgroundColor": "#3bc9db",
+					"width": 82.03125,
+					"height": 33.6,
+					"seed": 1613786526,
+					"groupIds": [
+						"086mJbW6TNWzzbR38ayxy"
+					],
+					"frameId": null,
+					"roundness": null,
+					"boundElements": [],
+					"updated": 1694143156086,
+					"link": null,
+					"locked": false,
+					"fontSize": 28,
+					"fontFamily": 3,
+					"text": "SPICE",
+					"rawText": "SPICE",
+					"textAlign": "left",
+					"verticalAlign": "top",
+					"containerId": null,
+					"originalText": "SPICE",
+					"lineHeight": 1.2,
+					"baseline": 27
+				}
+			],
+			"created": 1694143159796
+		}
+	]
+}

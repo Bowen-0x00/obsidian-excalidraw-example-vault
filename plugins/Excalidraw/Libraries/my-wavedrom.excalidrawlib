@@ -1,0 +1,231 @@
+{
+	"type": "excalidrawlib",
+	"version": 2,
+	"source": "https://excalidraw.com",
+	"libraryItems": [
+		{
+			"id": "s2h8Xk8kUqwIzcz14uTxt",
+			"status": "unpublished",
+			"elements": [
+				{
+					"id": "amNMV-yeclinHMCpgO6Mx",
+					"type": "line",
+					"x": -375,
+					"y": 575,
+					"width": 200,
+					"height": 80,
+					"angle": 0,
+					"strokeColor": "#1e1e1e",
+					"backgroundColor": "transparent",
+					"fillStyle": "solid",
+					"strokeWidth": 2,
+					"strokeStyle": "solid",
+					"roughness": 0,
+					"opacity": 100,
+					"groupIds": [],
+					"frameId": null,
+					"roundness": null,
+					"seed": 1163678897,
+					"version": 213,
+					"versionNonce": 1759800767,
+					"isDeleted": false,
+					"boundElements": null,
+					"updated": 1712422983438,
+					"link": null,
+					"locked": false,
+					"points": [
+						[
+							0,
+							0
+						],
+						[
+							50,
+							0
+						],
+						[
+							50,
+							80
+						],
+						[
+							150,
+							80
+						],
+						[
+							150,
+							0
+						],
+						[
+							200,
+							0
+						]
+					],
+					"lastCommittedPoint": [
+						660,
+						0
+					],
+					"startBinding": null,
+					"endBinding": null,
+					"startArrowhead": null,
+					"endArrowhead": null
+				}
+			],
+			"created": 1712422989770
+		},
+		{
+			"id": "UPv5jWqU8HqK7_nykCLw2",
+			"status": "unpublished",
+			"elements": [
+				{
+					"id": "amNMV-yeclinHMCpgO6Mx",
+					"type": "line",
+					"x": -350,
+					"y": 400,
+					"width": 200,
+					"height": 80,
+					"angle": 0,
+					"strokeColor": "#1e1e1e",
+					"backgroundColor": "transparent",
+					"fillStyle": "solid",
+					"strokeWidth": 2,
+					"strokeStyle": "solid",
+					"roughness": 0,
+					"opacity": 100,
+					"groupIds": [],
+					"frameId": null,
+					"roundness": null,
+					"seed": 1163678897,
+					"version": 124,
+					"versionNonce": 2139070385,
+					"isDeleted": false,
+					"boundElements": null,
+					"updated": 1712422904621,
+					"link": null,
+					"locked": false,
+					"points": [
+						[
+							0,
+							0
+						],
+						[
+							50,
+							0
+						],
+						[
+							50,
+							-80
+						],
+						[
+							150,
+							-80
+						],
+						[
+							150,
+							0
+						],
+						[
+							200,
+							0
+						]
+					],
+					"lastCommittedPoint": [
+						660,
+						0
+					],
+					"startBinding": null,
+					"endBinding": null,
+					"startArrowhead": null,
+					"endArrowhead": null
+				}
+			],
+			"created": 1712422923450
+		},
+		{
+			"id": "YR2y-rVubNUVfLYnHcw7C",
+			"status": "unpublished",
+			"elements": [
+				{
+					"id": "8RmWgJjwPk-A2rz4M7q4W",
+					"type": "line",
+					"x": -400,
+					"y": -500,
+					"width": 260,
+					"height": 79.99999999999997,
+					"angle": 0,
+					"strokeColor": "#1e1e1e",
+					"backgroundColor": "transparent",
+					"fillStyle": "solid",
+					"strokeWidth": 2,
+					"strokeStyle": "solid",
+					"roughness": 0,
+					"opacity": 100,
+					"groupIds": [],
+					"frameId": null,
+					"roundness": null,
+					"seed": 93965809,
+					"version": 131,
+					"versionNonce": 923308479,
+					"isDeleted": false,
+					"boundElements": null,
+					"updated": 1712422714865,
+					"link": null,
+					"locked": false,
+					"customData": {
+						"fixedDragablePoints": {
+							"dragablePointIndex": [
+								3
+							],
+							"fixedPointsIndex": [
+								0,
+								1,
+								5,
+								6
+							],
+							"centerIndex": [
+								0
+							]
+						}
+					},
+					"points": [
+						[
+							0,
+							0
+						],
+						[
+							39.99999999999996,
+							-39.999999999999936
+						],
+						[
+							220,
+							-39.99999999999999
+						],
+						[
+							260,
+							0
+						],
+						[
+							219.99999999999943,
+							39.999999999999986
+						],
+						[
+							39.999999999999936,
+							39.99999999999996
+						],
+						[
+							0,
+							0
+						]
+					],
+					"lastCommittedPoint": [
+						0,
+						0
+					],
+					"startBinding": null,
+					"endBinding": null,
+					"startArrowhead": null,
+					"endArrowhead": null
+				}
+			],
+			"created": 1712422803418
+		}
+	]
+}

@@ -1,13 +1,23 @@
 {
+  "showTabTitlebarButtons": true,
   "copyLinkToElemenetAnchorTo100": false,
   "copyFrameLinkByName": false,
   "disableDoubleClickTextEditing": false,
-  "folder": "Excalidraw",
+  "phoneFooterSafeAreaPadding": false,
+  "tabletFooterSafeAreaPadding": false,
+  "folder": "plugins/Excalidraw",
+  "libraryFolderPath": "plugins/Excalidraw/Libraries",
+  "libraryFileName": "local-library",
+  "libraryStorageMode": "vault",
+  "libraryMigrationStatus": "not-required",
+  "libraryMigrationSnoozeUntil": 0,
   "cropFolder": "",
   "annotateFolder": "",
   "embedUseExcalidrawFolder": false,
-  "templateFilePath": "Excalidraw/Template.excalidraw",
-  "scriptFolderPath": "Excalidraw/Scripts",
+  "templateFilePath": "plugins/Excalidraw/Template.excalidraw",
+  "scriptFolderPath": "plugins/Excalidraw/Scripts",
+  "allowJavaScriptFiles": false,
+  "storeScriptFilesAsJavaScript": false,
   "fontAssetsPath": "Excalidraw/CJK Fonts",
   "loadChineseFonts": false,
   "loadJapaneseFonts": false,
@@ -15,8 +25,6 @@
   "compress": true,
   "decompressForMDView": false,
   "onceOffCompressFlagReset": true,
-  "onceOffGPTVersionReset": true,
-  "autosave": true,
   "autosaveIntervalDesktop": 60000,
   "autosaveIntervalMobile": 30000,
   "drawingFilenamePrefix": "Drawing ",
@@ -29,8 +37,10 @@
   "annotateSuffix": "",
   "annotatePrefix": "annotated_",
   "annotatePreserveSize": false,
+  "displaySVGInPreview": false,
   "previewImageType": "SVGIMG",
   "renderingConcurrency": 3,
+  "imageCacheRetentionDays": 30,
   "allowImageCache": true,
   "allowImageCacheInScene": true,
   "displayExportedImageIfAvailable": false,
@@ -52,7 +62,6 @@
   "penModeDoubleTapEraser": true,
   "penModeSingleFingerPanning": true,
   "penModeCrosshairVisible": true,
-  "panWithRightMouseButton": false,
   "renderImageInMarkdownReadingMode": false,
   "renderImageInHoverPreviewForMDNotes": false,
   "renderImageInMarkdownToPDF": false,
@@ -82,7 +91,7 @@
   "pageTransclusionCharLimit": 200,
   "wordWrappingDefault": 0,
   "removeTransclusionQuoteSigns": true,
-  "iframelyAllowed": true,
+  "oEmbedAllowed": false,
   "pngExportScale": 1,
   "exportWithTheme": true,
   "exportWithBackground": true,
@@ -96,6 +105,7 @@
   "embedType": "excalidraw",
   "embedMarkdownCommentLinks": true,
   "embedWikiLink": true,
+  "embedPlaceholderImage": true,
   "syncExcalidraw": false,
   "experimentalFileType": false,
   "experimentalFileTag": "✏️",
@@ -108,6 +118,8 @@
   "zoteroCompatibility": false,
   "multiFontsFolder": "plugins/Excalidraw/Fonts",
   "fieldSuggester": true,
+  "enableOnloadScripts": false,
+  "enableCommandLinks": false,
   "compatibilityMode": false,
   "drawingOpenCount": 0,
   "library": "deprecated",
@@ -124,16 +136,107 @@
   "mdFontColor": "Black",
   "mdBorderColor": "Black",
   "mdCSS": "",
+  "markdownImageSettings": {
+    "defaults": {
+      "width": 500,
+      "paddingBottom": 10,
+      "fontFamily": "Virgil",
+      "fontColor": "Black",
+      "border": {
+        "enabled": false,
+        "color": "Black"
+      },
+      "css": "",
+      "transclusion": {
+        "enabled": false,
+        "fontFamily": "Cascadia",
+        "fontColor": "Black",
+        "border": {
+          "enabled": false,
+          "color": "Black"
+        },
+        "css": ""
+      }
+    }
+  },
+  "markdownImageDeletionPreference": "ask",
   "scriptEngineSettings": {
     "Mindmap_Engine": {
       "Mindmap Configuration": {
         "value": "{\n  \"themes\": {\n    \"rainbow\": {\n      \"name\": \"🌈 彩虹分枝\",\n      \"rootBg\": \"#343a40\",\n      \"colors\": [\n        \"#e03131\",\n        \"#1971c2\",\n        \"#099268\",\n        \"#e8590c\",\n        \"#9c36b5\",\n        \"#fcc419\",\n        \"#3bc9db\"\n      ],\n      \"levels\": [\n        {\n          \"level\": 1,\n          \"strokeColor\": \"black\",\n          \"textColor\": \"#ffffff\",\n          \"fontSize\": 24,\n          \"strokeWidth\": 2\n        },\n        {\n          \"level\": 2,\n          \"strokeColor\": \"black\",\n          \"textColor\": \"black\",\n          \"fontSize\": 20,\n          \"strokeWidth\": 1\n        },\n        {\n          \"level\": 3,\n          \"strokeColor\": \"black\",\n          \"textColor\": \"black\",\n          \"fontSize\": 16,\n          \"strokeWidth\": 1\n        },\n        {\n          \"level\": 4,\n          \"strokeColor\": \"black\",\n          \"textColor\": \"black\",\n          \"fontSize\": 14,\n          \"strokeWidth\": 1\n        }\n      ]\n    },\n    \"morandi\": {\n      \"name\": \"🎨 莫兰迪色\",\n      \"rootBg\": \"#495057\",\n      \"colors\": [\n        \"#5c7a82\",\n        \"#b38269\",\n        \"#788560\",\n        \"#a68894\",\n        \"#7a6c5d\"\n      ],\n      \"levels\": [\n        {\n          \"level\": 1,\n          \"strokeColor\": \"black\",\n          \"textColor\": \"#ffffff\",\n          \"fontSize\": 24,\n          \"strokeWidth\": 2\n        },\n        {\n          \"level\": 2,\n          \"strokeColor\": \"black\",\n          \"textColor\": \"black\",\n          \"fontSize\": 20,\n          \"strokeWidth\": 1\n        },\n        {\n          \"level\": 3,\n          \"strokeColor\": \"black\",\n          \"textColor\": \"black\",\n          \"fontSize\": 16,\n          \"strokeWidth\": 1\n        },\n        {\n          \"level\": 4,\n          \"strokeColor\": \"black\",\n          \"textColor\": \"black\",\n          \"fontSize\": 14,\n          \"strokeWidth\": 1\n        }\n      ]\n    },\n    \"business\": {\n      \"name\": \"💼 商务蓝调\",\n      \"rootBg\": \"#0b2545\",\n      \"colors\": [\n        \"#1864ab\",\n        \"#0b7285\",\n        \"#087f5b\",\n        \"#5f3dc4\",\n        \"#c92a2a\"\n      ],\n      \"levels\": [\n        {\n          \"level\": 1,\n          \"strokeColor\": \"black\",\n          \"textColor\": \"#ffffff\",\n          \"fontSize\": 24,\n          \"strokeWidth\": 2\n        },\n        {\n          \"level\": 2,\n          \"strokeColor\": \"black\",\n          \"textColor\": \"black\",\n          \"fontSize\": 20,\n          \"strokeWidth\": 1\n        },\n        {\n          \"level\": 3,\n          \"strokeColor\": \"black\",\n          \"textColor\": \"black\",\n          \"fontSize\": 16,\n          \"strokeWidth\": 1\n        },\n        {\n          \"level\": 4,\n          \"strokeColor\": \"black\",\n          \"textColor\": \"black\",\n          \"fontSize\": 14,\n          \"strokeWidth\": 1\n        }\n      ]\n    },\n    \"custom\": {\n      \"name\": \"⚙️ 自定义色\",\n      \"rootBg\": \"#1e1e1e\",\n      \"colors\": [\n        \"#e03131\",\n        \"#1971c2\",\n        \"#099268\",\n        \"#e8590c\",\n        \"#9c36b5\",\n        \"#fcc419\"\n      ],\n      \"levels\": [\n        {\n          \"level\": 1,\n          \"strokeColor\": \"black\",\n          \"textColor\": \"#ffffff\",\n          \"fontSize\": 24,\n          \"strokeWidth\": 2\n        },\n        {\n          \"level\": 2,\n          \"strokeColor\": \"black\",\n          \"textColor\": \"black\",\n          \"fontSize\": 20,\n          \"strokeWidth\": 1\n        },\n        {\n          \"level\": 3,\n          \"strokeColor\": \"black\",\n          \"textColor\": \"black\",\n          \"fontSize\": 16,\n          \"strokeWidth\": 1\n        },\n        {\n          \"level\": 4,\n          \"strokeColor\": \"black\",\n          \"textColor\": \"black\",\n          \"fontSize\": 14,\n          \"strokeWidth\": 1\n        }\n      ]\n    }\n  },\n  \"defaultSettings\": {\n    \"direction\": \"LR\",\n    \"arrowType\": \"normal\",\n    \"defaultGap\": 15,\n    \"curveLength\": 40,\n    \"lengthBetweenElAndLine\": 100,\n    \"enableFixedPoint\": true,\n    \"theme\": \"rainbow\",\n    \"customTheme\": {\n      \"rootBg\": \"#1e1e1e\",\n      \"colors\": [\n        \"#e03131\",\n        \"#1971c2\",\n        \"#099268\",\n        \"#e8590c\",\n        \"#9c36b5\",\n        \"#fcc419\"\n      ],\n      \"levels\": [\n        {\n          \"level\": 1,\n          \"strokeColor\": \"black\",\n          \"textColor\": \"#ffffff\",\n          \"fontSize\": 24,\n          \"strokeWidth\": 2\n        },\n        {\n          \"level\": 2,\n          \"strokeColor\": \"black\",\n          \"textColor\": \"black\",\n          \"fontSize\": 20,\n          \"strokeWidth\": 1\n        },\n        {\n          \"level\": 3,\n          \"strokeColor\": \"black\",\n          \"textColor\": \"black\",\n          \"fontSize\": 16,\n          \"strokeWidth\": 1\n        },\n        {\n          \"level\": 4,\n          \"strokeColor\": \"black\",\n          \"textColor\": \"black\",\n          \"fontSize\": 14,\n          \"strokeWidth\": 1\n        }\n      ]\n    }\n  }\n}",
         "description": "⚠️ Do not modify JSON directly. Use 'Change Mindmap Style' script UI to update global defaults."
       }
+    },
+    "text shortcuts": {
+      "tab indent switch": {
+        "value": true,
+        "description": "Enable Tab key to indent text elements"
+      },
+      "space edit switch": {
+        "value": true,
+        "description": "Enable Space key to edit text elements"
+      },
+      "shift enter switch": {
+        "value": true,
+        "description": "Enable Shift+Enter to insert next line"
+      },
+      "shift arrows switch": {
+        "value": true,
+        "description": "Enable Shift+Arrows to jump between texts"
+      }
+    },
+    "text to header": {
+      "fontFamily": {
+        "value": "LXGW WenKai, LXGW WenKai, LXGW WenKai",
+        "description": "Font family for each header level"
+      },
+      "fontSize": {
+        "value": "48, 36, 28",
+        "description": "Font size for each header level"
+      },
+      "strokeColor": {
+        "value": "#0c8599, #15aabf, #3bc9db",
+        "description": "Stroke color for each header level"
+      },
+      "fontWeight": {
+        "value": "800, 700, 600",
+        "description": "Font weight for each header level"
+      }
+    },
+    "highlight line": {
+      "highlight color": {
+        "value": "#FFC800",
+        "description": "Highlight glow color"
+      }
+    },
+    "bullet_settings": {
+      "fontSize": 20,
+      "circleSize": 36,
+      "colorList": [
+        "#FFADAD",
+        "#FFD6A5",
+        "#FDFFB6",
+        "#CAFFBF",
+        "#9BF6FF",
+        "#A0C4FF",
+        "#BDB2FF",
+        "#FFC6FF"
+      ],
+      "fontColor": "#000000"
+    },
+    "extra colors": {
+      "Palette JSON Config": {
+        "value": "[\n  {\n    \"groupName\": {\n      \"zh\": \"莫兰迪色系\",\n      \"en\": \"Morandi Colors\"\n    },\n    \"colors\": [\n      {\n        \"name\": {\n          \"zh\": \"樱花粉\",\n          \"en\": \"Cherry Blossom\"\n        },\n        \"value\": \"#EDAFB8\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"粉黛色\",\n          \"en\": \"Powder Petal\"\n        },\n        \"value\": \"#F7E1D7\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"燕麦灰\",\n          \"en\": \"Dust Grey\"\n        },\n        \"value\": \"#DEDBD2\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"豆绿灰\",\n          \"en\": \"Ash Grey\"\n        },\n        \"value\": \"#B0C4B1\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"铁锈橙\",\n          \"en\": \"Iron Grey\"\n        },\n        \"value\": \"#f08c01\"\n      }\n    ]\n  },\n  {\n    \"groupName\": {\n      \"zh\": \"历史经典色\",\n      \"en\": \"Historical Classics\"\n    },\n    \"colors\": [\n      {\n        \"name\": {\n          \"zh\": \"青柠绿\",\n          \"en\": \"Lime Green\"\n        },\n        \"value\": \"#6ECC54\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"提香红\",\n          \"en\": \"Titian Red\"\n        },\n        \"value\": \"#D34947\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"马尔斯绿\",\n          \"en\": \"Marrs Green\"\n        },\n        \"value\": \"#018B8D\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"克莱因蓝\",\n          \"en\": \"Klein Blue\"\n        },\n        \"value\": \"#002FA7\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"勃艮第红\",\n          \"en\": \"Burgundy Red\"\n        },\n        \"value\": \"#470125\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"美泉宫黄\",\n          \"en\": \"Schonbrunn Yellow\"\n        },\n        \"value\": \"#F9D46C\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"蒂芙尼蓝\",\n          \"en\": \"Tiffany Blue\"\n        },\n        \"value\": \"#71E2D1\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"中国红\",\n          \"en\": \"Chinese Red\"\n        },\n        \"value\": \"#C8161D\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"凡戴克棕\",\n          \"en\": \"Vandyke Brown\"\n        },\n        \"value\": \"#492D22\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"爱马仕橙\",\n          \"en\": \"Hermes Orange\"\n        },\n        \"value\": \"#EB5C20\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"普鲁士蓝\",\n          \"en\": \"Prussian Blue\"\n        },\n        \"value\": \"#0D3A69\"\n      }\n    ]\n  }\n]",
+        "description": "⚠️ Do not modify JSON directly. Use 'Manage Custom Palette' script UI to update."
+      }
     }
   },
-  "previousRelease": "2.22.0-4",
+  "autostartScripts": {},
+  "autostartScriptFailures": {},
+  "previousRelease": "2.29.0-2",
   "showReleaseNotes": true,
+  "useDeclarativeSettings": true,
+  "excalidrawMasteryPromoCollapsed": false,
   "compareManifestToPluginVersion": true,
   "showNewVersionNotification": true,
   "latexBoilerplate": "\\color{blue}",
@@ -495,17 +598,274 @@
   },
   "markdownNodeOneClickEditing": false,
   "canvasImmersiveEmbed": true,
-  "startupScriptPath": "",
+  "startupScriptPath": "plugins/Excalidraw/Scripts/Agent-Drawing/mcp/Start-Agent-Drawing.md",
   "aiEnabled": true,
-  "openAIAPIToken": "",
-  "openAIDefaultTextModel": "gpt-5-mini",
-  "openAIDefaultTextModelMaxTokens": 4096,
-  "openAIDefaultVisionModel": "gpt-5-mini",
-  "openAIDefaultImageGenerationModel": "gpt-image-1",
-  "openAIURL": "https://api.openai.com/v1/chat/completions",
-  "openAIImageGenerationURL": "https://api.openai.com/v1/images/generations",
-  "openAIImageEditsURL": "https://api.openai.com/v1/images/edits",
-  "openAIImageVariationURL": "https://api.openai.com/v1/images/variations",
+  "aiVerboseLogging": false,
+  "aiProviderProfiles": {
+    "OpenAI": {
+      "provider": "openai",
+      "apiKey": "",
+      "baseURL": "https://api.openai.com/v1"
+    },
+    "Anthropic": {
+      "provider": "anthropic",
+      "apiKey": "",
+      "baseURL": "https://api.anthropic.com/v1"
+    },
+    "Google Gemini": {
+      "provider": "google",
+      "apiKey": "",
+      "baseURL": "https://generativelanguage.googleapis.com/v1beta"
+    },
+    "xAI": {
+      "provider": "xai",
+      "apiKey": "",
+      "baseURL": "https://api.x.ai/v1"
+    },
+    "OpenAI-compatible": {
+      "provider": "openai-compatible",
+      "apiKey": "",
+      "baseURL": "https://api.openai.com/v1"
+    }
+  },
+  "aiTextModelConfigs": {
+    "gpt-5-mini": {
+      "providerId": "OpenAI",
+      "model": "gpt-5-mini",
+      "endpoint": "",
+      "multimodalSupport": true
+    },
+    "claude-sonnet-4-5": {
+      "providerId": "Anthropic",
+      "model": "claude-sonnet-4-5",
+      "endpoint": "",
+      "multimodalSupport": true
+    },
+    "gemini-2.5-pro": {
+      "providerId": "Google Gemini",
+      "model": "gemini-2.5-pro",
+      "endpoint": "",
+      "multimodalSupport": true
+    },
+    "grok-4-fast": {
+      "providerId": "xAI",
+      "model": "grok-4-fast",
+      "endpoint": "",
+      "multimodalSupport": true
+    }
+  },
+  "aiImageModelConfigs": {
+    "dall-e-2": {
+      "providerId": "OpenAI",
+      "model": "dall-e-2",
+      "supportedSizes": [
+        "256x256",
+        "512x512",
+        "1024x1024"
+      ],
+      "supportsPromptImageTransforms": true,
+      "supportsMaskImageEdits": true
+    },
+    "dall-e-3": {
+      "providerId": "OpenAI",
+      "model": "dall-e-3",
+      "supportedSizes": [
+        "1024x1024",
+        "1792x1024",
+        "1024x1792"
+      ],
+      "supportsPromptImageTransforms": false,
+      "supportsMaskImageEdits": false
+    },
+    "gpt-image-1": {
+      "providerId": "OpenAI",
+      "model": "gpt-image-1",
+      "supportedSizes": [
+        "1024x1024",
+        "1536x1024",
+        "1024x1536"
+      ],
+      "supportsPromptImageTransforms": true,
+      "supportsMaskImageEdits": true
+    },
+    "gpt-image-1-mini": {
+      "providerId": "OpenAI",
+      "model": "gpt-image-1-mini",
+      "supportedSizes": [
+        "1024x1024",
+        "1536x1024",
+        "1024x1536"
+      ],
+      "supportsPromptImageTransforms": true,
+      "supportsMaskImageEdits": true
+    },
+    "gpt-image-1.5": {
+      "providerId": "OpenAI",
+      "model": "gpt-image-1.5",
+      "supportedSizes": [
+        "1024x1024",
+        "1536x1024",
+        "1024x1536"
+      ],
+      "supportsPromptImageTransforms": true,
+      "supportsMaskImageEdits": true
+    },
+    "gpt-image-2": {
+      "providerId": "OpenAI",
+      "model": "gpt-image-2",
+      "supportedSizes": [
+        "1024x1024",
+        "1536x1024",
+        "1024x1536",
+        "2048x2048"
+      ],
+      "supportsPromptImageTransforms": true,
+      "supportsMaskImageEdits": true
+    },
+    "gemini-2.5-flash-image": {
+      "providerId": "Google Gemini",
+      "model": "gemini-2.5-flash-image",
+      "supportedSizes": [
+        "1024x1024",
+        "848x1264",
+        "1264x848",
+        "896x1200",
+        "1200x896",
+        "928x1152",
+        "1152x928",
+        "768x1376",
+        "1376x768",
+        "1584x672"
+      ],
+      "supportsPromptImageTransforms": true,
+      "supportsMaskImageEdits": false
+    },
+    "gemini-3.1-flash-image-preview": {
+      "providerId": "Google Gemini",
+      "model": "gemini-3.1-flash-image-preview",
+      "supportedSizes": [
+        "512x512",
+        "1024x1024",
+        "2048x2048",
+        "4096x4096",
+        "424x632",
+        "848x1264",
+        "1696x2528",
+        "3392x5056",
+        "632x424",
+        "1264x848",
+        "2528x1696",
+        "5056x3392",
+        "448x600",
+        "896x1200",
+        "1792x2400",
+        "3584x4800",
+        "600x448",
+        "1200x896",
+        "2400x1792",
+        "4800x3584",
+        "464x576",
+        "928x1152",
+        "1856x2304",
+        "3712x4608",
+        "576x464",
+        "1152x928",
+        "2304x1856",
+        "4608x3712",
+        "384x688",
+        "768x1376",
+        "1536x2752",
+        "3072x5504",
+        "688x384",
+        "1376x768",
+        "2752x1536",
+        "5504x3072",
+        "792x168",
+        "1584x672",
+        "3168x1344",
+        "6336x2688",
+        "256x1024",
+        "512x2048",
+        "1024x4096",
+        "2048x8192",
+        "192x1536",
+        "384x3072",
+        "768x6144",
+        "1536x12288",
+        "1024x256",
+        "2048x512",
+        "4096x1024",
+        "8192x2048",
+        "1536x192",
+        "3072x384",
+        "6144x768",
+        "12288x1536"
+      ],
+      "supportsPromptImageTransforms": true,
+      "supportsMaskImageEdits": false
+    },
+    "gemini-3-pro-image-preview": {
+      "providerId": "Google Gemini",
+      "model": "gemini-3-pro-image-preview",
+      "supportedSizes": [
+        "1024x1024",
+        "2048x2048",
+        "4096x4096",
+        "848x1264",
+        "1696x2528",
+        "3392x5056",
+        "1264x848",
+        "2528x1696",
+        "5056x3392",
+        "896x1200",
+        "1792x2400",
+        "3584x4800",
+        "1200x896",
+        "2400x1792",
+        "4800x3584",
+        "928x1152",
+        "1856x2304",
+        "3712x4608",
+        "1152x928",
+        "2304x1856",
+        "4608x3712",
+        "768x1376",
+        "1536x2752",
+        "3072x5504",
+        "1376x768",
+        "2752x1536",
+        "5504x3072",
+        "1584x672",
+        "3168x1344",
+        "6336x2688"
+      ],
+      "supportsPromptImageTransforms": true,
+      "supportsMaskImageEdits": false
+    },
+    "grok-imagine-image-quality": {
+      "providerId": "xAI",
+      "model": "grok-imagine-image-quality",
+      "supportedSizes": [
+        "1024x1024"
+      ],
+      "supportsPromptImageTransforms": true,
+      "supportsMaskImageEdits": false
+    },
+    "grok-imagine-image-pro": {
+      "providerId": "xAI",
+      "model": "grok-imagine-image-pro",
+      "supportedSizes": [
+        "1024x1024"
+      ],
+      "supportsPromptImageTransforms": true,
+      "supportsMaskImageEdits": false
+    }
+  },
+  "aiDefaultTextModel": "gpt-5-mini",
+  "aiDefaultMultimodalModel": "gpt-5-mini",
+  "aiDefaultImageGenerationModel": "gpt-image-1",
+  "aiDefaultMaxOutgoingTokens": 0,
+  "aiDefaultMaxResponseTokens": 0,
   "modifierKeyConfig": {
     "Mac": {
       "LocalFileDragAction": {
@@ -795,7 +1155,6 @@
   "longPressDesktop": 500,
   "longPressMobile": 500,
   "doubleClickLinkOpenViewMode": true,
-  "isDebugMode": false,
   "rank": "Bronze",
   "modifierKeyOverrides": [
     {
@@ -827,6 +1186,8 @@
   "strokeWidthSliderMin": 0,
   "strokeWidthSliderMax": 100,
   "strokeWidthSliderStep": 1,
+  "latexEditorMode": "native",
+  "latexResizeMode": "fontsize",
   "pdfSettings": {
     "pageSize": "A4",
     "pageOrientation": "portrait",
@@ -837,6 +1198,17 @@
     "margin": "normal"
   },
   "disableContextMenu": false,
-  "latexEditorMode": "native",
-  "latexResizeMode": "fontsize"
+  "onceOffGPTVersionReset": true,
+  "autosave": true,
+  "panWithRightMouseButton": false,
+  "openAIAPIToken": "",
+  "openAIDefaultTextModel": "gpt-5-mini",
+  "openAIDefaultTextModelMaxTokens": 4096,
+  "openAIDefaultVisionModel": "gpt-5-mini",
+  "openAIDefaultImageGenerationModel": "gpt-image-1",
+  "openAIURL": "https://api.openai.com/v1/chat/completions",
+  "openAIImageGenerationURL": "https://api.openai.com/v1/images/generations",
+  "openAIImageEditsURL": "https://api.openai.com/v1/images/edits",
+  "openAIImageVariationURL": "https://api.openai.com/v1/images/variations",
+  "isDebugMode": false
 }

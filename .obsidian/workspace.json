@@ -8,18 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "49df9c26f85b5155",
+            "id": "d59433ee48d57759",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "example/思维导图/思维导图.excalidraw.md"
+                "file": "plugins/Excalidraw/Drawing 2026-10-16 02.51.09.excalidraw.md"
               },
               "icon": "excalidraw-icon",
-              "title": "思维导图.excalidraw"
+              "title": "Drawing 2026-10-16 02.51.09.excalidraw"
+            }
+          },
+          {
+            "id": "79580e8dbaf5a84e",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "example/Example-Vault-Smoke-Test.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Example-Vault-Smoke-Test.excalidraw"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -39,7 +52,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -165,53 +180,53 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "49df9c26f85b5155",
+  "active": "79580e8dbaf5a84e",
   "lastOpenFiles": [
-    "example/思维导图/思维导图.excalidraw.md",
-    "example/代码高亮/代码高亮.excalidraw.md",
-    "Excalidraw/Scripts/Downloaded(Custom)/Feature-Code-Highlight-Engine.md",
-    "Excalidraw/Scripts/Downloaded(Custom)/Action-Toggle-Code-Highlight.md",
-    "Excalidraw/Scripts/Downloaded(Custom)/Action-Style-Code-Highlight.md",
-    "example/代码高亮",
-    "Welcome.md",
-    "example/思维导图/未命名.md",
-    "example/思维导图/导入.md",
-    "example/思维导图/导出.md",
-    "Excalidraw-LaTeX-Edit.md",
-    "Excalidraw/Scripts/Downloaded(Custom)/Feature-Mindmap-Engine.md",
-    "Excalidraw/Scripts/Downloaded(Custom)/Action-Import-Mindmap-From-Clipboard.md",
-    "Excalidraw/Scripts/Downloaded(Custom)/Action-Export-Mindmap-To-Md.md",
-    "Excalidraw/Scripts/Downloaded(Custom)/Action-Export-Mindmap-To-Clipboard.md",
-    "Excalidraw/Scripts/Downloaded(Custom)/Action-Detach-Mindmap.md",
-    "Excalidraw/Scripts/Downloaded(Custom)/Action-Create-Mindmap.md",
-    "Excalidraw/Scripts/Downloaded(Custom)/Action-Change-Mindmap-Style.md",
-    "example/思维导图/Drawing 2026-05-09 16.40.30.excalidraw.md",
-    "example/思维导图/Drawing 2026-05-09 15.12.51.excalidraw.md",
-    "未命名.md",
-    "example/思维导图/Drawing 2026-05-09 15.02.25.excalidraw.md",
-    "example/思维导图/Drawing 2026-05-09 12.35.59.excalidraw.md",
-    "example/思维导图/Drawing 2026-05-09 12.12.46.excalidraw.md",
-    "example/思维导图/未命名.base",
-    "example/思维导图",
-    "example/example - 思维导图.excalidraw.md",
-    "example/example - 图层.excalidraw.md",
-    "Excalidraw/Scripts/Downloaded(Custom)",
-    "Excalidraw/Scripts",
-    "Excalidraw",
+    "example/Example-Vault-Smoke-Test.png",
+    "plugins/Excalidraw/Drawing 2026-10-16 02.51.09.excalidraw.md",
+    "example/Example-Vault-Smoke-Test.excalidraw.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/zoom/Feature-Zoom-Hide-Engine.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/zoom/Action-Toggle-Zoom-Hide.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/zoom",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/wave-drom/Feature-Wavedrom-Engine.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/wave-drom/Action-Wavedrom-Manager.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/wave-drom",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/thumbnail/Feature-Thumbnail-Engine.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/thumbnail/Action-Toggle-Thumbnail.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/thumbnail",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Feature-Text-Shortcuts-Engine.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Feature-Text-Render-Engine.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Feature-Template-Engine.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Feature-Markdown-Header-Engine.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Feature-Input-Emoji-Engine.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Text-Copy-Elements.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Split-Text-Segments.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Paste-Wrapped-Text.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Highlight-Background-UI.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Highlight-Background-Silent.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Format-Text-Partials.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Format-Text-Partials-Silent.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Format-Text-Globals.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/tag/Action-Set-Tags.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/tag",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Format-Text-Global-Silent.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/table/Feature-Table-Paste-MD.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/table/Feature-Table-Engine.md",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/table",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/swimlane",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/step-appear",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/space",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/smart-art",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Top-Brace.svg",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Top-Brace-Path.svg",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Right-Brace-Path.svg",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Left-Brace.svg",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Left-Brace-Path.svg",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Bottom-Brace.svg",
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Bottom-Brace-Path.svg",
     "images/Untitled Diagram.svg",
-    "example/mindmap from templater.md",
-    "plugins/Excalidraw/Library/digital-circuit-components(svg).excalidrawlib",
-    "plugins/Excalidraw/Library/digital-circuit-components.excalidrawlib",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-translateCanvasHook.js",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/autorun-Set laser color.js",
     "example/attachments/Astar.gif",
-    "example/attachments/tree.gif",
-    "images/icons/Anki-icon.svg",
-    "example/attachments/example - 重复脚本.excalidraw_image_20241129140423_885.png",
-    "example/摘录方式2.excalidraw.png",
-    "example/摘录方式2.excalidraw.svg",
-    "example/attachments/image_9.png",
-    "example/attachments/image_8.png",
-    "example/attachments/image_7.png"
+    "example/attachments/tree.gif"
   ]
 }
