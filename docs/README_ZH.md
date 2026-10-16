@@ -1,10 +1,13 @@
 # Obsidian-Excalidraw-Eample-Vault
 [English](../README.md) | [简体中文](./README_ZH.md)
 
-这是一个打包好的ob库，包含了[修改的excalidraw插件](https://github.com/Bowen-0x00/obsidian-excalidraw-plugin-ymjr) 和很多 [自定义脚本](https://github.com/Bowen-0x00/obsidian-excalidraw-scripts)。其中放了现成的excalidraw画布文件展示了一些有趣的功能。（不是全部，慢慢制作中）
+这是一个打包好的开箱即用 Obsidian 示例库，包含：
+- **修改版 Excalidraw 插件**：[obsidian-excalidraw-plugin-ymjr](https://github.com/Bowen-0x00/obsidian-excalidraw-plugin-ymjr)
+- **丰富的自定义扩展脚本**：[obsidian-excalidraw-scripts](https://github.com/Bowen-0x00/obsidian-excalidraw-scripts)（含 140+ 常用绘图与交互脚本）
+- **AI Agent 原生绘图 Skill & Bridge**：原生接入 OMP (Oh My Prompt)、Claude Desktop、Cursor 等 AI 智能体，支持代码/架构/电路/流程图的自主规划、素材调用、原生绘制与 PNG 视觉闭环。
+- **矢量素材库与语义检索摘要**：内置 40+ 套 Excalidraw 矢量素材库，包含 100% 结构化描述的数字电路/微架构硬件图元库与 `library-index.md` 索引摘要。
 
-可以方便不熟悉如何安装插件和设置obsidian-excalidraw-plugin的朋友直接上手试验功能（直接用obsidian打开），以及参考示例库的设置。
-
+库中放了现成的 Excalidraw 画布文件展示了一些有趣的功能与微架构图元效果，方便不熟悉插件安装和复杂配置的朋友**直接用 Obsidian 打开即刻体验**。
 你可以看这个[视频](https://www.bilibili.com/video/BV1zN4y1H7Dx/?vd_source=2a4c442f72a74e8d915c1fb5f59d4ba4)以快速查看部分功能。
 
 ## 安装与使用
@@ -21,6 +24,26 @@
 ### 使用步骤
 1. 克隆或下载压缩包后解压
 2. obsidian打开库，选择这个文件夹（上一步克隆或解压后的文件夹）
+
+## AI Agent 开箱即用绘图
+
+本仓库已预先配置好面向 AI 智能体的完整闭环绘图能力：
+
+### 1. 架构与组成
+- **Skill 规则与参考手册**：放置于 `skills/obsidian-excalidraw`、`.omp/skills/` 与 `.claude/skills/`，向 AI Agent 提供微架构/流程图/布局/字体与素材库选型规则。
+- **Agent-Drawing 桥接引擎**：放置于 `plugins/Excalidraw/Scripts/Agent-Drawing/`，包含 `mcp/Start-Agent-Drawing.md`、`mcp/Engine-Agent-Bridge.md` 及 16 个原生特性引擎（Hover、Shadow、Gradient、Swimlane、ECharts、Mindmap、Table、WaveDrom 等）。
+- **自启动 Bridge 服务**：Excalidraw 插件启动时会自动运行 `Start-Agent-Drawing.md`，在本地环回端口 `27124` 启动轻量安全的 Bridge 服务，无须手动执行任何命令。
+- **结构化素材库**：位于 `plugins/Excalidraw/Libraries/`，配有 `library-index.md` 摘要。AI Agent 可以根据语义先读摘要初筛，再通过关键词 query 精准获取图元（如 ALU、MUX、NOR、寄存器堆、NoC Router 等），并按精确比例原生注入画布。
+
+### 2. 使用方法
+1. **打开示例库**：用 Obsidian 打开本仓库文件夹。
+2. **配置 AI 客户端**：
+   - 若使用 **OMP (Oh My Prompt)**：OMP 会自动识别 `.omp/skills/obsidian-excalidraw`；配置 Excalidraw MCP 服务后即可直接对话。
+   - 若使用 **Claude Desktop / Cursor**：将 `skills/obsidian-excalidraw` 挂载为 Skill，或配置 MCP server。
+3. **自然语言绘图**：
+   在 Agent 对话框中发送指令，例如：
+   > “帮我新建一个硬件微架构图，使用数字电路素材库中的 ALU、MUX 和通用寄存器堆，画一个两阶段运算数据通路。”
+   Agent 会自动执行：发现库 -> 读取摘要 -> 检索图元 Exact ID -> 原生注入画布 -> 查看渲染 PNG 闭环验证。
 
 ## 移植功能到自己的库
 部分功能是需要自定义脚本和修改后的excalidraw插件搭配使用，而也有部分功能只需要自定义脚本。

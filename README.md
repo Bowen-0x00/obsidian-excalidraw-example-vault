@@ -2,12 +2,13 @@
 
 [English](./README.md) | [简体中文](docs/README_ZH.md)
 
-This is a packaged obsidian vault that includes the [modified excalidraw plugin](https://github.com/Bowen-0x00/obsidian-excalidraw-plugin-ymjr) and many [custom scripts](https://github.com/Bowen-0x00/obsidian-excalidraw-scripts). 
+This is a packaged, out-of-the-box Obsidian vault that includes:
+- **[Modified Excalidraw Plugin](https://github.com/Bowen-0x00/obsidian-excalidraw-plugin-ymjr)**: Enhanced with native engines, hooks, and REST bridge integration.
+- **[Custom Scripts Suite](https://github.com/Bowen-0x00/obsidian-excalidraw-scripts)**: 140+ practical drawing, formatting, and interactive scripts.
+- **AI Agent Native Drawing Skill & Bridge**: Out-of-the-box integration with OMP (Oh My Prompt), Claude Desktop, Cursor, and other AI agents for autonomous planning, native symbol insertion, and visual PNG verification.
+- **Curated Excalidraw Libraries & Semantic Index**: 40+ vector component libraries (`plugins/Excalidraw/Libraries/`), including a 100% structured digital circuit & microarchitecture library and `library-index.md` catalog for AI semantic retrieval.
 
-It contains pre-made excalidraw canvas files that showcase some interesting features (not all, still a work in progress).
-
-It is convenient for friends who are not familiar with how to install plugins and set up the obsidian-excalidraw-plugin to directly experiment with the features (open with Obsidian) and refer to the example vault settings.
-
+Pre-made Excalidraw canvas files are provided to showcase features and components, allowing anyone to **open with Obsidian and experiment immediately without manual setup**.
 You can watch this [video](https://www.bilibili.com/video/BV1zN4y1H7Dx/?vd_source=2a4c442f72a74e8d915c1fb5f59d4ba4) to quickly see some of the features: Video.
 
 ## Installation and Usage
@@ -25,6 +26,26 @@ For example:
 
 1. Clone or download the compressed package and extract it.
 2. Open Obsidian and select this folder (the folder you cloned or extracted in the previous step).
+## AI Agent Out-of-the-Box Drawing
+
+This repository comes pre-configured for end-to-end autonomous AI diagramming:
+
+### 1. Architecture & Components
+- **Skill Rules & Reference Docs**: Located in `skills/obsidian-excalidraw`, `.omp/skills/`, and `.claude/skills/`. Provides agents with domain rules for microarchitecture, flowcharts, typography, and library component selection.
+- **Agent-Drawing Bridge & Engines**: Located in `plugins/Excalidraw/Scripts/Agent-Drawing/`. Includes `mcp/Start-Agent-Drawing.md`, `mcp/Engine-Agent-Bridge.md`, and 16 native feature engines (Hover, Shadow, Gradient, Swimlane, ECharts, Mindmap, Table, WaveDrom, etc.).
+- **Auto-Starting Local Bridge**: When Obsidian opens this vault, the Excalidraw plugin automatically launches `Start-Agent-Drawing.md` and hosts a local loopback REST Bridge on port `27124`.
+- **Structured Symbol Libraries**: Stored in `plugins/Excalidraw/Libraries/` with `library-index.md`. AI Agents can read catalog summaries, query exact item IDs (e.g., ALU, MUX, NOR, Register File, NoC Router), and insert them with precise scaling directly onto the canvas.
+
+### 2. How to Use with AI Agents
+1. **Open Vault**: Open this folder in Obsidian.
+2. **Configure AI Client**:
+   - **OMP (Oh My Prompt)**: OMP automatically discovers `.omp/skills/obsidian-excalidraw`. Connect your Excalidraw MCP server and start chatting.
+   - **Claude Desktop / Cursor**: Point to `skills/obsidian-excalidraw` as a skill or configure the MCP server.
+3. **Draw with Natural Language**:
+   Send a prompt to your agent, such as:
+   > "Create a CPU datapath diagram using the ALU, MUX, and Register File from the digital circuit library."
+   The agent will discover the library, read the index, retrieve exact item IDs, natively insert elements into the canvas, and inspect the rendered PNG to verify layout.
+
 
 ## Porting Features to Your Own vault
 Some features require a combination of custom scripts and the modified excalidraw plugin, while others only require custom scripts.

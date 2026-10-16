@@ -11,28 +11,15 @@
             "id": "d59433ee48d57759",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "image",
               "state": {
-                "file": "plugins/Excalidraw/Drawing 2026-10-16 02.51.09.excalidraw.md"
+                "file": "images/Untitled Diagram.svg"
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-10-16 02.51.09.excalidraw"
-            }
-          },
-          {
-            "id": "79580e8dbaf5a84e",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "example/Example-Vault-Smoke-Test.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Example-Vault-Smoke-Test.excalidraw"
+              "icon": "lucide-image",
+              "title": "Untitled Diagram"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -180,11 +167,13 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "79580e8dbaf5a84e",
+  "active": "587ccf90dd5151c5",
   "lastOpenFiles": [
-    "example/Example-Vault-Smoke-Test.png",
     "plugins/Excalidraw/Drawing 2026-10-16 02.51.09.excalidraw.md",
+    "example/Example-Vault-Smoke-Test.png",
     "example/Example-Vault-Smoke-Test.excalidraw.md",
+    "images/switch connection shape2.gif",
+    "example images/font.gif",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/zoom/Feature-Zoom-Hide-Engine.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/zoom/Action-Toggle-Zoom-Hide.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/zoom",
@@ -224,9 +213,6 @@
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Left-Brace.svg",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Left-Brace-Path.svg",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Bottom-Brace.svg",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Bottom-Brace-Path.svg",
-    "images/Untitled Diagram.svg",
-    "example/attachments/Astar.gif",
-    "example/attachments/tree.gif"
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Bottom-Brace-Path.svg"
   ]
 }
