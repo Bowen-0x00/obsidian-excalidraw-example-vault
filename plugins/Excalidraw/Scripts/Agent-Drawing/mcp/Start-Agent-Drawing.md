@@ -154,13 +154,6 @@ const ENGINES = [
     properties: ["_ymjr_mdCacheMap", "html2canvas"],
   },
   {
-    id: "table",
-    name: "Table Layout & Structure Engine",
-    path: "table/Feature-Table-Engine.md",
-    scriptId: "ymjr.feature.table-engine",
-    properties: [],
-  },
-  {
     id: "arrow_head_resize",
     name: "Arrowhead Resizer Engine",
     path: "arrow/Feature-Arrow-Head-Resize-Engine.md",
