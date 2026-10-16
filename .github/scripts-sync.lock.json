@@ -2,24 +2,144 @@
   "schemaVersion": 1,
   "source": {
     "repository": "Bowen-0x00/obsidian-excalidraw-scripts",
-    "commit": "343f9ec9bc175406c50f1cd6c0c5515e85103ef8"
+    "commit": "f3202f70efb8e10edc4011e279ca81925d32474b"
   },
-  "matchedCount": 10,
+  "matchedCount": 145,
   "files": {
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Bottom-Brace-Path.md": {
+      "source": "Scripts/brace/Action-Add-Bottom-Brace-Path.md",
+      "sha256": "8ec48c40c5ba6d29bc3fc420e3d3f37480d827219a9bce9bdbe187c68e7b57f6",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Bottom-Brace.md": {
+      "source": "Scripts/brace/Action-Add-Bottom-Brace.md",
+      "sha256": "fc3dcf0b911e0724b3d035af683e7d78b44aa34258e07de2e5fd47a20b4e9628",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Brace-Shadow.md": {
+      "source": "Scripts/brace/Action-Add-Brace-Shadow.md",
+      "sha256": "f20e174b72816de800f45a9eadb7a229a466066166ff2fe295ee390c59107d2a",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Left-Brace-Path.md": {
+      "source": "Scripts/brace/Action-Add-Left-Brace-Path.md",
+      "sha256": "08e1f561ea2f5aff71b964a9235b31618b98b837e07016522e533520e3a2a29f",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Left-Brace.md": {
+      "source": "Scripts/brace/Action-Add-Left-Brace.md",
+      "sha256": "c6f9644ab22fe72e8c49865a266f553e915db4813500b3f3ef2d4e2dcc1d2063",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Right-Brace-Path.md": {
+      "source": "Scripts/brace/Action-Add-Right-Brace-Path.md",
+      "sha256": "29a6e79b4229bd2e6adb4cc2ef8af8405496ecaf9b0b8fd85a2e192a40f65457",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Right-Brace.md": {
+      "source": "Scripts/brace/Action-Add-Right-Brace.md",
+      "sha256": "1793f37a52fe1683d7bfa11f82584f02958a5af6692d10b640185d3663ed2712",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Top-Brace-Path.md": {
+      "source": "Scripts/brace/Action-Add-Top-Brace-Path.md",
+      "sha256": "3abd98805e58e7b0cbebbdfd44e71682037fba59c36e7216b440a9cf7eece356",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Top-Brace.md": {
+      "source": "Scripts/brace/Action-Add-Top-Brace.md",
+      "sha256": "559ce8f4bec349012d9993e0075565e1a31a784f40a413be066d031c998ed0eb",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/connection/Action-Advanced-Connector.md": {
+      "source": "Scripts/connection/Action-Advanced-Connector.md",
+      "sha256": "f705506a8fc8cb804b7b1466d21e114d688d61e91009b6df7badb22e5f853ce6",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/select/Action-Advanced-Select.md": {
+      "source": "Scripts/select/Action-Advanced-Select.md",
+      "sha256": "15bf85b9509cfcc795422eabbd07abc08b7a7e5f51611b46902499e9ee51c255",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/generate/Action-Boolean-Operations.md": {
+      "source": "Scripts/generate/Action-Boolean-Operations.md",
+      "sha256": "c53955372f64a45e3b5bef38bfb3fbf8c3c2c753dd481778fab8bdf123d625fe",
+      "version": "1.0.1"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/generate/Action-Bullet-Manager.md": {
+      "source": "Scripts/generate/Action-Bullet-Manager.md",
+      "sha256": "990f9fdbbfe7825d175e13263665e3b31f6b35bf56e29f432fe42fd275884918",
+      "version": "1.0.0"
+    },
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/mindmap/Action-Change-Mindmap-Style.md": {
       "source": "Scripts/mindmap/Action-Change-Mindmap-Style.md",
       "sha256": "26fcba5b804ba8e768096088ecafd333f52f92ffd1396043586f0b00128e90de",
       "version": "1.1.1"
     },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/Debug/Action-Clear-Custom-Data.md": {
+      "source": "Scripts/Debug/Action-Clear-Custom-Data.md",
+      "sha256": "13e786517d32a164084673a610f4cfca4f5e8b3a79e198cf44c7a6377cbb68f8",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/latex/Action-Convert-Freedraw-To-Latex.md": {
+      "source": "Scripts/latex/Action-Convert-Freedraw-To-Latex.md",
+      "sha256": "f9586a5438e97b324a124515a2b897f3bc4635fcb23e9446692c71d3b52d1fec",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/callout/Action-Create-Callout.md": {
+      "source": "Scripts/callout/Action-Create-Callout.md",
+      "sha256": "53007e676555a435fd64aca956f350e2c0575bc4a35a0a33246bec86a77d7310",
+      "version": "1.0.0"
+    },
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/mindmap/Action-Create-Mindmap.md": {
       "source": "Scripts/mindmap/Action-Create-Mindmap.md",
-      "sha256": "223372fe8f2101fde8d00632a8eee20409c034f74cafbefeda32e71859773376",
-      "version": "1.1.1"
+      "sha256": "bf8fb5391bc4c960ebe2ecfd31af8760ca95bb9b4a3bb463a49e246a203f2894",
+      "version": "1.1.2"
     },
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/mindmap/Action-Detach-Mindmap.md": {
       "source": "Scripts/mindmap/Action-Detach-Mindmap.md",
-      "sha256": "acccf427a15d3eb79dc3f9a25b5011dd96074ce695856657c7c1cd9077ce50d1",
-      "version": "1.1.1"
+      "sha256": "a7c4d7a01896697692c16e8b7fa660d162e2a4b5cdf5e473f5a092d29840e383",
+      "version": "1.1.2"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/distribute/Action-Distribute-Diagonally.md": {
+      "source": "Scripts/distribute/Action-Distribute-Diagonally.md",
+      "sha256": "85f00fd640f7c2d5414bff1eaf2b4da8d4fd899ddb84e4cda192d32351c08bb7",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/distribute/Action-Distribute-Horizontally.md": {
+      "source": "Scripts/distribute/Action-Distribute-Horizontally.md",
+      "sha256": "44808d7ec816d0760e36318d262c4f6dd1a6a2253dd89ccd838835daa5e97897",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/distribute/Action-Distribute-Text.md": {
+      "source": "Scripts/distribute/Action-Distribute-Text.md",
+      "sha256": "892b923dd451b691760fc0755a401bda4122d187a1e149b57b5205819d248307",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/distribute/Action-Distribute-Vertically.md": {
+      "source": "Scripts/distribute/Action-Distribute-Vertically.md",
+      "sha256": "74a497fa3473e789fd7dd27b8081b5b12bdab86f148f43ad6868e3c5a4c8c5ca",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/library/Action-Dynamic-Library.md": {
+      "source": "Scripts/library/Action-Dynamic-Library.md",
+      "sha256": "38d329c6b28030016b63837bcf34af62badcc91a0f58325c736ba55b0b3bbd69",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/echarts/Action-Echarts-Manager.md": {
+      "source": "Scripts/echarts/Action-Echarts-Manager.md",
+      "sha256": "e4430b7630a16858482a2bd85fe0ff181b4ffb8e3aaa7759568436b0062f9579",
+      "version": "1.1.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/export/Action-Export-Image-To-Anki.md": {
+      "source": "Scripts/export/Action-Export-Image-To-Anki.md",
+      "sha256": "2068fbc29e8562d442a08863c4464ee60c44eec093b2ce6bb9d20146022df69c",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/export/Action-Export-Image-To-Eagle.md": {
+      "source": "Scripts/export/Action-Export-Image-To-Eagle.md",
+      "sha256": "7a43e1021ba653b224218bd0089dcf44ea051dfa86df3bcf34808e072a96f9e4",
+      "version": "1.0.0"
     },
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/mindmap/Action-Export-Mindmap-To-Clipboard.md": {
       "source": "Scripts/mindmap/Action-Export-Mindmap-To-Clipboard.md",
@@ -31,19 +151,354 @@
       "sha256": "a9a3da95b3bf33dd9dd37cb99ba295880636c9f9aad7637cdc342845fb087fdb",
       "version": "1.1.1"
     },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/color/Action-Extra-Colors-Manager.md": {
+      "source": "Scripts/color/Action-Extra-Colors-Manager.md",
+      "sha256": "1f4a373897fed3a843b8cb50d7e001c71709c9a89756c4c13b8e61da27f054ec",
+      "version": "2.1.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/latex/Action-Extract-Latex.md": {
+      "source": "Scripts/latex/Action-Extract-Latex.md",
+      "sha256": "ee79a2dbcc7394da8dae67dc10ad3b1efeb0180633b305b3cdb64284c2222488",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/arrow/Action-Fixed-Length-Panel.md": {
+      "source": "Scripts/arrow/Action-Fixed-Length-Panel.md",
+      "sha256": "850322b3d8600dd62cc946ad19e64775c33a6e300039df1223c981c7c8f7a83e",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/follow/Action-Follow-Arrow-Backward.md": {
+      "source": "Scripts/follow/Action-Follow-Arrow-Backward.md",
+      "sha256": "a23f84f42ef0633dacc688230d807acce32a76651c7aecb74d038c5b5dc5d8b8",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/follow/Action-Follow-Arrow-Forward.md": {
+      "source": "Scripts/follow/Action-Follow-Arrow-Forward.md",
+      "sha256": "3ac2869a7e71f76e6d94f82a5a58089321c747af20dc6ef0e1f19433a0cb4661",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Format-Text-Global-Silent.md": {
+      "source": "Scripts/text/Action-Format-Text-Global-Silent.md",
+      "sha256": "d16a024d4eac181e8b04b2df4c7656dc865af3200f787cec82185db2f45eac1a",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Format-Text-Globals.md": {
+      "source": "Scripts/text/Action-Format-Text-Globals.md",
+      "sha256": "5d7bc6771e13f1293467af6d9fe159c4d9d1218160e1bd9505dbe261909de37c",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Format-Text-Partials-Silent.md": {
+      "source": "Scripts/text/Action-Format-Text-Partials-Silent.md",
+      "sha256": "c4d7e87da8b87d54130e8d31722995530bf28b29c28527777ebcb6f15dd0c1cb",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Format-Text-Partials.md": {
+      "source": "Scripts/text/Action-Format-Text-Partials.md",
+      "sha256": "37b8705d881e5c9cec32f128a17aaa7fdaa6442e9038359e05e2972a8d2ede82",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/generate/Action-Generate-Cuboid.md": {
+      "source": "Scripts/generate/Action-Generate-Cuboid.md",
+      "sha256": "2ca3e208350a52717011672b53258552ca184fe0d68c109c48daf2efe1a77117",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/generate/Action-Generate-Digital-Clock.md": {
+      "source": "Scripts/generate/Action-Generate-Digital-Clock.md",
+      "sha256": "9b830529dc9c215f080e3c97e771b2bf861106033e615635d2d2532a16857146",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/generate/Action-Generate-Digital-SVG.md": {
+      "source": "Scripts/generate/Action-Generate-Digital-SVG.md",
+      "sha256": "daaff8d2157e65360d3a5235fffcbc2be7b4e098466d5775639ca681dea05421",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/generate/Action-Generate-Grid-Selected.md": {
+      "source": "Scripts/generate/Action-Generate-Grid-Selected.md",
+      "sha256": "9ea9640b4e871422d8b7b627a27bffd57da0728e81ad6019561e3d4516a6ed04",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/generate/Action-Generate-Grid.md": {
+      "source": "Scripts/generate/Action-Generate-Grid.md",
+      "sha256": "a018e725912ae6fe28e71f7ab88f60dcf6626e84bfb9db700c0bbaa049f9b55c",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/generate/Action-Generate-Parallelogram.md": {
+      "source": "Scripts/generate/Action-Generate-Parallelogram.md",
+      "sha256": "bc49e79eb2709602a2aa23f44443481707530fb919cd2df751419036fe57b1c8",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/generate/Action-Generate-Polygon.md": {
+      "source": "Scripts/generate/Action-Generate-Polygon.md",
+      "sha256": "b08074041ecc3242ac8a5858dff136eef9f6471f2a11795456ab1b884b5df7ce",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/generate/Action-Generate-Repeat-Selected.md": {
+      "source": "Scripts/generate/Action-Generate-Repeat-Selected.md",
+      "sha256": "9b521abfed1e19d5f8deba6b92d7a88d570ab63faabe03eafcab63eb3bd5d2e4",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/gradient/Action-Gradient-Silent.md": {
+      "source": "Scripts/gradient/Action-Gradient-Silent.md",
+      "sha256": "8d9784f5f02bab2b5244b73659ca748bf13640d03db32bf976a74679257aaea9",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/gradient/Action-Gradient-UI.md": {
+      "source": "Scripts/gradient/Action-Gradient-UI.md",
+      "sha256": "0071636b82fb88753ed76825d3c78bf8b3b78469761dc1c40d12be8601796b15",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Highlight-Background-Silent.md": {
+      "source": "Scripts/text/Action-Highlight-Background-Silent.md",
+      "sha256": "be5e99478f8ad6249e297f0e650211e01ee5ec7975f14724c7eed72fd665ef4e",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Highlight-Background-UI.md": {
+      "source": "Scripts/text/Action-Highlight-Background-UI.md",
+      "sha256": "2bf5392d4c112c0fa14cdbc0eb07bd38fdb0ace2008b47d9e2297d2eb3e87d90",
+      "version": "1.0.0"
+    },
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/mindmap/Action-Import-Mindmap-From-Clipboard.md": {
       "source": "Scripts/mindmap/Action-Import-Mindmap-From-Clipboard.md",
       "sha256": "e8a168fc7c40c77c59c289ad2bd638132262718edc8fad03a8b1a33f2a148301",
       "version": "1.1.1"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/space/Action-Insert-Vertical-Space.md": {
+      "source": "Scripts/space/Action-Insert-Vertical-Space.md",
+      "sha256": "d55432df36943cefce05cba53445ba4da7001853db7797ce4ae8ea872aad7ebb",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/smart-art/Action-Link-Smart-Art.md": {
+      "source": "Scripts/smart-art/Action-Link-Smart-Art.md",
+      "sha256": "3a44f6d85ac967c55cb4335c6b2ab8baabe1751226a6163185f0b4909501f044",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/library/Action-Load-Library-To-Canvas.md": {
+      "source": "Scripts/library/Action-Load-Library-To-Canvas.md",
+      "sha256": "a1c8e8b24caa740f9d8da4f3d1b17616f1010cf5e68c5538943e7aeb32d25277",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/arrow/Action-Measure-Panel.md": {
+      "source": "Scripts/arrow/Action-Measure-Panel.md",
+      "sha256": "cb4b919fd72e9d7c7a8869890e6a2e3ba1fc06bb2bf8ac2a29aa7da248172637",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/attachment/Action-Open-Attachment.md": {
+      "source": "Scripts/attachment/Action-Open-Attachment.md",
+      "sha256": "16aa52419cf6d02d1251f6c4cdf673a069911a4852332f98c5e5044fb492aa22",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Paste-Wrapped-Text.md": {
+      "source": "Scripts/text/Action-Paste-Wrapped-Text.md",
+      "sha256": "5b25073879e1d4d17f34a7f2f39f56a48f7f2cc4ffa9fa84ee52daa84cf6333d",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/animation/Action-Progressive-Drawing-Animator.md": {
+      "source": "Scripts/animation/Action-Progressive-Drawing-Animator.md",
+      "sha256": "e205b7c248a7864ed3b8cf5aae8dfb673a987cd4a614a902c46349adeeb61bff",
+      "version": "1.1.2"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/recognize/Action-Recognize-Shape.md": {
+      "source": "Scripts/recognize/Action-Recognize-Shape.md",
+      "sha256": "c1ef6ca5f91797c0fa5b23c030b2ac7b4c50566b511f62186efba28ad690f56e",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/mindmap/Action-Rescue-And-Show-Mindmap.md": {
+      "source": "Scripts/mindmap/Action-Rescue-And-Show-Mindmap.md",
+      "sha256": "9b449f1c150f4c3f2b7a56b06ab2c3bf1a9f560122f54efb53915dd493da43e0",
+      "version": "1.2.1"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/link/Action-Return-Link-Origin.md": {
+      "source": "Scripts/link/Action-Return-Link-Origin.md",
+      "sha256": "42fd66bb31f22e024dea50d385df54a0413e2eb7f271ec31e98e604344f0ee9c",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/outline/Action-Set-Outline-Level.md": {
+      "source": "Scripts/outline/Action-Set-Outline-Level.md",
+      "sha256": "b90328a151767a332917d1689d235bcabadd0617b5181df601cfc4da012be0b9",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/tag/Action-Set-Tags.md": {
+      "source": "Scripts/tag/Action-Set-Tags.md",
+      "sha256": "eb6c7c095e5e3680d2b4f3ab0380e40d8ccbcab55810177128ff10b6ec2efa70",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Split-Text-Segments.md": {
+      "source": "Scripts/text/Action-Split-Text-Segments.md",
+      "sha256": "033fbb7d29dafa5f4457d0543743872dfa7a116aefe5bc19f46388f2db140c53",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/step-appear/Action-Step-Appear-Setup.md": {
+      "source": "Scripts/step-appear/Action-Step-Appear-Setup.md",
+      "sha256": "764bdebed17c29e49f87947886ab2bb327d401bf121e2586f7176a3e9eaaf2c7",
+      "version": "1.0.0"
     },
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/code-highlight/Action-Style-Code-Highlight.md": {
       "source": "Scripts/code-highlight/Action-Style-Code-Highlight.md",
       "sha256": "efe4297acc1b93cd140d9530cc776e2c32f53bd8648c7d8bac37db0ee3d5ad06",
       "version": "1.0.0"
     },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/table/Action-Table-Generate.md": {
+      "source": "Scripts/table/Action-Table-Generate.md",
+      "sha256": "b09622d15f870fe739aba7c7667987b2c646a9cf28da4a08399e17fe41adc2d3",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/table/Action-Table-Modify.md": {
+      "source": "Scripts/table/Action-Table-Modify.md",
+      "sha256": "db3d5c6c35c9326b0529620d6a8b05e619aa297cf3c837bf061e2e7678589e21",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Text-Copy-Elements.md": {
+      "source": "Scripts/text/Action-Text-Copy-Elements.md",
+      "sha256": "c0fedc1c374f55d9ed0e299c2301c7e13abe911121ed6c66d1da32841ba72ff3",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/reminder/Action-Todo-Manager.md": {
+      "source": "Scripts/reminder/Action-Todo-Manager.md",
+      "sha256": "8eb0d421eb9aa7c3862bacf06d9a8a99b9440373d09e77a50cc198cab8c75900",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/animation/Action-Toggle-Arrow-Animation.md": {
+      "source": "Scripts/animation/Action-Toggle-Arrow-Animation.md",
+      "sha256": "ae5a9d47bc94ef9b78ff7951a769909fca6ad2d463b959e2cab91e50aa7105d4",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/arrow/Action-Toggle-Arrow-Head.md": {
+      "source": "Scripts/arrow/Action-Toggle-Arrow-Head.md",
+      "sha256": "cc17cc509188f7decdeecc25b593bdbc824b33991e2efada851fa2ce227b5b2d",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/callout/Action-Toggle-Callout.md": {
+      "source": "Scripts/callout/Action-Toggle-Callout.md",
+      "sha256": "b8445481ddffd3985760c2669e15fd99d0f82586cc6588a27d64b5fa6d3b1d98",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/checkbox/Action-Toggle-Checkbox.md": {
+      "source": "Scripts/checkbox/Action-Toggle-Checkbox.md",
+      "sha256": "2611778b892c966ec9475944e53b8039d54065bfbd138712f5985c89d265b579",
+      "version": "1.0.0"
+    },
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/code-highlight/Action-Toggle-Code-Highlight.md": {
       "source": "Scripts/code-highlight/Action-Toggle-Code-Highlight.md",
-      "sha256": "a4e9e8ef6d27ef5144efac567fe79ab55c3d3fbbef40cc829c8f5bdb36019291",
+      "sha256": "42750ddea910d4024d76b13735ff533926cd5a50967a3d530cf01f61967da45e",
+      "version": "1.0.1"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/detail/Action-Toggle-Detail.md": {
+      "source": "Scripts/detail/Action-Toggle-Detail.md",
+      "sha256": "ebe7f318a059cfbc3958e604fbe0f4f9515125a996bb5a971029dc53f7fa0e5a",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/gif/Action-Toggle-GIF.md": {
+      "source": "Scripts/gif/Action-Toggle-GIF.md",
+      "sha256": "7f52d68a3bdb9c4ae64316a4a52519bccce1dec6266337c9ec0194de125c67e5",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/hover/Action-Toggle-Hover.md": {
+      "source": "Scripts/hover/Action-Toggle-Hover.md",
+      "sha256": "fa3a9c36203b945cab0974d978ff03341e32cbdc5e04d0ddd1c7ede4295a1ec9",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/layer/Action-Toggle-Layer.md": {
+      "source": "Scripts/layer/Action-Toggle-Layer.md",
+      "sha256": "8ed8be756fe6ebcfec71c92e862484b6c6c28685f83bf12383fdd2ec9630ed6c",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/line-highlight/Action-Toggle-Line-Highlight.md": {
+      "source": "Scripts/line-highlight/Action-Toggle-Line-Highlight.md",
+      "sha256": "b2c359ec035f7a879471561a3665c98529adedd8abd31f9fa52b0fe9769b6eaa",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/list/Action-Toggle-List.md": {
+      "source": "Scripts/list/Action-Toggle-List.md",
+      "sha256": "db5d5c9076db1cd042cdeee559a40dc38cb5d00276be04daf688410a746a4c41",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/connection/Action-Toggle-No-Bind.md": {
+      "source": "Scripts/connection/Action-Toggle-No-Bind.md",
+      "sha256": "2f676af620ee5a335b365806e826bdbc62ce0168e90eb64e929b1842439554ef",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/outline/Action-Toggle-Outline.md": {
+      "source": "Scripts/outline/Action-Toggle-Outline.md",
+      "sha256": "c05942a9dffdf0738c8377693c31a5764c5322722e5727a6d61894c2cc51ecc1",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/shadow/Action-Toggle-Shadow.md": {
+      "source": "Scripts/shadow/Action-Toggle-Shadow.md",
+      "sha256": "6bcaef922821021f0d635c60079ca6d21e6df6cd49fb0e19faa0fee6caea9bff",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/swimlane/Action-Toggle-Swimlane.md": {
+      "source": "Scripts/swimlane/Action-Toggle-Swimlane.md",
+      "sha256": "5c19398b9e590b526dc84e5545e161e8025b5633c02a9192641d0dba330ade55",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/thumbnail/Action-Toggle-Thumbnail.md": {
+      "source": "Scripts/thumbnail/Action-Toggle-Thumbnail.md",
+      "sha256": "ac8a28033fa8da09055543da8b47f2e1c77e168bd12109db4d685bf1f16ec58d",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/zoom/Action-Toggle-Zoom-Hide.md": {
+      "source": "Scripts/zoom/Action-Toggle-Zoom-Hide.md",
+      "sha256": "58e1a28fb2dcb491e2413156da06a19b65f78a7adb012daa5058fcca9e8c46f8",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/size/Action-Transform-Size.md": {
+      "source": "Scripts/size/Action-Transform-Size.md",
+      "sha256": "6ca987a950abb8d0e58258353afa0a160b9230c79aee29380f6261a78b02e96b",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/wave-drom/Action-Wavedrom-Manager.md": {
+      "source": "Scripts/wave-drom/Action-Wavedrom-Manager.md",
+      "sha256": "25c9eb13f56cd5e8336d6a99fe6e1fa6a50d618f1be14bebcb9779f54b6b358b",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/animation/Feature-Arrow-Animation-Engine.md": {
+      "source": "Scripts/animation/Feature-Arrow-Animation-Engine.md",
+      "sha256": "2278aa512012bcda04471e6e3b1005dddae26e4e5bf5c3cc732f78042bd5d763",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/arrow/Feature-Arrow-Head-Resize-Engine.md": {
+      "source": "Scripts/arrow/Feature-Arrow-Head-Resize-Engine.md",
+      "sha256": "0a6700cf033c5bdcf7bcf1ad428ef05ada4c27c11c91e5a4cbfbeecc47cedaf0",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Agent-Drawing/arrow/Feature-Arrow-Head-Resize-Engine.md": {
+      "source": "Scripts/arrow/Feature-Arrow-Head-Resize-Engine.md",
+      "sha256": "0a6700cf033c5bdcf7bcf1ad428ef05ada4c27c11c91e5a4cbfbeecc47cedaf0",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/distribute/Feature-Auto-Distribute-Paste-Engine.md": {
+      "source": "Scripts/distribute/Feature-Auto-Distribute-Paste-Engine.md",
+      "sha256": "77796011a664a184b4d33d08b3f89a8e1e0b6895456d7c7566c8be11c181c90e",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/generate/Feature-Bullet-Engine.md": {
+      "source": "Scripts/generate/Feature-Bullet-Engine.md",
+      "sha256": "3df7dd0b5719b4571d59d689a11fc9770c7c0e3797cba04b824eae147d25d052",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/library/Feature-Calendar-Engine.md": {
+      "source": "Scripts/library/Feature-Calendar-Engine.md",
+      "sha256": "08cf8ff38b023d215e4dd12baf8b3607002f6387156570849cfd920bb5ea975b",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/callout/Feature-Callout-Engine.md": {
+      "source": "Scripts/callout/Feature-Callout-Engine.md",
+      "sha256": "78671d6c0ce4f1633daa8eac2193161cef802a2baadbfdc5a5d9ef867977063e",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Agent-Drawing/callout/Feature-Callout-Engine.md": {
+      "source": "Scripts/callout/Feature-Callout-Engine.md",
+      "sha256": "78671d6c0ce4f1633daa8eac2193161cef802a2baadbfdc5a5d9ef867977063e",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/checkbox/Feature-Checkbox-Engine.md": {
+      "source": "Scripts/checkbox/Feature-Checkbox-Engine.md",
+      "sha256": "05a1d62c7ad1ab785f3f0ff04e97fa007eb982f99237cd024a7a76c9916564c2",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Agent-Drawing/checkbox/Feature-Checkbox-Engine.md": {
+      "source": "Scripts/checkbox/Feature-Checkbox-Engine.md",
+      "sha256": "05a1d62c7ad1ab785f3f0ff04e97fa007eb982f99237cd024a7a76c9916564c2",
       "version": "1.0.0"
     },
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/code-highlight/Feature-Code-Highlight-Engine.md": {
@@ -51,10 +506,230 @@
       "sha256": "d6244ec744806963e474c5c3ad0360cfa7e2a0f343faf63363bbafaa176c7744",
       "version": "1.0.0"
     },
+    "plugins/Excalidraw/Scripts/Agent-Drawing/code-highlight/Feature-Code-Highlight-Engine.md": {
+      "source": "Scripts/code-highlight/Feature-Code-Highlight-Engine.md",
+      "sha256": "d6244ec744806963e474c5c3ad0360cfa7e2a0f343faf63363bbafaa176c7744",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/detail/Feature-Detail-Engine.md": {
+      "source": "Scripts/detail/Feature-Detail-Engine.md",
+      "sha256": "baf1b9911b64d96c4849ee74e3832f6b0a4a9f3585bb52f173b1fa1632b2c40c",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/echarts/Feature-Echarts-Engine.md": {
+      "source": "Scripts/echarts/Feature-Echarts-Engine.md",
+      "sha256": "d0e826b1a6e13bd4266d620cb26df2c6ab22cdfadf043aced8534713319b5549",
+      "version": "1.1.0"
+    },
+    "plugins/Excalidraw/Scripts/Agent-Drawing/echarts/Feature-Echarts-Engine.md": {
+      "source": "Scripts/echarts/Feature-Echarts-Engine.md",
+      "sha256": "d0e826b1a6e13bd4266d620cb26df2c6ab22cdfadf043aced8534713319b5549",
+      "version": "1.1.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/export/Feature-Export-Eagle.md": {
+      "source": "Scripts/export/Feature-Export-Eagle.md",
+      "sha256": "752257974f125ce36747d4874977c2f44dbcb4568ab3d19e2c8364ace37bf8ac",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/export/Feature-Export-Embeddable.md": {
+      "source": "Scripts/export/Feature-Export-Embeddable.md",
+      "sha256": "b3d834e572dc165abdbddfd634cfd010d5943232ea77ba7efbc23e6a22953155",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Agent-Drawing/export/Feature-Export-Embeddable.md": {
+      "source": "Scripts/export/Feature-Export-Embeddable.md",
+      "sha256": "b3d834e572dc165abdbddfd634cfd010d5943232ea77ba7efbc23e6a22953155",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/color/Feature-Extra-Colors-Engine.md": {
+      "source": "Scripts/color/Feature-Extra-Colors-Engine.md",
+      "sha256": "d84a9162ab1c43458194d13a762bc59e3b9d7c616e765a5e8263d12662b056e2",
+      "version": "1.0.1"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/arrow/Feature-Fixed-Length-Engine.md": {
+      "source": "Scripts/arrow/Feature-Fixed-Length-Engine.md",
+      "sha256": "36adb92f24e4325c5c2119a0bbf1d3ddea396aaa49a3cf8a6739699ddcca6f18",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/gif/Feature-GIF-Engine.md": {
+      "source": "Scripts/gif/Feature-GIF-Engine.md",
+      "sha256": "16b711dd4fbb51df5930b5f3a0bb950277f1a8b0b6da6546afacb89063362eb5",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/gradient/Feature-Gradient-Engine.md": {
+      "source": "Scripts/gradient/Feature-Gradient-Engine.md",
+      "sha256": "4d88cf16e4c0658551cea755d4ff07d5a6d0457e6932445f230f89615ac41367",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Agent-Drawing/gradient/Feature-Gradient-Engine.md": {
+      "source": "Scripts/gradient/Feature-Gradient-Engine.md",
+      "sha256": "4d88cf16e4c0658551cea755d4ff07d5a6d0457e6932445f230f89615ac41367",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/hover/Feature-Hover-Engine.md": {
+      "source": "Scripts/hover/Feature-Hover-Engine.md",
+      "sha256": "e0dd685a2098ca77cfc72f4aa407dabae57f0c164d0045e0ecefe10746422fb3",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Agent-Drawing/hover/Feature-Hover-Engine.md": {
+      "source": "Scripts/hover/Feature-Hover-Engine.md",
+      "sha256": "e0dd685a2098ca77cfc72f4aa407dabae57f0c164d0045e0ecefe10746422fb3",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Feature-Input-Emoji-Engine.md": {
+      "source": "Scripts/text/Feature-Input-Emoji-Engine.md",
+      "sha256": "1ab97428fe29d4e61d760a578f68891de8f9422e8d32aef49b44afe442ed48ae",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/layer/Feature-Layer-Engine.md": {
+      "source": "Scripts/layer/Feature-Layer-Engine.md",
+      "sha256": "6ab01c72b56141df63ba32f08fc0c7ca23f48fdc676f495705e12ce04948febe",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Agent-Drawing/layer/Feature-Layer-Engine.md": {
+      "source": "Scripts/layer/Feature-Layer-Engine.md",
+      "sha256": "6ab01c72b56141df63ba32f08fc0c7ca23f48fdc676f495705e12ce04948febe",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/library/Feature-Library-Engine.md": {
+      "source": "Scripts/library/Feature-Library-Engine.md",
+      "sha256": "0e9d54a90e67d53f8ee75864f787612c4c9c33e835901f7450431c8a5d761960",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Agent-Drawing/library/Feature-Library-Engine.md": {
+      "source": "Scripts/library/Feature-Library-Engine.md",
+      "sha256": "0e9d54a90e67d53f8ee75864f787612c4c9c33e835901f7450431c8a5d761960",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/line-highlight/Feature-Line-Highlight-Engine.md": {
+      "source": "Scripts/line-highlight/Feature-Line-Highlight-Engine.md",
+      "sha256": "1e6761a787234f32bc5e888520b131bc12766e289c0e4665196827e297502269",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/link/Feature-Link-Engine.md": {
+      "source": "Scripts/link/Feature-Link-Engine.md",
+      "sha256": "24420d131092b48aaaa48a76071a483dfdc6f22593bff63351e5ca5ed3f2d2df",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Feature-Markdown-Header-Engine.md": {
+      "source": "Scripts/text/Feature-Markdown-Header-Engine.md",
+      "sha256": "7a5c05c0392e267858898937e0caf114ca303ab7d6c4e9bd25829da7a0103b72",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/arrow/Feature-Measure-Engine.md": {
+      "source": "Scripts/arrow/Feature-Measure-Engine.md",
+      "sha256": "d521e90565adebacda7870f8cecd75daedd168620aa9a582529bc44947fe66f1",
+      "version": "1.0.0"
+    },
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/mindmap/Feature-Mindmap-Engine.md": {
       "source": "Scripts/mindmap/Feature-Mindmap-Engine.md",
       "sha256": "e9725173a512701990b089087581a2d825fd7a37cfc7b37c5c53f09aeb7190d1",
       "version": "1.1.2"
+    },
+    "plugins/Excalidraw/Scripts/Agent-Drawing/mindmap/Feature-Mindmap-Engine.md": {
+      "source": "Scripts/mindmap/Feature-Mindmap-Engine.md",
+      "sha256": "e9725173a512701990b089087581a2d825fd7a37cfc7b37c5c53f09aeb7190d1",
+      "version": "1.1.2"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/outline/Feature-Outline-Engine.md": {
+      "source": "Scripts/outline/Feature-Outline-Engine.md",
+      "sha256": "01d16a4f5318c0bac9841f63906fc363c2ddd8fbdb05225d2a67aa3ad6da5ec1",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/clipboard/Feature-Paste-Engine.md": {
+      "source": "Scripts/clipboard/Feature-Paste-Engine.md",
+      "sha256": "2bee994b68e65d280ec67ab4c82cc730a7675676607f44a3d5895b43df6711b3",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/shadow/Feature-Shadow-Engine.md": {
+      "source": "Scripts/shadow/Feature-Shadow-Engine.md",
+      "sha256": "45fbd9add4ca6a79614a28a3d98d421553c0bf1ac170619b37b0380ccf813636",
+      "version": "1.0.1"
+    },
+    "plugins/Excalidraw/Scripts/Agent-Drawing/shadow/Feature-Shadow-Engine.md": {
+      "source": "Scripts/shadow/Feature-Shadow-Engine.md",
+      "sha256": "45fbd9add4ca6a79614a28a3d98d421553c0bf1ac170619b37b0380ccf813636",
+      "version": "1.0.1"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/recognize/Feature-Shape-Recognize-Engine.md": {
+      "source": "Scripts/recognize/Feature-Shape-Recognize-Engine.md",
+      "sha256": "b541592e4eaa16910ef91bde6d2d55de676158cce9ad974e1755fe7f90f69fa5",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/list/Feature-Smart-List-Engine.md": {
+      "source": "Scripts/list/Feature-Smart-List-Engine.md",
+      "sha256": "7fafb0abf81e95ea3eae070676a877c5f9513e986ddc7850b0e16b6173050e8b",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/step-appear/Feature-Step-Appear-Engine.md": {
+      "source": "Scripts/step-appear/Feature-Step-Appear-Engine.md",
+      "sha256": "8172855a41230a79703f9225ed92813184e5b43cdbd2de902d9b58fdafe2815c",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/swimlane/Feature-Swimlane-Engine.md": {
+      "source": "Scripts/swimlane/Feature-Swimlane-Engine.md",
+      "sha256": "69dc9f89f7909a1a6b1d8365c829490a2cbf8efeb4d892dba34faaf557977d5f",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Agent-Drawing/swimlane/Feature-Swimlane-Engine.md": {
+      "source": "Scripts/swimlane/Feature-Swimlane-Engine.md",
+      "sha256": "69dc9f89f7909a1a6b1d8365c829490a2cbf8efeb4d892dba34faaf557977d5f",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/table/Feature-Table-Engine.md": {
+      "source": "Scripts/table/Feature-Table-Engine.md",
+      "sha256": "54f1ef42398e24d7976778d2bf07331f4ce4a6405bac387d7d244e18fa8bfeb5",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Agent-Drawing/table/Feature-Table-Engine.md": {
+      "source": "Scripts/table/Feature-Table-Engine.md",
+      "sha256": "54f1ef42398e24d7976778d2bf07331f4ce4a6405bac387d7d244e18fa8bfeb5",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/table/Feature-Table-Paste-MD.md": {
+      "source": "Scripts/table/Feature-Table-Paste-MD.md",
+      "sha256": "6a2c6b7450b6b71062637519520ee70574f286d179c666b60ab7faf88d9944e7",
+      "version": "1.2.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Feature-Template-Engine.md": {
+      "source": "Scripts/text/Feature-Template-Engine.md",
+      "sha256": "ab2780afe3a8f424d1ab2e1b416031824c3e11c4d84a2a693b16419ab1b98aca",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Feature-Text-Render-Engine.md": {
+      "source": "Scripts/text/Feature-Text-Render-Engine.md",
+      "sha256": "ecf08f6402850dd4c69b74fb55a2db00eba92213a5a35f13aa5a500fbb27c249",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Agent-Drawing/text/Feature-Text-Render-Engine.md": {
+      "source": "Scripts/text/Feature-Text-Render-Engine.md",
+      "sha256": "ecf08f6402850dd4c69b74fb55a2db00eba92213a5a35f13aa5a500fbb27c249",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Feature-Text-Shortcuts-Engine.md": {
+      "source": "Scripts/text/Feature-Text-Shortcuts-Engine.md",
+      "sha256": "d26c246825ce39cfdb18c5888fc601214bd976f36a823cb0f66193698795e055",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/thumbnail/Feature-Thumbnail-Engine.md": {
+      "source": "Scripts/thumbnail/Feature-Thumbnail-Engine.md",
+      "sha256": "d54e2de15e2d967571cd4bcb5b85c26d00edab408ded40feec6522e3ad7a80df",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/wave-drom/Feature-Wavedrom-Engine.md": {
+      "source": "Scripts/wave-drom/Feature-Wavedrom-Engine.md",
+      "sha256": "4fb87275b736294d206d42fbebc319bcfbdc458273c089f3b8f7ffa62db2c829",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Agent-Drawing/wave-drom/Feature-Wavedrom-Engine.md": {
+      "source": "Scripts/wave-drom/Feature-Wavedrom-Engine.md",
+      "sha256": "4fb87275b736294d206d42fbebc319bcfbdc458273c089f3b8f7ffa62db2c829",
+      "version": "1.0.0"
+    },
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/zoom/Feature-Zoom-Hide-Engine.md": {
+      "source": "Scripts/zoom/Feature-Zoom-Hide-Engine.md",
+      "sha256": "79181713857f75a18242d7b476bdc15aecf7ee389198e9ea7cfec7e3f5db457e",
+      "version": "1.0.0"
     }
   }
 }
