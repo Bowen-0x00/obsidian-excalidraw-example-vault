@@ -1,0 +1,50 @@
+name: Sync skill from upstream
+
+on:
+  repository_dispatch:
+    types: [skill-updated]
+  workflow_dispatch:
+  schedule:
+    - cron: '53 */6 * * *'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-skill
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout Example Vault
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Checkout Upstream Skill
+        uses: actions/checkout@v4
+        with:
+          repository: Bowen-0x00/obsidian-excalidraw-agent-skill
+          ref: main
+          fetch-depth: 0
+          path: .upstream-skill
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Sync skill and publish PR
+        env:
+          VAULT_SYNC_TOKEN: ${{ secrets.VAULT_SYNC_TOKEN }}
+        run: |
+          if [ -z "$VAULT_SYNC_TOKEN" ]; then
+            echo "Missing VAULT_SYNC_TOKEN secret." >&2
+            exit 1
+          fi
+          python .github/scripts/publish_skill_pr.py
