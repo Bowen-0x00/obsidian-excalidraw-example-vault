@@ -40,6 +40,20 @@
 
 每轮开始先核对最新revision，外部编辑则重新读受影响对象。补丁必须附前后不变量：全部原部件/边ID集合、信号from/to、绑定、标签/样式、锁定及frame/group保持，除非这轮明确要求改变。原生属性能维护的关系不手填JSON。若只修正交路由，不能顺手移动硬件、改选择码、改颜色或宣布此前未完成的硬件评审已完成。
 
+## 从硬件DSL成图吸收的制作规则
+
+`hwdiagram/1`的named-grid数据通路实验说明：好看不只因为语法，而是**真实符号/端口＋主体对齐＋独立走线通道＋按用途重新测量**。下列规则可直接用于现有MCP/EA，不要求用户写DSL，也不把实验schema塞进drawing_compose。
+
+- **网络和图面分开。**工作计划记录component、port方向/已知位宽、同一net的全部目的；控制器只有select/enable职责，不因为名字相似就接成数据源。语义归属不强迫可见大框，显示区域也不冒充电气模块。未知位宽保持未知；总线bits不是箭身宽度。
+- **按主体/端口对齐，不按带caption的总bbox对齐。**区分body outline、label safe region、pin/stub、用于排版的allocation box。寄存器窄高、MUX/ALU保留原始长宽比，文字过长先外置caption或扩大留白，不把所有符号撑成同尺寸卡片。寄存器D/Q、时钟标记和MUX输入0/1增加辨识；不能为装饰虚构时钟连接。
+- **素材先有几何契约。**记录真实item ID、自然尺寸、命名anchor/fixedPoint、出线normal、文字安全区及可否缩放/换色。源库MUX的底部select要求caption移到上方；另一个ALU同名素材可能输出朝下，不能沿用左右引脚。保留用户库原样式，只有声明可替换槽才改色。
+- **主通路优先，控制/反馈分轨。**常用左→右主体骨架，控制器放独立上方区域，写回/反馈走外围下方；先为首末stub、位宽短标签、分叉和跨线留空间。caption避开实际引脚，位宽标签贴本信号清晰段，不让控制线穿过名称。少量语义色＋一个重点单元足够，不默认逐阶段彩虹背景。
+- **同网fanout不是两条独立业务关系。**可用有身份的原生junction/主干与分支表示，保留源→全部目的的映射及绑定。跨越不同net用原生lineCrossings的arc/gap；dot仅用于真实同网连接，不能用白底遮罩、假弧或把两独立driver画成相连。
+- **paper/presentation不是只放大PNG。**换字体/字号、线身/箭头、符号或留白会改变包络，需重新measure/layout/route；语义和网表保持。不要照抄该实验的Helvetica、pt×2、固定节点名或特定库ID为通用默认。队列/寄存器表采用[直角分层表格](capability-map.md#表格清晰表头与连续网格)。
+- **保留严格边界。**该adapter实际只实现一个指定7资源数据通路，其他构造fail closed；复杂array/domain/多视图/ELK/Visio不能因schema写了就称已实现。一次Result移动绑定随动，只证明该路径，不证明全部GUI编辑能回写DSL；本地独立DSL的身份/冲突保护也不能被一次性生成器取代。
+
+来源：`hardware-dsl-design/specification.md`的model/view/style/SymbolContract，以及`excalidraw_adapter.mjs:compile/connectionOperations/decorations`、`check_design.py:validate`。指定Presentation画布已实际只读导出检查：46元素、9箭头，仍含4个历史跨线辅助line；新版adapter虽已改原生跨线，**既有画布尚未迁移，不把当前PNG当新版跨线验证**。不擅自修改用户喜欢的原图。
+
 ## 现有接口的能力与限制
 
 - `kind:"microarchitecture"`只是已有planner接受的分类，**没有自动硬件符号/阶段列/多端口/bus布线语义**。单纯改kind不能把服务架构图变成数据通路。

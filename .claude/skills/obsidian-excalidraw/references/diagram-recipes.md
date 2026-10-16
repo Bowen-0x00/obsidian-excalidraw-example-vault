@@ -58,6 +58,7 @@ const style = {
 ```
 
 这是现有`diagram.style`的profile对象；**不是**调用`style:"morandi"`/`style:"dark"`。箭头头型仍逐edge显式指定；纯色板不自动决定UML语义。手绘选roughness1/hachure或用户指定solid，并独立控制字体；不能拿PNG滤镜替代原生属性。
+此shape/container小圆角起点不适用于表格单元格：cell显式`roundness:null`、细连续网格、深色表头配浅色正文；返回真实refs后分别设置表头底色与bound text字色，详见[表格规范](capability-map.md#表格清晰表头与连续网格)。不要把整表拆成带间隙的大圆角卡片。
 
 注意真实高层行为：planner会按variant/PALETTE补节点stroke/background、容器color，部分标题/文字颜色也由recipe固定；仅改profile并不能证明严格色板已生效。strict任务应逐节点/边/容器设置允许色，必要时按plan refs附加patch；apply后读完整实际样式，修正新增的未允许颜色，不能声称profile会自动覆盖每条默认色。
 

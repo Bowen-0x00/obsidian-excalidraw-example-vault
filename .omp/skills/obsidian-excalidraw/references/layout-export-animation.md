@@ -191,7 +191,7 @@ Bridge 0.13.5支持：`arrow,bar,circle,circle_outline,triangle,triangle_outline
 {"op":"patch_element","target":"已有肘形箭头ID","patch":{"roundness":{"type":2,"value":6}}}
 ```
 
-- value是画布坐标单位的半径，不是角度、百分比或PNG像素。新建专业矩形从6起，常用4–12按用途调整；同类不同大小节点保持固定值。图形resize后读回value，不能默认按宽高比例增大圆角。整组原生scale可能有不同规则，读回再确认用户的“固定”要求。
+- value是画布坐标单位的半径，不是角度、百分比或PNG像素。普通独立节点矩形从6起，常用4–12按用途调整；**表格/寄存器字段单元格用roundness:null，不继承此圆角起点**，按[表格规范](capability-map.md#表格清晰表头与连续网格)形成连续网格。同类不同大小节点保持固定值；resize后读回value，不默认按宽高比例放大。整组原生scale可能有不同规则，读回再确认。
 - type3是矩形等自适应族，type2是line/arrow/diamond比例族，type1是遗留；不是r值。`roundType:"arc"`仅确认矩形/iframe/embeddable该路径，不能推广成所有图元的圆角开关。
 - 矩形尖角用`roundness:null`；正半径须有限，建议`0<r<=min(width,height)/2`且留实际内容区。不要因Bridge只检查finite就传负值/超大半径；ellipse本来是椭圆，不用此字段画圆角矩形。
 - 普通折线的roundness会影响曲线形状；**肘形箭头**是另一条渲染路径，读取`roundness.value ?? 16`。因此null/sharp并不保证肘形转角为0；要硬直角用`{type:2,value:0}`，固定小转角用正值6等。短线段会限制实际可见弧度，不把value当保证的屏幕半径；block宽箭分支也不套用这条规则。

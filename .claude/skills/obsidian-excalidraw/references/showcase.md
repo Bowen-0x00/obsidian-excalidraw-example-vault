@@ -2,6 +2,8 @@
 
 以下prompt用于在你自己的vault重新生成并录制过程，不是固定坐标脚本，也不要求OMP。可用Claude Code/Codex/OMP等支持真实MCP与图像查看的Agent。本轮实际调用OMP加载Skill生成了这些场景、查看PNG并局部修复；你手动录制时用相同的短prompt即可。
 
+包内真实画廊见`docs/gallery.md`或[在线画廊](https://github.com/Bowen-0x00/obsidian-excalidraw-agent-skill/blob/main/docs/gallery.md)。六组`examples/dsl/`展示流程、分区、硬件反馈、表格/ECharts、Tomasulo与资源；新增三组复杂五级RISC-V、分布式推理、4×4矩阵阵列来自`examples/builders/advanced_showcase.py`的Agent编写Python／原生API，**不是DSL自动布局**。源码、原生画布、全图／可读局部和验证边界均单独标明；不是全ISA、RTL仿真或生产性能证明。DSL按[scene-dsl](scene-dsl.md)，自然语言／原生路径继续用本文。
+
 ## 一次只跑一个场景
 
 共通要求：使用obsidian-excalidraw Skill，先status确认连接，在`Agent-Diagrams/Showcase`新建独立画布；真实测量/布局→apply→全图read/check→PNG→实际看图→局部修复→review，最多5轮，保留原生元素与用户素材，不修改源库。

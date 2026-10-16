@@ -26,14 +26,27 @@
 
 ## 额外重要能力：保留已有机制，按需发现
 
-- **Table**：绘图脚本目录下`table/Feature-Table-Engine.md`、`Feature-Table-Paste-MD.md`、Action Generate/Modify。Bridge已有`create_table`和table metadata，cell root/row/col/rowNum/colNum由执行器维护；矩形+bound text保留编辑。单元格不同字体/长中文先测量，不能只改bbox；Markdown粘贴Hook与显式构建不同。
-- **Swimlane/ECharts/LaTeX**：已有主Skill流程及adapter，继续按runtime discovery执行。用户称swimeline时保留意图，实际机制为swimlane/isContainer；ECharts传JSON options，LaTeX需真实Extras MathJax，不拿图片/普通文本冒充。
+- **Table**：绘图脚本目录下`table/Feature-Table-Engine.md`、`Feature-Table-Paste-MD.md`、Action Generate/Modify。Bridge已有`create_table`和table metadata，cell root/row/col/rowNum/colNum由执行器维护；矩形+bound text保留编辑。绘制外观按下节；Markdown粘贴Hook与显式构建不同。本次只更新Agent绘图规范，不改Table Engine或预告接口。
+- **Swimlane/ECharts/LaTeX**：已有主Skill流程及adapter，继续按runtime discovery执行。用户称swimeline时保留意图，实际机制为swimlane/isContainer；ECharts 1.3.0的类型、结构化options与编辑往返见[visual-content](visual-content.md)，不能把UI枚举等同Bridge枚举；LaTeX需真实Extras MathJax。
 - **Link/follow**：`link/Feature-Link-Engine.md`处理onLinkClick、同文件`#^group=...`跳转及历史，`Action-Return-Link-Origin.md`回退；`follow/Action-Follow-Arrow-Forward/Backward.md`按实际绑定导航。原生link可以通过已有patch_element设置，但增强导航需Engine和真实view；不要为消除导航问题删除业务边。
 - **No-bind/advanced connector**：`connection/Action-Toggle-No-Bind.md`是面板配置nobind，和显式connect/rebind操作不同。用户要禁止吸附时读实际字段/内核识别，不默认禁用所有绑定；连接优先native-features高级连接。
 - **Dynamic library/calendar**：`library/Action-Dynamic-Library.md`、`Feature-Library-Engine.md`和`Feature-Calendar-Engine.md`。本包库API已发现dynamic/installed源，素材metadata/catalog仍由用户维护；不是联网下载库或通用日历服务。
 - **Geometry recognition/Boolean operations**：`recognize/Feature-Shape-Recognize-Engine.md`和Action通过数学转化识别笔画；`generate/Action-Boolean-Operations.md`/Downloaded版可改变原元素。Bridge只发现Boolean runtime，没有semantic boolean_operation；不为了自动绘图擅自执行破坏性转换。用户请求才用实际宿主Action/可信API，原输入保留备份。
 - **Clipboard/paste/text**：Paste Engine、Markdown Table Paste、Text Render/Shortcuts与部分格式Action各有作用。Agent改源码/文本用已确认的style/partial ranges，不能凭肉眼估字宽；自定义字体先发现。不要借剪贴板把用户无关数据发给外部服务。
 - **Select/size/space/smart-art/tag/reminder/attachment**：真实Action提供选取、缩放、插空、联动、标签、提醒和附件打开。任务确需时按源脚本检查目标集合、UI依赖与写入副作用；不是当前Bridge已有通用tool。普通排版优先明确IDs的align/translate/resize，不自动修改用户提醒或文件标签。
+
+## 表格：清晰表头与连续网格
+
+适用于保留站、寄存器状态、队列、对照表和普通数据表。它们不是一组独立圆角卡片，**不要继承普通节点profile的自适应大圆角**。
+
+- 所有内部单元格显式`roundness:null`、`roughness:0`、实色填充，网格从约1场景单位细线开始；同列边界、同行基线严格对齐，相邻格无卡片间隙。外框也优先直角；用户确需圆角时仅考虑整体外轮廓，不给每格四角挖缺口。
+- 表头和正文有清晰层级：同一语义色的深色表头＋浅色/白色正文，表头文字选足够对比的颜色。例：表头`#475569`/字`#FFFFFF`，正文`#F8FAFC`/字`#16324F`；保留站可用紫系、寄存器可用青系。只是非strict起点，不覆盖用户指定色板；不随机逐格染色。深色主题同样检查对比，不能机械套白底。
+- 标题放在表上方，预留真实测量后的净空，不挤进第一格；表头行是字段名，正文行是状态/值。`Tag / Busy / Op / Vj / Vk / Qj / Qk`各占独立列，不把整行写进一个长标签。
+- 先用实际family/字号测量各单元格。每列宽由本列最长内容＋左右padding决定，每行高由最高内容＋上下padding决定；常用水平8–12、垂直5–8作为起点，列标题不能被裁切。不要按字符数估宽，不为塞下表格压小字；长中文先合理换行/扩列，数值按需要右对齐，短状态可居中。
+- 当前`create_table`接收统一`cellWidth/cellHeight`与整表shape style，**没有headerStyle/columnWidths等承诺**。先传`style.roundness:null`；返回真实cell refs后，在同revision批量patch表头的`backgroundColor`，并更新其真实bound text的`strokeColor`。不要只改矩形strokeColor就以为字变白，也不要手填boundElements。
+- 需要异宽列时，可依据测量结果对已有单元格批量调整x/width并保持bound text、table metadata、组和root；必须检查读回的文字尺寸及列边界。使用原生矩形+bound text自行组合也可，但没有Table Engine元数据时只称“可编辑图形表格”，不假称行列增删/联动已具备。
+- 现有表格小改保留ID、root/row/col/rowNum/colNum、分组与引用；不为改圆角/表头色重建。用户尚未通知的Table能力不提前假设，后续Engine更新后再按真实契约调整。
+- 验收看真实PNG：表头一眼可辨、网格连续、全文未溢出、边框不穿字、列宽合理、有效字高可读。已有Tomasulo DSL的效果来自原生直角cell＋深浅分层，并不依赖新的表格渲染器；正式图仍走check→PNG→review。
 
 ## 已运行与未运行分开
 

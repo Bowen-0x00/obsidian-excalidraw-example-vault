@@ -36,6 +36,40 @@ Bridge存储`customData.codeHighlight`，Engine渲染高亮；theme/language必�
 
 已有Bridge `gradient`适配器仅接受direction `horizontal/vertical/diagonal/radial`和至少两个`{offset,color}` stops，拒绝raw JavaScript gradient；`rich_text`支持全局bold/fontWeight/color/gradient及局部bold/color，不支持partial_gradient。旧样例中的`customData.gradient`代码字符串不能直接回写。
 
+## ECharts 1.3.0：数据图与编辑往返
+
+先发现宿主实际Engine版本和运行状态。绘图脚本目录下`echarts/Feature-Echarts-Engine.md`与`Action-Echarts-Manager.md`已更新到1.3.0；**源码更新、包内受管副本、已加载Engine是三件事**，旧bundle不能仅因目录中另有新脚本就算已升级。按真实命令手动挂载，禁止改授信/autorun或盲目复制覆盖用户脚本。
+
+### 类型、数据与图型选择
+
+已发布的16个示例是：柱状、水平条形、折线、面积、多系列分组、堆叠柱状、堆叠面积、柱线混合双Y轴、饼、环、玫瑰、数值XY散点、雷达、漏斗、仪表盘、自定义JSON热力图。**不是16个不同的type枚举**：可视表单有12种基础type（`bar/horizontalBar/line/area/pie/donut/rose/scatter/mixed/radar/funnel/gauge`），另有`custom`；分组/堆叠是系列配置，热力图示例走custom，不虚构专用热力图表单。
+
+- 比较类别用bar/horizontalBar，长类目优先水平条形；时间趋势用line/area；组成累计用stacked；独立量纲用mixed并清楚标左右Y轴；相关性用数值XY而不是把X当等间隔类目。
+- 占比用pie/donut/rose，阶段转化用funnel，多维同尺度比较用radar，单指标进度用gauge。只按用户数据和目的选择，不为了展示16种能力把同一数据重复画满画布。
+- Engine的规范数据为`schemaVersion:2`：`labels`、`series:[{name,values,type?,color?,yAxisIndex?}]`、散点`xValues`；另有`stacked/dataZoom`、轴标题、`valueSeriesIndex`、`gaugeRow/gaugeMin/gaugeMax`等。多系列表格/CSV/Excel TSV支持表头、引号和系列命名；非法数值报错，不替成0。
+- 雷达至少三个维度且非负；饼/环/玫瑰/漏斗值非负且至少一个正值；仪表盘上下限有序且所选值在量程内。未知量纲/范围不猜造。完整ECharts options可走custom，不能传可执行formatter函数字符串来绕过受控JSON。
+
+### Agent调用与UI边界
+
+当前Bridge的`set_feature echarts` type仍是`bar/line/pie/scatter/custom`。高级图使用**`type:"custom"`＋真实完整options**；不要把`horizontalBar/mixed/radar`等UI枚举直接当旧Bridge可接受参数，也不要对普通draw/表格需求默认使用ECharts。
+
+```json
+{"op":"set_feature","feature":"echarts","targets":["实际矩形ID"],"config":{"type":"custom","options":{"animation":false,"legend":{"data":["收入","利润率"]},"grid":{"left":50,"right":55,"top":40,"bottom":40},"xAxis":{"type":"category","data":["Q1","Q2","Q3"]},"yAxis":[{"type":"value","name":"收入"},{"type":"value","name":"利润率 %"}],"series":[{"name":"收入","type":"bar","data":[120,160,210]},{"name":"利润率","type":"line","yAxisIndex":1,"data":[18,22,24]}]}}}
+```
+
+目标是保留数据的原生rectangle及`customData.echarts`，不是整图PNG。Bridge将options存为`echarts.value` JSON字符串；它不调用可视表单，也不提供`rawData`编辑模型参数。可视Engine保存`{type,value,rawData}`，`rawData`是规范模型；`readStoredChart`优先读rawData，没有时把完整旧options作为custom保留，不只抽取series[0]。通过Bridge写完整options可在JSON编辑器往返，但不承诺自动恢复为可视多系列表单。不要手拼rawData元数据冒充已有MCP接口。
+
+用户可双击图表或运行Manager原地编辑；实时预览、表格/批量文本切换、深浅预览、数据缩放、量程/双轴等由真实编辑器实现。`applyChartData`用独立EA工作台，更新已有元素ID；源文字只在成功提交中删除，取消保留。PNG只能证明静态图，不证明双击、hover图例或dataZoom交互已验收。
+
+### 导出与证据
+
+1.3.0挂载时向document注入离线ECharts；`renderCustomDocument`不依赖旧的contentEl注入路径；`handleSvgRender`从元素自己的options生成SVG，不必等画布iframe存在。仍按当前revision导出，核对`complete/resourceIssues`并实际看PNG中的系列、坐标、图例和量纲；不能把“接口callable/返回边框”当内容完整。Engine和Bridge各有导出路径，不混称一种接口。
+
+本次已读取源码、16图总览及实际编辑器截图；既有16示例包含原生源及渲染结果，示例数据是合成数据，不是业务事实。旧DSL实验的空框是当时宿主状态的历史失败，用户已修复，不再作为当前能力限制；其历史记录不改写成当时通过。新宿主/旧受管副本仍需按真实版本与PNG判断，不能继承一次修复为永久成功保证。
+本轮另在真实宿主用当前Bridge的`type:"custom"`绘制柱线双Y轴与热力图，两者PNG资源完整并已实际查看；它们和33格原生表格在同一验收画布。没有把16个既有示例全部重新运行，也没有把UI截图当本轮完整交互测试。
+
+来源：`normalizeChartData/parseTextToData/validateChartData/generateEchartsOptions/readStoredChart/applyChartData/handleSvgRender/mountFeature`；示例发布清单`temp/echarts-1.3.0-showcase/asset-manifest.json`。这些是宿主源码/示例证据，不是新增MCP工具。
+
 ## 文字与行内 LaTeX：必须显式转换
 
 普通`create_text/set_text/label`与`rich_text`不是MathJax渲染器；例如`运行极值 $m_{new}=\max(m_{old},S_i)$`直接传进去只会显示源码。新图在内容规划时就识别公式，不等到交付才把它当“文字样式”。用户要求展示源码、代码示例、货币或转义美元符号时保留字面内容。
