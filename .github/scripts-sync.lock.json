@@ -6,52 +6,52 @@
   },
   "matchedCount": 10,
   "files": {
-    "Excalidraw/Scripts/Downloaded(Custom)/Action-Change-Mindmap-Style.md": {
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/mindmap/Action-Change-Mindmap-Style.md": {
       "source": "Scripts/mindmap/Action-Change-Mindmap-Style.md",
       "sha256": "26fcba5b804ba8e768096088ecafd333f52f92ffd1396043586f0b00128e90de",
       "version": "1.1.1"
     },
-    "Excalidraw/Scripts/Downloaded(Custom)/Action-Create-Mindmap.md": {
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/mindmap/Action-Create-Mindmap.md": {
       "source": "Scripts/mindmap/Action-Create-Mindmap.md",
-      "sha256": "bf8fb5391bc4c960ebe2ecfd31af8760ca95bb9b4a3bb463a49e246a203f2894",
-      "version": "1.1.2"
+      "sha256": "223372fe8f2101fde8d00632a8eee20409c034f74cafbefeda32e71859773376",
+      "version": "1.1.1"
     },
-    "Excalidraw/Scripts/Downloaded(Custom)/Action-Detach-Mindmap.md": {
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/mindmap/Action-Detach-Mindmap.md": {
       "source": "Scripts/mindmap/Action-Detach-Mindmap.md",
-      "sha256": "a7c4d7a01896697692c16e8b7fa660d162e2a4b5cdf5e473f5a092d29840e383",
-      "version": "1.1.2"
+      "sha256": "acccf427a15d3eb79dc3f9a25b5011dd96074ce695856657c7c1cd9077ce50d1",
+      "version": "1.1.1"
     },
-    "Excalidraw/Scripts/Downloaded(Custom)/Action-Export-Mindmap-To-Clipboard.md": {
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/mindmap/Action-Export-Mindmap-To-Clipboard.md": {
       "source": "Scripts/mindmap/Action-Export-Mindmap-To-Clipboard.md",
       "sha256": "81d28d5631d9af8b2fc338963c47b80bf071aa5decd1a50da7c840506589abc2",
       "version": "1.1.2"
     },
-    "Excalidraw/Scripts/Downloaded(Custom)/Action-Export-Mindmap-To-Md.md": {
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/mindmap/Action-Export-Mindmap-To-Md.md": {
       "source": "Scripts/mindmap/Action-Export-Mindmap-To-Md.md",
       "sha256": "a9a3da95b3bf33dd9dd37cb99ba295880636c9f9aad7637cdc342845fb087fdb",
       "version": "1.1.1"
     },
-    "Excalidraw/Scripts/Downloaded(Custom)/Action-Import-Mindmap-From-Clipboard.md": {
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/mindmap/Action-Import-Mindmap-From-Clipboard.md": {
       "source": "Scripts/mindmap/Action-Import-Mindmap-From-Clipboard.md",
       "sha256": "e8a168fc7c40c77c59c289ad2bd638132262718edc8fad03a8b1a33f2a148301",
       "version": "1.1.1"
     },
-    "Excalidraw/Scripts/Downloaded(Custom)/Action-Style-Code-Highlight.md": {
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/code-highlight/Action-Style-Code-Highlight.md": {
       "source": "Scripts/code-highlight/Action-Style-Code-Highlight.md",
       "sha256": "efe4297acc1b93cd140d9530cc776e2c32f53bd8648c7d8bac37db0ee3d5ad06",
       "version": "1.0.0"
     },
-    "Excalidraw/Scripts/Downloaded(Custom)/Action-Toggle-Code-Highlight.md": {
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/code-highlight/Action-Toggle-Code-Highlight.md": {
       "source": "Scripts/code-highlight/Action-Toggle-Code-Highlight.md",
-      "sha256": "42750ddea910d4024d76b13735ff533926cd5a50967a3d530cf01f61967da45e",
-      "version": "1.0.1"
+      "sha256": "a4e9e8ef6d27ef5144efac567fe79ab55c3d3fbbef40cc829c8f5bdb36019291",
+      "version": "1.0.0"
     },
-    "Excalidraw/Scripts/Downloaded(Custom)/Feature-Code-Highlight-Engine.md": {
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/code-highlight/Feature-Code-Highlight-Engine.md": {
       "source": "Scripts/code-highlight/Feature-Code-Highlight-Engine.md",
       "sha256": "d6244ec744806963e474c5c3ad0360cfa7e2a0f343faf63363bbafaa176c7744",
       "version": "1.0.0"
     },
-    "Excalidraw/Scripts/Downloaded(Custom)/Feature-Mindmap-Engine.md": {
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/mindmap/Feature-Mindmap-Engine.md": {
       "source": "Scripts/mindmap/Feature-Mindmap-Engine.md",
       "sha256": "e9725173a512701990b089087581a2d825fd7a37cfc7b37c5c53f09aeb7190d1",
       "version": "1.1.2"
