@@ -1,6 +1,6 @@
 ---
 name: obsidian-excalidraw
-description: 在 Obsidian Excalidraw 修改版中创建、修改原生可编辑图；自然语言工作流、可选YAML/JSON场景DSL、真实素材与公式、交互/动画及PNG视觉验收。按需选择MCP、DSL或原生CLI，保留用户内容。
+description: 在 Obsidian Excalidraw 修改版中创建、修改原生可编辑图；自然语言、可选场景DSL、原生素材与公式、PNG验收；异常时可选用户开启的CDP只读诊断，修图仍走正常API并保留用户内容。
 ---
 
 # Obsidian Excalidraw：原生绘图与真实 PNG 闭环
@@ -11,6 +11,7 @@ description: 在 Obsidian Excalidraw 修改版中创建、修改原生可编辑�
 - **DSL路径**：真实`drawing_dsl(plan|render,document,...)`或包内`launcher.py dsl -- ...`；同state_id增量更新，实际PNG后仍review。不要把其document与compose的diagram混用，不用原生apply悄悄覆盖受管对象。
 - **原生路径**：已有图小改、用户库、特殊扩展/交互/动画继续read/apply/library/present/原生CLI，不强迫经过DSL。先绑定明确目标，按下表只读所需能力；不为简单图遍读所有references。
 - **只有CLI也可执行**：`launcher.py cli -- ...`是本包绘图客户端；`launcher.py dsl -- ...`是声明式场景；插件自身native CLI另见参考。三者都不替代真实宿主连接与PNG检查。
+- **CDP只读排错（默认关闭）**：效果异常、字体/资源/表格/图层原因不明时，先`drawing_debug(status)`，再按[只读CDP](references/cdp-readonly.md)提示用户选择开启。启用后仅`drawing_debug(inspect)`读取明确已打开的宿主vault/画布；禁止任意JS、Input、断点、打开/保存/导出或CDP改图，不用browser绕过。诊断不授权修复；微调仍需当前Bridge revision／DSL源及正常PNG验收。
 
 ## 先决定目标和视觉，不要求用户写坐标
 - **新版原生表格**：先发现`capabilities.nativeTable.callable`，为true时读[原生表格规范](references/table-native.md)，用`drawing_table(create|style)`调用宿主主题／边框模板，不逐格模拟。它需要配套schema-v2宿主构建；旧`create_table`和DSL表格不自动获得新能力，不虚构theme字段或把开发宿主当正式发布。
@@ -41,6 +42,8 @@ CPU/流水线/微架构/硬件数据通路/阵列/缓存层级/寄存器堆/片�
 5. `inspect:true`返回实际**PNG ImageContent**及JSON：`composition`或`applied`回执、`check`完整诊断、`preview`注册预览（含同revision全图canvasSummary/路径/hash）、毫秒`timings`。内部真实full-read+结构/几何/语义check→按该revision导出，不缓存过期结果、不自动review。默认false保持原接口；check失败仍展示PNG供修复，不能当完成。
 6. **查看真实PNG**，再review(visual_reviewed:true,visual_checks:实际结论,visual_issues:具体问题)。medium记录content/readability/occlusion，high再记录connections/hierarchy_style，值pass/not_applicable/fail；不能复制pass或对有文字图以not_applicable跳过。review以当前状态重算；几何候选可逐项dispositions记录合法构图/误报原因，引用/语义错误不可豁免；详见分级验收。
 7. 有问题只改受影响元素/绑定文字/邻边，apply(inspect=true)得到下一轮PNG再看。默认最多5轮（初图计1），达到要求立即停止，连续两轮无改善或上限到达则needs_attention并报告剩余项；不换token重置预算。
+
+原因不明或PNG与属性不一致时，**不要盲目重画／反复调坐标**：考虑只读CDP获取原生绘制顺序、文字/绑定、表格、资源与视口证据。先确认用户开关；关闭时只提出选项，不自动启用。V8副作用保护拒绝的查询必须停止，不去掉保护重试；状态诊断不能替代实际PNG。
 
 inspect是合并**已有**步骤，不是原子跨请求事务：check/render前用户改图会拒绝过期状态；提交后的检查/导出失败明确返回已提交receipt和phase，不能假称回滚。原生ID、绑定、资源与全图摘要不因此减少。
 
@@ -73,6 +76,7 @@ inspect是合并**已有**步骤，不是原子跨请求事务：check/render前
 | --- | --- |
 | 可重复YAML/JSON源、嵌套空间、表格/端口、稳定增量 | [scene-dsl](references/scene-dsl.md)：可选编译器与真实drawing_dsl/CLI，同state_id更新、外部编辑冲突、完整PNG/review；不替代原生能力 |
 | 硬件微架构、五级CPU、端口/总线/阵列/旁路 | **先读[microarchitecture](references/microarchitecture.md)**：部件级规划、固定流水边界、真实符号、数据/控制/反馈分离、禁止降粒度和重复compose；硬件清单＋全图/局部验收 |
+| PNG异常、原因不明、需要详细debug | [cdp-readonly](references/cdp-readonly.md)：默认关闭、用户选开、固定受保护读查询；不做CDP微调，修复回到正常API/DSL |
 | 未定风格、严格配色、字体/粗体、图型/演示 | [diagram-recipes](references/diagram-recipes.md)：真实选择UI、profile/hex映射、UML语义、逐页PNG；不是PPTX |
 | 字体发现、按文字角色选型、语言覆盖/等宽/回退、改字体 | **[typography](references/typography.md)**：当前宿主完整集合、Agent证据分类、角色映射、实际family测量/落地、PNG验证；不假设任何固定字体已安装 |
 | 验收等级、合法叠放/文字遮挡、分级评审与误报处理 | **[acceptance](references/acceptance.md)**：默认medium，提示词/选项控制，与effort独立；原生检查＋真实PNG清单＋带证据的逐项判断，不要求全部箭头绑定 |
