@@ -45,6 +45,10 @@
    > “帮我新建一个硬件微架构图，使用数字电路素材库中的 ALU、MUX 和通用寄存器堆，画一个两阶段运算数据通路。”
    Agent 会自动执行：发现库 -> 读取摘要 -> 检索图元 Exact ID -> 原生注入画布 -> 查看渲染 PNG 闭环验证。
 
+## 仓库自动同步
+
+Scripts、插件产物及Skill文件由上游GitHub `main` push通知触发同步，接收工作流为[sync-scripts](../.github/workflows/sync-scripts.yml)、[sync-plugin](../.github/workflows/sync-plugin.yml)和[sync-skill](../.github/workflows/sync-skill.yml)。已取消定时检查，保留**Run workflow**手动补发；通知失败或遗漏时需手动补同步。同步范围及既有PR／合并策略不变，也不会自动pull本地vault工作目录。
+
 ## 移植功能到自己的库
 部分功能是需要自定义脚本和修改后的excalidraw插件搭配使用，而也有部分功能只需要自定义脚本。
 

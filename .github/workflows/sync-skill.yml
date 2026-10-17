@@ -4,8 +4,6 @@ on:
   repository_dispatch:
     types: [skill-updated]
   workflow_dispatch:
-  schedule:
-    - cron: '53 */6 * * *'
 
 permissions:
   contents: write

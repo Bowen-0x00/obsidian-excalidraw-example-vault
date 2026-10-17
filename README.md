@@ -47,6 +47,10 @@ This repository comes pre-configured for end-to-end autonomous AI diagramming:
    The agent will discover the library, read the index, retrieve exact item IDs, natively insert elements into the canvas, and inspect the rendered PNG to verify layout.
 
 
+## Automatic Repository Synchronization
+
+Scripts, plugin artifacts and Skill files are synchronized by upstream GitHub `main` push notifications. The receivers are [sync-scripts](.github/workflows/sync-scripts.yml), [sync-plugin](.github/workflows/sync-plugin.yml) and [sync-skill](.github/workflows/sync-skill.yml). Periodic checks are disabled; **Run workflow** remains available for manual catch-up if a notification fails or is missed. Existing synchronization scope and PR/merge behavior are unchanged; this automation does not pull updates into a local vault checkout.
+
 ## Porting Features to Your Own vault
 Some features require a combination of custom scripts and the modified excalidraw plugin, while others only require custom scripts.
 
