@@ -13,6 +13,7 @@ description: 在 Obsidian Excalidraw 修改版中创建、修改原生可编辑�
 - **只有CLI也可执行**：`launcher.py cli -- ...`是本包绘图客户端；`launcher.py dsl -- ...`是声明式场景；插件自身native CLI另见参考。三者都不替代真实宿主连接与PNG检查。
 
 ## 先决定目标和视觉，不要求用户写坐标
+- **新版原生表格**：先发现`capabilities.nativeTable.callable`，为true时读[原生表格规范](references/table-native.md)，用`drawing_table(create|style)`调用宿主主题／边框模板，不逐格模拟。它需要配套schema-v2宿主构建；旧`create_table`和DSL表格不自动获得新能力，不虚构theme字段或把开发宿主当正式发布。
 
 - 使用已发现的真实`drawing_*` MCP，前缀/schema以客户端为准；相对references路径属于当前Skill，客户端支持时才用`skill://obsidian-excalidraw/...`。
 - 新图用唯一文件名创建独立`.excalidraw.md`；已有图按明确file_path绑定，保留file/contextToken/revision。不能用active/first、clear重画或手拼整场景JSON。
