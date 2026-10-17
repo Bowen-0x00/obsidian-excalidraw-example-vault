@@ -155,6 +155,12 @@ ECharts由真实options保留数据，泳道由真实Engine管理；customData.d
 
 LaTeX先看discovery中的`latex.available`：当前插件源码可能通过独立Excalidraw Extras MathJax组件加载；缺依赖会明确LATEX_PREREQUISITE_MISSING，不要等待一个无人确认的弹窗或拿公式普通文本/假图片替代。混排提取脚本也依赖此能力；它不在默认bundle/公开脚本MCP中，真实入口、删除原文字及关系恢复见[行内公式流程](visual-content.md)，不能只写“已支持LaTeX”而省掉转换。
 
+## 原因不明时：可选 CDP 只读诊断
+
+`read/check/PNG`无法解释错位、遮挡、字体、原生表格或资源状态时，读[cdp-readonly](cdp-readonly.md)。先`drawing_debug(status)`，未启用则向用户提供“保持关闭／开启只读”的选择；不自动改配置、启动调试宿主或SSH转发。
+
+只读采集明确已打开的宿主vault和file：固定JS＋V8 `throwOnSideEffect`，不提供Input、任意evaluate、断点、保存/导出或写API。取到真实ID和原因线索后，使用正常入口重新read最新revision，再提交用户任务已授权的最小patch；DSL受管对象更新源/state，不能CDP直接改。用户仅授权诊断时只报告，不微调。最后仍需PNG/review；诊断fingerprint不是Bridge revision。
+
 ## 交付
 
 给出真实vault文件、最终PNG、实际保存/校验结果、评审轮数和剩余问题。MCP交付ledger；原生-only明确没有MCPledger并列实际评审记录/检查边界。保留原生可编辑场景，以最后一次真实PNG和校验为准。

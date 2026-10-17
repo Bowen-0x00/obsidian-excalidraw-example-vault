@@ -2,14 +2,15 @@
   "schemaVersion": 1,
   "source": {
     "repository": "Bowen-0x00/obsidian-excalidraw-agent-skill",
-    "commit": "2b6e636a582a2e858dc18b5c958c94622096c393"
+    "commit": "c446ac7003906cfdb58a0b985b4c474aca929cc0"
   },
   "files": {
-    "SKILL.md": "8d5d47a3abb4a17cfb175236adf9995b4f5c9c6926ab12071869555955d8f5ba",
+    "SKILL.md": "b6bf75f3860d1d21e8a83fa69318b403d70dc4b9d8d3d937dae711e8c91ac340",
     "prompts/maintain-libraries.zh-CN.md": "d69a30740084b76b5c4ee69cabf415e3e7987bec97c6deca6e0a7cfe4aa7a0c7",
     "references/acceptance.md": "1cf863e7ebc22fffad1dcf9fe6d129b03471e60ffa797b3a7bad017387620dcf",
     "references/agent-setup.md": "0662f34463bc14e69df83b0dd664d2c22df6c31647d7bdf1fa0a4f74f1f8366e",
     "references/capability-map.md": "bb2c1f468e453b4df62bf71685530df007c1511fe079b10cfd1cef5aa8ef1134",
+    "references/cdp-readonly.md": "32bf8683fea848d443957c8e3a0a2a6f60a7dd149f8d632911b9e11c9f1e9bbf",
     "references/diagram-recipes.md": "b270a048dce3f6bd964b9ea6383aa872bf3f5c5b3cca15a42a818b3b9d4b270a",
     "references/images-assets.md": "c277fb48a45eb4307925a34ac0056f89924d50a29ec71cf43d7322efb5f4a625",
     "references/interaction-navigation.md": "0625ecd48413070bcfd0d565a11e4e072c693ef61c7dc9fa2da128715a030e47",
@@ -27,6 +28,6 @@
     "references/table-native.md": "7b95e6773495cfef0e1829f9b586bfa3b96e79b9db959495c56892a272394e03",
     "references/typography.md": "dba3a12641afa7b9d5241513cc77e55db9cff6479071d18a637398981e24c669",
     "references/visual-content.md": "c701e3ae9fda7db4fddd6b850fe5ac75366f7ea857024c2bdef43c08faef917c",
-    "references/workflow-details.md": "fb2eb6efbca6f2e4bb5a8ee5ca1f2e3d8dcfa2c4ace6bbd67dcb4d5495c0feeb"
+    "references/workflow-details.md": "935218d5ad99063654ecb5eb18f9c20be2bc1d73cf401597f1d01b25e755f853"
   }
 }
