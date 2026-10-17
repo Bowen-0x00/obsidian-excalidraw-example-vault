@@ -26,7 +26,7 @@
 
 ## 额外重要能力：保留已有机制，按需发现
 
-- **Table**：绘图脚本目录下`table/Feature-Table-Engine.md`、`Feature-Table-Paste-MD.md`、Action Generate/Modify。Bridge已有`create_table`和table metadata，cell root/row/col/rowNum/colNum由执行器维护；矩形+bound text保留编辑。绘制外观按下节；Markdown粘贴Hook与显式构建不同。本次只更新Agent绘图规范，不改Table Engine或预告接口。
+- **Table**：新版优先[原生表格规范](table-native.md)：发现`nativeTable.callable`后通过`drawing_table`使用宿主八套主题、五种边框模板和schema-v2语义单元格；配套宿主仍是开发构建，不能假称已发布。旧Scripts2 Table Engine、Bridge `create_table`与DSL表格保持旧契约，不自动支持theme字段。新旧入口明确区分，不为展示新版效果逐格模拟。
 - **Swimlane/ECharts/LaTeX**：已有主Skill流程及adapter，继续按runtime discovery执行。用户称swimeline时保留意图，实际机制为swimlane/isContainer；ECharts 1.3.0的类型、结构化options与编辑往返见[visual-content](visual-content.md)，不能把UI枚举等同Bridge枚举；LaTeX需真实Extras MathJax。
 - **Link/follow**：`link/Feature-Link-Engine.md`处理onLinkClick、同文件`#^group=...`跳转及历史，`Action-Return-Link-Origin.md`回退；`follow/Action-Follow-Arrow-Forward/Backward.md`按实际绑定导航。原生link可以通过已有patch_element设置，但增强导航需Engine和真实view；不要为消除导航问题删除业务边。
 - **No-bind/advanced connector**：`connection/Action-Toggle-No-Bind.md`是面板配置nobind，和显式connect/rebind操作不同。用户要禁止吸附时读实际字段/内核识别，不默认禁用所有绑定；连接优先native-features高级连接。
@@ -38,6 +38,8 @@
 ## 表格：清晰表头与连续网格
 
 适用于保留站、寄存器状态、队列、对照表和普通数据表。它们不是一组独立圆角卡片，**不要继承普通节点profile的自适应大圆角**。
+
+配套原生宿主可用时，**先使用`drawing_table`和宿主主题／边框模板**，以下手工规范只用于旧表格与用户明确要求的局部定制；不要将其实现为第二套模板引擎。旧表格迁移或混合所有权编辑不在本次新工具契约内。
 
 - 所有内部单元格显式`roundness:null`、`roughness:0`、实色填充，网格从约1场景单位细线开始；同列边界、同行基线严格对齐，相邻格无卡片间隙。外框也优先直角；用户确需圆角时仅考虑整体外轮廓，不给每格四角挖缺口。
 - 表头和正文有清晰层级：同一语义色的深色表头＋浅色/白色正文，表头文字选足够对比的颜色。例：表头`#475569`/字`#FFFFFF`，正文`#F8FAFC`/字`#16324F`；保留站可用紫系、寄存器可用青系。只是非strict起点，不覆盖用户指定色板；不随机逐格染色。深色主题同样检查对比，不能机械套白底。
