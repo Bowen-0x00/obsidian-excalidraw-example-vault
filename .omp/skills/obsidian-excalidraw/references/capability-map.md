@@ -26,7 +26,7 @@
 
 ## 额外重要能力：保留已有机制，按需发现
 
-- **Table**：新版优先[原生表格规范](table-native.md)：发现`nativeTable.callable`后通过`drawing_table`使用宿主八套主题、五种边框模板和schema-v2语义单元格；配套宿主仍是开发构建，不能假称已发布。旧Scripts2 Table Engine、Bridge `create_table`与DSL表格保持旧契约，不自动支持theme字段。新旧入口明确区分，不为展示新版效果逐格模拟。
+- **Table**：新版优先[原生表格规范](table-native.md)：发现`nativeTable.callable`后通过`drawing_table`使用宿主八套主题、五种边框模板和schema-v2语义单元格；是否可用以实际宿主能力为准，安装Skill不等于升级插件。旧Scripts2 Table Engine已在上游退休，本包不再部署或启动它，不能与宿主原生表格Hook并用。Bridge `create_table`与DSL表格保持旧契约，不自动支持theme字段。新旧入口明确区分，不为展示新版效果逐格模拟。
 - **Swimlane/ECharts/LaTeX**：已有主Skill流程及adapter，继续按runtime discovery执行。用户称swimeline时保留意图，实际机制为swimlane/isContainer；ECharts 1.3.0的类型、结构化options与编辑往返见[visual-content](visual-content.md)，不能把UI枚举等同Bridge枚举；LaTeX需真实Extras MathJax。
 - **Link/follow**：`link/Feature-Link-Engine.md`处理onLinkClick、同文件`#^group=...`跳转及历史，`Action-Return-Link-Origin.md`回退；`follow/Action-Follow-Arrow-Forward/Backward.md`按实际绑定导航。原生link可以通过已有patch_element设置，但增强导航需Engine和真实view；不要为消除导航问题删除业务边。
 - **No-bind/advanced connector**：`connection/Action-Toggle-No-Bind.md`是面板配置nobind，和显式connect/rebind操作不同。用户要禁止吸附时读实际字段/内核识别，不默认禁用所有绑定；连接优先native-features高级连接。
