@@ -104,6 +104,68 @@ Bridge 0.13.0新增`rotate`、`scale_selection`，通过现有`drawing_apply`批
 - `dot`不修改startBinding/endBinding/boundElements，不能用它代替connect/rebind的业务关系。`arc/gap`也只解决线—线交叉，不免除穿节点、标签遮挡、箭头端点错误等检查。
 - 侧栏Line Crossings可改选中line/arrow，并通过`currentItemLineCrossings`影响后续手绘线；Agent自动创建仍逐条显式传值，避免修改全局绘制偏好。Native CLI与Bridge schema不同，先读其schema确认customData是否允许；未确认时走已验证MCP，不照抄op到原生CLI。
 
+### 四种路径风格：sharp / round / elbow / curve
+
+这四个名称描述的是**路径几何**，不是 arrowhead 类型：
+
+| 风格 | 原生表达 | 适合 | 当前保证与限制 |
+| --- | --- | --- | --- |
+| `sharp` | `roundness:null`、`elbowed:false`、`points` 多点折线 | 普通直线／硬折线、网格和工程边 | 当前 Bridge/宿主真实支持；点列是局部坐标，首点必须`[0,0]`；多点折线不等于自动避障 |
+| `round` | `roundness:{type:2,value:r}`、`elbowed:false` | 普通多点折线的平滑转角 | 当前通过宿主普通 linear renderer 的 curve fitting；`value`是场景单位近似控制量，不是屏幕像素／绝对圆弧半径；实际PNG必须检查 |
+| `elbow` | `elbowed:true`，可配`roundness:{type:2,value:r}` | 原生正交路由、流程和连接器 | 是独立 elbow renderer；`roundness:null`不等于所有宿主版本都显示硬直角，当前实现有默认转角值，硬直角用`value:0`并读回 |
+| `curve` | 修改版 `customData.curveArrow:true` + 普通 arrow | 用户明确需要的 S 型／贝塞尔风格 | 当前 fork renderer 会按端点方向和绑定 fixedPoint 计算 cubic S 曲线；不是通用 waypoints 曲线，也不是 Bridge 普通 `routing:"curve"` 已自动落地；精确碰撞/障碍检查仍 unknown |
+
+#### 调用示例
+
+```json
+{
+  "op":"connect",
+  "ref":"edge",
+  "from":"@source",
+  "to":"@target",
+  "start":{"anchor":"right","mode":"orbit"},
+  "end":{"anchor":"left","mode":"orbit"},
+  "startArrowhead":null,
+  "endArrowhead":"triangle",
+  "elbowed":false,
+  "style":{"roundness":null,"strokeWidth":2,"roughness":0},
+  "customData":{"agentDiagram":{"logicalId":"edge"}}
+}
+```
+
+这个是 `sharp`。`round` 只把 style 换成 `roundness:{type:2,value:6}`；`elbow` 改为 `elbowed:true`，用实际端口和 waypoints；`curve` 需在同一个 `customData` 中增加 `curveArrow:true`：
+
+```json
+{"op":"patch_custom_data","target":"真实arrowID","merge":{"curveArrow":true}}
+```
+
+`curveArrow` 是修改版当前 renderer 的受控字段，不是任意代码；Bridge 的安全检查仍拒绝 `customData.document`、raw gradient 和 raw ECharts source。必须先通过 discovery／feature schema 或实际 fork 版本确认 callable；如果当前 Bridge 没有把该字段纳入公开创建契约，使用受信宿主原生入口，不把字段写入当作已显示。
+
+#### 选择和验收
+
+- 普通图默认 `sharp`；需要柔和转角才选 `round`；需要严格正交才选 `elbow`；S 型 `curve` 只有用户明确要求或确实改善路径层级时使用。
+- `round` 与 `elbow` 不能混称：前者是普通线的平滑点列，后者是独立正交连接器 renderer。
+- `curve` 端点方向由绑定 fixedPoint／端点轴向推导，控制点长度由宿主计算；Agent 不能承诺任意 S 形状、障碍避让或精确半径。
+- 任何风格都要 read(full) 核对 `points`、`roundness`、`elbowed`、`customData.curveArrow`、双向 bindings；保存后再 check、全图／局部 PNG 和 review。曲线几何若返回 unknown，必须逐项用当前PNG adjudicate 或披露限制。
+- 微架构信号默认仍只用 `sharp` 或 `elbow`；`round`／`curve`需要领域和视觉理由，不得为了看起来高级而绕过正交审计。
+
+### 路径不是箭头头型：sharp / round / elbow / S-curve
+
+这四种说的是arrow的**轴线路径/renderer**；`startArrowhead`/`endArrowhead`另行选择 triangle/diamond/block 等端点符号，不能混用这两组概念。当前配套 ymjr renderer 与 Bridge 字段的区别：
+
+| 用户称呼 | 原生字段/构造方式 | 实际语义 | 限制 |
+| --- | --- | --- | --- |
+| `sharp` | 普通`elbowed:false`的 `arrow`，`roundness:null`；低层`connect`按端口加点列/waypoints | 保留点列各折点的直线多段折线；也是单段直箭头 | Bridge低层connect不自动避障；点列为局部scene几何且可有负局部坐标。只查实际points不假定“sharp”会自动正交 |
+| `round` | 普通`elbowed:false`箭头，多点points，`roundness:{type:2,value:r}`（或实际意图用既有`edge:"round"`映射） | 宿主普通 linear renderer 对整条多点线做平滑/曲线拟合；不是另一种arrowhead | 不是每个直角有独立精确圆弧radius；`r`是宿主场景单位控制参数，最终轨迹依点列/renderer而定，须看PNG；精确曲线碰撞未证明 |
+| `elbow` | `elbowed:true`箭头，端点绑定及可用时waypoints/固定段 | 专用正交连接器／受用户拖拽逻辑管理的折线路径 | 不等同随便传一组普通polyline点；宿主可能按连接端口重排。圆角取`roundness?.value ?? 16`；硬直角要显式`{type:2,value:0}`并read验证。低层Bridge路径不等于带障碍避让的全自动router |
+| `curve` | 修改版专用`arrow.customData.curveArrow:true` | renderer从起末points与绑定fixedPoint法向计算一条 cubic S 型曲线；控制柄长度由轴向端点距离估算且夹在30–300场景单位 | 不是`roundness`，不是自定义任意控制点Bezier，也**不是**Bridge/primitive的`routing:"curve"`别名；只保证此fork对普通arrow renderer走该特支。自定义arrowhead部分采用renderer独立几何（约20×10）而非可调曲率/普遍包络模型。几何checker不证明曲线避障，必须查看当前全图/局部PNG |
+
+基础 `sharp/round/elbow` 的几何分类已能从实际saved arrow `type/elbowed/roundness/points`区分；`curve` 的输出标记是 `customData.curveArrow`。Bridge `connect`可安全深合并该布尔metadata，不含可执行代码；renderer确实读取它。但**当前公共capability schema没有独立的 `curveArrow` route-style/feature 专项声明或避障保证**。禁止假装 `routing:"curve"`、connect子字段`curveArrow`、或`mindmap.settings.arrowType`就是等价公开arrow API：若用此特支，只通过arrow已有的安全`customData`声明，经 `connect` 的`customData`或已读回真实ID的 `patch_custom_data {merge:{curveArrow:true}}`，保存后用 `drawing_read`(full) 确认。不要为绕过feature语义给arrow写虚假的mindmap root/parent元数据。
+
+**选择规则：**通用图先看意图，不要给每条线轮流用四种风格。无障碍、编辑稳定的硬折线用sharp；刻意柔化转折用round；流程／电路／微架构确实需要正交约束才用elbow；需要表现渐进传递/反馈且S轨迹能提升可读性时显式选curve。用户要求的微架构信号默认仍应正交，曲线例外需逐线说明。
+
+**验收规则：**保留ID/绑定/头型/全文标签；应用后full-read点列、`elbowed`、roundness及可选curveArrow标记，check然后当前revision overview＋必要detail PNG。保存的原始折线点不一定等于round或curve实际绘制轨迹。现有诊断不采样或认证每一段Catmull/S曲线；`UNSUPPORTED_GEOMETRY`需逐ID结合PNG处理，不能整图豁免，也不能因属性字段正确就宣称曲线避障通过。
+
 ### 验证与能力来源
 
 先按目标ID读full，确认line/arrow、原始points和业务绑定；apply后重新读回customData及关系，再全图PNG实际查看。交叉配对需要场景上下文，ids局部PNG必须包含两根相交线，单根预览不能证明全图无交叉。没有新renderer的旧宿主可能保存字段却不显示效果；字段能写≠能力已生效，不静默退回遮罩技巧。
