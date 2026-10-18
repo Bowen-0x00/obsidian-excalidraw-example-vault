@@ -22,7 +22,7 @@ description: 在 Obsidian Excalidraw 修改版中创建、修改原生可编辑�
 - 已给定专业平整等方案时**直接执行，不为重复选型读取整份风格问卷**。正文20/标题28、roughness0、线宽2、普通节点矩形固定`roundness:{type:3,value:6,roundType:"arc"}`作为视觉起点；**表格/寄存器字段的单元格例外：`roundness:null`，表头与正文分色，不套圆角卡片profile**，按[表格规范](references/capability-map.md#表格清晰表头与连续网格)制作。字体从当前宿主集合按角色与语言选定；标题粗体用真实text ID的`set_text_global_style`，非顶层bold。
 - 配色落实为实际hex；strict任务同时控制底色、正文、边框，不能偷偷补默认蓝色。手绘线条和字体独立选择；字体先discovery确认，颜色/字重/尺寸最终读回并查看PNG，不凭profile名称认定生效。
 - **创建文字、选/换字体先读[通用字体工作流](references/typography.md)**：接口取得当前完整集合和来源→Agent按证据判断用途/未知项→按正文/代码/标签/注释等角色选实际family→用该family测量、落地、看PNG。不是本地字体白名单，也不让profile/代码primitive的历史默认名称替代发现；注册、字形覆盖、加载和实际fallback分别验证。已有图未请求换字则继承。
-- 语义决定箭头：数据流triangle，强调推进可用PPT宽箭`block_arrow/block_arrow_outline`（不限于PPT页），UML用真实空心三角/菱形；不擅加双向。**箭身宽走customData.blockArrowWidth，长度走端点/路径，头比例走arrowHeadSize，描边走strokeWidth**，按空间主动选粗短/细长；先核对runtime支持，详见[箭头选型与尺寸](references/layout-export-animation.md)。普通elbow转角`{type:2,value:6}`/value0不等于block分支曲线。
+- **路径风格先选几何**：`sharp`=普通多点折线（`elbowed:false`＋`roundness:null`），`round`=普通点列平滑转角（`roundness:{type:2,value:r}`），`elbow`=专用`elbowed:true`正交连接器，`curve`=修改版受控`customData.curveArrow:true` S型renderer。四者不是箭头头型；按[四种路径风格](references/layout-export-animation.md#路径不是箭头头型-sharp-round-elbow-s-curve)选择，curve/round精确碰撞仍可能unknown，不能把PNG好看当避障证明。
 - **绘图前读[分级验收](references/acceptance.md)**：low基本检查，medium重点内容/可读/遮挡，high再细查连接与层级风格；高等级不强制每根箭头绑定。合法文字置于背景框上不算冲突；字互压、线穿字、后画对象盖字、换字体/字号导致不可读，中高等级优先修复。具体几何误报按issueId＋当前PNG＋理由处理，不能全局忽略。
 
 ## 硬件任务必须先分流
