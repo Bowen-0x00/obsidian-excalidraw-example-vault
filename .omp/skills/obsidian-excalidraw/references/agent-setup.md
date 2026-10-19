@@ -92,6 +92,14 @@ uv run --frozen python launcher.py doctor
 
 `connect`部署受管脚本到插件`settings.scriptFolderPath`下的`Agent-Drawing/`。文档统一称这个根目录为**绘图脚本目录**（drawing script directory），实际名称由用户配置决定；不重命名磁盘目录、不假设固定路径。自动URI启动需要Advanced URI；否则打开目标画布并手动运行`Agent-Drawing/mcp/Start-Agent-Drawing`。
 
+**OMP工作目录不等于绘图连接目标。** 在另一个vault目录启动OMP只影响项目文件／Skill发现，仍可能使用插件用户级state里上次选中的vault。先看`drawing_setup(status)`的`vault_path/bridge_url`，再按用户指定vault连接；不要因为cwd正确就向旧vault写图。
+
+`Refusing to overwrite a modified or unmanaged script`是保护，不是凭据故障。必须保留现有文件，比较真实已发布源码／既有安装记录。**禁止把当前磁盘文件重新算hash写进installation.json伪造所有权**，禁止全目录覆盖或历史会话grep token来绕过保护。无法安全确认就报告具体冲突文件，等用户选择保留或按公开版本迁移。
+
+`launched:false, advanced_uri_enabled:false`表示自动命令根本未发出；让用户在目标Obsidian运行准确的Start-Agent-Drawing命令，不反复start／轮换token。`configured:true`只说明配置已写入，不等于`connected:true`或已更新运行中的Bridge。
+
+长驻客户端现在会在每次请求前重新读取未显式固定的私有连接配置，因此connect／外部修复后的URL和token会用于下一次请求；显式构造参数和环境变量仍优先。不做401重试、不重放未知结果写操作。旧MCP进程仍需reload一次加载该修复；遇到`setup connected=true`但`drawing_context`仍401，优先检查进程缓存／环境覆盖，不搜历史凭据或改宿主授权。
+
 | 内容 | 存储位置 |
 | --- | --- |
 | 原生图、用户素材 | 宿主vault或用户明确指定的资源目录 |
@@ -143,6 +151,9 @@ omp plugin upgrade --scope user obsidian-excalidraw-agent-skill@obsidian-excalid
 | 找到Skill却没有工具 | Skill与MCP是两次配置；核对stdio命令、实际路径、uv/Python及客户端权限 |
 | MCP工具出现但未连Obsidian | drawing_setup(status)，检查GUI宿主Bridge、目标vault和私有配置 |
 | connected=true但ready=false | 已连服务但无目标画布；显式create或bind |
+| 在Example vault目录启动却连接演示库 | cwd只选择项目；用户级MCP state仍保留旧目标，先核对status中的vault_path |
+| configured=true但launched=false/connected=false | 配置与实际服务不同；缺Advanced URI时需用户手动启动，不当作已连接 |
+| setup已连接但drawing_context鉴权失败 | 旧进程可能缓存凭据；加载本次客户端修复／reload MCP，检查显式环境覆盖，不扫描历史token |
 | Claude/Codex无法读skill:// | 该URI是OMP功能；读取安装目录下对应相对文件 |
 | PNG已生成但无法查看 | 核对客户端/模型图片能力，不能记录视觉通过 |
 | 更新被Windows EPERM阻止 | 停止占用旧安装包的本包MCP进程后更新；不关闭其他应用/删用户state |

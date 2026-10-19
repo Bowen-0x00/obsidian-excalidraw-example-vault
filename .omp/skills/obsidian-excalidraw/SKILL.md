@@ -35,7 +35,7 @@ CPU/流水线/微架构/硬件数据通路/阵列/缓存层级/寄存器堆/片�
 **减少模型轮次，不减少绘图能力或验证。** 一次读齐本任务所需schema；可并行读取独立资料/只读状态。todo更新与下一步操作同一轮，不为一次进度更新单独等模型；用户显式要求计划时照做。
 对普通服务/业务节点＋连线，且视觉方案已给定：本页字段足够时直接用快路径，不为标题粗体/R6/triangle遍读所有参考。**此规则不适用于硬件微架构**，硬件必须先读专用参考；复杂固定列/多端口/总线图用显式位置/尺寸、原生operations与真实素材。查接口问题优先读取该工具schema并修字段，不扫整个能力库。
 
-1. 有drawing_setup先status；已连接时discovery核对字体/引擎。可同轮发独立只读请求。连接失败先按真实前提恢复，不能假设画布存在。远端只status，不connect/start/reload宿主。
+1. 有drawing_setup先status；核对`vault_path`是否为用户目标，**cwd不等于Bridge目标vault**。已连接时discovery核对字体/引擎。脚本覆盖保护出现时不伪造installation.json所有权、不搜历史token；按[接入排错](references/agent-setup.md)处理。`launched:false`不是启动成功；缺Advanced URI则提示用户手动运行准确命令，不反复connect轮换凭据。远端只status，不connect/start/reload宿主。
 2. `drawing_context(create,filename,foldername)`或明确file_path绑定，取得token和revision。多Agent各自一图，只由协调者管理服务，宿主串行执行；同图竞争发生REVISION_CONFLICT就重新读，不覆盖用户新编辑。
 3. **普通一次性节点/流程/架构优先`drawing_compose(context_token,base_revision,diagram)`**；若本轮已选择DSL，改走[Scene DSL](references/scene-dsl.md)而不重复compose。compose在代码内完整plan→apply，不让模型复制大段operations；库组合按阶段提交并报告已执行集合，不宣称跨阶段原子。
 4. 没有后续样式时compose传`inspect:true,acceptance_level:本次选择`；还需样式时先compose，再一次apply(inspect:true)按refs局部修正。expected覆盖任务关键内容/关系；后续省略等级/断言会继承同context设置。operations每项必须有`op`不是type；标题粗体用`{"op":"set_text_global_style","targets":["refs中真实textID"],"bold":true}`。不为绕检查重建整图。
