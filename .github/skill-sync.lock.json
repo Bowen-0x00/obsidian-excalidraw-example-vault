@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "source": {
     "repository": "Bowen-0x00/obsidian-excalidraw-agent-skill",
-    "commit": "817a78bd30045a5d06bc74222fa0b647a72beead"
+    "commit": "02c21abd90d867cc8744fdc2b2dd142e52ad8c6a"
   },
   "files": {
-    "SKILL.md": "60566e75da94667c6e47f4089fdcb5d6ea44839f6c177e434525879c9b019ae0",
+    "SKILL.md": "5bf61c3783e2d67d757286c5568cf21c633dffc6459a966ac202e256c8d308db",
     "prompts/maintain-libraries.zh-CN.md": "d69a30740084b76b5c4ee69cabf415e3e7987bec97c6deca6e0a7cfe4aa7a0c7",
     "references/acceptance.md": "1cf863e7ebc22fffad1dcf9fe6d129b03471e60ffa797b3a7bad017387620dcf",
-    "references/agent-setup.md": "0662f34463bc14e69df83b0dd664d2c22df6c31647d7bdf1fa0a4f74f1f8366e",
+    "references/agent-setup.md": "896578a8ed32499d41be37d73e6382920b637b7d29a3f2fa53e74626ed589312",
     "references/capability-map.md": "d7bdde771235e468d890b2179acf112d63dffaf4c15143239259cdfffb13be72",
     "references/cdp-readonly.md": "32bf8683fea848d443957c8e3a0a2a6f60a7dd149f8d632911b9e11c9f1e9bbf",
     "references/diagram-recipes.md": "b270a048dce3f6bd964b9ea6383aa872bf3f5c5b3cca15a42a818b3b9d4b270a",
