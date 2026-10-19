@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "48c76abade64aa86",
+        "id": "f65ec2312d1ff754",
         "type": "tabs",
         "children": [
           {
-            "id": "d59433ee48d57759",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "images/Untitled Diagram.svg"
-              },
-              "icon": "lucide-image",
-              "title": "Untitled Diagram"
-            }
-          },
-          {
-            "id": "9c01d85d4d4130a6",
+            "id": "38967d36cfa84a7d",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "example/Example-Vault-Smoke-Test.excalidraw.md"
+                "file": "example/visio绕线/Visio-Line-Crossings.excalidraw.md"
               },
               "icon": "excalidraw-icon",
-              "title": "Example-Vault-Smoke-Test.excalidraw"
+              "title": "Visio-Line-Crossings.excalidraw"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -180,53 +167,53 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "9c01d85d4d4130a6",
+  "active": "38967d36cfa84a7d",
   "lastOpenFiles": [
-    "images/Untitled Diagram.svg",
-    "plugins/Excalidraw/Drawing 2026-10-16 02.51.09.excalidraw.md",
-    "example/Example-Vault-Smoke-Test.png",
-    "example/Example-Vault-Smoke-Test.excalidraw.md",
-    "images/switch connection shape2.gif",
-    "example images/font.gif",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/zoom/Feature-Zoom-Hide-Engine.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/zoom/Action-Toggle-Zoom-Hide.md",
+    "example/echarts/ECharts-1.3.0-能力总览.excalidraw.md",
+    "example/visio绕线/Visio-Line-Crossings.excalidraw.md",
+    "example/visio绕线",
+    "example/表格/表格.excalidraw.md",
+    "example/echarts",
+    "example/动画演示/一条快充科普视频的诞生-动画展示-20261019.excalidraw.md",
+    "example/动画演示/Transformer从直觉到生成-八页讲解-20261019.excalidraw.md",
+    "example/动画演示/Transformer从直觉到生成-八页讲解-20261019-总览.png",
+    "example/动画演示/Transformer八页讲解-预览-20261019/08.png",
+    "example/动画演示/Transformer八页讲解-预览-20261019/07.png",
+    "example/动画演示/Transformer八页讲解-预览-20261019/06.png",
+    "example/动画演示/Transformer八页讲解-预览-20261019/05.png",
+    "example/动画演示/Transformer八页讲解-预览-20261019/04.png",
+    "example/动画演示/Transformer八页讲解-预览-20261019/03.png",
+    "example/动画演示/Transformer八页讲解-预览-20261019/02.png",
+    "example/动画演示/Transformer八页讲解-预览-20261019/01.png",
+    "example/动画演示/Transformer八页讲解-预览-20261019",
+    "example/动画演示/一条快充科普视频的诞生-动画展示-20261019-预览.png",
+    "example/动画演示/attachments",
+    "example/动画演示",
+    "Excalidraw-LaTeX-Edit.md",
+    "example/表格/Drawing 2026-10-18 21.59.20.excalidraw.md",
+    "plugins/Excalidraw/Drawing 2026-10-18 21.16.38.excalidraw.md",
+    "example/额外颜色盘/额外颜色盘.excalidraw.md",
+    "example/表格/theme-sketch.excalidraw.md",
+    "example/表格/theme-morandi-sage.excalidraw.md",
+    "example/表格/border-grid.excalidraw.md",
+    "example/表格/border-framed.excalidraw.md",
+    "example/表格/border-dashed.excalidraw.md",
+    "example/表格/theme-dark-ink.excalidraw.md",
+    "example/表格/theme-academic.excalidraw.md",
+    "example/表格/shadow-on.excalidraw.md",
+    "example/表格/shadow-off.excalidraw.md",
+    "example/表格/shadow-comparison.excalidraw.md",
+    "example/表格/fill-zigzag.excalidraw.md",
+    "example/表格/fills-overview.excalidraw.md",
+    "example/表格/fill-solid.excalidraw.md",
+    "example/表格/fill-hachure.excalidraw.md",
+    "example/表格/fill-cross-hatch.excalidraw.md",
+    "example/表格/content-ellipsis.excalidraw.md",
+    "example/表格/content-comparison.excalidraw.md",
+    "example/表格",
+    "example/额外颜色盘",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/zoom",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/wave-drom/Feature-Wavedrom-Engine.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/wave-drom/Action-Wavedrom-Manager.md",
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/wave-drom",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/thumbnail/Feature-Thumbnail-Engine.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/thumbnail/Action-Toggle-Thumbnail.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/thumbnail",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Feature-Text-Shortcuts-Engine.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Feature-Text-Render-Engine.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Feature-Template-Engine.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Feature-Markdown-Header-Engine.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Feature-Input-Emoji-Engine.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Text-Copy-Elements.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Split-Text-Segments.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Paste-Wrapped-Text.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Highlight-Background-UI.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Highlight-Background-Silent.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Format-Text-Partials.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Format-Text-Partials-Silent.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Format-Text-Globals.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/tag/Action-Set-Tags.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/tag",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Format-Text-Global-Silent.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/text",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/table/Feature-Table-Paste-MD.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/table/Feature-Table-Engine.md",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/table",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/swimlane",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/step-appear",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/space",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/smart-art",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Top-Brace.svg",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Top-Brace-Path.svg",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Right-Brace-Path.svg",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Left-Brace.svg",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Left-Brace-Path.svg",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Bottom-Brace.svg",
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Bottom-Brace-Path.svg"
+    "plugins/Excalidraw/Scripts/Downloaded(Custom)/thumbnail"
   ]
 }

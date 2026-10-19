@@ -226,8 +226,31 @@
     },
     "extra colors": {
       "Palette JSON Config": {
-        "value": "[\n  {\n    \"groupName\": {\n      \"zh\": \"莫兰迪色系\",\n      \"en\": \"Morandi Colors\"\n    },\n    \"colors\": [\n      {\n        \"name\": {\n          \"zh\": \"樱花粉\",\n          \"en\": \"Cherry Blossom\"\n        },\n        \"value\": \"#EDAFB8\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"粉黛色\",\n          \"en\": \"Powder Petal\"\n        },\n        \"value\": \"#F7E1D7\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"燕麦灰\",\n          \"en\": \"Dust Grey\"\n        },\n        \"value\": \"#DEDBD2\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"豆绿灰\",\n          \"en\": \"Ash Grey\"\n        },\n        \"value\": \"#B0C4B1\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"铁锈橙\",\n          \"en\": \"Iron Grey\"\n        },\n        \"value\": \"#f08c01\"\n      }\n    ]\n  },\n  {\n    \"groupName\": {\n      \"zh\": \"历史经典色\",\n      \"en\": \"Historical Classics\"\n    },\n    \"colors\": [\n      {\n        \"name\": {\n          \"zh\": \"青柠绿\",\n          \"en\": \"Lime Green\"\n        },\n        \"value\": \"#6ECC54\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"提香红\",\n          \"en\": \"Titian Red\"\n        },\n        \"value\": \"#D34947\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"马尔斯绿\",\n          \"en\": \"Marrs Green\"\n        },\n        \"value\": \"#018B8D\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"克莱因蓝\",\n          \"en\": \"Klein Blue\"\n        },\n        \"value\": \"#002FA7\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"勃艮第红\",\n          \"en\": \"Burgundy Red\"\n        },\n        \"value\": \"#470125\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"美泉宫黄\",\n          \"en\": \"Schonbrunn Yellow\"\n        },\n        \"value\": \"#F9D46C\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"蒂芙尼蓝\",\n          \"en\": \"Tiffany Blue\"\n        },\n        \"value\": \"#71E2D1\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"中国红\",\n          \"en\": \"Chinese Red\"\n        },\n        \"value\": \"#C8161D\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"凡戴克棕\",\n          \"en\": \"Vandyke Brown\"\n        },\n        \"value\": \"#492D22\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"爱马仕橙\",\n          \"en\": \"Hermes Orange\"\n        },\n        \"value\": \"#EB5C20\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"普鲁士蓝\",\n          \"en\": \"Prussian Blue\"\n        },\n        \"value\": \"#0D3A69\"\n      }\n    ]\n  }\n]",
+        "value": "[\n  {\n    \"groupName\": {\n      \"zh\": \"莫兰迪色系\",\n      \"en\": \"Morandi Colors\"\n    },\n    \"colors\": [\n      {\n        \"name\": {\n          \"zh\": \"樱花粉\",\n          \"en\": \"Cherry Blossom\"\n        },\n        \"value\": \"#EDAFB8\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"粉黛色\",\n          \"en\": \"Powder Petal\"\n        },\n        \"value\": \"#F7E1D7\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"燕麦灰\",\n          \"en\": \"Dust Grey\"\n        },\n        \"value\": \"#DEDBD2\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"豆绿灰\",\n          \"en\": \"Ash Grey\"\n        },\n        \"value\": \"#B0C4B1\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"铁锈橙\",\n          \"en\": \"Iron Grey\"\n        },\n        \"value\": \"#f08c01\"\n      }\n    ]\n  },\n  {\n    \"groupName\": {\n      \"zh\": \"历史经典色\",\n      \"en\": \"Historical Classics\"\n    },\n    \"colors\": [\n      {\n        \"name\": {\n          \"zh\": \"青柠绿\",\n          \"en\": \"Lime Green\"\n        },\n        \"value\": \"#6ECC54\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"提香红\",\n          \"en\": \"Titian Red\"\n        },\n        \"value\": \"#D34947\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"马尔斯绿\",\n          \"en\": \"Marrs Green\"\n        },\n        \"value\": \"#018B8D\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"克莱因蓝\",\n          \"en\": \"Klein Blue\"\n        },\n        \"value\": \"#002FA7\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"勃艮第红\",\n          \"en\": \"Burgundy Red\"\n        },\n        \"value\": \"#470125\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"美泉宫黄\",\n          \"en\": \"Schonbrunn Yellow\"\n        },\n        \"value\": \"#F9D46C\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"蒂芙尼蓝\",\n          \"en\": \"Tiffany Blue\"\n        },\n        \"value\": \"#71E2D1\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"中国红\",\n          \"en\": \"Chinese Red\"\n        },\n        \"value\": \"#C8161D\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"凡戴克棕\",\n          \"en\": \"Vandyke Brown\"\n        },\n        \"value\": \"#492D22\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"爱马仕橙\",\n          \"en\": \"Hermes Orange\"\n        },\n        \"value\": \"#EB5C20\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"普鲁士蓝\",\n          \"en\": \"Prussian Blue\"\n        },\n        \"value\": \"#0D3A69\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"新颜色\",\n          \"en\": \"New Color\"\n        },\n        \"value\": \"#AA1FEA\"\n      },\n      {\n        \"name\": {\n          \"zh\": \"新颜色\",\n          \"en\": \"123\"\n        },\n        \"value\": \"#24C8FF\"\n      }\n    ]\n  }\n]",
         "description": "⚠️ Do not modify JSON directly. Use 'Manage Custom Palette' script UI to update."
+      }
+    },
+    "Downloaded(Custom)/animation/Action-Progressive-Drawing-Animator": {
+      "shapeDuration": {
+        "value": "600"
+      },
+      "freedrawDuration": {
+        "value": "800"
+      },
+      "textDuration": {
+        "value": "50"
+      },
+      "textDurationMode": {
+        "value": "perChar"
+      },
+      "gapRatio": {
+        "value": "0.8"
+      },
+      "hideOnRun": {
+        "value": false
+      },
+      "targetMode": {
+        "value": "all"
       }
     }
   },
@@ -239,7 +262,7 @@
   "excalidrawMasteryPromoCollapsed": false,
   "compareManifestToPluginVersion": true,
   "showNewVersionNotification": true,
-  "latexBoilerplate": "\\color{blue}",
+  "latexBoilerplate": "\\frac{1}{2}",
   "latexPreambleLocation": "preamble.sty",
   "taskboneEnabled": false,
   "taskboneAPIkey": "",
@@ -1186,7 +1209,7 @@
   "strokeWidthSliderMin": 0,
   "strokeWidthSliderMax": 100,
   "strokeWidthSliderStep": 1,
-  "latexEditorMode": "native",
+  "latexEditorMode": "modal",
   "latexResizeMode": "fontsize",
   "pdfSettings": {
     "pageSize": "A4",
