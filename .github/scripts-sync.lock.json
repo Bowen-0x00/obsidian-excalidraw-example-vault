@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "source": {
     "repository": "Bowen-0x00/obsidian-excalidraw-scripts",
-    "commit": "22134fbd934e3df579ae0d216143eb20a8cc07ac"
+    "commit": "d0ae073ec227daeaad9bef032c106113d042fc98"
   },
-  "matchedCount": 145,
+  "matchedCount": 142,
   "files": {
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/brace/Action-Add-Bottom-Brace-Path.md": {
       "source": "Scripts/brace/Action-Add-Bottom-Brace-Path.md",
@@ -128,8 +128,8 @@
     },
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/echarts/Action-Echarts-Manager.md": {
       "source": "Scripts/echarts/Action-Echarts-Manager.md",
-      "sha256": "e6fc4adf2aea46e82a5f60182a28fa976058fe1804c35ccabc0f6083a1854630",
-      "version": "1.3.0"
+      "sha256": "97e55cee0ea49925ce422c501a003deec9ccedf0cc1ceda5005c1e27ac9d7ccb",
+      "version": "1.3.1"
     },
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/export/Action-Export-Image-To-Anki.md": {
       "source": "Scripts/export/Action-Export-Image-To-Anki.md",
@@ -293,8 +293,8 @@
     },
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/animation/Action-Progressive-Drawing-Animator.md": {
       "source": "Scripts/animation/Action-Progressive-Drawing-Animator.md",
-      "sha256": "e205b7c248a7864ed3b8cf5aae8dfb673a987cd4a614a902c46349adeeb61bff",
-      "version": "1.1.2"
+      "sha256": "e7f52147737977cf5dcd68217ab8a6f8358bee8a2c069fe4a9367eea43c8e457",
+      "version": "1.2.1"
     },
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/recognize/Action-Recognize-Shape.md": {
       "source": "Scripts/recognize/Action-Recognize-Shape.md",
@@ -338,13 +338,13 @@
     },
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/table/Action-Table-Generate.md": {
       "source": "Scripts/table/Action-Table-Generate.md",
-      "sha256": "b09622d15f870fe739aba7c7667987b2c646a9cf28da4a08399e17fe41adc2d3",
-      "version": "1.0.0"
+      "sha256": "aad7290ecc732006b85f3a187b7bb2d8b3f9ecfdc977491cfefa4691941e462e",
+      "version": "1.1.0"
     },
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/table/Action-Table-Modify.md": {
       "source": "Scripts/table/Action-Table-Modify.md",
-      "sha256": "db3d5c6c35c9326b0529620d6a8b05e619aa297cf3c837bf061e2e7678589e21",
-      "version": "1.0.0"
+      "sha256": "0ffe5be8aa1ad93b83785853bd52755a826750f370b02f608afb507df4943c20",
+      "version": "1.1.0"
     },
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Action-Text-Copy-Elements.md": {
       "source": "Scripts/text/Action-Text-Copy-Elements.md",
@@ -518,13 +518,13 @@
     },
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/echarts/Feature-Echarts-Engine.md": {
       "source": "Scripts/echarts/Feature-Echarts-Engine.md",
-      "sha256": "222812a3e5da2a13cadb35e1a2bd7813fc6b85a3fbb4430af9fb2f9a3d1cc475",
-      "version": "1.3.0"
+      "sha256": "937823da29089efdd79e4cf4f70c9cc7147f1643264745864430187e683c9751",
+      "version": "1.3.1"
     },
     "plugins/Excalidraw/Scripts/Agent-Drawing/echarts/Feature-Echarts-Engine.md": {
       "source": "Scripts/echarts/Feature-Echarts-Engine.md",
-      "sha256": "222812a3e5da2a13cadb35e1a2bd7813fc6b85a3fbb4430af9fb2f9a3d1cc475",
-      "version": "1.3.0"
+      "sha256": "937823da29089efdd79e4cf4f70c9cc7147f1643264745864430187e683c9751",
+      "version": "1.3.1"
     },
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/export/Feature-Export-Eagle.md": {
       "source": "Scripts/export/Feature-Export-Eagle.md",
@@ -675,21 +675,6 @@
       "source": "Scripts/swimlane/Feature-Swimlane-Engine.md",
       "sha256": "f0130797829ac4e5322c29d0ccaf4b81c3ef4941dfa4a3280b1a26c1c2c8799a",
       "version": "1.0.1"
-    },
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/table/Feature-Table-Engine.md": {
-      "source": "Scripts/table/Feature-Table-Engine.md",
-      "sha256": "54f1ef42398e24d7976778d2bf07331f4ce4a6405bac387d7d244e18fa8bfeb5",
-      "version": "1.0.0"
-    },
-    "plugins/Excalidraw/Scripts/Agent-Drawing/table/Feature-Table-Engine.md": {
-      "source": "Scripts/table/Feature-Table-Engine.md",
-      "sha256": "54f1ef42398e24d7976778d2bf07331f4ce4a6405bac387d7d244e18fa8bfeb5",
-      "version": "1.0.0"
-    },
-    "plugins/Excalidraw/Scripts/Downloaded(Custom)/table/Feature-Table-Paste-MD.md": {
-      "source": "Scripts/table/Feature-Table-Paste-MD.md",
-      "sha256": "6a2c6b7450b6b71062637519520ee70574f286d179c666b60ab7faf88d9944e7",
-      "version": "1.2.0"
     },
     "plugins/Excalidraw/Scripts/Downloaded(Custom)/text/Feature-Template-Engine.md": {
       "source": "Scripts/text/Feature-Template-Engine.md",
