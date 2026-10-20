@@ -70,9 +70,47 @@ Bridge存储`customData.codeHighlight`，Engine渲染高亮；theme/language必�
 
 来源：`normalizeChartData/parseTextToData/validateChartData/generateEchartsOptions/readStoredChart/applyChartData/handleSvgRender/mountFeature`；示例发布清单`temp/echarts-1.3.0-showcase/asset-manifest.json`。这些是宿主源码/示例证据，不是新增MCP工具。
 
-## 文字与行内 LaTeX：必须显式转换
+## 数学内容分流 先认语义再选元素
 
-普通`create_text/set_text/label`与`rich_text`不是MathJax渲染器；例如`运行极值 $m_{new}=\max(m_{old},S_i)$`直接传进去只会显示源码。新图在内容规划时就识别公式，不等到交付才把它当“文字样式”。用户要求展示源码、代码示例、货币或转义美元符号时保留字面内容。
+这是创建内容前的必读分流，不是发现`$`后才做的补救。用户不需要懂LaTeX或声明“这是公式”；Agent根据内容意图选择实际已有入口，不把所有内容塞进一个`text()` helper。
+
+| 内容角色 | 默认表达 | 不能混淆的边界 |
+| --- | --- | --- |
+| 矩阵、列／行向量、转置、范数 | 一块原生LaTeX资源；`bmatrix/pmatrix`等保留行列与整体括号 | `W=[[...]]`是数学意图时也转换；不是用空格和换行排ASCII矩阵 |
+| 分式、根号、求和／积分、分段、递推、多级上下标 | `create_latex`，在TeX中表达语义与结构 | 不用`ᵀ/²/₀`字符或偏移小text拼出“看起来像公式” |
+| 独立数学等式及变量关系 | 优先LaTeX，如`\mathbf{y}=\mathbf{W}\mathbf{x}`、`d_{j,r}=E_{\max,j}-E_{j,r}` | 单个电路引脚`D/Q`或普通标签不强制转换 |
+| RTL／代码标识、总线切片、路径、字面源码 | 原生text；确需时选择已发现的代码字体 | `frame_start`、`Q[26:0]`、`A[i]`在代码语义下不是必须做下标的数学 |
+| 二进制／十六进制、逐拍bit、波形、位段／阵列 | 原生等宽text与独立图形 | 不把可选中编辑的每个bit、门、寄存器或连线栅格化成整块公式 |
+| 普通中文说明＋数学 | 说明用text，公式用LaTeX；按真实尺寸组合、编组 | 不假设MathJax支持当前全部CJK字体，也不把中文全塞进`\text{...}` |
+
+先列简短内容清单：逻辑ref、角色、公式源TeX或原始信号名、所属区域／owner。数学清单应覆盖brief的对应用户要求；逐项确认公式不是普通text后，再做布局。**“字体可读／源码无美元符号／数值正确”都不能当作已经选对数学表达。** 不建立字符正则自动改图；同一字符串可能是数学或代码，按上下文判断。
+
+唯一可保留ASCII数学的情况是用户明确要求代码／终端字面显示，或本轮局部修改不触碰原数学内容；记录范围。用户指定现有图风格不等于要求继续用文本模拟新矩阵。无需为技术入口选择单独问用户“用不用LaTeX”，只按既有style／review偏好执行。
+
+### 原生公式调用与可编辑性
+
+普通`create_text/set_text/label`和`rich_text`不是MathJax渲染器。优先用现有`drawing_apply`中的`create_latex`，只传bare TeX，不带外层`$`；DSL用`shape:"formula",tex`，compose内容用`kind:"latex",tex`，三者schema不混用。矩阵和向量各自作为完整数学对象，不能分行创建再手工对空格。
+
+```json
+{"op":"create_latex","ref":"matrix-W","x":80,"y":140,"tex":"\\mathbf{W}=\\begin{bmatrix}0.625 & 2.00 \\\\ 2.250 & 1.75\\end{bmatrix}","scaleX":1.5,"scaleY":1.5}
+```
+
+同一算例的列向量可用`\mathbf{x}=\begin{bmatrix}1.390625\\1.5\end{bmatrix}`；需要转置则用`^{\mathsf{T}}`，不拿Unicode `ᵀ`替代。比例只是起点，与export scale无关；读回公式实际width／height后等比缩放，禁止分别拉伸破坏分式或矩阵比例。
+
+公式是插件原生image资源，源TeX在保存文件的Embedded Files中保留，可继续编辑公式源并重新渲染；不是每个字都变成Excalidraw text。普通文字、门／线、owner／frame仍独立可编辑。`customData.latex`不是完整公式源，不能只写metadata冒充公式。无需为公式可编辑性退回ASCII或手拼完整场景JSON。
+
+### 数学专项检查与停止条件
+
+1. discovery确认`latex.available`，再实际创建／测量；声明可用不等于每条TeX已经成功。公式失败保留原内容与receipt、报告具体缺口，不无限重试或无提示降级文本。
+2. 每个数学ref读回`type:"image"`、fileId和真实尺寸，并核对保存的源TeX；PNG不能出现MathJax错误文本、裸命令、空白资源或错误矩阵。数学清单非空但最终没有公式资源时必须停止检查原因，除非有明确的上述例外。
+3. PNG逐项核对矩阵行列、整个矩阵的一对括号、向量方向／转置、求和界限、分子分母、上下标所属变量、符号／正负及值；再看基线、颜色／对比、行高、缩放与周围标签／线的净空。需要时用当前可读局部PNG；整图资源complete不是公式通过。
+4. 中文混排先创建底板，再text／formula；按最高公式安排整行高度与间距，以实际bounds居中／基线对齐并group，必要时add_to_frame。不能用普通`drawing_measure`测TeX源码来决定公式大小；用现有内容测量入口或create后read。它不会自动在bound label内混排。
+5. 已有图只替换相关公式：先生成并检查新资源再删除旧模拟文字，保留owner／业务连接，恢复group/frame／层级；失败不丢原文，不整图清空，不改变无关RTL信号名。真正的公式编辑不是对image调用set_text。
+6. 使用已有`requirement_checks`为数学需求记录真实image IDs、源TeX对应关系及PNG观察，不能只交`label_equals`或算术仿真结果。若公式错误／没渲染／不可读，content或readability标fail，不能宣称本等级完成。本规范是Agent工作流，不宣称现有几何检查能独立识别ASCII数学或证明公式语义。
+
+### 文字与行内 LaTeX：显式转换，不留源码
+
+例如`运行极值 $m_{new}=\max(m_{old},S_i)$`直接作为text只会显示源码。用户明确要求源码、代码示例、货币或转义美元符号时保留字面内容；其他混排复用下述现有API／宿主Action，不另造通用Markdown解析器。
 
 ### 复用真实宿主脚本
 

@@ -41,6 +41,7 @@
 | 数值/计量/表列 | 符号/单位/数字辨识；需要纵向对齐时确认数字行为 | 仅因等宽而采用不易辨认的装饰体 |
 | 注释/手写说明 | 用户意图确需时用已确认的手写候选；否则沿用正文 | 手绘线条必配手写字、严肃密集注释强加装饰 |
 | 数码/特殊展示 | 明确表达显示器、书法等视觉语义，且字符受支持 | 用特殊字形替代普通正文或代码 |
+| 数学公式／矩阵／向量／上下标 | 先读[数学分流](visual-content.md#数学内容分流-先认语义再选元素)，使用保留TeX的原生公式资源 | 不用代码字体、空格／Unicode上标模拟；MathJax字体与普通text family分开验收 |
 
 优先级：用户本次明确要求/品牌约束 → 原图、模板和同套图未要求改动的排版 → 本次角色与语言需要 → 已验证的保守可读候选。模板样式默认保留不意味着新文字可不测量。只修改被请求对象；未知字体不擅自全图替换。
 
@@ -56,6 +57,7 @@
 ## 4. 把选择落实到真实API，而不是只写计划
 
 工作变量`bodyFamily/codeFamily/annotationFamily`必须是Agent从当前集合判断得到的**实际精确值**，不是接口新字段。文档中的角色变量/占位说明绝不能作为字体字符串直接提交。
+数学对象在此步骤之前就应分流为LaTeX。`drawing_measure`对TeX源码返回的普通字宽，不是公式渲染尺寸；`mono=True`也不是数学布局器。数学内部字号／结构用实际公式资源与等比缩放，中文说明仍用已发现的原生字体；不得对公式image调用set_text或声称换text字体就改变了MathJax字形。
 
 - 先按每段真实family/字号/行高测量，再确定换行、容器/节点尺寸与标签净空。普通新text使用`create_text.style.fontFamily`，绑定标签使用`label.style.fontFamily`；调用`drawing_measure`时对应参数是`font_family`。字重使用真实text ID的`set_text_global_style`/受控rich_text；支持的合成字重不等于存在真正的粗体font face，最终看实际输出。
 - Bridge 0.13.7对所有批量操作先做字段预检：顶层`fontSize/fontFamily`及未知字段在任何图元提交前拒绝，明确错误字段路径。`drawing_measure`、create_text／label／set_text复用宿主`refreshTextDimensions`读取实际lineHeight，避免EA按字体默认行高测量与实际渲染不同。缺少该原生入口会明确失败，不退回字符数估计。

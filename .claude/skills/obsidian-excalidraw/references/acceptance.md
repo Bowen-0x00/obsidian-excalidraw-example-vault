@@ -49,6 +49,14 @@
 4. drawing_review重新读取当前画布重算诊断；以前check中的expected会保留，不因review未带check_result丢掉。过期PNG/错误revision/改动后的图片或不属于本context的细节图均不接受。
 5. 真实缺陷按ID做最小补丁，调整路由、文字位置、字号/换行或容器，保留全文与正确语义；重新保存/read/check/PNG/看图。低档不是允许删除内容，高档不是每轮全部重画。
 
+### 数学内容专项验收（所有等级）
+
+- 内容清单中有矩阵／数学向量／转置、分式／求和／递推／成组上下标时，在brief.requirements加入对应数学表达要求，并先读[数学分流](visual-content.md#数学内容分流-先认语义再选元素)。不用新增未知API字段或全局正则猜测信号名。
+- 核对实际创建了公式image/fileId、保存的源TeX与可读PNG；逐项检查矩阵行列／整体括号、上下标归属、分子分母、符号／数值和混排基线。不是只查裸`$`、反斜杠或label_equals。算术／RTL验证与数学排版分别记录。
+- `requirement_checks`引用真实公式IDs并说明源与PNG观察；正文／代码／RTL信号及位串引用其原生text IDs。数学清单非空却没有公式资源、仍用空格拼矩阵／Unicode拼上标，且无明确字面显示例外时，content或readability必须fail；不能以无碰撞或resources complete放行。
+- 公式内容是image，现有小text检测不能自动证明公式内部字高可读。高矩阵、分式或密集上下标按需导出当前局部PNG。能力不可用／渲染失败明确报告，不静默降级ASCII或截图；本清单仍需Agent诚实执行，不声称几何检查已自动理解数学。
+
+
 调用结构示例（ID来自真实返回，示例检查结果必须由实际观察填写）：
 
 ```javascript

@@ -13,6 +13,14 @@ description: 在 Obsidian Excalidraw 修改版中创建、修改原生可编辑�
 
 开始前读[偏好选择](references/diagram-recipes.md)和[验收](references/acceptance.md)，记录本次需求清单及每项选择来源；创建时提交绘图任务单 `brief`。任务单是可核查的操作记录，不冒充工具已验证用户对话。未收到选择不生成“用户已同意”的证据；用户批评成图时先修原图，不重新弹样式问卷来回避问题。
 
+## 数学内容先分流：不要求用户写 `$` 或点名 LaTeX
+
+**在选字体、测量或批量调用文字 helper 前，先区分数学公式、信号／代码、位流／波形和普通说明。** 矩阵、数学向量及转置、分式、求和、递推式、成组上下标默认用保留源TeX的 `create_latex`；必须先读[数学内容与混排](references/visual-content.md#数学内容分流-先认语义再选元素)。输入写成自然语言、`y = W x`、`W = [[...]]`或Unicode上下标，也不准因此当普通正文。
+
+**禁止用空格／换行拼矩阵括号、Unicode上下标、多个偏移小text或分隔线模拟数学排版。** `Q[26:0]`、`frame_start`、`0x4078`、`10110010`、引脚名与波形值仍用原生文字；阵列格子、位段和门／线保留原生图元，不做整图公式。用户明确要代码／ASCII原样展示或局部修改只保留未请求内容时，记录例外，不全图自动转换。
+
+创建前在已有brief需求中列出数学内容的范围，执行时保存公式ref→native image/fileId→源TeX及普通信号标签的映射；这不是新API字段。`latex.available:true`后实际调用并核对资源；缺MathJax或渲染失败要报告，不能悄悄退回文本模拟。数学内部排版稳定不等于外部无碰撞：用真实公式尺寸重排混排块，查看PNG的矩阵行列／括号、上下标归属、分式和基线，再做需求验收。数值测试、文字测量和`label_equals`都不能替代公式验收。
+
 
 ## 先选入口，只读相关参考
 
@@ -77,7 +85,7 @@ inspect是合并**已有**步骤，不是原子跨请求事务：check/render前
 - 微架构另有独立正交门：精确read世界点列，逐段排除dx/dy同时非零的信号线并报告ID/段索引；现有通用check不含这项保证。只修route不降粒度、不盲目重放；实际修复轮数累计，不能用新token重置。
 - 字体验收核对真实family、全文、字重、混合语言、易混字符和输出字高；属性名/测量相同不证明无fallback。换字体后重测并重排受影响对象。普通planner不是多角色字体引擎，混排走已确认的measure＋原生text操作，不传虚构role/font字段。
 - 原生可编辑性优先：保留shape/text/arrow/frame/group、图片源/LaTeX源、SVG path、扩展配置；不能默认用整图图片替代。有分支时全文和“通过/未通过”标签都核对；长中文菱形适度换行，不横向撑成全图。
-- 数学`$…$`不在普通text中自动解析；用真实create_latex或宿主Extract-Latex/原生text+公式组合，保留源TeX，缺MathJax明确报告，不能留源码冒充公式。转换会替换text ID且影响frame/group/层级，先读[混排公式](references/visual-content.md)。
+- 数学按前述语义分流，**不是只拦截裸`$…$`源码**。复用create_latex／DSL formula／compose latex内容入口；普通text和rich_text不渲染公式。保留源TeX、读回image资源及真实尺寸；中文说明与公式分开并编组。缺MathJax明确报告，不用ASCII／Unicode或截图降级；已有绑定标签替换先读[混排公式](references/visual-content.md)恢复owner、group/frame和层级。
 - 线交叉用修改版lineCrossings的arc/gap/dot/none；dot不建立电气绑定。禁止白色遮罩、假小弧/圆点、拆线模拟交叉；样式和priority边界见排版参考。曲线/非直角旋转等精确检查仍可能unknown，不能伪称全通过。
 
 ## 按需读取，不删除高级能力
@@ -89,6 +97,7 @@ inspect是合并**已有**步骤，不是原子跨请求事务：check/render前
 | PNG异常、原因不明、需要详细debug | [cdp-readonly](references/cdp-readonly.md)：默认关闭、用户选开、固定受保护读查询；不做CDP微调，修复回到正常API/DSL |
 | 未定风格、严格配色、字体/粗体、图型/演示 | [diagram-recipes](references/diagram-recipes.md)：真实选择UI、profile/hex映射、UML语义、逐页PNG；不是PPTX |
 | 字体发现、按文字角色选型、语言覆盖/等宽/回退、改字体 | **[typography](references/typography.md)**：当前宿主完整集合、Agent证据分类、角色映射、实际family测量/落地、PNG验证；不假设任何固定字体已安装 |
+| 矩阵、数学向量／转置、分式、求和、递推／上下标、中文混排 | **先读[数学分流](references/visual-content.md#数学内容分流-先认语义再选元素)**：源TeX→原生LaTeX资源→实际尺寸→PNG专项验收；RTL信号名与位串不误转换 |
 | 验收等级、合法叠放／文字遮挡、分级评审 | **[acceptance](references/acceptance.md)**：新图先问review，medium仅推荐；用户需求逐项覆盖、同文件任务累计历史、可读局部PNG与逐项误报证据，不强制全部箭头绑定 |
 | 箭头/路由/固定圆角、缩放/旋转/排版、交叉、动画/导出 | [layout-export-animation](references/layout-export-animation.md)：绑定保持、真实半径、PPT宽箭身、有限预算；动画须播放验证 |
 | 用户素材库、ALU/MUX、模板底板 | [library-catalog](references/library-catalog.md)：list/query/get/preview真实item；先尺寸适配再插入/填字/接线，不把scale1当fit |
