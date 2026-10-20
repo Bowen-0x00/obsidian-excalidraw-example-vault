@@ -58,6 +58,7 @@
 工作变量`bodyFamily/codeFamily/annotationFamily`必须是Agent从当前集合判断得到的**实际精确值**，不是接口新字段。文档中的角色变量/占位说明绝不能作为字体字符串直接提交。
 
 - 先按每段真实family/字号/行高测量，再确定换行、容器/节点尺寸与标签净空。普通新text使用`create_text.style.fontFamily`，绑定标签使用`label.style.fontFamily`；调用`drawing_measure`时对应参数是`font_family`。字重使用真实text ID的`set_text_global_style`/受控rich_text；支持的合成字重不等于存在真正的粗体font face，最终看实际输出。
+- Bridge 0.13.7对所有批量操作先做字段预检：顶层`fontSize/fontFamily`及未知字段在任何图元提交前拒绝，明确错误字段路径。`drawing_measure`、create_text／label／set_text复用宿主`refreshTextDimensions`读取实际lineHeight，避免EA按字体默认行高测量与实际渲染不同。缺少该原生入口会明确失败，不退回字符数估计。
 - **单字体普通图**：显式将选中的正文family放入`diagram.style.fontFamily`（或当前planner已支持的diagram.fontFamily），使测量与创建一致。不要依赖profile内置字体名；profile不是角色选型器。
 - **多角色混排**：当前普通planner主要按一个图级family测量并产生标签，不承诺`nodes[].text.fontFamily`、角色对象或任意node.style字体会控制bound text。需要不同family时用现有measure＋原生operations逐项构造，或先明确测量并预留尺寸，再按refs定位真实text设置字体、重排受影响标签/节点/邻边。不能只把未知字段塞进compose后宣称混排完成。
 - **代码primitive**：显式传`items[].fontFamily=已选择代码family`；`kind:"code"`内置默认名称只是历史实现默认值，不是可用性/适用性保证。不能因代码例子出现某名字就跳过发现和选择。
@@ -68,7 +69,7 @@
 ## 5. 导出与验收
 
 先保存并读回实际text IDs、family/字号/全文、容器/绑定与revision，再结构/几何check→当前revision PNG→实际看图→review。检查真实字形/易混字符、缩进与基线、粗体是否生效、回退造成的风格跳变、溢出/遮挡和`actualScale×fontSize`的输出字高；字体名正确不代表可读。
-遵循[分级验收](acceptance.md)：默认medium，字体/字号变化引起的文字互压、边框或线穿字、中高等级必须优先处理；高等级不靠硬性统一字号/字体或全部绑定来刷指标。10px输出字高只是触发局部检查的建议，非通用硬限制；实际查看必要细节，保留当前revision证据。
+遵循[分级验收](acceptance.md)：review等级先询问，medium／high优先修复文字互压、边框／线穿字；高等级不靠强制统一字号或全部绑定刷指标。overview字高低于10px时，中高等级需要覆盖受影响text IDs的可读局部PNG；10px只是局部证据触发值，不是普适可读性保证。字体／字号读回不对时先修API字段，不能一边按13号布局一边让实际20号字越框。
 
 有问题只修对应角色/文字及受影响邻域，不每轮全图换字体，不为了适配字体删字/删关系。发现列表或资源变化则回到发现阶段；普通局部几何调整不重复全库调查。遵守主Skill的迭代/无进展预算；无法查看PNG或无法证明硬要求时明确报告，不把资源complete或check=pass当字体全部通过。
 

@@ -1,13 +1,13 @@
-# 分级验收：默认 medium，视觉可读优先
+# 分级验收：先询问 review 等级，再执行质量门
 
-验收等级是交付质量的检查深度，**不是模型effort/thinking、绘图风格、图的内容粒度或导出倍率**。模型low也必须遵守用户选择的high验收，模型high也不能擅自增加无关硬约束。默认medium；当前实现通过MCP/runtime执行，不仅是口头承诺。
+验收等级是交付质量的检查深度，**不是模型effort/thinking、绘图风格、内容粒度或导出倍率**。新图先问用户选low／medium／high；medium仅为推荐项或用户明确授权默认值时的起点，不是无需询问的许可。用户选high则模型low也必须执行high。
 
 ## 1. 用户如何选择
 
 - 先解析用户明确写出的“验收low/低等级/检查从简”“验收medium/中等级”“验收high/高等级/严格验收”。具体检查要求优先，例如“允许独立箭头，但文字不能遮挡”不改成强制所有端点绑定。
-- 没有明确等级的新图，在本轮真实ask选项中提供**低：快速基本检查／中：可读交付（推荐）／高：严格细查**，与视觉偏好一起问，不再追加一轮冗长问卷。最多五个问题时，颜色编码按用途默认或合入色板描述，留出验收题。已指定/同套图已选/局部改图则继承；“你决定/不要问”直接medium并简短说明。
-- “high effort”“多思考”只控制模型工作方式，不自动成为high验收；“手绘”不代表low；“专业风格”也不自动成为最高等级。歧义普通情况采用medium，只有实质冲突才问。
-- 将选择作为现有工具的`acceptance_level:"low"|"medium"|"high"`传给check/review或compose/apply。验收设置和已提交expected按canvas context持久保留；后续省略参数会继承，不静默回到medium。显式改等级时记录用户依据，不为刷过关降级。重新bind的新context重新明确本任务选择，不把新token当重置失败预算的手段。
+- 没有明确等级的新图必须真实ask：**low基本检查／medium可读交付（推荐）／high严格细查**；与style同轮优先询问，不为了省轮次跳过。仅给出style没有给review时，仍问review；“画好图／重试／继续”不是默认授权。
+- 只有本次明确指定、原图／同套图明确继承，或用户明确授权“不问／全部默认／review你决定”才不问；任务单记录每项来源和证据。字体风格“你决定”不等于review也由Agent决定。
+- 已选review通过`brief.preferences.review`持久保存；check／apply／review显式传不同等级会拒绝。重绑同文件继承同一任务的轮数、断言和未解决项。新用户请求在原任务完成后可建立新的编辑任务；不能为刷通过改task_id或换图。
 
 ## 2. 三档的实际契约
 
@@ -42,9 +42,10 @@
 
 ## 4. 工具流程与验收输入
 
-1. 简短记录本次内容/关系清单、视觉偏好和等级，不要求用户写坐标。必要语义关系使用已支持的expected断言，原生check不理解全部领域语义。
+1. 创建前记录`brief.requirements:[{id,description}]`，覆盖用户要求的对象、比较、关系、精度／时序条件和明确省略项。必要关系仍用expected；模型生成文字与自身label_equals一致，只证明复制完整，不证明用户需求／科学主张正确。
 2. compose/apply可传`acceptance_level`，`inspect:true`返回当前check和PNG。单独check也可设置等级；`preview_id`可指定当前已注册PNG，以输出尺度进行可读性提示。所有参数都与模型effort独立。
 3. **先实际查看PNG**，再填写visual_checks（每项pass、not_applicable或fail）与具体visual_issues；不能只复制示例pass。medium必需content/readability/occlusion，high再加connections/hierarchy_style；not_applicable仅用于本图确实不涉及的项目，不能用它跳过有文字图的可读性。
+   medium／high若overview字高低于10px触发值，必须提交覆盖这些text IDs的当前可读`scope:"ids"`局部PNG，或修复布局。此值是补充阅读证据门，不是通用字形可读阈值，更不能通过无限提高全图scale解决碰撞。
 4. drawing_review重新读取当前画布重算诊断；以前check中的expected会保留，不因review未带check_result丢掉。过期PNG/错误revision/改动后的图片或不属于本context的细节图均不接受。
 5. 真实缺陷按ID做最小补丁，调整路由、文字位置、字号/换行或容器，保留全文与正确语义；重新保存/read/check/PNG/看图。低档不是允许删除内容，高档不是每轮全部重画。
 
@@ -58,23 +59,24 @@ await drawing_review({
   visual_reviewed: true,
   visual_checks: observedChecks,
   visual_issues: observedProblems,
+  requirement_checks: observedRequirementCoverage,
   detail_preview_ids: actuallyViewedDetailIds
 });
 ```
 
-上面是现有工具调用的示意变量，不是另一个DSL；真实客户端前缀/schema以discovery为准。Python客户端对应check(...,acceptance_level=...)、review(...,visual_checks=...)；CLI check/review有`--acceptance-level`，review有`--visual-checks/--dispositions/--detail-preview-ids`，JSON为参数值，不混入命令文本。
+`requirement_checks`每项含`{requirement_id,outcome:"pass"|"fail",element_ids:[当前真实ID],evidence:"这些对象如何满足这项用户要求"}`，所有需求逐项覆盖；不支持用not_applicable省略用户要求。未覆盖／fail阻止completed，缺失或已删除ID会拒绝。CLI用`--requirement-checks`，DSL review观察JSON使用同名字段；模型仍需负责真实性，工具不自动验证数学／硬件精度。
 
 ## 5. 几何误报/合法叠放如何处理
 
 不能改成容器绕检查，不能删除检测代码，也不能上传一个“ignore all”。若当前PNG证明候选确为误报/有意且不损伤阅读，可在review提交：
 
 ```json
-{"issue_id":"当前check返回的issueId","decision":"false_positive","reason":"实际查看此revision的PNG后，确认相交区只有字框空白，没有字形被盖；正文完整可读。"}
+{"issue_id":"当前issueId","element_ids":["受影响ID1","受影响ID2"],"preview_id":"当前已注册且实际查看的局部PNG ID","decision":"false_positive","reason":"具体解释这两个对象的相交区为何仅含空白，指出可辨文字与相对位置；不可复制统一理由。"}
 ```
 
-放在`dispositions:[...]`中，decision也可为intentional（必须说明有意构图和为什么仍可读）。仅对当前具体几何候选生效，不跨revision自动沿用；原问题、理由和advisory都会保留。引用损坏、显式内容/关系断言失败、未看图、资源缺失、未做必需视觉检查不能这样豁免。未知几何须按unsupportedChecks生成的issueId逐项检查，review最终返回unresolvedIssues和advisories；不把“带限制接受”伪装成全部自动几何已证明。
+每项必须匹配当前issue的完整element_ids、已查看的preview_id和独立理由，重复理由会拒绝。**TEXT_TEXT_OVERLAP／TEXT_PAINTED_OVER／LINE_THROUGH_TEXT／BORDER_THROUGH_TEXT／TEXT_OUTSIDE_CONTAINER／ARROW_LABEL_OCCLUSION不能intentional豁免**；确属误报时仅允许false_positive，并提供同revision、scope:"ids"包含全部受影响对象、字高可读的局部PNG。其它合法叠放／未知几何仍可逐项intentional说明，不删除此能力。语义、引用、资源、需求未验证不可豁免。
 
-默认最多五轮，初图算一轮，连续两次无进展停止。只计算阻断问题的进度，不因不重要装饰提示无限修；有未解决阻断项到上限则needs_attention，保留成果并具体报告。高等级只是更完整的验收，不是无限迭代授权。
+默认最多五轮，初图算一轮；连续两次无改善停止。账本按宿主vault＋文件＋任务保存，重绑新token不重置。重新导出同一revision只改变PNG ID，不代表已修复；原始hardIssues与rawCheckStatus始终保留。达到上限／needs_attention时保留成果报告，不新建“clean／v2”或修改state_id绕过。
 
 ## 6. 外部调研：采用机制，不照抄局部假设
 

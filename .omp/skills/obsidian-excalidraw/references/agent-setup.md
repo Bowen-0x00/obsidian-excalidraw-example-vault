@@ -158,4 +158,4 @@ omp plugin upgrade --scope user obsidian-excalidraw-agent-skill@obsidian-excalid
 | PNG已生成但无法查看 | 核对客户端/模型图片能力，不能记录视觉通过 |
 | 更新被Windows EPERM阻止 | 停止占用旧安装包的本包MCP进程后更新；不关闭其他应用/删用户state |
 
-运行时验证用`launcher.py doctor/smoke`；smoke创建独立画布和PNG但不会虚构视觉检查。开发回归：`uv run --frozen python -m unittest discover -s runtime/tests -v`。
+运行时验证先`launcher.py doctor`，固定诊断图用`launcher.py smoke --font "当前已发现的精确family" --filename 唯一测试名`；此命令显式采用已声明的专业诊断风格／medium，仅创建原生图和PNG，不虚构视觉验收。开发回归：`uv run --frozen python -m unittest discover -s runtime/tests -v`。

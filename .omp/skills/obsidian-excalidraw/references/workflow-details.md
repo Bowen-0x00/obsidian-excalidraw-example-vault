@@ -67,7 +67,7 @@ new-tab是Agent默认的独立视图选择，不表示分屏无用：需要人�
 ## MCP 路径：自然语言到真实操作
 
 1. 若有 `drawing_setup`，先调用 `status`。未连接时，在用户目标已明确或仅有一个合法 vault 时调用 `connect`；多 vault 歧义才询问。它部署 bundle、生成私有凭据、通过实际 Advanced URI 启动；没装 Advanced URI 则报告返回的准确手动命令，不能声称启动成功。已配置但 Obsidian 重启后用 `start`。然后 `drawing_context(action="discover")` 核对 Bridge、字体与 Engines。无效令牌、缺插件/画布不能假装已有连接。
-2. `drawing_context(action="create", filename=描述性名称, foldername="Agent-Diagrams")` 得到 `contextToken`、真实文件与revision。修改已有图则 `action="bind", file_path=明确vault相对路径`。之后所有操作传该token。
+2. 新图先真实ask收齐未定style、review、色板、背景、字体意图；再`drawing_context(action="create",filename=描述名,foldername="Agent-Diagrams",brief=已回答偏好与用户需求)`。已有图明确file_path绑定，首次写入前补brief；read／measure不需要。记录任务ID、file、token、revision，同任务重绑继承文件级评审历史。
 3. `drawing_read(context_token)`读取完整两位小数摘要和全图min/max边界；不是几个选中元素。保留file/revision与初始状态。
 4. 组织简短图描述并调用 `drawing_plan(context_token, diagram)`。规划器使用真实字体/内容尺寸，负责换行、节点尺寸、分层和避障；不要按字数猜宽。
    - `kind`: flowchart/architecture/swimlane/freeform。
@@ -104,7 +104,7 @@ new-tab是Agent默认的独立视图选择，不表示分屏无用：需要人�
 ## 每轮：check → PNG → 看图 → review → 局部修正
 
 **默认 max_rounds=5。每次当前状态的 check+PNG+视觉review计一轮，初图也计入；不是必须画五遍。** 达到要求立即结束。连续两轮问题/严重度无改善或达到上限时needs_attention，报告剩余问题，不标完成。
-验收默认medium，按提示词/本轮选项传acceptance_level，省略继承同context；不是模型effort。低档保留基本正确性与看图，高档增加细查不强制全绑定；[acceptance](acceptance.md)规定阻断项、advisories、具体误报判断。中高必需记录真实visual_checks，不能仅填visual_reviewed=true。
+review新图先询问，medium只是推荐；仅明确授权默认／原图继承才省略询问。通过brief固定选择，不能在check／apply／review时降低等级；同文件／任务重绑继承轮次、expected与未解决项。[acceptance](acceptance.md)规定局部PNG证据、需求覆盖与逐项误报处理；不能只填visual_reviewed=true。
 
 1. `drawing_check(context_token, expected=语义断言)`：断言节点存在、方向正确等。读取issues中的native IDs；结构通过不意味着业务或美观通过。
    - `expected`示例：`{"type":"label_equals","id":"实际节点或文字ID","text":"完整内容"}`、`{"type":"edge_label","from":"起点ID","to":"终点ID","text":"通过"}`；节点字段是`id`，不是`target`。
@@ -117,7 +117,7 @@ new-tab是Agent默认的独立视图选择，不表示分屏无用：需要人�
    - “通过/未通过”应贴近决策出口对应路径且左右归属明确，不贴到整张图的最外缘。可对绑定text的`labelPosition`（0–1的路径比例）作局部调整；普通两点直连默认0.5，决策/多段路径默认0.28，显式位置保留。自动LR布局按实测标签宽预留rank间距；手动position/特殊端口仍需PNG复核，不宣称所有路线自动无冲突。
    - 同层分支大小和基线一致；只为给标签空间才增间距，不能把“无重叠”做成过度疏散的大画布。初图用planner默认nodeGap/rankGap，先看PNG再有理由地覆盖。
    - 组件库端口要实际贴合路径stub，不能因绑定落在透明anchor bbox就称连接正确；按当前svgViewBox/carrier尺寸计算端点。未声明电气引脚时不以“0.28/0.72”等固定示例取代真实图形。
-5. `drawing_review`提交当前revision/previewId、visual_reviewed、实际visual_checks、visual_issues及本轮改动；medium至少content/readability/occlusion，high再connections/hierarchy_style。需要时带已实际查看的detail_preview_ids和逐issueId的dispositions；API重读诊断并保留之前expected，不因省略check_result丢断言。
+5. `drawing_review`提交当前revision／previewId、真实visual_checks／visual_issues，以及逐项`requirement_checks`的真实ID和覆盖说明；medium至少content/readability/occlusion，high再connections/hierarchy_style。小字或文字误报须带当前已查看可读detail_preview_ids；dispositions逐项匹配元素ID、preview_id及独立理由，文字冲突不可intentional。原生check失败不等于review一定失败，但不得把豁免后的completed说成rawCheckStatus=pass。
    - 只有实际看图后才填true。
    - 视觉问题用稳定code、elementIds、severity error/warning、reason、repair；不拿任意审美分数替代问题。
    - `completed`才交付；`continue`按问题修正；`needs_attention`停止自动修改并报告未满足项，不规避ledger换token继续刷轮数。
