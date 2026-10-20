@@ -5,6 +5,15 @@ description: 在 Obsidian Excalidraw 修改版中创建、修改原生可编辑�
 
 # Obsidian Excalidraw：原生绘图与真实 PNG 闭环
 
+## 创建前门禁：先问 style 和 review，不先画再补问
+
+**新图默认必须先用真实 `ask` 一轮收集未定偏好，再创建画布。** 优先询问 **style（专业平整／工程／手绘／演示）和 review 等级（low／medium／high）**，同轮补齐色板、背景、字体／字重意图，最多五题。只读 status／discovery 可在询问前执行；create／DSL render／library insert／apply 不可以。没有 ask 就给编号选择并等待回答；“推荐 medium”不是用户已经选择 medium。
+
+只跳过**已有明确来源的那一项**：用户本次明确指定、同一套图已选并说明沿用、局部修改继承原图，或用户明确说“不要询问／全部你决定／使用默认值”。“帮我画／画好图／请重试／继续／赶时间”不是放弃选择；仅说“专业风格”不等于同时选了配色、字体和 review。用户选择“风格交给 Agent”也不等于授权 Agent 决定 review。
+
+开始前读[偏好选择](references/diagram-recipes.md)和[验收](references/acceptance.md)，记录本次需求清单及每项选择来源；创建时提交绘图任务单 `brief`。任务单是可核查的操作记录，不冒充工具已验证用户对话。未收到选择不生成“用户已同意”的证据；用户批评成图时先修原图，不重新弹样式问卷来回避问题。
+
+
 ## 先选入口，只读相关参考
 
 - **用户只说想画什么**：Agent负责选表达，不要求用户写DSL。普通一次性节点图用compose；需要可重复源文件、嵌套空间/表格/多端口组合时用可选[Scene DSL](references/scene-dsl.md)。
@@ -18,8 +27,8 @@ description: 在 Obsidian Excalidraw 修改版中创建、修改原生可编辑�
 
 - 使用已发现的真实`drawing_*` MCP，前缀/schema以客户端为准；相对references路径属于当前Skill，客户端支持时才用`skill://obsidian-excalidraw/...`。
 - 新图用唯一文件名创建独立`.excalidraw.md`；已有图按明确file_path绑定，保留file/contextToken/revision。不能用active/first、clear重画或手拼整场景JSON。
-- 新图用真实ask**一轮**收集未定风格、色板/背景、字体及**验收low/medium/high（默认medium）**；与[视觉偏好](references/diagram-recipes.md)合并，最多五题，颜色编码可合入色板/按用途默认。提示词已指定、同套图已选、局部改图或“你决定/直接画”不重问；没有ask用编号问题。验收等级不是模型effort，不因effort低而跳过选择或省略必需检查。
-- 已给定专业平整等方案时**直接执行，不为重复选型读取整份风格问卷**。正文20/标题28、roughness0、线宽2、普通节点矩形固定`roundness:{type:3,value:6,roundType:"arc"}`作为视觉起点；**表格/寄存器字段的单元格例外：`roundness:null`，表头与正文分色，不套圆角卡片profile**，按[表格规范](references/capability-map.md#表格清晰表头与连续网格)制作。字体从当前宿主集合按角色与语言选定；标题粗体用真实text ID的`set_text_global_style`，非顶层bold。
+- 新图按上方门禁询问未定偏好。**style 与 review 必须逐项有明确来源**；详细选项见[视觉偏好](references/diagram-recipes.md)。验收等级不是模型 effort，不因 effort 低或请求简短而跳过。局部修改只继承用户未要求改变的属性。
+- 已明确的属性直接落实，仍需询问其余未定项。专业平整可从正文20／标题28、roughness0、线宽2、小圆角`roundness:{type:3,value:6,roundType:"arc"}`起步；**表格／寄存器字段单元格例外：`roundness:null`**。默认数值不是用户偏好或已验证排版；实际字体测量、读回和PNG必须完成。
 - 配色落实为实际hex；strict任务同时控制底色、正文、边框，不能偷偷补默认蓝色。手绘线条和字体独立选择；字体先discovery确认，颜色/字重/尺寸最终读回并查看PNG，不凭profile名称认定生效。
 - **创建文字、选/换字体先读[通用字体工作流](references/typography.md)**：接口取得当前完整集合和来源→Agent按证据判断用途/未知项→按正文/代码/标签/注释等角色选实际family→用该family测量、落地、看PNG。不是本地字体白名单，也不让profile/代码primitive的历史默认名称替代发现；注册、字形覆盖、加载和实际fallback分别验证。已有图未请求换字则继承。
 - **路径风格先选几何**：`sharp`=普通多点折线（`elbowed:false`＋`roundness:null`），`round`=普通点列平滑转角（`roundness:{type:2,value:r}`），`elbow`=专用`elbowed:true`正交连接器，`curve`=修改版受控`customData.curveArrow:true` S型renderer。四者不是箭头头型；按[四种路径风格](references/layout-export-animation.md#路径不是箭头头型-sharp-round-elbow-s-curve)选择，curve/round精确碰撞仍可能unknown，不能把PNG好看当避障证明。
@@ -36,12 +45,12 @@ CPU/流水线/微架构/硬件数据通路/阵列/缓存层级/寄存器堆/片�
 对普通服务/业务节点＋连线，且视觉方案已给定：本页字段足够时直接用快路径，不为标题粗体/R6/triangle遍读所有参考。**此规则不适用于硬件微架构**，硬件必须先读专用参考；复杂固定列/多端口/总线图用显式位置/尺寸、原生operations与真实素材。查接口问题优先读取该工具schema并修字段，不扫整个能力库。
 
 1. 有drawing_setup先status；核对`vault_path`是否为用户目标，**cwd不等于Bridge目标vault**。已连接时discovery核对字体/引擎。脚本覆盖保护出现时不伪造installation.json所有权、不搜历史token；按[接入排错](references/agent-setup.md)处理。`launched:false`不是启动成功；缺Advanced URI则提示用户手动运行准确命令，不反复connect轮换凭据。远端只status，不connect/start/reload宿主。
-2. `drawing_context(create,filename,foldername)`或明确file_path绑定，取得token和revision。多Agent各自一图，只由协调者管理服务，宿主串行执行；同图竞争发生REVISION_CONFLICT就重新读，不覆盖用户新编辑。
+2. 偏好回答齐全后，`drawing_context(create,filename,foldername,brief)`或明确file_path绑定；保存任务ID、需求清单、目标file、token和revision。同一任务只能修同一文件；重绑继承文件级验收历史，不能换task_id／state_id／新文件绕过失败。用户明确要求另一张图时才建立另一任务。
 3. **普通一次性节点/流程/架构优先`drawing_compose(context_token,base_revision,diagram)`**；若本轮已选择DSL，改走[Scene DSL](references/scene-dsl.md)而不重复compose。compose在代码内完整plan→apply，不让模型复制大段operations；库组合按阶段提交并报告已执行集合，不宣称跨阶段原子。
 4. 没有后续样式时compose传`inspect:true,acceptance_level:本次选择`；还需样式时先compose，再一次apply(inspect:true)按refs局部修正。expected覆盖任务关键内容/关系；后续省略等级/断言会继承同context设置。operations每项必须有`op`不是type；标题粗体用`{"op":"set_text_global_style","targets":["refs中真实textID"],"bold":true}`。不为绕检查重建整图。
 5. `inspect:true`返回实际**PNG ImageContent**及JSON：`composition`或`applied`回执、`check`完整诊断、`preview`注册预览（含同revision全图canvasSummary/路径/hash）、毫秒`timings`。内部真实full-read+结构/几何/语义check→按该revision导出，不缓存过期结果、不自动review。默认false保持原接口；check失败仍展示PNG供修复，不能当完成。
-6. **查看真实PNG**，再review(visual_reviewed:true,visual_checks:实际结论,visual_issues:具体问题)。medium记录content/readability/occlusion，high再记录connections/hierarchy_style，值pass/not_applicable/fail；不能复制pass或对有文字图以not_applicable跳过。review以当前状态重算；几何候选可逐项dispositions记录合法构图/误报原因，引用/语义错误不可豁免；详见分级验收。
-7. 有问题只改受影响元素/绑定文字/邻边，apply(inspect=true)得到下一轮PNG再看。默认最多5轮（初图计1），达到要求立即停止，连续两轮无改善或上限到达则needs_attention并报告剩余项；不换token重置预算。
+6. **查看真实PNG**，再review；逐项提交需求覆盖证据，不能以“模型生成的标签都存在”替代用户需求验收。medium检查content/readability/occlusion，high增加connections/hierarchy_style。文字互压／遮挡不能标intentional；误报必须逐元素、逐问题提供当前局部PNG证据，禁止循环给所有issue复制理由。review=completed也不代表原始check=pass。
+7. 有问题只改受影响元素／绑定文字／邻边，apply(inspect=true)后重新读回、PNG和验收。check失败首先核对实际字体、字号、尺寸和API字段，不盲目扩框。默认最多5轮，连续两轮无改善或上限到达则needs_attention；保留原文件报告问题，不换token／task_id／DSL state_id重置预算。
 
 原因不明或PNG与属性不一致时，**不要盲目重画／反复调坐标**：考虑只读CDP获取原生绘制顺序、文字/绑定、表格、资源与视口证据。先确认用户开关；关闭时只提出选项，不自动启用。V8副作用保护拒绝的查询必须停止，不去掉保护重试；状态诊断不能替代实际PNG。
 
@@ -54,6 +63,7 @@ inspect是合并**已有**步骤，不是原子跨请求事务：check/render前
 - PPT两种宽箭都能独立设strokeColor（轮廓）与backgroundColor（内部填充），fillStyle另控填充方式；普通细线身主要用strokeColor，不套宽箭填充语义。outline默认画布底色而非天然透明；改宽/改色分别操作并看实际PNG，不能用描边宽代替箭身宽。
 - 需要先审查计划、手动坐标或复杂增量时，原有read/measure/plan/apply/check/preview/primitives等**全部保留**。plan.operations完整交给apply，尽量程序传递；原生CLI、EA与MCP schema不可混用。
 - 语义断言示例：`{type:"label_equals",id:真实节点或textID,text:全文}`、`{type:"edge_label",from:起点ID,to:终点ID,text:"通过"}`。普通check不等于所有业务语义已覆盖。
+- 原生 `create_text` 的字号／字体／行高在 `style.fontSize/fontFamily/lineHeight`，不是操作顶层；label用`label.style`。不要复用自写的错位字段helper。先用同一实际style测量再放置；保存后读回实际style、全文和尺寸，不一致就修字段，不按估计字宽移动整图。
 - operations的`op`是执行动作；expected的`type`是断言种类；nodes的shape才是图元种类。三者不可混用。只按返回refs填写native IDs，不能把示例ID原样提交。用户没要求连线标签就不为装饰添加标签。
 - set_text用真实text/owner；translate保持精度并去重bound text；resize改单元素尺寸不等于整组缩放；scale_selection/rotate使用完整group或精确targets，维护绑定。细节及所有操作见[完整工作流](references/workflow-details.md)。
 
@@ -79,7 +89,7 @@ inspect是合并**已有**步骤，不是原子跨请求事务：check/render前
 | PNG异常、原因不明、需要详细debug | [cdp-readonly](references/cdp-readonly.md)：默认关闭、用户选开、固定受保护读查询；不做CDP微调，修复回到正常API/DSL |
 | 未定风格、严格配色、字体/粗体、图型/演示 | [diagram-recipes](references/diagram-recipes.md)：真实选择UI、profile/hex映射、UML语义、逐页PNG；不是PPTX |
 | 字体发现、按文字角色选型、语言覆盖/等宽/回退、改字体 | **[typography](references/typography.md)**：当前宿主完整集合、Agent证据分类、角色映射、实际family测量/落地、PNG验证；不假设任何固定字体已安装 |
-| 验收等级、合法叠放/文字遮挡、分级评审与误报处理 | **[acceptance](references/acceptance.md)**：默认medium，提示词/选项控制，与effort独立；原生检查＋真实PNG清单＋带证据的逐项判断，不要求全部箭头绑定 |
+| 验收等级、合法叠放／文字遮挡、分级评审 | **[acceptance](references/acceptance.md)**：新图先问review，medium仅推荐；用户需求逐项覆盖、同文件任务累计历史、可读局部PNG与逐项误报证据，不强制全部箭头绑定 |
 | 箭头/路由/固定圆角、缩放/旋转/排版、交叉、动画/导出 | [layout-export-animation](references/layout-export-animation.md)：绑定保持、真实半径、PPT宽箭身、有限预算；动画须播放验证 |
 | 用户素材库、ALU/MUX、模板底板 | [library-catalog](references/library-catalog.md)：list/query/get/preview真实item；先尺寸适配再插入/填字/接线，不把scale1当fit |
 | 网上/远端图片、公式资源 | [images-assets](references/images-assets.md)：实际字节/许可/宿主附件；远端路径非宿主路径，MCP可data:image，整个请求4MiB |

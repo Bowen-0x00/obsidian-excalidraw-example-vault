@@ -13,7 +13,7 @@
 
 只使用真实discovery返回的`drawing_dsl`。没有此工具则更新并重启MCP，或使用已安装新版CLI，不能发明tool。
 
-- `action:"render"`，`document:已解析的场景对象`，`font_family:当前宿主实际family`；首绘用唯一`filename`和可选`foldername`，或明确现有`file_path`。
+- `action:"render"`，`document:已解析场景对象`，`font_family:当前宿主实际family`；首绘用唯一filename及`brief:已回答偏好与用户需求`，或明确file_path并补齐其任务单。先问style／review，不把DSL当免询问入口。
 - `state_id`默认document.id，同一源重复提交必须复用；同源另画一张用不同state_id。身份状态在客户端私有目录、按宿主/vault隔离，不放vault/Git，不包含认证token。
 - `action:"plan"`只规划；需要已有state或明确file_path供真实测量，不是假字体的离线布局。
 - render返回file/contextToken/revision/stateId、operationCount/diff、check、preview和实际PNG ImageContent；`visualReviewed:false`不是完成。实际看图，再用现有drawing_review记录本等级清单；需细节就真实preview局部。
@@ -25,11 +25,11 @@
 
 ```sh
 uv run --frozen python launcher.py dsl -- fonts
-uv run --frozen python launcher.py dsl -- render examples/dsl/release-flow.yaml --font "EXACT_HOST_FAMILY" --state-id release-demo --filename "Release-Demo-Unique" --output ./output/release.json
+uv run --frozen python launcher.py dsl -- render examples/dsl/release-flow.yaml --font "EXACT_HOST_FAMILY" --brief-file ./drawing-brief.json --state-id release-demo --filename "Release-Demo-Unique" --output ./output/release.json
 uv run --frozen python launcher.py dsl -- plan examples/dsl/release-flow.yaml --font "EXACT_HOST_FAMILY" --state-id release-demo --output ./output/plan.json
 ```
 
-EXACT_HOST_FAMILY必须替换为当前返回的实际family。改YAML后同state-id再render；报告/PNG路径属于客户端，非远端宿主路径。CLI review接收真实观察JSON（visual_checks/visual_issues及可选dispositions/detail_preview_ids），命令`launcher.py dsl -- review --report ... --checks ... --output ...`。exit0仅命令成功，render仍待视觉评审；exit1执行错误；exit2检查/资源或review未完成。
+`drawing-brief.json`先按[偏好与任务单](diagram-recipes.md)记录真实用户选择；EXACT_HOST_FAMILY替换为当前返回的实际family。修改YAML复用同state-id；报告／PNG路径属于客户端。CLI review观察JSON包含visual_checks、visual_issues、逐项requirement_checks及可选dispositions／detail_preview_ids。exit0只是命令成功，render仍待视觉验收；exit1执行错误；exit2检查／资源或review未完成。
 
 ## 够用的作者层
 
