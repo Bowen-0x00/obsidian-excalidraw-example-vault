@@ -69,6 +69,7 @@ new-tab是Agent默认的独立视图选择，不表示分屏无用：需要人�
 1. 若有 `drawing_setup`，先调用 `status`。未连接时，在用户目标已明确或仅有一个合法 vault 时调用 `connect`；多 vault 歧义才询问。它部署 bundle、生成私有凭据、通过实际 Advanced URI 启动；没装 Advanced URI 则报告返回的准确手动命令，不能声称启动成功。已配置但 Obsidian 重启后用 `start`。然后 `drawing_context(action="discover")` 核对 Bridge、字体与 Engines。无效令牌、缺插件/画布不能假装已有连接。
 2. 新图先真实ask收齐未定style、review、色板、背景、字体意图；再`drawing_context(action="create",filename=描述名,foldername="Agent-Diagrams",brief=已回答偏好与用户需求)`。已有图明确file_path绑定，首次写入前补brief；read／measure不需要。记录任务ID、file、token、revision，同任务重绑继承文件级评审历史。
 3. `drawing_read(context_token)`读取完整两位小数摘要和全图min/max边界；不是几个选中元素。保留file/revision与初始状态。
+   在任何text helper／字体测量前分类数学公式、普通说明、RTL信号／代码、bit流／波形。矩阵／数学向量／上下标等按[数学分流](visual-content.md#数学内容分流-先认语义再选元素)创建LaTeX资源；信号和位串不误转。把数学清单关联到brief需求，保留ref→真实image/fileId→源TeX供专项验收，不新增虚构操作参数。
 4. 组织简短图描述并调用 `drawing_plan(context_token, diagram)`。规划器使用真实字体/内容尺寸，负责换行、节点尺寸、分层和避障；不要按字数猜宽。
    - `kind`: flowchart/architecture/swimlane/freeform。
    - `nodes`: `id, shape, label, variant?`，shape用rectangle/ellipse/diamond；`content`支持image/latex/echarts/embeddable；其它复杂几何用实际native operations。
