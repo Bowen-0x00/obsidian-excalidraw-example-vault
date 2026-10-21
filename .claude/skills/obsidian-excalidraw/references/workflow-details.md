@@ -3,6 +3,42 @@
 常规新图先使用主 Skill 的低往返路径；本参考保留逐项控制、并发、完整摘要和高级修正规则。组合检查仍调用同样的真实check和preview，并非省略验证。下文逐项plan/apply适用于需要先审查计划或手动布局的场景，不要求所有简单图逐个往返。
 本页代码路径中`references/...`、`prompts/...`仍相对Skill根目录；Markdown链接按本页位置解析。
 
+## 启动、表达与交付的执行契约
+
+`drawing_begin(request,action:"prepare",diagram_type:"auto",file_path?)`返回真实宿主discovery、所需文档全文/路径/sha256、原生调用示例；可选file_path读取当前画布和文件级review证据，不创建/改图。不能用过去一张PNG或聊天中的“已生成”覆盖当前状态。`create|bind`需要已解决的brief；prepare不代表用户批准了默认值。
+
+`drawing_apply.operations`是按`op`判别的原生模型联合，完整列出各操作字段，不再是任意dict。整个批次先校验，CLI/Python同样执行；不把错名自动改成近似动作。fontSize/fontFamily/lineHeight放style，label字体放label.style，粗体走set_text_global_style。未知op、错层字段、非有限数和错误引用给出路径与修正提示，committed=false；宿主仍负责Feature config/customData授权、能力和资源验证。connect端点/waypoints保留原生坐标语义，ref引用用`@name`。
+
+硬件在原有brief的task_id/preferences/requirements之外增加以下字段。它是对需求的**可检查承诺**，不是绘图DSL，也不能自动判断承诺是否忠实：
+
+```json
+{
+  "diagram_type": "microarchitecture",
+  "representation": {
+    "components": [
+      {"id":"alu","role":"compute","types":["rectangle"]},
+      {"id":"rf","role":"storage","types":["rectangle"]}
+    ],
+    "ports": [
+      {"id":"result","component":"alu","side":"right","offset":0.5,"direction":"output"},
+      {"id":"write","component":"rf","side":"left","offset":0.5,"direction":"input"}
+    ],
+    "signals": [{"id":"writeback","source":"result","target":"write","orthogonal":true}]
+  }
+}
+```
+
+microarchitecture/circuit必须有部件、端口与网络；requirements含明确硬件关键词时不能用general降级。其他类型可选声明。component.types禁止text；formula角色只能image。逻辑ID全局唯一，端口方向/引用必须一致；不得为了通过门禁把所需独立器件合并成单个阶段。
+
+创建后`drawing_contract(context_token,bindings:{"alu":["真实bodyID"],"rf":["真实bodyID"],"writeback":["真实wireID"]})`。部件映射一或多段闭合轮廓/shape；每个信号映射一条连续native line/arrow；不能复用元素冒充独立对象。端口为**部件世界AABB边上的side/offset**，不是标签坐标；quarter-turn后按世界边理解side。容差1 scene单位，不随PNGscale变化。复杂符号的实际stub不在AABB边上时需合适几何分解，不可谎报端口；不宣称通用电气引脚解析器。
+
+映射验证成功才保存，失败返回带logicalId/native IDs/actual/repairHint的REPRESENTATION_*问题；check/review/deliver每次按当前全图重算。移动器件后必须修邻边。缺body/wire、对角信号、错误端点或绑定矛盾是硬错误，不可视觉豁免。任意旋转和平滑/曲线的精确拓扑尚不支持，会明确阻断；负全局/local坐标和quarter-turn按世界点列检查。非绑定示意线合法，但端点仍须符合声明。
+
+`drawing_deliver(context_token,revision,preview_id)`核对同一owned file/当前revision/完整全图PNG及hash、最新completed review、当前需求和表达检查，符合才返回`status:"deliverable"`。局部PNG、过期状态、未评审或后续失败均不签发；返回原始check状态与advisories，不伪造raw pass。最终回答引用真实文件、PNG、轮数和限制；交付失败只报告未完成。用户/视觉证据仍是Agent自述；门禁不能控制任意聊天文字，也不是RTL、电气、科学或绝对审美证明。
+
+CLI同实现：`launcher.py cli -- begin|contract|deliver --request-file args.json`，或json入口的drawing_begin/drawing_contract/drawing_deliver。不要将三选一的竖线写成实际shell管道。
+
+
 ## 多 Agent 并发：一人一图，宿主排队
 
 - 可并发规划/提交**不同画布**；由一个协调者完成连接/启动，工作Agent只status，不并发connect/start/reload切服务。
@@ -121,7 +157,7 @@ review新图先询问，medium只是推荐；仅明确授权默认／原图继�
 5. `drawing_review`提交当前revision／previewId、真实visual_checks／visual_issues，以及逐项`requirement_checks`的真实ID和覆盖说明；medium至少content/readability/occlusion，high再connections/hierarchy_style。小字或文字误报须带当前已查看可读detail_preview_ids；dispositions逐项匹配元素ID、preview_id及独立理由，文字冲突不可intentional。原生check失败不等于review一定失败，但不得把豁免后的completed说成rawCheckStatus=pass。
    - 只有实际看图后才填true。
    - 视觉问题用稳定code、elementIds、severity error/warning、reason、repair；不拿任意审美分数替代问题。
-   - `completed`才交付；`continue`按问题修正；`needs_attention`停止自动修改并报告未满足项，不规避ledger换token继续刷轮数。
+   - `completed`后调用`drawing_deliver`核验同一文件/revision/PNG再交付；`continue`按问题修正；`needs_attention`停止自动修改并报告未满足项，不规避ledger换token继续刷轮数。
    - 新会话/重绑后旧contextToken可能失效；按file重新bind是恢复路径，不是新的质量预算。保留之前review轮数与问题记录，累计至原max_rounds，不为同一任务换token规避无进展停止。
 6. **修复明确问题，而不是每轮重建**：只修改问题对象、绑定文本及必要邻边。`drawing_apply`使用最新revision；局部修正后重复check和PNG。即使只改一行字也需要最终图检查。
 

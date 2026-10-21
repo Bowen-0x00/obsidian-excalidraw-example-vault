@@ -10,6 +10,9 @@
 
 Baseline vs proposed优先用一致尺度和对应部件对齐的双区域；多项机制可分多图，不把所有说明塞进一张细长图。原生swimlane适合固定归属、可编辑分区标题，先发现callable再用；容器／grid也可以。泳道不是硬件布局器，仍需独立部件、命名端口／总线与时序图；“没用泳道”不是错误，“把关键硬件藏在文字框内”才是。需求清单必须记录每项比较、真实部件数量、精度条件与明确省略。
 
+执行入口用`drawing_begin`真实返回本参考；brief声明diagram_type与representation，不只在聊天里列器件。创建后drawing_contract映射body/wire IDs，check/review/deliver重算命名端口、端点与正交性。[可执行契约及几何边界](workflow-details.md#启动表达与交付的执行契约)。这能拦住整张图只有文字及已声明网络的误连，不能自动识别Agent漏声明的硬件，仍须逐项核对用户需求。
+
+
 
 ## 创建前的硬件计划（简短表，不是新DSL）
 

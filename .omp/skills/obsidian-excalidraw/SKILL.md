@@ -5,6 +5,17 @@ description: 在 Obsidian Excalidraw 修改版中创建、修改原生可编辑�
 
 # Obsidian Excalidraw：原生绘图与真实 PNG 闭环
 
+## 可靠启动与交付入口
+
+本页新增入口需要 **0.10.2 或更新的运行包**。若当前工具列表缺少drawing_begin/drawing_contract/drawing_deliver，先升级包并重载MCP与Skill；不要假装旧运行包已有新工具。已运行Bridge 0.13.7时无需重启Obsidian。
+
+先调用 **`drawing_begin(request:用户原始需求,action:"prepare")`**。它实际返回本包Skill、验收/字体/工作流全文、任务专用参考、正确原生示例和当前宿主发现结果，不依赖客户端是否自动激活Skill。硬件另载微架构规范，数学另载内容分流；已有图加明确file_path可读取当前画布和真实评审历史。返回规范不等于模型已理解，更不等于用户已经回答偏好。
+
+偏好和需求齐全后用`drawing_begin(create|bind,brief,filename|file_path)`进入同一任务；原有context、DSL、原生入口复用同样的brief门禁。硬件在`brief.representation`声明部件/命名端口/信号，实际创建后用`drawing_contract`映射原生body与wire IDs；按保存几何复算端点与正交性，文本列表不能充当器件。[执行契约格式与限制](references/workflow-details.md#启动表达与交付的执行契约)。
+
+**最终交付必须调用`drawing_deliver(context_token,revision,preview_id)`取得`status:"deliverable"`回执。** 它重新核对当前文件/版本、全图PNG及哈希、同一PNG已completed的评审、需求和表达契约。`applied_needs_review`、`rendered_needs_visual_review`、`needs_repair`、check=pass或PNG已生成都不是完成。失败/continue/needs_attention只报告实际进度及剩余问题，不在最终文字中改写成成功；回执也不冒充独立科学/电气审核。
+
+
 ## 创建前门禁：先问 style 和 review，不先画再补问
 
 **新图默认必须先用真实 `ask` 一轮收集未定偏好，再创建画布。** 优先询问 **style（专业平整／工程／手绘／演示）和 review 等级（low／medium／high）**，同轮补齐色板、背景、字体／字重意图，最多五题。只读 status／discovery 可在询问前执行；create／DSL render／library insert／apply 不可以。没有 ask 就给编号选择并等待回答；“推荐 medium”不是用户已经选择 medium。
@@ -53,11 +64,12 @@ CPU/流水线/微架构/硬件数据通路/阵列/缓存层级/寄存器堆/片�
 对普通服务/业务节点＋连线，且视觉方案已给定：本页字段足够时直接用快路径，不为标题粗体/R6/triangle遍读所有参考。**此规则不适用于硬件微架构**，硬件必须先读专用参考；复杂固定列/多端口/总线图用显式位置/尺寸、原生operations与真实素材。查接口问题优先读取该工具schema并修字段，不扫整个能力库。
 
 1. 有drawing_setup先status；核对`vault_path`是否为用户目标，**cwd不等于Bridge目标vault**。已连接时discovery核对字体/引擎。脚本覆盖保护出现时不伪造installation.json所有权、不搜历史token；按[接入排错](references/agent-setup.md)处理。`launched:false`不是启动成功；缺Advanced URI则提示用户手动运行准确命令，不反复connect轮换凭据。远端只status，不connect/start/reload宿主。
-2. 偏好回答齐全后，`drawing_context(create,filename,foldername,brief)`或明确file_path绑定；保存任务ID、需求清单、目标file、token和revision。同一任务只能修同一文件；重绑继承文件级验收历史，不能换task_id／state_id／新文件绕过失败。用户明确要求另一张图时才建立另一任务。
+2. 偏好回答齐全后，`drawing_begin(create,request,filename,foldername,brief)`或明确file_path绑定；保存任务ID、需求清单、目标file、token和revision。同一任务只能修同一文件；重绑继承文件级验收历史，不能换task_id／state_id／新文件绕过失败。用户明确要求另一张图时才建立另一任务。
 3. **普通一次性节点/流程/架构优先`drawing_compose(context_token,base_revision,diagram)`**；若本轮已选择DSL，改走[Scene DSL](references/scene-dsl.md)而不重复compose。compose在代码内完整plan→apply，不让模型复制大段operations；库组合按阶段提交并报告已执行集合，不宣称跨阶段原子。
 4. 没有后续样式时compose传`inspect:true,acceptance_level:本次选择`；还需样式时先compose，再一次apply(inspect:true)按refs局部修正。expected覆盖任务关键内容/关系；后续省略等级/断言会继承同context设置。operations每项必须有`op`不是type；标题粗体用`{"op":"set_text_global_style","targets":["refs中真实textID"],"bold":true}`。不为绕检查重建整图。
 5. `inspect:true`返回实际**PNG ImageContent**及JSON：`composition`或`applied`回执、`check`完整诊断、`preview`注册预览（含同revision全图canvasSummary/路径/hash）、毫秒`timings`。内部真实full-read+结构/几何/语义check→按该revision导出，不缓存过期结果、不自动review。默认false保持原接口；check失败仍展示PNG供修复，不能当完成。
 6. **查看真实PNG**，再review；逐项提交需求覆盖证据，不能以“模型生成的标签都存在”替代用户需求验收。medium检查content/readability/occlusion，high增加connections/hierarchy_style。文字互压／遮挡不能标intentional；误报必须逐元素、逐问题提供当前局部PNG证据，禁止循环给所有issue复制理由。review=completed也不代表原始check=pass。
+   completed后调用drawing_deliver，保留真实file/revision/previewId/sha256/reviewRound回执；不把review调用失败后的自然语言断言当成交付。
 7. 有问题只改受影响元素／绑定文字／邻边，apply(inspect=true)后重新读回、PNG和验收。check失败首先核对实际字体、字号、尺寸和API字段，不盲目扩框。默认最多5轮，连续两轮无改善或上限到达则needs_attention；保留原文件报告问题，不换token／task_id／DSL state_id重置预算。
 
 原因不明或PNG与属性不一致时，**不要盲目重画／反复调坐标**：考虑只读CDP获取原生绘制顺序、文字/绑定、表格、资源与视口证据。先确认用户开关；关闭时只提出选项，不自动启用。V8副作用保护拒绝的查询必须停止，不去掉保护重试；状态诊断不能替代实际PNG。
@@ -80,9 +92,9 @@ inspect是合并**已有**步骤，不是原子跨请求事务：check/render前
 - drawing_read默认返回全部未删除元素、coverage=complete、file/revision/count/total、precision2、世界bounds；不是只选中元素。分页有total/truncated，ids查询不作全图证明。坐标取整只供反馈，绝不回写覆盖精确值。
 - preview和inspect.preview均含同revision全图canvasSummary：id/type/geometry、必要文字、bindings、group/frame/锁定等；长文字标截断并用full按需读完整源，密集点列用pointCount。几何/空值/省略字段、并发与完整遍历详见[完整工作流](references/workflow-details.md)。
 - 由PNG定位ID后局部改：scene坐标=sceneOrigin+原PNG像素/scale；阅读器缩放需先还原原像素。不能拿截图像素直接写x/y，不能手填boundElements/startBinding/endBinding或原生version/index。
-- 完成标准：用户内容/关系齐全、资源complete、当前PNG实际看过、本等级阻断项解决且review=completed。几何unknown/重叠候选可凭具体当前PNG审查并披露限制，不等于自动几何证明；不为装饰/合法背景包含无限修图。禁止删边、裁全文或缩成不可读来“通过”。
+- 完成标准：用户内容/关系齐全、资源complete、当前PNG实际看过、本等级阻断项解决、review=completed且drawing_deliver返回deliverable。几何unknown/重叠候选可凭具体当前PNG审查并披露限制，不等于自动几何证明；不为装饰/合法背景包含无限修图。禁止删边、裁全文或缩成不可读来“通过”。
 - 硬件图必须按专用部件/端口/关键网络清单验收，expected不得空却宣称“语义100%通过”。几何pass不等于微架构正确，review也不自动证明专业质量。overview有效字高≈actualScale×fontSize；缩成6px的小字条带必须调整或实际查看必要局部，不把complete=true当可读。
-- 微架构另有独立正交门：精确read世界点列，逐段排除dx/dy同时非零的信号线并报告ID/段索引；现有通用check不含这项保证。只修route不降粒度、不盲目重放；实际修复轮数累计，不能用新token重置。
+- 微架构正交门：声明并映射representation后，check/review/deliver按保存的世界点列逐段检查并报告ID/段索引；未声明的其他线不能因此被称为已验证。只修route不降粒度、不盲目重放；实际修复轮数累计，不能用新token重置。
 - 字体验收核对真实family、全文、字重、混合语言、易混字符和输出字高；属性名/测量相同不证明无fallback。换字体后重测并重排受影响对象。普通planner不是多角色字体引擎，混排走已确认的measure＋原生text操作，不传虚构role/font字段。
 - 原生可编辑性优先：保留shape/text/arrow/frame/group、图片源/LaTeX源、SVG path、扩展配置；不能默认用整图图片替代。有分支时全文和“通过/未通过”标签都核对；长中文菱形适度换行，不横向撑成全图。
 - 数学按前述语义分流，**不是只拦截裸`$…$`源码**。复用create_latex／DSL formula／compose latex内容入口；普通text和rich_text不渲染公式。保留源TeX、读回image资源及真实尺寸；中文说明与公式分开并编组。缺MathJax明确报告，不用ASCII／Unicode或截图降级；已有绑定标签替换先读[混排公式](references/visual-content.md)恢复owner、group/frame和层级。
@@ -115,4 +127,4 @@ inspect是合并**已有**步骤，不是原子跨请求事务：check/render前
 
 “绘图脚本目录”取插件settings.scriptFolderPath，不假设个人路径；受管脚本在Agent-Drawing子目录。Token只留私有状态目录，不打印/放图/报告；不自动授信、autorun或改全局主题。mode=remote时渲染在宿主，PNG/ledger属于远端，MCP ImageContent已可看，不需要X11。
 
-交付真实vault文件、最终PNG、check/保存结果、review轮数与剩余限制；CLI-only没有MCP ledger须明确记录实际评审。任何能力都以真实入口/源/API和实际运行证据为准，不捏造工具或完成状态。
+交付真实vault文件、最终PNG、check/保存结果、review轮数与剩余限制；本包CLI与MCP共用ledger及delivery门禁，插件原生CLI-only无ledger时须明确记录实际评审。任何能力都以真实入口/源/API和实际运行证据为准，不捏造工具或完成状态。
