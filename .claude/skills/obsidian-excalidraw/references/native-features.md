@@ -2,6 +2,9 @@
 
 入口：`drawing_primitives(context_token, items=[...], style="handdrawn"或原生属性对象)`生成真实operations；再`drawing_apply`。规划不提交画布。字体与文字尺寸调用正在运行的EA测量；不得按字数猜宽。真实输出需check→PNG→实际看图→review。
 
+0.10.3新增projected_box/layer_stack/grid_array/leader和实测text，详见[technical-illustration](technical-illustration.md)。默认plan不写；render＋state_id复用已有增量协调器并返回真实PNG。0.10.2及更早版本不提供这些新增kind。通用参考图/图法选择先读[visual-design](visual-design.md)。
+
+
 ## draw：自由笔画，不是roughness开关
 
 ```json
@@ -92,3 +95,5 @@ routing=`straight/orthogonal/curve`；代码读取当前精确节点geometry，�
 ## 合法包含与叠放
 
 多个面组成一个cuboid、一个库item的装饰/框/文字属于明确construction unit，metadata记agentPrimitive/agentLibrary.instanceId。只有单位内部叠放合法；不同单位之间仍检查，不能仅因groupIds相同就关闭碰撞检查。异常或复杂几何unknown不能冒充通过。
+
+物理插图另有具体规则：未变的构造几何＋不相交模型体积允许投影轮廓重叠；引出线可穿过目标及其几何证明的承载背景，不能穿过无关实体或文字。不是全physical模式免检。原生多边形检查使用实际点列而非被AABB替换的原点；后画的不透明原生面可遮住埋藏面，但透明/图片/曲线不假称精确可见性证明。

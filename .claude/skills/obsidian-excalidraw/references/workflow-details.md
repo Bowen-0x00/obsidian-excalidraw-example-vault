@@ -9,7 +9,7 @@
 
 `drawing_apply.operations`是按`op`判别的原生模型联合，完整列出各操作字段，不再是任意dict。整个批次先校验，CLI/Python同样执行；不把错名自动改成近似动作。fontSize/fontFamily/lineHeight放style，label字体放label.style，粗体走set_text_global_style。未知op、错层字段、非有限数和错误引用给出路径与修正提示，committed=false；宿主仍负责Feature config/customData授权、能力和资源验证。connect端点/waypoints保留原生坐标语义，ref引用用`@name`。
 
-硬件在原有brief的task_id/preferences/requirements之外增加以下字段。它是对需求的**可检查承诺**，不是绘图DSL，也不能自动判断承诺是否忠实：
+逻辑微架构／电路在原有brief的task_id/preferences/requirements之外增加以下字段。它是对需求的可检查承诺，不是绘图DSL；物理结构／讲解页改用[visual_plan](visual-design.md)，不能自动判断承诺是否忠实：
 
 ```json
 {
@@ -28,7 +28,7 @@
 }
 ```
 
-microarchitecture/circuit必须有部件、端口与网络；requirements含明确硬件关键词时不能用general降级。其他类型可选声明。component.types禁止text；formula角色只能image。逻辑ID全局唯一，端口方向/引用必须一致；不得为了通过门禁把所需独立器件合并成单个阶段。
+microarchitecture/circuit必须有部件、端口与网络；明确逻辑网络不能用general降级。physical_structure/explanatory_page需要visual_plan的目的、视图、对象、关系和示意边界，不套端口网表。component.types禁止text；formula角色只能image。逻辑ID唯一，端口方向/引用一致，不得把所需独立器件合成单个阶段。
 
 创建后`drawing_contract(context_token,bindings:{"alu":["真实bodyID"],"rf":["真实bodyID"],"writeback":["真实wireID"]})`。部件映射一或多段闭合轮廓/shape；每个信号映射一条连续native line/arrow；不能复用元素冒充独立对象。端口为**部件世界AABB边上的side/offset**，不是标签坐标；quarter-turn后按世界边理解side。容差1 scene单位，不随PNGscale变化。复杂符号的实际stub不在AABB边上时需合适几何分解，不可谎报端口；不宣称通用电气引脚解析器。
 

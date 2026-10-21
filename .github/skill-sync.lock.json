@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "source": {
     "repository": "Bowen-0x00/obsidian-excalidraw-agent-skill",
-    "commit": "2b8f98612ebb0912e9f1e9d84c735a12059b3db5"
+    "commit": "820808482b05effd0c9b2d69d0383d97b495172e"
   },
   "files": {
-    "SKILL.md": "c95e2cc33a26e45e2c25c735ed517c83f1284fdf52b0b376da6839cf5b071001",
+    "SKILL.md": "ccd1cead2496330485cc5285a5695090f64221c5cafe40b1275df63b2aa9c9df",
     "prompts/maintain-libraries.zh-CN.md": "d69a30740084b76b5c4ee69cabf415e3e7987bec97c6deca6e0a7cfe4aa7a0c7",
     "references/acceptance.md": "9f67028d04d01d2d89d5233bf0c9950c887f6998c83d8edc3dcbf020f68f1a23",
     "references/agent-setup.md": "427fa2351d43ed44d06e5de71890fe5ff08d9ecd11846e48610226056434b5a4",
@@ -16,9 +16,9 @@
     "references/interaction-navigation.md": "0625ecd48413070bcfd0d565a11e4e072c693ef61c7dc9fa2da128715a030e47",
     "references/layout-export-animation.md": "03b1fb540f00d7af320e09d66598090ff615ae40df87d70d2acf2eb2fd8f1320",
     "references/library-catalog.md": "cddf459e324dbab696f6fd6c9bdab881f7475e643025833874a6acd6308d4a59",
-    "references/microarchitecture.md": "a217b9e766f39a2ee34916fd9c65127d1e6825c1d7bc1717e9371ec982239c2d",
+    "references/microarchitecture.md": "bf93728206b356d7620c90fe41c374bd1932e73e4f28b5cd1a25fe40ce9d90f4",
     "references/native-cli.md": "9a78561e330ea42911ceb5244100571515f9598bcbeacbe35ddd77b0bb494eb8",
-    "references/native-features.md": "86775a93f2215228dfa3f4ba21e2e21ff565b69820a16f18384f2a825fb9d6d2",
+    "references/native-features.md": "82838d02b0cbbbaa9f1056f1b8b7227ca29dddf7232ffae157b60175bf489337",
     "references/next-ai-draw-io.md": "8d84281bfec9df4a599a6b1979abad2de3932c7ba71e8a828e649a1d8909c3ef",
     "references/scene-dsl.md": "f06946ce719c737b9e0c5cfeef5691d1aaf344045b15735f5e99f53cbd102b88",
     "references/script-execution.md": "00501aaf3590eef2fae63be94f030eceb4db42beb1a46df6b730cd039792037a",
@@ -26,8 +26,10 @@
     "references/special-diagrams.md": "f94eda8c0c46dcfa3f1ac00d1379c922f75acd538515e6fae5954dfc03f87da0",
     "references/svg-components.md": "1fb828b9ee8882c8d85caa82542d63b65a9782c43cbb03fa8cd98281bf5b9d44",
     "references/table-native.md": "7b95e6773495cfef0e1829f9b586bfa3b96e79b9db959495c56892a272394e03",
+    "references/technical-illustration.md": "e630dc29f69ea2e9a3f012737065ba4246dc4143a000b8ed9683472778b51df0",
     "references/typography.md": "9fbfa0868034d5546660ff359fdb9eba95ae4f7cf7f35a3c1ec14d4e248c8295",
     "references/visual-content.md": "80e67bd7682dc6c9d22a044988b1dfdf66f4acf7d404b7126893dc5c28d8d107",
-    "references/workflow-details.md": "2b57e28182b72b1e60cf58256c17d46820e9a2f50d49455b828bbd2c56b9b72b"
+    "references/visual-design.md": "2e5cb8747bf7309b64cb609960422709c61fedb664615127c6cb5a2ec7805036",
+    "references/workflow-details.md": "77bbada30960feb1efba08d45ea251b97060f9648fc744598b3f26bbe797e323"
   }
 }
