@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "source": {
     "repository": "Bowen-0x00/obsidian-excalidraw-agent-skill",
-    "commit": "a48fe78acf4e68f8c6eedfa00c07dd7f3ad2b867"
+    "commit": "2b8f98612ebb0912e9f1e9d84c735a12059b3db5"
   },
   "files": {
-    "SKILL.md": "8c8634de0d4c2b3af67bbfb7c97196884de6cd4816f82ba84c8fe6e93637bcb2",
+    "SKILL.md": "c95e2cc33a26e45e2c25c735ed517c83f1284fdf52b0b376da6839cf5b071001",
     "prompts/maintain-libraries.zh-CN.md": "d69a30740084b76b5c4ee69cabf415e3e7987bec97c6deca6e0a7cfe4aa7a0c7",
-    "references/acceptance.md": "a52cb3c4163c412e4e05209f60203c3431add56c9462166971d47d4f5262c83d",
+    "references/acceptance.md": "9f67028d04d01d2d89d5233bf0c9950c887f6998c83d8edc3dcbf020f68f1a23",
     "references/agent-setup.md": "427fa2351d43ed44d06e5de71890fe5ff08d9ecd11846e48610226056434b5a4",
     "references/capability-map.md": "d7bdde771235e468d890b2179acf112d63dffaf4c15143239259cdfffb13be72",
     "references/cdp-readonly.md": "32bf8683fea848d443957c8e3a0a2a6f60a7dd149f8d632911b9e11c9f1e9bbf",
@@ -16,7 +16,7 @@
     "references/interaction-navigation.md": "0625ecd48413070bcfd0d565a11e4e072c693ef61c7dc9fa2da128715a030e47",
     "references/layout-export-animation.md": "03b1fb540f00d7af320e09d66598090ff615ae40df87d70d2acf2eb2fd8f1320",
     "references/library-catalog.md": "cddf459e324dbab696f6fd6c9bdab881f7475e643025833874a6acd6308d4a59",
-    "references/microarchitecture.md": "64e03ed57af0e6f4c98239e52d5d113419b432ede47e4b87cb191bc653f6da5d",
+    "references/microarchitecture.md": "a217b9e766f39a2ee34916fd9c65127d1e6825c1d7bc1717e9371ec982239c2d",
     "references/native-cli.md": "9a78561e330ea42911ceb5244100571515f9598bcbeacbe35ddd77b0bb494eb8",
     "references/native-features.md": "86775a93f2215228dfa3f4ba21e2e21ff565b69820a16f18384f2a825fb9d6d2",
     "references/next-ai-draw-io.md": "8d84281bfec9df4a599a6b1979abad2de3932c7ba71e8a828e649a1d8909c3ef",
@@ -28,6 +28,6 @@
     "references/table-native.md": "7b95e6773495cfef0e1829f9b586bfa3b96e79b9db959495c56892a272394e03",
     "references/typography.md": "9fbfa0868034d5546660ff359fdb9eba95ae4f7cf7f35a3c1ec14d4e248c8295",
     "references/visual-content.md": "80e67bd7682dc6c9d22a044988b1dfdf66f4acf7d404b7126893dc5c28d8d107",
-    "references/workflow-details.md": "f8759e9fc2ffcdbeb6fdd96de539f972e7f3d89435c6e50bb76fba10430de0ff"
+    "references/workflow-details.md": "2b57e28182b72b1e60cf58256c17d46820e9a2f50d49455b828bbd2c56b9b72b"
   }
 }

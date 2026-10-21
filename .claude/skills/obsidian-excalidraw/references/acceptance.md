@@ -48,6 +48,7 @@
    medium／high若overview字高低于10px触发值，必须提交覆盖这些text IDs的当前可读`scope:"ids"`局部PNG，或修复布局。此值是补充阅读证据门，不是通用字形可读阈值，更不能通过无限提高全图scale解决碰撞。
 4. drawing_review重新读取当前画布重算诊断；以前check中的expected会保留，不因review未带check_result丢掉。过期PNG/错误revision/改动后的图片或不属于本context的细节图均不接受。
 5. 真实缺陷按ID做最小补丁，调整路由、文字位置、字号/换行或容器，保留全文与正确语义；重新保存/read/check/PNG/看图。低档不是允许删除内容，高档不是每轮全部重画。
+6. review=completed后调用`drawing_deliver`，以同文件/当前revision/同一全图PNG及hash、完成评审、需求与表达契约重新核验。只有deliverable回执才进入交付；check pass、生成成功、工具报错后的自然语言“完成”均不能替代。门禁不证明Agent真的理解用户或看了图，也不限制它绕工具说假话；它提供可核验状态而非信任沙箱。
 
 ### 数学内容专项验收（所有等级）
 
