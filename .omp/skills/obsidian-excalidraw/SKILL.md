@@ -7,14 +7,20 @@ description: 在 Obsidian Excalidraw 修改版中创建、修改原生可编辑�
 
 ## 可靠启动与交付入口
 
-本页新增入口需要 **0.10.2 或更新的运行包**。若当前工具列表缺少drawing_begin/drawing_contract/drawing_deliver，先升级包并重载MCP与Skill；不要假装旧运行包已有新工具。已运行Bridge 0.13.7时无需重启Obsidian。
+完整使用本页技术插图能力需要 **0.10.3 或更新的运行包**。若缺少drawing_begin/drawing_contract/drawing_deliver或drawing_primitives的render/state_id参数，先升级运行包并重载MCP与Skill；不要只复制文档假装API已升级。已运行Bridge 0.13.7时无需重启Obsidian。
 
 先调用 **`drawing_begin(request:用户原始需求,action:"prepare")`**。它实际返回本包Skill、验收/字体/工作流全文、任务专用参考、正确原生示例和当前宿主发现结果，不依赖客户端是否自动激活Skill。硬件另载微架构规范，数学另载内容分流；已有图加明确file_path可读取当前画布和真实评审历史。返回规范不等于模型已理解，更不等于用户已经回答偏好。
 
-偏好和需求齐全后用`drawing_begin(create|bind,brief,filename|file_path)`进入同一任务；原有context、DSL、原生入口复用同样的brief门禁。硬件在`brief.representation`声明部件/命名端口/信号，实际创建后用`drawing_contract`映射原生body与wire IDs；按保存几何复算端点与正交性，文本列表不能充当器件。[执行契约格式与限制](references/workflow-details.md#启动表达与交付的执行契约)。
+偏好和需求齐全后用`drawing_begin(create|bind,brief,filename|file_path)`进入同一任务；原有context、DSL、原生入口复用同样的brief门禁。**逻辑微架构/电路**在brief.representation声明部件/端口/信号，并用drawing_contract映射body/wire IDs。**物理剖面/封装/爆炸图与讲解页**在brief.visual_plan声明目的、参考证据、视图、对象、承载/包含关系和示意边界，不为通过门禁虚构信号网络。[执行契约](references/workflow-details.md)、[视觉设计层](references/visual-design.md)。
 
 **最终交付必须调用`drawing_deliver(context_token,revision,preview_id)`取得`status:"deliverable"`回执。** 它重新核对当前文件/版本、全图PNG及哈希、同一PNG已completed的评审、需求和表达契约。`applied_needs_review`、`rendered_needs_visual_review`、`needs_repair`、check=pass或PNG已生成都不是完成。失败/continue/needs_attention只报告实际进度及剩余问题，不在最终文字中改写成成功；回执也不冒充独立科学/电气审核。
 
+
+## 先选表达，不按题材强套图法
+
+看参考图或准备讲解页时先读[visual-design](references/visual-design.md)：目的、关系、图法、载体分开；区分忠实重绘/结构重绘/只借风格，记录可见事实与不确定内容。PPT不是一种图法，硬件也不总是逻辑网络。封装剖面/层叠/爆炸/投影走physical_structure；讲解页面走explanatory_page；真实数据通路仍走microarchitecture/circuit。
+
+0.10.3新增[technical-illustration](references/technical-illustration.md)及配套运行实现：projected_box/layer_stack/grid_array/leader/measured text，通过既有drawing_primitives执行。action=render＋同state_id复用原生ID、外部修改冲突、检查和PNG。0.10.2及更早版本不包含这些新增kind。默认静态二维可编辑示意，不宣称PPT全特效/3D/CAD等价。
 
 ## 创建前门禁：先问 style 和 review，不先画再补问
 
@@ -55,7 +61,7 @@ description: 在 Obsidian Excalidraw 修改版中创建、修改原生可编辑�
 
 ## 硬件任务必须先分流
 
-CPU/流水线/微架构/硬件数据通路/阵列/缓存层级/寄存器堆/片上互连：**创建前必须读[microarchitecture](references/microarchitecture.md)**，先定独立部件、命名端口、信号表、时序边界与固定区域，再选图元/库和路由。不能走普通服务架构快路径后，把ALU/RF/MUX/Hazard等缩成“IF/ID/EX阶段：项目符号列表”；检查失败不得降粒度、删除反馈线、重放整图追加副本或换新图刷通过。`kind:"microarchitecture"`不是专用硬件布局器，container也不固定流水级列。
+CPU数据通路/逻辑微架构/电路/寄存器堆/片上互连：**创建前必须读[microarchitecture](references/microarchitecture.md)**，先定独立部件、命名端口、信号表与固定区域。CPU封装剖面等物理图改读technical-illustration，不因为出现CPU/硬件就要求信号网。逻辑任务不能降成阶段bullet，检查失败也不得删关系、降粒度或重放整图刷通过。
 硬件制作按专用参考的“契约→固定骨架→部件/端口→分批网络→保存后审计→全图/局部→最小补丁”执行。信号默认必须水平/竖直或正交elbow；两点起终点同时dx/dy非零就是斜线，不能只看angle0或check=pass。显式计算waypoints/逐段读回审计，保留ID和端点语义；符号多边形斜边不在此约束内。
 
 ## 默认低往返路径（0.8.10起）
@@ -104,6 +110,8 @@ inspect是合并**已有**步骤，不是原子跨请求事务：check/render前
 
 | 任务涉及 | 参考与执行要点 |
 | --- | --- |
+| 参考图、PPT内的静态图、讲解图、组合视图 | [visual-design](references/visual-design.md)：目的/关系/图法/载体、参考证据、可编辑边界和组合设计 |
+| 物理层叠、剖面、斜投影、封装结构 | [technical-illustration](references/technical-illustration.md)：共用原生组件、确定性投影/重复、同ID增量、物理关系与标注专项检查 |
 | 可重复YAML/JSON源、嵌套空间、表格/端口、稳定增量 | [scene-dsl](references/scene-dsl.md)：可选编译器与真实drawing_dsl/CLI，同state_id更新、外部编辑冲突、完整PNG/review；不替代原生能力 |
 | 硬件微架构、五级CPU、端口/总线/阵列/旁路 | **先读[microarchitecture](references/microarchitecture.md)**：部件级规划、固定流水边界、真实符号、数据/控制/反馈分离、禁止降粒度和重复compose；硬件清单＋全图/局部验收 |
 | PNG异常、原因不明、需要详细debug | [cdp-readonly](references/cdp-readonly.md)：默认关闭、用户选开、固定受保护读查询；不做CDP微调，修复回到正常API/DSL |
