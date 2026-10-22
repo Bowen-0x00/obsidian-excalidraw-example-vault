@@ -7,6 +7,9 @@
 
 `drawing_begin(request,action:"prepare",diagram_type:"auto",file_path?)`返回真实宿主discovery、所需文档全文/路径/sha256、原生调用示例；可选file_path读取当前画布和文件级review证据，不创建/改图。不能用过去一张PNG或聊天中的“已生成”覆盖当前状态。`create|bind`需要已解决的brief；prepare不代表用户批准了默认值。
 
+教学／机制图可先传`drawing_begin(prepare,design:未确认TeachingPlan)`取得简短design_options，交给真实ask；确认后创建时存入brief.teaching_plan。问题是“用什么可视结构解释”，不是形状或配色。当前通用general也不能跳过明确教学意图。[字段与原生编码](teaching-design.md)。render不自动review；逐goal expression_checks和交付状态在CLI/MCP共用同一ledger。
+
+
 `drawing_apply.operations`是按`op`判别的原生模型联合，完整列出各操作字段，不再是任意dict。整个批次先校验，CLI/Python同样执行；不把错名自动改成近似动作。fontSize/fontFamily/lineHeight放style，label字体放label.style，粗体走set_text_global_style。未知op、错层字段、非有限数和错误引用给出路径与修正提示，committed=false；宿主仍负责Feature config/customData授权、能力和资源验证。connect端点/waypoints保留原生坐标语义，ref引用用`@name`。
 
 逻辑微架构／电路在原有brief的task_id/preferences/requirements之外增加以下字段。它是对需求的可检查承诺，不是绘图DSL；物理结构／讲解页改用[visual_plan](visual-design.md)，不能自动判断承诺是否忠实：
