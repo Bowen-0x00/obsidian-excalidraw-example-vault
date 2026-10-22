@@ -7,7 +7,7 @@ description: 在 Obsidian Excalidraw 修改版中创建、修改原生可编辑�
 
 ## 可靠启动与交付入口
 
-完整使用本页技术插图能力需要 **0.10.3 或更新的运行包**。若缺少drawing_begin/drawing_contract/drawing_deliver或drawing_primitives的render/state_id参数，先升级运行包并重载MCP与Skill；不要只复制文档假装API已升级。已运行Bridge 0.13.7时无需重启Obsidian。
+完整使用教学图法选择及机制验收需要 **0.10.4 或更新运行包**；drawing_begin应有design提案参数，drawing_review应有expression_checks。运行包与Skill必须同时更新并重载；不要只复制文档假装API已升级。Bridge仍为0.13.7。
 
 先调用 **`drawing_begin(request:用户原始需求,action:"prepare")`**。它实际返回本包Skill、验收/字体/工作流全文、任务专用参考、正确原生示例和当前宿主发现结果，不依赖客户端是否自动激活Skill。硬件另载微架构规范，数学另载内容分流；已有图加明确file_path可读取当前画布和真实评审历史。返回规范不等于模型已理解，更不等于用户已经回答偏好。
 
@@ -15,6 +15,14 @@ description: 在 Obsidian Excalidraw 修改版中创建、修改原生可编辑�
 
 **最终交付必须调用`drawing_deliver(context_token,revision,preview_id)`取得`status:"deliverable"`回执。** 它重新核对当前文件/版本、全图PNG及哈希、同一PNG已completed的评审、需求和表达契约。`applied_needs_review`、`rendered_needs_visual_review`、`needs_repair`、check=pass或PNG已生成都不是完成。失败/continue/needs_attention只报告实际进度及剩余问题，不在最终文字中改写成成功；回执也不冒充独立科学/电气审核。
 
+
+## 绘制前先问：该用什么可视结构解释？
+
+新教学／机制图先读[teaching-design](references/teaching-design.md)。写清读者要看懂什么，提出2–3个实际表达候选，说明取舍并推荐，再用真实ask让用户选。**图法不是配色／手绘选项。** 用户明确“你决定”、已有确认方案或局部修改继承时才跳过；记录真实来源，不虚构批准。一套多图先确认逐章图法清单，不每章重问，也不统一套文字框流程。
+
+可用drawing_begin(prepare,design:未确认提案)返回design_options，再交给客户端ask；创建前brief.teaching_plan必须有selected与choice。机制方案按goal声明sequence_window/matrix_groups/bitwidth_compare/memory_map/time_steps等实际编码；process/overview/reference允许流程／速查表，但须明确选择，不用它们冒充已画机制。
+
+绘后必须核对**实际对象是否表达目标**，不是文字里有没有提到术语。mask要有格子，分页要有块及映射，分组要有边界；段落框写“对角带／Block Table”不算。check/review/deliver重建编码核对当前原生元素，TEACHING_*硬错误不可视觉豁免。实际PNG看过后还需逐goal的expression_checks，说明“不读长段正文能看出什么”；all-pass布尔值不能代替。
 
 ## 先选表达，不按题材强套图法
 
@@ -67,7 +75,7 @@ CPU数据通路/逻辑微架构/电路/寄存器堆/片上互连：**创建前�
 ## 默认低往返路径（0.8.10起）
 
 **减少模型轮次，不减少绘图能力或验证。** 一次读齐本任务所需schema；可并行读取独立资料/只读状态。todo更新与下一步操作同一轮，不为一次进度更新单独等模型；用户显式要求计划时照做。
-对普通服务/业务节点＋连线，且视觉方案已给定：本页字段足够时直接用快路径，不为标题粗体/R6/triangle遍读所有参考。**此规则不适用于硬件微架构**，硬件必须先读专用参考；复杂固定列/多端口/总线图用显式位置/尺寸、原生operations与真实素材。查接口问题优先读取该工具schema并修字段，不扫整个能力库。
+对已确认就是普通服务节点＋连线的任务才走以下快路径；教学／机制图先完成上述表达选择，不能为减少轮次跳过。硬件先读microarchitecture，复杂固定区域／端口用显式几何。布局报错先修实现；若表达不对就重选图法，不能为了check通过删掉机制、退化成段落链。
 
 1. 有drawing_setup先status；核对`vault_path`是否为用户目标，**cwd不等于Bridge目标vault**。已连接时discovery核对字体/引擎。脚本覆盖保护出现时不伪造installation.json所有权、不搜历史token；按[接入排错](references/agent-setup.md)处理。`launched:false`不是启动成功；缺Advanced URI则提示用户手动运行准确命令，不反复connect轮换凭据。远端只status，不connect/start/reload宿主。
 2. 偏好回答齐全后，`drawing_begin(create,request,filename,foldername,brief)`或明确file_path绑定；保存任务ID、需求清单、目标file、token和revision。同一任务只能修同一文件；重绑继承文件级验收历史，不能换task_id／state_id／新文件绕过失败。用户明确要求另一张图时才建立另一任务。
@@ -110,6 +118,7 @@ inspect是合并**已有**步骤，不是原子跨请求事务：check/render前
 
 | 任务涉及 | 参考与执行要点 |
 | --- | --- |
+| 教学、学习、机制示意、每章配图 | **[teaching-design](references/teaching-design.md)**：绘前候选选择、逐goal编码、真实机制组件与表达有效性评审 |
 | 参考图、PPT内的静态图、讲解图、组合视图 | [visual-design](references/visual-design.md)：目的/关系/图法/载体、参考证据、可编辑边界和组合设计 |
 | 物理层叠、剖面、斜投影、封装结构 | [technical-illustration](references/technical-illustration.md)：共用原生组件、确定性投影/重复、同ID增量、物理关系与标注专项检查 |
 | 可重复YAML/JSON源、嵌套空间、表格/端口、稳定增量 | [scene-dsl](references/scene-dsl.md)：可选编译器与真实drawing_dsl/CLI，同state_id更新、外部编辑冲突、完整PNG/review；不替代原生能力 |
