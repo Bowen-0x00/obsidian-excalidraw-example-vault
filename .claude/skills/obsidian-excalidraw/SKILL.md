@@ -9,6 +9,8 @@ description: 在 Obsidian Excalidraw 修改版中创建、修改原生可编辑�
 
 完整使用教学图法选择及机制验收需要 **0.10.4 或更新运行包**；drawing_begin应有design提案参数，drawing_review应有expression_checks。运行包与Skill必须同时更新并重载；不要只复制文档假装API已升级。Bridge仍为0.13.7。
 
+**0.10.5 动态字体工作流**：当前注册集合不是上限；有明确收益才按[授权规范](references/runtime-fonts.md)扩充。系统导入与网络下载、会话加载与vault持久化分别确认；插件须实际具备新EA方法。此更新不新增字体MCP、不改Bridge、不授权自动下载或覆盖文件。
+
 先调用 **`drawing_begin(request:用户原始需求,action:"prepare")`**。它实际返回本包Skill、验收/字体/工作流全文、任务专用参考、正确原生示例和当前宿主发现结果，不依赖客户端是否自动激活Skill。硬件另载微架构规范，数学另载内容分流；已有图加明确file_path可读取当前画布和真实评审历史。返回规范不等于模型已理解，更不等于用户已经回答偏好。
 
 偏好和需求齐全后用`drawing_begin(create|bind,brief,filename|file_path)`进入同一任务；原有context、DSL、原生入口复用同样的brief门禁。**逻辑微架构/电路**在brief.representation声明部件/端口/信号，并用drawing_contract映射body/wire IDs。**物理剖面/封装/爆炸图与讲解页**在brief.visual_plan声明目的、参考证据、视图、对象、承载/包含关系和示意边界，不为通过门禁虚构信号网络。[执行契约](references/workflow-details.md)、[视觉设计层](references/visual-design.md)。
@@ -64,6 +66,7 @@ description: 在 Obsidian Excalidraw 修改版中创建、修改原生可编辑�
 - 已明确的属性直接落实，仍需询问其余未定项。专业平整可从正文20／标题28、roughness0、线宽2、小圆角`roundness:{type:3,value:6,roundType:"arc"}`起步；**表格／寄存器字段单元格例外：`roundness:null`**。默认数值不是用户偏好或已验证排版；实际字体测量、读回和PNG必须完成。
 - 配色落实为实际hex；strict任务同时控制底色、正文、边框，不能偷偷补默认蓝色。手绘线条和字体独立选择；字体先discovery确认，颜色/字重/尺寸最终读回并查看PNG，不凭profile名称认定生效。
 - **创建文字、选/换字体先读[通用字体工作流](references/typography.md)**：接口取得当前完整集合和来源→Agent按证据判断用途/未知项→按正文/代码/标签/注释等角色选实际family→用该family测量、落地、看PNG。不是本地字体白名单，也不让profile/代码primitive的历史默认名称替代发现；注册、字形覆盖、加载和实际fallback分别验证。已有图未请求换字则继承。
+- **当前字体不足且新增候选有明显收益时，读[动态字体授权](references/runtime-fonts.md)**：先已有vault字体／宿主系统候选，再可信网络来源；系统导入与网络下载分别真实询问用户，说明精确来源、目标vault字体目录、许可与同步风险。临时注册、持久化、设置修改／同名覆盖分别授权。获准后通过已存在的可信EA入口调用真实API，核对保存文件和后续加载配置，再重新测量／看PNG；没有字体管理MCP就不虚构工具，拒绝／取消不执行。
 - **路径风格先选几何**：`sharp`=普通多点折线（`elbowed:false`＋`roundness:null`），`round`=普通点列平滑转角（`roundness:{type:2,value:r}`），`elbow`=专用`elbowed:true`正交连接器，`curve`=修改版受控`customData.curveArrow:true` S型renderer。四者不是箭头头型；按[四种路径风格](references/layout-export-animation.md#路径不是箭头头型-sharp-round-elbow-s-curve)选择，curve/round精确碰撞仍可能unknown，不能把PNG好看当避障证明。
 - **绘图前读[分级验收](references/acceptance.md)**：low基本检查，medium重点内容/可读/遮挡，high再细查连接与层级风格；高等级不强制每根箭头绑定。合法文字置于背景框上不算冲突；字互压、线穿字、后画对象盖字、换字体/字号导致不可读，中高等级优先修复。具体几何误报按issueId＋当前PNG＋理由处理，不能全局忽略。
 
@@ -126,6 +129,7 @@ inspect是合并**已有**步骤，不是原子跨请求事务：check/render前
 | PNG异常、原因不明、需要详细debug | [cdp-readonly](references/cdp-readonly.md)：默认关闭、用户选开、固定受保护读查询；不做CDP微调，修复回到正常API/DSL |
 | 未定风格、严格配色、字体/粗体、图型/演示 | [diagram-recipes](references/diagram-recipes.md)：真实选择UI、profile/hex映射、UML语义、逐页PNG；不是PPTX |
 | 字体发现、按文字角色选型、语言覆盖/等宽/回退、改字体 | **[typography](references/typography.md)**：当前宿主完整集合、Agent证据分类、角色映射、实际family测量/落地、PNG验证；不假设任何固定字体已安装 |
+| 当前注册字体不足、系统字体、网络字体与vault持久化 | **[runtime-fonts](references/runtime-fonts.md)**：有明显收益才扩充，系统／网络分级授权，核对保存与重载；插件EA能力不等于已有MCP字体工具 |
 | 矩阵、数学向量／转置、分式、求和、递推／上下标、中文混排 | **先读[数学分流](references/visual-content.md#数学内容分流-先认语义再选元素)**：源TeX→原生LaTeX资源→实际尺寸→PNG专项验收；RTL信号名与位串不误转换 |
 | 验收等级、合法叠放／文字遮挡、分级评审 | **[acceptance](references/acceptance.md)**：新图先问review，medium仅推荐；用户需求逐项覆盖、同文件任务累计历史、可读局部PNG与逐项误报证据，不强制全部箭头绑定 |
 | 箭头/路由/固定圆角、缩放/旋转/排版、交叉、动画/导出 | [layout-export-animation](references/layout-export-animation.md)：绑定保持、真实半径、PPT宽箭身、有限预算；动画须播放验证 |
