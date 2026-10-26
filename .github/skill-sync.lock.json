@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "source": {
     "repository": "Bowen-0x00/obsidian-excalidraw-agent-skill",
-    "commit": "9711285aafca24b05cadeebc26d1720cc818f898"
+    "commit": "6131ec111fe2dfeb940ff37f8b9881f774b348df"
   },
   "files": {
-    "SKILL.md": "94af24a621ac982cbd9183d613eee4f55b9d11867696938fb7706730f6b87f56",
+    "SKILL.md": "2486baebc762081620cee3425a59c6ebf85a820c594e4b4a78a64326ecef512d",
     "prompts/maintain-libraries.zh-CN.md": "d69a30740084b76b5c4ee69cabf415e3e7987bec97c6deca6e0a7cfe4aa7a0c7",
     "references/acceptance.md": "a2319c5ef44336e3c0a506087413b2f67ea3c80e227be87ed8caa8fbe4e8401e",
     "references/agent-setup.md": "427fa2351d43ed44d06e5de71890fe5ff08d9ecd11846e48610226056434b5a4",
@@ -20,15 +20,16 @@
     "references/native-cli.md": "9a78561e330ea42911ceb5244100571515f9598bcbeacbe35ddd77b0bb494eb8",
     "references/native-features.md": "82838d02b0cbbbaa9f1056f1b8b7227ca29dddf7232ffae157b60175bf489337",
     "references/next-ai-draw-io.md": "8d84281bfec9df4a599a6b1979abad2de3932c7ba71e8a828e649a1d8909c3ef",
+    "references/runtime-fonts.md": "cd309369e1da88f547601b7bc709607776d7effc3918f6faad9fe9dd945f3af1",
     "references/scene-dsl.md": "f06946ce719c737b9e0c5cfeef5691d1aaf344045b15735f5e99f53cbd102b88",
-    "references/script-execution.md": "00501aaf3590eef2fae63be94f030eceb4db42beb1a46df6b730cd039792037a",
+    "references/script-execution.md": "b057e759ee66fe510d9d0a2b7be5fe2586244702b2ec819212fdd49745f703aa",
     "references/showcase.md": "adba83f058d0ed12dcadb32d13e9a866e4c7005c4926ffcf13518cd4eecc61c9",
     "references/special-diagrams.md": "f94eda8c0c46dcfa3f1ac00d1379c922f75acd538515e6fae5954dfc03f87da0",
     "references/svg-components.md": "1fb828b9ee8882c8d85caa82542d63b65a9782c43cbb03fa8cd98281bf5b9d44",
     "references/table-native.md": "7b95e6773495cfef0e1829f9b586bfa3b96e79b9db959495c56892a272394e03",
     "references/teaching-design.md": "a9fa65b9e0b020d3c21da99b2c173ef9fa3fc30ccde3014c3a21eaa83207cf88",
     "references/technical-illustration.md": "e630dc29f69ea2e9a3f012737065ba4246dc4143a000b8ed9683472778b51df0",
-    "references/typography.md": "9fbfa0868034d5546660ff359fdb9eba95ae4f7cf7f35a3c1ec14d4e248c8295",
+    "references/typography.md": "e80be141cf1cdce5fdf1f529bb6368b0be3620dd81e234772883df5c2d6d4a55",
     "references/visual-content.md": "80e67bd7682dc6c9d22a044988b1dfdf66f4acf7d404b7126893dc5c28d8d107",
     "references/visual-design.md": "aaa3e213c5e76caa8e13e77049fc37360d5d3223411fe8879645c0fc5d6d8ce1",
     "references/workflow-details.md": "172056da64f1bb71cb71f28ff040d4c23b1589c0d99be9a8ee5d5495c0d4f442"
