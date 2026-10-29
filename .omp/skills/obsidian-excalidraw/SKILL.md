@@ -11,6 +11,8 @@ description: 在 Obsidian Excalidraw 修改版中创建、修改原生可编辑�
 
 **0.10.5 动态字体工作流**：当前注册集合不是上限；有明确收益才按[授权规范](references/runtime-fonts.md)扩充。系统导入与网络下载、会话加载与vault持久化分别确认；插件须实际具备新EA方法。此更新不新增字体MCP、不改Bridge、不授权自动下载或覆盖文件。
 
+**0.10.6 原生图标工作流**：需要图标时按[icons](references/icons.md)发现本地SVG来源，使用新宿主rectangle＋svgLayers保留多色／单色矢量及动态style。复用现有操作，不新增图标MCP或自动转换器；宿主需实际包含2.29.0-9配套组件，更新Skill不自动升级插件。
+
 先调用 **`drawing_begin(request:用户原始需求,action:"prepare")`**。它实际返回本包Skill、验收/字体/工作流全文、任务专用参考、正确原生示例和当前宿主发现结果，不依赖客户端是否自动激活Skill。硬件另载微架构规范，数学另载内容分流；已有图加明确file_path可读取当前画布和真实评审历史。返回规范不等于模型已理解，更不等于用户已经回答偏好。
 
 偏好和需求齐全后用`drawing_begin(create|bind,brief,filename|file_path)`进入同一任务；原有context、DSL、原生入口复用同样的brief门禁。**逻辑微架构/电路**在brief.representation声明部件/端口/信号，并用drawing_contract映射body/wire IDs。**物理剖面/封装/爆炸图与讲解页**在brief.visual_plan声明目的、参考证据、视图、对象、承载/包含关系和示意边界，不为通过门禁虚构信号网络。[执行契约](references/workflow-details.md)、[视觉设计层](references/visual-design.md)。
@@ -54,6 +56,7 @@ description: 在 Obsidian Excalidraw 修改版中创建、修改原生可编辑�
 - **用户只说想画什么**：Agent负责选表达，不要求用户写DSL。普通一次性节点图用compose；需要可重复源文件、嵌套空间/表格/多端口组合时用可选[Scene DSL](references/scene-dsl.md)。
 - **DSL路径**：真实`drawing_dsl(plan|render,document,...)`或包内`launcher.py dsl -- ...`；同state_id增量更新，实际PNG后仍review。不要把其document与compose的diagram混用，不用原生apply悄悄覆盖受管对象。
 - **原生路径**：已有图小改、用户库、特殊扩展/交互/动画继续read/apply/library/present/原生CLI，不强迫经过DSL。先绑定明确目标，按下表只读所需能力；不为简单图遍读所有references。
+- **需要图标时先读[原生矢量图标](references/icons.md)**：按实际本地图标目录发现／预览／fit，新宿主以rectangle＋`customData.svgLayers/svgViewBox`保留多色path；通过现有create_shape／patch操作改变stroke、fill和线宽。透明元素style可保留图层原色，背景色是图层填充覆盖而非底板。SVG文件夹不等于excalidrawlib，Action的有限解析器不承诺任意复杂SVG无损转换；不虚构图标MCP、不自动下载或改库设置。
 - **只有CLI也可执行**：`launcher.py cli -- ...`是本包绘图客户端；`launcher.py dsl -- ...`是声明式场景；插件自身native CLI另见参考。三者都不替代真实宿主连接与PNG检查。
 - **CDP只读排错（默认关闭）**：效果异常、字体/资源/表格/图层原因不明时，先`drawing_debug(status)`，再按[只读CDP](references/cdp-readonly.md)提示用户选择开启。启用后仅`drawing_debug(inspect)`读取明确已打开的宿主vault/画布；禁止任意JS、Input、断点、打开/保存/导出或CDP改图，不用browser绕过。诊断不授权修复；微调仍需当前Bridge revision／DSL源及正常PNG验收。
 
@@ -137,6 +140,7 @@ inspect是合并**已有**步骤，不是原子跨请求事务：check/render前
 | 网上/远端图片、公式资源 | [images-assets](references/images-assets.md)：实际字节/许可/宿主附件；远端路径非宿主路径，MCP可data:image，整个请求4MiB |
 | draw、多边形、cuboid、brace、callout、代码、checkbox/高级连接 | [native-features](references/native-features.md)：真实原生operations，不弹面板等待；手绘freedraw不等于Rough.js profile |
 | 自定义SVG组件、可复用符号 | [svg-components](references/svg-components.md)：真实DOM测量/viewBox、可编辑carrier/anchor，不用正则冒充通用SVG parser |
+| 多色／单色图标、本地SVG目录、动态描边／填充／线宽 | **[icons](references/icons.md)**：svgLayers矩形载体、源色与整体style优先级、解析／许可边界、当前宿主小样验证 |
 | ECharts 数据图、多系列/堆叠/双轴/数值XY | [visual-content](references/visual-content.md)：16个已发布示例、12种可视类型＋custom；当前MCP用真实options，不把UI类型名塞进旧Bridge枚举 |
 | shadow/gradient/rich text/list/bullet、行内公式 | [visual-content](references/visual-content.md)：受控Feature、真实源与Engine、公式层级/关联恢复；不执行任意gradient代码 |
 | 脑图/折叠/Markdown、WaveDrom、Git/GIF | [special-diagrams](references/special-diagrams.md)：真实root/parent/ID和runtime；PNG不证明动画多帧 |

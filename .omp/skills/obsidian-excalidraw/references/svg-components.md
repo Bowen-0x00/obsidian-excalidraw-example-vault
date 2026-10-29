@@ -2,6 +2,8 @@
 
 SVG path 是本修改版中制作数字电路、微架构和任意工程符号的重要方式。目标不是把SVG栅格化，而是把路径承载在可编辑的 Excalidraw `line` 元素上，并保留路径源、viewBox、组件逻辑ID和可选标签/端口。
 
+多色／单色图标新增路线见[icons](icons.md)：新组件支持rectangle＋`customData.svgLayers`有序多层路径和整体动态样式。以下`svgPathShape`单路径line流程仍适用，不用它的严格bbox归零规则或“每色一个carrier”限制新图层格式。
+
 ## 真实脚本依据
 
 - 绘图脚本`generate/Action-Generate-Digital-SVG.md`：路径库→`measurePath(pathData)`测量真实SVG DOM bbox→`shiftPathData(path,bbox.x,bbox.y)`归一化→创建line carrier→写`customData.svgPathShape`与`svgViewBox`→单独创建标签。
@@ -66,11 +68,11 @@ component root
 }
 ```
 
-这是当前Bridge的可执行operation示例：path已将原bbox的y=5整体平移到0，源viewBox=82×40，目标显示=164×80；`points`由执行器生成，不在输入中手填。metadata/component ports必须自行明确映射，不提供自动绑定推断。多路径或不同颜色/填充用多个carrier，原生text另保留，通过group把必需成员组合；category标题和isPreviewLabel展示标签不默认入组件。不能把可修改path源说成内部每段都能像原生line一样逐点编辑。
+这是当前Bridge的单path可执行operation示例：path已将原bbox的y=5整体平移到0，源viewBox=82×40，目标显示=164×80；`points`由执行器生成，不在输入中手填。metadata/component ports必须自行明确映射，不提供自动绑定推断。旧格式的多路径／不同颜色需多个carrier并group；新宿主多色图标优先[svgLayers矩形格式](icons.md)，保留有序图层而不必拆多个元素。原生text另保留，category标题和isPreviewLabel展示标签不默认入组件；源路径可改不等于每段都有原生顶点编辑。
 
 对于用户库素材，SVG path carrier也按`drawing_library(insert)`原生导入，保留line+path编辑性；禁止用一张整页PNG替代组件。若用户要求加入`.excalidrawlib`，先生成/复核独立画布和预览，除非明确授权，不自动写入用户库。
 
-整份SVG文档不是一个d字符串：rect/circle/ellipse/path、嵌套transform、不同stroke/fill、文字与图片需按实际库转换为多个路径/原生元素，保留颜色和transform；纯path carrier不支持凭空保留所有SVG滤镜、CSS、DOM与动画。Agent可用路径组合制作任意可表达的静态符号，不承诺任意外部SVG无损一键导入。普通矩形/文本仍用原生元素，只有复杂几何才用path carrier。
+整份SVG文档不是一个d字符串：rect/circle/ellipse/path、嵌套transform、不同stroke/fill、文字与图片需通过实际支持的转换保留语义。新svgLayers可以在单carrier保存多色path，但Action有限解析器不保留任意继承、transform、clip/CSS／滤镜；详见[图标转换边界](icons.md)。Agent可组合可表达的静态矢量符号，不承诺任意外部SVG无损导入；普通矩形／文本仍用原生元素。
 
 ## 可信EA/URI脚本路径
 

@@ -9,6 +9,7 @@
 | 语义箭头/路径风格/固定圆角 | 通过`roundness`、`elbowed`、多点`points`和修改版`curveArrow`区分 sharp/round/elbow/S-curve；头型仍单独选择 | [layout-export-animation](layout-export-animation.md)：四种路径实际字段、当前renderer与unknown边界；`curveArrow`不是通用`routing:"curve"`别名 |
 | 图片获取/插入 | 只提image类型，没有自然语言找图→附件→原生插入流程 | [images-assets](images-assets.md)：真实来源、许可、资源解码、宿主附件，EA/addImage或MCPcreate_image |
 | SVG path组件 | 只写brace/用户库导入，遗漏通用路径符号制作 | [svg-components](svg-components.md)：两个Digital生成脚本、DOM归一化、line载体、组件组和入库边界 |
+| 多色／单色SVG图标 | 已有单path不能表达有序多层配色与整体动态样式 | [icons](icons.md)：新宿主svgLayers矩形＋源viewBox，现有create_shape／patch，目录发现、受限解析、样式优先级与实际PNG |
 | 文字/公式混排 | 只写纯LaTeX能力，普通text中的`$…$`不会自动解析 | [visual-content](visual-content.md)：复用latex/Action-Extract-Latex，选真实text；原文副本转换、group/frame/绑定恢复，缺宿主入口时现有text+create_latex组合 |
 | Mindmap | 未说明父子/根ID、布局与折叠、Markdown导出 | [special-diagrams](special-diagrams.md)：现有mindmap Feature、实际MindmapAPI、open/close契约 |
 | WaveDrom | 已捆绑Engine但没有波形工作流 | special-diagrams：透明rectangle+JSON/JSON5源，set_feature wavedrom，真实PNG |

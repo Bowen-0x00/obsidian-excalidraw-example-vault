@@ -43,6 +43,8 @@
 
 任意SVG path符号/可复用组件的通用流程见[svg-components](svg-components.md)：复用真实Digital/Microarch生成脚本，DOM测量、归一化校验、源viewBox与目标尺寸分离、line carrier和独立文字/anchor分组。不是给drawing_primitives添加不存在的kind=svg；普通path使用drawing_apply的create_svg_path。
 
+多色／单色矢量图标另见[icons](icons.md)：新宿主svgLayers可由现有create_shape矩形＋安全customData承载，patch_element改整体stroke／background／strokeWidth；不需要新增kind=icon或把图标默认插成image。
+
 ## callout
 
 ```json
