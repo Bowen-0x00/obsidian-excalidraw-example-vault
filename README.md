@@ -26,25 +26,51 @@ For example:
 
 1. Clone or download the compressed package and extract it.
 2. Open Obsidian and select this folder (the folder you cloned or extracted in the previous step).
-## AI Agent Out-of-the-Box Drawing
+## AI Agent drawing: one host, one discovered connection
 
-This repository comes pre-configured for end-to-end autonomous AI diagramming:
+### 1. Start in the actual Obsidian vault
 
-### 1. Architecture & Components
-- **Skill Rules & Reference Docs**: Located in `skills/obsidian-excalidraw`, `.omp/skills/`, and `.claude/skills/`. Provides agents with domain rules for microarchitecture, flowcharts, typography, and library component selection.
-- **Agent-Drawing Bridge & Engines**: Located in `plugins/Excalidraw/Scripts/Agent-Drawing/`. Includes `mcp/Start-Agent-Drawing.md`, `mcp/Engine-Agent-Bridge.md`, and 16 native feature engines (Hover, Shadow, Gradient, Swimlane, ECharts, Mindmap, Table, WaveDrom, etc.).
-- **Auto-Starting Local Bridge**: When Obsidian opens this vault, the Excalidraw plugin automatically launches `Start-Agent-Drawing.md` and hosts a local loopback REST Bridge on port `27124`.
-- **Structured Symbol Libraries**: Stored in `plugins/Excalidraw/Libraries/` with `library-index.md`. AI Agents can read catalog summaries, query exact item IDs (e.g., ALU, MUX, NOR, Register File, NoC Router), and insert them with precise scaling directly onto the canvas.
+1. Clone/download this repository, including `.obsidian/`, and open the folder as a vault in **Obsidian Desktop**.
+2. Enable the bundled **Excalidraw-ymjr** plugin, not the upstream Excalidraw plugin. Review and approve script execution yourself; this repository does not grant trust or enable autorun.
+3. Open an example drawing. Run **Agent-Drawing/mcp/Start-Agent-Drawing** using Excalidraw's script command.
 
-### 2. How to Use with AI Agents
-1. **Open Vault**: Open this folder in Obsidian.
-2. **Configure AI Client**:
-   - **OMP (Oh My Prompt)**: OMP automatically discovers `.omp/skills/obsidian-excalidraw`. Connect your Excalidraw MCP server and start chatting.
-   - **Claude Desktop / Cursor**: Point to `skills/obsidian-excalidraw` as a skill or configure the MCP server.
-3. **Draw with Natural Language**:
-   Send a prompt to your agent, such as:
-   > "Create a CPU datapath diagram using the ALU, MUX, and Register File from the digital circuit library."
-   The agent will discover the library, read the index, retrieve exact item IDs, natively insert elements into the canvas, and inspect the rendered PNG to verify layout.
+Bridge **0.13.8+** derives the current vault and machine from Obsidian, creates a private per-vault connection outside the vault, and repairs a copied descriptor that references another computer or vault. Credentials are never copied to the clipboard or committed. If a port is occupied, the Bridge publishes its actual loopback port. A startup notice identifies the host and vault.
+
+**Opening the vault alone does not promise an automatically started Bridge.** The supplied startup script is `autorun:false`. Advanced URI may start an explicitly configured vault when installed/enabled, but it is optional.
+
+### 2. Install the Agent runtime once
+
+The Skill explains how to draw; the separate runtime supplies `drawing_*` MCP tools. For OMP:
+
+```sh
+omp plugin marketplace add Bowen-0x00/obsidian-excalidraw-agent-skill
+omp plugin install --scope user obsidian-excalidraw-agent-skill@obsidian-excalidraw-agent
+```
+
+Reload the client/MCP. A single live local connection is discovered automatically; if there is more than one, select a returned connection ID or unique vault name. The Agent working directory is not a vault selector.
+
+For Claude Code, Codex, a repository install, and SSH deployment, use the [runtime setup guide](https://github.com/Bowen-0x00/obsidian-excalidraw-agent-skill/blob/main/skills/obsidian-excalidraw/references/agent-setup.md). Do not configure the internal Bridge URL as an HTTP MCP endpoint.
+
+### 3. Check without asking an Agent
+
+In the installed runtime directory use `python launcher.py status`, `vaults`, `use CONNECTION_ID`, or `doctor`; add `--json` for machine-readable output. SSH installations provide:
+
+```sh
+excalidraw status
+excalidraw vaults
+excalidraw use CONNECTION_ID
+excalidraw doctor
+```
+
+The remote client lists **authenticated host vaults** and paired connections; it never needs a user to transcribe a Windows vault path. A listed but unstarted host vault is not a writable session. Start its Bridge in Obsidian first. Multiple hosts remain separate profiles; adding DELL must not silently replace an existing host.
+
+The status distinguishes installed runtime, configuration, authenticated Bridge, observed host/vault and open canvas. `connected` with no open canvas is not an authentication failure. Status does not edit a drawing or restart Obsidian.
+
+### 4. Ask for a drawing
+
+> Create a CPU datapath using the ALU, MUX and Register File from the digital circuit library. Keep native editable elements and inspect the resulting PNG.
+
+The library lives under `plugins/Excalidraw/Libraries/` with `library-index.md`. The Agent selects exact item IDs, edits native elements, checks the current PNG and reports a delivery receipt—not merely a successful write. Shared Engines are bundled under `plugins/Excalidraw/Scripts/Agent-Drawing/`; table interaction belongs to a compatible host plugin, not the retired script Table Engine.
 
 
 ## Automatic Repository Synchronization

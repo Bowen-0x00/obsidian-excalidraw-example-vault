@@ -25,25 +25,52 @@
 1. 克隆或下载压缩包后解压
 2. obsidian打开库，选择这个文件夹（上一步克隆或解压后的文件夹）
 
-## AI Agent 开箱即用绘图
+## AI Agent 绘图：先启动当前库，再自动发现连接
 
-本仓库已预先配置好面向 AI 智能体的完整闭环绘图能力：
+### 1. 在真正运行 Obsidian 的电脑上启动
 
-### 1. 架构与组成
-- **Skill 规则与参考手册**：放置于 `skills/obsidian-excalidraw`、`.omp/skills/` 与 `.claude/skills/`，向 AI Agent 提供微架构/流程图/布局/字体与素材库选型规则。
-- **Agent-Drawing 桥接引擎**：放置于 `plugins/Excalidraw/Scripts/Agent-Drawing/`，包含 `mcp/Start-Agent-Drawing.md`、`mcp/Engine-Agent-Bridge.md` 及 16 个原生特性引擎（Hover、Shadow、Gradient、Swimlane、ECharts、Mindmap、Table、WaveDrom 等）。
-- **自启动 Bridge 服务**：Excalidraw 插件启动时会自动运行 `Start-Agent-Drawing.md`，在本地环回端口 `27124` 启动轻量安全的 Bridge 服务，无须手动执行任何命令。
-- **结构化素材库**：位于 `plugins/Excalidraw/Libraries/`，配有 `library-index.md` 摘要。AI Agent 可以根据语义先读摘要初筛，再通过关键词 query 精准获取图元（如 ALU、MUX、NOR、寄存器堆、NoC Router 等），并按精确比例原生注入画布。
+1. 克隆／解压本仓库，保留 `.obsidian/`，用 **Obsidian Desktop** 打开该文件夹。
+2. 启用所带的 **Excalidraw-ymjr**，不是上游同名插件。脚本授权由用户审查决定；本仓库不自动修改授信或 autorun。
+3. 打开一个示例画布，在 Excalidraw 脚本命令中运行 **Agent-Drawing/mcp/Start-Agent-Drawing**。
 
-### 2. 使用方法
-1. **打开示例库**：用 Obsidian 打开本仓库文件夹。
-2. **配置 AI 客户端**：
-   - 若使用 **OMP (Oh My Prompt)**：OMP 会自动识别 `.omp/skills/obsidian-excalidraw`；配置 Excalidraw MCP 服务后即可直接对话。
-   - 若使用 **Claude Desktop / Cursor**：将 `skills/obsidian-excalidraw` 挂载为 Skill，或配置 MCP server。
-3. **自然语言绘图**：
-   在 Agent 对话框中发送指令，例如：
-   > “帮我新建一个硬件微架构图，使用数字电路素材库中的 ALU、MUX 和通用寄存器堆，画一个两阶段运算数据通路。”
-   Agent 会自动执行：发现库 -> 读取摘要 -> 检索图元 Exact ID -> 原生注入画布 -> 查看渲染 PNG 闭环验证。
+Bridge **0.13.8 及以后**从当前 Obsidian 自动取得本机和 vault 身份，在库外生成该 vault 的私有连接；复制过来的描述文件若指向其他电脑／其他库，会重建为本机连接。不要求安装本机 OMP，不要求用户填写 vault 名和 Windows 路径，也不复制 token 到剪贴板。端口被占用时发布实际可用的 loopback 端口，通知中显示宿主与 vault。
+
+**只打开库不等于自动启动 Bridge。** 所带脚本仍为 `autorun:false`；Advanced URI 只在已安装／启用且明确启动时生效，不是必需依赖。
+
+### 2. 安装 Agent 运行包
+
+Skill 负责绘图规范，运行包提供 `drawing_*` MCP 工具。OMP 用户运行：
+
+```sh
+omp plugin marketplace add Bowen-0x00/obsidian-excalidraw-agent-skill
+omp plugin install --scope user obsidian-excalidraw-agent-skill@obsidian-excalidraw-agent
+```
+
+重载客户端／MCP。只有一个已运行的本地候选时自动发现；存在多个候选时，按返回的连接 ID 或唯一 vault 名选择，不要求手抄路径。**Agent 的工作目录不是绘图目标选择器。**
+
+Claude Code、Codex、克隆安装和 SSH 部署按[运行包接入指南](https://github.com/Bowen-0x00/obsidian-excalidraw-agent-skill/blob/main/skills/obsidian-excalidraw/references/agent-setup.md)操作。Bridge 的 HTTP 地址是内部鉴权协议，不能当 HTTP MCP URL 填入客户端。
+
+### 3. 不用 Agent 也能检查状态
+
+运行包目录可直接运行 `python launcher.py status`、`vaults`、`use 连接ID`、`doctor`；需要结构化输出时加 `--json`。SSH 安装会提供：
+
+```sh
+excalidraw status
+excalidraw vaults
+excalidraw use 连接ID
+excalidraw doctor
+```
+
+远端显示的是**经鉴权取得的宿主 vault 清单**及已配对连接，不扫描远端文件系统冒充宿主发现，也不要求用户填写 Windows 路径。清单里未启动的库不是可写会话；先在该库的 Obsidian 启动 Bridge。多宿主保留独立记录，新增 DELL 不得悄悄覆盖原宿主的默认连接。
+
+状态分别说明运行包、配置、Bridge 鉴权、实际宿主／库和画布是否就绪。已连接但未开画布，不应误报为鉴权失败。状态命令只读，不改图、不重启 Obsidian。
+
+### 4. 自然语言绘图
+
+> 帮我新建硬件微架构图，使用数字电路库中的 ALU、MUX 和寄存器堆；保留原生可编辑元素，检查最终 PNG。
+
+素材位于 `plugins/Excalidraw/Libraries/`，配有 `library-index.md`。Agent 检索 exact item ID、原生插入、读回、检查 PNG 并取得交付回执；写入成功不等于视觉验收通过。共享 Engines 位于 `plugins/Excalidraw/Scripts/Agent-Drawing/`；表格交互由兼容宿主插件承担，不再启动已退休的脚本 Table Engine。
+
 
 ## 仓库自动同步
 
