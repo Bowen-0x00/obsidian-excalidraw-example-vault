@@ -2,14 +2,14 @@
 name: Excalidraw Agent Bridge
 description: Local authenticated MCP bridge for Obsidian Excalidraw.
 author: local
-version: 0.13.5
+version: 0.13.8
 autorun: false
 ---
 /*
 ```javascript
 */
 
-const BRIDGE_VERSION = "0.13.5";
+const BRIDGE_VERSION = "0.13.8";
 const PROTOCOL_VERSION = "3";
 const DEFAULT_PORT = 27124;
 
@@ -82,210 +82,145 @@ const BRIDGE_SCRIPT_NAME =
         .replace(/\.md$/, "")
     : SCRIPT_REL_PATH);
 
-// Resolve descriptor file beside itself: <script_dir>/Agent-Bridge-Connection.json
-const scriptVaultDir = BRIDGE_SCRIPT_PATH.substring(
-  0,
-  BRIDGE_SCRIPT_PATH.lastIndexOf("/"),
-);
+// The running Obsidian process owns the vault identity and local credentials.
+// A copied vault descriptor is a hint, never authority to reuse another vault.
+const os = nodeRequire("os");
+const nodeProcess = nodeRequire("process");
+const vaultBasePath = obsidianApp?.vault?.adapter?.getBasePath?.() ||
+  obsidianApp?.vault?.adapter?.basePath;
+if (!vaultBasePath) throw new Error("[Bridge] A local desktop vault is required.");
+function canonicalPath(value) {
+  const absolute = path.resolve(value).replace(/\\/g, "/");
+  return nodeProcess.platform === "win32" ? absolute.toLowerCase() : absolute;
+}
+function identity(value) {
+  return crypto.createHash("sha256").update(value).digest("hex").slice(0, 24);
+}
+const hostIdentity = {
+  id: identity(`${os.hostname()}\n${canonicalPath(os.homedir())}`),
+  name: os.hostname(),
+  platform: nodeProcess.platform,
+};
+const vaultIdentity = {
+  id: identity(canonicalPath(vaultBasePath)),
+  name: obsidianApp.vault.getName(),
+  path: path.resolve(vaultBasePath),
+};
+const defaultStateDirectory = nodeProcess.platform === "win32"
+  ? path.join(nodeProcess.env.LOCALAPPDATA || path.join(os.homedir(), "AppData", "Local"), "ObsidianExcalidrawAgent")
+  : nodeProcess.platform === "darwin"
+    ? path.join(os.homedir(), "Library", "Application Support", "ObsidianExcalidrawAgent")
+    : path.join(nodeProcess.env.XDG_DATA_HOME || path.join(os.homedir(), ".local", "share"), "obsidian-excalidraw-agent");
+const profilePath = path.join(defaultStateDirectory, "connections", `${vaultIdentity.id}.json`);
+const scriptVaultDir = path.posix.dirname(BRIDGE_SCRIPT_PATH);
 const descriptorVaultPath = `${scriptVaultDir}/Agent-Bridge-Connection.json`;
-
-const vaultBasePath =
-  obsidianApp?.vault?.adapter?.getBasePath?.() ||
-  obsidianApp?.vault?.adapter?.basePath ||
-  "";
-const descriptorFsPath = vaultBasePath
-  ? path.join(vaultBasePath, descriptorVaultPath)
-  : null;
-
-let descriptorExists = false;
-if (descriptorFsPath && fs.existsSync(descriptorFsPath)) {
-  descriptorExists = true;
-} else if (obsidianApp?.vault?.adapter) {
-  try {
-    descriptorExists = await obsidianApp.vault.adapter.exists(
-      descriptorVaultPath,
-    );
-  } catch {}
+const descriptorFsPath = path.join(vaultBasePath, descriptorVaultPath);
+function readObject(filename) {
+  const value = JSON.parse(fs.readFileSync(filename, "utf8"));
+  if (!value || typeof value !== "object" || Array.isArray(value)) {
+    throw new Error(`[Bridge] Expected a JSON object: ${filename}`);
+  }
+  return value;
 }
-
-let BRIDGE_TOKEN = "";
-let BRIDGE_PORT = DEFAULT_PORT;
-let usingDescriptor = false;
-let isNewToken = false;
-let scriptSettings = {};
-
-if (descriptorExists) {
-  let descriptorContent = null;
-  try {
-    if (descriptorFsPath && fs.existsSync(descriptorFsPath)) {
-      descriptorContent = await fs.promises.readFile(
-        descriptorFsPath,
-        "utf8",
-      );
-    } else {
-      descriptorContent = await obsidianApp.vault.adapter.read(
-        descriptorVaultPath,
-      );
+function privateWrite(filename, value) {
+  fs.mkdirSync(path.dirname(filename), { recursive: true, mode: 0o700 });
+  const temporary = `${filename}.${nodeProcess.pid}.tmp`;
+  fs.writeFileSync(temporary, `${JSON.stringify(value, null, 2)}\n`, { mode: 0o600 });
+  if (nodeProcess.platform !== "win32") fs.chmodSync(temporary, 0o600);
+  fs.renameSync(temporary, filename);
+}
+function isOutsideVault(filename) {
+  const relative = path.relative(vaultBasePath, filename);
+  return relative === ".." || relative.startsWith(`..${path.sep}`) || path.isAbsolute(relative);
+}
+let privateConfigPath = profilePath;
+let connection = null;
+let recoveredDescriptor = false;
+if (fs.existsSync(descriptorFsPath)) {
+  const descriptor = readObject(descriptorFsPath);
+  const candidate = descriptor.configPath;
+  if (typeof candidate === "string" && path.isAbsolute(candidate) &&
+      isOutsideVault(candidate) && fs.existsSync(candidate)) {
+    const stored = readObject(candidate);
+    if (stored.mode !== "remote" && stored.vault_path &&
+        (!stored.host_id || stored.host_id === hostIdentity.id) &&
+        canonicalPath(stored.vault_path) === canonicalPath(vaultBasePath)) {
+      privateConfigPath = candidate;
+      connection = stored;
     }
-  } catch (err) {
-    const msg = `[Bridge] Failed to read descriptor at ${descriptorVaultPath}: ${err?.message || err}`;
-    new Notice(msg, 8000);
-    throw new Error(msg);
   }
-
-  let descriptor;
-  try {
-    descriptor = JSON.parse(descriptorContent);
-  } catch (err) {
-    const msg = `[Bridge] Descriptor JSON is invalid in ${descriptorVaultPath}: ${err?.message || err}`;
-    new Notice(msg, 8000);
-    throw new Error(msg);
-  }
-
-  if (!descriptor || typeof descriptor !== "object") {
-    const msg = `[Bridge] Descriptor must be a JSON object in ${descriptorVaultPath}`;
-    new Notice(msg, 8000);
-    throw new Error(msg);
-  }
-
-  const configPath = descriptor.configPath;
-  if (typeof configPath !== "string" || !configPath.trim()) {
-    const msg = `[Bridge] Descriptor missing valid 'configPath' string in ${descriptorVaultPath}`;
-    new Notice(msg, 8000);
-    throw new Error(msg);
-  }
-  if (!path.isAbsolute(configPath)) {
-    throw new Error("[Bridge] Private connection configPath must be absolute.");
-  }
-
-  if (!fs.existsSync(configPath)) {
-    const msg = `[Bridge] Private connection config file not found at: ${configPath}`;
-    new Notice(msg, 8000);
-    throw new Error(msg);
-  }
-
-  let connectionRaw;
-  try {
-    connectionRaw = await fs.promises.readFile(configPath, "utf8");
-  } catch (err) {
-    const msg = `[Bridge] Failed to read private connection config at ${configPath}: ${err?.message || err}`;
-    new Notice(msg, 8000);
-    throw new Error(msg);
-  }
-
-  let connection;
-  try {
-    connection = JSON.parse(connectionRaw);
-  } catch (err) {
-    const msg = `[Bridge] Private connection config at ${configPath} is invalid JSON: ${err?.message || err}`;
-    new Notice(msg, 8000);
-    throw new Error(msg);
-  }
-
-  if (!connection || typeof connection !== "object") {
-    const msg = `[Bridge] Private connection config at ${configPath} must be a JSON object`;
-    new Notice(msg, 8000);
-    throw new Error(msg);
-  }
-
-  if (
-    typeof connection.bridge_url !== "string" ||
-    !connection.bridge_url.trim()
-  ) {
-    const msg = `[Bridge] Private connection config missing required 'bridge_url' string in ${configPath}`;
-    new Notice(msg, 8000);
-    throw new Error(msg);
-  }
-
-  let parsedUrl;
-  try {
-    parsedUrl = new URL(connection.bridge_url);
-  } catch (err) {
-    const msg = `[Bridge] Private connection config 'bridge_url' is malformed: ${connection.bridge_url}`;
-    new Notice(msg, 8000);
-    throw new Error(msg);
-  }
-
-  if (parsedUrl.protocol !== "http:" || parsedUrl.username || parsedUrl.password ||
-      parsedUrl.search || parsedUrl.hash || parsedUrl.pathname !== "/") {
-    const msg = `[Bridge] 'bridge_url' protocol must be 'http:', got '${parsedUrl.protocol}' in ${configPath}`;
-    new Notice(msg, 8000);
-    throw new Error(msg);
-  }
-
-  const hostname = parsedUrl.hostname.toLowerCase();
-  const isLoopback =
-    hostname === "127.0.0.1" ||
-    hostname === "localhost" ||
-    hostname === "::1" ||
-    hostname === "[::1]";
-
-  if (!isLoopback) {
-    const msg = `[Bridge] 'bridge_url' host must be loopback (127.0.0.1, localhost, ::1), got '${hostname}' in ${configPath}`;
-    new Notice(msg, 8000);
-    throw new Error(msg);
-  }
-
-  const portNum = parseInt(parsedUrl.port, 10);
-  if (!Number.isInteger(portNum) || portNum < 1 || portNum > 65535) {
-    const msg = `[Bridge] 'bridge_url' port must be an integer between 1 and 65535, got '${parsedUrl.port}' in ${configPath}`;
-    new Notice(msg, 8000);
-    throw new Error(msg);
-  }
-
-  if (
-    typeof connection.bridge_token !== "string" ||
-    !connection.bridge_token.trim()
-  ) {
-    const msg = `[Bridge] Private connection config missing required 'bridge_token' in ${configPath}`;
-    new Notice(msg, 8000);
-    throw new Error(msg);
-  }
-
-  const candidateToken = connection.bridge_token.trim();
-  if (!/^[0-9a-f]{64}$/i.test(candidateToken)) {
-    const msg = `[Bridge] 'bridge_token' format invalid: expected 64 hexadecimal characters in ${configPath}`;
-    new Notice(msg, 8000);
-    throw new Error(msg);
-  }
-
-  BRIDGE_TOKEN = candidateToken;
-  BRIDGE_PORT = portNum;
-  usingDescriptor = true;
-} else {
-  // Legacy standalone behavior: read / generate token and save to scriptSettings
-  scriptSettings = ea.getScriptSettings() || {};
-  isNewToken = !scriptSettings.bridgeToken;
-
-  if (isNewToken) {
-    scriptSettings.bridgeToken = crypto.randomBytes(32).toString("hex");
-  }
-
-  if (!Number.isInteger(scriptSettings.bridgePort)) {
-    scriptSettings.bridgePort = DEFAULT_PORT;
-  }
-
-  await ea.setScriptSettings(scriptSettings);
-
-  BRIDGE_TOKEN = scriptSettings.bridgeToken;
-  BRIDGE_PORT = scriptSettings.bridgePort;
+  recoveredDescriptor = !connection;
 }
-
-// Credentials environment overrides private connection
-const nodeProcess =
-  typeof process !== "undefined"
-    ? process
-    : (nodeRequire ? nodeRequire("process") : null);
-
-if (nodeProcess?.env?.EXCALIDRAW_BRIDGE_TOKEN) {
-  BRIDGE_TOKEN = nodeProcess.env.EXCALIDRAW_BRIDGE_TOKEN.trim();
-}
-if (nodeProcess?.env?.EXCALIDRAW_BRIDGE_PORT) {
-  const envPort = parseInt(nodeProcess.env.EXCALIDRAW_BRIDGE_PORT, 10);
-  if (Number.isInteger(envPort) && envPort >= 1 && envPort <= 65535) {
-    BRIDGE_PORT = envPort;
+if (!connection && fs.existsSync(profilePath)) {
+  connection = readObject(profilePath);
+  if (connection.mode === "remote" || !connection.vault_path ||
+      (connection.host_id && connection.host_id !== hostIdentity.id) ||
+      canonicalPath(connection.vault_path) !== canonicalPath(vaultBasePath)) {
+    throw new Error("[Bridge] Local vault profile identity is invalid; preserve it and run drawing doctor.");
   }
 }
+const generatedConnection = !connection;
+if (!connection) connection = {
+  bridge_url: `http://127.0.0.1:${DEFAULT_PORT}`,
+  bridge_token: crypto.randomBytes(32).toString("hex"),
+  bridge_timeout: 180,
+};
+let parsedUrl;
+try { parsedUrl = new URL(connection.bridge_url); } catch {
+  throw new Error("[Bridge] Invalid private bridge_url; run drawing doctor.");
+}
+if (parsedUrl.protocol !== "http:" || !["127.0.0.1", "localhost", "[::1]", "::1"].includes(parsedUrl.hostname) ||
+    parsedUrl.username || parsedUrl.password || parsedUrl.search || parsedUrl.hash || parsedUrl.pathname !== "/") {
+  throw new Error("[Bridge] Private bridge_url must be an HTTP loopback origin.");
+}
+let BRIDGE_TOKEN = nodeProcess.env.EXCALIDRAW_BRIDGE_TOKEN?.trim() || connection.bridge_token;
+let BRIDGE_PORT = Number(nodeProcess.env.EXCALIDRAW_BRIDGE_PORT || parsedUrl.port);
+if (!/^[0-9a-f]{64}$/i.test(BRIDGE_TOKEN || "")) {
+  throw new Error("[Bridge] Invalid private token; expected 64 hexadecimal characters.");
+}
+if (!Number.isInteger(BRIDGE_PORT) || BRIDGE_PORT < 1024 || BRIDGE_PORT > 65535) {
+  throw new Error("[Bridge] Invalid private Bridge port (1024–65535 required).");
+}
+const scriptFolder = String(ea.plugin.settings.scriptFolderPath || path.posix.dirname(path.posix.dirname(scriptVaultDir))).replace(/\/+$/, "");
+connection = {
+  ...connection, mode: "local", host_id: hostIdentity.id, host_name: hostIdentity.name,
+  vault_id: vaultIdentity.id, vault_name: vaultIdentity.name, vault_path: vaultIdentity.path,
+  plugin_id: ea.plugin.manifest.id, script_folder: scriptFolder,
+  bridge_script: BRIDGE_SCRIPT_PATH,
+  bootstrap_script: `${scriptVaultDir}/Start-Agent-Drawing.md`,
+};
+function publishConnection() {
+  connection.bridge_url = `http://127.0.0.1:${BRIDGE_PORT}`;
+  connection.port = BRIDGE_PORT;
+  connection.bridge_token = BRIDGE_TOKEN;
+  privateWrite(privateConfigPath, connection);
+  if (canonicalPath(privateConfigPath) !== canonicalPath(profilePath)) privateWrite(profilePath, connection);
+  privateWrite(descriptorFsPath, { configPath: privateConfigPath });
+}
+function hostVaultCatalog() {
+  const configDirectory = nodeProcess.platform === "win32"
+    ? path.join(nodeProcess.env.APPDATA || path.join(os.homedir(), "AppData", "Roaming"), "obsidian")
+    : nodeProcess.platform === "darwin"
+      ? path.join(os.homedir(), "Library", "Application Support", "obsidian")
+      : path.join(nodeProcess.env.XDG_CONFIG_HOME || path.join(os.homedir(), ".config"), "obsidian");
+  const registryPath = path.join(configDirectory, "obsidian.json");
+  const entries = fs.existsSync(registryPath) ? readObject(registryPath).vaults || {} : {};
+  const vaults = new Map();
+  for (const entry of Object.values(entries)) {
+    if (!entry?.path || !fs.existsSync(entry.path)) continue;
+    const id = identity(canonicalPath(entry.path));
+    let enabled = false;
+    try {
+      const plugins = JSON.parse(fs.readFileSync(path.join(entry.path, ".obsidian", "community-plugins.json"), "utf8"));
+      enabled = Array.isArray(plugins) && plugins.includes(ea.plugin.manifest.id);
+    } catch { /* A registered folder may not have the drawing plugin. */ }
+    vaults.set(id, { id, name: path.basename(entry.path), path: path.resolve(entry.path),
+      pluginEnabled: enabled, running: id === vaultIdentity.id, selected: id === vaultIdentity.id });
+  }
+  vaults.set(vaultIdentity.id, { ...vaultIdentity, pluginEnabled: true, running: true, selected: true });
+  return { host: hostIdentity, vaults: [...vaults.values()], currentVaultId: vaultIdentity.id };
+}
+const scriptSettings = ea.getScriptSettings() || {};
 
 async function closeServerInstance(srv) {
   if (!srv) {
@@ -313,6 +248,7 @@ if (window.__EXCALIDRAW_AGENT_BRIDGE__?.server) {
 
 const state = {
   server: null,
+  bridgeVersion: BRIDGE_VERSION,
   startedAt: new Date().toISOString(),
   startedAtMs: Date.now(),
   scriptPath: BRIDGE_SCRIPT_PATH,
@@ -562,6 +498,76 @@ const TEXT_STYLE_KEYS = new Set([
   "lineHeight",
   "labelPosition",
 ]);
+
+// Validate the entire batch before staging: ignored fields corrupt layout intent.
+const OPERATION_FIELDS = Object.fromEntries(Object.entries({
+  create_shape: "ref id type x y width height style patch customData label",
+  create_text: "ref id x y text style textAlign verticalAlign autoResize wrapAt width height customData",
+  create_linear: "ref id kind x y points style patch customData polygon closed elbowed startArrowhead endArrowhead arrowHeadSize",
+  create_svg_path: "ref id x y width height path viewBox closed style customData",
+  create_draw: "ref id x y points pressures simulatePressure style patch customData metadata",
+  create_frame: "ref x y width height name style customData",
+  create_image: "ref x y width height source scale anchor customData",
+  create_latex: "ref x y tex scaleX scaleY customData",
+  create_table: "ref groupRef x y rows cols cellWidth cellHeight cells style",
+  create_embeddable: "ref id x y width height source url file filePath mdProps patch customData",
+  connect: "ref id from to start end waypoints elbowed startArrowhead endArrowhead arrowHeadSize style customData label labelRef",
+  patch_element: "target expectedVersion patch",
+  patch_custom_data: "target expectedVersion merge remove",
+  set_feature: "feature targets config",
+  clear_feature: "feature targets",
+  set_text_global_style: "targets style bold fontWeight font_weight color gradient",
+  set_text_partial_style: "targets style ranges boldRanges colorRanges",
+  set_arrow_style: "targets strokeWidth startArrowhead endArrowhead arrowHeadSize edge",
+  translate: "targets dx dy includeBoundText",
+  resize: "target width height anchor includeBoundText",
+  rotate: "targets groupId degrees fromCenter",
+  scale_selection: "targets groupId factor fromCenter",
+  set_text: "target text style",
+  bind_text: "container text padding",
+  unbind_text: "text",
+  rebind_arrow: "arrow startTarget endTarget start end preservePoints",
+  unbind_arrow: "arrow end",
+  delete: "targets cascadeBoundText",
+  duplicate: "target ref dx dy",
+  group: "targets ref",
+  ungroup: "targets groupId",
+  add_to_frame: "frame targets",
+  remove_from_frame: "targets",
+  center_in: "target container axis includeBoundText",
+  align: "targets alignment includeBoundText",
+  distribute: "targets direction includeBoundText",
+}).map(([op, fields]) => [op, new Set(["op", ...fields.split(" ")])]));
+
+function assertOperationFields(operation, operationIndex) {
+  const path = `operations[${operationIndex}]`;
+  assert(isPlainObject(operation), "INVALID_OPERATION", `${path} must be an object`);
+  const allowed = OPERATION_FIELDS[operation.op];
+  assert(allowed, "UNKNOWN_OPERATION", `${path}.op is not a supported operation: ${operation.op}`);
+  for (const field of Object.keys(operation)) {
+    const hint = TEXT_STYLE_KEYS.has(field) || COMMON_STYLE_KEYS.has(field)
+      ? ` Put ${field} in ${path}.style.${field} when supported, not at operation top level.` : "";
+    assert(allowed.has(field), "UNKNOWN_OPERATION_FIELD", `${path}.${field} is not accepted by ${operation.op}.${hint}`,
+      400, { operationIndex, field, path: `${path}.${field}`, phase: "validation", committed: false });
+  }
+  if (operation.style && !["set_text_global_style", "set_text_partial_style"].includes(operation.op)) {
+    assert(isPlainObject(operation.style), "INVALID_STYLE", `${path}.style must be an object`);
+    for (const field of Object.keys(operation.style)) {
+      assert(COMMON_STYLE_KEYS.has(field) || TEXT_STYLE_KEYS.has(field) || field === "edge",
+        "UNKNOWN_STYLE_FIELD", `${path}.style.${field} is not a supported style field`,
+        400, { operationIndex, field, path: `${path}.style.${field}`, phase: "validation", committed: false });
+    }
+  }
+  if (isPlainObject(operation.label)) {
+    const fields = new Set(["text", "ref", "padding", "autoResize", "style", "customData"]);
+    for (const field of Object.keys(operation.label)) {
+      assert(fields.has(field), "UNKNOWN_LABEL_FIELD", `${path}.label.${field} is not supported; text styling belongs in label.style`);
+    }
+    if (operation.label.style) {
+      assertOperationFields({ op: "create_text", style: operation.label.style }, operationIndex);
+    }
+  }
+}
 
 const PATCHABLE_KEYS = new Set([
   ...COMMON_STYLE_KEYS,
@@ -3336,6 +3342,15 @@ function runtimeCapabilitiesResponse() {
         Boolean(api?.ShapeCache),
     },
     latex: mathJaxStatus(),
+    nativeTable: {
+      callable: typeof ea.targetView?.tableManager?.stage === "function" &&
+        typeof ea.targetView?.tableManager?.applyTheme === "function",
+      schemaVersion: 2,
+      endpoint: "/v3/tables",
+      themes: ["light-blue", "light-mint", "dark-slate", "dark-ink", "morandi-sage", "morandi-rose", "academic", "sketch"],
+      borders: ["grid", "framed", "dashed", "three-line", "none"],
+      source: "Paired view.tableManager; catalog IDs only, palettes and borders remain host-owned",
+    },
 
     fonts: {
       supportsRegisteredFonts:
@@ -4547,6 +4562,17 @@ function resetStyleFor(
   }
 
   return resolved;
+}
+
+function refreshNativeText(element) {
+  const refresh = getActiveView().packages?.excalidrawLib?.refreshTextDimensions;
+  assert(typeof refresh === "function", "NATIVE_TEXT_MEASUREMENT_UNAVAILABLE",
+    "The active Excalidraw package must expose refreshTextDimensions; no estimated text sizing is used.", 409);
+  const elements = new Map([...getViewElements(), ...ea.getElements()].map((item) => [item.id, item]));
+  const dimensions = refresh(element, null, elements);
+  assert(dimensions && Number.isFinite(dimensions.width) && Number.isFinite(dimensions.height),
+    "TEXT_MEASUREMENT_FAILED", "Native text measurement did not return finite dimensions.", 422);
+  Object.assign(element, dimensions);
 }
 
 function patchElementFields(
@@ -6075,6 +6101,7 @@ function bindingObject(
         "create_shape",
         "create_draw",
         "create_text",
+        "create_linear",
         "create_svg_path",
         "create_frame",
         "create_image",
@@ -6108,6 +6135,7 @@ function bindingObject(
         "align",
         "distribute",
       ],
+      operationFields: Object.fromEntries(Object.entries(OPERATION_FIELDS).map(([name, fields]) => [name, [...fields]])),
       selectionTransforms: {
         angleUnit: "element.angle is radians; rotate.degrees is a relative signed degree change; positive is clockwise",
         targets: "Choose exact native targets[] OR one native groupId; bound text follows its container",
@@ -7340,6 +7368,8 @@ function bindingObject(
       "TOO_MANY_OPERATIONS",
       `At most ${MAX_OPERATIONS} operations are allowed in one transaction`,
     );
+
+    operations.forEach(assertOperationFields);
   
     const validationMode =
       payload.validationMode ||
@@ -7821,13 +7851,7 @@ function bindingObject(
         "text",
       );
   
-      try {
-        ea.refreshTextElementSize(
-          text.id,
-        );
-      } catch {
-        // Use fallback layout.
-      }
+      refreshNativeText(text);
   
       layoutBoundText(
         container,
@@ -8030,6 +8054,11 @@ function bindingObject(
         element,
         resolvedStyle,
       );
+
+      // Measure using the applied native font/size, never a character-count guess.
+      refreshNativeText(element);
+      assert(Number.isFinite(element.width) && Number.isFinite(element.height),
+        "TEXT_MEASUREMENT_FAILED", "Native text measurement did not return finite dimensions.", 422);
   
       element.autoResize =
         operation.autoResize !== false;
@@ -9976,13 +10005,7 @@ function bindingObject(
             );
           }
   
-          try {
-            ea.refreshTextElementSize(
-              element.id,
-            );
-          } catch {
-            // Keep existing dimensions.
-          }
+          refreshNativeText(element);
   
           if (element.containerId) {
             const container =
@@ -13008,9 +13031,14 @@ function bindingObject(
       style,
     );
   
-    const size = ea.measureText(
-      String(payload.text ?? ""),
-    );
+    // EA.measureText may use a different default line height than committed text.
+    // Measure an uncommitted native text using the exact creation/refresh path.
+    const id = ea.addText(0, 0, String(payload.text ?? ""), { autoResize: true });
+    const element = ea.getElement(id);
+    patchElementFields(element, normalizeStyleForType(style, "text"));
+    refreshNativeText(element);
+    const size = { width: element.width, height: element.height };
+    ea.reset();
   
     return {
       text:
@@ -13311,6 +13339,83 @@ function bindingObject(
     return run;
   }
   
+  async function nativeTableResponse(payload) {
+    const view = ea.targetView;
+    const manager = view?.tableManager;
+    assert(typeof manager?.stage === "function" && typeof manager?.applyTheme === "function",
+      "TABLE_RUNTIME_REQUIRED", "This operation requires the paired native table appearance build.", 409);
+    const beforeRevision = sceneRevision();
+    assert(payload.baseRevision === beforeRevision, "REVISION_CONFLICT",
+      "Read the current canvas before modifying a native table.", 409,
+      { expected: payload.baseRevision, actual: beforeRevision });
+    const themes = ["light-blue", "light-mint", "dark-slate", "dark-ink", "morandi-sage", "morandi-rose", "academic", "sketch"];
+    const borders = ["grid", "framed", "dashed", "three-line", "none"];
+    assert(payload.action === "create" || payload.action === "style", "INVALID_TABLE_ACTION", "Use create or style.");
+    if (payload.theme !== undefined) assert(themes.includes(payload.theme), "INVALID_TABLE_THEME", "Unknown native table theme.");
+    if (payload.border !== undefined) assert(borders.includes(payload.border), "INVALID_TABLE_BORDER", "Unknown native table border template.");
+    const options = payload.options || {};
+    let dimensions;
+    if (payload.action === "create") {
+      const rows = integerInRange(options.rows, 1, 500, "rows");
+      const cols = integerInRange(options.cols, 1, 500, "cols");
+      assert(rows * cols <= MAX_OPERATIONS, "TABLE_TOO_LARGE", "At most 500 native cells per request.");
+      const cellWidth = positiveNumber(options.cellWidth ?? 160, "cellWidth");
+      const cellHeight = positiveNumber(options.cellHeight ?? 60, "cellHeight");
+      assert(cellWidth >= 40 && cellHeight >= 32, "INVALID_TABLE_DIMENSIONS", "Minimum native cell size is 40 × 32.");
+      dimensions = { x: finiteNumber(options.x, "x"), y: finiteNumber(options.y, "y"), rows, cols, cellWidth, cellHeight, cells: options.cells };
+      if (options.cells !== undefined) assert(Array.isArray(options.cells) && options.cells.length === rows &&
+        options.cells.every(row => Array.isArray(row) && row.length === cols && row.every(text => typeof text === "string")),
+        "INVALID_TABLE_CELLS", "cells must be a rows × cols matrix of strings.");
+      if (options.columnWidths !== undefined) assert(Array.isArray(options.columnWidths) &&
+        options.columnWidths.length === cols && options.columnWidths.every(value => Number.isFinite(value) && value >= 40),
+        "INVALID_TABLE_WIDTHS", "columnWidths must contain one width >= 40 per column.");
+    }
+    if (payload.action === "style") assert(typeof payload.target === "string" && payload.target.length > 0,
+      "TABLE_TARGET_REQUIRED", "style requires an explicit native table root or cell ID.");
+    let cell = payload.action === "style" ? manager.getCell(payload.target) : null;
+    if (payload.action === "style") assert(cell, "TABLE_CELL_NOT_FOUND", "target must identify an existing native table.", 404);
+    let result = null;
+    const refs = {};
+    let committed = false;
+    try {
+      if (dimensions) {
+        ea.reset();
+        resetStyleFor("text", options.style || {});
+        ea.style.roundness = null;
+        ea.style.roughness = 0;
+        result = manager.stage(ea, dimensions);
+        ea.getElement(result.rootId).customData.isContainer = true;
+        await ea.addElementsToView(false, true, true);
+        committed = true;
+        cell = manager.getCell(result.cellIds[0][0]);
+        assert(cell, "TABLE_CREATION_FAILED", "The native manager did not commit its first cell.", 500);
+        if (options.columnWidths) {
+          options.columnWidths.forEach((width, index) => manager.setColumnWidth(result.cellIds[0][index], width));
+        }
+        if (payload.ref) {
+          refs[payload.ref] = result.rootId;
+          result.cellIds.forEach((row, r) => row.forEach((id, c) => {
+            refs[`${payload.ref}:${r}:${c}`] = id;
+            const element = getViewElements().find(item => item.id === id);
+            const text = element?.boundElements?.find(item => item.type === "text");
+            if (text) refs[`${payload.ref}:${r}:${c}:label`] = text.id;
+          }));
+        }
+      }
+      if (payload.theme !== undefined) { manager.applyTheme(cell.id, payload.theme); committed = true; }
+      if (payload.border !== undefined) { manager.setAppearance(cell.id, { border: payload.border }); committed = true; }
+      await view.forceSave(true);
+      const root = manager.getRoot(cell);
+      return { file: activeFilePath(), previousRevision: beforeRevision, revision: sceneRevision(),
+        rootId: root.id, cellIds: result?.cellIds, refs, table: clone(root.customData.table),
+        persistence: "saved", atomic: false, undo: "Native manager transactions; not drawing_revert history" };
+    } catch (error) {
+      error.details = { ...(error.details || {}), file: activeFilePath(), committed,
+        rootId: result?.rootId, refs, revision: sceneRevision(), atomic: false };
+      throw error;
+    }
+  }
+
   function normalizeRoute(pathname) {
     if (pathname.startsWith("/v2/")) {
       return (
@@ -13335,6 +13440,10 @@ function bindingObject(
       request.method === "POST"
         ? await readJsonBody(request)
         : {};
+
+    if (request.method === "GET" && pathname === "/v3/vaults") {
+      return hostVaultCatalog();
+    }
   
     if (
       request.method === "GET" &&
@@ -13354,6 +13463,12 @@ function bindingObject(
       }
   
       return {
+        host: hostIdentity,
+        vault: vaultIdentity,
+        pluginVersion: ea.plugin.manifest.version,
+        openCanvases: obsidianApp.workspace.getLeavesOfType("excalidraw")
+          .map((leaf) => ({ file: leaf.view?.file?.path })).filter((entry) => entry.file),
+        engines: Object.keys(window.EA_Core?.listHooks?.() || {}),
         bridgeVersion:
           BRIDGE_VERSION,
         protocolVersion:
@@ -13460,6 +13575,9 @@ function bindingObject(
     );
   
     switch (pathname) {
+      case "/v3/tables":
+        return withTargetView(payload.contextToken, true, () => nativeTableResponse(payload));
+
       case "/v3/libraries/list":
         return listLibrariesResponse(payload);
 
@@ -13736,6 +13854,16 @@ function bindingObject(
           "Missing or invalid Bearer Token.",
           401,
         );
+
+        const requestPath = normalizeRoute(new URL(request.url, "http://127.0.0.1").pathname);
+        if (!(request.method === "GET" && ["/v3/status", "/v3/vaults"].includes(requestPath))) {
+          const expectedVault = request.headers["x-excalidraw-vault-id"];
+          const expectedHost = request.headers["x-excalidraw-host-id"];
+          assert(!expectedVault || expectedVault === vaultIdentity.id, "TARGET_MISMATCH",
+            "The Bridge belongs to a different vault. Run excalidraw vaults and select the intended connection.", 409);
+          assert(!expectedHost || expectedHost === hostIdentity.id, "TARGET_MISMATCH",
+            "The Bridge belongs to a different host. Run excalidraw vaults and select the intended connection.", 409);
+        }
   
         const data = await enqueue(
           () => routeRequest(request),
@@ -13807,54 +13935,43 @@ function bindingObject(
   );
   
   state.server = server;
+  let resolveReady;
+  let rejectReady;
+  const listeningReady = new Promise((resolve, reject) => { resolveReady = resolve; rejectReady = reject; });
   
+  let retriedPort = false;
   server.on("error", (error) => {
-    console.error(
-      "[Excalidraw Agent Bridge] server error",
-      error,
-    );
-  
-    new Notice(
-      `Excalidraw Agent Bridge error: ${error.message}`,
-      10000,
-    );
+    if (error.code === "EADDRINUSE" && !nodeProcess.env.EXCALIDRAW_BRIDGE_PORT && !retriedPort) {
+      retriedPort = true;
+      server.listen(0, "127.0.0.1");
+      return;
+    }
+    console.error("[Excalidraw Agent Bridge] server error", error);
+    new Notice(`Excalidraw Agent Bridge error: ${error.message}`, 10000);
+    rejectReady(error);
   });
   
-  server.listen(
-    BRIDGE_PORT,
-    "127.0.0.1",
-    async () => {
-      if (
-        !usingDescriptor &&
-        (isNewToken ||
-          scriptSettings.copyTokenOnStart ===
-            true)
-      ) {
-        try {
-          await navigator.clipboard
-            .writeText(BRIDGE_TOKEN);
-
-          new Notice(
-            `Excalidraw Agent Bridge ${BRIDGE_VERSION} ` +
-              `listening on 127.0.0.1:${BRIDGE_PORT}. ` +
-              "Token copied to clipboard.",
-            6000,
-          );
-          return;
-        } catch {
-          // Fall through to standard notice.
-        }
-      }
-
-      if (
-        scriptSettings.silentStart !==
-        true
-      ) {
-        new Notice(
-          `Excalidraw Agent Bridge ${BRIDGE_VERSION} ` +
-            `listening on 127.0.0.1:${BRIDGE_PORT}.`,
-          4000,
-        );
-      }
-    },
-  );
+  function onListening() {
+    BRIDGE_PORT = server.address().port;
+    try {
+      publishConnection();
+    } catch (error) {
+      server.close();
+      console.error("[Bridge] Cannot publish the local connection", error);
+      new Notice(`Agent Drawing could not save its local connection: ${error.message}`, 10000);
+      rejectReady(error);
+      return;
+    }
+    resolveReady();
+    if (scriptSettings.silentStart !== true) {
+      new Notice(
+        `Agent Drawing ready: ${hostIdentity.name} / ${vaultIdentity.name} ` +
+        `(Bridge ${BRIDGE_VERSION}, 127.0.0.1:${BRIDGE_PORT}).` +
+        (generatedConnection || recoveredDescriptor ? " Local connection initialized; no token copying required." : ""),
+        6000,
+      );
+    }
+  }
+  server.once("listening", onListening);
+  server.listen(BRIDGE_PORT, "127.0.0.1");
+  await listeningReady;

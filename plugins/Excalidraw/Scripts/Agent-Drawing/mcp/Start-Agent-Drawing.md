@@ -2,14 +2,14 @@
 name: Start Agent Drawing
 description: Bootstrap script to initialize Excalidraw Agent engines and bridge.
 author: local
-version: 0.13.3
+version: 0.13.8
 autorun: false
 ---
 /*
 ```javascript
 */
 
-const BOOTSTRAP_VERSION = "0.13.3";
+const BOOTSTRAP_VERSION = "0.13.8";
 
 const obsidianApp =
   ea.plugin?.app || (typeof app !== "undefined" ? app : null);
@@ -29,7 +29,7 @@ if (typeof window.EA_Core?.registerHook !== "function") {
 // 1. Derive bundle root directory from utils.scriptFile.path
 let bundleRoot = null;
 if (utils?.scriptFile?.path) {
-  // utils.scriptFile.path: e.g. "plugins/Excalidraw/Scripts2/Agent-Drawing/mcp/Start-Agent-Drawing.md"
+  // The invoking file owns its adjacent bundle; do not guess a different vault/root.
   const mcpDir = utils.scriptFile.path.substring(
     0,
     utils.scriptFile.path.lastIndexOf("/"),
@@ -39,7 +39,7 @@ if (utils?.scriptFile?.path) {
 
 if (!bundleRoot) {
   const configuredFolder = String(
-    ea.plugin?.settings?.scriptFolderPath || "plugins/Excalidraw/Scripts2",
+    ea.plugin?.settings?.scriptFolderPath || "Excalidraw/Scripts",
   ).replace(/\/+$/, "");
   bundleRoot = `${configuredFolder}/Agent-Drawing`;
 }
@@ -248,8 +248,12 @@ try {
     bridgeScriptName,
     bridgeFile,
   );
-  const server = window.__EXCALIDRAW_AGENT_BRIDGE__?.server;
+  const bridge = window.__EXCALIDRAW_AGENT_BRIDGE__;
+  const server = bridge?.server;
   if (!server) throw new Error("Bridge execution returned without a server.");
+  if (bridge.scriptPath !== bridgeFile.path || bridge.bridgeVersion !== BOOTSTRAP_VERSION) {
+    throw new Error(`Bridge identity mismatch: expected ${bridgeFile.path} at ${BOOTSTRAP_VERSION}, got ${bridge.scriptPath} at ${bridge.bridgeVersion || "unknown"}. Update this bundle's Bridge before starting.`);
+  }
   if (!server.listening) {
     await new Promise((resolve, reject) => {
       const timer = setTimeout(() => reject(new Error("Bridge did not listen within 5 seconds.")), 5000);
@@ -265,6 +269,6 @@ try {
   throw new Error(msg);
 }
 
-const summary = `Excalidraw Agent ready (${registeredCount} engines registered, ${skippedCount} existing, bridge running).`;
+const summary = `Excalidraw Agent ready (bootstrap/Bridge ${BOOTSTRAP_VERSION}; ${registeredCount} engines registered, ${skippedCount} existing; ${bridgeFile.path}).`;
 console.log(`[Start-Agent-Drawing] ${summary}`);
 if (Notice) new Notice(summary, 5000);
