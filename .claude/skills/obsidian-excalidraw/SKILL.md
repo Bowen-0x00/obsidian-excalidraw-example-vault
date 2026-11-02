@@ -7,7 +7,11 @@ description: 在 Obsidian Excalidraw 修改版中创建、修改原生可编辑�
 
 ## 可靠启动与交付入口
 
-完整使用教学图法选择及机制验收需要 **0.10.4 或更新运行包**；drawing_begin应有design提案参数，drawing_review应有expression_checks。运行包与Skill必须同时更新并重载；不要只复制文档假装API已升级。Bridge仍为0.13.7。
+完整使用教学图法选择及机制验收需要 **0.10.4 或更新运行包**；drawing_begin应有design提案参数，drawing_review应有expression_checks。运行包与Skill必须同时更新并重载；不要只复制文档假装API已升级。当前连接发现需要配套 **0.13.8 bootstrap／Bridge**；仅更新 Skill 不会更新正在运行的宿主。
+
+**接入先只读发现，不要求抄 token：**浏览 vault／在其目录启动 Agent 不等于安装本包或选择绘图目标。先 `drawing_setup(action:"status")`（始终 JSON），或独立 CLI `launcher.py status`／`doctor`（默认人类可读，`--json` 供自动化）。0.13.8 Bridge 在宿主平台默认数据目录自行发布私有逐 vault 描述文件；没有显式覆盖且候选唯一时可自动发现，已有目标不因 cwd／新配对而自动切换。多候选用 `launcher.py vaults` 列出已知连接与宿主注册目录，再 `launcher.py use ID_OR_UNIQUE_NAME` 明确选本机发现／已配对远端 profile。注册不代表已运行或配对；显式配置损坏不回退到别库。
+
+远端部署后可在任意目录直接运行 `~/.local/bin/excalidraw status`／`doctor --json`／`vaults`／`use SELECTOR`，不依赖 Agent／MCP 会话；状态只读，经已有鉴权 SSH 隧道核对实际 host／vault、版本、画布和 Engine。`NO_CANVAS` 是已连接，不是连接故障；doctor 仅对连接／配置故障非零退出。远端不使用 Windows 宿主路径 connect，不启动／重载 GUI；未配对 vault 在 GUI 宿主部署、启动和配对。首次宿主安装／受管更新才运行本机 connect；缺自动启动时手动运行准确 Start 命令。详见[接入与发现](references/agent-setup.md)。
 
 **0.10.5 动态字体工作流**：当前注册集合不是上限；有明确收益才按[授权规范](references/runtime-fonts.md)扩充。系统导入与网络下载、会话加载与vault持久化分别确认；插件须实际具备新EA方法。此更新不新增字体MCP、不改Bridge、不授权自动下载或覆盖文件。
 
@@ -83,7 +87,7 @@ CPU数据通路/逻辑微架构/电路/寄存器堆/片上互连：**创建前�
 **减少模型轮次，不减少绘图能力或验证。** 一次读齐本任务所需schema；可并行读取独立资料/只读状态。todo更新与下一步操作同一轮，不为一次进度更新单独等模型；用户显式要求计划时照做。
 对已确认就是普通服务节点＋连线的任务才走以下快路径；教学／机制图先完成上述表达选择，不能为减少轮次跳过。硬件先读microarchitecture，复杂固定区域／端口用显式几何。布局报错先修实现；若表达不对就重选图法，不能为了check通过删掉机制、退化成段落链。
 
-1. 有drawing_setup先status；核对`vault_path`是否为用户目标，**cwd不等于Bridge目标vault**。已连接时discovery核对字体/引擎。脚本覆盖保护出现时不伪造installation.json所有权、不搜历史token；按[接入排错](references/agent-setup.md)处理。`launched:false`不是启动成功；缺Advanced URI则提示用户手动运行准确命令，不反复connect轮换凭据。远端只status，不connect/start/reload宿主。
+1. 有drawing_setup先status；核对实时`host/vault`与目标路径，**cwd不等于Bridge目标vault**。0.13.8自发布描述文件无需抄token；唯一候选可发现，多候选vaults后use明确ID／唯一名称，不覆盖已有目标，不把注册目录当已配对连接。NO_CANVAS仍已连接；已连接时discovery核对字体／引擎。覆盖保护不伪造installation.json所有权、不搜历史token；按[接入排错](references/agent-setup.md)处理。`launched:false`不是启动成功；缺Advanced URI则提示用户手动运行准确命令，不反复connect轮换凭据。远端可只读status／vaults并use已配对profile，不connect宿主路径／start／reload GUI。
 2. 偏好回答齐全后，`drawing_begin(create,request,filename,foldername,brief)`或明确file_path绑定；保存任务ID、需求清单、目标file、token和revision。同一任务只能修同一文件；重绑继承文件级验收历史，不能换task_id／state_id／新文件绕过失败。用户明确要求另一张图时才建立另一任务。
 3. **普通一次性节点/流程/架构优先`drawing_compose(context_token,base_revision,diagram)`**；若本轮已选择DSL，改走[Scene DSL](references/scene-dsl.md)而不重复compose。compose在代码内完整plan→apply，不让模型复制大段operations；库组合按阶段提交并报告已执行集合，不宣称跨阶段原子。
 4. 没有后续样式时compose传`inspect:true,acceptance_level:本次选择`；还需样式时先compose，再一次apply(inspect:true)按refs局部修正。expected覆盖任务关键内容/关系；后续省略等级/断言会继承同context设置。operations每项必须有`op`不是type；标题粗体用`{"op":"set_text_global_style","targets":["refs中真实textID"],"bold":true}`。不为绕检查重建整图。
