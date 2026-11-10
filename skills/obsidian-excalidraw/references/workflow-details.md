@@ -3,6 +3,45 @@
 常规新图先使用主 Skill 的低往返路径；本参考保留逐项控制、并发、完整摘要和高级修正规则。组合检查仍调用同样的真实check和preview，并非省略验证。下文逐项plan/apply适用于需要先审查计划或手动布局的场景，不要求所有简单图逐个往返。
 本页代码路径中`references/...`、`prompts/...`仍相对Skill根目录；Markdown链接按本页位置解析。
 
+## 启动、表达与交付的执行契约
+
+`drawing_begin(request,action:"prepare",diagram_type:"auto",file_path?)`返回真实宿主discovery、所需文档全文/路径/sha256、原生调用示例；可选file_path读取当前画布和文件级review证据，不创建/改图。不能用过去一张PNG或聊天中的“已生成”覆盖当前状态。`create|bind`需要已解决的brief；prepare不代表用户批准了默认值。
+
+教学／机制图可先传`drawing_begin(prepare,design:未确认TeachingPlan)`取得简短design_options，交给真实ask；确认后创建时存入brief.teaching_plan。问题是“用什么可视结构解释”，不是形状或配色。当前通用general也不能跳过明确教学意图。[字段与原生编码](teaching-design.md)。render不自动review；逐goal expression_checks和交付状态在CLI/MCP共用同一ledger。
+
+
+`drawing_apply.operations`是按`op`判别的原生模型联合，完整列出各操作字段，不再是任意dict。整个批次先校验，CLI/Python同样执行；不把错名自动改成近似动作。fontSize/fontFamily/lineHeight放style，label字体放label.style，粗体走set_text_global_style。未知op、错层字段、非有限数和错误引用给出路径与修正提示，committed=false；宿主仍负责Feature config/customData授权、能力和资源验证。connect端点/waypoints保留原生坐标语义，ref引用用`@name`。
+
+逻辑微架构／电路在原有brief的task_id/preferences/requirements之外增加以下字段。它是对需求的可检查承诺，不是绘图DSL；物理结构／讲解页改用[visual_plan](visual-design.md)，不能自动判断承诺是否忠实：
+
+```json
+{
+  "diagram_type": "microarchitecture",
+  "representation": {
+    "components": [
+      {"id":"alu","role":"compute","types":["rectangle"]},
+      {"id":"rf","role":"storage","types":["rectangle"]}
+    ],
+    "ports": [
+      {"id":"result","component":"alu","side":"right","offset":0.5,"direction":"output"},
+      {"id":"write","component":"rf","side":"left","offset":0.5,"direction":"input"}
+    ],
+    "signals": [{"id":"writeback","source":"result","target":"write","orthogonal":true}]
+  }
+}
+```
+
+microarchitecture/circuit必须有部件、端口与网络；明确逻辑网络不能用general降级。physical_structure/explanatory_page需要visual_plan的目的、视图、对象、关系和示意边界，不套端口网表。component.types禁止text；formula角色只能image。逻辑ID唯一，端口方向/引用一致，不得把所需独立器件合成单个阶段。
+
+创建后`drawing_contract(context_token,bindings:{"alu":["真实bodyID"],"rf":["真实bodyID"],"writeback":["真实wireID"]})`。部件映射一或多段闭合轮廓/shape；每个信号映射一条连续native line/arrow；不能复用元素冒充独立对象。端口为**部件世界AABB边上的side/offset**，不是标签坐标；quarter-turn后按世界边理解side。容差1 scene单位，不随PNGscale变化。复杂符号的实际stub不在AABB边上时需合适几何分解，不可谎报端口；不宣称通用电气引脚解析器。
+
+映射验证成功才保存，失败返回带logicalId/native IDs/actual/repairHint的REPRESENTATION_*问题；check/review/deliver每次按当前全图重算。移动器件后必须修邻边。缺body/wire、对角信号、错误端点或绑定矛盾是硬错误，不可视觉豁免。任意旋转和平滑/曲线的精确拓扑尚不支持，会明确阻断；负全局/local坐标和quarter-turn按世界点列检查。非绑定示意线合法，但端点仍须符合声明。
+
+`drawing_deliver(context_token,revision,preview_id)`核对同一owned file/当前revision/完整全图PNG及hash、最新completed review、当前需求和表达检查，符合才返回`status:"deliverable"`。局部PNG、过期状态、未评审或后续失败均不签发；返回原始check状态与advisories，不伪造raw pass。最终回答引用真实文件、PNG、轮数和限制；交付失败只报告未完成。用户/视觉证据仍是Agent自述；门禁不能控制任意聊天文字，也不是RTL、电气、科学或绝对审美证明。
+
+CLI同实现：`launcher.py cli -- begin|contract|deliver --request-file args.json`，或json入口的drawing_begin/drawing_contract/drawing_deliver。不要将三选一的竖线写成实际shell管道。
+
+
 ## 多 Agent 并发：一人一图，宿主排队
 
 - 可并发规划/提交**不同画布**；由一个协调者完成连接/启动，工作Agent只status，不并发connect/start/reload切服务。
@@ -67,8 +106,9 @@ new-tab是Agent默认的独立视图选择，不表示分屏无用：需要人�
 ## MCP 路径：自然语言到真实操作
 
 1. 若有 `drawing_setup`，先调用 `status`。未连接时，在用户目标已明确或仅有一个合法 vault 时调用 `connect`；多 vault 歧义才询问。它部署 bundle、生成私有凭据、通过实际 Advanced URI 启动；没装 Advanced URI 则报告返回的准确手动命令，不能声称启动成功。已配置但 Obsidian 重启后用 `start`。然后 `drawing_context(action="discover")` 核对 Bridge、字体与 Engines。无效令牌、缺插件/画布不能假装已有连接。
-2. `drawing_context(action="create", filename=描述性名称, foldername="Agent-Diagrams")` 得到 `contextToken`、真实文件与revision。修改已有图则 `action="bind", file_path=明确vault相对路径`。之后所有操作传该token。
+2. 新图先真实ask收齐未定style、review、色板、背景、字体意图；再`drawing_context(action="create",filename=描述名,foldername="Agent-Diagrams",brief=已回答偏好与用户需求)`。已有图明确file_path绑定，首次写入前补brief；read／measure不需要。记录任务ID、file、token、revision，同任务重绑继承文件级评审历史。
 3. `drawing_read(context_token)`读取完整两位小数摘要和全图min/max边界；不是几个选中元素。保留file/revision与初始状态。
+   在任何text helper／字体测量前分类数学公式、普通说明、RTL信号／代码、bit流／波形。矩阵／数学向量／上下标等按[数学分流](visual-content.md#数学内容分流-先认语义再选元素)创建LaTeX资源；信号和位串不误转。把数学清单关联到brief需求，保留ref→真实image/fileId→源TeX供专项验收，不新增虚构操作参数。
 4. 组织简短图描述并调用 `drawing_plan(context_token, diagram)`。规划器使用真实字体/内容尺寸，负责换行、节点尺寸、分层和避障；不要按字数猜宽。
    - `kind`: flowchart/architecture/swimlane/freeform。
    - `nodes`: `id, shape, label, variant?`，shape用rectangle/ellipse/diamond；`content`支持image/latex/echarts/embeddable；其它复杂几何用实际native operations。
@@ -104,7 +144,7 @@ new-tab是Agent默认的独立视图选择，不表示分屏无用：需要人�
 ## 每轮：check → PNG → 看图 → review → 局部修正
 
 **默认 max_rounds=5。每次当前状态的 check+PNG+视觉review计一轮，初图也计入；不是必须画五遍。** 达到要求立即结束。连续两轮问题/严重度无改善或达到上限时needs_attention，报告剩余问题，不标完成。
-验收默认medium，按提示词/本轮选项传acceptance_level，省略继承同context；不是模型effort。低档保留基本正确性与看图，高档增加细查不强制全绑定；[acceptance](acceptance.md)规定阻断项、advisories、具体误报判断。中高必需记录真实visual_checks，不能仅填visual_reviewed=true。
+review新图先询问，medium只是推荐；仅明确授权默认／原图继承才省略询问。通过brief固定选择，不能在check／apply／review时降低等级；同文件／任务重绑继承轮次、expected与未解决项。[acceptance](acceptance.md)规定局部PNG证据、需求覆盖与逐项误报处理；不能只填visual_reviewed=true。
 
 1. `drawing_check(context_token, expected=语义断言)`：断言节点存在、方向正确等。读取issues中的native IDs；结构通过不意味着业务或美观通过。
    - `expected`示例：`{"type":"label_equals","id":"实际节点或文字ID","text":"完整内容"}`、`{"type":"edge_label","from":"起点ID","to":"终点ID","text":"通过"}`；节点字段是`id`，不是`target`。
@@ -117,10 +157,10 @@ new-tab是Agent默认的独立视图选择，不表示分屏无用：需要人�
    - “通过/未通过”应贴近决策出口对应路径且左右归属明确，不贴到整张图的最外缘。可对绑定text的`labelPosition`（0–1的路径比例）作局部调整；普通两点直连默认0.5，决策/多段路径默认0.28，显式位置保留。自动LR布局按实测标签宽预留rank间距；手动position/特殊端口仍需PNG复核，不宣称所有路线自动无冲突。
    - 同层分支大小和基线一致；只为给标签空间才增间距，不能把“无重叠”做成过度疏散的大画布。初图用planner默认nodeGap/rankGap，先看PNG再有理由地覆盖。
    - 组件库端口要实际贴合路径stub，不能因绑定落在透明anchor bbox就称连接正确；按当前svgViewBox/carrier尺寸计算端点。未声明电气引脚时不以“0.28/0.72”等固定示例取代真实图形。
-5. `drawing_review`提交当前revision/previewId、visual_reviewed、实际visual_checks、visual_issues及本轮改动；medium至少content/readability/occlusion，high再connections/hierarchy_style。需要时带已实际查看的detail_preview_ids和逐issueId的dispositions；API重读诊断并保留之前expected，不因省略check_result丢断言。
+5. `drawing_review`提交当前revision／previewId、真实visual_checks／visual_issues，以及逐项`requirement_checks`的真实ID和覆盖说明；medium至少content/readability/occlusion，high再connections/hierarchy_style。小字或文字误报须带当前已查看可读detail_preview_ids；dispositions逐项匹配元素ID、preview_id及独立理由，文字冲突不可intentional。原生check失败不等于review一定失败，但不得把豁免后的completed说成rawCheckStatus=pass。
    - 只有实际看图后才填true。
    - 视觉问题用稳定code、elementIds、severity error/warning、reason、repair；不拿任意审美分数替代问题。
-   - `completed`才交付；`continue`按问题修正；`needs_attention`停止自动修改并报告未满足项，不规避ledger换token继续刷轮数。
+   - `completed`后调用`drawing_deliver`核验同一文件/revision/PNG再交付；`continue`按问题修正；`needs_attention`停止自动修改并报告未满足项，不规避ledger换token继续刷轮数。
    - 新会话/重绑后旧contextToken可能失效；按file重新bind是恢复路径，不是新的质量预算。保留之前review轮数与问题记录，累计至原max_rounds，不为同一任务换token规避无进展停止。
 6. **修复明确问题，而不是每轮重建**：只修改问题对象、绑定文本及必要邻边。`drawing_apply`使用最新revision；局部修正后重复check和PNG。即使只改一行字也需要最终图检查。
 
@@ -154,6 +194,12 @@ new-tab是Agent默认的独立视图选择，不表示分屏无用：需要人�
 ECharts由真实options保留数据，泳道由真实Engine管理；customData.document/任意gradient代码不是默认接口。PNG对DOM内容需要捕获adapter；无法捕获会标incomplete，不能用边框或空白冒充正文。曲线/旋转检查若unknown，明确剩余限制或改为用户允许的可检查表达，不伪称全部校验通过。
 
 LaTeX先看discovery中的`latex.available`：当前插件源码可能通过独立Excalidraw Extras MathJax组件加载；缺依赖会明确LATEX_PREREQUISITE_MISSING，不要等待一个无人确认的弹窗或拿公式普通文本/假图片替代。混排提取脚本也依赖此能力；它不在默认bundle/公开脚本MCP中，真实入口、删除原文字及关系恢复见[行内公式流程](visual-content.md)，不能只写“已支持LaTeX”而省掉转换。
+
+## 原因不明时：可选 CDP 只读诊断
+
+`read/check/PNG`无法解释错位、遮挡、字体、原生表格或资源状态时，读[cdp-readonly](cdp-readonly.md)。先`drawing_debug(status)`，未启用则向用户提供“保持关闭／开启只读”的选择；不自动改配置、启动调试宿主或SSH转发。
+
+只读采集明确已打开的宿主vault和file：固定JS＋V8 `throwOnSideEffect`，不提供Input、任意evaluate、断点、保存/导出或写API。取到真实ID和原因线索后，使用正常入口重新read最新revision，再提交用户任务已授权的最小patch；DSL受管对象更新源/state，不能CDP直接改。用户仅授权诊断时只报告，不微调。最后仍需PNG/review；诊断fingerprint不是Bridge revision。
 
 ## 交付
 

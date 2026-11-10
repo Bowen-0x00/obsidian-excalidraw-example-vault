@@ -104,6 +104,68 @@ Bridge 0.13.0新增`rotate`、`scale_selection`，通过现有`drawing_apply`批
 - `dot`不修改startBinding/endBinding/boundElements，不能用它代替connect/rebind的业务关系。`arc/gap`也只解决线—线交叉，不免除穿节点、标签遮挡、箭头端点错误等检查。
 - 侧栏Line Crossings可改选中line/arrow，并通过`currentItemLineCrossings`影响后续手绘线；Agent自动创建仍逐条显式传值，避免修改全局绘制偏好。Native CLI与Bridge schema不同，先读其schema确认customData是否允许；未确认时走已验证MCP，不照抄op到原生CLI。
 
+### 四种路径风格：sharp / round / elbow / curve
+
+这四个名称描述的是**路径几何**，不是 arrowhead 类型：
+
+| 风格 | 原生表达 | 适合 | 当前保证与限制 |
+| --- | --- | --- | --- |
+| `sharp` | `roundness:null`、`elbowed:false`、`points` 多点折线 | 普通直线／硬折线、网格和工程边 | 当前 Bridge/宿主真实支持；点列是局部坐标，首点必须`[0,0]`；多点折线不等于自动避障 |
+| `round` | `roundness:{type:2,value:r}`、`elbowed:false` | 普通多点折线的平滑转角 | 当前通过宿主普通 linear renderer 的 curve fitting；`value`是场景单位近似控制量，不是屏幕像素／绝对圆弧半径；实际PNG必须检查 |
+| `elbow` | `elbowed:true`，可配`roundness:{type:2,value:r}` | 原生正交路由、流程和连接器 | 是独立 elbow renderer；`roundness:null`不等于所有宿主版本都显示硬直角，当前实现有默认转角值，硬直角用`value:0`并读回 |
+| `curve` | 修改版 `customData.curveArrow:true` + 普通 arrow | 用户明确需要的 S 型／贝塞尔风格 | 当前 fork renderer 会按端点方向和绑定 fixedPoint 计算 cubic S 曲线；不是通用 waypoints 曲线，也不是 Bridge 普通 `routing:"curve"` 已自动落地；精确碰撞/障碍检查仍 unknown |
+
+#### 调用示例
+
+```json
+{
+  "op":"connect",
+  "ref":"edge",
+  "from":"@source",
+  "to":"@target",
+  "start":{"anchor":"right","mode":"orbit"},
+  "end":{"anchor":"left","mode":"orbit"},
+  "startArrowhead":null,
+  "endArrowhead":"triangle",
+  "elbowed":false,
+  "style":{"roundness":null,"strokeWidth":2,"roughness":0},
+  "customData":{"agentDiagram":{"logicalId":"edge"}}
+}
+```
+
+这个是 `sharp`。`round` 只把 style 换成 `roundness:{type:2,value:6}`；`elbow` 改为 `elbowed:true`，用实际端口和 waypoints；`curve` 需在同一个 `customData` 中增加 `curveArrow:true`：
+
+```json
+{"op":"patch_custom_data","target":"真实arrowID","merge":{"curveArrow":true}}
+```
+
+`curveArrow` 是修改版当前 renderer 的受控字段，不是任意代码；Bridge 的安全检查仍拒绝 `customData.document`、raw gradient 和 raw ECharts source。必须先通过 discovery／feature schema 或实际 fork 版本确认 callable；如果当前 Bridge 没有把该字段纳入公开创建契约，使用受信宿主原生入口，不把字段写入当作已显示。
+
+#### 选择和验收
+
+- 普通图默认 `sharp`；需要柔和转角才选 `round`；需要严格正交才选 `elbow`；S 型 `curve` 只有用户明确要求或确实改善路径层级时使用。
+- `round` 与 `elbow` 不能混称：前者是普通线的平滑点列，后者是独立正交连接器 renderer。
+- `curve` 端点方向由绑定 fixedPoint／端点轴向推导，控制点长度由宿主计算；Agent 不能承诺任意 S 形状、障碍避让或精确半径。
+- 任何风格都要 read(full) 核对 `points`、`roundness`、`elbowed`、`customData.curveArrow`、双向 bindings；保存后再 check、全图／局部 PNG 和 review。曲线几何若返回 unknown，必须逐项用当前PNG adjudicate 或披露限制。
+- 微架构信号默认仍只用 `sharp` 或 `elbow`；`round`／`curve`需要领域和视觉理由，不得为了看起来高级而绕过正交审计。
+
+### 路径不是箭头头型：sharp / round / elbow / S-curve
+
+这四种说的是arrow的**轴线路径/renderer**；`startArrowhead`/`endArrowhead`另行选择 triangle/diamond/block 等端点符号，不能混用这两组概念。当前配套 ymjr renderer 与 Bridge 字段的区别：
+
+| 用户称呼 | 原生字段/构造方式 | 实际语义 | 限制 |
+| --- | --- | --- | --- |
+| `sharp` | 普通`elbowed:false`的 `arrow`，`roundness:null`；低层`connect`按端口加点列/waypoints | 保留点列各折点的直线多段折线；也是单段直箭头 | Bridge低层connect不自动避障；点列为局部scene几何且可有负局部坐标。只查实际points不假定“sharp”会自动正交 |
+| `round` | 普通`elbowed:false`箭头，多点points，`roundness:{type:2,value:r}`（或实际意图用既有`edge:"round"`映射） | 宿主普通 linear renderer 对整条多点线做平滑/曲线拟合；不是另一种arrowhead | 不是每个直角有独立精确圆弧radius；`r`是宿主场景单位控制参数，最终轨迹依点列/renderer而定，须看PNG；精确曲线碰撞未证明 |
+| `elbow` | `elbowed:true`箭头，端点绑定及可用时waypoints/固定段 | 专用正交连接器／受用户拖拽逻辑管理的折线路径 | 不等同随便传一组普通polyline点；宿主可能按连接端口重排。圆角取`roundness?.value ?? 16`；硬直角要显式`{type:2,value:0}`并read验证。低层Bridge路径不等于带障碍避让的全自动router |
+| `curve` | 修改版专用`arrow.customData.curveArrow:true` | renderer从起末points与绑定fixedPoint法向计算一条 cubic S 型曲线；控制柄长度由轴向端点距离估算且夹在30–300场景单位 | 不是`roundness`，不是自定义任意控制点Bezier，也**不是**Bridge/primitive的`routing:"curve"`别名；只保证此fork对普通arrow renderer走该特支。自定义arrowhead部分采用renderer独立几何（约20×10）而非可调曲率/普遍包络模型。几何checker不证明曲线避障，必须查看当前全图/局部PNG |
+
+基础 `sharp/round/elbow` 的几何分类已能从实际saved arrow `type/elbowed/roundness/points`区分；`curve` 的输出标记是 `customData.curveArrow`。Bridge `connect`可安全深合并该布尔metadata，不含可执行代码；renderer确实读取它。但**当前公共capability schema没有独立的 `curveArrow` route-style/feature 专项声明或避障保证**。禁止假装 `routing:"curve"`、connect子字段`curveArrow`、或`mindmap.settings.arrowType`就是等价公开arrow API：若用此特支，只通过arrow已有的安全`customData`声明，经 `connect` 的`customData`或已读回真实ID的 `patch_custom_data {merge:{curveArrow:true}}`，保存后用 `drawing_read`(full) 确认。不要为绕过feature语义给arrow写虚假的mindmap root/parent元数据。
+
+**选择规则：**通用图先看意图，不要给每条线轮流用四种风格。无障碍、编辑稳定的硬折线用sharp；刻意柔化转折用round；流程／电路／微架构确实需要正交约束才用elbow；需要表现渐进传递/反馈且S轨迹能提升可读性时显式选curve。用户要求的微架构信号默认仍应正交，曲线例外需逐线说明。
+
+**验收规则：**保留ID/绑定/头型/全文标签；应用后full-read点列、`elbowed`、roundness及可选curveArrow标记，check然后当前revision overview＋必要detail PNG。保存的原始折线点不一定等于round或curve实际绘制轨迹。现有诊断不采样或认证每一段Catmull/S曲线；`UNSUPPORTED_GEOMETRY`需逐ID结合PNG处理，不能整图豁免，也不能因属性字段正确就宣称曲线避障通过。
+
 ### 验证与能力来源
 
 先按目标ID读full，确认line/arrow、原始points和业务绑定；apply后重新读回customData及关系，再全图PNG实际查看。交叉配对需要场景上下文，ids局部PNG必须包含两根相交线，单根预览不能证明全图无交叉。没有新renderer的旧宿主可能保存字段却不显示效果；字段能写≠能力已生效，不静默退回遮罩技巧。
@@ -113,6 +175,8 @@ Bridge 0.13.0新增`rotate`、`scale_selection`，通过现有`drawing_apply`批
 来源：用户提供的Line Crossings规范；内核`packages/element/src/crossings.ts`（检测/优先级/path）、`shape.ts`（普通/elbow分支）、`renderElement.ts`（Canvas交点）、`packages/excalidraw/actions/actionProperties.tsx::actionChangeLineCrossings`及`App.tsx`（UI继承）。文档中的8px/60FPS不是Agent必须硬编码的布局常数或已测性能承诺。
 
 ## 箭头选型：关系语义先于装饰
+
+**用户说“PPT粗箭头／宽箭身”时，默认解释为原生宽箭身，而不是增大strokeWidth。** 按实心／轮廓意图选`block_arrow`／`block_arrow_outline`，用独立`blockArrowWidth`控制宽度，细描边保留轮廓清晰；只有明确要求加粗普通线条才改strokeWidth。强调主路径与普通关系分开，presentation profile不自动把所有关系变成宽箭。
 
 先区分五件事：`start/endArrowhead`决定类型/方向；**`customData.blockArrowWidth`决定PPT宽箭身厚度**；`strokeWidth`决定轮廓描边；`arrowHeadSize`决定头部比例；原生points/绑定/waypoints决定长度与路由。宽度不是line元素的width/height，也不是PNG倍率。先按语义和本轮视觉偏好选型，同类一致；已有图只改用户要求的线。
 
@@ -137,7 +201,7 @@ Bridge 0.13.5支持：`arrow,bar,circle,circle_outline,triangle,triangle_outline
 {"op":"patch_custom_data","target":"已有PPT箭头实际ID","merge":{"blockArrowWidth":36}}
 ```
 
-- connect/create_linear的头型和arrowHeadSize在operation顶层；diagram/compose/primitives的连接头型也在每条edge/item顶层。不要只在style中塞endArrowhead指望高层默认覆盖正确。规划器默认arrow不表达用户意图，必须显式选择；高层不自动转发arrowHeadSize/blockArrowWidth，按返回native refs补`set_arrow_style/patch_custom_data`。
+- **高层规范位置**：`diagram.edges[]`（plan/compose）和`kind:"connection"`的primitive item顶层可选`blockArrowWidth`与`arrowHeadSize`，与startArrowhead/endArrowhead同级，不放style中。宽度必须正有限、头倍率必须0.125–8；非法值在规划前拒绝，不钳位。高层将前者映射为同一个`connect.customData.blockArrowWidth`，后者映射为`connect.arrowHeadSize`，不需创建后补丁；元数据、路由和端点配置保留。不传则不注入尺寸，也不改变默认关系头型。低层connect/create_linear仍用operation顶层arrowHeadSize＋customData.blockArrowWidth，不能把高层blockArrowWidth直接放到低层connect顶层。规划器默认arrow不表达用户意图，头型仍须按语义显式选择。
 - `set_arrow_style`只接受strokeWidth/startArrowhead/endArrowhead/arrowHeadSize/edge；颜色/虚实线用`patch_element.patch`，固定转角另patch.roundness。省略edge以保留已有固定radius；`edge:"round"`会重置为无value的默认圆角。更换头型保留ID/points/标签/双向绑定，不重建箭头或手贴三角形。
 - `arrowHeadSize`是0.125–8的**倍率**，不是px；这是接口边界，不是审美建议。细线从1起，建议0.75–1.25附近看PNG再调；线宽以1.5–2.5为常用起点。放大头不能解决路径太短；端部段要留头部、节点边距与标签净空。
 - **箭身宽**：`customData.blockArrowWidth`为正有限数、单位是scene单位；选择明确值以免描边变化联动默认厚度。省略时当前实现为`max(16,strokeWidth*6)`。宿主UI滑杆当前4–120、步长2，这是**面板范围**，不是已证明的MCP/内核硬上限或建议全部用120。旧字段`arrowHeadLineWidth`只作兼容读取，写新图/本轮宽度用blockArrowWidth，不同时制造两个冲突来源。恢复默认时先读实际customData，只移除本轮需要的宽度字段；残留旧字段仍可能生效，不能把0当“默认宽度”。
@@ -174,7 +238,23 @@ Bridge 0.13.5支持：`arrow,bar,circle,circle_outline,triangle,triangle_outline
 {"op":"create_linear","kind":"arrow","ref":"emphasis","x":100,"y":100,"points":[[0,0],[160,0]],"startArrowhead":null,"endArrowhead":"block_arrow","arrowHeadSize":0.8,"style":{"strokeWidth":2,"strokeColor":"#2563eb","backgroundColor":"transparent","fillStyle":"solid","roughness":0},"customData":{"blockArrowWidth":36}}
 ```
 
-以上为示意坐标的新独立箭头；连接实际节点时用`connect`的真实from/to、端口与必要waypoints，并在顶层customData传宽度。高层diagram.edges/primitive不承诺转发此字段，先compose/plan再按返回ref补`patch_custom_data`。**set_arrow_style目前没有blockArrowWidth字段**，不能塞入后假称生效；用上面的set_arrow_style控制头/描边、patch_custom_data控制宽度，两个操作可同一apply事务提交。标签沿用原生绑定text，换宽不改全文与字体角色。
+以上为示意坐标的新独立箭头；连接实际节点时用`connect`的真实from/to、端口与必要waypoints，并在customData传宽度。**低层set_arrow_style不接受blockArrowWidth**；用set_arrow_style控制头/描边、patch_custom_data控制宽度，可同一apply事务提交。标签沿用原生绑定text，换宽不改全文与字体角色。
+
+**高层原子创建**：下列对象是`drawing_compose`的`diagram`（也可交给drawing_plan，再将完整operations一次drawing_apply）；任务brief／本次字体选择须已解决。无库节点的compose将头型、宽度、头倍率和绑定作为同一原生事务提交，不是先画普通箭头再追加几轮样式。
+
+```json
+{"kind":"architecture","style":"presentation","nodes":[{"id":"before","label":"输入"},{"id":"after","label":"输出"}],"layout":{"direction":"LR","rankGap":180},"edges":[{"id":"transform","from":"before","to":"after","startArrowhead":null,"endArrowhead":"block_arrow","blockArrowWidth":36,"arrowHeadSize":0.8,"style":{"strokeWidth":2,"roughness":0,"roundness":null,"strokeColor":"#2563eb","backgroundColor":"transparent","fillStyle":"solid"}}]}
+```
+
+这是实心主路径的可选示例值，不覆盖用户色板。需要**可见轮廓型区别**时用`endArrowhead:"block_arrow_outline"`，保留细strokeWidth和透明backgroundColor（默认内部取画布背景），或显式指定本轮允许的浅填充；不能把两种头都显式填成同色后声称它们一定呈现不同效果。primitive原子创建见[native-features](native-features.md#高级连接)。
+
+**同ID修改**：先read取得真实native ID和当前revision，将以下operations一次交给drawing_apply；不传points、几何宽高、rebind或新ID，头倍率与轮廓可独立调整。只需调箭身时仅提交第二项，不顺手改头型／颜色。
+
+```json
+[{"op":"set_arrow_style","targets":["真实已有箭头ID"],"endArrowhead":"block_arrow_outline","arrowHeadSize":0.8,"strokeWidth":2},{"op":"patch_custom_data","target":"真实已有箭头ID","merge":{"blockArrowWidth":36}}]
+```
+
+可选DSL已有规范仍为`kind:ppt`＋`style:{head:block_arrow_outline,shaft:36,head_scale:0.8,stroke_width:2}`，不要把compose的camelCase顶层字段混进DSL。相同state_id／逻辑边id只调shaft/head_scale时，协调器保留原生ID、点列和绑定，不重建或重新绑定；移动端点／改路由仍按真实几何更新。
 5. **局部修改不变量**：先read(full)取目标ID、customData、points/angle、头型、stroke/background、锁定、标签与双向bindings；merge只改blockArrowWidth，保留所有无关字段。应用→保存后read，确认同ID、原路径/绑定/标签、实际宽值和描边独立，再当前revision check→PNG→实际看宽短/细长、头部、填充、净空与裁切→review。字段成功写入≠旧宿主已显示；不能隐藏不支持的实心头型或把check=pass当包络无重叠证明。
    若宽值和绑定读回正确，但PNG中箭尖/箭身相对真实端口出现随宽度变化的位移或标签遮罩异常，记录宿主渲染/导出兼容问题及具体IDs；不能把“同points”当视觉端点正确，更不能偷偷移动端口/拆绑定来补偿。字段与配色/尺寸可分别验证，剩余视觉问题不标completed。
 
@@ -191,7 +271,7 @@ Bridge 0.13.5支持：`arrow,bar,circle,circle_outline,triangle,triangle_outline
 {"op":"patch_element","target":"已有肘形箭头ID","patch":{"roundness":{"type":2,"value":6}}}
 ```
 
-- value是画布坐标单位的半径，不是角度、百分比或PNG像素。新建专业矩形从6起，常用4–12按用途调整；同类不同大小节点保持固定值。图形resize后读回value，不能默认按宽高比例增大圆角。整组原生scale可能有不同规则，读回再确认用户的“固定”要求。
+- value是画布坐标单位的半径，不是角度、百分比或PNG像素。普通独立节点矩形从6起，常用4–12按用途调整；**表格/寄存器字段单元格用roundness:null，不继承此圆角起点**，按[表格规范](capability-map.md#表格清晰表头与连续网格)形成连续网格。同类不同大小节点保持固定值；resize后读回value，不默认按宽高比例放大。整组原生scale可能有不同规则，读回再确认。
 - type3是矩形等自适应族，type2是line/arrow/diamond比例族，type1是遗留；不是r值。`roundType:"arc"`仅确认矩形/iframe/embeddable该路径，不能推广成所有图元的圆角开关。
 - 矩形尖角用`roundness:null`；正半径须有限，建议`0<r<=min(width,height)/2`且留实际内容区。不要因Bridge只检查finite就传负值/超大半径；ellipse本来是椭圆，不用此字段画圆角矩形。
 - 普通折线的roundness会影响曲线形状；**肘形箭头**是另一条渲染路径，读取`roundness.value ?? 16`。因此null/sharp并不保证肘形转角为0；要硬直角用`{type:2,value:0}`，固定小转角用正值6等。短线段会限制实际可见弧度，不把value当保证的屏幕半径；block宽箭分支也不套用这条规则。
@@ -229,7 +309,25 @@ fixedLength/measure特殊Engine不在默认bundle内；按[script-execution](scr
 
 ## Export与其他软件
 
-- PNG/SVG：现有MCP preview、EA createPNG/createSVG或Native CLI export；按明确文件/区域、资源和尺寸预算，实际看PNG。SVG/PNG是交付格式，不自动替换原图。
+### 矢量文件导出：SVG／PDF
+
+`drawing_preview` 仍只返回 PNG，用来验收可读性。`drawing_export(context_token,base_revision,format:"svg"|"pdf",scope?,ids?,padding?,embed_fonts?,with_background?,out_path?,overwrite?)` 才是正式文件出口，需要配套 Bridge 0.13.9／已更新运行包。导出只读，不改变原生图；先 bind/read 确认文件，PNG review 后导出同一个 revision，图有变化会拒绝过期输出。已有图只导出可不新建绘图任务，不伪造视觉通过。
+
+```json
+{"context_token":"本次真实token","base_revision":"本次实际revision","format":"svg","out_path":"/实际客户端目录/diagram.svg"}
+```
+
+```sh
+uv run --frozen python launcher.py cli -- export --context-token "真实token" --base-revision "实际revision" --format pdf --out-path "./diagram.pdf"
+```
+
+- SVG：原生 `ea.createSVG`，默认 `embed_fonts:true`；保留 path/text/组等矢量内容，不是整图 PNG 包装。内部 vault 链接默认不带出；字体许可／外部可移植性仍要检查。`embed_fonts:false` 不嵌字体，接收方需要对应字体，不能宣称外机无 fallback。
+- PDF：同一原生 SVG 进入宿主**已启用、已授权**的 Excalidraw Extras PDF API，单页尺寸匹配 SVG；不调用会弹保存框的 `ea.createPDF`，不自动授权 PDF／装插件。缺依赖报 `PDF_EXPORT_UNAVAILABLE`，不能自动替换为 PNG→PDF。
+- `scope` 可为 all／selection／viewport／ids；稳定的局部导出优先 ids，附完整原生成员（含 bound text）。padding 为场景单位；**矢量导出没有 PNG scale 参数**。`with_background:false` 使 SVG 无底色，PDF 纸张仍以其打印器行为为准。
+- 回执包含 file／revision、格式、尺寸、bytes／sha256、complete、resourceIssues、export.renderer／rasterImages／embeddedSvgImages 和实际客户端 out_path／uri。MCP 同时提供可下载的二进制资源；CLI 输出不倾倒 base64。
+- 输出保存在 MCP／CLI 所在机器；远端路径不是宿主 vault 路径。已有输出必须明确 `overwrite:true`／`--overwrite`，资源不完整、MIME/文档损坏或 revision 不一致时不写最终文件。
+- 图片、HTML/embeddable 捕获、阴影／filter 等可能含位图；**SVG/PDF 格式不等于 100% 矢量**。嵌入 SVG 图像仍可能有内部位图。交付时披露实际内容，不用单个 `<image>` 整图光栅替换图形。查看导出的 SVG 和 PDF 页面，确认字体、中文、箭身填充及裁切；矢量导出成功不自动通过原图 review。
+
 - **Anki**：`export/Action-Export-Image-To-Anki.md`生成选中元素SVG后浮动面板调用AnkiConnect，默认端口8765；真实payload为`action:"addNotes",version:6`，`notes`中deckName/modelName/fields/tags。原脚本写Default/Basic，不能代替用户所需deck/model。这是外部写入，需要用户明确导出授权、接口/字段正确与真实result确认；不自动创建卡片当smoke。
 - **Eagle**：`Action-Export-Image-To-Eagle.md`纯图片用本机文件`/api/item/addFromPath`，混合图元用SVG dataURL的`/api/item/addFromURLs`；`Feature-Export-Eagle.md`也提供右键项。真实token从用户私有配置读取，不能把脚本里硬编码示例token复制到Skill或报告。HTTP ok不等于库item写入已核对，需真实返回/目标库确认；用户明确授权才发送。
 - Embeddable DOM导出依赖`Feature-Export-Embeddable`真实capture；网络或DOM资源失败应incomplete，不用空边框冒充。外部应用联动不在drawing_preview的默认副作用内。

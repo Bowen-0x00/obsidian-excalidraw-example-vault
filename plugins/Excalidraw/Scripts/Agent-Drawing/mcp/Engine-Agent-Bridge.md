@@ -2,14 +2,14 @@
 name: Excalidraw Agent Bridge
 description: Local authenticated MCP bridge for Obsidian Excalidraw.
 author: local
-version: 0.13.8
+version: 0.13.9
 autorun: false
 ---
 /*
 ```javascript
 */
 
-const BRIDGE_VERSION = "0.13.8";
+const BRIDGE_VERSION = "0.13.9";
 const PROTOCOL_VERSION = "3";
 const DEFAULT_PORT = 27124;
 
@@ -3286,6 +3286,14 @@ function assertMathJaxReady() {
     409, status);
 }
 
+function vectorExportStatus() {
+  const api = obsidianApp.plugins.plugins["excalidraw-extras"]?.api;
+  return { path: "/v3/export", formats: ["svg", "pdf"], svg: typeof ea.createSVG === "function",
+    pdf: Boolean(api?.features?.isActive?.("pdf") && typeof api?.pdf?.exportToPDF === "function"),
+    pdfComponentVersion: api?.versions?.pdf || null,
+    pdfDependency: "Already-enabled and authorized Excalidraw Extras PDF; no permission/save dialogs" };
+}
+
 function runtimeCapabilitiesResponse() {
   const pluginId =
     findActivePluginId();
@@ -3342,6 +3350,7 @@ function runtimeCapabilitiesResponse() {
         Boolean(api?.ShapeCache),
     },
     latex: mathJaxStatus(),
+    exports: vectorExportStatus(),
     nativeTable: {
       callable: typeof ea.targetView?.tableManager?.stage === "function" &&
         typeof ea.targetView?.tableManager?.applyTheme === "function",
@@ -6216,6 +6225,7 @@ function bindingObject(
           detail: "full",
         },
         visualFeedback: {
+          exports: vectorExportStatus(),
           path: "/v3/render",
           format: "image/png",
           renderer:
@@ -12537,7 +12547,16 @@ function bindingObject(
     };
   }
 
-  async function renderCanvas(payload = {}) {
+  async function renderCanvas(payload = {}, format = "png") {
+    assert(["png", "svg", "pdf"].includes(format), "INVALID_EXPORT_FORMAT", "format must be png, svg, or pdf.", 400);
+    if (format !== "png") {
+      assert(typeof ea.createSVG === "function", "SVG_EXPORT_UNAVAILABLE", "This host does not expose ea.createSVG.", 409);
+    }
+    const extras = obsidianApp.plugins.plugins["excalidraw-extras"]?.api;
+    if (format === "pdf") {
+      assert(vectorExportStatus().pdf,
+        "PDF_EXPORT_UNAVAILABLE", "Enable and authorize the Excalidraw Extras PDF component on the host. SVG export remains available; no permission dialog was opened.", 409);
+    }
     const view = getActiveView();
 
     assert(
@@ -12853,6 +12872,72 @@ function bindingObject(
           });
         }
       }
+    }
+
+    if (format !== "png") {
+      let svg;
+      try {
+        await view.contentEl.ownerDocument.fonts.ready;
+        svg = await ea.createSVG(undefined, payload.embedFonts !== false, {
+          withBackground: payload.withBackground !== false, withTheme: true, isMask: false,
+          skipInliningFonts: payload.embedFonts === false,
+          ...(scope === "ids" && elements.some((element) => element.type === "frame")
+            ? { frameRendering: { enabled: true, outline: false, name: false, clip: true, markerEnabled: false, markerName: false } }
+            : {}),
+        }, undefined, theme, padding, false, false);
+      } finally {
+        ea.reset();
+      }
+      assert(svg?.tagName?.toLowerCase() === "svg", "SVG_EXPORT_FAILED", "ea.createSVG did not return an SVG document.", 500);
+      const width = Number.parseFloat(svg.getAttribute("width"));
+      const height = Number.parseFloat(svg.getAttribute("height"));
+      assert(Number.isFinite(width) && width > 0 && Number.isFinite(height) && height > 0,
+        "SVG_EXPORT_FAILED", "SVG dimensions must be finite and positive.", 500);
+      let rasterImages = 0;
+      let embeddedSvgImages = 0;
+      for (const image of svg.querySelectorAll("image")) {
+        const href = image.getAttribute("href") || image.getAttributeNS("http://www.w3.org/1999/xlink", "href") || "";
+        if (href.startsWith("data:image/svg+xml")) embeddedSvgImages++;
+        else if (href.startsWith("data:image/")) rasterImages++;
+        else {
+          complete = false;
+          resourceIssues.push({ type: "image", reason: "EXTERNAL_OR_MISSING_IMAGE", id: image.id || null });
+        }
+      }
+      const xml = new view.contentEl.ownerDocument.defaultView.XMLSerializer().serializeToString(svg);
+      let bytes = Buffer.from(xml, "utf8");
+      if (format === "pdf") {
+        assert(complete, "INCOMPLETE_EXPORT", "Cannot print an incomplete SVG to PDF.", 409, { resourceIssues });
+        const directory = fs.mkdtempSync(path.join(os.tmpdir(), "excalidraw-agent-pdf-"));
+        const filename = path.join(directory, "drawing.pdf");
+        const ownerDocument = view.contentEl.ownerDocument;
+        const page = ownerDocument.createElement("div");
+        page.appendChild(ownerDocument.importNode(svg, true));
+        try {
+          await extras.pdf.exportToPDF(page, filename, sourceScene.appState.viewBackgroundColor || "#ffffff",
+            { width, height }, false, { top: 0, right: 0, bottom: 0, left: 0 }, false,
+            `html,body{margin:0;padding:0;} svg{display:block;} @page{size:${width / 96}in ${height / 96}in;margin:0;}`);
+          assert(fs.existsSync(filename), "PDF_EXPORT_FAILED", "The native PDF printer did not produce its output file.", 500);
+          bytes = fs.readFileSync(filename);
+          assert(bytes.subarray(0, 5).toString() === "%PDF-", "PDF_EXPORT_FAILED", "The printer returned no valid PDF.", 500);
+        } finally {
+          page.remove();
+          if (fs.existsSync(filename)) fs.unlinkSync(filename);
+          fs.rmdirSync(directory);
+        }
+      }
+      assert(sceneRevision(getViewElements(), view) === currentRevision, "STALE_EXPORT",
+        "The canvas changed while the vector document was being exported.", 409);
+      return {
+        revision: currentRevision, file: view.file?.path, format, width, height,
+        renderedElementIds: elements.map((element) => element.id), bounds: sceneBounds,
+        canvasSummary: allElementsSummaryResponse(), complete, resourceIssues,
+        export: { renderer: format === "svg" ? "ea.createSVG" : "ea.createSVG + Excalidraw Extras PDF",
+          scope, theme, embedFonts: payload.embedFonts !== false, withBackground: payload.withBackground !== false,
+          rasterImages, embeddedSvgImages,
+          vectorNotice: "Native shapes/paths remain vector; raster images, captured HTML and some effects may contain raster content. Embedded SVG resources are retained; no all-vector guarantee." },
+        artifact: { mimeType: format === "svg" ? "image/svg+xml" : "application/pdf", base64: bytes.toString("base64") },
+      };
     }
 
     let pngBlob;
@@ -13726,6 +13811,10 @@ function bindingObject(
           true,
           () => renderCanvas(payload),
         );
+      case "/v3/export":
+        assert(payload.format === "svg" || payload.format === "pdf", "INVALID_EXPORT_FORMAT",
+          "Vector export format must be svg or pdf.", 400);
+        return withTargetView(payload.contextToken, true, () => renderCanvas(payload, payload.format));
 
       case "/v3/scripts/run":
         return withTargetView(

@@ -2,6 +2,8 @@
 
 以下prompt用于在你自己的vault重新生成并录制过程，不是固定坐标脚本，也不要求OMP。可用Claude Code/Codex/OMP等支持真实MCP与图像查看的Agent。本轮实际调用OMP加载Skill生成了这些场景、查看PNG并局部修复；你手动录制时用相同的短prompt即可。
 
+包内真实画廊见`docs/gallery.md`或[在线画廊](https://github.com/Bowen-0x00/obsidian-excalidraw-agent-skill/blob/main/docs/gallery.md)。README保留五级RISC-V，新增暖色手绘水循环、深色微积分、导视地铁图、薄荷甘特计划与生态学三线表。新五图来自`examples/builders/diverse_showcase.py`的Agent编写Python／原生API，**不是DSL自动布局**；两张主题表格用真实`drawing_table`，需要配套原生表格开发宿主，先读[table-native](table-native.md)。六组DSL及先前架构／阵列示例仍保留。源码、原生画布、实际PNG和能力边界均单独标明。
+
 ## 一次只跑一个场景
 
 共通要求：使用obsidian-excalidraw Skill，先status确认连接，在`Agent-Diagrams/Showcase`新建独立画布；真实测量/布局→apply→全图read/check→PNG→实际看图→局部修复→review，最多5轮，保留原生元素与用户素材，不修改源库。

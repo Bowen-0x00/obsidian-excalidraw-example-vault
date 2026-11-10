@@ -2,14 +2,14 @@
 name: Start Agent Drawing
 description: Bootstrap script to initialize Excalidraw Agent engines and bridge.
 author: local
-version: 0.13.8
+version: 0.13.9
 autorun: false
 ---
 /*
 ```javascript
 */
 
-const BOOTSTRAP_VERSION = "0.13.8";
+const BOOTSTRAP_VERSION = "0.13.9";
 
 const obsidianApp =
   ea.plugin?.app || (typeof app !== "undefined" ? app : null);

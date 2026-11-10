@@ -7,6 +7,8 @@
 
 Skill 只提供读取与维护规则，不内置用户的素材内容，也不替用户自动猜用途。
 
+本地SVG图标目录是另一种资源：见[icons](icons.md)。可以采用同样的“发现→精确来源→预览→fit→插入／读回”原则，但`drawing_library`不自动把SVG目录转成excalidrawlib；svgLayers图标通过已有原生operation或可信EA创建，不捏造library item ID。
+
 ## description 字段
 
 ```json
