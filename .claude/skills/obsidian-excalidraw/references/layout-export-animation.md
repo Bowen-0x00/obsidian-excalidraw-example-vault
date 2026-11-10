@@ -176,6 +176,8 @@ Bridge 0.13.0新增`rotate`、`scale_selection`，通过现有`drawing_apply`批
 
 ## 箭头选型：关系语义先于装饰
 
+**用户说“PPT粗箭头／宽箭身”时，默认解释为原生宽箭身，而不是增大strokeWidth。** 按实心／轮廓意图选`block_arrow`／`block_arrow_outline`，用独立`blockArrowWidth`控制宽度，细描边保留轮廓清晰；只有明确要求加粗普通线条才改strokeWidth。强调主路径与普通关系分开，presentation profile不自动把所有关系变成宽箭。
+
 先区分五件事：`start/endArrowhead`决定类型/方向；**`customData.blockArrowWidth`决定PPT宽箭身厚度**；`strokeWidth`决定轮廓描边；`arrowHeadSize`决定头部比例；原生points/绑定/waypoints决定长度与路由。宽度不是line元素的width/height，也不是PNG倍率。先按语义和本轮视觉偏好选型，同类一致；已有图只改用户要求的线。
 
 | 关系/用途 | 推荐起点 | 约束 |
@@ -199,7 +201,7 @@ Bridge 0.13.5支持：`arrow,bar,circle,circle_outline,triangle,triangle_outline
 {"op":"patch_custom_data","target":"已有PPT箭头实际ID","merge":{"blockArrowWidth":36}}
 ```
 
-- connect/create_linear的头型和arrowHeadSize在operation顶层；diagram/compose/primitives的连接头型也在每条edge/item顶层。不要只在style中塞endArrowhead指望高层默认覆盖正确。规划器默认arrow不表达用户意图，必须显式选择；高层不自动转发arrowHeadSize/blockArrowWidth，按返回native refs补`set_arrow_style/patch_custom_data`。
+- **高层规范位置**：`diagram.edges[]`（plan/compose）和`kind:"connection"`的primitive item顶层可选`blockArrowWidth`与`arrowHeadSize`，与startArrowhead/endArrowhead同级，不放style中。宽度必须正有限、头倍率必须0.125–8；非法值在规划前拒绝，不钳位。高层将前者映射为同一个`connect.customData.blockArrowWidth`，后者映射为`connect.arrowHeadSize`，不需创建后补丁；元数据、路由和端点配置保留。不传则不注入尺寸，也不改变默认关系头型。低层connect/create_linear仍用operation顶层arrowHeadSize＋customData.blockArrowWidth，不能把高层blockArrowWidth直接放到低层connect顶层。规划器默认arrow不表达用户意图，头型仍须按语义显式选择。
 - `set_arrow_style`只接受strokeWidth/startArrowhead/endArrowhead/arrowHeadSize/edge；颜色/虚实线用`patch_element.patch`，固定转角另patch.roundness。省略edge以保留已有固定radius；`edge:"round"`会重置为无value的默认圆角。更换头型保留ID/points/标签/双向绑定，不重建箭头或手贴三角形。
 - `arrowHeadSize`是0.125–8的**倍率**，不是px；这是接口边界，不是审美建议。细线从1起，建议0.75–1.25附近看PNG再调；线宽以1.5–2.5为常用起点。放大头不能解决路径太短；端部段要留头部、节点边距与标签净空。
 - **箭身宽**：`customData.blockArrowWidth`为正有限数、单位是scene单位；选择明确值以免描边变化联动默认厚度。省略时当前实现为`max(16,strokeWidth*6)`。宿主UI滑杆当前4–120、步长2，这是**面板范围**，不是已证明的MCP/内核硬上限或建议全部用120。旧字段`arrowHeadLineWidth`只作兼容读取，写新图/本轮宽度用blockArrowWidth，不同时制造两个冲突来源。恢复默认时先读实际customData，只移除本轮需要的宽度字段；残留旧字段仍可能生效，不能把0当“默认宽度”。
@@ -236,7 +238,23 @@ Bridge 0.13.5支持：`arrow,bar,circle,circle_outline,triangle,triangle_outline
 {"op":"create_linear","kind":"arrow","ref":"emphasis","x":100,"y":100,"points":[[0,0],[160,0]],"startArrowhead":null,"endArrowhead":"block_arrow","arrowHeadSize":0.8,"style":{"strokeWidth":2,"strokeColor":"#2563eb","backgroundColor":"transparent","fillStyle":"solid","roughness":0},"customData":{"blockArrowWidth":36}}
 ```
 
-以上为示意坐标的新独立箭头；连接实际节点时用`connect`的真实from/to、端口与必要waypoints，并在顶层customData传宽度。高层diagram.edges/primitive不承诺转发此字段，先compose/plan再按返回ref补`patch_custom_data`。**set_arrow_style目前没有blockArrowWidth字段**，不能塞入后假称生效；用上面的set_arrow_style控制头/描边、patch_custom_data控制宽度，两个操作可同一apply事务提交。标签沿用原生绑定text，换宽不改全文与字体角色。
+以上为示意坐标的新独立箭头；连接实际节点时用`connect`的真实from/to、端口与必要waypoints，并在customData传宽度。**低层set_arrow_style不接受blockArrowWidth**；用set_arrow_style控制头/描边、patch_custom_data控制宽度，可同一apply事务提交。标签沿用原生绑定text，换宽不改全文与字体角色。
+
+**高层原子创建**：下列对象是`drawing_compose`的`diagram`（也可交给drawing_plan，再将完整operations一次drawing_apply）；任务brief／本次字体选择须已解决。无库节点的compose将头型、宽度、头倍率和绑定作为同一原生事务提交，不是先画普通箭头再追加几轮样式。
+
+```json
+{"kind":"architecture","style":"presentation","nodes":[{"id":"before","label":"输入"},{"id":"after","label":"输出"}],"layout":{"direction":"LR","rankGap":180},"edges":[{"id":"transform","from":"before","to":"after","startArrowhead":null,"endArrowhead":"block_arrow","blockArrowWidth":36,"arrowHeadSize":0.8,"style":{"strokeWidth":2,"roughness":0,"roundness":null,"strokeColor":"#2563eb","backgroundColor":"transparent","fillStyle":"solid"}}]}
+```
+
+这是实心主路径的可选示例值，不覆盖用户色板。需要**可见轮廓型区别**时用`endArrowhead:"block_arrow_outline"`，保留细strokeWidth和透明backgroundColor（默认内部取画布背景），或显式指定本轮允许的浅填充；不能把两种头都显式填成同色后声称它们一定呈现不同效果。primitive原子创建见[native-features](native-features.md#高级连接)。
+
+**同ID修改**：先read取得真实native ID和当前revision，将以下operations一次交给drawing_apply；不传points、几何宽高、rebind或新ID，头倍率与轮廓可独立调整。只需调箭身时仅提交第二项，不顺手改头型／颜色。
+
+```json
+[{"op":"set_arrow_style","targets":["真实已有箭头ID"],"endArrowhead":"block_arrow_outline","arrowHeadSize":0.8,"strokeWidth":2},{"op":"patch_custom_data","target":"真实已有箭头ID","merge":{"blockArrowWidth":36}}]
+```
+
+可选DSL已有规范仍为`kind:ppt`＋`style:{head:block_arrow_outline,shaft:36,head_scale:0.8,stroke_width:2}`，不要把compose的camelCase顶层字段混进DSL。相同state_id／逻辑边id只调shaft/head_scale时，协调器保留原生ID、点列和绑定，不重建或重新绑定；移动端点／改路由仍按真实几何更新。
 5. **局部修改不变量**：先read(full)取目标ID、customData、points/angle、头型、stroke/background、锁定、标签与双向bindings；merge只改blockArrowWidth，保留所有无关字段。应用→保存后read，确认同ID、原路径/绑定/标签、实际宽值和描边独立，再当前revision check→PNG→实际看宽短/细长、头部、填充、净空与裁切→review。字段成功写入≠旧宿主已显示；不能隐藏不支持的实心头型或把check=pass当包络无重叠证明。
    若宽值和绑定读回正确，但PNG中箭尖/箭身相对真实端口出现随宽度变化的位移或标签遮罩异常，记录宿主渲染/导出兼容问题及具体IDs；不能把“同points”当视觉端点正确，更不能偷偷移动端口/拆绑定来补偿。字段与配色/尺寸可分别验证，剩余视觉问题不标completed。
 
@@ -291,7 +309,25 @@ fixedLength/measure特殊Engine不在默认bundle内；按[script-execution](scr
 
 ## Export与其他软件
 
-- PNG/SVG：现有MCP preview、EA createPNG/createSVG或Native CLI export；按明确文件/区域、资源和尺寸预算，实际看PNG。SVG/PNG是交付格式，不自动替换原图。
+### 矢量文件导出：SVG／PDF
+
+`drawing_preview` 仍只返回 PNG，用来验收可读性。`drawing_export(context_token,base_revision,format:"svg"|"pdf",scope?,ids?,padding?,embed_fonts?,with_background?,out_path?,overwrite?)` 才是正式文件出口，需要配套 Bridge 0.13.9／已更新运行包。导出只读，不改变原生图；先 bind/read 确认文件，PNG review 后导出同一个 revision，图有变化会拒绝过期输出。已有图只导出可不新建绘图任务，不伪造视觉通过。
+
+```json
+{"context_token":"本次真实token","base_revision":"本次实际revision","format":"svg","out_path":"/实际客户端目录/diagram.svg"}
+```
+
+```sh
+uv run --frozen python launcher.py cli -- export --context-token "真实token" --base-revision "实际revision" --format pdf --out-path "./diagram.pdf"
+```
+
+- SVG：原生 `ea.createSVG`，默认 `embed_fonts:true`；保留 path/text/组等矢量内容，不是整图 PNG 包装。内部 vault 链接默认不带出；字体许可／外部可移植性仍要检查。`embed_fonts:false` 不嵌字体，接收方需要对应字体，不能宣称外机无 fallback。
+- PDF：同一原生 SVG 进入宿主**已启用、已授权**的 Excalidraw Extras PDF API，单页尺寸匹配 SVG；不调用会弹保存框的 `ea.createPDF`，不自动授权 PDF／装插件。缺依赖报 `PDF_EXPORT_UNAVAILABLE`，不能自动替换为 PNG→PDF。
+- `scope` 可为 all／selection／viewport／ids；稳定的局部导出优先 ids，附完整原生成员（含 bound text）。padding 为场景单位；**矢量导出没有 PNG scale 参数**。`with_background:false` 使 SVG 无底色，PDF 纸张仍以其打印器行为为准。
+- 回执包含 file／revision、格式、尺寸、bytes／sha256、complete、resourceIssues、export.renderer／rasterImages／embeddedSvgImages 和实际客户端 out_path／uri。MCP 同时提供可下载的二进制资源；CLI 输出不倾倒 base64。
+- 输出保存在 MCP／CLI 所在机器；远端路径不是宿主 vault 路径。已有输出必须明确 `overwrite:true`／`--overwrite`，资源不完整、MIME/文档损坏或 revision 不一致时不写最终文件。
+- 图片、HTML/embeddable 捕获、阴影／filter 等可能含位图；**SVG/PDF 格式不等于 100% 矢量**。嵌入 SVG 图像仍可能有内部位图。交付时披露实际内容，不用单个 `<image>` 整图光栅替换图形。查看导出的 SVG 和 PDF 页面，确认字体、中文、箭身填充及裁切；矢量导出成功不自动通过原图 review。
+
 - **Anki**：`export/Action-Export-Image-To-Anki.md`生成选中元素SVG后浮动面板调用AnkiConnect，默认端口8765；真实payload为`action:"addNotes",version:6`，`notes`中deckName/modelName/fields/tags。原脚本写Default/Basic，不能代替用户所需deck/model。这是外部写入，需要用户明确导出授权、接口/字段正确与真实result确认；不自动创建卡片当smoke。
 - **Eagle**：`Action-Export-Image-To-Eagle.md`纯图片用本机文件`/api/item/addFromPath`，混合图元用SVG dataURL的`/api/item/addFromURLs`；`Feature-Export-Eagle.md`也提供右键项。真实token从用户私有配置读取，不能把脚本里硬编码示例token复制到Skill或报告。HTTP ok不等于库item写入已核对，需真实返回/目标库确认；用户明确授权才发送。
 - Embeddable DOM导出依赖`Feature-Export-Embeddable`真实capture；网络或DOM资源失败应incomplete，不用空边框冒充。外部应用联动不在drawing_preview的默认副作用内。
