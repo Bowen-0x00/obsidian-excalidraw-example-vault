@@ -17,6 +17,10 @@ description: 在 Obsidian Excalidraw 修改版中创建、修改原生可编辑�
 
 **0.10.6 原生图标工作流**：需要图标时按[icons](references/icons.md)发现本地SVG来源，使用新宿主rectangle＋svgLayers保留多色／单色矢量及动态style。复用现有操作，不新增图标MCP或自动转换器；宿主需实际包含2.29.0-9配套组件，更新Skill不自动升级插件。
 
+**0.10.8 矢量交付与宽箭头工作流**：完整运行包和 Skill 一起更新；MCP 应含 `drawing_export`，宿主 Bridge／bootstrap 应为 0.13.9。高层宽箭头尺寸必须直接落地，不以普通线的描边加粗代替。以下导出步骤适用于此版本及以后。
+
+**矢量导出需要运行包提供 `drawing_export` 和配套 Bridge 0.13.9。** 用户要求 SVG／PDF／矢量结果时，PNG 只用于视觉验收，不当最终格式替代。完成 PNG review 后，用同一个 `context_token/base_revision` 调用 `drawing_export(format:"svg"|"pdf")`，交付原生画布、实际导出文件及回执；文件位于 MCP／CLI 机器（含 SSH 远端），不是宿主路径。SVG 默认嵌入字体；PDF 复用宿主已启用且已授权的 Extras PDF，不弹保存／授权对话框，缺依赖明确报错、不降成 PNG 包 PDF。位图、HTML 截图和部分效果不因后缀变成矢量，须披露回执的 rasterImages／resourceIssues；SVG/PDF 本身不替代 PNG review／drawing_deliver。详见[导出](references/layout-export-animation.md#矢量文件导出svgpdf)。
+
 先调用 **`drawing_begin(request:用户原始需求,action:"prepare")`**。它实际返回本包Skill、验收/字体/工作流全文、任务专用参考、正确原生示例和当前宿主发现结果，不依赖客户端是否自动激活Skill。硬件另载微架构规范，数学另载内容分流；已有图加明确file_path可读取当前画布和真实评审历史。返回规范不等于模型已理解，更不等于用户已经回答偏好。
 
 偏好和需求齐全后用`drawing_begin(create|bind,brief,filename|file_path)`进入同一任务；原有context、DSL、原生入口复用同样的brief门禁。**逻辑微架构/电路**在brief.representation声明部件/端口/信号，并用drawing_contract映射body/wire IDs。**物理剖面/封装/爆炸图与讲解页**在brief.visual_plan声明目的、参考证据、视图、对象、承载/包含关系和示意边界，不为通过门禁虚构信号网络。[执行契约](references/workflow-details.md)、[视觉设计层](references/visual-design.md)。
@@ -93,7 +97,7 @@ CPU数据通路/逻辑微架构/电路/寄存器堆/片上互连：**创建前�
 4. 没有后续样式时compose传`inspect:true,acceptance_level:本次选择`；还需样式时先compose，再一次apply(inspect:true)按refs局部修正。expected覆盖任务关键内容/关系；后续省略等级/断言会继承同context设置。operations每项必须有`op`不是type；标题粗体用`{"op":"set_text_global_style","targets":["refs中真实textID"],"bold":true}`。不为绕检查重建整图。
 5. `inspect:true`返回实际**PNG ImageContent**及JSON：`composition`或`applied`回执、`check`完整诊断、`preview`注册预览（含同revision全图canvasSummary/路径/hash）、毫秒`timings`。内部真实full-read+结构/几何/语义check→按该revision导出，不缓存过期结果、不自动review。默认false保持原接口；check失败仍展示PNG供修复，不能当完成。
 6. **查看真实PNG**，再review；逐项提交需求覆盖证据，不能以“模型生成的标签都存在”替代用户需求验收。medium检查content/readability/occlusion，high增加connections/hierarchy_style。文字互压／遮挡不能标intentional；误报必须逐元素、逐问题提供当前局部PNG证据，禁止循环给所有issue复制理由。review=completed也不代表原始check=pass。
-   completed后调用drawing_deliver，保留真实file/revision/previewId/sha256/reviewRound回执；不把review调用失败后的自然语言断言当成交付。
+   completed后调用drawing_deliver，保留真实file/revision/previewId/sha256/reviewRound回执；用户要求矢量文件时，继续 `drawing_export` 导出同一 revision 的 SVG／PDF 并交付文件，不仅给 PNG。不把review调用失败后的自然语言断言当成交付。
 7. 有问题只改受影响元素／绑定文字／邻边，apply(inspect=true)后重新读回、PNG和验收。check失败首先核对实际字体、字号、尺寸和API字段，不盲目扩框。默认最多5轮，连续两轮无改善或上限到达则needs_attention；保留原文件报告问题，不换token／task_id／DSL state_id重置预算。
 
 原因不明或PNG与属性不一致时，**不要盲目重画／反复调坐标**：考虑只读CDP获取原生绘制顺序、文字/绑定、表格、资源与视口证据。先确认用户开关；关闭时只提出选项，不自动启用。V8副作用保护拒绝的查询必须停止，不去掉保护重试；状态诊断不能替代实际PNG。
@@ -103,8 +107,8 @@ inspect是合并**已有**步骤，不是原子跨请求事务：check/render前
 ## 图描述与常用操作
 
 - diagram：kind=flowchart/architecture/swimlane/freeform，nodes含唯一id/shape/label，edges含id/from/to/label/fromPort/toPort；containers/lanes保留归属，layout支持TB/LR、间距和可负origin。节点内容image/latex/echarts/embeddable及UML/电路等按下表读相应参考。
-- edge的startArrowhead/endArrowhead放**edge顶层**，显式null表示无头；style放stroke/roughness/roundness。三角头triangle不是filled_triangle；两种block是整条宽箭身。高层不自动转发blockArrowWidth，按refs补patch_custom_data；set_arrow_style不接受该宽度字段。先发现实际头型集合，不能只因插件已更新就假设旧Bridge支持。
-- PPT两种宽箭都能独立设strokeColor（轮廓）与backgroundColor（内部填充），fillStyle另控填充方式；普通细线身主要用strokeColor，不套宽箭填充语义。outline默认画布底色而非天然透明；改宽/改色分别操作并看实际PNG，不能用描边宽代替箭身宽。
+- 高层 `diagram.edges[]`／`connection` primitive 顶层支持 `startArrowhead/endArrowhead/arrowHeadSize/blockArrowWidth`；生成器直接映射原生字段，含素材混合 compose。`blockArrowWidth` 为箭身宽，`style.strokeWidth` 仅为描边。低层 `connect/create_linear` 仍用顶层 `arrowHeadSize`＋`customData.blockArrowWidth`，`set_arrow_style` 没有宽度字段。
+- **用户说 PPT粗箭头／宽箭身／明显主通路时，主动选择 `block_arrow` 或 `block_arrow_outline`＋明确 `blockArrowWidth`，不能只增大普通 arrow 的 strokeWidth。** 同类主路径统一，控制／依赖保持细线及其语义头型；不把所有关系都改成宽箭。轮廓和内部色分别由 strokeColor/backgroundColor 控制；改宽、改头、改色分别落地，保留 ID／points／绑定，再看 PNG 包络和矢量导出。
 - 需要先审查计划、手动坐标或复杂增量时，原有read/measure/plan/apply/check/preview/primitives等**全部保留**。plan.operations完整交给apply，尽量程序传递；原生CLI、EA与MCP schema不可混用。
 - 语义断言示例：`{type:"label_equals",id:真实节点或textID,text:全文}`、`{type:"edge_label",from:起点ID,to:终点ID,text:"通过"}`。普通check不等于所有业务语义已覆盖。
 - 原生 `create_text` 的字号／字体／行高在 `style.fontSize/fontFamily/lineHeight`，不是操作顶层；label用`label.style`。不要复用自写的错位字段helper。先用同一实际style测量再放置；保存后读回实际style、全文和尺寸，不一致就修字段，不按估计字宽移动整图。

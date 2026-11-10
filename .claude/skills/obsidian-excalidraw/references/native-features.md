@@ -86,9 +86,17 @@ CPU/硬件数据通路先读[microarchitecture](microarchitecture.md)，不能�
 {"kind":"connection","id":"data-edge","from":"真实source ID","to":"真实target ID","routing":"orthogonal","start":{"anchor":"right","fixedPoint":[1,0.3]},"end":{"anchor":"left","fixedPoint":[0,0.7]},"label":"数据","startArrowhead":null,"endArrowhead":"triangle"}
 ```
 
-routing=`straight/orthogonal/curve`；代码读取当前精确节点geometry，正交路径避障；显式waypoints使用scene坐标。始终维护start/end与目标boundElements双向关系，标签原生绑定。native head包括arrow/bar/circle及outline/triangle/diamond；PPT实心block_arrow与轮廓block_arrow_outline先核对runtime集合，箭身宽按refs补patch_custom_data.blockArrowWidth（不是strokeWidth/几何width），细节见[箭头尺寸](layout-export-animation.md)。
+routing=`straight/orthogonal/curve`；代码读取当前精确节点geometry，正交路径避障；显式waypoints使用scene坐标。始终维护start/end与目标boundElements双向关系，标签原生绑定。native head包括arrow/bar/circle及outline/triangle/diamond；PPT实心block_arrow与轮廓block_arrow_outline先核对runtime集合，不支持就明确报告，不降级换头型。连接item顶层可选`blockArrowWidth`（正有限scene单位）和`arrowHeadSize`（0.125–8倍率），规划器分别传入同一connect的customData.blockArrowWidth和顶层arrowHeadSize，保留其原生元数据／端点／路由。不是style字段，也不是strokeWidth/几何width，细节见[箭头尺寸](layout-export-animation.md)。
 微架构信号默认只允许轴向直连或正交折线。低层connect缺省elbowed=false且无waypoints时直接连接两点，不会自动避障；两端不对齐须显式计算正交拐点。routing=orthogonal/flag并非审计替代品，应用保存后读full逐段核对世界dx/dy及首末端口方向，详见[microarchitecture](microarchitecture.md)。
 按[箭头语义与固定圆角](layout-export-animation.md)选择头型/线身，不默认所有关系arrow；本例triangle用于数据流，不推广到UML。profile只提供基础线型，不能代替每条关系的start/endArrowhead；固定肘形radius通过实际生成的connect.style.roundness或按refs patch，不把routing=curve当圆角。
+
+用户要“PPT粗箭头／宽箭身”时用下面的connection item创建强调连接，不把strokeWidth从2加到20；普通关系仍用符合业务语义的细线头型。此对象交给drawing_primitives，再把完整plan.operations一次drawing_apply；宽度／头倍率无需后续补丁，实际ID由执行层生成：
+
+```json
+{"kind":"connection","id":"primary-path","from":"真实source ID","to":"真实target ID","routing":"straight","start":{"anchor":"right"},"end":{"anchor":"left"},"startArrowhead":null,"endArrowhead":"block_arrow_outline","blockArrowWidth":28,"arrowHeadSize":0.8,"style":{"strokeWidth":2,"roughness":0,"roundness":null,"strokeColor":"#334155","backgroundColor":"transparent","fillStyle":"solid"}}
+```
+
+本例outline内部默认画布背景，实心则选block_arrow；显式backgroundColor可独立覆盖内部色，遵守本轮色板。waypoints仍是scene坐标；宽箭的头／折点包络比中心线更宽，必须看当前PNG确认净空，不能宣称正交router已证明宽箭无碰撞。plan只返回操作，不执行；已有箭头仅调宽请用[同ID修改事务](layout-export-animation.md#ppt宽箭尺寸工作流粗短和细长都由agent主动设计)，不重新调用primitive建立第二根线。
 
 来源：`connection/Action-Advanced-Connector.md`，不是调用其交互面板。曲线精确碰撞检查尚有unknown，必须明确限制；不能用“curve看起来绕开”冒充硬检查通过。library line素材先用返回anchorElementId，不能直接绑定不支持的line target。
 
